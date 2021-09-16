@@ -494,7 +494,7 @@ figure.effect-julia:hover p {
 
 .gmap-canvas {
     overflow:hidden;
-    background:none!important;
+/*    background:none!important;*/
 }
 
 .map-outer,
