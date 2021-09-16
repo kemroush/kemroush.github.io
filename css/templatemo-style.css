@@ -59,7 +59,7 @@ h2 {
 }
 
 .btn-primary {
-    background-color: black;
+   /* background-color: black;*/
     border: none;
     color: #FFF;
 }
@@ -67,7 +67,7 @@ h2 {
 .btn-primary:hover,
 .btn-primary:focus {
     color: #ff8;
-    background-color: black;
+  /*  background-color: black; */
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -204,9 +204,9 @@ h2 {
     margin-left: auto;
 }
 
-.tm-bg-dark {
+/*.tm-bg-dark {
     background-color: black;
-}
+}*/
 
 .intro-left {
     margin-right: 20px;
