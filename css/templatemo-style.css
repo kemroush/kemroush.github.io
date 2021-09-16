@@ -110,7 +110,7 @@ h2 {
 }
 
 .navbar .navbar-nav .nav-item:last-child {
-    margin-right: 0;
+    /*margin-right: 0;*/
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
