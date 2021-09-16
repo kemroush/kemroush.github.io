@@ -99,6 +99,13 @@ h2 {
     font-size: 2.4rem;
 }
 
+.navbar-desc {
+    font-size: 1.5rem;
+    position: absolute;
+    left:  5px;
+    padding-top: 5rem;
+}
+
 .navbar {
     margin-top: 15px;
     padding-right: 50px;
@@ -211,7 +218,7 @@ h2 {
 .intro-left {
     margin-right: 20px;
     padding: 30px 40px;
-    max-width: 505px;    
+   /* max-width: 505px;    */
 }
 
 .intro-img-1 {
