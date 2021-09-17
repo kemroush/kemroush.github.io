@@ -99,13 +99,6 @@ h2 {
     font-size: 2.4rem;
 }
 
-.navbar-desc {
-    font-size: 1.5rem;
-    position: absolute;
-    left:  5px;
-    padding-top: 5rem;
-}
-
 .navbar {
     margin-top: 15px;
     padding-right: 50px;
@@ -145,9 +138,9 @@ h2 {
     padding-bottom: 48px;
 }
 
-/*.tm-border-top {
+.tm-border-top {
     border-top: 1px solid white;
-    padding-top: 48px;*/
+    padding-top: 48px;
 }
 
 .navbar .navbar-nav .nav-item.selected .nav-link,
@@ -218,7 +211,7 @@ h2 {
 .intro-left {
     margin-right: 20px;
     padding: 30px 40px;
-   /* max-width: 505px;    */
+    max-width: 505px;    
 }
 
 .intro-img-1 {
@@ -501,7 +494,7 @@ figure.effect-julia:hover p {
 
 .gmap-canvas {
     overflow:hidden;
-/*    background:none!important;*/
+    background:none!important;*/
 }
 
 .map-outer,
