@@ -139,7 +139,7 @@ h2 {
 }
 
 .tm-border-top {
-    border-top: 1px solid white;
+    /*border-top: 1px solid white;*/
     padding-top: 48px;
 }
 
@@ -211,7 +211,7 @@ h2 {
 .intro-left {
     margin-right: 20px;
     padding: 30px 40px;
-    max-width: 505px;    
+       
 }
 
 .intro-img-1 {
