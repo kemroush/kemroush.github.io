@@ -41,7 +41,7 @@ h2 {
 }
 
 .page-container {
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
     justify-content: space-between;
     padding-left: 30px;
@@ -133,9 +133,9 @@ h2 {
     border-radius: 50%;
 }*/
 
-.tm-border-bottom {
+/*.tm-border-bottom {
     border-bottom: 1px solid white;
-    padding-bottom: 48px;
+    padding-bottom: 48px;*/
 }
 
 .tm-border-top {
