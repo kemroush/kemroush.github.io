@@ -35,6 +35,9 @@ p {
 h2 {
     font-size: 1.8rem;
 }
+.new{
+	font-size: 15px
+}
 
 .highlight {
     color: #99FF66;
