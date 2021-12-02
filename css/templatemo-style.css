@@ -139,7 +139,7 @@ h2 {
 /*.tm-border-bottom {
     border-bottom: 1px solid white;
     padding-bottom: 48px;*/
-}
+
 
 .tm-border-top {
     /*border-top: 1px solid white;*/
@@ -497,7 +497,7 @@ figure.effect-julia:hover p {
 
 .gmap-canvas {
     overflow:hidden;
-    background:none!important;*/
+    background:none!important;
 }
 
 .map-outer,
