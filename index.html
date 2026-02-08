@@ -36,11 +36,27 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
+    .logo-mark {
+      width: 88px;
+      height: 88px;
+      margin-bottom: 1.5rem;
+    }
+
     h1 {
       font-size: 3rem;
       font-weight: 700;
       letter-spacing: -0.02em;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .motto {
+      font-size: 0.85rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #58a6ff;
+      margin-bottom: 1.5rem;
+      opacity: 0.8;
     }
 
     .bio {
@@ -85,7 +101,24 @@
 </head>
 <body>
   <main class="container">
+    <!-- Logo mark — symmetrical triangle harmony -->
+    <svg class="logo-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#58a6ff"/>
+          <stop offset="100%" stop-color="#bc8cff"/>
+        </linearGradient>
+      </defs>
+      <!-- Top triangle -->
+      <polygon points="50,13 31,49 69,49" fill="url(#accent)" stroke="url(#accent)" stroke-width="3" stroke-linejoin="round"/>
+      <!-- Bottom-left triangle -->
+      <polygon points="30,52 10,87 49,87" fill="url(#accent)" stroke="url(#accent)" stroke-width="3" stroke-linejoin="round"/>
+      <!-- Bottom-right triangle -->
+      <polygon points="71,52 51,87 90,87" fill="url(#accent)" stroke="url(#accent)" stroke-width="3" stroke-linejoin="round"/>
+    </svg>
+
     <h1>kemroush</h1>
+    <p class="motto">winter is almost over</p>
     <p class="bio">Developer, tinkerer, lifelong learner. Building things on the web. With love to devs <3 </p>
 
     <nav class="links">
