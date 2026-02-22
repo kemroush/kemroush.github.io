@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCE-C1 — Test 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cce-c1.css">
+</head>
+<body data-test-id="test1">
+  <header class="page-header">
+    <a href="cce-c1.html" class="back-link">&larr; Zpět na výběr</a>
+    <h1>Test 1 — Modelová varianta</h1>
+  </header>
+
+  <!-- Tabs -->
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="sec-cteni">Čtení</button>
+    <button class="tab-btn" data-tab="sec-poslech">Poslech</button>
+    <button class="tab-btn" data-tab="sec-glt">GLT</button>
+    <button class="tab-btn" data-tab="sec-psani">Psaní</button>
+    <button class="tab-btn" data-tab="sec-mluveni">Mluvení</button>
+  </nav>
+
+  <main class="container">
+
+<!-- ════════════════════════════════════════════ -->
+<!-- ČTENÍ S POROZUMĚNÍM                         -->
+<!-- ════════════════════════════════════════════ -->
+<div id="sec-cteni" class="tab-content active">
+  <div class="section-header">
+    <h2>Čtení s porozuměním</h2>
+    <span class="section-badge">70 min · 30 bodů</span>
+  </div>
+  <div class="timer-bar">
+    <span class="timer-display">70:00</span>
+    <div class="timer-controls">
+      <button class="btn btn-sm timer-pause">&#9654; Spustit</button>
+    </div>
+  </div>
+
+  <!-- Úloha 1 -->
+  <div class="uloha-block">
+    <h3>Úloha 1 (8 bodů)</h3>
+    <p class="instructions">Přečtěte si texty A–E a úkoly 1–8. U úkolů 1–8 vyberte jednu správnou odpověď.</p>
+
+    <div class="text-block"><div class="text-label">Text A</div><p>Série „Město ve stínu" slibuje investigaci, ale ve skutečnosti je to spíš literární reportáž. Vypravěč se vyžívá v atmosféře, dlouhých pauzách a metaforách; fakta dávkuje po kapkách. Občas to působí jako záměrné zdržování: posluchač už tuší pointu, jen se k ní musí „pročekat". Přesto nelze autorům upřít cit pro detail a schopnost vystavět napětí bez laciných triků. Jenže napětí se někdy mění v manýru.</p></div>
+    <div class="text-block"><div class="text-label">Text B</div><p>Tvůrci mají zjevně nastudováno: právní souvislosti, archivní materiály, výpovědi pamětníků. Odborná preciznost je místy až demonstrativní, jako by podcast chtěl předem zneškodnit jakoukoli kritiku. Problém je, že pečlivost ne vždy znamená srozumitelnost. Struktura epizod je roztříštěná: posluchač přeskakuje mezi roky i mluvčími a opěrné body si musí vytvořit sám. Odměnou je však překvapivě jemný humor v drobných glosách.</p></div>
+    <div class="text-block"><div class="text-label">Text C</div><p>„Město ve stínu" působí, jako by vás někdo nenápadně zkoušel: posloucháte a zároveň máte pocit, že jste pozorováni. Tvůrci se pohrávají s očekáváním, záměrně podsouvají falešné stopy a pak je s lehkostí odklidí. Nejde o klasickou detektivku – spíš o hru s interpretací. Pokud jste ochotni připustit, že nejde jen o to „kdo", ale i o to „proč chceme věřit", budete nadšení.</p></div>
+    <div class="text-block"><div class="text-label">Text D</div><p>Je to podcast, který si na nic nehraje: mluví se přímo, někdy drsně, někdy až nepříjemně konkrétně. Největší síla je v portrétech lidí, kteří se ocitli mimo hlavní proud. Tvůrci je nelíčí jako figurky v argumentu, ale jako bytosti s důstojností, slabostí i tvrdohlavostí. Někomu to může připadat příliš temné – a právě proto je to potřebné.</p></div>
+    <div class="text-block"><div class="text-label">Text E</div><p>Nejsem si jistý, zda „Město ve stínu" přináší něco, co bychom už neslyšeli jinde. Ano, je to řemeslně velmi dobře udělané: zvuk, střih, tempo. Ale téma „pravda versus mediální obraz" je dnes skoro povinná výbava. Pokud však milujete jazyk a nuance, oceníte, jak vypravěč dovede jedním obratem změnit význam celé situace. Kdo čeká přímou dějovou linku, může se ztratit.</p></div>
+
+    <div class="question-item"><span class="q-number">1.</span><span class="q-text">Ve kterém textu recenzent naznačuje, že tvůrci si „hrají" s posluchačem a jeho očekáváním?</span><br><select class="q-select" data-q="c1"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+    <div class="question-item"><span class="q-number">2.</span><span class="q-text">Ve kterém textu recenzent pochybuje o jedinečnosti díla?</span><br><select class="q-select" data-q="c2"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+    <div class="question-item"><span class="q-number">3.</span><span class="q-text">Ve kterém textu recenzent poukazuje na odbornou erudici autorů?</span><br><select class="q-select" data-q="c3"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+    <div class="question-item"><span class="q-number">4.</span><span class="q-text">Ve kterém textu recenzent kritizuje manýru a zdržování?</span><br><select class="q-select" data-q="c4"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+    <div class="question-item"><span class="q-number">5.</span><span class="q-text">Ke kterému textu patří titulek: „Drsné, ale lidské"?</span><br><select class="q-select" data-q="c5"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+    <div class="question-item"><span class="q-number">6.</span><span class="q-text">Ke kterému textu patří titulek: „Pečlivé, ale chaotické"?</span><br><select class="q-select" data-q="c6"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+    <div class="question-item"><span class="q-number">7.</span><span class="q-text">Ke kterému textu patří titulek: „Hra s interpretací"?</span><br><select class="q-select" data-q="c7"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+    <div class="question-item"><span class="q-number">8.</span><span class="q-text">Ke kterému textu patří titulek: „Kdo čeká příběh, může zabloudit"?</span><br><select class="q-select" data-q="c8"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+  </div>
+
+  <!-- Úloha 2 -->
+  <div class="uloha-block">
+    <h3>Úloha 2 (7 bodů)</h3>
+    <p class="instructions">Přečtěte si text a vynechané úseky A–I. Doplňte do textu k číslům 9–15 textový úsek z nabídky A–I. Dvě části textu jsou navíc.</p>
+
+    <div class="text-block"><p>V posledních letech si obyvatelé mnoha měst všímají, že se některé ulice během léta mění v horké koridory. Nejde jen o subjektivní pocit: měření povrchových teplot ukazují výrazné rozdíly i mezi ulicemi vzdálenými jen několik set metrů. <strong>9 _______</strong> Proto se pozornost urbanistů obrací k tomu, co často považujeme za samozřejmé: k městské zeleni.</p>
+    <p>Stromy ochlazují prostředí několika způsoby. Nejdůležitější je stín, který snižuje množství sluneční energie dopadající na asfalt a fasády. Neméně podstatná je však evapotranspirace: voda odpařená z listů odebírá teplo okolí. <strong>10 _______</strong> To je jeden z důvodů, proč se některé „zelené" projekty míjejí účinkem: strom sice zasadíme, ale nedáme mu šanci přežít první kritická léta.</p>
+    <p>Vedle samotných stromů hraje roli i skladba povrchů. Tmavé materiály se rozpálí víc než světlé, zatímco propustné povrchy umožňují vsak vody a ochlazování půdy. <strong>11 _______</strong> Pokud navíc přibývá parkovacích míst na úkor záhonů, město si zbytečně zvyšuje teplotní zátěž.</p>
+    <p>Z praxe vyplývá, že nejlépe fungují opatření kombinovaná. Nestačí vysadit pár stromů do betonových „květináčů". Důležitá je velikost kořenového prostoru, přístup k vodě a ochrana před mechanickým poškozením. <strong>12 _______</strong> V některých městech se proto zavádějí standardy, které určují minimální objem půdy pro jeden strom.</p>
+    <p>Dalším tématem je druhová skladba. Ne každý strom snese sucho, sůl ze zimní údržby a znečištění. <strong>13 _______</strong> Přesto není rozumné sázet „jen to, co vydrží": přílišná jednotnost zvyšuje riziko, že jednou nemocí přijdeme o celou alej.</p>
+    <p>Na závěr je třeba říci, že městské stromy nejsou dekorace. Jsou součástí infrastruktury a jejich přínos se dá vyčíslit: ve snížení teplot, zadržení vody i zlepšení kvality ovzduší. <strong>14 _______</strong> Proto je fér mluvit i o penězích: péče o zeleň není luxus, ale prevence budoucích škod.</p>
+    <p><strong>15 _______</strong> Pokud se k nim budeme chovat jako k jednorázové investici bez následné údržby, vrátí nám to město v podobě vedra, sucha a zhoršeného životního komfortu.</p></div>
+
+    <div class="text-block"><div class="text-label">Nabídka A–I</div>
+    <p><strong>A)</strong> Jenže odpařování funguje pouze tehdy, když má strom dostatek vody.<br>
+    <strong>B)</strong> Vysvětlení je jednoduché: město je složitý ekosystém, kde všechno souvisí se vším.<br>
+    <strong>C)</strong> Zásadní je také to, že ve městě často chybí půda: kořeny nemají kam růst.<br>
+    <strong>D)</strong> Odborníci proto doporučují plánovat výsadby společně s hospodařením s dešťovou vodou.<br>
+    <strong>E)</strong> Někdy rozhoduje i to, zda je ulice „větrná" a zda se teplý vzduch má kam odvádět.<br>
+    <strong>F)</strong> Překvapivě mnoho udělá i změna drobných detailů, například stínění zastávek nebo školních dvorů.<br>
+    <strong>G)</strong> Dlouhověké a odolné druhy bývají pro města bezpečnější volbou.<br>
+    <strong>H)</strong> Strom, který vypadá zdravě první rok, může bez správných podmínek během pěti let odumřít.<br>
+    <strong>I)</strong> Když se do ulic vrátí více stromů, lidé často začnou trávit venku víc času – a město ožije.</p></div>
+
+    <div class="question-item"><span class="q-number">9.</span><select class="q-select" data-q="c9"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option></select></div>
+    <div class="question-item"><span class="q-number">10.</span><select class="q-select" data-q="c10"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option></select></div>
+    <div class="question-item"><span class="q-number">11.</span><select class="q-select" data-q="c11"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option></select></div>
+    <div class="question-item"><span class="q-number">12.</span><select class="q-select" data-q="c12"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option></select></div>
+    <div class="question-item"><span class="q-number">13.</span><select class="q-select" data-q="c13"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option></select></div>
+    <div class="question-item"><span class="q-number">14.</span><select class="q-select" data-q="c14"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option></select></div>
+    <div class="question-item"><span class="q-number">15.</span><select class="q-select" data-q="c15"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option></select></div>
+  </div>
+
+  <!-- Úloha 3.1 -->
+  <div class="uloha-block">
+    <h3>Úloha 3.1 (4 body)</h3>
+    <p class="instructions">Přečtěte si text a úkoly 16–19. Rozhodněte, jestli jsou tvrzení pravda (ANO), nebo nejsou pravda (NE).</p>
+
+    <div class="text-block"><div class="text-label">Vědec a veřejnost (esej)</div>
+    <p>Jedním z nejčastějších očekávání dneška je, že odborník má být nejen znalý, ale i neustále viditelný: má vysvětlovat, uklidňovat, varovat, a především mít připravený názor na vše, co právě rezonuje ve veřejném prostoru. Věda se má údajně „zlidštit", jenže v praxi to často znamená zrychlit, zjednodušit a zabalit do hesel.</p>
+    <p>Není sporu, že vědec žije v konkrétní době a že jeho práce má dopad. Přesto se obávám, že veřejná debata někdy zaměňuje dvě role: roli toho, kdo poznání vytváří, a roli toho, kdo s poznáním zachází politicky. Když se tyto role slévají, vzniká pokušení vydávat přání za data a data za morální verdikty.</p>
+    <p>Vědecký způsob myšlení je trpělivý. Ne proto, že by si liboval v odkladech, ale proto, že se musí opírat o důkazy, které se často rodí pomalu, a o pochybnost, která není slabostí, nýbrž metodou. Veřejnost však miluje jasná slova, a tak se stává, že nejhlasitější hlas bývá zaměněn za nejpřesnější.</p>
+    <p>Kdo pracuje s nejistotou, může působit váhavě; kdo mluví jistě, může působit kompetentně. Tato výměna dojmů je nebezpečná. Ne proto, že by vědci měli mlčet, ale proto, že by měli umět říkat „nevím" bez pocitu prohry. To je totiž možná nejpoctivější věta, jakou lze ve veřejném prostoru pronést.</p></div>
+
+    <div class="question-item"><span class="q-number">16.</span><span class="q-text">Autor tvrdí, že odborník musí být stále veřejně aktivní.</span><div class="toggle-group" data-q="c16"><button class="toggle-btn" data-value="ANO">ANO</button><button class="toggle-btn" data-value="NE">NE</button></div></div>
+    <div class="question-item"><span class="q-number">17.</span><span class="q-text">Podle autora se někdy plete vědecká role s politickou.</span><div class="toggle-group" data-q="c17"><button class="toggle-btn" data-value="ANO">ANO</button><button class="toggle-btn" data-value="NE">NE</button></div></div>
+    <div class="question-item"><span class="q-number">18.</span><span class="q-text">Autor dává najevo, že pochybnost je ve vědě selháním.</span><div class="toggle-group" data-q="c18"><button class="toggle-btn" data-value="ANO">ANO</button><button class="toggle-btn" data-value="NE">NE</button></div></div>
+    <div class="question-item"><span class="q-number">19.</span><span class="q-text">Z textu vyplývá, že jistota v projevu může klamat.</span><div class="toggle-group" data-q="c19"><button class="toggle-btn" data-value="ANO">ANO</button><button class="toggle-btn" data-value="NE">NE</button></div></div>
+  </div>
+
+  <!-- Úloha 3.2 -->
+  <div class="uloha-block">
+    <h3>Úloha 3.2 (4 body)</h3>
+    <p class="instructions">Přečtěte si shrnutí. Rozhodněte, zda je zcela v souladu s výchozím textem (ANO), nebo není (NE). Každá odpověď = 2 body.</p>
+
+    <div class="question-item"><span class="q-number">20.</span><span class="q-text">Autor uvažuje o očekáváních, která společnost klade na vědce. Tvrdí, že věda musí být rychlá a srozumitelná, jinak ztrácí smysl. Zároveň vyzdvihuje politickou roli vědců a doporučuje, aby vědci veřejně prosazovali konkrétní řešení, i kdyby pro ně ještě nebyla data.</span><div class="toggle-group" data-q="c20"><button class="toggle-btn" data-value="ANO">ANO</button><button class="toggle-btn" data-value="NE">NE</button></div></div>
+    <div class="question-item"><span class="q-number">21.</span><span class="q-text">Text rozlišuje roli vědce a roli člověka, který s poznáním zachází politicky. Autor varuje před záměnou dojmů za přesnost a zdůrazňuje, že pochybnost je metodou, nikoli slabostí. V závěru obhajuje schopnost říkat „nevím" jako projev intelektuální poctivosti.</span><div class="toggle-group" data-q="c21"><button class="toggle-btn" data-value="ANO">ANO</button><button class="toggle-btn" data-value="NE">NE</button></div></div>
+  </div>
+
+  <!-- Úloha 4 -->
+  <div class="uloha-block">
+    <h3>Úloha 4 (7 bodů)</h3>
+    <p class="instructions">Přečtěte si text a úkoly 22–28. U každého úkolu vyberte jednu správnou odpověď A–C.</p>
+
+    <div class="text-block"><div class="text-label">Když algoritmy rozhodují o tom, co uvidíme</div>
+    <p>Mnoho lidí má dojem, že internet je prostor svobodné volby: klikáme na to, co chceme, a čteme to, co nás zajímá. V praxi však velkou část naší pozornosti směrují doporučovací systémy. Tyto algoritmy nečtou naše myšlenky, ale pracují s naším chováním: co jsme otevřeli, jak dlouho jsme se zdrželi, kam jsme sjeli kurzorem, co jsme sdíleli, komu jsme odpověděli.</p>
+    <p>Základní logika je jednoduchá: nabídnout obsah, u kterého je nejpravděpodobnější, že u něj zůstaneme. Problém je, že „zůstaneme" nemusí znamenat „budeme lépe informováni". Lidský mozek reaguje silně na překvapení, pobouření i potvrzení vlastního názoru. Algoritmus se učí stejnou cestou jako člověk: opakováním úspěchu. Pokud pobouření zvyšuje dobu sledování, systém ho bude nevědomky posilovat.</p>
+    <p>Často se říká, že lidé žijí v názorových bublinách. Je to ale složitější. Bublina není nutně uzavřená; spíš je to prostředí, kde některé typy sdělení získávají výhodu. Algoritmus totiž není ideologický. Nemá „názor". Má jen cíl optimalizace. A právě proto může být jeho dopad politický: zvýhodňuje to, co je účinné, nikoli to, co je pravdivé.</p>
+    <p>Změnit to není snadné. Jedna možnost je větší transparentnost: aby platformy jasněji vysvětlovaly, proč nám něco ukazují. Druhá možnost je posílit uživatelskou kontrolu: aby si člověk mohl zvolit, zda chce obsah řazený chronologicky, tematicky, nebo „podle mě". Třetí možnost je vzdělávání: naučit se rozpoznat, kdy naše emoce řídí kliknutí více než naše potřeba informace.</p>
+    <p>Největší iluze je, že existuje neutrální feed. Každé řazení je nějaké rozhodnutí. Otázka tedy nezní, zda algoritmy ovlivňují náš pohled na svět, ale kdo a podle jakých pravidel to bude dělat – a zda tomu budeme rozumět.</p></div>
+
+    <div class="question-item"><span class="q-number">22.</span><span class="q-text">Co autor tvrdí v 1. odstavci?</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="c22" value="A"> A) Internet je především prostor, kde si obsah vybíráme bez vlivu technologií.</label><label class="radio-option"><input type="radio" name="c22" value="B"> B) Doporučovací systémy pracují s naším chováním a tím směrují pozornost.</label><label class="radio-option"><input type="radio" name="c22" value="C"> C) Algoritmy dokážou spolehlivě odhalit naše názory ještě před kliknutím.</label></div></div>
+    <div class="question-item"><span class="q-number">23.</span><span class="q-text">Jaký je hlavní problém logiky „udržet pozornost"?</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="c23" value="A"> A) Zaručuje vyšší informovanost uživatelů.</label><label class="radio-option"><input type="radio" name="c23" value="B"> B) Upřednostňuje obsah, který je pravdivý a ověřený.</label><label class="radio-option"><input type="radio" name="c23" value="C"> C) Může posilovat pobouření a emoce, protože zvyšují engagement.</label></div></div>
+    <div class="question-item"><span class="q-number">24.</span><span class="q-text">Jak autor chápe „názorovou bublinu"?</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="c24" value="A"> A) Jako úplně uzavřený prostor bez kontaktu s jinými názory.</label><label class="radio-option"><input type="radio" name="c24" value="B"> B) Jako prostředí, kde některé typy sdělení získávají výhodu.</label><label class="radio-option"><input type="radio" name="c24" value="C"> C) Jako vědomý projekt ideologických algoritmů.</label></div></div>
+    <div class="question-item"><span class="q-number">25.</span><span class="q-text">Proč může být dopad algoritmu politický, i když „nemá názor"?</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="c25" value="A"> A) Protože platformy ručně vybírají jen politický obsah.</label><label class="radio-option"><input type="radio" name="c25" value="B"> B) Protože zvýhodňuje účinné sdělení, ne nutně pravdivé.</label><label class="radio-option"><input type="radio" name="c25" value="C"> C) Protože algoritmy jsou navržené k podpoře konkrétní strany.</label></div></div>
+    <div class="question-item"><span class="q-number">26.</span><span class="q-text">Které řešení autor zmiňuje jako možné?</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="c26" value="A"> A) Zakázat veškeré doporučování obsahu.</label><label class="radio-option"><input type="radio" name="c26" value="B"> B) Zavést transparentnost a vysvětlování, proč něco vidíme.</label><label class="radio-option"><input type="radio" name="c26" value="C"> C) Nahradit algoritmy náhodným výběrem.</label></div></div>
+    <div class="question-item"><span class="q-number">27.</span><span class="q-text">Co autor považuje za „největší iluzi"?</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="c27" value="A"> A) Že lze mít neutrální feed bez jakéhokoli řazení.</label><label class="radio-option"><input type="radio" name="c27" value="B"> B) Že algoritmy lze úplně vypnout.</label><label class="radio-option"><input type="radio" name="c27" value="C"> C) Že lidé nikdy neklikají pod vlivem emocí.</label></div></div>
+    <div class="question-item"><span class="q-number">28.</span><span class="q-text">Jaká je závěrečná otázka textu?</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="c28" value="A"> A) Zda algoritmy existují.</label><label class="radio-option"><input type="radio" name="c28" value="B"> B) Kdo bude pravidla řazení určovat a zda tomu budeme rozumět.</label><label class="radio-option"><input type="radio" name="c28" value="C"> C) Zda se lidé přestanou zajímat o internet.</label></div></div>
+  </div>
+
+  <div class="section-actions">
+    <button class="btn btn-primary lock-btn" onclick="lockAndScore('sec-cteni')">Odevzdat sekci</button>
+    <span class="section-locked-msg" style="display:none">Sekce odevzdána</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- POSLECH S POROZUMĚNÍM                       -->
+<!-- ════════════════════════════════════════════ -->
+<div id="sec-poslech" class="tab-content">
+  <div class="section-header">
+    <h2>Poslech s porozuměním</h2>
+    <span class="section-badge">55 min · 30 bodů</span>
+  </div>
+  <div class="timer-bar">
+    <span class="timer-display">55:00</span>
+    <div class="timer-controls">
+      <button class="btn btn-sm timer-pause">&#9654; Spustit</button>
+    </div>
+  </div>
+
+  <div class="uloha-block">
+    <h3>Úloha 1 (6 bodů) — výběr A–C</h3>
+    <p class="instructions">Přečtěte si transkript a u úkolů 1–6 vyberte jednu správnou odpověď A–C.</p>
+
+    <div class="text-block"><div class="text-label">Transkript: Zpráva — Sdílené bydlení (k 1–2)</div><p>„…Sdílené bydlení je dnes pro řadu lidí nejen finanční nutnost, ale i způsob, jak nezůstat ve městě sám… Někteří spolubydlení vyhledávají kvůli kontaktům… Největší potíže mívají lidé s domácími mazlíčky, protože majitelé bytů často stanoví zákaz…"</p></div>
+    <div class="text-block"><div class="text-label">Transkript: Rozhovor — Digitální identita (k 3–4)</div><p>„…Digitální identita není povinná, ale výrazně zjednodušuje komunikaci se státem i bankami… Největší slabinou bývá uživatel: opakovaná hesla, klikání na falešné odkazy… Dvojfaktor je doporučený i jednotlivcům… phishing lidé podceňují…"</p></div>
+    <div class="text-block"><div class="text-label">Transkript: Reportáž — Rekonstrukce nádraží (k 5–6)</div><p>„…Cílem rekonstrukce je zachovat historické prvky a zlepšit přestupy… Spor se vede hlavně o parkování a dopravní zátěž v okolí…"</p></div>
+
+    <div class="question-item"><span class="q-number">1.</span><span class="q-text">(Sdílené bydlení) Kdo má podle zprávy nejčastěji problém najít spolubydlení?</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="p1" value="A"> A) Lidé s domácími mazlíčky.</label><label class="radio-option"><input type="radio" name="p1" value="B"> B) Lidé s nepravidelnou pracovní dobou.</label><label class="radio-option"><input type="radio" name="p1" value="C"> C) Lidé, kteří chtějí bydlet sami.</label></div></div>
+    <div class="question-item"><span class="q-number">2.</span><span class="q-text">Které tvrzení je podle zprávy pravdivé?</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="p2" value="A"> A) Sdílené bydlení ztrácí popularitu.</label><label class="radio-option"><input type="radio" name="p2" value="B"> B) Lidé často volí spolubydlení i kvůli sociálním kontaktům.</label><label class="radio-option"><input type="radio" name="p2" value="C"> C) Nejvíc se sdílí byty v malých městech.</label></div></div>
+    <div class="question-item"><span class="q-number">3.</span><span class="q-text">(Digitální identita) Co říká expert o digitální identitě?</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="p3" value="A"> A) Je povinná pro všechny občany.</label><label class="radio-option"><input type="radio" name="p3" value="B"> B) Je užitečná, ale vyžaduje základní hygienu hesel.</label><label class="radio-option"><input type="radio" name="p3" value="C"> C) Nelze ji použít ke komunikaci se státem.</label></div></div>
+    <div class="question-item"><span class="q-number">4.</span><span class="q-text">Které tvrzení je pravdivé?</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="p4" value="A"> A) Dvojfaktor je doporučený jen firmám.</label><label class="radio-option"><input type="radio" name="p4" value="B"> B) Největší riziko je v technické chybě systému, ne v uživateli.</label><label class="radio-option"><input type="radio" name="p4" value="C"> C) Lidé často podceňují phishing.</label></div></div>
+    <div class="question-item"><span class="q-number">5.</span><span class="q-text">(Rekonstrukce nádraží) Jaký je cíl projektu?</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="p5" value="A"> A) Zrušit starou budovu a postavit obchodní centrum.</label><label class="radio-option"><input type="radio" name="p5" value="B"> B) Zachovat historické prvky a zlepšit přestupy.</label><label class="radio-option"><input type="radio" name="p5" value="C"> C) Přesunout nádraží mimo centrum.</label></div></div>
+    <div class="question-item"><span class="q-number">6.</span><span class="q-text">Co je podle reportáže největší spor?</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="p6" value="A"> A) Cena jízdného.</label><label class="radio-option"><input type="radio" name="p6" value="B"> B) Parkování a dopravní zátěž v okolí.</label><label class="radio-option"><input type="radio" name="p6" value="C"> C) Bezpečnost vlaků.</label></div></div>
+  </div>
+
+  <div class="uloha-block">
+    <h3>Úloha 2 (9 bodů) — doplňte 1–3 slova</h3>
+    <p class="instructions">Přečtěte si transkript přednášky a doplňte do resumé 1–3 slova.</p>
+    <div class="text-block"><div class="text-label">Transkript: Přednáška — Kritické čtení médií</div><p>„…posláním čtenáře není informaci přijmout, ale interpretovat… korelace není příčina… neznamená to, že jev platí pro každého… kdo data sbírá… uvádějte zdroje… metodiku… bez toho může být graf zavádějící… dramatická slova jsou emoční spouštěče… mediální gramotnost je forma občanské obrany… co by to znamenalo, kdyby platil opak…"</p></div>
+
+    <div class="question-item"><span class="q-number">7.</span><span class="q-text">Posláním čtenáře není informaci _________, ale interpretovat v kontextu.</span><br><input class="q-input" data-q="p7" placeholder="1–3 slova"></div>
+    <div class="question-item"><span class="q-number">8.</span><span class="q-text">Často se zaměňuje _________ s příčinou, což vede k chybným závěrům.</span><br><input class="q-input" data-q="p8" placeholder="1–3 slova"></div>
+    <div class="question-item"><span class="q-number">9.</span><span class="q-text">Pokud je nějaký jev statisticky častější, _________, že je typický pro každého jednotlivce.</span><br><input class="q-input" data-q="p9" placeholder="1–3 slova"></div>
+    <div class="question-item"><span class="q-number">10.</span><span class="q-text">Základní otázka zní: kdo data _________ a za jakým účelem.</span><br><input class="q-input" data-q="p10" placeholder="1–3 slova"></div>
+    <div class="question-item"><span class="q-number">11.</span><span class="q-text">Důležité je sledovat, zda jsou uvedeny _________ a velikost vzorku.</span><br><input class="q-input" data-q="p11" placeholder="1–3 slova"></div>
+    <div class="question-item"><span class="q-number">12.</span><span class="q-text">Bez toho může i přesný graf působit přesvědčivě, ale být _________.</span><br><input class="q-input" data-q="p12" placeholder="1–3 slova"></div>
+    <div class="question-item"><span class="q-number">13.</span><span class="q-text">Slova jako „šokující" nebo „dramatický" jsou často _________.</span><br><input class="q-input" data-q="p13" placeholder="1–3 slova"></div>
+    <div class="question-item"><span class="q-number">14.</span><span class="q-text">Dobrá orientace v médiích je forma _________.</span><br><input class="q-input" data-q="p14" placeholder="1–3 slova"></div>
+    <div class="question-item"><span class="q-number">15.</span><span class="q-text">Nejúčinnější obranou je zvyk klást si otázku „co by to _________, kdyby platil opak?"</span><br><input class="q-input" data-q="p15" placeholder="1–3 slova"></div>
+  </div>
+
+  <div class="uloha-block">
+    <h3>Úloha 3 (9 bodů) — ANO/NE</h3>
+    <p class="instructions">Přečtěte si transkript diskuse a rozhodněte ANO/NE.</p>
+    <div class="text-block"><div class="text-label">Transkript: Diskuse — Práce na dálku</div><p>„…neplatí, že remote snižuje produktivitu všude… důležité jsou cíle a měření… hybrid může fungovat lépe… kancelář je důležitá pro mentoring… remote nemusí zhoršit komunikaci, když jsou nastavené kanály… firmy řeší náklady… a zároveň nerovnost profesí…"</p></div>
+
+    <div class="question-item"><span class="q-number">16.</span><span class="q-text">Host A tvrdí, že práce na dálku snižuje produktivitu ve všech oborech.</span><div class="toggle-group" data-q="p16"><button class="toggle-btn" data-value="ANO">ANO</button><button class="toggle-btn" data-value="NE">NE</button></div></div>
+    <div class="question-item"><span class="q-number">17.</span><span class="q-text">Host B říká, že klíčové je nastavení pravidel a měření výsledků.</span><div class="toggle-group" data-q="p17"><button class="toggle-btn" data-value="ANO">ANO</button><button class="toggle-btn" data-value="NE">NE</button></div></div>
+    <div class="question-item"><span class="q-number">18.</span><span class="q-text">Moderátor tvrdí, že lidé se doma neumí soustředit.</span><div class="toggle-group" data-q="p18"><button class="toggle-btn" data-value="ANO">ANO</button><button class="toggle-btn" data-value="NE">NE</button></div></div>
+    <div class="question-item"><span class="q-number">19.</span><span class="q-text">Host A připouští, že některé týmy fungují hybridně lépe.</span><div class="toggle-group" data-q="p19"><button class="toggle-btn" data-value="ANO">ANO</button><button class="toggle-btn" data-value="NE">NE</button></div></div>
+    <div class="question-item"><span class="q-number">20.</span><span class="q-text">Host B tvrdí, že kancelář má význam hlavně pro socializaci a mentoring.</span><div class="toggle-group" data-q="p20"><button class="toggle-btn" data-value="ANO">ANO</button><button class="toggle-btn" data-value="NE">NE</button></div></div>
+    <div class="question-item"><span class="q-number">21.</span><span class="q-text">V debatě zazní, že remote vždy zhoršuje komunikaci.</span><div class="toggle-group" data-q="p21"><button class="toggle-btn" data-value="ANO">ANO</button><button class="toggle-btn" data-value="NE">NE</button></div></div>
+    <div class="question-item"><span class="q-number">22.</span><span class="q-text">Moderátor se snaží shrnovat a hledat kompromisní závěry.</span><div class="toggle-group" data-q="p22"><button class="toggle-btn" data-value="ANO">ANO</button><button class="toggle-btn" data-value="NE">NE</button></div></div>
+    <div class="question-item"><span class="q-number">23.</span><span class="q-text">Host A mluví o nerovnosti mezi profesemi, které remote dělat nemohou.</span><div class="toggle-group" data-q="p23"><button class="toggle-btn" data-value="ANO">ANO</button><button class="toggle-btn" data-value="NE">NE</button></div></div>
+    <div class="question-item"><span class="q-number">24.</span><span class="q-text">Host B tvrdí, že firmy ruší kanceláře hlavně kvůli ekologii, ne kvůli nákladům.</span><div class="toggle-group" data-q="p24"><button class="toggle-btn" data-value="ANO">ANO</button><button class="toggle-btn" data-value="NE">NE</button></div></div>
+  </div>
+
+  <div class="uloha-block">
+    <h3>Úloha 4 (6 bodů) — přiřazování A–H</h3>
+    <p class="instructions">Ke každému monologu (25–30) přiřaďte jednu správnou větu A–H. Dvě věty jsou navíc. Téma: Umělá inteligence v praxi.</p>
+    <div class="text-block"><p><strong>A)</strong> Pomůže odhalit chyby dřív, než vzniknou škody.<br><strong>B)</strong> Je to hlavně hračka pro bohaté.<br><strong>C)</strong> Naučí se mluvit přirozeněji než člověk.<br><strong>D)</strong> Ušetří čas, ale bez kontroly může škodit.<br><strong>E)</strong> Je ideální do prostředí, kde člověk nemůže být.<br><strong>F)</strong> Největší přínos je ve vzdělávání dětí.<br><strong>G)</strong> Zlepší diagnostiku, pokud jsou data kvalitní.<br><strong>H)</strong> Všechno zaznamená a pošle varování.</p></div>
+
+    <div class="text-block"><p><em>25: prevence chyb ve výrobě; 26: AI v nemocnici a data; 27: kontrola a rizika automatizace; 28: prostředí nebezpečné pro člověka; 29: systém loguje a posílá varování; 30: „hračka pro bohaté"</em></p></div>
+
+    <div class="question-item"><span class="q-number">25.</span><select class="q-select" data-q="p25"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option></select></div>
+    <div class="question-item"><span class="q-number">26.</span><select class="q-select" data-q="p26"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option></select></div>
+    <div class="question-item"><span class="q-number">27.</span><select class="q-select" data-q="p27"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option></select></div>
+    <div class="question-item"><span class="q-number">28.</span><select class="q-select" data-q="p28"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option></select></div>
+    <div class="question-item"><span class="q-number">29.</span><select class="q-select" data-q="p29"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option></select></div>
+    <div class="question-item"><span class="q-number">30.</span><select class="q-select" data-q="p30"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option></select></div>
+  </div>
+
+  <div class="section-actions">
+    <button class="btn btn-primary lock-btn" onclick="lockAndScore('sec-poslech')">Odevzdat sekci</button>
+    <span class="section-locked-msg" style="display:none">Sekce odevzdána</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- GRAMATICKO-LEXIKÁLNÍ TEST                   -->
+<!-- ════════════════════════════════════════════ -->
+<div id="sec-glt" class="tab-content">
+  <div class="section-header">
+    <h2>Gramaticko-lexikální test</h2>
+    <span class="section-badge">50 min · 30 bodů</span>
+  </div>
+  <div class="timer-bar">
+    <span class="timer-display">50:00</span>
+    <div class="timer-controls">
+      <button class="btn btn-sm timer-pause">&#9654; Spustit</button>
+    </div>
+  </div>
+
+  <!-- GLT Úloha 1 -->
+  <div class="uloha-block">
+    <h3>Úloha 1 (2 body)</h3>
+    <p class="instructions">U úkolů 1–2 vyberte z nabídky A–E slovo stejného významu jako podtržené slovo.<br>A) ověřit &nbsp; B) přehánět &nbsp; C) výstižná &nbsp; D) nepřesná &nbsp; E) popřít</p>
+    <div class="question-item"><span class="q-number">1.</span><span class="q-text">Jeho argumentace byla překvapivě <u>přiléhavá</u>.</span><br><select class="q-select" data-q="g1"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+    <div class="question-item"><span class="q-number">2.</span><span class="q-text">Výsledek experimentu je třeba <u>verifikovat</u>.</span><br><select class="q-select" data-q="g2"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+  </div>
+
+  <!-- GLT Úloha 2 -->
+  <div class="uloha-block">
+    <h3>Úloha 2 (4 body)</h3>
+    <p class="instructions">U úkolů 3–4 vyberte z nabídky A–E.<br>A) házení hrachu na zeď &nbsp; B) bílá vrána &nbsp; C) mlácení prázdné slámy &nbsp; D) tichá voda &nbsp; E) poslední kapka</p>
+    <div class="question-item"><span class="q-number">3.</span><span class="q-text">Po měsících slibů zůstalo nakonec všechno při starém – byla to jen _____.</span><br><select class="q-select" data-q="g3"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+    <div class="question-item"><span class="q-number">4.</span><span class="q-text">V kolektivu působil jako _____, nikdo nevěděl, co si o něm myslet.</span><br><select class="q-select" data-q="g4"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+    <p class="instructions" style="margin-top:1rem">U úkolů 5–6 vyberte z nabídky A–E.<br>A) syčely &nbsp; B) šustilo &nbsp; C) zaduněly &nbsp; D) zaskřípaly &nbsp; E) šplouchaly</p>
+    <div class="question-item"><span class="q-number">5.</span><span class="q-text">Jakmile se rozhostilo ticho, slyšeli jsme, jak listí venku _____ ve větru.</span><br><select class="q-select" data-q="g5"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+    <div class="question-item"><span class="q-number">6.</span><span class="q-text">Když vlak zabrzdil, kovové části _____ a lidé se instinktivně chytili madel.</span><br><select class="q-select" data-q="g6"><option value="">—</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option></select></div>
+  </div>
+
+  <!-- GLT Úloha 3 -->
+  <div class="uloha-block">
+    <h3>Úloha 3 (10 bodů)</h3>
+    <p class="instructions">Dejte slova v závorce do správného tvaru; případně doplňte předložku.</p>
+    <div class="question-item"><span class="q-number">7.</span><span class="q-text">„To jsou otázky, bez __________ (jenž) se v etice neobejdeme."</span><br><input class="q-input" data-q="g7" placeholder="doplňte"></div>
+    <div class="question-item"><span class="q-number">8.</span><span class="q-text">Kdybychom jednali dřív, možná by se __________ (vyhnout se) konfliktu.</span><br><input class="q-input" data-q="g8" placeholder="doplňte"></div>
+    <div class="question-item"><span class="q-number">9.</span><span class="q-text">Nemám přehled __________ (tamten) detailech.</span><br><input class="q-input" data-q="g9" placeholder="doplňte"></div>
+    <div class="question-item"><span class="q-number">10.</span><span class="q-text">Bez ohledu __________ (ona, názor) se rozhodlo jinak.</span><br><input class="q-input" data-q="g10" placeholder="doplňte"></div>
+    <div class="question-item"><span class="q-number">11.</span><span class="q-text">Odmítám to vysvětlovat __________ (kdejaký, člověk) na internetu.</span><br><input class="q-input" data-q="g11" placeholder="doplňte"></div>
+    <div class="question-item"><span class="q-number">12.</span><span class="q-text">Prosím vás, tu schůzku mi rozhodně __________ (odříct) nezkoušejte.</span><br><input class="q-input" data-q="g12" placeholder="doplňte"></div>
+    <div class="question-item"><span class="q-number">13.</span><span class="q-text">Doporučuji poslech __________ (výjimečný, nahrávka) z archivu.</span><br><input class="q-input" data-q="g13" placeholder="doplňte"></div>
+    <div class="question-item"><span class="q-number">14.</span><span class="q-text">Naše instituce dosud __________ (nečelit) podobnému tlaku.</span><br><input class="q-input" data-q="g14" placeholder="doplňte"></div>
+    <div class="question-item"><span class="q-number">15.</span><span class="q-text">Situaci lze hodnotit __________ (mnoho, perspektiva).</span><br><input class="q-input" data-q="g15" placeholder="doplňte"></div>
+    <div class="question-item"><span class="q-number">16.</span><span class="q-text">V demokratické společnosti nesmí __________ (zneužívat) moc.</span><br><input class="q-input" data-q="g16" placeholder="doplňte"></div>
+  </div>
+
+  <!-- GLT Úloha 4 -->
+  <div class="uloha-block">
+    <h3>Úloha 4 (2 body)</h3>
+    <div class="question-item"><span class="q-number">17.</span><span class="q-text">Je to tak zásadní, _____ to musíme řešit hned.</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="g17" value="A"> A) přestože</label><label class="radio-option"><input type="radio" name="g17" value="B"> B) že</label><label class="radio-option"><input type="radio" name="g17" value="C"> C) aniž</label></div></div>
+    <div class="question-item"><span class="q-number">18.</span><span class="q-text">Omluvil se, _____ to zjevně nemyslel špatně.</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="g18" value="A"> A) protože</label><label class="radio-option"><input type="radio" name="g18" value="B"> B) aby</label><label class="radio-option"><input type="radio" name="g18" value="C"> C) přesto</label></div></div>
+  </div>
+
+  <!-- GLT Úloha 5 -->
+  <div class="uloha-block">
+    <h3>Úloha 5 (2 body)</h3>
+    <p class="instructions">Vyberte větu, která má jiný význam než původní.</p>
+    <div class="question-item"><span class="q-number">19.</span><span class="q-text">Přestože byl návrh dobře míněný, vyvolal odpor.</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="g19" value="A"> A) Návrh byl dobře míněný, a přesto vyvolal odpor.</label><label class="radio-option"><input type="radio" name="g19" value="B"> B) Návrh vyvolal odpor, protože byl dobře míněný.</label><label class="radio-option"><input type="radio" name="g19" value="C"> C) I když byl návrh dobře míněný, vyvolal odpor.</label></div></div>
+    <div class="question-item"><span class="q-number">20.</span><span class="q-text">Navzdory varování pokračoval.</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="g20" value="A"> A) Nehledě na varování pokračoval.</label><label class="radio-option"><input type="radio" name="g20" value="B"> B) Pokračoval, i když byl varován.</label><label class="radio-option"><input type="radio" name="g20" value="C"> C) Pokračoval proto, že byl varován.</label></div></div>
+  </div>
+
+  <!-- GLT Úloha 6 -->
+  <div class="uloha-block">
+    <h3>Úloha 6 (7 bodů)</h3>
+    <div class="question-item"><span class="q-number">21.</span><span class="q-text">Na zahradě jsme dětem udělali _____.</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="g21" value="A"> A) pískoviště</label><label class="radio-option"><input type="radio" name="g21" value="B"> B) pískovnu</label><label class="radio-option"><input type="radio" name="g21" value="C"> C) písčinu</label></div></div>
+    <div class="question-item"><span class="q-number">22.</span><span class="q-text">Jeho výrok _____ debatu.</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="g22" value="A"> A) rozvířil</label><label class="radio-option"><input type="radio" name="g22" value="B"> B) rozvrátil</label><label class="radio-option"><input type="radio" name="g22" value="C"> C) podvrátil</label></div></div>
+    <div class="question-item"><span class="q-number">23.</span><span class="q-text">Na _____ povrch dopadá nejvíc slunce.</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="g23" value="A"> A) zemský</label><label class="radio-option"><input type="radio" name="g23" value="B"> B) zemitý</label><label class="radio-option"><input type="radio" name="g23" value="C"> C) zemní</label></div></div>
+    <div class="question-item"><span class="q-number">24.</span><span class="q-text">Pořád mi _____, že jsem to nezvládl.</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="g24" value="A"> A) předhazuje</label><label class="radio-option"><input type="radio" name="g24" value="B"> B) přehazuje</label><label class="radio-option"><input type="radio" name="g24" value="C"> C) přihazuje</label></div></div>
+    <div class="question-item"><span class="q-number">25.</span><span class="q-text">Vůz je vybaven _____ systémem.</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="g25" value="A"> A) chlazeným</label><label class="radio-option"><input type="radio" name="g25" value="B"> B) chladicím</label><label class="radio-option"><input type="radio" name="g25" value="C"> C) chladovým</label></div></div>
+    <div class="question-item"><span class="q-number">26.</span><span class="q-text">Unikl mi jeden důležitý detail – prostě mi _____.</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="g26" value="A"> A) pronikl</label><label class="radio-option"><input type="radio" name="g26" value="B"> B) zanikl</label><label class="radio-option"><input type="radio" name="g26" value="C"> C) unikl</label></div></div>
+    <div class="question-item"><span class="q-number">27.</span><span class="q-text">Nad Atlantikem je tlaková _____.</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="g27" value="A"> A) níže</label><label class="radio-option"><input type="radio" name="g27" value="B"> B) nížina</label><label class="radio-option"><input type="radio" name="g27" value="C"> C) nízkost</label></div></div>
+  </div>
+
+  <!-- GLT Úloha 7 -->
+  <div class="uloha-block">
+    <h3>Úloha 7 (2 body)</h3>
+    <div class="question-item"><span class="q-number">28.</span><span class="q-text">Vyberte text vyjadřující ironii.</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="g28" value="A"> A) „Skvělý nápad – zavřít knihovnu právě v týdnu zkoušek, to muselo dát práce to vymyslet."</label><label class="radio-option"><input type="radio" name="g28" value="B"> B) „Knihovna mění otevírací dobu kvůli rekonstrukci."</label><label class="radio-option"><input type="radio" name="g28" value="C"> C) „Čtenáři byli informováni o plánované změně."</label></div></div>
+    <div class="question-item"><span class="q-number">29.</span><span class="q-text">Vyberte text z vědecké publikace.</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="g29" value="A"> A) „Je zřejmé, že lidé dnes vůbec neumějí odpočívat."</label><label class="radio-option"><input type="radio" name="g29" value="B"> B) „Analýza zahrnovala n = 1 240 respondentů; byla použita logistická regrese."</label><label class="radio-option"><input type="radio" name="g29" value="C"> C) „Nejlepší je řídit se intuicí, protože čísla stejně lžou."</label></div></div>
+  </div>
+
+  <!-- GLT Úloha 8 -->
+  <div class="uloha-block">
+    <h3>Úloha 8 (1 bod)</h3>
+    <div class="question-item"><span class="q-number">30.</span><span class="q-text">Vyberte možnost s nevhodnou formulací pro situaci.</span>
+      <div class="radio-group"><label class="radio-option"><input type="radio" name="g30" value="A"> A) Úřední e-mail: „Nazdar, pošli mi to hned, díky."</label><label class="radio-option"><input type="radio" name="g30" value="B"> B) Kamarádovi: „Hele, pošli mi to, až budeš mít chvíli."</label><label class="radio-option"><input type="radio" name="g30" value="C"> C) Na poradě: „Prosím, pošlete mi to do konce dne."</label></div></div>
+  </div>
+
+  <div class="section-actions">
+    <button class="btn btn-primary lock-btn" onclick="lockAndScore('sec-glt')">Odevzdat sekci</button>
+    <span class="section-locked-msg" style="display:none">Sekce odevzdána</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- PSANÍ                                       -->
+<!-- ════════════════════════════════════════════ -->
+<div id="sec-psani" class="tab-content">
+  <div class="section-header">
+    <h2>Psaní</h2>
+    <span class="section-badge">90 min · 29 bodů</span>
+  </div>
+  <div class="timer-bar">
+    <span class="timer-display">90:00</span>
+    <div class="timer-controls">
+      <button class="btn btn-sm timer-pause">&#9654; Spustit</button>
+    </div>
+  </div>
+
+  <div class="uloha-block">
+    <h3>Úloha 1 — Úvaha (29 bodů)</h3>
+    <p class="instructions">Vyberte si jedno ze dvou témat a napište úvahu (min. 350 slov).</p>
+    <div class="topic-selector">
+      <button class="topic-btn" onclick="this.parentElement.querySelectorAll('.topic-btn').forEach(b=>b.classList.remove('selected'));this.classList.add('selected')"><strong>Téma A:</strong> Veřejná debata je dnes často hlučná, ale málo věcná. Zamyslete se, proč se debata polarizuje, jaké to má důsledky, co může jednotlivec dělat.</button>
+      <button class="topic-btn" onclick="this.parentElement.querySelectorAll('.topic-btn').forEach(b=>b.classList.remove('selected'));this.classList.add('selected')"><strong>Téma B:</strong> Technologie nám šetří čas, ale zároveň nám ho berou. Zamyslete se, jak technologie mění návyky, kdy pomáhají/škodí, jak si nastavit hranice.</button>
+    </div>
+    <textarea class="writing-area" id="psani-text" placeholder="Pište úvahu zde…"></textarea>
+    <div class="word-counter">Počet slov: <span class="count">0</span> <span style="color:#8b949e">(min. 350)</span></div>
+  </div>
+
+  <div class="section-actions">
+    <span style="color:#8b949e;font-size:0.85rem">Psaní nelze hodnotit automaticky — text se uloží.</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- MLUVENÍ                                     -->
+<!-- ════════════════════════════════════════════ -->
+<div id="sec-mluveni" class="tab-content">
+  <div class="section-header">
+    <h2>Mluvení</h2>
+    <span class="section-badge">19–20 min · 30 bodů</span>
+  </div>
+
+  <div class="speaking-card">
+    <h4>Úloha 1 — Dialog s examinátorem (6–7 min)</h4>
+    <p style="color:#8b949e;margin-bottom:0.75rem">Téma: PRÁCE A SMYSL</p>
+    <div class="impulse">„Podle nedávného průzkumu by téměř polovina mladých lidí přijala nižší plat výměnou za práci, která jim dává smysl. Zároveň ale přibývá těch, kteří říkají, že smysl už v práci ani nehledají – chtějí ho mít mimo ni. Znamená to, že se mění naše představa o úspěchu?"</div>
+    <p style="color:#8b949e;font-size:0.85rem;margin-bottom:0.5rem">Příklady replik examinátora:</p>
+    <ul>
+      <li>Není „smysl práce" jen luxus pro ty, kteří mají jistoty?</li>
+      <li>Co je podle vás větší problém: nízký plat, nebo vyhoření?</li>
+      <li>Myslíte, že by měla být práce vždycky i „poslání"?</li>
+      <li>Jak do toho vstupuje tlak sociálních sítí a srovnávání?</li>
+    </ul>
+  </div>
+
+  <div class="speaking-card">
+    <h4>Úloha 2 — Monolog (10–11 min včetně přípravy)</h4>
+    <p style="color:#8b949e;margin-bottom:0.75rem">Vyberte téma A nebo B. 5 min příprava, min. 4 min promluva.</p>
+    <div class="impulse"><strong>Téma A: INFORMACE A DŮVĚRA</strong><br>Zmiňte se: proč lidé věří neověřeným informacím; jakou roli mají média a školy; co znamená „důvěra" ve společnosti.</div>
+    <div class="impulse"><strong>Téma B: MĚSTO PRO LIDI</strong><br>Zmiňte se: co dělá město příjemným k životu; jak vyvažovat dopravu, zeleň a bydlení; proč je důležitá účast obyvatel na rozhodování.</div>
+  </div>
+
+  <div class="section-actions">
+    <span style="color:#8b949e;font-size:0.85rem">Ústní zkouška — nelze hodnotit online. Procvičuj nahlas.</span>
+  </div>
+</div>
+
+  </main>
+
+  <!-- Finish bar -->
+  <div class="finish-bar">
+    <span class="progress-text" id="progress-text">0 / 3 sekcí odevzdáno</span>
+    <button class="btn btn-primary" id="finish-btn" onclick="finishTest()">Dokončit test a zobrazit výsledky</button>
+  </div>
+
+  <!-- Results overlay -->
+  <div id="results-overlay" class="results-overlay">
+    <div class="results-panel"></div>
+  </div>
+
+  <script src="cce-c1.js"></script>
+  <script>
+  /* ── Answer keys for Test 1 ── */
+  const KEYS = {
+    'sec-cteni': {
+      c1:'C', c2:'E', c3:'B', c4:'A', c5:'D', c6:'B', c7:'C', c8:'E',
+      c9:'B', c10:'A', c11:'E', c12:'C', c13:'G', c14:'D', c15:'H',
+      c16:'NE', c17:'ANO', c18:'NE', c19:'ANO',
+      c20:'NE', c21:'ANO',
+      c22:'B', c23:'C', c24:'B', c25:'B', c26:'B', c27:'A', c28:'B'
+    },
+    'sec-poslech': {
+      p1:'A', p2:'B', p3:'B', p4:'C', p5:'B', p6:'B',
+      p7:['přijmout'], p8:['korelace'], p9:['neznamená to','neznamená'],
+      p10:['sbírá'], p11:['zdroje','metodika','metodiku','zdroje a metodiku'],
+      p12:['zavádějící'], p13:['emoční spouštěče','emočními spouštěči','emoční spouštěč'],
+      p14:['občanské obrany'], p15:['znamenalo'],
+      p16:'NE', p17:'ANO', p18:'NE', p19:'ANO', p20:'ANO', p21:'NE', p22:'ANO', p23:'ANO', p24:'NE',
+      p25:'A', p26:'G', p27:'D', p28:'E', p29:'H', p30:'B'
+    },
+    'sec-glt': {
+      g1:'C', g2:'A',
+      g3:'C', g4:'D', g5:'B', g6:'D',
+      g7:['nichž','jichž'], g8:['vyhnuli','vyhnul','vyhnula'],
+      g9:['o tamtěch','o těch'], g10:['na její názor','na její názory'],
+      g11:['kdejakému člověku','kdejakému člověkovi'],
+      g12:['odřeknout','odříct','odříknout'],
+      g13:['výjimečných nahrávek'],
+      g14:['nečelila','nečelily'],
+      g15:['z mnoha perspektiv','z více perspektiv'],
+      g16:['být zneužívána','zneužívat','se zneužívat','být zneužívána moc'],
+      g17:'B', g18:'C',
+      g19:'B', g20:'C',
+      g21:'A', g22:'A', g23:'A', g24:'A', g25:'B', g26:'C', g27:'A',
+      g28:'A', g29:'B',
+      g30:'A'
+    }
+  };
+
+  /* Points map — most are 1pt, Úloha 3.2 (c20, c21) = 2pts each */
+  const POINTS = {};
+  for (const sec of Object.values(KEYS)) {
+    for (const k of Object.keys(sec)) POINTS[k] = 1;
+  }
+  POINTS['c20'] = 2;
+  POINTS['c21'] = 2;
+
+  const sectionScores = {};
+  let sectionsSubmitted = 0;
+
+  function lockAndScore(sectionId) {
+    if (sectionScores[sectionId]) return;
+    const key = KEYS[sectionId];
+    if (!key) return;
+    const result = CCE.scoreSection(sectionId, key, POINTS);
+    sectionScores[sectionId] = result;
+    CCE.lockSection(sectionId);
+    CCE.showReview(sectionId, result);
+    sectionsSubmitted++;
+    document.getElementById('progress-text').textContent = `${sectionsSubmitted} / 3 sekcí odevzdáno`;
+  }
+
+  function finishTest() {
+    // Auto-submit any remaining sections
+    for (const sid of ['sec-cteni','sec-poslech','sec-glt']) {
+      if (!sectionScores[sid]) lockAndScore(sid);
+    }
+
+    const sections = [
+      { name:'Čtení s porozuměním', autoGradable:true, score:{ total: sectionScores['sec-cteni'].total, max:30, perQuestion: sectionScores['sec-cteni'].perQuestion }},
+      { name:'Poslech s porozuměním', autoGradable:true, score:{ total: sectionScores['sec-poslech'].total, max:30, perQuestion: sectionScores['sec-poslech'].perQuestion }},
+      { name:'Gramaticko-lexikální test', autoGradable:true, score:{ total: sectionScores['sec-glt'].total, max:30, perQuestion: sectionScores['sec-glt'].perQuestion }},
+      { name:'Psaní', autoGradable:false, score:{ total:0, max:29 }},
+      { name:'Mluvení', autoGradable:false, score:{ total:0, max:30 }}
+    ];
+
+    CCE.showResults(sections);
+  }
+
+  /* ── Init ── */
+  document.addEventListener('DOMContentLoaded', () => {
+    CCE.initTabs();
+    CCE.initToggles();
+    CCE.initTopicSelectors();
+    CCE.initWordCounters();
+    CCE.initAutoSave();
+    CCE.loadProgress();
+    CCE.initTimer('sec-cteni', 70);
+    CCE.initTimer('sec-poslech', 55);
+    CCE.initTimer('sec-glt', 50);
+    CCE.initTimer('sec-psani', 90);
+  });
+  </script>
+</body>
+</html>
