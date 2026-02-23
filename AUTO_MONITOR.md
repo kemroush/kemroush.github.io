@@ -4,7 +4,7 @@ Hlídač nových ojetých SUV s automatem na sauto.cz. Výsledky jsou na `cars.h
 
 ## Jak to funguje
 
-**GitHub Actions** spustí `auto_monitor.py` 3× denně (8:00, 13:00, 18:00 CET). Skript scrapuje sauto.cz přes `curl`, uloží nové inzeráty do JSON a commitne je zpět do repa. GitHub Pages pak okamžitě publikuje výsledky.
+**GitHub Actions** spustí `auto_monitor.py` 4× denně (7:00, 11:00, 16:00, 20:00 CET). V létě (CEST = UTC+2) se časy posunou o hodinu dopředu — cron je v UTC. Skript scrapuje sauto.cz přes `curl`, uloží nové inzeráty do JSON a commitne je zpět do repa. GitHub Pages pak okamžitě publikuje výsledky.
 
 Den se počítá od **6:00 do 6:00**. Více spuštění za den doplňuje stejný soubor.
 
@@ -18,7 +18,7 @@ data/
   seen_cars.json         – globální seznam ID viděných inzerátů (dedupl. napříč dny)
   cars_YYYY-MM-DD.json   – inzeráty pro daný den
 .github/workflows/
-  auto-monitor.yml       – cron workflow (7:00, 12:00, 17:00 UTC)
+  auto-monitor.yml       – cron workflow (6:00, 10:00, 15:00, 19:00 UTC = 7:00, 11:00, 16:00, 20:00 CET)
 ```
 
 ## Filtr
