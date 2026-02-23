@@ -1,0 +1,36 @@
+name: Auto Monitor
+
+on:
+  schedule:
+    # 8:00, 13:00, 18:00 CET (UTC+1) → 7:00, 12:00, 17:00 UTC
+    - cron: '0 7,12,17 * * *'
+  workflow_dispatch:  # možnost spustit ručně
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Europe/Prague  # správný den-klíč při přechodu v 6:00
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: pip install beautifulsoup4 lxml
+
+      - name: Run auto monitor
+        run: python3 auto_monitor.py
+
+      - name: Commit results
+        run: |
+          git config user.name "Auto Monitor"
+          git config user.email "action@github.com"
+          git add cars.html data/
+          git diff --staged --quiet && echo "Žádné změny." || (
+            git commit -m "auto-monitor: $(date +'%Y-%m-%d %H:%M %Z')" &&
+            git push
+          )

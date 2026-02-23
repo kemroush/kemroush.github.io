@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto monitor – 23. 2. 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background-color: #0d1117;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='43.3' viewBox='0 0 75 43.3'%3E%3Cpath d='M25,0 L50,0 L62.5,21.65 L50,43.3 L25,43.3 L12.5,21.65 Z M0,21.65 L12.5,21.65 M62.5,21.65 L75,21.65' fill='none' stroke='%23ffffff' stroke-opacity='0.03' stroke-width='0.5'/%3E%3C/svg%3E");
+      background-size: 75px 43.3px;
+      color: #e6edf3;
+      min-height: 100vh;
+      padding: 2.5rem 1.5rem;
+    }
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      animation: fadeIn 0.6s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #8b949e;
+      text-decoration: none;
+      font-size: 0.82rem;
+      margin-bottom: 2rem;
+      transition: color 0.2s;
+    }
+    .back:hover { color: #f0883e; }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .meta {
+      font-size: 0.8rem;
+      color: #8b949e;
+      margin-bottom: 0.2rem;
+    }
+    .meta strong { color: #f0883e; font-weight: 600; }
+    .filter {
+      font-size: 0.78rem;
+      color: #484f58;
+      margin-bottom: 2rem;
+    }
+    .car-card {
+      display: block;
+      background: #161b22;
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.6rem;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    .car-card:hover {
+      background: #1f2937;
+      box-shadow: 0 0 20px rgba(240, 136, 62, 0.1);
+    }
+    .car-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 0.35rem;
+    }
+    .car-title {
+      font-weight: 600;
+      color: #f0883e;
+      font-size: 0.9rem;
+      flex: 1;
+    }
+    .car-price {
+      font-weight: 700;
+      color: #e6edf3;
+      white-space: nowrap;
+      font-size: 0.9rem;
+    }
+    .car-details {
+      font-size: 0.78rem;
+      color: #8b949e;
+    }
+    .car-time {
+      font-size: 0.7rem;
+      color: #30363d;
+      margin-top: 0.3rem;
+    }
+    .empty {
+      color: #8b949e;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 3rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <a href="index.html" class="back">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M12 5l-7 7 7 7"/>
+      </svg>
+      kemroush
+    </a>
+
+    <h1>Auto monitor</h1>
+    <p class="meta">Období: <strong>23. 2. 2026, 06:00</strong> – <strong>23.02.2026 20:53</strong> · <strong>21</strong> nových inzerátů</p>
+    <p class="filter">SUV · Ojeté · Automat · do 700,000 Kč · sauto.cz</p>
+
+    
+    <a href="https://www.sauto.cz/osobni/detail/skoda/yeti/209951424" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Škoda Yeti 1.2 TSi,Edition,AT</span>
+        <span class="car-price">260 000 Kč</span>
+      </div>
+      <div class="car-details">2015, 155 797 km , Benzín , Automatická  ·  Hlavní město Praha</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/audi/q7/209951358" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Audi Q7 3.0 TDi,AT,STK1/28</span>
+        <span class="car-price">690 000 Kč</span>
+      </div>
+      <div class="car-details">2016, 131 361 km , Nafta , Automatická  ·  Hlavní město Praha</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/land-rover/discovery-sport/209951340" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Land Rover Discovery Sport 2.0TD4 4x4</span>
+        <span class="car-price">400 000 Kč</span>
+      </div>
+      <div class="car-details">2016, 90 499 km , Nafta , Automatická  ·  Hlavní město Praha</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/skoda/kodiaq/209667582" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Škoda Kodiaq 2,0 TDi  DSG Style LED Kamera</span>
+        <span class="car-price">548 000 Kč</span>
+      </div>
+      <div class="car-details">2019, 130 790 km , Nafta , Automatická  ·  Uherské Hradiště</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/skoda/enyaq-iv/209746017" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Škoda Enyaq iV 80 150kW TČ ACC LED Pano Tažné</span>
+        <span class="car-price">660 000 Kč</span>
+      </div>
+      <div class="car-details">2021, 80 000 km , Elektro , Automatická  ·  Praha-východ</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/subaru/outback/209039427" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Subaru Outback 2.5i 4x4 AUTOMAT NAVI VÝHŘEV</span>
+        <span class="car-price">293 000 Kč</span>
+      </div>
+      <div class="car-details">2012, 174 084 km , Benzín , Automatická  ·  Brno-město</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/subaru/xv/209136543" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Subaru XV 2.0i 4x4 AUT VÝHŘEV SERVISKA</span>
+        <span class="car-price">465 000 Kč</span>
+      </div>
+      <div class="car-details">2019, 104 814 km , Benzín , Automatická  ·  Brno-město</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/skoda/karoq/209589906" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Škoda Karoq 1.5 TSI, Style, Automat</span>
+        <span class="car-price">500 000 Kč</span>
+      </div>
+      <div class="car-details">2020, 99 614 km , Benzín , Automatická  ·  Hlavní město Praha</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/subaru/xv/209389317" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Subaru XV 2.0i 4x4 AUT KAMERA SERVISKA</span>
+        <span class="car-price">265 000 Kč</span>
+      </div>
+      <div class="car-details">2014, 149 294 km , Benzín , Automatická  ·  Brno-město</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/subaru/outback/209590173" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Subaru Outback 2.5i 4x4 AUTOMAT VÝHŘEV TAŽNÉ</span>
+        <span class="car-price">274 000 Kč</span>
+      </div>
+      <div class="car-details">2013, 179 419 km , Benzín , Automatická  ·  Brno-město</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/volvo/xc90/209591424" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Volvo XC90 2.4 D5 4x4 AUT VÝHŘEV SENZORY</span>
+        <span class="car-price">430 000 Kč</span>
+      </div>
+      <div class="car-details">2014, 138 233 km , Nafta , Automatická  ·  Brno-město</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/volvo/xc90/209625237" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Volvo XC90 2.4D5 4x4 AUT VÝHŘEV SERVISKA</span>
+        <span class="car-price">385 000 Kč</span>
+      </div>
+      <div class="car-details">2012, 185 179 km , Nafta , Automatická  ·  Brno-město</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/skoda/kodiaq/209907405" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Škoda Kodiaq 2.0 TDI 147kW 4x4 DSG Webasto</span>
+        <span class="car-price">692 000 Kč</span>
+      </div>
+      <div class="car-details">2022, 164 051 km , Nafta , Automatická  ·  Hlavní město Praha</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/skoda/kodiaq/209803452" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Škoda Kodiaq 2.0 TDI 110kW DSG / ALU 19''</span>
+        <span class="car-price">648 000 Kč</span>
+      </div>
+      <div class="car-details">2022, 103 438 km , Nafta , Automatická  ·  Hlavní město Praha</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/skoda/kodiaq/209722875" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Škoda Kodiaq 110kW 7Míst - záruka Autodraft</span>
+        <span class="car-price">529 000 Kč</span>
+      </div>
+      <div class="car-details">2020, 170 781 km , Nafta , Automatická  ·  Hlavní město Praha</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/skoda/kodiaq/209608815" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Škoda Kodiaq 2.0 TDI 110kW 4x4 DSG / ALU 19</span>
+        <span class="car-price">634 000 Kč</span>
+      </div>
+      <div class="car-details">2021, 142 718 km , Nafta , Automatická  ·  Hlavní město Praha</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/skoda/kodiaq/209513676" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Škoda Kodiaq 2.0 TDI 147kW 4x4 DSG</span>
+        <span class="car-price">639 000 Kč</span>
+      </div>
+      <div class="car-details">2021, 131 865 km , Nafta , Automatická  ·  Hlavní město Praha</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/skoda/kodiaq/209513340" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Škoda Kodiaq 2.0 TDI 110kW 4x4 DSG Style</span>
+        <span class="car-price">588 000 Kč</span>
+      </div>
+      <div class="car-details">2021, 167 524 km , Nafta , Automatická  ·  Hlavní město Praha</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/skoda/karoq/209907669" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Škoda Karoq 2.0TDI 110kW DSG 4x4 Tažné</span>
+        <span class="car-price">392 000 Kč</span>
+      </div>
+      <div class="car-details">2019, 235 235 km , Nafta , Automatická  ·  Hlavní město Praha</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/skoda/karoq/209851848" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Škoda Karoq 1.5 TSI 110kW DSG Sportline</span>
+        <span class="car-price">515 000 Kč</span>
+      </div>
+      <div class="car-details">2020, 175 462 km , Benzín , Automatická  ·  Hlavní město Praha</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    <a href="https://www.sauto.cz/osobni/detail/cupra/formentor/209924334" class="car-card" target="_blank" rel="noopener">
+      <div class="car-top">
+        <span class="car-title">Cupra Formentor 1.5 TSI DSG</span>
+        <span class="car-price">671 000 Kč</span>
+      </div>
+      <div class="car-details">2024, 26 037 km , Benzín , Automatická  ·  Hlavní město Praha</div>
+      <div class='car-time'>nalezeno 23.02.2026 20:53</div>
+    </a>
+    
+  </div>
+</body>
+</html>
