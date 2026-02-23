@@ -138,7 +138,7 @@ def scrape_sauto() -> list[dict]:
 
                 seller_el   = item.select_one("div.c-item__seller")
                 seller_text = seller_el.get_text(strip=True) if seller_el else ""
-                seller_type = "Soukromý" if seller_text == "Soukromý prodejce" else "Autobazar"
+                seller_type = "Soukromý" if seller_text == "Soukromý prodejce" else seller_text
 
                 details = f"{info_text}  ·  {location}  ·  {seller_type}".strip(" ·").strip()
 
