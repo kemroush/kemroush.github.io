@@ -29,7 +29,7 @@ jobs:
         run: |
           git config user.name "Auto Monitor"
           git config user.email "action@github.com"
-          git add cars.html data/
+          git add data/
           git diff --staged --quiet && echo "Žádné změny." || (
             git commit -m "auto-monitor: $(date +'%Y-%m-%d %H:%M %Z')" &&
             git push
