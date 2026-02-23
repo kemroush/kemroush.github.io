@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """
 Auto Monitor - sledování nových SUV s automatem na sauto.cz
-Generuje cars.html ve stylu kemroush.github.io
+
+Generuje:
+  data/index.json            – seznam dostupných dní (čte JS v cars.html)
+  data/cars_YYYY-MM-DD.json  – inzeráty per den
 
 Požadavky:
   pip install beautifulsoup4 lxml
@@ -21,21 +24,15 @@ DATA_DIR = os.path.join(BASE_DIR, "data")
 CONFIG = {
     "max_price_czk": 700_000,
     "seen_file":     os.path.join(DATA_DIR, "seen_cars.json"),
-    "output_file":   os.path.join(BASE_DIR, "cars.html"),
+    "index_file":    os.path.join(DATA_DIR, "index.json"),
 }
-
-HEXAGON_BG = (
-    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='43.3' "
-    "viewBox='0 0 75 43.3'%3E%3Cpath d='M25,0 L50,0 L62.5,21.65 L50,43.3 L25,43.3 L12.5,21.65 Z "
-    "M0,21.65 L12.5,21.65 M62.5,21.65 L75,21.65' fill='none' stroke='%23ffffff' "
-    "stroke-opacity='0.03' stroke-width='0.5'/%3E%3C/svg%3E"
-)
 
 # ─────────────────────────────────────────────
 #  POMOCNÉ FUNKCE
 # ─────────────────────────────────────────────
 
 def get_day_key() -> str:
+    """Aktuální den, reset v 6:00."""
     now = datetime.now()
     if now.hour < 6:
         now -= timedelta(days=1)
@@ -66,6 +63,30 @@ def save_today_cars(path: str, cars: list):
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(cars, f, ensure_ascii=False, indent=2)
+
+
+def update_index(day_key: str, count: int, updated_at: str):
+    """Udržuje data/index.json – seznam dní s metadaty pro JS navigaci."""
+    index_file = CONFIG["index_file"]
+    if os.path.exists(index_file):
+        with open(index_file, "r", encoding="utf-8") as f:
+            index = json.load(f)
+    else:
+        index = {"latest": day_key, "days": []}
+
+    # Najdi nebo vytvoř záznam pro dnešek
+    day_entry = next((d for d in index["days"] if d["key"] == day_key), None)
+    if day_entry:
+        day_entry["count"]   = count
+        day_entry["updated"] = updated_at
+    else:
+        index["days"].insert(0, {"key": day_key, "count": count, "updated": updated_at})
+        index["days"].sort(key=lambda d: d["key"], reverse=True)
+
+    index["latest"] = index["days"][0]["key"]
+
+    with open(index_file, "w", encoding="utf-8") as f:
+        json.dump(index, f, ensure_ascii=False, indent=2)
 
 
 # ─────────────────────────────────────────────
@@ -147,162 +168,12 @@ def scrape_sauto() -> list[dict]:
 
 
 # ─────────────────────────────────────────────
-#  SESTAVENÍ HTML (styl kemroush)
-# ─────────────────────────────────────────────
-
-def build_html(cars: list[dict], day_key: str, updated_at: str) -> str:
-    day_dt    = datetime.strptime(day_key, "%Y-%m-%d")
-    day_label = f"{day_dt.day}. {day_dt.month}. {day_dt.year}"
-
-    cards = ""
-    for c in cars:
-        found = c.get("found_at", "")
-        cards += f"""
-    <a href="{c['link']}" class="car-card" target="_blank" rel="noopener">
-      <div class="car-top">
-        <span class="car-title">{c['title']}</span>
-        <span class="car-price">{c['price']}</span>
-      </div>
-      <div class="car-details">{c['details']}</div>
-      {"<div class='car-time'>nalezeno " + found + "</div>" if found else ""}
-    </a>"""
-
-    empty = '<p class="empty">Žádná nová auta za dnešní den.</p>' if not cars else ""
-
-    return f"""<!DOCTYPE html>
-<html lang="cs">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auto monitor – {day_label}</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after {{ margin: 0; padding: 0; box-sizing: border-box; }}
-    body {{
-      font-family: 'Inter', -apple-system, sans-serif;
-      background-color: #0d1117;
-      background-image: url("{HEXAGON_BG}");
-      background-size: 75px 43.3px;
-      color: #e6edf3;
-      min-height: 100vh;
-      padding: 2.5rem 1.5rem;
-    }}
-    .page {{
-      max-width: 680px;
-      margin: 0 auto;
-      animation: fadeIn 0.6s ease-out;
-    }}
-    @keyframes fadeIn {{
-      from {{ opacity: 0; transform: translateY(12px); }}
-      to   {{ opacity: 1; transform: translateY(0); }}
-    }}
-    .back {{
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      color: #8b949e;
-      text-decoration: none;
-      font-size: 0.82rem;
-      margin-bottom: 2rem;
-      transition: color 0.2s;
-    }}
-    .back:hover {{ color: #f0883e; }}
-    h1 {{
-      font-size: 1.75rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.5rem;
-    }}
-    .meta {{
-      font-size: 0.8rem;
-      color: #8b949e;
-      margin-bottom: 0.2rem;
-    }}
-    .meta strong {{ color: #f0883e; font-weight: 600; }}
-    .filter {{
-      font-size: 0.78rem;
-      color: #484f58;
-      margin-bottom: 2rem;
-    }}
-    .car-card {{
-      display: block;
-      background: #161b22;
-      border-radius: 12px;
-      padding: 1rem 1.25rem;
-      margin-bottom: 0.6rem;
-      text-decoration: none;
-      color: inherit;
-      transition: background 0.2s, box-shadow 0.2s;
-    }}
-    .car-card:hover {{
-      background: #1f2937;
-      box-shadow: 0 0 20px rgba(240, 136, 62, 0.1);
-    }}
-    .car-top {{
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 1rem;
-      margin-bottom: 0.35rem;
-    }}
-    .car-title {{
-      font-weight: 600;
-      color: #f0883e;
-      font-size: 0.9rem;
-      flex: 1;
-    }}
-    .car-price {{
-      font-weight: 700;
-      color: #e6edf3;
-      white-space: nowrap;
-      font-size: 0.9rem;
-    }}
-    .car-details {{
-      font-size: 0.78rem;
-      color: #8b949e;
-    }}
-    .car-time {{
-      font-size: 0.7rem;
-      color: #30363d;
-      margin-top: 0.3rem;
-    }}
-    .empty {{
-      color: #8b949e;
-      font-size: 0.9rem;
-      text-align: center;
-      padding: 3rem 0;
-    }}
-  </style>
-</head>
-<body>
-  <div class="page">
-    <a href="index.html" class="back">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M19 12H5M12 5l-7 7 7 7"/>
-      </svg>
-      kemroush
-    </a>
-
-    <h1>Auto monitor</h1>
-    <p class="meta">Období: <strong>{day_label}, 06:00</strong> – <strong>{updated_at}</strong> · <strong>{len(cars)}</strong> nových inzerátů</p>
-    <p class="filter">SUV · Ojeté · Automat · do {CONFIG['max_price_czk']:,} Kč · sauto.cz</p>
-
-    {cards}
-    {empty}
-  </div>
-</body>
-</html>"""
-
-
-# ─────────────────────────────────────────────
 #  HLAVNÍ LOGIKA
 # ─────────────────────────────────────────────
 
 def main():
-    now_str  = datetime.now().strftime("%d.%m.%Y %H:%M")
-    day_key  = get_day_key()
+    now_str = datetime.now().strftime("%d.%m.%Y %H:%M")
+    day_key = get_day_key()
 
     cars_file = os.path.join(DATA_DIR, f"cars_{day_key}.json")
 
@@ -320,14 +191,12 @@ def main():
             c["found_at"] = now_str
         today_cars.extend(new_cars)
         save_today_cars(cars_file, today_cars)
-
-        html = build_html(today_cars, day_key, now_str)
-        with open(CONFIG["output_file"], "w", encoding="utf-8") as f:
-            f.write(html)
-        print(f"✅ Uloženo → {CONFIG['output_file']}")
+        update_index(day_key, len(today_cars), now_str)
 
         seen.update(c["id"] for c in new_cars)
         save_seen(seen)
+
+        print(f"✅ Uloženo → data/cars_{day_key}.json ({len(today_cars)} aut dnes)")
     else:
         print("  Žádná nová auta od posledního spuštění.")
 
