@@ -136,7 +136,11 @@ def scrape_sauto() -> list[dict]:
                 loc_el   = item.select_one("div.c-item__locality")
                 location = loc_el.get_text(strip=True) if loc_el else ""
 
-                details = f"{info_text}  ·  {location}".strip(" ·").strip()
+                seller_el   = item.select_one("div.c-item__seller")
+                seller_text = seller_el.get_text(strip=True) if seller_el else ""
+                seller_type = "Soukromý" if seller_text == "Soukromý prodejce" else "Autobazar"
+
+                details = f"{info_text}  ·  {location}  ·  {seller_type}".strip(" ·").strip()
 
                 link_el = item.select_one("a[href]")
                 href    = link_el["href"] if link_el else ""
