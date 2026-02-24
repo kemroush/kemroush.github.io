@@ -26,7 +26,7 @@ CONFIG = {
     "max_price_czk": 700_000,
     "max_km":        100_000,
     "min_year":      2022,
-    "brands":        ["bmw", "mercedes-benz"],
+    "brands":        ["bmw", "mercedes"],
     "seen_file":     os.path.join(DATA_DIR, "seen_cars.json"),
     "index_file":    os.path.join(DATA_DIR, "index.json"),
 }
@@ -97,16 +97,14 @@ def update_index(day_key: str, count: int, updated_at: str):
 #  SCRAPING SAUTO.CZ
 # ─────────────────────────────────────────────
 
-def scrape_sauto(brand: str) -> list[dict]:
+def scrape_sauto_all() -> list[dict]:
+    # sauto.cz nefiltuje brand spolehlivě přes URL — stahujeme vše, filtrujeme v Pythonu
     url = (
-        f"https://www.sauto.cz/osobni/{brand}/"
+        f"https://www.sauto.cz/inzerce/osobni"
         f"?cena-od={CONFIG['min_price_czk']}"
         f"&cena-do={CONFIG['max_price_czk']}"
-        f"&rok-od={CONFIG['min_year']}"
-        f"&najetych-do={CONFIG['max_km']}"
         f"&prevodovka=automaticka&razeni=datum-vlozeni-desc"
     )
-    brand_prefix = "mercedes" if brand == "mercedes-benz" else brand
     cars = []
     try:
         result = subprocess.run(
@@ -157,8 +155,9 @@ def scrape_sauto(brand: str) -> list[dict]:
                 if not ad_id:
                     ad_id = link
 
-                # Filtr: značka
-                if not title.lower().startswith(brand_prefix):
+                # Filtr: značka (BMW nebo Mercedes)
+                title_lower = title.lower()
+                if not any(title_lower.startswith(b) for b in CONFIG["brands"]):
                     continue
 
                 # Filtr: rok
@@ -190,9 +189,9 @@ def scrape_sauto(brand: str) -> list[dict]:
                 continue
 
     except Exception as e:
-        print(f"  [sauto.cz/{brand}] Chyba: {e}")
+        print(f"  [sauto.cz] Chyba: {e}")
 
-    print(f"  sauto.cz/{brand}: {len(cars)} inzerátů")
+    print(f"  sauto.cz: {len(cars)} inzerátů (BMW + Mercedes)")
     return cars
 
 
@@ -210,9 +209,7 @@ def main():
 
     seen       = load_seen()
     today_cars = load_today_cars(cars_file)
-    all_cars = []
-    for brand in CONFIG["brands"]:
-        all_cars += scrape_sauto(brand)
+    all_cars = scrape_sauto_all()
 
     new_cars = [c for c in all_cars if c["id"] not in seen]
     print(f"  Nových: {len(new_cars)} | Dnes celkem: {len(today_cars)} | Nalezeno: {len(all_cars)}")
