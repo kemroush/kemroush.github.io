@@ -117,7 +117,9 @@ def scrape_sauto_all() -> list[dict]:
         )
         soup = BeautifulSoup(result.stdout, "lxml")
 
-        for item in soup.select("li.c-item.c-item--hor"):
+        raw_items = soup.select("li.c-item.c-item--hor")
+        print(f"  sauto.cz: nalezeno {len(raw_items)} položek před filtrem")
+        for item in raw_items:
             try:
                 ad_id = None
                 for cls in item.get("class", []):
