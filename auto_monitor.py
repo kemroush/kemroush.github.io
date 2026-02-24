@@ -99,14 +99,14 @@ def update_index(day_key: str, count: int, updated_at: str):
 
 def scrape_sauto(brand: str) -> list[dict]:
     url = (
-        f"https://www.sauto.cz/inzerce/osobni"
-        f"?znacka={brand}"
-        f"&cena-od={CONFIG['min_price_czk']}"
+        f"https://www.sauto.cz/osobni/{brand}/"
+        f"?cena-od={CONFIG['min_price_czk']}"
         f"&cena-do={CONFIG['max_price_czk']}"
         f"&rok-od={CONFIG['min_year']}"
         f"&najetych-do={CONFIG['max_km']}"
         f"&prevodovka=automaticka&razeni=datum-vlozeni-desc"
     )
+    brand_prefix = "mercedes" if brand == "mercedes-benz" else brand
     cars = []
     try:
         result = subprocess.run(
@@ -157,6 +157,23 @@ def scrape_sauto(brand: str) -> list[dict]:
                 if not ad_id:
                     ad_id = link
 
+                # Filtr: značka
+                if not title.lower().startswith(brand_prefix):
+                    continue
+
+                # Filtr: rok
+                year_m = re.search(r'\b(20\d{2})\b', info_text)
+                if year_m and int(year_m.group(1)) < CONFIG["min_year"]:
+                    continue
+
+                # Filtr: km
+                km_m = re.search(r'([\d\s\u00a0]+)\s*km', info_text)
+                if km_m:
+                    km = int(re.sub(r'\D', '', km_m.group(1)))
+                    if km > CONFIG["max_km"]:
+                        continue
+
+                # Filtr: cena
                 price_num = int(re.sub(r"[^\d]", "", price)) if re.search(r"\d", price) else 0
                 if price_num > CONFIG["max_price_czk"] or (price_num > 0 and price_num < CONFIG["min_price_czk"]):
                     continue
