@@ -228,12 +228,13 @@
       </button>
     </div>
 
-    <p class="filter">BMW & Mercedes · Automat · 2022+ · do 100 000 km · 300–700 000 Kč · sauto.cz</p>
+    <p class="filter">BMW, Mercedes & Mini · Automat · 2022+ · do 100 000 km · 300–700 000 Kč · sauto.cz</p>
 
     <div class="brand-filter">
       <button class="brand-btn active" data-brand="all">Vše</button>
       <button class="brand-btn" data-brand="bmw">BMW</button>
       <button class="brand-btn" data-brand="mercedes">Mercedes</button>
+      <button class="brand-btn" data-brand="mini">Mini</button>
     </div>
 
     <div id="cars-list"><p class="state-msg">Načítám...</p></div>
@@ -293,8 +294,9 @@
       if (activeBrand === 'all') return allCars;
       return allCars.filter(c => {
         const t = c.title.toLowerCase();
-        if (activeBrand === 'bmw')     return t.startsWith('bmw');
+        if (activeBrand === 'bmw')      return t.startsWith('bmw');
         if (activeBrand === 'mercedes') return t.startsWith('mercedes');
+        if (activeBrand === 'mini')     return t.startsWith('mini');
         return true;
       });
     }
