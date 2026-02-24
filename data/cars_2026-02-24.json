@@ -414,5 +414,149 @@
     "details": "2020, 100 098 km , Benzín , Automatická  ·  Hlavní město Praha  ·  UniCredit Leasing CZ, a.s.",
     "link": "https://www.sauto.cz/osobni/detail/bmw/x1/208901808",
     "found_at": "24.02.2026 09:42"
+  },
+  {
+    "id": "209953881",
+    "title": "Kia Sportage 1,6 TGDi 130kW AT 4x4 Exclusiv",
+    "price": "379 900 Kč",
+    "details": "2017, 97 744 km , Benzín , Automatická  ·  Hlavní město Praha  ·  AUTO JEREMIÁŠOVA, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/kia/sportage/209953881",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "209791281",
+    "title": "SsangYong Rexton 2.0TD 4x4 AUT 7MÍST SENZORY",
+    "price": "279 000 Kč",
+    "details": "2015, 112 513 km , Nafta , Automatická  ·  Brno-město  ·  Zeno cars",
+    "link": "https://www.sauto.cz/osobni/detail/ssangyong/rexton/209791281",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "209798655",
+    "title": "Subaru Outback 2.5i 4x4 AUT SERVISKA 1MAJITEL",
+    "price": "429 000 Kč",
+    "details": "2017, 191 180 km , Benzín , Automatická  ·  Brno-město  ·  Zeno cars",
+    "link": "https://www.sauto.cz/osobni/detail/subaru/outback/209798655",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "209798880",
+    "title": "Jeep Cherokee 2.2D 4x4 SERVISKA AUT KAMERA",
+    "price": "319 000 Kč",
+    "details": "2016, 139 308 km , Nafta , Automatická  ·  Brno-město  ·  Zeno cars",
+    "link": "https://www.sauto.cz/osobni/detail/jeep/cherokee/209798880",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "209804259",
+    "title": "Subaru Forester 2.0i 4x4 AUT 1.MAJITEL TAŽNÉ",
+    "price": "258 000 Kč",
+    "details": "2012, 173 561 km , Benzín , Automatická  ·  Brno-město  ·  Zeno cars",
+    "link": "https://www.sauto.cz/osobni/detail/subaru/forester/209804259",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "208150757",
+    "title": "Hyundai Tucson Freedom 1,6 T-GDI 110 kW 7AP -",
+    "price": "649 000 Kč",
+    "details": "2024, 25 007 km , Benzín , Automatická  ·  Jindřichův Hradec  ·  AR SERVIS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/hyundai/tucson/208150757",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "207677593",
+    "title": "Peugeot 2008 ALLURE 1.2 PureTech 130k EAT8",
+    "price": "529 000 Kč",
+    "details": "2022, 9 900 km , Benzín , Automatická  ·  Jindřichův Hradec  ·  AR SERVIS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/peugeot/2008/207677593",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "207677590",
+    "title": "Peugeot 3008 ACTIVE PACK 1.2PureTech 130EAT",
+    "price": "649 000 Kč",
+    "details": "2023, 7 851 km , Benzín , Automatická  ·  Jindřichův Hradec  ·  AR SERVIS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/peugeot/3008/207677590",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "207677584",
+    "title": "Peugeot 2008 ALLURE 1.2 PureTech 130k EAT8",
+    "price": "529 000 Kč",
+    "details": "2022, 10 000 km , Benzín , Automatická  ·  Jindřichův Hradec  ·  AR SERVIS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/peugeot/2008/207677584",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "209855850",
+    "title": "Volvo XC90 2.4D5 4x4 AUT VÝHŘEV SENZORY",
+    "price": "335 000 Kč",
+    "details": "2011, 173 802 km , Nafta , Automatická  ·  Brno-město  ·  Zeno cars",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/xc90/209855850",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "209825949",
+    "title": "Škoda Kamiq Monte Carlo 1.0TSI/81kW 7DSG -",
+    "price": "489 000 Kč",
+    "details": "2023, 9 237 km , Benzín , Automatická  ·  Jindřichův Hradec  ·  AR SERVIS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/kamiq/209825949",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "209562267",
+    "title": "BMW X5 3.0 D/160kW 6AT Xdrive",
+    "price": "139 990 Kč",
+    "details": "2004, 397 000 km , Nafta , Automatická  ·  Jindřichův Hradec  ·  AR SERVIS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x5/209562267",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "209006796",
+    "title": "Hyundai Tucson Freedom 1,6 T-GDI/ 110 kW, 7AP",
+    "price": "659 000 Kč",
+    "details": "2024, 27 349 km , Benzín , Automatická  ·  Jindřichův Hradec  ·  AR SERVIS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/hyundai/tucson/209006796",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "209864979",
+    "title": "Subaru XV 2.0i 4x4 AUT 1MAJITEL SERVISKA",
+    "price": "349 000 Kč",
+    "details": "2017, 184 291 km , Benzín , Automatická  ·  Brno-město  ·  Zeno cars",
+    "link": "https://www.sauto.cz/osobni/detail/subaru/xv/209864979",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "209907801",
+    "title": "Volkswagen Touran 2.0TDI AUTOMAT 1MAJITEL KAMERA",
+    "price": "329 000 Kč",
+    "details": "2020, 205 429 km , Nafta , Automatická  ·  Brno-město  ·  Zeno cars",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/touran/209907801",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "209822286",
+    "title": "Jeep Grand Cherokee Jeep Grand Ch. Overland",
+    "price": "369 000 Kč",
+    "details": "2015, 253 000 km , Nafta , Automatická  ·  Frýdek-Místek  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/jeep/grand-cherokee/209822286",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "209939181",
+    "title": "Hyundai ix35 2.0i AUT VYHŘEV SERVISKA",
+    "price": "245 000 Kč",
+    "details": "2012, 136 880 km , Benzín , Automatická  ·  Brno-město  ·  Zeno cars",
+    "link": "https://www.sauto.cz/osobni/detail/hyundai/ix35/209939181",
+    "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "209805282",
+    "title": "Volkswagen ID.4 Pro Perf. (82 kWh), SoH 96%",
+    "price": "630 000 Kč",
+    "details": "2021, 35 282 km , Elektro , Automatická  ·  Hlavní město Praha  ·  AAA AUTO",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/id4/209805282",
+    "found_at": "24.02.2026 11:53"
   }
 ]
