@@ -159,6 +159,35 @@
       text-align: center;
       padding: 3rem 0;
     }
+
+    /* ── Brand filter ── */
+    .brand-filter {
+      display: flex;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .brand-btn {
+      padding: 0.3rem 0.85rem;
+      border-radius: 20px;
+      border: 1px solid #30363d;
+      background: transparent;
+      color: #8b949e;
+      font-size: 0.78rem;
+      font-family: inherit;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .brand-btn:hover {
+      color: #e6edf3;
+      border-color: #8b949e;
+    }
+    .brand-btn.active {
+      background: #f0883e;
+      border-color: #f0883e;
+      color: #0d1117;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
@@ -201,12 +230,20 @@
 
     <p class="filter">BMW & Mercedes · Automat · 2022+ · do 100 000 km · 300–700 000 Kč · sauto.cz</p>
 
+    <div class="brand-filter">
+      <button class="brand-btn active" data-brand="all">Vše</button>
+      <button class="brand-btn" data-brand="bmw">BMW</button>
+      <button class="brand-btn" data-brand="mercedes">Mercedes</button>
+    </div>
+
     <div id="cars-list"><p class="state-msg">Načítám...</p></div>
   </div>
 
   <script>
-    let days = [];   // [{key, count, updated}, ...] nejnovější první
-    let idx  = 0;
+    let days       = [];   // [{key, count, updated}, ...] nejnovější první
+    let idx        = 0;
+    let allCars    = [];
+    let activeBrand = 'all';
 
     function formatDay(key) {
       const [y, m, d] = key.split('-');
@@ -244,18 +281,29 @@
       list.innerHTML = '<p class="state-msg">Načítám...</p>';
 
       try {
-        const res  = await fetch(`data/cars_${days[i].key}.json`);
-        const cars = await res.json();
-        renderCars(cars);
+        const res = await fetch(`data/cars_${days[i].key}.json`);
+        allCars   = await res.json();
+        renderCars();
       } catch {
         list.innerHTML = '<p class="state-msg">Nepodařilo se načíst data.</p>';
       }
     }
 
-    function renderCars(cars) {
+    function filteredCars() {
+      if (activeBrand === 'all') return allCars;
+      return allCars.filter(c => {
+        const t = c.title.toLowerCase();
+        if (activeBrand === 'bmw')     return t.startsWith('bmw');
+        if (activeBrand === 'mercedes') return t.startsWith('mercedes');
+        return true;
+      });
+    }
+
+    function renderCars() {
+      const cars = filteredCars();
       const list = document.getElementById('cars-list');
       if (!cars.length) {
-        list.innerHTML = '<p class="state-msg">Žádná nová auta za tento den.</p>';
+        list.innerHTML = '<p class="state-msg">Žádná auta pro tento filtr.</p>';
         return;
       }
       list.innerHTML = cars.map(c => `
@@ -272,6 +320,15 @@
 
     document.getElementById('prev-btn').addEventListener('click', () => showDay(idx + 1));
     document.getElementById('next-btn').addEventListener('click', () => showDay(idx - 1));
+
+    document.querySelectorAll('.brand-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeBrand = btn.dataset.brand;
+        document.querySelectorAll('.brand-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderCars();
+      });
+    });
 
     // Keyboard navigation
     document.addEventListener('keydown', e => {
