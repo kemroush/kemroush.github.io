@@ -558,5 +558,173 @@
     "details": "2021, 35 282 km , Elektro , Automatická  ·  Hlavní město Praha  ·  AAA AUTO",
     "link": "https://www.sauto.cz/osobni/detail/volkswagen/id4/209805282",
     "found_at": "24.02.2026 11:53"
+  },
+  {
+    "id": "209955933",
+    "title": "BMW X5 xDrive30d",
+    "price": "599 000 Kč",
+    "details": "2017, 142 991 km , Nafta , Automatická  ·  Hradec Králové  ·  BMW AutoWallis Hradec Králové a Pardubice",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x5/209955933",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "209955915",
+    "title": "Mercedes-Benz Třídy M 350 CDi 165Kw 4MATIC EDITION!",
+    "price": "178 980 Kč",
+    "details": "2008, 296 000 km , Nafta , Automatická  ·  Zlín  ·  AUTO-CENTRUM Zlín s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-m/209955915",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "209768472",
+    "title": "Peugeot 2008 ALLURE 110 koní, Automat, Navi",
+    "price": "229 000 Kč",
+    "details": "2019, 93 400 km , Benzín , Automatická  ·  Uherské Hradiště  ·  LION CAR, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/peugeot/2008/209768472",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "209345274",
+    "title": "Peugeot 3008 GT LINE, 1.6 165k, El. Kufr, N",
+    "price": "299 000 Kč",
+    "details": "2016, 144 350 km , Benzín , Automatická  ·  Uherské Hradiště  ·  LION CAR, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/peugeot/3008/209345274",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "209787117",
+    "title": "Citroën C3 Aircross 130k, Automat, Navigace, Keyle",
+    "price": "399 000 Kč",
+    "details": "2024, 30 650 km , Benzín , Automatická  ·  Uherské Hradiště  ·  LION CAR, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/citroen/c3-aircross/209787117",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "209744874",
+    "title": "Peugeot 3008 ALLURE, ČR, Automat, Grip Cont",
+    "price": "445 000 Kč",
+    "details": "2021, 69 350 km , Benzín , Automatická  ·  Uherské Hradiště  ·  LION CAR, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/peugeot/3008/209744874",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "209942904",
+    "title": "Renault Koleos 2.0 DCI 110 kW",
+    "price": "149 990 Kč",
+    "details": "2012, 122 088 km , Nafta , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/renault/koleos/209942904",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "209258580",
+    "title": "Mazda CX-5 2.2 129 kW",
+    "price": "169 990 Kč",
+    "details": "2013, 249 135 km , Nafta , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/mazda/cx-5/209258580",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "208299260",
+    "title": "Nissan X-Trail 2.0 DCi 110 kW",
+    "price": "119 990 Kč",
+    "details": "2007, 254 000 km , Nafta , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/nissan/x-trail/208299260",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "207750340",
+    "title": "Fiat Freemont Lounge 2.0 125 kW",
+    "price": "179 990 Kč",
+    "details": "2013, 197 067 km , Nafta , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/fiat/freemont/207750340",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "209828790",
+    "title": "Škoda Kamiq Monte Carlo 1.0 TSI 85 kW",
+    "price": "549 990 Kč",
+    "details": "2024, 29 435 km , Benzín , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/kamiq/209828790",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "209820333",
+    "title": "Ford Kuga ST-Line 2.5 140 kW",
+    "price": "659 990 Kč",
+    "details": "2023, 20 182 km , Benzín , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/ford/kuga/209820333",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "208913319",
+    "title": "Volkswagen T-Roc Life 1.5 TSI 110 kW",
+    "price": "599 990 Kč",
+    "details": "2023, 28 454 km , Benzín , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/t-roc/208913319",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "207836005",
+    "title": "Volkswagen Tiguan Highline 2.0 TDI 110 kW",
+    "price": "459 990 Kč",
+    "details": "2017, 107 592 km , Nafta , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/tiguan/207836005",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "185420990",
+    "title": "Hyundai Tucson Smart AT 1.6 T-GDI PHEV 132 kW",
+    "price": "629 990 Kč",
+    "details": "2022, 16 243 km , Hybridní , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/hyundai/tucson/185420990",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "209795889",
+    "title": "Škoda Karoq Selection 1.5 TSI 110 kW",
+    "price": "689 990 Kč",
+    "details": "2025, 25 635 km , Benzín , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/karoq/209795889",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "209795787",
+    "title": "Volkswagen Tiguan Allspace Maraton Edition 2.0 TDI 110 kW",
+    "price": "489 990 Kč",
+    "details": "2019, 146 165 km , Nafta , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/tiguan-allspace/209795787",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "209704596",
+    "title": "Škoda Kodiaq Style 2.0 TDI 147 kW",
+    "price": "699 990 Kč",
+    "details": "2022, 132 344 km , Nafta , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/kodiaq/209704596",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "209645772",
+    "title": "Hyundai Tucson Smart 1.6 G4FU 110 kW",
+    "price": "599 990 Kč",
+    "details": "2024, 23 859 km , Benzín , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/hyundai/tucson/209645772",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "209525442",
+    "title": "Peugeot 408 GT- Line 1.2 PureTech 96 kW",
+    "price": "669 990 Kč",
+    "details": "2024, 29 889 km , Benzín , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/peugeot/408/209525442",
+    "found_at": "24.02.2026 15:20"
+  },
+  {
+    "id": "209534781",
+    "title": "Volkswagen Golf GOLF VARIANT ALLTRACK 2,0 TDI",
+    "price": "564 000 Kč",
+    "details": "2021, 101 197 km , Nafta , Automatická  ·  Hlavní město Praha  ·  Volkswagen Financial Services",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/209534781",
+    "found_at": "24.02.2026 15:20"
   }
 ]
