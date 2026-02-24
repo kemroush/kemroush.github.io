@@ -105,7 +105,7 @@ def scrape_sauto(brand: str) -> list[dict]:
         f"&cena-do={CONFIG['max_price_czk']}"
         f"&rok-od={CONFIG['min_year']}"
         f"&najetych-do={CONFIG['max_km']}"
-        f"&stav=ojete&prevodovka=automaticka&razeni=datum-vlozeni-desc"
+        f"&prevodovka=automaticka&razeni=datum-vlozeni-desc"
     )
     cars = []
     try:
