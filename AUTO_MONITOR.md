@@ -53,6 +53,12 @@ python3 -m http.server 8080
 # → http://localhost:8080/cars.html
 ```
 
+## Známá omezení
+
+- **Datum přidání inzerátu na sauto.cz** není dostupné v HTML listingu — zobrazuje se jen na detailu každého auta. Získat ho by vyžadovalo extra request na každý inzerát zvlášť (pomalé, riziko bloku). Proto se zobrazuje jen čas kdy inzerát zachytil skript (`found_at`).
+- **Mezera přes noc** — auta přidaná na sauto.cz po posledním runu dne se objeví v reportu následujícího dne, ne včerejšího.
+- **GitHub cron** občas skipne nebo zpozdí scheduled run. Řešení: ruční spuštění přes `gh workflow run`.
+
 ## Přidání dalšího zdroje
 
 1. Přidej funkci `scrape_xxx() -> list[dict]` – vrací seznam dict s klíči `id, title, price, details, link`
