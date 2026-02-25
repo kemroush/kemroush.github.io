@@ -23,7 +23,7 @@ DATA_DIR = os.path.join(BASE_DIR, "data")
 
 CONFIG = {
     "min_price_czk": 300_000,
-    "max_price_czk": 700_000,
+    "max_price_czk": 750_000,
     "max_km":        100_000,
     "min_year":      2022,
     "brands":        ["bmw", "mercedes-benz", "mini"],
