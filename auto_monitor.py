@@ -153,6 +153,11 @@ def scrape_sauto(brand: str) -> list[dict]:
                 href    = link_el["href"] if link_el else ""
                 link    = href if href.startswith("http") else f"https://www.sauto.cz{href}"
 
+                img_el = item.select_one("img.c-item__image")
+                img_src = img_el["src"] if img_el else ""
+                if img_src.startswith("//"):
+                    img_src = "https:" + img_src
+
                 if not ad_id:
                     ad_id = link
 
@@ -186,6 +191,7 @@ def scrape_sauto(brand: str) -> list[dict]:
                         "price":   price,
                         "details": details,
                         "link":    link,
+                        "image":   img_src,
                     })
             except Exception:
                 continue

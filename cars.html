@@ -110,18 +110,39 @@
 
     /* ── Car cards ── */
     .car-card {
-      display: block;
+      display: flex;
+      gap: 0.9rem;
+      align-items: stretch;
       background: #161b22;
       border-radius: 12px;
-      padding: 1rem 1.25rem;
+      padding: 0;
       margin-bottom: 0.6rem;
       text-decoration: none;
       color: inherit;
+      overflow: hidden;
       transition: background 0.2s, box-shadow 0.2s;
     }
     .car-card:hover {
       background: #1f2937;
       box-shadow: 0 0 20px rgba(240, 136, 62, 0.1);
+    }
+
+    .car-thumb {
+      width: 120px;
+      flex-shrink: 0;
+      background: #0d1117;
+    }
+    .car-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .car-body {
+      flex: 1;
+      padding: 0.85rem 1rem 0.85rem 0;
+      min-width: 0;
     }
 
     .car-top {
@@ -136,6 +157,10 @@
       color: #f0883e;
       font-size: 0.9rem;
       flex: 1;
+      min-width: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .car-price {
       font-weight: 700;
@@ -310,12 +335,15 @@
       }
       list.innerHTML = cars.map(c => `
         <a href="${c.link}" class="car-card" target="_blank" rel="noopener">
-          <div class="car-top">
-            <span class="car-title">${c.title}</span>
-            <span class="car-price">${c.price}</span>
+          ${c.image ? `<div class="car-thumb"><img src="${c.image}" alt="" loading="lazy"></div>` : ''}
+          <div class="car-body">
+            <div class="car-top">
+              <span class="car-title">${c.title}</span>
+              <span class="car-price">${c.price}</span>
+            </div>
+            <div class="car-details">${c.details}</div>
+            ${c.found_at ? `<div class="car-time">nalezeno ${c.found_at}</div>` : ''}
           </div>
-          <div class="car-details">${c.details}</div>
-          ${c.found_at ? `<div class="car-time">nalezeno ${c.found_at}</div>` : ''}
         </a>
       `).join('');
     }
