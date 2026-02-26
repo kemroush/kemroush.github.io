@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Jednorázový skript: odstraní záznamy blokovaných prodejců z existujících JSON souborů.
+Jednorázový skript: odstraní záznamy blokovaných prodejců z existujících JSON souborů
+a opraví počty v index.json.
 """
 
 import json
@@ -26,5 +27,19 @@ for path in files:
         print(f"{os.path.basename(path)}: odstraněno {removed} aut")
     else:
         print(f"{os.path.basename(path)}: nic k odstranění")
+
+# Oprav počty v index.json
+index_path = os.path.join(DATA_DIR, "index.json")
+if os.path.exists(index_path):
+    with open(index_path, "r", encoding="utf-8") as f:
+        index = json.load(f)
+    for day in index["days"]:
+        cars_path = os.path.join(DATA_DIR, f"cars_{day['key']}.json")
+        if os.path.exists(cars_path):
+            with open(cars_path, "r", encoding="utf-8") as f:
+                day["count"] = len(json.load(f))
+    with open(index_path, "w", encoding="utf-8") as f:
+        json.dump(index, f, ensure_ascii=False, indent=2)
+    print("index.json: počty opraveny")
 
 print("Hotovo.")
