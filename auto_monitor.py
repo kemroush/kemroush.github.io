@@ -25,7 +25,7 @@ CONFIG = {
     "min_price_czk": 300_000,
     "max_price_czk": 750_000,
     "max_km":        100_000,
-    "min_year":      2022,
+    "min_year":      2020,
     "brands":        ["bmw", "mercedes-benz", "mini"],
     "seen_file":     os.path.join(DATA_DIR, "seen_cars.json"),
     "index_file":    os.path.join(DATA_DIR, "index.json"),
