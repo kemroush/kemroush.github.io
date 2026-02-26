@@ -24,14 +24,6 @@
     "found_at": "24.02.2026 22:50"
   },
   {
-    "id": "209236884",
-    "title": "BMW X1 2,0 20i 131kW Aut. xDrive CZ",
-    "price": "644 999 Kč",
-    "details": "2022, 52 267 km , Benzín , Automatická  ·  Benešov  ·  DAVO CAR",
-    "link": "https://www.sauto.cz/osobni/detail/bmw/x1/209236884",
-    "found_at": "24.02.2026 22:50"
-  },
-  {
     "id": "209718573",
     "title": "BMW X2 sDrive18i",
     "price": "699 000 Kč",
@@ -85,14 +77,6 @@
     "price": "608 000 Kč",
     "details": "2023, 73 288 km , Nafta , Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
     "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/209574501",
-    "found_at": "24.02.2026 22:50"
-  },
-  {
-    "id": "209939904",
-    "title": "BMW i3 120Ah BEV, Automat, Serv.kniha",
-    "price": "570 000 Kč",
-    "details": "2022, 30 452 km , Elektro , Automatická  ·  Hlavní město Praha  ·  AAA AUTO",
-    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/209939904",
     "found_at": "24.02.2026 22:50"
   },
   {
@@ -176,14 +160,6 @@
     "found_at": "24.02.2026 22:50"
   },
   {
-    "id": "209957091",
-    "title": "Mercedes-Benz Třídy A 200 d, Automat, ČR,1.maj, Navi",
-    "price": "650 000 Kč",
-    "details": "2024, 62 051 km , Nafta , Automatická  ·  Hlavní město Praha  ·  AAA AUTO",
-    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/209957091",
-    "found_at": "24.02.2026 22:50"
-  },
-  {
     "id": "209216136",
     "title": "Mercedes-Benz CLA 200d LED A/T NAVI KAMERA ČR 1M",
     "price": "638 000 Kč",
@@ -232,51 +208,11 @@
     "found_at": "24.02.2026 22:50"
   },
   {
-    "id": "209949135",
-    "title": "Mercedes-Benz Třídy A 200 d, Automat, ČR,1.maj",
-    "price": "680 000 Kč",
-    "details": "2024, 44 389 km , Nafta , Automatická  ·  Hlavní město Praha  ·  AAA AUTO",
-    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/209949135",
-    "found_at": "24.02.2026 22:50"
-  },
-  {
-    "id": "209944455",
-    "title": "Mercedes-Benz CLA 250 e, Automat, Serv.kniha",
-    "price": "665 000 Kč",
-    "details": "2022, 80 450 km , Hybridní , Automatická  ·  Hlavní město Praha  ·  AAA AUTO",
-    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/209944455",
-    "found_at": "24.02.2026 22:50"
-  },
-  {
     "id": "209120787",
     "title": "Mercedes-Benz Třídy B 200 LED CARPLAY ZÁRUKA ČR 1M",
     "price": "668 000 Kč",
     "details": "2024, 9 664 km , Benzín , Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
     "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/209120787",
-    "found_at": "24.02.2026 22:50"
-  },
-  {
-    "id": "209937060",
-    "title": "Mercedes-Benz Třídy A 200 d, Automat, ČR,1.maj, Navi",
-    "price": "650 000 Kč",
-    "details": "2024, 61 396 km , Nafta , Automatická  ·  Hlavní město Praha  ·  AAA AUTO",
-    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/209937060",
-    "found_at": "24.02.2026 22:50"
-  },
-  {
-    "id": "209936304",
-    "title": "Mercedes-Benz Třídy A 200 d, Automat, ČR,1.maj",
-    "price": "650 000 Kč",
-    "details": "2024, 57 706 km , Nafta , Automatická  ·  Hlavní město Praha  ·  AAA AUTO",
-    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/209936304",
-    "found_at": "24.02.2026 22:50"
-  },
-  {
-    "id": "209935911",
-    "title": "Mercedes-Benz Třídy A 200 d, Automat, ČR,1.maj, Navi",
-    "price": "640 000 Kč",
-    "details": "2024, 71 323 km , Nafta , Automatická  ·  Hlavní město Praha  ·  AAA AUTO",
-    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/209935911",
     "found_at": "24.02.2026 22:50"
   },
   {
@@ -317,14 +253,6 @@
     "price": "649 000 Kč",
     "details": "2022, 69 740 km , Benzín , Automatická  ·  Plzeň-město  ·  Mercedes-Benz | VSP Auto, s.r.o. - autorizovaný opravce a prodejce",
     "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/209453034",
-    "found_at": "24.02.2026 22:50"
-  },
-  {
-    "id": "209944455",
-    "title": "Mercedes-Benz CLA 250 e, Automat, Serv.kniha",
-    "price": "665 000 Kč",
-    "details": "2022, 80 450 km , Hybridní , Automatická  ·  Hlavní město Praha  ·  AAA AUTO",
-    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/209944455",
     "found_at": "24.02.2026 22:50"
   },
   {
@@ -389,14 +317,6 @@
     "price": "649 000 Kč",
     "details": "2025, 12 000 km , Benzín , Automatická  ·  Hlavní město Praha  ·  BMW | MINI invelt Praha | Plzeň | Ojeté vozy",
     "link": "https://www.sauto.cz/osobni/detail/mini/cooper/209394111",
-    "found_at": "24.02.2026 22:53"
-  },
-  {
-    "id": "209895363",
-    "title": "Mini Countryman 1,5 100kW CZ Tempomat DPH",
-    "price": "599 999 Kč",
-    "details": "2022, 60 359 km , Benzín , Automatická  ·  Benešov  ·  DAVO CAR",
-    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/209895363",
     "found_at": "24.02.2026 22:53"
   },
   {
