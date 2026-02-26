@@ -27,6 +27,7 @@ CONFIG = {
     "max_km":        100_000,
     "min_year":      2020,
     "brands":        ["bmw", "mercedes-benz", "mini"],
+    "blocked_sellers": ["davo car", "aaa auto"],
     "seen_file":     os.path.join(DATA_DIR, "seen_cars.json"),
     "index_file":    os.path.join(DATA_DIR, "index.json"),
 }
@@ -160,6 +161,11 @@ def scrape_sauto(brand: str) -> list[dict]:
 
                 if not ad_id:
                     ad_id = link
+
+                # Filtr: blokovaní prodejci
+                seller_lower = seller_text.lower()
+                if any(b in seller_lower for b in CONFIG["blocked_sellers"]):
+                    continue
 
                 # Záložní filtr: značka (pro případ sponzorovaných výsledků jiných značek)
                 title_lower = title.lower()
