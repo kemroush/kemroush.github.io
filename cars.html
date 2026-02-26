@@ -269,7 +269,7 @@
     let days       = [];   // [{key, count, updated}, ...] nejnovější první
     let idx        = 0;
     let allCars    = [];
-    let activeBrand = 'all';
+    let activeBrands = new Set(); // empty = all
 
     function formatDay(key) {
       const [y, m, d] = key.split('-');
@@ -316,13 +316,20 @@
     }
 
     function filteredCars() {
-      if (activeBrand === 'all') return allCars;
+      if (activeBrands.size === 0) return allCars;
       return allCars.filter(c => {
         const t = c.title.toLowerCase();
-        if (activeBrand === 'bmw')      return t.startsWith('bmw');
-        if (activeBrand === 'mercedes') return t.startsWith('mercedes');
-        if (activeBrand === 'mini')     return t.startsWith('mini');
-        return true;
+        if (activeBrands.has('bmw')      && t.startsWith('bmw'))      return true;
+        if (activeBrands.has('mercedes') && t.startsWith('mercedes')) return true;
+        if (activeBrands.has('mini')     && t.startsWith('mini'))     return true;
+        return false;
+      });
+    }
+
+    function updateBrandButtons() {
+      document.querySelectorAll('.brand-btn').forEach(btn => {
+        const brand = btn.dataset.brand;
+        btn.classList.toggle('active', brand === 'all' ? activeBrands.size === 0 : activeBrands.has(brand));
       });
     }
 
@@ -353,9 +360,15 @@
 
     document.querySelectorAll('.brand-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        activeBrand = btn.dataset.brand;
-        document.querySelectorAll('.brand-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+        const brand = btn.dataset.brand;
+        if (brand === 'all') {
+          activeBrands.clear();
+        } else if (activeBrands.has(brand)) {
+          activeBrands.delete(brand);
+        } else {
+          activeBrands.add(brand);
+        }
+        updateBrandButtons();
         renderCars();
       });
     });
