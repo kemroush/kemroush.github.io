@@ -1,0 +1,27 @@
+name: Clean Blocked Sellers
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run cleanup
+        run: python3 clean_blocked_sellers.py
+
+      - name: Commit results
+        run: |
+          git config user.name "Auto Monitor"
+          git config user.email "action@github.com"
+          git add data/
+          git diff --staged --quiet && echo "Žádné změny." || (
+            git commit -m "clean: odstraněni prodejci DAVO CAR a AAA AUTO" &&
+            git push
+          )
