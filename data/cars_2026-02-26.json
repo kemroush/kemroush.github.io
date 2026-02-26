@@ -61,5 +61,230 @@
     "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/209969133",
     "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/kY1K2LlXQBdLY890F4SGvK/60e1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "26.02.2026 16:56"
+  },
+  {
+    "id": "209786901",
+    "title": "BMW X2 20d,XDRIVE,MPaket,HeadUp,1.Maj",
+    "price": "719 900 Kč",
+    "details": "2021, 75 000 km , Nafta , Automatická  ·  Brno-město  ·  BRNOCAR a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x2/209786901",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_B/kBfrbpoeNCgOJyBMAFkeEaM/ba2d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209971089",
+    "title": "BMW i3 i3s 120Ah BEV, Automat, Navi",
+    "price": "500 000 Kč",
+    "details": "2020, 50 507 km , Elektro , Automatická  ·  Hlavní město Praha  ·  AAA AUTO",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/209971089",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/kY1K2LlXQB7HUzExOF4V3mS/2acc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "207303735",
+    "title": "BMW Řada 4 420i*GRAN COUPE*M-SPORT PAKET",
+    "price": "599 900 Kč",
+    "details": "2020, 60 000 km , Benzín , Automatická  ·  Cheb  ·  Bocar - Jan Bočan",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-4/207303735",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_QM_FQ/7dcCPv.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209960271",
+    "title": "BMW i3 LED KEYLESS HARMAN& ZÁRUKA",
+    "price": "499 555 Kč",
+    "details": "2021, 78 360 km , Elektro , Automatická  ·  České Budějovice  ·  PromoGames s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/209960271",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/nPVpfd5QLLDhCZlGasF3pgAK/f332.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209276835",
+    "title": "BMW X1 sDrive 18i Advantage",
+    "price": "549 999 Kč",
+    "details": "2020, 61 372 km , Benzín , Automatická  ·  Hlavní město Praha  ·  UniCredit Leasing CZ, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x1/209276835",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_A/nPSV1TXV2nD0izvGAREjzF7H/3b9f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209050155",
+    "title": "BMW Řada 4 430i Coupe xDrive",
+    "price": "724 999 Kč",
+    "details": "2020, 56 705 km , Benzín , Automatická  ·  Hlavní město Praha  ·  UniCredit Leasing CZ, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-4/209050155",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oc_B/kOes7N5Ni6D2x0TBmRELX6FU/ef12.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209050140",
+    "title": "BMW X1 sDrive 18i",
+    "price": "534 999 Kč",
+    "details": "2020, 62 447 km , Benzín , Automatická  ·  Hlavní město Praha  ·  UniCredit Leasing CZ, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x1/209050140",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oc_B/kOes7N5Ni6ChvygBhMELX5U1/8604.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "208324040",
+    "title": "BMW X3 2.0 xDrive20d AT",
+    "price": "699 999 Kč",
+    "details": "2020, 74 508 km , Nafta , Automatická  ·  Hlavní město Praha  ·  UniCredit Leasing CZ, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x3/208324040",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oY_B/nsLxLojIIE33jrC5mChX/700f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "208035803",
+    "title": "BMW Řada 4 440i xDrive Gran Coupé Sport L",
+    "price": "689 999 Kč",
+    "details": "2020, 98 032 km , Benzín , Automatická  ·  Hlavní město Praha  ·  UniCredit Leasing CZ, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-4/208035803",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oW_B/kPWmeC9soB1GgaUeCcY77h/b7f0.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209662041",
+    "title": "BMW X3 20d xDrive",
+    "price": "739 999 Kč",
+    "details": "2021, 95 247 km , Nafta , Automatická  ·  Hlavní město Praha  ·  UniCredit Leasing CZ, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x3/209662041",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_B/nDJ4VEZEqCaOxZLIoFQESSE/8caa.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209886717",
+    "title": "Mercedes-Benz CLA 180*AMG*KAMERA*LED*CZ",
+    "price": "729 000 Kč",
+    "details": "2020, 54 986 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Auta Super s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/209886717",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/nPVpfd5QLLDhCZleTFvpPDj/b2f5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209855943",
+    "title": "Mercedes-Benz Třídy B 2,0 200d 110kW Aut. LED CZ",
+    "price": "579 999 Kč",
+    "details": "2021, 54 001 km , Nafta , Automatická  ·  Benešov  ·  DAVO CAR",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/209855943",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/nPXMbbUsvqDzGaHG9bFttYHt/a7d3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209787753",
+    "title": "Mercedes-Benz CLA 2,0 200d 110kW 4Matic CZ",
+    "price": "669 999 Kč",
+    "details": "2021, 43 973 km , Nafta , Automatická  ·  Benešov  ·  DAVO CAR",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/209787753",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/kBfrbpoeNBjPnRDirFqSNUx/9fee.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209769627",
+    "title": "Mercedes-Benz CLA 2,0 220d 140kW AMG CZ DPH",
+    "price": "699 999 Kč",
+    "details": "2021, 86 691 km , Nafta , Automatická  ·  Benešov  ·  DAVO CAR",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/209769627",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_B/nDJ4VEZEqx7ONYMXFjO4Ko/a395.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209886759",
+    "title": "Mercedes-Benz Třídy B B 180 PROGRESIVE*2xPNEU*DPH*ČR",
+    "price": "568 000 Kč",
+    "details": "2020, 24 043 km , Benzín , Automatická  ·  Znojmo  ·  STOP CARS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/209886759",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/nPVpfd5QLLDqzRefvFvpYPK/538e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209961222",
+    "title": "Mercedes-Benz CLA CLA 200 AMG 120 KW DPH",
+    "price": "649 000 Kč",
+    "details": "2020, 45 080 km , Benzín , Automatická  ·  Praha-západ  ·  Bohemia Cars Prague, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/209961222",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/nPVpfd5QLLD53UiGPaF3sn9v/cfb4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209960418",
+    "title": "Mercedes-Benz GLA",
+    "price": "750 000 Kč",
+    "details": "2021, 36 000 km , Benzín , Automatická  ·  Šumperk  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/209960418",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/nPVpfd5QLLBPLz5Ge1F3qGY5/1659.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209734440",
+    "title": "Mini Cooper SE, 135 kW, CHILLI RED, ČR",
+    "price": "459 900 Kč",
+    "details": "2021, 22 000 km , Elektro , Automatická  ·  Brno-město  ·  BRNOCAR a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/209734440",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_A/nDJ4VEZEqCaOxZUf6FeoMJv/d09e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209970054",
+    "title": "Mini Clubman JCW ALL4, 4X4, Automat",
+    "price": "650 000 Kč",
+    "details": "2020, 82 505 km , Benzín , Automatická  ·  Hlavní město Praha  ·  AAA AUTO",
+    "link": "https://www.sauto.cz/osobni/detail/mini/clubman/209970054",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/kY1K2LlXQDnuVLEzNF4UR8P/6670.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209617461",
+    "title": "Mini Cooper Panorama, Head-UP, KESSY, kůže",
+    "price": "469 900 Kč",
+    "details": "2021, 32 859 km , Elektro , Automatická  ·  Hlavní město Praha  ·  EnergyCars - elektromobily - prodej, výkup a dovoz",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/209617461",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_B/nDJ4VEZEqxQDMKOyFO1gos/d326.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209957052",
+    "title": "Mini Clubman Cooper D, Automat, Serv.kniha",
+    "price": "420 000 Kč",
+    "details": "2021, 71 391 km , Nafta , Automatická  ·  Hlavní město Praha  ·  AAA AUTO",
+    "link": "https://www.sauto.cz/osobni/detail/mini/clubman/209957052",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/kY1K2LlXQJGqrk5F4BopG/b30f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209260872",
+    "title": "Mini Cooper 2.0 170KW JCW",
+    "price": "629 000 Kč",
+    "details": "2021, 50 500 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/209260872",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_A/kBlLbSfl8BjyTHDvaEij4SN/9889.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209405589",
+    "title": "Mini Cooper JCW 170 kW, ČR, H/K, Kamera",
+    "price": "529 000 Kč",
+    "details": "2021, 89 390 km , Benzín , Automatická  ·  Liberec  ·  AUTA JODR",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/209405589",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_C/kOzmiQlmfoQAuLGY9ExW52A/164b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209763639",
+    "title": "Mini Clubman Mini Clubman S, All4",
+    "price": "660 000 Kč",
+    "details": "2021, 37 500 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/clubman/209763639",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_A/kOzkBkwYBTDPt7SPgOFiLhyd/0d99.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
+  },
+  {
+    "id": "209902860",
+    "title": "Mini Cooper SE 32.6kWh, LED, ZÁRUKA, DPH",
+    "price": "369 900 Kč",
+    "details": "2021, 87 236 km , Elektro , Automatická  ·  Mělník  ·  MyEV.cz",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/209902860",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/kY1K2LlXQCEs3VBReFw3SVp/0d0a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.02.2026 18:19"
   }
 ]
