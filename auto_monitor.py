@@ -26,7 +26,7 @@ CONFIG = {
     "max_price_czk": 750_000,
     "max_km":        100_000,
     "min_year":      2020,
-    "brands":        ["bmw", "mercedes-benz", "mini"],
+    "brands":        ["bmw", "mercedes-benz", "mini", "audi"],
     "blocked_sellers": ["davo car", "aaa auto"],
     "max_pages":       5,
     "seen_file":     os.path.join(DATA_DIR, "seen_cars.json"),
@@ -175,7 +175,7 @@ def scrape_sauto(brand: str) -> list[dict]:
 
                     # Záložní filtr: značka (pro případ sponzorovaných výsledků jiných značek)
                     title_lower = title.lower()
-                    brand_prefixes = ["bmw", "mercedes", "mini"]
+                    brand_prefixes = ["bmw", "mercedes", "mini", "audi"]
                     if not any(title_lower.startswith(b) for b in brand_prefixes):
                         continue
 

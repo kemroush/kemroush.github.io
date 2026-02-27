@@ -253,13 +253,21 @@
       </button>
     </div>
 
-    <p class="filter">BMW, Mercedes & Mini · Automat · 2020+ · do 100 000 km · 300k – 750k · sauto.cz</p>
+    <p class="filter">BMW, Mercedes, Mini & Audi · Automat · 2020+ · do 100 000 km · 300k – 750k · sauto.cz</p>
 
     <div class="brand-filter">
       <button class="brand-btn active" data-brand="all">Vše</button>
       <button class="brand-btn" data-brand="bmw">BMW</button>
       <button class="brand-btn" data-brand="mercedes">Mercedes</button>
       <button class="brand-btn" data-brand="mini">Mini</button>
+      <button class="brand-btn" data-brand="audi">Audi</button>
+    </div>
+
+    <div class="brand-filter">
+      <button class="brand-btn active" data-fuel="all">Vše</button>
+      <button class="brand-btn" data-fuel="ice">Spalovací</button>
+      <button class="brand-btn" data-fuel="hybrid">Hybrid</button>
+      <button class="brand-btn" data-fuel="electric">Elektro</button>
     </div>
 
     <div id="cars-list"><p class="state-msg">Načítám...</p></div>
@@ -270,6 +278,7 @@
     let idx        = 0;
     let allCars    = [];
     let activeBrands = new Set(); // empty = all
+    let activeFuels  = new Set(); // empty = all
 
     function formatDay(key) {
       const [y, m, d] = key.split('-');
@@ -315,21 +324,39 @@
       }
     }
 
+    function fuelType(c) {
+      const d = c.details.toLowerCase();
+      if (d.includes('elektr')) return 'electric';
+      if (d.includes('hybrid')) return 'hybrid';
+      return 'ice';
+    }
+
     function filteredCars() {
-      if (activeBrands.size === 0) return allCars;
       return allCars.filter(c => {
-        const t = c.title.toLowerCase();
-        if (activeBrands.has('bmw')      && t.startsWith('bmw'))      return true;
-        if (activeBrands.has('mercedes') && t.startsWith('mercedes')) return true;
-        if (activeBrands.has('mini')     && t.startsWith('mini'))     return true;
-        return false;
+        if (activeBrands.size > 0) {
+          const t = c.title.toLowerCase();
+          const brandOk = (activeBrands.has('bmw')      && t.startsWith('bmw'))
+                       || (activeBrands.has('mercedes') && t.startsWith('mercedes'))
+                       || (activeBrands.has('mini')     && t.startsWith('mini'))
+                       || (activeBrands.has('audi')     && t.startsWith('audi'));
+          if (!brandOk) return false;
+        }
+        if (activeFuels.size > 0 && !activeFuels.has(fuelType(c))) return false;
+        return true;
       });
     }
 
     function updateBrandButtons() {
-      document.querySelectorAll('.brand-btn').forEach(btn => {
+      document.querySelectorAll('[data-brand]').forEach(btn => {
         const brand = btn.dataset.brand;
         btn.classList.toggle('active', brand === 'all' ? activeBrands.size === 0 : activeBrands.has(brand));
+      });
+    }
+
+    function updateFuelButtons() {
+      document.querySelectorAll('[data-fuel]').forEach(btn => {
+        const fuel = btn.dataset.fuel;
+        btn.classList.toggle('active', fuel === 'all' ? activeFuels.size === 0 : activeFuels.has(fuel));
       });
     }
 
@@ -358,7 +385,7 @@
     document.getElementById('prev-btn').addEventListener('click', () => showDay(idx + 1));
     document.getElementById('next-btn').addEventListener('click', () => showDay(idx - 1));
 
-    document.querySelectorAll('.brand-btn').forEach(btn => {
+    document.querySelectorAll('[data-brand]').forEach(btn => {
       btn.addEventListener('click', () => {
         const brand = btn.dataset.brand;
         if (brand === 'all') {
@@ -369,6 +396,21 @@
           activeBrands.add(brand);
         }
         updateBrandButtons();
+        renderCars();
+      });
+    });
+
+    document.querySelectorAll('[data-fuel]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const fuel = btn.dataset.fuel;
+        if (fuel === 'all') {
+          activeFuels.clear();
+        } else if (activeFuels.has(fuel)) {
+          activeFuels.delete(fuel);
+        } else {
+          activeFuels.add(fuel);
+        }
+        updateFuelButtons();
         renderCars();
       });
     });
