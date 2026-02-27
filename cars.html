@@ -185,11 +185,20 @@
       padding: 3rem 0;
     }
 
-    /* ── Brand filter ── */
+    /* ── Filters layout ── */
+    .filters-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .filters-left  { display: flex; flex-direction: column; gap: 1rem; }
+    .filters-right { display: flex; flex-direction: column; align-items: flex-end; gap: 1rem; }
+
     .brand-filter {
       display: flex;
       gap: 0.4rem;
-      margin-bottom: 1rem;
     }
 
     .brand-btn {
@@ -217,14 +226,12 @@
     .results-count {
       font-size: 0.78rem;
       color: #484f58;
-      margin-bottom: 0.75rem;
     }
 
     .sort-row {
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      margin-bottom: 1rem;
     }
     .sort-row label {
       font-size: 0.78rem;
@@ -286,36 +293,39 @@
 
     <p class="filter">BMW, Mercedes, Mini & Audi · Automat · 2020+ · do 100 000 km · 300k – 750k · sauto.cz</p>
 
-    <div class="brand-filter">
-      <button class="brand-btn active" data-brand="all">Vše</button>
-      <button class="brand-btn" data-brand="bmw">BMW</button>
-      <button class="brand-btn" data-brand="mercedes">Mercedes</button>
-      <button class="brand-btn" data-brand="mini">Mini</button>
-      <button class="brand-btn" data-brand="audi">Audi</button>
+    <div class="filters-wrapper">
+      <div class="filters-left">
+        <div class="brand-filter">
+          <button class="brand-btn active" data-brand="all">Vše</button>
+          <button class="brand-btn" data-brand="bmw">BMW</button>
+          <button class="brand-btn" data-brand="mercedes">Mercedes</button>
+          <button class="brand-btn" data-brand="mini">Mini</button>
+          <button class="brand-btn" data-brand="audi">Audi</button>
+        </div>
+        <div class="brand-filter">
+          <button class="brand-btn active" data-fuel="all">Vše</button>
+          <button class="brand-btn" data-fuel="ice">Spalovací</button>
+          <button class="brand-btn" data-fuel="hybrid">Hybrid</button>
+          <button class="brand-btn" data-fuel="electric">Elektro</button>
+        </div>
+      </div>
+      <div class="filters-right">
+        <p class="results-count" id="results-count"></p>
+        <div class="sort-row">
+          <label for="sort-select">Řadit:</label>
+          <select class="sort-select" id="sort-select">
+            <option value="date-desc">Datum ↓</option>
+            <option value="date-asc">Datum ↑</option>
+            <option value="price-asc">Cena ↑</option>
+            <option value="price-desc">Cena ↓</option>
+            <option value="km-asc">Nájezd ↑</option>
+            <option value="km-desc">Nájezd ↓</option>
+            <option value="year-desc">Rok ↓</option>
+            <option value="year-asc">Rok ↑</option>
+          </select>
+        </div>
+      </div>
     </div>
-
-    <div class="brand-filter">
-      <button class="brand-btn active" data-fuel="all">Vše</button>
-      <button class="brand-btn" data-fuel="ice">Spalovací</button>
-      <button class="brand-btn" data-fuel="hybrid">Hybrid</button>
-      <button class="brand-btn" data-fuel="electric">Elektro</button>
-    </div>
-
-    <div class="sort-row">
-      <label for="sort-select">Řadit:</label>
-      <select class="sort-select" id="sort-select">
-        <option value="date-desc">Datum ↓</option>
-        <option value="date-asc">Datum ↑</option>
-        <option value="price-asc">Cena ↑</option>
-        <option value="price-desc">Cena ↓</option>
-        <option value="km-asc">Nájezd ↑</option>
-        <option value="km-desc">Nájezd ↓</option>
-        <option value="year-desc">Rok ↓</option>
-        <option value="year-asc">Rok ↑</option>
-      </select>
-    </div>
-
-    <p class="results-count" id="results-count"></p>
     <div id="cars-list"><p class="state-msg">Načítám...</p></div>
   </div>
 
