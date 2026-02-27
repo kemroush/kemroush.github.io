@@ -1096,5 +1096,779 @@
     "link": "https://www.sauto.cz/osobni/detail/mini/cooper/182987435",
     "image": "https://d19-a.sdn.cz/d_19/c_img_QR_FE/bteB4Oi.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "27.02.2026 17:47"
+  },
+  {
+    "id": "209915766",
+    "title": "Audi A3 35 TFSI S tronic",
+    "price": "506 000 Kč",
+    "details": "2023, 55 788 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Volkswagen Financial Services",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209915766",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/kY1K2LlXQCEs3VCRgFy9dL7/9d19.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209256450",
+    "title": "Audi A3 Audi A3 35TDI Stronic Matrix",
+    "price": "595 000 Kč",
+    "details": "2022, 71 800 km , Nafta , Automatická  ·  Klatovy  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209256450",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_A/nPSV1TXV2nClkYSDkIEhe3vB/da7e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209433738",
+    "title": "Audi A3 2,0 TDI AT7 S line  Sportback",
+    "price": "570 000 Kč",
+    "details": "2022, 53 594 km , Nafta , Automatická  ·  Hlavní město Praha  ·  CARS & CARE Business Lease",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209433738",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_of_A/kPxr1WDRoIDxFxilKE5AFZL/19af.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209716884",
+    "title": "Audi Q2 1,5 35 TFSI S line Stronic LED",
+    "price": "545 000 Kč",
+    "details": "2022, 47 088 km , Benzín , Automatická  ·  Hlavní město Praha  ·  CARS & CARE Business Lease",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q2/209716884",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_B/nPXMbbUsvqB8gfp3BFkfoe6/27a1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209932659",
+    "title": "Audi Q4 e-tron e-tron ,1.maj. tepelné čerpadl",
+    "price": "573 000 Kč",
+    "details": "2022, 92 585 km , Elektro , Automatická  ·  Nymburk  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q4-e-tron/209932659",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/kY1K2LlXQB7HUzC3pF0VrWT/64cc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209642712",
+    "title": "Audi A3 1,4 40 TFSI  e Sportback advan",
+    "price": "679 999 Kč",
+    "details": "2021, 54 700 km , Hybridní , Automatická  ·  České Budějovice  ·  AUTOCENTRUM DAN A SYN",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209642712",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_A/kOzkBkwYBTqAqfMCdFZ5uLX/d688.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "208674944",
+    "title": "Audi A4 40 TDI quattro S tronic Advanc",
+    "price": "624 999 Kč",
+    "details": "2022, 98 941 km , Nafta , Automatická  ·  Hlavní město Praha  ·  UniCredit Leasing CZ, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4/208674944",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oa_B/kPxAuWMbDHDRgpQeNDhfCAZ/bd5b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "207628216",
+    "title": "Audi A1 Sportback 30 TFSI Advanced S t",
+    "price": "509 999 Kč",
+    "details": "2023, 28 920 km , Benzín , Automatická  ·  Hlavní město Praha  ·  UniCredit Leasing CZ, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a1/207628216",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_m3_B/nb4N2OmYQB5voJdyBlEc1j/46f4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "207600445",
+    "title": "Audi A1 2.0 40 TFSI S line Sportback",
+    "price": "679 999 Kč",
+    "details": "2023, 19 352 km , Benzín , Automatická  ·  Hlavní město Praha  ·  UniCredit Leasing CZ, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a1/207600445",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_m3_B/kcuj4damOBDvyebDBhi3Ri/941e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "208932174",
+    "title": "Audi Q3 35TDI QUATTRO SPORTBACK, PDC",
+    "price": "649 900 Kč",
+    "details": "2021, 92 815 km , Nafta , Automatická  ·  Hlavní město Praha  ·  AUTO Z DOVOZU",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q3/208932174",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_B/kOzmiQlmfoDdPdoC4HErdzRf/4a6d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209887365",
+    "title": "Audi Q3 Audi Q3 40 TDI Quattro, S line",
+    "price": "749 000 Kč",
+    "details": "2020, 99 999 km , Nafta , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q3/209887365",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/kY1K2LlXQBdLY8qAFvweNu/7c00.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209960229",
+    "title": "Audi A5 40 TDI, S-Line, Automat",
+    "price": "740 000 Kč",
+    "details": "2022, 33 300 km , Nafta , Automatická  ·  Hlavní město Praha  ·  Mototechna",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a5/209960229",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/nPVpfd5QLLDoMo7ISwF3pauv/5c49.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209630283",
+    "title": "Audi Q3 SPORTBACK 35 TFSI 110kw,S-LINE",
+    "price": "659 000 Kč",
+    "details": "2021, 35 000 km , Benzín , Automatická  ·  Kolín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q3/209630283",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_A/nDJ4VEZEqCaOxZIf4FMA4EV/8bb6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209875719",
+    "title": "Audi A3 1,0 TFSi SportBack S-Tronic",
+    "price": "453 750 Kč",
+    "details": "2023, 22 500 km , Benzín , Automatická  ·  Liberec  ·  JoLaCar Liberec, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209875719",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/kBfrbpoeNBP53EHxXFu3685/8b05.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209945760",
+    "title": "Audi Q2 30 TDI S tronic S line*Kamera*",
+    "price": "719 950 Kč",
+    "details": "2023, 73 505 km , Nafta , Automatická  ·  Hlavní město Praha  ·  Auto Targa, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q2/209945760",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/kY1K2LlXQCNqj2DvFF2YyJG/024a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "207491559",
+    "title": "Audi Q2 Advanced 1.5 TFSI 110 kW",
+    "price": "729 990 Kč",
+    "details": "2024, 1 012 km , Benzín , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q2/207491559",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/kY1K2LlXQDm6hJBOUFwtY7U/d0aa.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209681370",
+    "title": "Audi e-tron 50 QUATTRO NAVI 2xKOLA",
+    "price": "658 000 Kč",
+    "details": "2022, 55 570 km , Elektro , Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
+    "link": "https://www.sauto.cz/osobni/detail/audi/e-tron/209681370",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_B/kOzkBkwYBTEBlmaJofFV5ZGM/3d30.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209940420",
+    "title": "Audi Q3 40TDi S-line Quattro, DPH, ČR",
+    "price": "750 000 Kč",
+    "details": "2021, 70 576 km , Nafta , Automatická  ·  Hlavní město Praha  ·  DEAN AUTA",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q3/209940420",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/nPVpfd5QLLEA4WVEhmF1WVs8/e0fb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209930679",
+    "title": "Audi A3 Audi A3 30 TFSI 2024",
+    "price": "580 000 Kč",
+    "details": "2023, 36 700 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209930679",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/nPVpfd5QLLD53UiDflF0RZvp/1967.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209929617",
+    "title": "Audi A6 2,0 QUATTRO TAŽNÉ",
+    "price": "749 000 Kč",
+    "details": "2021, 45 750 km , Nafta , Automatická  ·  Příbram  ·  Auto Evropská",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a6/209929617",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/nPVpfd5QLLChvUCDuCF0OM5s/06b4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209851392",
+    "title": "Audi e-tron AUDI E-Tron 50 QUATTRO záruka",
+    "price": "675 000 Kč",
+    "details": "2022, 47 650 km , Elektro , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/audi/e-tron/209851392",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/nPXMbbUsvqawIkHtgFr8u4j/8279.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209924772",
+    "title": "Audi e-tron Quattro/Kamera/230kW/SoH99%",
+    "price": "659 000 Kč",
+    "details": "2022, 25 200 km , Elektro , Automatická  ·  Hlavní město Praha  ·  Fair Play Cars, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/e-tron/209924772",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/nPVpfd5QLLEA4WVDMMFzrw8e/0b5f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209924670",
+    "title": "Audi A5 SPORTBACK 35 TFSI S-TRONIC",
+    "price": "519 900 Kč",
+    "details": "2022, 84 557 km , Benzín , Automatická  ·  Hlavní město Praha  ·  AUTO JAROV Kunratice  ojeté vozy",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a5/209924670",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/kY1K2LlXQBsPCGCeOFzrQKr/4d77.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "208924653",
+    "title": "Audi Q5 35 TDI quattro S tronic 2.0 TD",
+    "price": "649 990 Kč",
+    "details": "2020, 90 386 km , Nafta , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q5/208924653",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/kY1K2LlXQBiCrTCqLFyYibj/689a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "208859142",
+    "title": "Audi A3 1.5 110 kW",
+    "price": "579 990 Kč",
+    "details": "2021, 57 228 km , Benzín , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/208859142",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_of_A/nO5OZtPbfGXuqXVGEzlrjI/7c46.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209921505",
+    "title": "Audi A3 1.5 TSI DSG Sportback, S LINE,",
+    "price": "585 000 Kč",
+    "details": "2021, 37 115 km , Benzín , Automatická  ·  Opava  ·  PIA CZ Auto Heller Opava",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209921505",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/kY1K2LlXQCEs3VCioFzi00e/cfbf.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209918376",
+    "title": "Audi Q3 1.5 TFSi / 110 kW",
+    "price": "744 900 Kč",
+    "details": "2022, 35 550 km , Benzín , Automatická  ·  Plzeň-město  ·  AUTOCENTRUM ŠMUCLER s.r.o. | Plzeň | ojeté vozy",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q3/209918376",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/nPVpfd5QLLDhCZlC6oFzSFTd/caed.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209633013",
+    "title": "Audi Q3 35TDI S-line Stronic,ČR,DPH",
+    "price": "649 000 Kč",
+    "details": "2021, 98 628 km , Nafta , Automatická  ·  Mladá Boleslav  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q3/209633013",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_A/kOzkBkwYBTqAqfF4MFMm9Za/a71e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209693532",
+    "title": "Audi A4 Avant NEBOURÁNO, SERVISNÍ KNÍŽKA",
+    "price": "593 000 Kč",
+    "details": "2022, 57 926 km , Benzín , Automatická  ·  Kroměříž  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4-avant/209693532",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_A/nDJ4VEZEqCemGmOKWFZx3NW/ad03.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209907909",
+    "title": "Audi A5 2.0TFSI 150kW S-Line PC1,55m",
+    "price": "712 690 Kč",
+    "details": "2022, 15 300 km , Benzín , Automatická  ·  Zlín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a5/209907909",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/kY1K2LlXQCEs3VBx5Fx7MiQ/4c06.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "208538228",
+    "title": "Audi Q2 1,0 TFSi 85kW AT Akční CENA!",
+    "price": "438 900 Kč",
+    "details": "2020, 41 960 km , Benzín , Automatická  ·  Hlavní město Praha  ·  AutoPalace Spořilov",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q2/208538228",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oZ_B/kBkJRwehYB3ZBZE1oDUgjbZ/2ac8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "208351016",
+    "title": "Audi A4 Avant 35 2.0TFSI 110kW S line",
+    "price": "619 000 Kč",
+    "details": "2022, 33 125 km , Benzín , Automatická  ·  Litoměřice  ·  Auto Nord Group, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4-avant/208351016",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_B/kBfrbpoeNDt0rrTjFj16io/a537.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209685441",
+    "title": "Audi A3 Limuzína Sline 35 TFSI Stronic",
+    "price": "619 000 Kč",
+    "details": "2021, 29 958 km , Benzín , Automatická  ·  Hlavní město Praha  ·  AUTO JAROV",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209685441",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_B/kOzkBkwYBTDPt7SKCtFW7DQy/ddbc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209880897",
+    "title": "Audi A6 50TFSIe Quattro*360kam*KeyLess",
+    "price": "739 000 Kč",
+    "details": "2021, 99 473 km , Hybridní , Automatická  ·  Náchod  ·  CAR1 Vysokov",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a6/209880897",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/kY1K2LlXQBsPCGYMFvLzRu/3ed3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209877081",
+    "title": "Audi A3 2,0 S LINE  Sportback",
+    "price": "549 000 Kč",
+    "details": "2022, 21 400 km , Nafta , Automatická  ·  Příbram  ·  Auto Evropská",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209877081",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/kY1K2LlXQJGqrBS3FwzK0O/b34d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209845449",
+    "title": "Audi A3 Sportback 35 TDI S-LINE*Navi*",
+    "price": "624 360 Kč",
+    "details": "2021, 85 000 km , Nafta , Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209845449",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/nPXMbbUsvqECACpHnsFrZyTt/1925.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209835648",
+    "title": "Audi A3 Sportback 35 TFSI S-Line*Navi*",
+    "price": "713 900 Kč",
+    "details": "2024, 53 310 km , Benzín , Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209835648",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/kBfrbpoeNDt0rrD5SFqqS83/f8e7.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209830806",
+    "title": "Audi A6 Avant 50TDi,210kw,QUATTRO,19ALU",
+    "price": "739 990 Kč",
+    "details": "2020, 70 662 km , Nafta , Automatická  ·  Sokolov  ·  Milan Novotný - NCAR",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a6-avant/209830806",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/kBfrbpoeNDt0rrEPsFrZGes/e9f3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209829744",
+    "title": "Audi A3 Sportback 45 TFSIe S-line*Navi",
+    "price": "696 960 Kč",
+    "details": "2022, 63 243 km , Hybridní , Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209829744",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/kBfrbpoeND2I1YDZVFqNtlo/a980.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209915766",
+    "title": "Audi A3 35 TFSI S tronic",
+    "price": "506 000 Kč",
+    "details": "2023, 55 788 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Volkswagen Financial Services",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209915766",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/kY1K2LlXQCEs3VCRgFy9dL7/9d19.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209805894",
+    "title": "Audi Q2 35 TFSI S-tronic*Navi*Led*DAB*",
+    "price": "617 100 Kč",
+    "details": "2022, 53 000 km , Benzín , Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q2/209805894",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_B/nPXMbbUsvqBP5QmC1DFnRWmo/b457.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209564835",
+    "title": "Audi A6 55TFSIe/2021/4X4,S-LINE-ZÁRUKA",
+    "price": "699 000 Kč",
+    "details": "2020, 96 762 km , Hybridní , Automatická  ·  Hlavní město Praha  ·  AUTOCENTRUM DELMOS PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a6/209564835",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_A/nDJ4VEZEqxQDME1wFGlSlA/3c4e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209778300",
+    "title": "Audi A3 1.5TFSI,110kW,AT,SPORTBACK",
+    "price": "519 900 Kč",
+    "details": "2020, 89 958 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Emil Frey - Ojeté vozy - Černý Most budova B",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209778300",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_B/nDJ4VEZEqb3AyYXdFjxgwV/d7db.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209764905",
+    "title": "Audi A4 Avant 40 TDI S tronic*PANO*Navi*Led*",
+    "price": "726 000 Kč",
+    "details": "2023, 58 957 km , Nafta , Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4-avant/209764905",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_A/kOzkBkwYBTqAqfQfpFigBLx/a641.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209759511",
+    "title": "Audi A4 40 TFSI S TRONIC ADVANCED",
+    "price": "727 210 Kč",
+    "details": "2022, 73 300 km , Benzín , Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4/209759511",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_A/kOzkBkwYBTDqlCCQEpFh9HqT/ff98.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "178729204",
+    "title": "Audi A3 35 2,0TDi 110kW 7°StronicSline",
+    "price": "699 900 Kč",
+    "details": "2020, 23 900 km , Nafta , Automatická  ·  Bruntál  ·  Auto color Design, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/178729204",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oa_A/kOeDqKABdsBfbp9eYDc3NDZ/7ced.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209393076",
+    "title": "Audi A4 AVANT 35 TDI 120 KW",
+    "price": "598 000 Kč",
+    "details": "2021, 49 961 km , Nafta , Automatická  ·  Hlavní město Praha  ·  AUTO JAROV",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4/209393076",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_B/nO1Ur3YPjBBN9bPVEEwMiea/ed08.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209752488",
+    "title": "Audi Q3 2,0 tsfi, Quatrro",
+    "price": "679 900 Kč",
+    "details": "2022, 60 767 km , Benzín , Automatická  ·  Opava  ·  AUTOBAZAR D+J JIŘÍ KOCUR",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q3/209752488",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_A/kOzkBkwYBTCNNSBOQoFgWzpX/3f09.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209741415",
+    "title": "Audi A4 Avant TDI120 kW 35 Advanced 7Stronic",
+    "price": "599 900 Kč",
+    "details": "2020, 81 924 km , Nafta , Automatická  ·  Hlavní město Praha  ·  Autosalon Klokočka Centrum s.r.o. - Centrum zánovních a ojetých vozů",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4-avant/209741415",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_A/nDJ4VEZEqBMnoOU3vFfSxNn/c425.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209736990",
+    "title": "Audi A4 Avant 30 TDI*Navi*Led*DAB*PDC*",
+    "price": "724 790 Kč",
+    "details": "2024, 52 435 km , Nafta , Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4-avant/209736990",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_A/nDJ4VEZEqxQDMUiDFfErBc/f3f2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209281944",
+    "title": "Audi A4 Avant 40 G-TRON 56 000 KM 125 kW-DPH",
+    "price": "486 000 Kč",
+    "details": "2020, 56 000 km , Benzín , Automatická  ·  Brno-venkov  ·  OK - AUTA",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4-avant/209281944",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_A/kOzmiQlmfoQAuLWNEkWtt0/7ee6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "208564955",
+    "title": "Audi A6 2.0 TDI LCD PRAV.SERVIS TZ-DPH",
+    "price": "678 000 Kč",
+    "details": "2020, 97 000 km , Nafta , Automatická  ·  Brno-venkov  ·  OK - AUTA",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a6/208564955",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oa_A/nsLxLojICbyt3OKkDXDuld/c1bb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209705943",
+    "title": "Audi Q3 2,0 TSFi Quattro DSG",
+    "price": "629 900 Kč",
+    "details": "2020, 50 500 km , Benzín , Automatická  ·  Opava  ·  AUTOBAZAR D+J JIŘÍ KOCUR",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q3/209705943",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_A/nDJ4VEZEqCs9CyP73FbECZ0/a99c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209292636",
+    "title": "Audi A3 Sportback 35 TFSI Stronic",
+    "price": "739 000 Kč",
+    "details": "2025, 18 147 km , Benzín , Automatická  ·  Hlavní město Praha  ·  AUTO JAROV",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209292636",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_A/nO1Ur3YPjBNaf8oIElDXG9/6287.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209701707",
+    "title": "Audi Q4 e-tron 150KW ALU 21 TOP STAV",
+    "price": "599 000 Kč",
+    "details": "2021, 84 000 km , Elektro , Automatická  ·  Hlavní město Praha  ·  Forin Czech",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q4-e-tron/209701707",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_A/kOzkBkwYBTBCGZ9Lq0Fahau6/0ed6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209684619",
+    "title": "Audi A4 Avant 40 g-tron 2.0 TFSI CNG Tažné",
+    "price": "649 000 Kč",
+    "details": "2022, 63 500 km , CNG + benzín , Automatická  ·  Brno-město  ·  Finevest Cars",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4-avant/209684619",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_B/kOzkBkwYBTqAqfKmrFWr35e/4022.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209684616",
+    "title": "Audi A4 Avant 40 g-tron 2.0 TFSI CNG Matrix",
+    "price": "689 000 Kč",
+    "details": "2022, 75 000 km , CNG + benzín , Automatická  ·  Brno-město  ·  Finevest Cars",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4-avant/209684616",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_B/nDJ4VEZEqb3AyPHdFWr3vN/7804.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209684610",
+    "title": "Audi A4 Avant 40 g-tron 2.0 TFSI CNG Tažné",
+    "price": "629 000 Kč",
+    "details": "2022, 81 000 km , CNG + benzín , Automatická  ·  Brno-město  ·  Finevest Cars",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4-avant/209684610",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_B/nDJ4VEZEqD86wCPb0FWr3gT/f8ec.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209684604",
+    "title": "Audi A4 Avant 40 g-tron 2.0 TFSI CNG Matrix",
+    "price": "629 000 Kč",
+    "details": "2022, 80 000 km , CNG + benzín , Automatická  ·  Brno-město  ·  Finevest Cars",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4-avant/209684604",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_B/kOzkBkwYBTBLrRlKYbFWr3R6/9319.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209684598",
+    "title": "Audi A4 Avant 40 g-tron 2.0 TFSI CNG Matrix",
+    "price": "669 000 Kč",
+    "details": "2022, 55 500 km , CNG + benzín , Automatická  ·  Brno-město  ·  Finevest Cars",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4-avant/209684598",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_B/nDJ4VEZEqCaOxZPQZFWr3CD/8217.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209651838",
+    "title": "Audi e-tron Matrix/Záruka/AC22kW/SoH97%",
+    "price": "699 000 Kč",
+    "details": "2021, 31 664 km , Elektro , Automatická  ·  Hlavní město Praha  ·  Fair Play Cars, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/e-tron/209651838",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_B/nDJ4VEZEqDjvpWL9gFO6KLJ/e56d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209651658",
+    "title": "Audi Q3 ADVANCED 35TDI 110KW QUATTRO",
+    "price": "699 900 Kč",
+    "details": "2022, 90 603 km , Nafta , Automatická  ·  Praha-východ  ·  Auto Opat- ŠKODA Plus/DasWelt Auto-ojeté vozy",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q3/209651658",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_B/nDJ4VEZEqxmIDXggFjXyb1/4864.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209634948",
+    "title": "Audi A3 Sportback 35TFSI S-Tronic kam.",
+    "price": "669 000 Kč",
+    "details": "2023, 45 000 km , Benzín , Automatická  ·  Brno-město  ·  Finevest Cars",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209634948",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_A/nDJ4VEZEqxmIDEq8FNNZZg/85a3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209568858",
+    "title": "Audi A3 35 TFSI110 kW 7Stronic",
+    "price": "579 000 Kč",
+    "details": "2022, 70 979 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Autosalon Klokočka Centrum s.r.o. - Centrum zánovních a ojetých vozů",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209568858",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_A/kOzkBkwYBTBLrRlCfaFGJKPQ/e855.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209561109",
+    "title": "Audi Q3 2,0 TDI S-Line ČR 1.maj ZÁRUKA",
+    "price": "714 900 Kč",
+    "details": "2023, 41 093 km , Nafta , Automatická  ·  Praha-západ  ·  AutoPalace Tuchoměřice",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q3/209561109",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_A/kOzkBkwYBTQzPhEezFKuIFX/1c39.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209522619",
+    "title": "Audi Q4 e-tron Sportback 35 SoH 91%  Matrix",
+    "price": "594 000 Kč",
+    "details": "2022, 89 800 km , Elektro , Automatická  ·  Olomouc  ·  NeoDriverse - elektrické vozy prodej a dovoz",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q4-e-tron/209522619",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_B/kOzkBkwYBTDPt7SIHHFSWbQf/3fb8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209383545",
+    "title": "Audi A3 S-line 1.5 TSI 110 kW",
+    "price": "629 990 Kč",
+    "details": "2022, 25 552 km , Benzín , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209383545",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_B/nO1Ur3YPjBCBv9BGngEu5oUZ/08cd.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209408316",
+    "title": "Audi S3 2.0TFSI 221kW QUATTRO S TRONIC",
+    "price": "699 999 Kč",
+    "details": "2020, 72 348 km , Benzín , Automatická  ·  Hlavní město Praha  ·  MAMA CAR a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/s3/209408316",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_of_A/kPRtHkVQLlQSx23QE1e6M0/ebd1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209341812",
+    "title": "Audi A3 1.5 TSI 110 kW",
+    "price": "579 990 Kč",
+    "details": "2021, 56 084 km , Benzín , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209341812",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_B/nO1Ur3YPjBDmHSdDOtEqu7Qq/fa47.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209262291",
+    "title": "Audi A3 1.5 TFSI 110 kW S line",
+    "price": "699 900 Kč",
+    "details": "2024, 8 082 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Direct auto Park",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/209262291",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_A/kBlLbSfl8CDPLmDrjEinhOW/ee20.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209247537",
+    "title": "Audi Q2 Advanced 35 TFSI Stronic",
+    "price": "739 900 Kč",
+    "details": "2024, 15 000 km , Benzín , Automatická  ·  Hlavní město Praha  ·  AUTO JAROV Kunratice - Audi Approved Plus",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q2/209247537",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_A/kBlLbSfl8CDPLmDABEgZGnk/1a6d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209245779",
+    "title": "Audi A5 Sportback / 35 / 2,0 TFSI / 11",
+    "price": "634 900 Kč",
+    "details": "2023, 77 596 km , Benzín , Automatická  ·  Pardubice  ·  Autocentrum BARTH a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a5/209245779",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_A/kBlLbSfl8KV2SDEBEgVuTA/b234.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "208520417",
+    "title": "Audi A3 Sportback 30 TFSI 85KW",
+    "price": "619 900 Kč",
+    "details": "2024, 11 800 km , Benzín , Automatická  ·  Hlavní město Praha  ·  AUTO JAROV Kunratice - Audi Approved Plus",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/208520417",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oZ_B/kBkJRwehYz101EHzDS798S/272b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209193711",
+    "title": "Audi Q2 2,0 QUATTRO,NAVI,KAMERA",
+    "price": "629 000 Kč",
+    "details": "2022, 25 100 km , Nafta , Automatická  ·  Příbram  ·  Auto Evropská",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q2/209193711",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_A/kOzmiQlmfoCswkNBRqEnYsMa/f968.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209160621",
+    "title": "Audi A4 Avant TDI150 kW Quattro 7Stronic",
+    "price": "729 900 Kč",
+    "details": "2022, 40 137 km , Nafta , Automatická  ·  Hlavní město Praha  ·  Autosalon Klokočka Centrum s.r.o. - Centrum zánovních a ojetých vozů",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4-avant/209160621",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_od_B/kOy0N9usHcXsqzBbuEXGSTw/84bb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209129943",
+    "title": "Audi A4 Avant 40 TDI quattro S tronic",
+    "price": "638 000 Kč",
+    "details": "2021, 55 489 km , Nafta , Automatická  ·  Hlavní město Praha  ·  HAVEX-auto s.r.o",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4-avant/209129943",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_B/kOzmiQlmfoKFXEubEoiI9s/564d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209024637",
+    "title": "Audi A6 40 2,0 TDI / 150 kW 7ST",
+    "price": "600 000 Kč",
+    "details": "2021, 98 712 km , Nafta , Automatická  ·  Hradec Králové  ·  Autocentrum BARTH a.s. - Das WeltAuto",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a6/209024637",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oc_B/kOes7N5Ni6DuE0ocYEISI0q/24ba.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "209015130",
+    "title": "Audi A1 SB 1,0TSI 70KW DSG S-LINE",
+    "price": "499 000 Kč",
+    "details": "2021, 32 500 km , Benzín , Automatická  ·  Znojmo  ·  AUTODRUŽSTVO ZNOJMO - Škoda Plus",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a1/209015130",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oc_B/kcukOQcMmDmihgDneEHUJ5e/d3be.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "208929105",
+    "title": "Audi Q3 35 TFSI 110 kW 7S-tronic",
+    "price": "733 300 Kč",
+    "details": "2022, 50 078 km , Benzín , Automatická  ·  Praha-východ  ·  Auto I.S.R. a.s. - Das WeltAuto",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q3/208929105",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oc_A/nPvSisOTaMBEthrCcKD9lclG/d41a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "208917708",
+    "title": "Audi Q3 35 TFSI",
+    "price": "599 000 Kč",
+    "details": "2022, 34 866 km , Benzín , Automatická  ·  České Budějovice  ·  Porsche České Budějovice",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q3/208917708",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oc_A/nPvSisOTaMXqD9ByGD8a3w8/7e87.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "208897593",
+    "title": "Audi A3 1,5 110kW HUD ZÁRUKA LED ACC",
+    "price": "605 000 Kč",
+    "details": "2022, 27 298 km , Benzín , Automatická  ·  Olomouc  ·  AUTO A1",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/208897593",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_B/nPXMbbUsvqawIkEqjFoicjT/a1bd.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "208765839",
+    "title": "Audi A4 35 2.0 TDI 120 kW Stronic Avan",
+    "price": "579 000 Kč",
+    "details": "2023, 84 306 km , Nafta , Automatická  ·  Ostrava-město  ·  PIA CZ Auto Heller Ostrava",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4/208765839",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_ob_A/kPxAuWMbDHC2DDFnRDr8hIr/6416.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "208611500",
+    "title": "Audi Q2 S line 35 TFSI",
+    "price": "749 000 Kč",
+    "details": "2023, 29 000 km , Benzín , Automatická  ·  Brno-město  ·  ROS, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q2/208611500",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oa_A/kBkJRwehYBc0GnB72DbulP7/6a31.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "208318955",
+    "title": "Audi A3 sportback S line 35 TDI",
+    "price": "719 000 Kč",
+    "details": "2023, 49 127 km , Nafta , Automatická  ·  Brno-město  ·  ROS, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/208318955",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_ob_A/kBj94XhVwBhVo6BGxDwMAfd/2416.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "207497004",
+    "title": "Audi Q2 35 TFSI S tronic S line",
+    "price": "665 999 Kč",
+    "details": "2023, 37 227 km , Benzín , Automatická  ·  Hlavní město Praha  ·  HAVEX-auto s.r.o",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q2/207497004",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_m2_A/nOyK4m0UavC51jzcpzj1C/3f4b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
+  },
+  {
+    "id": "207462573",
+    "title": "Audi A1 Sportback 35 TFSI S tronic S",
+    "price": "649 999 Kč",
+    "details": "2022, 24 814 km , Benzín , Automatická  ·  Hlavní město Praha  ·  HAVEX-auto s.r.o",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a1/207462573",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_m2_A/nOyK4m0UavBV8CDXbwtxH/11db.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 18:17"
   }
 ]
