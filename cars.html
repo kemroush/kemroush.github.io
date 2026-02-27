@@ -219,6 +219,31 @@
       color: #484f58;
       margin-bottom: 0.75rem;
     }
+
+    .sort-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .sort-row label {
+      font-size: 0.78rem;
+      color: #484f58;
+      white-space: nowrap;
+    }
+    .sort-select {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 20px;
+      color: #8b949e;
+      font-size: 0.78rem;
+      font-family: inherit;
+      padding: 0.3rem 0.75rem;
+      cursor: pointer;
+      outline: none;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .sort-select:hover, .sort-select:focus { border-color: #8b949e; color: #e6edf3; }
   </style>
 </head>
 <body>
@@ -276,6 +301,20 @@
       <button class="brand-btn" data-fuel="electric">Elektro</button>
     </div>
 
+    <div class="sort-row">
+      <label for="sort-select">Řadit:</label>
+      <select class="sort-select" id="sort-select">
+        <option value="date-desc">Datum ↓</option>
+        <option value="date-asc">Datum ↑</option>
+        <option value="price-asc">Cena ↑</option>
+        <option value="price-desc">Cena ↓</option>
+        <option value="km-asc">Nájezd ↑</option>
+        <option value="km-desc">Nájezd ↓</option>
+        <option value="year-desc">Rok ↓</option>
+        <option value="year-asc">Rok ↑</option>
+      </select>
+    </div>
+
     <p class="results-count" id="results-count"></p>
     <div id="cars-list"><p class="state-msg">Načítám...</p></div>
   </div>
@@ -286,6 +325,7 @@
     let allCars    = [];
     let activeBrands = new Set(); // empty = all
     let activeFuels  = new Set(); // empty = all
+    let sortValue    = 'date-desc';
 
     function formatDay(key) {
       const [y, m, d] = key.split('-');
@@ -329,6 +369,38 @@
       } catch {
         list.innerHTML = '<p class="state-msg">Nepodařilo se načíst data.</p>';
       }
+    }
+
+    function parsePrice(c) {
+      const m = c.price.match(/[\d\s\u00a0]+/);
+      return m ? parseInt(m[0].replace(/\D/g, '')) : 0;
+    }
+    function parseKm(c) {
+      const m = c.details.match(/([\d\s\u00a0]+)\s*km/);
+      return m ? parseInt(m[1].replace(/\D/g, '')) : 0;
+    }
+    function parseYear(c) {
+      const m = c.details.match(/\b(20\d{2})\b/);
+      return m ? parseInt(m[1]) : 0;
+    }
+    function parseDate(c) {
+      if (!c.found_at) return 0;
+      // "27.02.2026 16:49"
+      const m = c.found_at.match(/(\d+)\.(\d+)\.(\d+)\s+(\d+):(\d+)/);
+      return m ? new Date(m[3], m[2]-1, m[1], m[4], m[5]).getTime() : 0;
+    }
+
+    function sortedCars(cars) {
+      const [field, dir] = sortValue.split('-');
+      const asc = dir === 'asc';
+      return [...cars].sort((a, b) => {
+        let va, vb;
+        if (field === 'price') { va = parsePrice(a); vb = parsePrice(b); }
+        else if (field === 'km')   { va = parseKm(a);    vb = parseKm(b); }
+        else if (field === 'year') { va = parseYear(a);  vb = parseYear(b); }
+        else                       { va = parseDate(a);  vb = parseDate(b); }
+        return asc ? va - vb : vb - va;
+      });
     }
 
     function fuelType(c) {
@@ -375,7 +447,7 @@
         list.innerHTML = '<p class="state-msg">Žádná auta pro tento filtr.</p>';
         return;
       }
-      list.innerHTML = cars.map(c => `
+      list.innerHTML = sortedCars(cars).map(c => `
         <a href="${c.link}" class="car-card" target="_blank" rel="noopener">
           ${c.image ? `<div class="car-thumb"><img src="${c.image}" alt="" loading="lazy"></div>` : ''}
           <div class="car-body">
@@ -392,6 +464,11 @@
 
     document.getElementById('prev-btn').addEventListener('click', () => showDay(idx + 1));
     document.getElementById('next-btn').addEventListener('click', () => showDay(idx - 1));
+
+    document.getElementById('sort-select').addEventListener('change', e => {
+      sortValue = e.target.value;
+      renderCars();
+    });
 
     document.querySelectorAll('[data-brand]').forEach(btn => {
       btn.addEventListener('click', () => {
