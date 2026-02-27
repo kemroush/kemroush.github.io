@@ -213,6 +213,12 @@
       color: #0d1117;
       font-weight: 600;
     }
+
+    .results-count {
+      font-size: 0.78rem;
+      color: #484f58;
+      margin-bottom: 0.75rem;
+    }
   </style>
 </head>
 <body>
@@ -270,6 +276,7 @@
       <button class="brand-btn" data-fuel="electric">Elektro</button>
     </div>
 
+    <p class="results-count" id="results-count"></p>
     <div id="cars-list"><p class="state-msg">Načítám...</p></div>
   </div>
 
@@ -363,6 +370,7 @@
     function renderCars() {
       const cars = filteredCars();
       const list = document.getElementById('cars-list');
+      document.getElementById('results-count').textContent = `${cars.length} ${cars.length === 1 ? 'výsledek' : cars.length >= 2 && cars.length <= 4 ? 'výsledky' : 'výsledků'}`;
       if (!cars.length) {
         list.innerHTML = '<p class="state-msg">Žádná auta pro tento filtr.</p>';
         return;
