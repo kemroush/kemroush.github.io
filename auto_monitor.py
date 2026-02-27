@@ -28,6 +28,7 @@ CONFIG = {
     "min_year":      2020,
     "brands":        ["bmw", "mercedes-benz", "mini"],
     "blocked_sellers": ["davo car", "aaa auto"],
+    "max_pages":       5,
     "seen_file":     os.path.join(DATA_DIR, "seen_cars.json"),
     "index_file":    os.path.join(DATA_DIR, "index.json"),
 }
@@ -99,7 +100,7 @@ def update_index(day_key: str, count: int, updated_at: str):
 # ─────────────────────────────────────────────
 
 def scrape_sauto(brand: str) -> list[dict]:
-    url = (
+    base_url = (
         f"https://www.sauto.cz/inzerce/osobni/{brand}"
         f"?cena-od={CONFIG['min_price_czk']}"
         f"&cena-do={CONFIG['max_price_czk']}"
@@ -109,98 +110,103 @@ def scrape_sauto(brand: str) -> list[dict]:
     )
     cars = []
     try:
-        result = subprocess.run(
-            ["curl", "-sL",
-             "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-             "-H", "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-             "-H", "Accept-Language: cs-CZ,cs;q=0.9",
-             url],
-            capture_output=True, text=True, timeout=30,
-        )
-        soup = BeautifulSoup(result.stdout, "lxml")
+        for page in range(1, CONFIG["max_pages"] + 1):
+            url = base_url if page == 1 else f"{base_url}&strana={page}"
+            result = subprocess.run(
+                ["curl", "-sL",
+                 "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+                 "-H", "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                 "-H", "Accept-Language: cs-CZ,cs;q=0.9",
+                 url],
+                capture_output=True, text=True, timeout=30,
+            )
+            soup = BeautifulSoup(result.stdout, "lxml")
+            items = soup.select("li.c-item.c-item--hor")
+            if not items:
+                break  # žádné další výsledky
 
-        for item in soup.select("li.c-item.c-item--hor"):
-            try:
-                ad_id = None
-                for cls in item.get("class", []):
-                    m = re.match(r"^c-item-(\d+)$", cls)
-                    if m:
-                        ad_id = m.group(1)
-                        break
+            for item in items:
+                try:
+                    ad_id = None
+                    for cls in item.get("class", []):
+                        m = re.match(r"^c-item-(\d+)$", cls)
+                        if m:
+                            ad_id = m.group(1)
+                            break
 
-                name_el   = item.select_one("span.c-item__name")
-                suffix_el = item.select_one("span.c-item__name--suffix")
-                direct = "".join(str(t).strip() for t in name_el.children
-                                 if isinstance(t, NavigableString)).rstrip(",").strip() if name_el else ""
-                suffix = suffix_el.get_text(strip=True) if suffix_el else ""
-                title  = f"{direct} {suffix}".strip()
+                    name_el   = item.select_one("span.c-item__name")
+                    suffix_el = item.select_one("span.c-item__name--suffix")
+                    direct = "".join(str(t).strip() for t in name_el.children
+                                     if isinstance(t, NavigableString)).rstrip(",").strip() if name_el else ""
+                    suffix = suffix_el.get_text(strip=True) if suffix_el else ""
+                    title  = f"{direct} {suffix}".strip()
 
-                price_el = item.select_one("div.c-item__price")
-                price    = price_el.get_text(strip=True) if price_el else "Cena neuvedena"
+                    price_el = item.select_one("div.c-item__price")
+                    price    = price_el.get_text(strip=True) if price_el else "Cena neuvedena"
 
-                info_el   = item.select_one("div.c-item__info")
-                info_text = info_el.get_text(" ", strip=True) if info_el else ""
+                    info_el   = item.select_one("div.c-item__info")
+                    info_text = info_el.get_text(" ", strip=True) if info_el else ""
 
-                loc_el   = item.select_one("div.c-item__locality")
-                location = loc_el.get_text(strip=True) if loc_el else ""
+                    loc_el   = item.select_one("div.c-item__locality")
+                    location = loc_el.get_text(strip=True) if loc_el else ""
 
-                seller_el   = item.select_one("div.c-item__seller")
-                seller_text = seller_el.get_text(strip=True) if seller_el else ""
-                seller_type = "Soukromý" if seller_text == "Soukromý prodejce" else seller_text
+                    seller_el   = item.select_one("div.c-item__seller")
+                    seller_text = seller_el.get_text(strip=True) if seller_el else ""
+                    seller_type = "Soukromý" if seller_text == "Soukromý prodejce" else seller_text
 
-                details = f"{info_text}  ·  {location}  ·  {seller_type}".strip(" ·").strip()
+                    details = f"{info_text}  ·  {location}  ·  {seller_type}".strip(" ·").strip()
 
-                link_el = item.select_one("a[href]")
-                href    = link_el["href"] if link_el else ""
-                link    = href if href.startswith("http") else f"https://www.sauto.cz{href}"
+                    link_el = item.select_one("a[href]")
+                    href    = link_el["href"] if link_el else ""
+                    link    = href if href.startswith("http") else f"https://www.sauto.cz{href}"
 
-                img_el = item.select_one("img.c-item__image")
-                img_src = img_el["src"] if img_el else ""
-                if img_src.startswith("//"):
-                    img_src = "https:" + img_src
+                    img_el = item.select_one("img.c-item__image")
+                    img_src = img_el["src"] if img_el else ""
+                    if img_src.startswith("//"):
+                        img_src = "https:" + img_src
 
-                if not ad_id:
-                    ad_id = link
+                    if not ad_id:
+                        ad_id = link
 
-                # Filtr: blokovaní prodejci
-                seller_lower = seller_text.lower()
-                if any(b in seller_lower for b in CONFIG["blocked_sellers"]):
-                    continue
-
-                # Záložní filtr: značka (pro případ sponzorovaných výsledků jiných značek)
-                title_lower = title.lower()
-                brand_prefixes = ["bmw", "mercedes", "mini"]
-                if not any(title_lower.startswith(b) for b in brand_prefixes):
-                    continue
-
-                # Filtr: rok
-                year_m = re.search(r'\b(20\d{2})\b', info_text)
-                if year_m and int(year_m.group(1)) < CONFIG["min_year"]:
-                    continue
-
-                # Filtr: km
-                km_m = re.search(r'([\d\s\u00a0]+)\s*km', info_text)
-                if km_m:
-                    km = int(re.sub(r'\D', '', km_m.group(1)))
-                    if km > CONFIG["max_km"]:
+                    # Filtr: blokovaní prodejci
+                    seller_lower = seller_text.lower()
+                    if any(b in seller_lower for b in CONFIG["blocked_sellers"]):
                         continue
 
-                # Filtr: cena
-                price_num = int(re.sub(r"[^\d]", "", price)) if re.search(r"\d", price) else 0
-                if price_num > CONFIG["max_price_czk"] or (price_num > 0 and price_num < CONFIG["min_price_czk"]):
-                    continue
+                    # Záložní filtr: značka (pro případ sponzorovaných výsledků jiných značek)
+                    title_lower = title.lower()
+                    brand_prefixes = ["bmw", "mercedes", "mini"]
+                    if not any(title_lower.startswith(b) for b in brand_prefixes):
+                        continue
 
-                if title and link:
-                    cars.append({
-                        "id":      ad_id,
-                        "title":   title,
-                        "price":   price,
-                        "details": details,
-                        "link":    link,
-                        "image":   img_src,
-                    })
-            except Exception:
-                continue
+                    # Filtr: rok
+                    year_m = re.search(r'\b(20\d{2})\b', info_text)
+                    if year_m and int(year_m.group(1)) < CONFIG["min_year"]:
+                        continue
+
+                    # Filtr: km
+                    km_m = re.search(r'([\d\s\u00a0]+)\s*km', info_text)
+                    if km_m:
+                        km = int(re.sub(r'\D', '', km_m.group(1)))
+                        if km > CONFIG["max_km"]:
+                            continue
+
+                    # Filtr: cena
+                    price_num = int(re.sub(r"[^\d]", "", price)) if re.search(r"\d", price) else 0
+                    if price_num > CONFIG["max_price_czk"] or (price_num > 0 and price_num < CONFIG["min_price_czk"]):
+                        continue
+
+                    if title and link:
+                        cars.append({
+                            "id":      ad_id,
+                            "title":   title,
+                            "price":   price,
+                            "details": details,
+                            "link":    link,
+                            "image":   img_src,
+                        })
+                except Exception:
+                    continue
 
     except Exception as e:
         print(f"  [sauto.cz/{brand}] Chyba: {e}")
