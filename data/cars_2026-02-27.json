@@ -61,5 +61,32 @@
     "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/209096862",
     "image": "https://d19-a.sdn.cz/d_19/c_img_od_B/kOy0N9usHcCaEknBSAEW5WE3/4602.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "27.02.2026 11:39"
+  },
+  {
+    "id": "209899155",
+    "title": "BMW X1 1,5 25e xDr,ACC,Pano,Kůže,Navi",
+    "price": "599 999 Kč",
+    "details": "2021, 46 841 km , Hybridní , Automatická  ·  České Budějovice  ·  AUTOBAZAR ML AUTO",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x1/209899155",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/nPVpfd5QLLDoMo7BlpFwr4E4/08d4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 16:40"
+  },
+  {
+    "id": "209978211",
+    "title": "Mercedes-Benz CLA 250 Shooting Brake AMG 4MATIC",
+    "price": "665 000 Kč",
+    "details": "2021, 93 755 km , Benzín , Automatická  ·  Liberec  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/209978211",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/nPVpfd5QLLDqzReHZEF46sEr/2d93.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 16:40"
+  },
+  {
+    "id": "209863044",
+    "title": "Mercedes-Benz Třídy C 2.0 300 DE 9G-TRONIC AVANTGARD",
+    "price": "579 000 Kč",
+    "details": "2021, 94 000 km , Hybridní , Automatická  ·  Jihlava  ·  AUTO EURODIESEL, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/209863044",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/kBfrbpoeNCqNsfghFtIZi3/bf66.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.02.2026 16:40"
   }
 ]
