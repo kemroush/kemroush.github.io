@@ -223,6 +223,60 @@
       font-weight: 600;
     }
 
+    /* ── Price range slider ── */
+    .price-filter { margin-bottom: 1rem; }
+    .price-filter-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      margin-bottom: 0.6rem;
+    }
+    .price-filter-header span:first-child { color: #484f58; }
+    .price-filter-header span:last-child  { color: #8b949e; }
+    .range-wrap {
+      position: relative;
+      height: 4px;
+      background: #30363d;
+      border-radius: 2px;
+      margin: 10px 0;
+    }
+    .range-fill {
+      position: absolute;
+      height: 100%;
+      background: #f0883e;
+      border-radius: 2px;
+    }
+    input[type="range"].price-range {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+      background: transparent;
+      appearance: none;
+      -webkit-appearance: none;
+      pointer-events: none;
+    }
+    input[type="range"].price-range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #f0883e;
+      border: 2px solid #0d1117;
+      cursor: pointer;
+      pointer-events: all;
+    }
+    input[type="range"].price-range::-moz-range-thumb {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #f0883e;
+      border: 2px solid #0d1117;
+      cursor: pointer;
+      pointer-events: all;
+    }
+
     .results-count {
       font-size: 0.78rem;
       color: #484f58;
@@ -326,6 +380,19 @@
         </div>
       </div>
     </div>
+
+    <div class="price-filter">
+      <div class="price-filter-header">
+        <span>Cena</span>
+        <span id="price-values">300 000 – 750 000 Kč</span>
+      </div>
+      <div class="range-wrap" id="range-wrap">
+        <div class="range-fill" id="range-fill"></div>
+        <input type="range" class="price-range" id="price-min" min="300000" max="750000" step="5000" value="300000">
+        <input type="range" class="price-range" id="price-max" min="300000" max="750000" step="5000" value="750000">
+      </div>
+    </div>
+
     <div id="cars-list"><p class="state-msg">Načítám...</p></div>
   </div>
 
@@ -336,6 +403,10 @@
     let activeBrands = new Set(); // empty = all
     let activeFuels  = new Set(); // empty = all
     let sortValue    = 'date-desc';
+    const PRICE_MIN  = 300000;
+    const PRICE_MAX  = 750000;
+    let priceMin     = PRICE_MIN;
+    let priceMax     = PRICE_MAX;
 
     function formatDay(key) {
       const [y, m, d] = key.split('-');
@@ -413,6 +484,17 @@
       });
     }
 
+    function formatPrice(n) {
+      return n.toLocaleString('cs-CZ') + ' Kč';
+    }
+
+    function updatePriceSlider() {
+      const pct = v => (v - PRICE_MIN) / (PRICE_MAX - PRICE_MIN) * 100;
+      document.getElementById('range-fill').style.left  = pct(priceMin) + '%';
+      document.getElementById('range-fill').style.width = (pct(priceMax) - pct(priceMin)) + '%';
+      document.getElementById('price-values').textContent = `${formatPrice(priceMin)} – ${formatPrice(priceMax)}`;
+    }
+
     function fuelType(c) {
       const d = c.details.toLowerCase();
       if (d.includes('elektr')) return 'electric';
@@ -431,6 +513,8 @@
           if (!brandOk) return false;
         }
         if (activeFuels.size > 0 && !activeFuels.has(fuelType(c))) return false;
+        const price = parsePrice(c);
+        if (price > 0 && (price < priceMin || price > priceMax)) return false;
         return true;
       });
     }
@@ -479,6 +563,21 @@
       sortValue = e.target.value;
       renderCars();
     });
+
+    document.getElementById('price-min').addEventListener('input', e => {
+      priceMin = Math.min(parseInt(e.target.value), priceMax - 5000);
+      e.target.value = priceMin;
+      updatePriceSlider();
+      renderCars();
+    });
+    document.getElementById('price-max').addEventListener('input', e => {
+      priceMax = Math.max(parseInt(e.target.value), priceMin + 5000);
+      e.target.value = priceMax;
+      updatePriceSlider();
+      renderCars();
+    });
+
+    updatePriceSlider();
 
     document.querySelectorAll('[data-brand]').forEach(btn => {
       btn.addEventListener('click', () => {
