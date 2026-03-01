@@ -52,5 +52,23 @@
     "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/209985246",
     "image": "https://d19-a.sdn.cz/d_19/c_img_p9_A/nPVpfd5QLLksKHI2BF6JR5F/7e83.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "01.03.2026 17:32"
+  },
+  {
+    "id": "209985459",
+    "title": "BMW X1 XDrive",
+    "price": "599 000 Kč",
+    "details": "2022, 59 900 km , Hybridní , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x1/209985459",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_A/kY1K2LlXQCNqj2B0DF6LPor/2a9a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "01.03.2026 20:25"
+  },
+  {
+    "id": "209827521",
+    "title": "BMW X1",
+    "price": "450 000 Kč",
+    "details": "2021, 86 000 km , Nafta , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x1/209827521",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/kBfrbpoeNBFLmuDm0FptG3u/afce.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "01.03.2026 20:25"
   }
 ]
