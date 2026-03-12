@@ -97,5 +97,32 @@
     "link": "https://www.sauto.cz/osobni/detail/audi/a3/210052400",
     "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtJj1UDe8GCfGKy/2381.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "12.03.2026 17:01"
+  },
+  {
+    "id": "210055250",
+    "title": "BMW Řada 1 LED, 116d, AUTOMAT",
+    "price": "449 000 Kč",
+    "details": "2022, 81 000 km , Nafta , Automatická  ·  Mělník  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/210055250",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtBwNESEcEGClofB/2be6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.03.2026 20:43"
+  },
+  {
+    "id": "210054977",
+    "title": "BMW Řada 2 218i Gran Coupé",
+    "price": "539 000 Kč",
+    "details": "2022, 44 000 km , Benzín , Automatická  ·  Ostrava-město  ·  CarTec Ostrava s.r.o., BMW Premium Selection",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/210054977",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtDgLT0CxOGCkm9z/33ec.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.03.2026 20:43"
+  },
+  {
+    "id": "208051553",
+    "title": "Mercedes-Benz CLA 180d 1.maj. ČR, tovární záruka",
+    "price": "599 999 Kč",
+    "details": "2023, 40 100 km , Nafta , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/208051553",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtDgLT0CwyGCkOTm/4570.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.03.2026 20:43"
   }
 ]
