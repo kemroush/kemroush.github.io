@@ -16,5 +16,86 @@
     "link": "https://www.sauto.cz/osobni/detail/audi/a4/210050355",
     "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/nCTUX1iX5BWLrlBSnGCZem3/6f9d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "12.03.2026 11:42"
+  },
+  {
+    "id": "210054092",
+    "title": "BMW X2 xDrive 25d",
+    "price": "659 000 Kč",
+    "details": "2022, 69 500 km , Nafta , Automatická  ·  Liberec  ·  CarTec Liberec, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x2/210054092",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/nCTUX1iX5Do9kXBhHGCh1X4/1e13.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.03.2026 17:01"
+  },
+  {
+    "id": "210053462",
+    "title": "BMW Řada 1 1,5 118i A7 Advantage LED+HiFi",
+    "price": "549 000 Kč",
+    "details": "2022, 60 514 km , Benzín , Automatická  ·  Hlavní město Praha  ·  CARS & CARE Business Lease",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/210053462",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtBwNESESGGCgySe/67fb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.03.2026 17:01"
+  },
+  {
+    "id": "208603793",
+    "title": "BMW Řada 5 520 e Touring 120 kW Steptroni",
+    "price": "679 000 Kč",
+    "details": "2022, 43 242 km , Hybridní , Automatická  ·  Hlavní město Praha  ·  Porsche Praha Prosek",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-5/208603793",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oa_A/kBkJRwehYCg9s5DDBDbHppC/10ed.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.03.2026 17:01"
+  },
+  {
+    "id": "209117268",
+    "title": "BMW Řada 2 220i AT Luxury Line PANO 19\"",
+    "price": "605 000 Kč",
+    "details": "2022, 25 000 km , Benzín , Automatická  ·  České Budějovice  ·  AUTO PROMATO",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/209117268",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/kY1K2LlXQDnuVLD8mF2ykKE/6587.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.03.2026 17:01"
+  },
+  {
+    "id": "210051563",
+    "title": "Mercedes-Benz Třídy A A180,ACC,ČR,DPH,1.MAJ",
+    "price": "649 000 Kč",
+    "details": "2023, 31 972 km , Benzín , Automatická  ·  Praha-západ  ·  Auta z Firem",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210051563",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtDrxR2ClzGCcsCo/23ad.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.03.2026 17:01"
+  },
+  {
+    "id": "209994915",
+    "title": "Mercedes-Benz GLA GLA 250e AMG",
+    "price": "749 000 Kč",
+    "details": "2022, 61 000 km , Hybridní , Automatická  ·  České Budějovice  ·  AutoWallis České Budějovice a.s. - Mercedes Benz",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/209994915",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtzYqGCqzGCfRr4/f915.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.03.2026 17:01"
+  },
+  {
+    "id": "209988180",
+    "title": "Mercedes-Benz Třídy A",
+    "price": "680 000 Kč",
+    "details": "2022, 42 000 km , Benzín , Automatická  ·  Uherské Hradiště  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/209988180",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_A/kY1K2LlXQJGqrCHPF6nBu0/601f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.03.2026 17:01"
+  },
+  {
+    "id": "209822601",
+    "title": "Audi A4 TFSI S-Line 185 KW, MILLTEK",
+    "price": "695 000 Kč",
+    "details": "2020, 57 000 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a4/209822601",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_B/nPXMbbUsvqB6axWFByFooUvb/3220.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.03.2026 17:01"
+  },
+  {
+    "id": "210052400",
+    "title": "Audi A3 Sportback 35 TDi Business Edit",
+    "price": "499 000 Kč",
+    "details": "2021, 87 602 km , Nafta , Automatická  ·  Brno-město  ·  F AUTO a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/210052400",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtJj1UDe8GCfGKy/2381.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.03.2026 17:01"
   }
 ]
