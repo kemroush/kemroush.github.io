@@ -34,5 +34,68 @@
     "link": "https://www.sauto.cz/osobni/detail/audi/a4/210123159",
     "image": "https://d19-a.sdn.cz/d_19/c_img_p9_C/kcHp2YdDtJj1UKE2GJbgrb/1631.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "24.03.2026 11:54"
+  },
+  {
+    "id": "210127181",
+    "title": "BMW Řada 3 2,0d/110kW - M-paket,Laser,...",
+    "price": "579 900 Kč",
+    "details": "2021, 75 444 km , Nafta , Automatická  ·  Bruntál  ·  AUTO Plíšek",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/210127181",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_C/kcHp2YdDtDrxR2Ii4GJk4hU/7db1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "24.03.2026 17:09"
+  },
+  {
+    "id": "210126440",
+    "title": "BMW i3 i3 120Ah Panorama Harman",
+    "price": "659 900 Kč",
+    "details": "2022, 32 072 km , Elektro , Automatická  ·  Praha-východ  ·  RENOCAR, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/210126440",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_C/nCTUX1iX5Do9kXKlYGJi92l/df72.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "24.03.2026 17:09"
+  },
+  {
+    "id": "210125273",
+    "title": "BMW i3 BMW I3 120Ah",
+    "price": "520 000 Kč",
+    "details": "2021, 26 600 km , Elektro , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/210125273",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_C/kcHp2YdDtBwNESMFeGJhB24/815d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "24.03.2026 17:09"
+  },
+  {
+    "id": "210105218",
+    "title": "BMW Řada 5 BMW 520d XDRIVE",
+    "price": "750 000 Kč",
+    "details": "2021, 88 200 km , Nafta , Automatická  ·  Plzeň-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-5/210105218",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/nCTUX1iX5CoHumF0YGHQfVl/8243.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "24.03.2026 17:09"
+  },
+  {
+    "id": "210016233",
+    "title": "Mercedes-Benz CLA 200d Shooting Brake AMG PAKET",
+    "price": "690 000 Kč",
+    "details": "2024, 48 000 km , Nafta , Automatická  ·  Ostrava-město  ·  ALTACON Partner",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210016233",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_A/kcHp2YdDtzYqG6tF84x9T/ce16.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "24.03.2026 17:09"
+  },
+  {
+    "id": "209284923",
+    "title": "Mini Cooper S",
+    "price": "748 990 Kč",
+    "details": "2024, 13 752 km , Benzín , Automatická  ·  Hlavní město Praha  ·  BMW Czech Republic, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/209284923",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_B/kOzmiQlmfoDiQhqBcOEn04Oa/e2d6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "24.03.2026 17:09"
+  },
+  {
+    "id": "209916012",
+    "title": "Audi e-tron AUDI ETRON 50, 2022, 40.000KM",
+    "price": "750 000 Kč",
+    "details": "2022, 40 000 km , Elektro , Automatická  ·  Opava  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/audi/e-tron/209916012",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/kY1K2LlXQBdLY8COPFzATth/4908.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "24.03.2026 17:09"
   }
 ]
