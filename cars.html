@@ -305,6 +305,70 @@
       transition: border-color 0.2s, color 0.2s;
     }
     .sort-select:hover, .sort-select:focus { border-color: #8b949e; color: #e6edf3; }
+
+    /* ── Claude analyze button ── */
+    #claude-analyze-btn {
+      background-color: #d97706;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 0.3rem 0.85rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    #claude-analyze-btn:hover { background-color: #b45309; }
+
+    #claude-dialog-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+    }
+    #claude-dialog-overlay.active { display: flex; }
+
+    #claude-dialog {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 16px;
+      padding: 28px;
+      width: 320px;
+      color: #fff;
+      text-align: center;
+    }
+    #claude-dialog h3 { margin: 0 0 8px; font-size: 18px; }
+    #claude-dialog p  { color: #aaa; font-size: 13px; margin: 0 0 20px; }
+
+    .claude-day-btn {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #444;
+      background: #2a2a2a;
+      color: #fff;
+      font-size: 15px;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .claude-day-btn:hover { background: #d97706; border-color: #d97706; }
+
+    #claude-dialog-cancel {
+      margin-top: 6px;
+      background: none;
+      border: none;
+      color: #666;
+      font-size: 13px;
+      font-family: inherit;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -355,6 +419,7 @@
           <button class="brand-btn" data-brand="mercedes">Mercedes</button>
           <button class="brand-btn" data-brand="mini">Mini</button>
           <button class="brand-btn" data-brand="audi">Audi</button>
+          <button id="claude-analyze-btn" onclick="openClaudeAnalysis()">🤖 Analyzovat s Claude</button>
         </div>
         <div class="brand-filter">
           <button class="brand-btn active" data-fuel="all">Vše</button>
@@ -630,6 +695,67 @@
     }
 
     init();
+
+    // === CLAUDE ANALYZE INTEGRATION ===
+
+    const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/kemroush/kemroush.github.io/main/data/cars_";
+
+    function openClaudeAnalysis() {
+      document.getElementById("claude-dialog-overlay").classList.add("active");
+    }
+
+    function closeClaudeDialog() {
+      document.getElementById("claude-dialog-overlay").classList.remove("active");
+    }
+
+    function analyzeWithClaude(days) {
+      closeClaudeDialog();
+
+      const urls = [];
+      for (let i = 0; i < days; i++) {
+        const date = new Date();
+        date.setDate(date.getDate() - i);
+        const yyyy = date.getFullYear();
+        const mm = String(date.getMonth() + 1).padStart(2, "0");
+        const dd = String(date.getDate()).padStart(2, "0");
+        urls.push(`${GITHUB_RAW_BASE}${yyyy}-${mm}-${dd}.json`);
+      }
+
+      const urlList = urls.join("\n");
+
+      const prompt = `Jsem na českém trhu ojetých aut a hledám BMW, Mercedes, Mini nebo Audi s automatem, ročník 2020+, do 100 000 km, cena 300 000–750 000 Kč.
+
+Tady jsou data z mého agregátoru za posledních ${days} dní (každý soubor = jeden den, nová auta přidaná ten den):
+
+${urlList}
+
+Prosím:
+1. Načti všechny soubory (některé nemusí existovat — přeskoč je)
+2. Odfiltruj elektromobily a auta mimo moje kritéria
+3. Vyber TOP tipy — prioritizuj: nízký nájezd, dobrý motor (B47/B48/OM654/M260), 4x4, soukromý prodejce, dobrá cena/hodnota
+4. Upozorni na přefouknuté dealerské ceny
+5. Ke každému autu uveď přímý link na sauto.cz
+6. Na závěr doporuč 1-2 nejlepší kousky týdne`;
+
+      const claudeUrl = `https://claude.ai/new?q=${encodeURIComponent(prompt)}`;
+      window.open(claudeUrl, "_blank");
+    }
+
+    document.addEventListener("click", function(e) {
+      const overlay = document.getElementById("claude-dialog-overlay");
+      if (e.target === overlay) closeClaudeDialog();
+    });
   </script>
+
+  <div id="claude-dialog-overlay">
+    <div id="claude-dialog">
+      <h3>🤖 Analyzovat s Claude</h3>
+      <p>Za kolik dní chceš analýzu?</p>
+      <button class="claude-day-btn" onclick="analyzeWithClaude(3)">Posledních 3 dny</button>
+      <button class="claude-day-btn" onclick="analyzeWithClaude(7)">Posledních 7 dní</button>
+      <button class="claude-day-btn" onclick="analyzeWithClaude(14)">Posledních 14 dní</button>
+      <button id="claude-dialog-cancel" onclick="closeClaudeDialog()">Zrušit</button>
+    </div>
+  </div>
 </body>
 </html>
