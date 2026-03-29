@@ -359,12 +359,62 @@
       transition: background 0.2s;
     }
     .claude-day-btn:hover { background: #d97706; border-color: #d97706; }
+    .claude-day-btn.narrow { width: auto; padding: 12px 18px; margin-bottom: 0; }
 
-    #claude-dialog-cancel {
+    .claude-custom-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .claude-custom-input {
+      flex: 1;
+      background: #2a2a2a;
+      border: 1px solid #444;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 15px;
+      font-family: inherit;
+      padding: 12px;
+      outline: none;
+      min-width: 0;
+    }
+    .claude-custom-input::placeholder { color: #555; }
+    .claude-custom-input:focus { border-color: #d97706; }
+
+    #claude-prompt-area {
+      width: 100%;
+      height: 220px;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 10px;
+      color: #bbb;
+      font-size: 12px;
+      font-family: inherit;
+      line-height: 1.5;
+      padding: 12px;
+      resize: none;
+      outline: none;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .claude-open-link {
+      background: none;
+      border: none;
+      color: #555;
+      font-size: 13px;
+      font-family: inherit;
+      cursor: pointer;
+      margin-top: 4px;
+      transition: color 0.2s;
+    }
+    .claude-open-link:hover { color: #f0883e; }
+
+    .claude-cancel-btn {
       margin-top: 6px;
       background: none;
       border: none;
-      color: #666;
+      color: #555;
       font-size: 13px;
       font-family: inherit;
       cursor: pointer;
@@ -710,8 +760,11 @@
     // === CLAUDE ANALYZE INTEGRATION ===
 
     const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/kemroush/kemroush.github.io/main/data/cars_";
+    let currentPrompt = "";
 
     function openClaudeAnalysis() {
+      document.getElementById("claude-step-1").style.display = "block";
+      document.getElementById("claude-step-2").style.display = "none";
       document.getElementById("claude-dialog-overlay").classList.add("active");
     }
 
@@ -719,11 +772,9 @@
       document.getElementById("claude-dialog-overlay").classList.remove("active");
     }
 
-    function analyzeWithClaude(days) {
-      closeClaudeDialog();
-
+    function analyzeWithClaude(numDays) {
       const urls = [];
-      for (let i = 0; i < days; i++) {
+      for (let i = 0; i < numDays; i++) {
         const date = new Date();
         date.setDate(date.getDate() - i);
         const yyyy = date.getFullYear();
@@ -731,12 +782,10 @@
         const dd = String(date.getDate()).padStart(2, "0");
         urls.push(`${GITHUB_RAW_BASE}${yyyy}-${mm}-${dd}.json`);
       }
-
       const urlList = urls.join("\n");
+      currentPrompt = `Jsem na českém trhu ojetých aut a hledám BMW, Mercedes, Mini nebo Audi s automatem, ročník 2020+, do 100 000 km, cena 300 000–750 000 Kč.
 
-      const prompt = `Jsem na českém trhu ojetých aut a hledám BMW, Mercedes, Mini nebo Audi s automatem, ročník 2020+, do 100 000 km, cena 300 000–750 000 Kč.
-
-Tady jsou data z mého agregátoru za posledních ${days} dní (každý soubor = jeden den, nová auta přidaná ten den):
+Tady jsou data z mého agregátoru za posledních ${numDays} dní (každý soubor = jeden den, nová auta přidaná ten den):
 
 ${urlList}
 
@@ -748,8 +797,27 @@ Prosím:
 5. Ke každému autu uveď přímý link na sauto.cz
 6. Na závěr doporuč 1-2 nejlepší kousky týdne`;
 
-      const claudeUrl = `https://claude.ai/new?q=${encodeURIComponent(prompt)}`;
-      window.open(claudeUrl, "_blank");
+      document.getElementById("claude-prompt-area").value = currentPrompt;
+      document.getElementById("claude-copy-btn").textContent = "Kopírovat";
+      document.getElementById("claude-step-1").style.display = "none";
+      document.getElementById("claude-step-2").style.display = "block";
+    }
+
+    function analyzeCustomDays() {
+      const val = parseInt(document.getElementById("claude-custom-days").value);
+      if (!val || val < 1) return;
+      analyzeWithClaude(val);
+    }
+
+    function copyClaudePrompt() {
+      navigator.clipboard.writeText(currentPrompt).then(() => {
+        const btn = document.getElementById("claude-copy-btn");
+        btn.textContent = "Zkopírováno!";
+      });
+    }
+
+    function openInClaude() {
+      window.open(`https://claude.ai/new?q=${encodeURIComponent(currentPrompt)}`, "_blank");
     }
 
     document.addEventListener("click", function(e) {
@@ -760,12 +828,28 @@ Prosím:
 
   <div id="claude-dialog-overlay">
     <div id="claude-dialog">
-      <h3>🤖 Analyzovat s Claude</h3>
-      <p>Za kolik dní chceš analýzu?</p>
-      <button class="claude-day-btn" onclick="analyzeWithClaude(3)">Posledních 3 dny</button>
-      <button class="claude-day-btn" onclick="analyzeWithClaude(7)">Posledních 7 dní</button>
-      <button class="claude-day-btn" onclick="analyzeWithClaude(14)">Posledních 14 dní</button>
-      <button id="claude-dialog-cancel" onclick="closeClaudeDialog()">Zrušit</button>
+
+      <div id="claude-step-1">
+        <h3>🤖 Analyzovat s Claude</h3>
+        <p>Za kolik dní chceš analýzu?</p>
+        <button class="claude-day-btn" onclick="analyzeWithClaude(3)">Posledních 3 dny</button>
+        <button class="claude-day-btn" onclick="analyzeWithClaude(7)">Posledních 7 dní</button>
+        <button class="claude-day-btn" onclick="analyzeWithClaude(14)">Posledních 14 dní</button>
+        <div class="claude-custom-row">
+          <input type="number" id="claude-custom-days" class="claude-custom-input" min="1" max="60" placeholder="Vlastní počet dní">
+          <button class="claude-day-btn narrow" onclick="analyzeCustomDays()">→</button>
+        </div>
+        <button class="claude-cancel-btn" onclick="closeClaudeDialog()">Zrušit</button>
+      </div>
+
+      <div id="claude-step-2" style="display:none">
+        <h3>🤖 Prompt připraven</h3>
+        <textarea id="claude-prompt-area" readonly></textarea>
+        <button class="claude-day-btn" id="claude-copy-btn" onclick="copyClaudePrompt()">Kopírovat</button>
+        <button class="claude-open-link" onclick="openInClaude()">Otevřít claude.ai →</button>
+        <button class="claude-cancel-btn" onclick="closeClaudeDialog()">Zavřít</button>
+      </div>
+
     </div>
   </div>
 </body>
