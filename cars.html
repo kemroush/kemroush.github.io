@@ -48,6 +48,20 @@
       transition: color 0.2s;
     }
     .back:hover, .run-btn:hover { color: #f0883e; }
+    button.run-btn {
+      background: none;
+      border: none;
+      padding: 0;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .top-bar-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+    }
 
     h1 {
       font-size: 1.75rem;
@@ -306,21 +320,7 @@
     }
     .sort-select:hover, .sort-select:focus { border-color: #8b949e; color: #e6edf3; }
 
-    /* ── Claude analyze button ── */
-    #claude-analyze-btn {
-      background-color: #d97706;
-      color: white;
-      border: none;
-      border-radius: 20px;
-      padding: 0.3rem 0.85rem;
-      font-size: 0.78rem;
-      font-weight: 600;
-      font-family: inherit;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-    #claude-analyze-btn:hover { background-color: #b45309; }
-
+    /* ── Claude analyze dialog ── */
     #claude-dialog-overlay {
       display: none;
       position: fixed;
@@ -380,12 +380,24 @@
         </svg>
         kemroush
       </a>
-      <a href="https://github.com/kemroush/kemroush.github.io/actions/workflows/auto-monitor.yml" class="run-btn" target="_blank" rel="noopener" title="Spustit ručně">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polygon points="5 3 19 12 5 21 5 3"/>
-        </svg>
-        Spustit
-      </a>
+      <div class="top-bar-right">
+        <a href="https://github.com/kemroush/kemroush.github.io/actions/workflows/auto-monitor.yml" class="run-btn" target="_blank" rel="noopener" title="Spustit ručně">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+          Spustit
+        </a>
+        <button class="run-btn" id="claude-analyze-btn" onclick="openClaudeAnalysis()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="8" width="18" height="13" rx="2"/>
+            <circle cx="8.5" cy="14.5" r="1.5"/>
+            <circle cx="15.5" cy="14.5" r="1.5"/>
+            <line x1="12" y1="8" x2="12" y2="4"/>
+            <circle cx="12" cy="3" r="1"/>
+          </svg>
+          Analyzovat s Claude
+        </button>
+      </div>
     </div>
 
     <h1>Ghetto car store</h1>
@@ -419,7 +431,6 @@
           <button class="brand-btn" data-brand="mercedes">Mercedes</button>
           <button class="brand-btn" data-brand="mini">Mini</button>
           <button class="brand-btn" data-brand="audi">Audi</button>
-          <button id="claude-analyze-btn" onclick="openClaudeAnalysis()">🤖 Analyzovat s Claude</button>
         </div>
         <div class="brand-filter">
           <button class="brand-btn active" data-fuel="all">Vše</button>
