@@ -25,5 +25,32 @@
     "link": "https://www.sauto.cz/osobni/detail/audi/q4-e-tron/210158450",
     "image": "https://d19-a.sdn.cz/d_19/c_img_p9_C/kcHp2YdDtCDcb5LxjGM53m1/4b2a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "30.03.2026 13:05"
+  },
+  {
+    "id": "210161270",
+    "title": "BMW Řada 3 BMW 318i, 2.0 benzin, 115 kW",
+    "price": "600 000 Kč",
+    "details": "2020, 79 000 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/210161270",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_C/nCTUX1iX5BWLrlPxCGNDTgM/88ed.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "30.03.2026 18:07"
+  },
+  {
+    "id": "210161636",
+    "title": "BMW Řada 2 218d M-SPORT 1M ČR 3LZÁRUKA",
+    "price": "648 000 Kč",
+    "details": "2024, 42 150 km , Nafta , Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/210161636",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_C/kcHp2YdDtCJexHN7WGNDXOG/ad16.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "30.03.2026 18:07"
+  },
+  {
+    "id": "210159812",
+    "title": "Mercedes-Benz Třídy E 200d AVANTGARDĚ ČR 1maj TAŽNÉ!",
+    "price": "729 999 Kč",
+    "details": "2023, 90 900 km , Nafta , Automatická  ·  Kladno  ·  Josef Švarc",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-e/210159812",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_C/nCTUX1iX5CNPfpRWDGM9alx/779c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "30.03.2026 18:07"
   }
 ]
