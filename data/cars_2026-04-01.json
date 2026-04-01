@@ -133,5 +133,32 @@
     "link": "https://www.sauto.cz/osobni/detail/audi/a6/210178766",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/nCTUX1iX5BWLrlRbpGOJouo/02cc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "01.04.2026 13:01"
+  },
+  {
+    "id": "210181313",
+    "title": "BMW X2",
+    "price": "612 850 Kč",
+    "details": "2020, 92 743 km , Benzín , Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x2/210181313",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/nCTUX1iX5CFdAHRHDGOMMEO/b50c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "01.04.2026 18:08"
+  },
+  {
+    "id": "210182693",
+    "title": "Audi e-tron Sportback 50 quattro 230kW SoH",
+    "price": "739 000 Kč",
+    "details": "2021, 60 370 km , Elektro , Automatická  ·  Ostrava-město  ·  PIA CZ Auto Heller Ostrava",
+    "link": "https://www.sauto.cz/osobni/detail/audi/e-tron/210182693",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/kcHp2YdDtCDcb5NStGOOzxf/4c9c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "01.04.2026 18:08"
+  },
+  {
+    "id": "210180878",
+    "title": "Audi e-tron",
+    "price": "637 144 Kč",
+    "details": "2020, 73 484 km , Elektro , Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/audi/e-tron/210180878",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/kcHp2YdDtBRc2UBYYGOL0lH/29ea.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "01.04.2026 18:08"
   }
 ]
