@@ -43,6 +43,7 @@
       height: 182px;
       margin-bottom: 1.5rem;
       object-fit: contain;
+      filter: url(#logo-color);
     }
 
     h1 {
@@ -107,6 +108,14 @@
   </style>
 </head>
 <body>
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute">
+    <defs>
+      <filter id="logo-color">
+        <feColorMatrix type="matrix" values="0.761 0 0 0 0  0.439 0 0 0 0  0.216 0 0 0 0  0 0 0 1 0"/>
+      </filter>
+    </defs>
+  </svg>
+
   <main class="container">
     <img class="logo-mark" src="logo.png" alt="kemroush logo">
 
