@@ -39,14 +39,15 @@
     }
 
     .logo-mark {
-      width: 88px;
-      height: 88px;
+      width: 160px;
+      height: 182px;
       margin-bottom: 1.5rem;
+      object-fit: contain;
     }
 
     h1 {
       font-size: 3rem;
-      font-weight: 700;
+      font-weight: 400;
       letter-spacing: -0.02em;
       margin-bottom: 0.5rem;
     }
@@ -107,23 +108,9 @@
 </head>
 <body>
   <main class="container">
-    <!-- Logo mark — symmetrical triangle harmony -->
-    <svg class="logo-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#f0883e"/>
-          <stop offset="100%" stop-color="#404040"/>
-        </linearGradient>
-      </defs>
-      <!-- Top triangle -->
-      <polygon points="50,13 31,49 69,49" fill="url(#accent)" stroke="url(#accent)" stroke-width="3" stroke-linejoin="round"/>
-      <!-- Bottom-left triangle -->
-      <polygon points="30,52 10,87 49,87" fill="url(#accent)" stroke="url(#accent)" stroke-width="3" stroke-linejoin="round"/>
-      <!-- Bottom-right triangle -->
-      <polygon points="71,52 51,87 90,87" fill="url(#accent)" stroke="url(#accent)" stroke-width="3" stroke-linejoin="round"/>
-    </svg>
+    <img class="logo-mark" src="logo.png" alt="kemroush logo">
 
-    <h1>kemroush</h1>
+    <h1>kemroush.</h1>
     <a class="motto" href="https://www.youtube.com/watch?v=qO-mSLxih-c" target="_blank" rel="noopener">spring, still waiting</a>
     <p class="bio">Developer, tinkerer, lifelong learner. Building things on the web. With love to devs <3 </p>
 
