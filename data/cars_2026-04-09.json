@@ -25,5 +25,41 @@
     "link": "https://www.sauto.cz/osobni/detail/audi/a5/210215660",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/kcHp2YdDtDgLT0cL9GSuNpP/39b1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "09.04.2026 09:42"
+  },
+  {
+    "id": "208758459",
+    "title": "BMW Řada 3 318i Advantage Touring",
+    "price": "734 999 Kč",
+    "details": "2023, 42 765 km , Benzín , Automatická  ·  Hlavní město Praha  ·  UniCredit Leasing CZ, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/208758459",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_ob_A/kPxAuWMbDHD1D1pd9Drbiqe/dfb5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "09.04.2026 13:02"
+  },
+  {
+    "id": "210217010",
+    "title": "Mercedes-Benz EQA 250 AMG line 69,7 kWh",
+    "price": "749 900 Kč",
+    "details": "2022, 49 576 km , Elektro , Automatická  ·  Hlavní město Praha  ·  EnergyCars - elektromobily - prodej, výkup a dovoz",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/eqa/210217010",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/nCTUX1iX5BWZuThmPGSxKlr/2a93.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "09.04.2026 13:02"
+  },
+  {
+    "id": "210217355",
+    "title": "Audi Q4 e-tron AUDI Q4 E-TRON",
+    "price": "629 000 Kč",
+    "details": "2022, 82 000 km , Elektro , Automatická  ·  Mělník  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q4-e-tron/210217355",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/kcHp2YdDtEDuRmmPHGSzJBP/20b1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "09.04.2026 13:02"
+  },
+  {
+    "id": "210217316",
+    "title": "Audi Q2 ADVANCED 1.5TFSI 110kW CZ DPH",
+    "price": "659 900 Kč",
+    "details": "2023, 30 000 km , Benzín , Automatická  ·  Hlavní město Praha  ·  GlobalAuto.cz",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q2/210217316",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/kcHp2YdDtCDcb5dHpGSx8xA/300c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "09.04.2026 13:02"
   }
 ]
