@@ -7,5 +7,50 @@
     "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210265352",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/kcHp2YdDtEDuRmBGqFGXaF5R/2bf2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "17.04.2026 09:53"
+  },
+  {
+    "id": "210267104",
+    "title": "Mercedes-Benz CLA 180d 85kW ČR půvud",
+    "price": "649 000 Kč",
+    "details": "2022, 81 000 km , Nafta , Automatická  ·  Benešov  ·  FiDa Trade s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210267104",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/nCTUX1iX5CNPfpBKpSGXfwGw/3e08.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "17.04.2026 13:00"
+  },
+  {
+    "id": "210266606",
+    "title": "Mercedes-Benz CLA 200d*ZÁRUKA*PANO*KEYLESS*",
+    "price": "699 990 Kč",
+    "details": "2022, 43 000 km , Nafta , Automatická  ·  Praha-východ  ·  GP Cars - Kvalitní vozy se zárukou",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210266606",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/kcHp2YdDtBM3KVxmmGXdxve/766c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "17.04.2026 13:00"
+  },
+  {
+    "id": "210265865",
+    "title": "Mercedes-Benz GLB 180 PROGRESSIVE",
+    "price": "749 000 Kč",
+    "details": "2022, 42 160 km , Benzín , Automatická  ·  Plzeň-město  ·  Mercedes-Benz | VSP Auto, s.r.o. - autorizovaný opravce a prodejce",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210265865",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/kcHp2YdDtCDcb5v23GXbyFi/8030.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "17.04.2026 13:00"
+  },
+  {
+    "id": "210266714",
+    "title": "Audi Q4 e-tron Q4 35 e-tron Navi Virtual",
+    "price": "700 084 Kč",
+    "details": "2022, 19 701 km , Elektro , Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q4-e-tron/210266714",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/nCTUX1iX5CDciVBL0yGXeFaM/6f97.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "17.04.2026 13:00"
+  },
+  {
+    "id": "210266690",
+    "title": "Audi Q4 e-tron S-Line Leder Navi",
+    "price": "747 795 Kč",
+    "details": "2022, 34 000 km , Elektro , Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/q4-e-tron/210266690",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/nCTUX1iX5CNPfpBKgxGXeBNd/ef5b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "17.04.2026 13:00"
   }
 ]
