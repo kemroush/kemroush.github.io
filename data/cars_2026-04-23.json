@@ -16,5 +16,32 @@
     "link": "https://www.sauto.cz/osobni/detail/audi/q4-e-tron/210302045",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/kcHp2YdDtDgLT037eGau3u1/5705.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "23.04.2026 10:00"
+  },
+  {
+    "id": "210303368",
+    "title": "Mercedes-Benz CLA CLA 250 e",
+    "price": "670 013 Kč",
+    "details": "2021, 68 190 km , Hybridní , Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210303368",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/nCTUX1iX5Do9kXBCmqGa6RNn/51f5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "23.04.2026 13:13"
+  },
+  {
+    "id": "210304241",
+    "title": "Mini Cooper S 2.0 AUT",
+    "price": "649 000 Kč",
+    "details": "2023, 48 312 km , Benzín , Automatická  ·  Praha-západ  ·  Future Drivalia",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/210304241",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/nCTUX1iX5CoHumBC4bGa8MTx/5a6c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "23.04.2026 13:13"
+  },
+  {
+    "id": "210303968",
+    "title": "Mini Cooper S 2.0L T Aut.",
+    "price": "649 999 Kč",
+    "details": "2022, 48 668 km , Benzín , Automatická  ·  Rakovník  ·  Toman Motors - prodej prověřených vozů",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/210303968",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/kcHp2YdDtBM3KV38QGa7bt4/06bc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "23.04.2026 13:13"
   }
 ]
