@@ -109,6 +109,10 @@
       color: #0d1117;
       font-weight: 600;
     }
+    .chip-count { color: inherit; }
+    .chip-count.filtered { color: #f0883e; }
+    .chip.active .chip-count,
+    .chip.active .chip-count.filtered { color: inherit; }
 
     .search-input,
     .price-input {
@@ -371,8 +375,12 @@
       items.forEach(({ key, label, count }) => {
         const btn = document.createElement("button");
         btn.className = "chip";
-        btn.textContent = `${labelMap?.[key] ?? label ?? key} (${count})`;
         btn.dataset.key = key;
+        btn.appendChild(document.createTextNode(labelMap?.[key] ?? label ?? key));
+        const countSpan = document.createElement("span");
+        countSpan.className = "chip-count";
+        countSpan.textContent = ` (${count})`;
+        btn.appendChild(countSpan);
         btn.addEventListener("click", () => {
           if (state.filters[stateKey].has(key)) {
             state.filters[stateKey].delete(key);
@@ -384,6 +392,51 @@
           render();
         });
         container.appendChild(btn);
+      });
+    }
+
+    function applyFiltersExcept(skipDim) {
+      const f = state.filters;
+      const q = f.search.trim().toLowerCase();
+      return state.records.filter((r) => {
+        if (skipDim !== "portals"    && f.portals.size    && !f.portals.has(r.portal))     return false;
+        if (skipDim !== "categories" && f.categories.size && !f.categories.has(r.category)) return false;
+        if (skipDim !== "statuses"   && f.statuses.size   && !f.statuses.has(r.status))     return false;
+        if (f.priceMin != null && (r.min_bid_czk || 0) < f.priceMin) return false;
+        if (f.priceMax != null && (r.min_bid_czk || 0) > f.priceMax) return false;
+        if (q) {
+          const hay = `${r.title} ${r.location}`.toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+    }
+
+    function isFilteringExcept(skipDim) {
+      const f = state.filters;
+      if (skipDim !== "portals"    && f.portals.size)    return true;
+      if (skipDim !== "categories" && f.categories.size) return true;
+      if (skipDim !== "statuses"   && f.statuses.size)   return true;
+      if (f.priceMin != null || f.priceMax != null)      return true;
+      if (f.search.trim())                               return true;
+      return false;
+    }
+
+    function updateChipCounts(containerId, dim, getKey) {
+      const filtered = applyFiltersExcept(dim);
+      const counts = {};
+      filtered.forEach((r) => {
+        const k = getKey(r);
+        counts[k] = (counts[k] || 0) + 1;
+      });
+      const filtering = isFilteringExcept(dim);
+      $(containerId).querySelectorAll(".chip").forEach((chip) => {
+        const key = chip.dataset.key;
+        const count = counts[key] || 0;
+        const countSpan = chip.querySelector(".chip-count");
+        if (!countSpan) return;
+        countSpan.textContent = ` (${count})`;
+        countSpan.classList.toggle("filtered", filtering);
       });
     }
 
@@ -495,6 +548,9 @@
     }
 
     function render() {
+      updateChipCounts("portal-chips",   "portals",    (r) => r.portal);
+      updateChipCounts("category-chips", "categories", (r) => r.category);
+      updateChipCounts("status-chips",   "statuses",   (r) => r.status);
       const filtered = applyFilters();
       const sorted = applySort(filtered);
       const root = $("results");
