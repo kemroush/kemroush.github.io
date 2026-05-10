@@ -1,0 +1,36 @@
+name: Auction Monitor
+
+on:
+  schedule:
+    # 8:00 a 18:00 CET (UTC+1) → 7:00 a 17:00 UTC
+    - cron: '0 7,17 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Europe/Prague
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v5
+
+      - name: Install dependencies
+        run: pip install beautifulsoup4 lxml
+
+      - name: Run auction monitor
+        run: python3 auction_monitor.py
+
+      - name: Commit results
+        run: |
+          git config user.name "Auction Monitor"
+          git config user.email "action@github.com"
+          git add data/auctions.json data/auctions_index.json data/auctions_seen.json
+          git diff --staged --quiet && echo "Žádné změny." || (
+            git commit -m "auction-monitor: $(date +'%Y-%m-%d %H:%M %Z')" &&
+            git push
+          )
