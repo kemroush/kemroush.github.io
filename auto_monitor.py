@@ -26,6 +26,7 @@ CONFIG = {
     "max_price_czk": 750_000,
     "max_km":        100_000,
     "min_year":      2020,
+    "min_year_overrides": {"bmw": 2022},
     "brands":        ["bmw", "mercedes-benz", "mini"],
     "blocked_sellers": ["davo car", "aaa auto"],
     "max_pages":       5,
@@ -100,11 +101,12 @@ def update_index(day_key: str, count: int, updated_at: str):
 # ─────────────────────────────────────────────
 
 def scrape_sauto(brand: str) -> list[dict]:
+    min_year = CONFIG["min_year_overrides"].get(brand, CONFIG["min_year"])
     base_url = (
         f"https://www.sauto.cz/inzerce/osobni/{brand}"
         f"?cena-od={CONFIG['min_price_czk']}"
         f"&cena-do={CONFIG['max_price_czk']}"
-        f"&vyrobeno-od={CONFIG['min_year']}"
+        f"&vyrobeno-od={min_year}"
         f"&km-do={CONFIG['max_km']}"
         f"&prevodovka=automaticka&razeni=datum-vlozeni-desc"
     )
@@ -179,9 +181,9 @@ def scrape_sauto(brand: str) -> list[dict]:
                     if not any(title_lower.startswith(b) for b in brand_prefixes):
                         continue
 
-                    # Filtr: rok
+                    # Filtr: rok (BMW má vyšší min_year přes min_year_overrides)
                     year_m = re.search(r'\b(20\d{2})\b', info_text)
-                    if year_m and int(year_m.group(1)) < CONFIG["min_year"]:
+                    if year_m and int(year_m.group(1)) < min_year:
                         continue
 
                     # Filtr: km
