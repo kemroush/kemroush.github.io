@@ -100,6 +100,11 @@
       opacity: 0.25;
       cursor: default;
     }
+    .nav-btn.toggled,
+    .nav-btn.toggled:hover {
+      background: #f0883e;
+      color: #0d1117;
+    }
 
     .day-info { flex: 1; }
 
@@ -471,6 +476,14 @@
           <path d="M9 18l6-6-6-6"/>
         </svg>
       </button>
+
+      <button class="nav-btn" id="all-btn" title="Celá historie (souhrn všech dnů)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+          <polyline points="2 17 12 22 22 17"/>
+          <polyline points="2 12 12 17 22 12"/>
+        </svg>
+      </button>
     </div>
 
     <p class="filter">BMW, Mercedes & Mini · Automat · 2020+ · do 100 000 km · 300k – 750k</p>
@@ -527,6 +540,8 @@
     let days       = [];   // [{key, count, updated}, ...] nejnovější první
     let idx        = 0;
     let allCars    = [];
+    let summaryMode = false;
+    let summaryCache = null;
     let activeBrands = new Set(); // empty = all
     let activeFuels  = new Set(); // empty = all
     let sortValue    = 'date-desc';
@@ -577,6 +592,42 @@
       } catch {
         list.innerHTML = '<p class="state-msg">Nepodařilo se načíst data.</p>';
       }
+    }
+
+    async function showSummary() {
+      const list = document.getElementById('cars-list');
+      list.innerHTML = '<p class="state-msg">Načítám celou historii…</p>';
+
+      if (!summaryCache) {
+        try {
+          const results = await Promise.all(days.map(d =>
+            fetch(`data/cars_${d.key}.json`).then(r => r.ok ? r.json() : []).catch(() => [])
+          ));
+          const seen = new Set();
+          summaryCache = results.flat().filter(c => {
+            if (!c.id || seen.has(c.id)) return false;
+            seen.add(c.id);
+            return true;
+          });
+        } catch {
+          list.innerHTML = '<p class="state-msg">Nepodařilo se načíst historii.</p>';
+          return;
+        }
+      }
+
+      allCars = summaryCache;
+      renderSummaryHeader();
+      renderCars();
+    }
+
+    function renderSummaryHeader() {
+      document.getElementById('day-label').textContent = 'Celá historie';
+      const oldest = days[days.length - 1].key;
+      const newest = days[0].key;
+      document.getElementById('day-meta').innerHTML =
+        `<span class="accent">${days.length} dní</span> · ${formatDay(oldest)} – ${formatDay(newest)}`;
+      document.getElementById('prev-btn').disabled = true;
+      document.getElementById('next-btn').disabled = true;
     }
 
     function parsePrice(c) {
@@ -683,8 +734,21 @@
       `).join('');
     }
 
-    document.getElementById('prev-btn').addEventListener('click', () => showDay(idx + 1));
-    document.getElementById('next-btn').addEventListener('click', () => showDay(idx - 1));
+    document.getElementById('prev-btn').addEventListener('click', () => {
+      if (summaryMode) return;
+      showDay(idx + 1);
+    });
+    document.getElementById('next-btn').addEventListener('click', () => {
+      if (summaryMode) return;
+      showDay(idx - 1);
+    });
+
+    document.getElementById('all-btn').addEventListener('click', () => {
+      summaryMode = !summaryMode;
+      document.getElementById('all-btn').classList.toggle('toggled', summaryMode);
+      if (summaryMode) showSummary();
+      else showDay(idx);
+    });
 
     document.getElementById('sort-select').addEventListener('change', e => {
       sortValue = e.target.value;
@@ -738,6 +802,7 @@
 
     // Keyboard navigation
     document.addEventListener('keydown', e => {
+      if (summaryMode) return;
       if (e.key === 'ArrowLeft'  && idx < days.length - 1) showDay(idx + 1);
       if (e.key === 'ArrowRight' && idx > 0)              showDay(idx - 1);
     });
