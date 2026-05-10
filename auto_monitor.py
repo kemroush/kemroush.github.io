@@ -28,7 +28,7 @@ CONFIG = {
     "min_year":      2020,
     "min_year_overrides": {"bmw": 2022},
     "brands":        ["bmw", "mercedes-benz", "mini"],
-    "blocked_sellers": ["davo car", "aaa auto"],
+    "blocked_sellers": ["davo car", "aaa auto", "auta super"],
     "max_pages":       5,
     "seen_file":     os.path.join(DATA_DIR, "seen_cars.json"),
     "index_file":    os.path.join(DATA_DIR, "index.json"),
