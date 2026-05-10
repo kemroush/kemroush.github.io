@@ -473,7 +473,7 @@
       </button>
     </div>
 
-    <p class="filter">BMW, Mercedes, Mini & Audi · Automat · 2020+ · do 100 000 km · 300k – 750k</p>
+    <p class="filter">BMW, Mercedes & Mini · Automat · 2020+ · do 100 000 km · 300k – 750k</p>
 
     <div class="filters-wrapper">
       <div class="filters-left">
@@ -482,7 +482,7 @@
           <button class="brand-btn" data-brand="bmw">BMW</button>
           <button class="brand-btn" data-brand="mercedes">Mercedes</button>
           <button class="brand-btn" data-brand="mini">Mini</button>
-          <button class="brand-btn" data-brand="audi">Audi</button>
+          <button class="brand-btn" data-brand="besties">Besties</button>
         </div>
         <div class="brand-filter">
           <button class="brand-btn active" data-fuel="all">Vše</button>
@@ -636,7 +636,7 @@
           const brandOk = (activeBrands.has('bmw')      && t.startsWith('bmw'))
                        || (activeBrands.has('mercedes') && t.startsWith('mercedes'))
                        || (activeBrands.has('mini')     && t.startsWith('mini'))
-                       || (activeBrands.has('audi')     && t.startsWith('audi'));
+                       || (activeBrands.has('besties')  && ((t.startsWith('bmw') && /\bx1\b/.test(t)) || (t.startsWith('mercedes') && /\bgla\b/.test(t))));
           if (!brandOk) return false;
         }
         if (activeFuels.size > 0 && !activeFuels.has(fuelType(c))) return false;
@@ -784,7 +784,7 @@
         urls.push(`${GITHUB_RAW_BASE}${yyyy}-${mm}-${dd}.json`);
       }
       const urlList = urls.join("\n");
-      currentPrompt = `Jsem na českém trhu ojetých aut a hledám BMW, Mercedes, Mini nebo Audi s automatem, ročník 2020+, do 100 000 km, cena 300 000–750 000 Kč.
+      currentPrompt = `Jsem na českém trhu ojetých aut a hledám BMW, Mercedes nebo Mini s automatem, ročník 2020+, do 100 000 km, cena 300 000–750 000 Kč. Moje oblíbené modely jsou BMW X1 a Mercedes GLA — pokud se mezi nimi nějaké objeví, vypíchni je.
 
 Tady jsou data z mého agregátoru za posledních ${numDays} dní (každý soubor = jeden den, nová auta přidaná ten den):
 
