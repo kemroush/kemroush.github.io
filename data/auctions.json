@@ -1,60 +1,62 @@
 [
   {
-    "id": "okdrazby:22084",
+    "id": "okdrazby:22027",
     "portal": "okdrazby",
     "portal_label": "OK Dražby",
-    "category": "ostatni",
+    "category": "domy",
     "status": "ongoing",
-    "title": "Dražba souboru movitých věcí, např. sportovní vybavení a další",
-    "location": "Kolín",
-    "min_bid_czk": 1900,
-    "min_bid_text": "1 900 Kč",
-    "start_date": "2026-05-13",
-    "start_time": "09:41",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22084/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22084-drazba-souboru-movitych-veci",
-    "badges": [
-      "Probíhající"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "okdrazby:22085",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "ongoing",
-    "title": "Dražba souboru movitých věcí, např. židle, stůl...",
-    "location": "​",
-    "min_bid_czk": 15000,
-    "min_bid_text": "15 000 Kč",
-    "start_date": "2026-05-13",
-    "start_time": "10:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22085/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22085-drazba-souboru-movitych-veci",
-    "badges": [
-      "Probíhající"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "portaldrazeb:rDQDX",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "byty",
-    "status": "prepared",
-    "title": "Ideální spoluvl. podíl 1/2 bytu (54/2) včetně podílu (1601/2299) na spol. částech domu a pozemku v obci Rynárec, Pelhřimov",
-    "location": "",
-    "min_bid_czk": 20000,
-    "min_bid_text": "20 000 Kč",
+    "title": "Rodinný dům včetně pozemku a zahrady v obci Vítkov, okr. Opava",
+    "location": "Opava",
+    "min_bid_czk": 1024500,
+    "min_bid_text": "1 024 500 Kč",
     "start_date": "2026-05-14",
-    "start_time": "11:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/3N8L6",
-    "link": "https://www.portaldrazeb.cz/drazba/106ex2026-23-195-rdqdx",
+    "start_time": "09:31",
+    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22027/images/main/preview",
+    "link": "https://okdrazby.cz/drazba/22027-rodinny-dum-vcetne-pozemku-a-z",
     "badges": [
-      "Elektronická"
+      "Probíhající"
+    ],
+    "first_seen": "2026-05-10",
+    "last_seen": "2026-05-14"
+  },
+  {
+    "id": "okdrazby:22021",
+    "portal": "okdrazby",
+    "portal_label": "OK Dražby",
+    "category": "byty",
+    "status": "ongoing",
+    "title": "Mezonetový byt 2+kk (83 m2) s terasou (99,20 m2) v Luhačovicích",
+    "location": "Zlín",
+    "min_bid_czk": 4480000,
+    "min_bid_text": "4 480 000 Kč",
+    "start_date": "2026-05-14",
+    "start_time": "09:30",
+    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22021/images/main/preview",
+    "link": "https://okdrazby.cz/drazba/22021-mezonetovy-byt-2-kk-83-m-2-s",
+    "badges": [
+      "Probíhající",
+      "Exkluzivní"
+    ],
+    "first_seen": "2026-05-10",
+    "last_seen": "2026-05-14"
+  },
+  {
+    "id": "okdrazby:22022",
+    "portal": "okdrazby",
+    "portal_label": "OK Dražby",
+    "category": "byty",
+    "status": "ongoing",
+    "title": "Mezonetový byt 2+kk (83 m2) s terasou (97,30 m2) v Luhačovicích",
+    "location": "Zlín",
+    "min_bid_czk": 4480000,
+    "min_bid_text": "4 480 000 Kč",
+    "start_date": "2026-05-14",
+    "start_time": "09:31",
+    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22022/images/main/preview",
+    "link": "https://okdrazby.cz/drazba/22022-mezonetovy-byt-2-kk-83-m-2-s",
+    "badges": [
+      "Probíhající",
+      "Exkluzivní"
     ],
     "first_seen": "2026-05-10",
     "last_seen": "2026-05-14"
@@ -73,228 +75,6 @@
     "start_time": "11:30",
     "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/21408/images/main/preview",
     "link": "https://okdrazby.cz/drazba/21408-drazba-podilu-id-1-4-na-orne",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "portaldrazeb:XYxk9",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "pozemky",
-    "status": "prepared",
-    "title": "Dražba podílu id. 1/4 na orné půdě v k.ú. Lužec nad Vltavou, okres Mělník",
-    "location": "Mělník",
-    "min_bid_czk": 40667,
-    "min_bid_text": "40 667 Kč",
-    "start_date": "2026-05-14",
-    "start_time": "11:30",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/pe9xe",
-    "link": "https://www.portaldrazeb.cz/drazba/139ex19891-16-472-xyxk9",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "okdrazby:22098",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "automobily",
-    "status": "prepared",
-    "title": "Automobil Škoda Superb - techn. údaje ve fotogalerii",
-    "location": "Hlavní město Praha",
-    "min_bid_czk": 84700,
-    "min_bid_text": "84 700 Kč",
-    "start_date": "2026-05-14",
-    "start_time": "11:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22098/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22098-automobil-skoda-superb-techn",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "portaldrazeb:D5XDq",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "automobily",
-    "status": "prepared",
-    "title": "Automobil Škoda Superb - techn. údaje ve fotogalerii",
-    "location": "Praha",
-    "min_bid_czk": 84700,
-    "min_bid_text": "84 700 Kč",
-    "start_date": "2026-05-14",
-    "start_time": "11:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/5dg6M",
-    "link": "https://www.portaldrazeb.cz/drazba/206ex518-25-116-d5xdq",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "okdrazby:22097",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "domy",
-    "status": "prepared",
-    "title": "1/2 rodinného domu v obci Krásné, okr. Žďár nad Sázavou",
-    "location": "Žďár nad Sázavou",
-    "min_bid_czk": 354000,
-    "min_bid_text": "354 000 Kč",
-    "start_date": "2026-05-14",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22097/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22097-1-2-rodinneho-domu-v-obci-kras",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "okdrazby:22027",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "domy",
-    "status": "prepared",
-    "title": "Rodinný dům včetně pozemku a zahrady v obci Vítkov, okr. Opava",
-    "location": "Opava",
-    "min_bid_czk": 1024500,
-    "min_bid_text": "1 024 500 Kč",
-    "start_date": "2026-05-14",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22027/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22027-rodinny-dum-vcetne-pozemku-a-z",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "portaldrazeb:lDrpj",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "byty",
-    "status": "prepared",
-    "title": "Dražby bytové jednotky 3+1 v obci Hranice, okres Přerov",
-    "location": "",
-    "min_bid_czk": 1460000,
-    "min_bid_text": "1 460 000 Kč",
-    "start_date": "2026-05-14",
-    "start_time": "11:30",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/eeZmx",
-    "link": "https://www.portaldrazeb.cz/drazba/139ex17636-17-466-ldrpj",
-    "badges": [
-      "Elektronická",
-      "Opakovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "drazby-exekutori:DR020641",
-    "portal": "drazby-exekutori",
-    "portal_label": "Dražby Exekutorů",
-    "category": "byty",
-    "status": "prepared",
-    "title": "Dražby bytové jednotky 3+1 v obci Hranice, okres Přerov",
-    "location": "",
-    "min_bid_czk": 1460000,
-    "min_bid_text": "1 460 000 Kč",
-    "start_date": "2026-05-14",
-    "start_time": "13:30",
-    "image": "http://www.drazby-exekutori.cz/_Data/Drazby/DR020641/Obrazky/Male/DR020641~ehgj_1.jpg",
-    "link": "http://www.drazby-exekutori.cz/DR020641/Drazby-bytove-jednotky-3-1-v-obci-Hranice-okres-Prerov/",
-    "badges": [],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "okdrazby:22020",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "byty",
-    "status": "prepared",
-    "title": "Mezonetový byt 2+kk (83 m2) s terasou (47,50 m2) v Luhačovicích",
-    "location": "Zlín",
-    "min_bid_czk": 4400000,
-    "min_bid_text": "4 400 000 Kč",
-    "start_date": "2026-05-14",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22020/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22020-mezonetovy-byt-2-kk-83-m-2-s",
-    "badges": [
-      "Připravovaná",
-      "Exkluzivní"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "okdrazby:22021",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "byty",
-    "status": "prepared",
-    "title": "Mezonetový byt 2+kk (83 m2) s terasou (99,20 m2) v Luhačovicích",
-    "location": "Zlín",
-    "min_bid_czk": 4480000,
-    "min_bid_text": "4 480 000 Kč",
-    "start_date": "2026-05-14",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22021/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22021-mezonetovy-byt-2-kk-83-m-2-s",
-    "badges": [
-      "Připravovaná",
-      "Exkluzivní"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "okdrazby:22022",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "byty",
-    "status": "prepared",
-    "title": "Mezonetový byt 2+kk (83 m2) s terasou (97,30 m2) v Luhačovicích",
-    "location": "Zlín",
-    "min_bid_czk": 4480000,
-    "min_bid_text": "4 480 000 Kč",
-    "start_date": "2026-05-14",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22022/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22022-mezonetovy-byt-2-kk-83-m-2-s",
-    "badges": [
-      "Připravovaná",
-      "Exkluzivní"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "okdrazby:22642",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Skládací plastové paletové boxy modré viz foto, 2 ks",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-15",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22642/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22642-skladaci-plastove-paletove-box",
     "badges": [
       "Připravovaná"
     ],
@@ -1022,26 +802,6 @@
     "last_seen": "2026-05-14"
   },
   {
-    "id": "okdrazby:22679",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Policový vozík Variofit, do 250 kg,  (2 ks)",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-15",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22679/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22679-policovy-vozik-variofit-do-25",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
     "id": "okdrazby:22680",
     "portal": "okdrazby",
     "portal_label": "OK Dražby",
@@ -1215,26 +975,6 @@
     "start_time": "09:00",
     "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22688/images/main/preview",
     "link": "https://okdrazby.cz/drazba/22688-ventilator-beko-efs-5100-b-cern",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "okdrazby:22689",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Skládací plastové paletové boxy šedé viz foto, 2 ks",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-15",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22689/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22689-skladaci-plastove-paletove-box",
     "badges": [
       "Připravovaná"
     ],
@@ -1475,26 +1215,6 @@
     "start_time": "09:30",
     "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22701/images/main/preview",
     "link": "https://okdrazby.cz/drazba/22701-pouzdro-hp-na-notebook-12-5-f",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "okdrazby:22702",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Policový vozík Variofit, do 250 kg,  (2 ks)",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-15",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22702/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22702-policovy-vozik-variofit-do-25",
     "badges": [
       "Připravovaná"
     ],
@@ -1842,26 +1562,6 @@
     "last_seen": "2026-05-14"
   },
   {
-    "id": "okdrazby:22720",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Skládací plastové paletové boxy modré viz foto, 2 ks",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-15",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22720/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22720-skladaci-plastove-paletove-box",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
     "id": "okdrazby:22721",
     "portal": "okdrazby",
     "portal_label": "OK Dražby",
@@ -2055,46 +1755,6 @@
     "start_time": "10:00",
     "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22730/images/main/preview",
     "link": "https://okdrazby.cz/drazba/22730-priklepova-vrtacka-skil-6398-a",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "okdrazby:22731",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Policový vozík Variofit, do 250 kg,  (2 ks)",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-15",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22731/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22731-policovy-vozik-variofit-do-25",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "okdrazby:22732",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Skládací plastové paletové boxy šedé viz foto, 2 ks",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-15",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22732/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22732-skladaci-plastove-paletove-box",
     "badges": [
       "Připravovaná"
     ],
@@ -11292,6 +10952,24 @@
     "last_seen": "2026-05-14"
   },
   {
+    "id": "drazby-exekutori:DR020770",
+    "portal": "drazby-exekutori",
+    "portal_label": "Dražby Exekutorů",
+    "category": "pozemky",
+    "status": "prepared",
+    "title": "Stavební pozemek v Lešanech u Benešova",
+    "location": "",
+    "min_bid_czk": 2453334,
+    "min_bid_text": "2 453 334 Kč",
+    "start_date": "2026-05-22",
+    "start_time": "15:00",
+    "image": "http://www.drazby-exekutori.cz/_Data/Drazby/DR020770/Obrazky/Male/DR020770~g028_1.jpg",
+    "link": "http://www.drazby-exekutori.cz/DR020770/Stavebni-pozemek-v-Lesanech-u-Benesova/",
+    "badges": [],
+    "first_seen": "2026-05-14",
+    "last_seen": "2026-05-14"
+  },
+  {
     "id": "okdrazby:22795",
     "portal": "okdrazby",
     "portal_label": "OK Dražby",
@@ -14603,14 +14281,14 @@
     "portal_label": "OK Dražby",
     "category": "domy",
     "status": "prepared",
-    "title": "Rodinný dům v k. ú. Veletice",
+    "title": "Rodinný dům v k. ú. Veletice plus garáž",
     "location": "Louny",
     "min_bid_czk": 2105000,
     "min_bid_text": "2 105 000 Kč",
     "start_date": "2026-05-26",
     "start_time": "08:00",
     "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22992/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22992-rodinny-dum-v-k-u-veletice",
+    "link": "https://okdrazby.cz/drazba/22992-rodinny-dum-v-k-u-veletice-p",
     "badges": [
       "Připravovaná",
       "Exkluzivní"
@@ -15734,26 +15412,6 @@
     "last_seen": "2026-05-14"
   },
   {
-    "id": "portaldrazeb:lDrwe",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "byty",
-    "status": "prepared",
-    "title": "Podíl 1/2 bytu, k.ú. Podmokly, obec Děčín",
-    "location": "Děčín",
-    "min_bid_czk": 793334,
-    "min_bid_text": "793 334 Kč",
-    "start_date": "2026-05-27",
-    "start_time": "11:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/5dbPL",
-    "link": "https://www.portaldrazeb.cz/drazba/067ex10870-24-60-ldrwe",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
     "id": "portaldrazeb:JkrNw",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -16256,26 +15914,6 @@
     "start_time": "11:00",
     "image": "https://www.portaldrazeb.cz/upload/auction-image/xrO4J",
     "link": "https://www.portaldrazeb.cz/drazba/211ex4018-04-157-xyd7r",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "portaldrazeb:lDA04",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "zemědělské stavby s pozemky, k.ú. Velká Bučina",
-    "location": "Kladno",
-    "min_bid_czk": 5789334,
-    "min_bid_text": "5 789 334 Kč",
-    "start_date": "2026-05-27",
-    "start_time": "08:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/z38jW",
-    "link": "https://www.portaldrazeb.cz/drazba/174ex21-25-60-lda04",
     "badges": [
       "Elektronická"
     ],
@@ -24278,6 +23916,46 @@
     "last_seen": "2026-05-14"
   },
   {
+    "id": "okdrazby:23250",
+    "portal": "okdrazby",
+    "portal_label": "OK Dražby",
+    "category": "domy",
+    "status": "prepared",
+    "title": "Dražba přízemního rodinného domu, Bartošovice.",
+    "location": "Nový Jičín",
+    "min_bid_czk": 1654000,
+    "min_bid_text": "1 654 000 Kč",
+    "start_date": "2026-06-16",
+    "start_time": "08:00",
+    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23250/images/main/preview",
+    "link": "https://okdrazby.cz/drazba/23250-drazba-prizemniho-rodinneho-do",
+    "badges": [
+      "Připravovaná"
+    ],
+    "first_seen": "2026-05-14",
+    "last_seen": "2026-05-14"
+  },
+  {
+    "id": "okdrazby:23248",
+    "portal": "okdrazby",
+    "portal_label": "OK Dražby",
+    "category": "domy",
+    "status": "prepared",
+    "title": "Dražba řadového krajního domu se zahradou a garáží v Rožďalovicích.",
+    "location": "Nymburk",
+    "min_bid_czk": 2937334,
+    "min_bid_text": "2 937 334 Kč",
+    "start_date": "2026-06-16",
+    "start_time": "08:00",
+    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23248/images/main/preview",
+    "link": "https://okdrazby.cz/drazba/23248-drazba-radoveho-krajniho-domu",
+    "badges": [
+      "Připravovaná"
+    ],
+    "first_seen": "2026-05-14",
+    "last_seen": "2026-05-14"
+  },
+  {
     "id": "portaldrazeb:5pxYZ",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -25333,6 +25011,26 @@
     "last_seen": "2026-05-14"
   },
   {
+    "id": "okdrazby:23246",
+    "portal": "okdrazby",
+    "portal_label": "OK Dražby",
+    "category": "pozemky",
+    "status": "prepared",
+    "title": "soubor pozemků určených k zastavění v obci Zaječov",
+    "location": "Beroun",
+    "min_bid_czk": 12500000,
+    "min_bid_text": "12 500 000 Kč",
+    "start_date": "2026-06-17",
+    "start_time": "11:00",
+    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23246/images/main/preview",
+    "link": "https://okdrazby.cz/drazba/23246-soubor-pozemku-urcenych-k-zast",
+    "badges": [
+      "Připravovaná"
+    ],
+    "first_seen": "2026-05-14",
+    "last_seen": "2026-05-14"
+  },
+  {
     "id": "portaldrazeb:lDARW",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -25410,6 +25108,26 @@
       "Elektronická"
     ],
     "first_seen": "2026-05-12",
+    "last_seen": "2026-05-14"
+  },
+  {
+    "id": "portaldrazeb:po29V",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "ostatni",
+    "status": "prepared",
+    "title": "Pozemky o výměře 4 109 m2 v Zákupech, okres Česká Lípa",
+    "location": "Česká Lípa",
+    "min_bid_czk": 2000,
+    "min_bid_text": "2 000 Kč",
+    "start_date": "2026-06-18",
+    "start_time": "08:00",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/wXeLo",
+    "link": "https://www.portaldrazeb.cz/drazba/183ex1539-20-495-po29v",
+    "badges": [
+      "Elektronická"
+    ],
+    "first_seen": "2026-05-14",
     "last_seen": "2026-05-14"
   },
   {
@@ -26452,26 +26170,6 @@
     "last_seen": "2026-05-14"
   },
   {
-    "id": "okdrazby:22886",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Podíl na rodinném domě v Jindřichově Hradci",
-    "location": "Jindřichův Hradec",
-    "min_bid_czk": 95333,
-    "min_bid_text": "95 333 Kč",
-    "start_date": "2026-06-24",
-    "start_time": "11:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22886/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22886-podil-na-rodinnem-dome-v-jindr",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
     "id": "portaldrazeb:7pgOk",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -26586,26 +26284,6 @@
     "start_time": "11:00",
     "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22782/images/main/preview",
     "link": "https://okdrazby.cz/drazba/22782-podil-na-garazi-v-praze-libn",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-14"
-  },
-  {
-    "id": "okdrazby:22996",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Pozemek s garáží v obci Zákupy, okr. Česká Lípa",
-    "location": "Česká Lípa",
-    "min_bid_czk": 216667,
-    "min_bid_text": "216 667 Kč",
-    "start_date": "2026-06-24",
-    "start_time": "11:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22996/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22996-pozemek-s-garazi-v-obci-zakupy",
     "badges": [
       "Připravovaná"
     ],
@@ -27768,6 +27446,26 @@
       "Opakovaná"
     ],
     "first_seen": "2026-05-13",
+    "last_seen": "2026-05-14"
+  },
+  {
+    "id": "portaldrazeb:E8Zn8",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "domy",
+    "status": "prepared",
+    "title": "Rodinný dům v obci Poličná, okr. Vsetín",
+    "location": "Vsetín",
+    "min_bid_czk": 1729000,
+    "min_bid_text": "1 729 000 Kč",
+    "start_date": "2026-07-08",
+    "start_time": "11:00",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/wXeY4",
+    "link": "https://www.portaldrazeb.cz/drazba/203ex29358-25-e8zn8",
+    "badges": [
+      "Elektronická"
+    ],
+    "first_seen": "2026-05-14",
     "last_seen": "2026-05-14"
   },
   {
