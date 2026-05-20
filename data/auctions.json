@@ -1,65 +1,5 @@
 [
   {
-    "id": "portaldrazeb:E8Zrj",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "domy",
-    "status": "prepared",
-    "title": "Ideální spoluvlastnický podíl 13/384 rodinného domu s pozemky o výměře 13.711 m2 v obci Milíře, Tachov",
-    "location": "",
-    "min_bid_czk": 1000,
-    "min_bid_text": "1 000 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "10:30",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/z3MMn",
-    "link": "https://www.portaldrazeb.cz/drazba/108ex5077-25-131-e8zrj",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "portaldrazeb:lDA4r",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "pozemky",
-    "status": "prepared",
-    "title": "Pozemek parc.č.190/14, o výměře 26 m2 v obci Temešvár, Písek",
-    "location": "Písek",
-    "min_bid_czk": 1000,
-    "min_bid_text": "1 000 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "11:20",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/wXQ8m",
-    "link": "https://www.portaldrazeb.cz/drazba/108ex631-14-1083-lda4r",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:22119",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "pozemky",
-    "status": "prepared",
-    "title": "Dražba spoluvlastnického podílu ve výši 1/12 na svažitých zemědělských pozemcích v Litenčicích",
-    "location": "Kroměříž",
-    "min_bid_czk": 10000,
-    "min_bid_text": "10 000 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22119/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22119-drazba-spoluvlastnickeho-podil",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
     "id": "okdrazby:21945",
     "portal": "okdrazby",
     "portal_label": "OK Dražby",
@@ -73,46 +13,6 @@
     "start_time": "11:00",
     "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/21945/images/main/preview",
     "link": "https://okdrazby.cz/drazba/21945-podil-na-rodinnem-dome-v-obci",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "portaldrazeb:E8RDR",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "domy",
-    "status": "prepared",
-    "title": "Podíl na rodinném domě v obci Litobratřice, okr. Znojmo",
-    "location": "Znojmo",
-    "min_bid_czk": 53333,
-    "min_bid_text": "53 333 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "11:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/xMY74",
-    "link": "https://www.portaldrazeb.cz/drazba/203ex21620-15-450-e8rdr",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:22112",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "pozemky",
-    "status": "prepared",
-    "title": "Dražba spoluvlastnického podílu id. 23/24, travnatých pozemků, Čejč",
-    "location": "Hodonín",
-    "min_bid_czk": 94000,
-    "min_bid_text": "94 000 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22112/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22112-drazba-spoluvlastnickeho-podil",
     "badges": [
       "Připravovaná"
     ],
@@ -140,46 +40,6 @@
     "last_seen": "2026-05-20"
   },
   {
-    "id": "portaldrazeb:AVwlY",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "pozemky",
-    "status": "prepared",
-    "title": "Pozemek v k.ú. Sány, okres Nymburk",
-    "location": "Nymburk",
-    "min_bid_czk": 106667,
-    "min_bid_text": "106 667 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "11:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/GGepl",
-    "link": "https://www.portaldrazeb.cz/drazba/203ex22766-25-avwly",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:22111",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "pozemky",
-    "status": "prepared",
-    "title": "Dražba neudržovaný, travnatý, svažitý pozemek, Černošín",
-    "location": "Tachov",
-    "min_bid_czk": 122000,
-    "min_bid_text": "122 000 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22111/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22111-drazba-neudrzovany-travnaty",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
     "id": "okdrazby:21932",
     "portal": "okdrazby",
     "portal_label": "OK Dražby",
@@ -200,26 +60,6 @@
     "last_seen": "2026-05-20"
   },
   {
-    "id": "portaldrazeb:dbkAK",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "domy",
-    "status": "prepared",
-    "title": "Podíl na rodinném domě v Kolíně",
-    "location": "Kolín",
-    "min_bid_czk": 596887,
-    "min_bid_text": "596 887 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "11:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/ee8gm",
-    "link": "https://www.portaldrazeb.cz/drazba/203ex19643-16-dbkak",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
     "id": "okdrazby:21884",
     "portal": "okdrazby",
     "portal_label": "OK Dražby",
@@ -233,67 +73,6 @@
     "start_time": "11:00",
     "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/21884/images/main/preview",
     "link": "https://okdrazby.cz/drazba/21884-podil-na-byte-3-1-v-obci-brno",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "portaldrazeb:YkQ0k",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "byty",
-    "status": "prepared",
-    "title": "Podíl na bytě 3+1 v obci Brno - Lesná",
-    "location": "Brno",
-    "min_bid_czk": 670000,
-    "min_bid_text": "670 000 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "11:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/mel0G",
-    "link": "https://www.portaldrazeb.cz/drazba/203ex31003-20-ykq0k",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:22751",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "2.400 ks baterií „BB LiFePO4 3,2V/25Ah, ArtNo: ZG-LFP020AH“",
-    "location": "Hlavní město Praha",
-    "min_bid_czk": 670680,
-    "min_bid_text": "670 680 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22751/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22751-2-400-ks-baterii-bb-li-fe-po-4-3",
-    "badges": [
-      "Připravovaná",
-      "Opakovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:22389",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "pozemky",
-    "status": "prepared",
-    "title": "Dražba nemovitých věcí – pozemky v obci Srch, orná půda a lesní pozemek",
-    "location": "Pardubice",
-    "min_bid_czk": 859000,
-    "min_bid_text": "859 000 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22389/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22389-drazba-nemovitych-veci-pozem",
     "badges": [
       "Připravovaná"
     ],
@@ -321,26 +100,6 @@
     "last_seen": "2026-05-20"
   },
   {
-    "id": "portaldrazeb:1bqYr",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "byty",
-    "status": "prepared",
-    "title": "Byt 3+1 v obci Děčín, okres Děčín",
-    "location": "Děčín",
-    "min_bid_czk": 1180667,
-    "min_bid_text": "1 180 667 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "11:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/melyd",
-    "link": "https://www.portaldrazeb.cz/drazba/203ex4355-25-1bqyr",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
     "id": "okdrazby:21942",
     "portal": "okdrazby",
     "portal_label": "OK Dražby",
@@ -356,127 +115,6 @@
     "link": "https://okdrazby.cz/drazba/21942-byt-3-1-v-obci-teplice-okres",
     "badges": [
       "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "portaldrazeb:2yrb1",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "byty",
-    "status": "prepared",
-    "title": "Byt 3+1 v obci Teplice, okres Teplice",
-    "location": "Teplice",
-    "min_bid_czk": 1920000,
-    "min_bid_text": "1 920 000 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "11:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/pe6eG",
-    "link": "https://www.portaldrazeb.cz/drazba/203ex20602-25-2yrb1",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:21672",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "domy",
-    "status": "prepared",
-    "title": "Id. sp. podíl 3/4 na RD v obci Kosmonosy",
-    "location": "Mladá Boleslav",
-    "min_bid_czk": 2092000,
-    "min_bid_text": "2 092 000 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "11:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/21672/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/21672-id-sp-podil-3-4-na-rd-v-obci",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "portaldrazeb:1bqy9",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "domy",
-    "status": "prepared",
-    "title": "Dražba RD se zahradou v obci Dřínov, okres Mělník",
-    "location": "",
-    "min_bid_czk": 2260000,
-    "min_bid_text": "2 260 000 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "11:30",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/5d0YM",
-    "link": "https://www.portaldrazeb.cz/drazba/139ex07876-24-169-1bqy9",
-    "badges": [
-      "Elektronická",
-      "Opakovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "drazby-exekutori:DR020706",
-    "portal": "drazby-exekutori",
-    "portal_label": "Dražby Exekutorů",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Dražba RD se zahradou v obci Dřínov, okres Mělník",
-    "location": "",
-    "min_bid_czk": 2260000,
-    "min_bid_text": "2 260 000 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "13:30",
-    "image": "http://www.drazby-exekutori.cz/_Data/Drazby/DR020706/Obrazky/Male/DR020706~f9p7_1.jpg",
-    "link": "http://www.drazby-exekutori.cz/DR020706/Drazba-RD-se-zahradou-v-obci-Drinov-okres-Melnik/",
-    "badges": [],
-    "first_seen": "2026-05-13",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:22493",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "domy",
-    "status": "prepared",
-    "title": "Dražba rodinného domu na ul. Táborská 3232/68, 615 00 Brno - Židenice",
-    "location": "Brno-město",
-    "min_bid_czk": 5500000,
-    "min_bid_text": "5 500 000 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "07:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22493/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22493-drazba-rodinneho-domu-na-ul-t",
-    "badges": [
-      "Připravovaná",
-      "Opakovaná"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:22117",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Objekt občanské vybavenosti - motorest č.p. 56, k.ú. Střechov nad Sázavou",
-    "location": "Benešov",
-    "min_bid_czk": 16512000,
-    "min_bid_text": "16 512 000 Kč",
-    "start_date": "2026-05-20",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22117/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/22117-objekt-obcanske-vybavenosti",
-    "badges": [
-      "Připravovaná",
-      "Opakovaná"
     ],
     "first_seen": "2026-05-10",
     "last_seen": "2026-05-20"
@@ -7387,26 +7025,6 @@
     "last_seen": "2026-05-20"
   },
   {
-    "id": "portaldrazeb:9pLoO",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "byty",
-    "status": "prepared",
-    "title": "Ideální spoluvl. podíl 1/10 bytu 3+1 (č.j. 1379/9) včetně ideál. spoluvl. podílu (31/12540) na spol. částech domu a pozemku v obci Duchcov, Teplice",
-    "location": "",
-    "min_bid_czk": 1000,
-    "min_bid_text": "1 000 Kč",
-    "start_date": "2026-05-27",
-    "start_time": "09:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/3NYgR",
-    "link": "https://www.portaldrazeb.cz/drazba/094ex10688-24-225-9ploo",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
     "id": "portaldrazeb:XYErK",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -8212,6 +7830,24 @@
       "Elektronická"
     ],
     "first_seen": "2026-05-10",
+    "last_seen": "2026-05-20"
+  },
+  {
+    "id": "drazby-exekutori:DR020738",
+    "portal": "drazby-exekutori",
+    "portal_label": "Dražby Exekutorů",
+    "category": "domy",
+    "status": "prepared",
+    "title": "120 EX 8391/24-87 - 1/4 rodinného domu s pozemky a příslušenstvím v obci Jílové - městská část Kamenná, okres Děčín",
+    "location": "",
+    "min_bid_czk": 380000,
+    "min_bid_text": "380 000 Kč",
+    "start_date": "2026-05-27",
+    "start_time": "11:00",
+    "image": "http://www.drazby-exekutori.cz/_Data/Drazby/DR020738/Obrazky/Male/DR020738~ukpm_1.jpg",
+    "link": "http://www.drazby-exekutori.cz/DR020738/120-EX-8391-24-87-1-4-rodinneho-domu-s-pozemky-a-prislusenstvim-v-obci-Jilove-mestska-cast-Kamenna-okres-Decin/",
+    "badges": [],
+    "first_seen": "2026-05-20",
     "last_seen": "2026-05-20"
   },
   {
@@ -9893,1506 +9529,6 @@
     "last_seen": "2026-05-20"
   },
   {
-    "id": "okdrazby:23279",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Ruční napařovač oděvů Philips 3000 Series STH3010/70",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23279/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23279-rucni-naparovac-odevu-philips",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23280",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Teplovzdušný ventilátor Ariete 8212, 200 W",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23280/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23280-teplovzdusny-ventilator-ariete",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23281",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Přebalovací taška Mothercare, černá - 17 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23281/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23281-prebalovaci-taska-mothercare",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23282",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Rádio s CD Sony ZS-PS50, bílá barva",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23282/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23282-radio-s-cd-sony-zs-ps-50-bila",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23283",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Měkké natáčky na vlasy bez tepla - 60 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23283/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23283-mekke-natacky-na-vlasy-bez-tep",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23284",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Toustovač Cuisinart CPT180E",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23284/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23284-toustovac-cuisinart-cpt-180-e",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23285",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Akumulátorový šroubovák Skil 2461 AA",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23285/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23285-akumulatorovy-sroubovak-skil-2",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23286",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Alarmový systém Smanos L020 LAN - chybí baterie viz foto",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23286/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23286-alarmovy-system-smanos-l-020-la",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23287",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Venkovní osvětlení EasyLight CX391-25-73 AN - 6 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23287/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23287-venkovni-osvetleni-easy-light-c",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23288",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Závěsná houpačka ANPPEX - mechanické poškození viz foto",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23288/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23288-zavesna-houpacka-anppex-mech",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23289",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Vodní filtr do lednice Aqualogis AL-508SBS - 2 kusy",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23289/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23289-vodni-filtr-do-lednice-aqualog",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23290",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Baterie  PATONA pro notebook HP - 4400mAh",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23290/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23290-baterie-patona-pro-notebook-h",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23291",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Akumulátorová řetězová pila PAGHS 20-Li C3 – bez akumulátoru a nabíječky viz foto",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23291/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23291-akumulatorova-retezova-pila-pa",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23292",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Výsuvný odsavač pár Elica E077CI, bílá barva",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23292/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23292-vysuvny-odsavac-par-elica-e-077",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23293",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Zastřihovač vlasů pro muže Kizmet Kare - 10 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23293/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23293-zastrihovac-vlasu-pro-muze-kiz",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23294",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "GPS navigace DC 3V-5V, včetně příslušenství",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23294/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23294-gps-navigace-dc-3-v-5-v-vcetne",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23295",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Topný ventilátor Bestron AFH211W",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23295/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23295-topny-ventilator-bestron-afh-21",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23296",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "LED žárovky se závitem E27 - 6 kusů v balení/ 6 balení",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23296/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23296-led-zarovky-se-zavitem-e-27-6",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23297",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Elektrický fondue LITTLE BALANCE 8386 - 1.8 L",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23297/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23297-elektricky-fondue-little-balan",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23298",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Prémiové semišové postroje s vodítky pro psy  / 24 ks, vel: L a M",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23298/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23298-premiove-semisove-postroje-s-v",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23299",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Vysavač IKONS CREATE NETBOT S18 LINE",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23299/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23299-vysavac-ikons-create-netbot-s-1",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23300",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Napařovací žehlička Ariete 6235",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23300/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23300-naparovaci-zehlicka-ariete-623",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23301",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Vyhřívací deka Imetec  Scaldasonno 180x50 cm",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23301/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23301-vyhrivaci-deka-imetec-scaldas",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23302",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Příklepová vrtačka SKIL 1020 AA",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23302/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23302-priklepova-vrtacka-skil-1020-a",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23303",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Napěňovač mléka SILVERCREST Smsp 500 A1 - šedá barva",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23303/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23303-napenovac-mleka-silvercrest-sm",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23304",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Módní polarizační brýle / Brýle pro řidiče FEIDU - 12 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23304/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23304-modni-polarizacni-bryle-bryl",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23305",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Elektrický krb Bomann EK 6020 CB černý Faux Krb s topidlem",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23305/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23305-elektricky-krb-bomann-ek-6020",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23306",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Napařovač oděvů Philips Home STH3010/70 zelený 1000 W",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23306/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23306-naparovac-odevu-philips-home-s",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23307",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Stojan na reproduktor Auna PlayStand",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23307/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23307-stojan-na-reproduktor-auna-pla",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23308",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Podlahový ventilátor Honeywell HT900E , 30 W",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23308/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23308-podlahovy-ventilator-honeywell",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23309",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Mini Rýžovar 1L pro 1-2 osoby Oushiba C2 do auta",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23309/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23309-mini-ryzovar-1-l-pro-1-2-osoby",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23310",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Elektrický napěňovač mléka Morpilot HS001-G",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23310/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23310-elektricky-napenovac-mleka-mor",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23311",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Zavlažovací set GARDENA: Kruhový zavlažovač, Prázdninová sada a AquaZoom",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23311/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23311-zavlazovaci-set-gardena-kruho",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23312",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Profine Cat kapsička Lamb for Sterilised 85 g/240 ks",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23312/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23312-profine-cat-kapsicka-lamb-for",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23313",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "PUZZLE Velká čínská zeď 3D, mini stavební bloky 1719 dílků (A418) - 5 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23313/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23313-puzzle-velka-cinska-zed-3-d-mi",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23314",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Bezdrátový (akumulátorový) ruční vysavač Deli/ 5 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23314/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23314-bezdratovy-akumulatorovy-ru",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23315",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Aku řetězová pila PARKSIDE  PAGHS 20-Li C3 – bez akumulátoru a nabíječky",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23315/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23315-aku-retezova-pila-parkside-pa",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23316",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Cellularline Sluchátka On Ear Bluetooth",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23316/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23316-cellularline-sluchatka-on-ear",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23317",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Dětský neoprenový oblek  velikost 12. ( odpovídá 140 až 152 cm.)",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23317/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23317-detsky-neoprenovy-oblek-velik",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23318",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Elektrický šroubovák SKIL 6940 MA",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23318/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23318-elektricky-sroubovak-skil-6940",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23319",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Profesionální kuchyňský robot SilverCrest SKMP 1300 D3",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23319/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23319-profesionalni-kuchynsky-robot",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23320",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Rýžovar RUSSELL HOBBS 27030",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23320/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23320-ryzovar-russell-hobbs-27030",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23321",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Plochý topinkovač se 3 halogenovými topnými tělesy EasyToast Basic Cecotec",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23321/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23321-plochy-topinkovac-se-3-halogen",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23322",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Boční stěna k přístřešku COLEMAN  FastPitch XL s dveřmi -",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23322/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23322-bocni-stena-k-pristresku-colem",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23323",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Set bazénového příslušenství: Nafukovací lehátko Intex + 2x krycí plachta, viz foto.  Zboží nebylo vybalováno, nafukováno ani testováno viz foto.",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23323/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23323-set-bazenoveho-prislusenstvi",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23324",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Vakuovačka Klarstein FoodLocker Slim  130 W, dvojitý svár",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23324/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23324-vakuovacka-klarstein-food-locke",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23325",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Univerzální drtič Silvercrest SMZ 260",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23325/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23325-univerzalni-drtic-silvercrest",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23326",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Topinkovač Cecotec VisionToast  03042",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23326/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23326-topinkovac-cecotec-vision-toast",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23327",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Kompaktní polovodičový odvlhčovač vzduchu DryBox 2000",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23327/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23327-kompaktni-polovodicovy-odvlhc",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23328",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Elektrický stolní gril Teppanyaki XXXL  Bestron ABP605 - drobná kosmetická vada viz foto",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23328/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23328-elektricky-stolni-gril-teppany",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23329",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Stolní mixér SENCOR SBL 7070GG",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23329/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23329-stolni-mixer-sencor-sbl-7070-g",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23330",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Multifunkční vibrační masážní přístroj na tělo Body Massager  9v1",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23330/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23330-multifunkcni-vibracni-masazni",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23331",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Výsuvný LCD monitor AUNA s úhlopříčkou 7 palců 7\" In-Dash TFT LCD Monitor / TV",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23331/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23331-vysuvny-lcd-monitor-auna-s-uh",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23332",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Napařovací žehlička ECG NZ 190",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23332/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23332-naparovaci-zehlicka-ecg-nz-190",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23333",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Mix drobného spotřebního zboží  -  PALETA",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "09:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23333/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23333-mix-drobneho-spotrebniho-zbozi",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23334",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Úhlová bruska PARKSIDE PWS 125 I9, 1200 W Ø 125 mm",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23334/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23334-uhlova-bruska-parkside-pws-125",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23335",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Vyhřívací deka Imetec  Scaldasonno 180x50 cm",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23335/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23335-vyhrivaci-deka-imetec-scaldas",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-15",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23336",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Kontaktní skládací gril Bestron APM123W, příkon700 W",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23336/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23336-kontaktni-skladaci-gril-bestro",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-17",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23337",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Mini sloupový ventilátor SILVERCREST  STVM 30 B2",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23337/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23337-mini-sloupovy-ventilator-silve",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-17",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23338",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Sada 2 ks multifunkčních zahradních postřikovačů Florana (4 a 6 funkcí)",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23338/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23338-sada-2-ks-multifunkcnich-zahra",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-17",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23339",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Vibrační bruska SKIL 7347 AA",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23339/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23339-vibracni-bruska-skil-7347-aa",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23340",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Nástěnný keramický ventilátorový ohřívač PARETO WEEK2 AR4W04P",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23340/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23340-nastenny-keramicky-ventilatoro",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23341",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Mini batoh na dron s velkou kapacitou pro DJI Mini 3 Pro Drone Accs/ 5 ks",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23341/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23341-mini-batoh-na-dron-s-velkou-ka",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23342",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Přenosná cestovní rychlovarná konvice  Bear ZDH-C04X1",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23342/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23342-prenosna-cestovni-rychlovarna",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23343",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Parní mop Vileda Steam Plus  0064-03",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23343/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23343-parni-mop-vileda-steam-plus",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23344",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Pohyblivý stojan na hodinky Klarstein Geneva - 4 režimy, černá barva",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23344/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23344-pohyblivy-stojan-na-hodinky-kl",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23345",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Koš na prádlo SONGMICS LSF002GS",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23345/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23345-kos-na-pradlo-songmics-lsf-002-g",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23346",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Vodotěsný batoh + vodotěsné pouzdro na mobil  - 19 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23346/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23346-vodotesny-batoh-vodotesne-po",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23347",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Topinkovač Severin AT 2286",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23347/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23347-topinkovac-severin-at-2286",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23348",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Sada dřevěných fotorámečků Home&Me 10x15 cm – Černá, Masivní - 36 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23348/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23348-sada-drevenych-fotoramecku-hom",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23349",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Mikrovlnná trouba Sharp YC-MG01EW -  kosmetická vada viz foto",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23349/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23349-mikrovlnna-trouba-sharp-yc-mg-0",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23350",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "TOP akumulátorový vysavač  Proscenic F10 Pro 3 v 1",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23350/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23350-top-akumulatorovy-vysavac-pro",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23351",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Aku řetězová pila PARKSIDE  PAGHS 20-Li C3 – bez akumulátoru a nabíječky",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23351/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23351-aku-retezova-pila-parkside-pa",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23352",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Nástavec s nůžkami na živý plot Stanley Petrol Multi STR-4IN1 - 2 kusy",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23352/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23352-nastavec-s-nuzkami-na-zivy-plo",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23353",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Buvolí uzlík s hovězím masem 1 ks, 6,5 cm - celkem 227 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-05-29",
-    "start_time": "10:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23353/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23353-buvoli-uzlik-s-hovezim-masem-1",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
     "id": "okdrazby:22605",
     "portal": "okdrazby",
     "portal_label": "OK Dražby",
@@ -12702,866 +10838,6 @@
     "link": "https://www.portaldrazeb.cz/drazba/139ex14701-19-476-ykqyy",
     "badges": [],
     "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23355",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Náhradní baterie PATONA pro notebook Fujitsu a Siemens",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23355/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23355-nahradni-baterie-patona-pro-no",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23356",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Venkovní osvětlení EasyLight CX391-25-73 AN - 6 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23356/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23356-venkovni-osvetleni-easy-light-c",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23357",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Podsedák na lehátko Ambientehome 195x49x10cm",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23357/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23357-podsedak-na-lehatko-ambienteho",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23358",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Žehlička ECG NZ 322",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23358/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23358-zehlicka-ecg-nz-322",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23359",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Gigabitový WLAN router telekom Speedport Smart 4 Black s rychlostí až 6 000 MBit/s",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23359/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23359-gigabitovy-wlan-router-telekom",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23360",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Úhlová bruska Skil 9006 AA",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23360/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23360-uhlova-bruska-skil-9006-aa",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23361",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Inkontinenční pleny Lines Specialist s vysokou ochranou Maxi Plus vel. L - 10 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23361/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23361-inkontinencni-pleny-lines-spec",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23362",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Vyhřívací deka IMETEC SCALDASONNO - 150x80 cm",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23362/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23362-vyhrivaci-deka-imetec-scaldaso",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23363",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Cestovní napařovací žehlička Philips Travel Steamer 3000 Series",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23363/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23363-cestovni-naparovaci-zehlicka-p",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23364",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "LED světelný řetěz s napájecím zdrojem - 15M",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23364/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23364-led-svetelny-retez-s-napajecim",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23365",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Sádrokartonový šroubovák SKIL 6940 MA",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23365/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23365-sadrokartonovy-sroubovak-skil",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-18",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23366",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Alarmový systém Smanos L020 LAN - chybí baterie viz foto",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23366/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23366-alarmovy-system-smanos-l-020-la",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23367",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Skandinávské houpací křeslo MEUBLES COSY, béžová barva",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23367/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23367-skandinavske-houpaci-kreslo-me",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23368",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Tyčový vysavač ECG VT 7220 2v1",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23368/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23368-tycovy-vysavac-ecg-vt-7220-2-v-1",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23369",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Reproduktor Malone Auna Pro 15 \"",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23369/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23369-reproduktor-malone-auna-pro-15",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23370",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Bazénový set BESTWAY: Dětský bazén Bestway + krycí plachta Bestway + solární plachta na bazén Bestway",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23370/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23370-bazenovy-set-bestway-detsky-b",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23371",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Robotický vysavač IKOHS NETBOT S15",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23371/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23371-roboticky-vysavac-ikohs-netbot",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23372",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Běžecká ledvinka pro pejskaře - 50 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23372/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23372-bezecka-ledvinka-pro-pejskare",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23373",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Masážní pistole Carecj - 8 nástavců",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23373/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23373-masazni-pistole-carecj-8-nas",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23374",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Ochranná podložka pod kancelářskou židli BLACK+DECKER - 90x90 cm",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23374/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23374-ochranna-podlozka-pod-kancelar",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23375",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Dětské kolečkové brusle - velikost 31-34 EU",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23375/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23375-detske-koleckove-brusle-veli",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23376",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Sada dvou dřevěných prkének a dvou salátových lžic",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23376/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23376-sada-dvou-drevenych-prkenek-a",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23377",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Dámské chytré hodinky ARMODD Candywatch Crystal 2",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23377/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23377-damske-chytre-hodinky-armodd-c",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23378",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Přenosné pouzdro Okima, 20x19x7 cm- 25 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23378/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23378-prenosne-pouzdro-okima-20-x-19-x",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23379",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Designový sklěněný lustr Lucande 9616138 - bez montážní sady viz foto",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23379/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23379-designovy-skleneny-lustr-lucan",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23380",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Otevřené pásmo s páskou se skelnými vlákny Stanley 2-34-795 - 60m",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23380/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23380-otevrene-pasmo-s-paskou-se-ske",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23381",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Sada šroubů a hmoždinek s vhodným šroubovákem PARKSIDE- 11 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23381/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23381-sada-sroubu-a-hmozdinek-s-vhod",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23382",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "TOP! Parní čistič s mopem Vaporetto Polti SV440 Double",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23382/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23382-top-parni-cistic-s-mopem-vapo",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23383",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Napařovací žehlička Philips Series 5000",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23383/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23383-naparovaci-zehlicka-philips-se",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23384",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Elektrický zastřihovač Skil 0730AA + odpěňovač na odstranění zelené usazeniny (řasy, lišejníky)",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23384/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23384-elektricky-zastrihovac-skil-07",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23385",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Kuchyňský gril Fagor MG350",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23385/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23385-kuchynsky-gril-fagor-mg-350",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23386",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Osmidílná sada dřevěných dlát - 0,63 až 3,81 mm",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23386/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23386-osmidilna-sada-drevenych-dlat",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23387",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Masážní podložka Snailax SHIATSU SL-256G",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23387/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23387-masazni-podlozka-snailax-shiat",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23388",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Bezdrátový smoothie maker Ninja Blast BC151EUWH",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23388/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23388-bezdratovy-smoothie-maker-ninj",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23389",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Sada prémiových vrtáků a bitů v kufříku",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23389/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23389-sada-premiovych-vrtaku-a-bitu",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23390",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Elektrický šroubovák SKIL 6940 MA",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23390/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23390-elektricky-sroubovak-skil-6940",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23391",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Zvlhčovač vzduchu Cecotec BreezeCare 2600 Light Smart",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23391/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23391-zvlhcovac-vzduchu-cecotec-bree",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23392",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Sada zahradních lopatek a hrábiček - 20 + 20 kusů",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23392/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23392-sada-zahradnich-lopatek-a-hrab",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23393",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Sádrokartonový šroubovák SKIL 6940 MA",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23393/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23393-sadrokartonovy-sroubovak-skil",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23394",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Cestovní parní žehlička Philips Travel Steamer 3000 Series",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "08:30",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23394/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23394-cestovni-parni-zehlicka-philip",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23395",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Odšťavňovač DomoClip DOP102",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23395/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23395-odstavnovac-domo-clip-dop-102",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23396",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Motorkářská helma CGM 167a Flo - velikost L",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23396/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23396-motorkarska-helma-cgm-167-a-flo",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
-    "last_seen": "2026-05-20"
-  },
-  {
-    "id": "okdrazby:23397",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Rýžovar Nedis KARC06WT - bez lžíce viz foto",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-06-01",
-    "start_time": "09:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23397/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/23397-ryzovar-nedis-karc-06-wt-bez-l",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-05-19",
     "last_seen": "2026-05-20"
   },
   {
@@ -16506,26 +13782,6 @@
     "last_seen": "2026-05-20"
   },
   {
-    "id": "portaldrazeb:AVz3j",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "domy",
-    "status": "prepared",
-    "title": "vypořádání spoluvlastnictví prodejem rodinného domu Blížkovice č. p. 243 na pozemku parc. č. 102, kdy tento dům je zapsán na LV č. 728 pro obec Blížkovice, k. ú. Ves Blížkovice, okr.Znojmo",
-    "location": "",
-    "min_bid_czk": 300000,
-    "min_bid_text": "300 000 Kč",
-    "start_date": "2026-06-09",
-    "start_time": "08:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/z38e6",
-    "link": "https://www.portaldrazeb.cz/drazba/190ex607-25-46-avz3j",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-05-10",
-    "last_seen": "2026-05-20"
-  },
-  {
     "id": "portaldrazeb:1bkg9",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -16539,6 +13795,26 @@
     "start_time": "07:00",
     "image": "https://www.portaldrazeb.cz/upload/auction-image/7vj5k",
     "link": "https://www.portaldrazeb.cz/drazba/040ex9027-07-229-1bkg9",
+    "badges": [
+      "Elektronická"
+    ],
+    "first_seen": "2026-05-10",
+    "last_seen": "2026-05-20"
+  },
+  {
+    "id": "portaldrazeb:AVz3j",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "domy",
+    "status": "prepared",
+    "title": "vypořádání spoluvlastnictví prodejem rodinného domu Blížkovice č. p. 243 na pozemku parc. č. 102, kdy tento dům je zapsán na LV č. 728 pro obec Blížkovice, k. ú. Ves Blížkovice, okr.Znojmo",
+    "location": "",
+    "min_bid_czk": 1080000,
+    "min_bid_text": "1 080 000 Kč",
+    "start_date": "2026-06-09",
+    "start_time": "08:00",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/z38e6",
+    "link": "https://www.portaldrazeb.cz/drazba/190ex607-25-46-avz3j",
     "badges": [
       "Elektronická"
     ],
@@ -20658,6 +17934,26 @@
     "last_seen": "2026-05-20"
   },
   {
+    "id": "okdrazby:23223",
+    "portal": "okdrazby",
+    "portal_label": "OK Dražby",
+    "category": "pozemky",
+    "status": "prepared",
+    "title": "podíl 1/2 lesní pozemek - Vsetín",
+    "location": "Vsetín",
+    "min_bid_czk": 56667,
+    "min_bid_text": "56 667 Kč",
+    "start_date": "2026-06-17",
+    "start_time": "08:00",
+    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23223/images/main/preview",
+    "link": "https://okdrazby.cz/drazba/23223-podil-1-2-lesni-pozemek-vset",
+    "badges": [
+      "Připravovaná"
+    ],
+    "first_seen": "2026-05-13",
+    "last_seen": "2026-05-20"
+  },
+  {
     "id": "portaldrazeb:mjy5L",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -20860,6 +18156,26 @@
       "Dobrovolná"
     ],
     "first_seen": "2026-05-10",
+    "last_seen": "2026-05-20"
+  },
+  {
+    "id": "okdrazby:23689",
+    "portal": "okdrazby",
+    "portal_label": "OK Dražby",
+    "category": "pozemky",
+    "status": "prepared",
+    "title": "Spoluvlastnický podíl 1/3 na zemědělských pozemcích o celkové výměře 33 214 m², k.ú. Hostěradice",
+    "location": "Hlavní město Praha",
+    "min_bid_czk": 376667,
+    "min_bid_text": "376 667 Kč",
+    "start_date": "2026-06-17",
+    "start_time": "08:00",
+    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23689/images/main/preview",
+    "link": "https://okdrazby.cz/drazba/23689-spoluvlastnicky-podil-1-3-na-z",
+    "badges": [
+      "Připravovaná"
+    ],
+    "first_seen": "2026-05-15",
     "last_seen": "2026-05-20"
   },
   {
@@ -21307,6 +18623,26 @@
     "last_seen": "2026-05-20"
   },
   {
+    "id": "okdrazby:23221",
+    "portal": "okdrazby",
+    "portal_label": "OK Dražby",
+    "category": "pozemky",
+    "status": "prepared",
+    "title": "orná půda + zahrada - Dolní Marklovice",
+    "location": "Karviná",
+    "min_bid_czk": 2418000,
+    "min_bid_text": "2 418 000 Kč",
+    "start_date": "2026-06-17",
+    "start_time": "08:00",
+    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23221/images/main/preview",
+    "link": "https://okdrazby.cz/drazba/23221-orna-puda-zahrada-dolni-ma",
+    "badges": [
+      "Připravovaná"
+    ],
+    "first_seen": "2026-05-12",
+    "last_seen": "2026-05-20"
+  },
+  {
     "id": "portaldrazeb:ab0Aj",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -21443,6 +18779,26 @@
     "link": "https://www.portaldrazeb.cz/drazba/225ex816-24-qokra",
     "badges": [
       "Elektronická"
+    ],
+    "first_seen": "2026-05-10",
+    "last_seen": "2026-05-20"
+  },
+  {
+    "id": "okdrazby:22756",
+    "portal": "okdrazby",
+    "portal_label": "OK Dražby",
+    "category": "pozemky",
+    "status": "prepared",
+    "title": "Pozemky v k.ú. Poruba u Orlové, okr. Karviná",
+    "location": "Karviná",
+    "min_bid_czk": 5080000,
+    "min_bid_text": "5 080 000 Kč",
+    "start_date": "2026-06-17",
+    "start_time": "11:00",
+    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/22756/images/main/preview",
+    "link": "https://okdrazby.cz/drazba/22756-pozemky-v-k-u-poruba-u-orlove",
+    "badges": [
+      "Připravovaná"
     ],
     "first_seen": "2026-05-10",
     "last_seen": "2026-05-20"
@@ -22820,6 +20176,46 @@
       "Elektronická"
     ],
     "first_seen": "2026-05-15",
+    "last_seen": "2026-05-20"
+  },
+  {
+    "id": "portaldrazeb:JkWxz",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "automobily",
+    "status": "prepared",
+    "title": "Osobní automobil Škoda Octavia",
+    "location": "",
+    "min_bid_czk": 1000,
+    "min_bid_text": "1 000 Kč",
+    "start_date": "2026-06-23",
+    "start_time": "09:30",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/3N7AP",
+    "link": "https://www.portaldrazeb.cz/drazba/149ex1658-25-47-jkwxz",
+    "badges": [
+      "Elektronická"
+    ],
+    "first_seen": "2026-05-20",
+    "last_seen": "2026-05-20"
+  },
+  {
+    "id": "portaldrazeb:XYPXQ",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "automobily",
+    "status": "prepared",
+    "title": "Osobní automobil Škoda Rapid",
+    "location": "",
+    "min_bid_czk": 1000,
+    "min_bid_text": "1 000 Kč",
+    "start_date": "2026-06-23",
+    "start_time": "09:00",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/je6mL",
+    "link": "https://www.portaldrazeb.cz/drazba/149ex1550-25-73-xypxq",
+    "badges": [
+      "Elektronická"
+    ],
+    "first_seen": "2026-05-20",
     "last_seen": "2026-05-20"
   },
   {
@@ -25202,6 +22598,48 @@
     "last_seen": "2026-05-20"
   },
   {
+    "id": "okdrazby:23939",
+    "portal": "okdrazby",
+    "portal_label": "OK Dražby",
+    "category": "byty",
+    "status": "prepared",
+    "title": "Mezonetový byt 3+1, podlahová plocha 104,3 m², terasa 63,7 m², Karlovy Vary",
+    "location": "Karlovy Vary",
+    "min_bid_czk": 1,
+    "min_bid_text": "1 Kč",
+    "start_date": "2026-07-01",
+    "start_time": "08:00",
+    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23939/images/main/preview",
+    "link": "https://okdrazby.cz/drazba/23939-mezonetovy-byt-3-1-podlahova",
+    "badges": [
+      "Připravovaná",
+      "Exkluzivní"
+    ],
+    "first_seen": "2026-05-20",
+    "last_seen": "2026-05-20"
+  },
+  {
+    "id": "okdrazby:23940",
+    "portal": "okdrazby",
+    "portal_label": "OK Dražby",
+    "category": "byty",
+    "status": "prepared",
+    "title": "Mezonetový byt 3+1 s balkonem, podlahová plocha 107,1 m², Karlovy Vary",
+    "location": "Karlovy Vary",
+    "min_bid_czk": 1,
+    "min_bid_text": "1 Kč",
+    "start_date": "2026-07-01",
+    "start_time": "08:00",
+    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23940/images/main/preview",
+    "link": "https://okdrazby.cz/drazba/23940-mezonetovy-byt-3-1-s-balkonem",
+    "badges": [
+      "Připravovaná",
+      "Exkluzivní"
+    ],
+    "first_seen": "2026-05-20",
+    "last_seen": "2026-05-20"
+  },
+  {
     "id": "portaldrazeb:D5XdJ",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -25981,6 +23419,27 @@
     "last_seen": "2026-05-20"
   },
   {
+    "id": "okdrazby:23941",
+    "portal": "okdrazby",
+    "portal_label": "OK Dražby",
+    "category": "pozemky",
+    "status": "prepared",
+    "title": "Dražba podílu 1/6 na pozemcích, Vlkoš, okr. Kyjov",
+    "location": "Hodonín",
+    "min_bid_czk": 52800,
+    "min_bid_text": "52 800 Kč",
+    "start_date": "2026-07-09",
+    "start_time": "12:00",
+    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/23941/images/main/preview",
+    "link": "https://okdrazby.cz/drazba/23941-drazba-podilu-1-6-na-pozemcich",
+    "badges": [
+      "Připravovaná",
+      "Opakovaná"
+    ],
+    "first_seen": "2026-05-20",
+    "last_seen": "2026-05-20"
+  },
+  {
     "id": "okdrazby:23722",
     "portal": "okdrazby",
     "portal_label": "OK Dražby",
@@ -26240,6 +23699,26 @@
       "Elektronická"
     ],
     "first_seen": "2026-05-15",
+    "last_seen": "2026-05-20"
+  },
+  {
+    "id": "portaldrazeb:E8WpR",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "ostatni",
+    "status": "prepared",
+    "title": "Podíl 2x 1/5 rod. rekreace se zahradou, obec Sadov, okres Karlovy Vary",
+    "location": "Karlovy Vary",
+    "min_bid_czk": 70000,
+    "min_bid_text": "70 000 Kč",
+    "start_date": "2026-07-22",
+    "start_time": "11:00",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/z3Rkb",
+    "link": "https://www.portaldrazeb.cz/drazba/067ex4190-09-958-e8wpr",
+    "badges": [
+      "Elektronická"
+    ],
+    "first_seen": "2026-05-20",
     "last_seen": "2026-05-20"
   },
   {
