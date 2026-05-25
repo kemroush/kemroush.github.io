@@ -1,6 +1,6 @@
 # Auto Monitor
 
-Hlídač nových ojetých BMW / Mercedes / MINI na sauto.cz + skladových BMW na renocar.cz. Výsledky jsou na `cars.html`.
+Hlídač nových ojetých BMW / Mercedes / MINI na sauto.cz + skladových BMW na renocar.cz + skladových Mercedes na mercedesnasklade.cz. Výsledky jsou na `cars.html`.
 
 ## Jak to funguje
 
@@ -39,6 +39,8 @@ URL parametry filtru jsou v `scrape_sauto()`:
 - `razeni=datum-vlozeni-desc` – řazení od nejnovějšího
 
 `scrape_renocar()` volá JSON endpoint `?ajax=newFilterQuery-cars&brand=bmw&limit=500` a aplikuje stejné cenové / kilometrové / rokové filtry (BMW od 2022). ID jsou prefixované `renocar:` aby nekolidovaly se sauto.cz.
+
+`scrape_mercedesnasklade()` scrapuje stránkovaný listing `mercedesnasklade.cz/?sp-min=…&sp-max=…&km-max=…&cy-min=…&p=N` (server-side filtry), iteruje stránky dokud nejsou prázdné. ID prefix `mns:`.
 
 ## Ruční spuštění
 
