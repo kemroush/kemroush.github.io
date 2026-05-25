@@ -19,6 +19,7 @@ from datetime import datetime, timedelta
 from bs4 import BeautifulSoup, NavigableString
 
 RENOCAR_BASE = "https://www.renocar.cz"
+MNS_BASE = "https://www.mercedesnasklade.cz"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -314,6 +315,123 @@ def scrape_renocar() -> list[dict]:
 
 
 # ─────────────────────────────────────────────
+#  SCRAPING MERCEDESNASKLADE.CZ
+# ─────────────────────────────────────────────
+
+def scrape_mercedesnasklade() -> list[dict]:
+    base = (
+        f"{MNS_BASE}/?sp-min={CONFIG['min_price_czk']}"
+        f"&sp-max={CONFIG['max_price_czk']}"
+        f"&km-max={CONFIG['max_km']}"
+        f"&cy-min={CONFIG['min_year']}"
+    )
+    cars = []
+    try:
+        for page in range(1, 21):
+            url = base if page == 1 else f"{base}&p={page}"
+            result = subprocess.run(
+                ["curl", "-sL",
+                 "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+                 "-H", "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                 "-H", "Accept-Language: cs-CZ,cs;q=0.9",
+                 url],
+                capture_output=True, text=True, timeout=30,
+            )
+            soup = BeautifulSoup(result.stdout, "lxml")
+            items = soup.select(".car-item")
+            if not items:
+                break
+
+            for item in items:
+                try:
+                    link_el = item.select_one("a[href^='/detail/']")
+                    if not link_el:
+                        continue
+                    href = link_el.get("href", "")
+                    m = re.match(r"^/detail/(\d+)", href)
+                    if not m:
+                        continue
+                    detail_id = m.group(1)
+                    ad_id = f"mns:{detail_id}"
+                    link = f"{MNS_BASE}{href}"
+
+                    type_el = item.select_one(".car-type h3")
+                    car_type = type_el.get_text(strip=True) if type_el else ""
+                    title = f"Mercedes-Benz {car_type}".strip()
+
+                    price_el = item.select_one(".price.dph b") or item.select_one(".price.dph")
+                    price = price_el.get_text(strip=True) if price_el else ""
+                    if not price:
+                        continue
+                    price_num = int(re.sub(r"\D", "", price)) if re.search(r"\d", price) else 0
+                    if price_num <= 0:
+                        continue
+                    if price_num > CONFIG["max_price_czk"] or price_num < CONFIG["min_price_czk"]:
+                        continue
+
+                    km = 0
+                    km_m = re.search(r"([\d\s ]+)\s*km", item.get_text(" ", strip=True))
+                    if km_m:
+                        km = int(re.sub(r"\D", "", km_m.group(1)))
+                        if km > CONFIG["max_km"]:
+                            continue
+
+                    year = 0
+                    reg_year_m = re.search(r"\b(20\d{2})\b", item.get_text(" ", strip=True))
+                    if reg_year_m:
+                        year = int(reg_year_m.group(1))
+                        if year < CONFIG["min_year"]:
+                            continue
+
+                    fuel = ""
+                    for col in item.select(".car-info .column"):
+                        desc = col.select_one(".desc")
+                        if desc and desc.get_text(strip=True) == "Palivo":
+                            val = col.select_one("span:not(.desc)")
+                            if val:
+                                fuel = val.get_text(strip=True)
+                            break
+
+                    seller_el = item.select_one(".prodejce strong")
+                    seller = seller_el.get_text(strip=True) if seller_el else ""
+
+                    parts = []
+                    if car_type:
+                        parts.append(car_type)
+                    if year:
+                        parts.append(str(year))
+                    if km:
+                        parts.append(f"{km:,}".replace(",", " ") + " km")
+                    if fuel:
+                        parts.append(fuel)
+                    if seller:
+                        parts.append(seller)
+                    details = "  ·  ".join(parts)
+
+                    img_el = item.select_one(".car-img img")
+                    image = img_el.get("src", "") if img_el else ""
+                    if image.startswith("/"):
+                        image = f"{MNS_BASE}{image}"
+
+                    if title and link:
+                        cars.append({
+                            "id":      ad_id,
+                            "title":   title,
+                            "price":   price,
+                            "details": details,
+                            "link":    link,
+                            "image":   image,
+                        })
+                except Exception:
+                    continue
+    except Exception as e:
+        print(f"  [mercedesnasklade.cz] Chyba: {e}")
+
+    print(f"  mercedesnasklade.cz: {len(cars)} inzerátů")
+    return cars
+
+
+# ─────────────────────────────────────────────
 #  HLAVNÍ LOGIKA
 # ─────────────────────────────────────────────
 
@@ -331,6 +449,7 @@ def main():
     for brand in CONFIG["brands"]:
         all_cars += scrape_sauto(brand)
     all_cars += scrape_renocar()
+    all_cars += scrape_mercedesnasklade()
 
     new_cars = [c for c in all_cars if c["id"] not in seen]
     print(f"  Nových: {len(new_cars)} | Dnes celkem: {len(today_cars)} | Nalezeno: {len(all_cars)}")
