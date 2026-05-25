@@ -16,5 +16,176 @@
     "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/210487067",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qB_B/kO7neTVgOQD6SgjCWMGtyncS/37bf.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "25.05.2026 19:08"
+  },
+  {
+    "id": "renocar:39568084",
+    "title": "BMW 118i Hatchback",
+    "price": "577 685 Kč",
+    "details": "Hatchback  ·  2024  ·  39 800 km  ·  1499 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-118i-hatchback-39568084",
+    "image": "https://www.renocar.cz/helios_resources/images/39568084_00_39938934.jpg",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:39928518",
+    "title": "BMW 330e xDrive Sedan Tažné",
+    "price": "742 975 Kč",
+    "details": "Sedan  ·  2024  ·  37 700 km  ·  1998 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-330e-xdrive-sedan-tazne-39928518",
+    "image": "https://www.renocar.cz/helios_resources/images/39928518_00_39928533.jpg",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:39930873",
+    "title": "BMW 118i Hatchback",
+    "price": "619 008 Kč",
+    "details": "Hatchback  ·  2024  ·  27 500 km  ·  1499 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-118i-hatchback-39930873",
+    "image": "https://www.renocar.cz/helios_resources/images/39930873_00_41032177.jpg",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:39938326",
+    "title": "BMW 330e xDrive Sedan",
+    "price": "742 975 Kč",
+    "details": "Sedan  ·  2024  ·  35 400 km  ·  1998 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-330e-xdrive-sedan-39938326",
+    "image": "https://www.renocar.cz/helios_resources/images/39938326_00_39938356.jpg",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:40192513",
+    "title": "BMW 118i Hatchback",
+    "price": "643 801 Kč",
+    "details": "Hatchback  ·  2024  ·  33 200 km  ·  1499 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-118i-hatchback-40192513",
+    "image": "https://www.renocar.cz/helios_resources/images/40192513_00_40192628.jpg",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:40194587",
+    "title": "BMW 218i Gran Coupé",
+    "price": "635 537 Kč",
+    "details": "Kupé  ·  2024  ·  29 750 km  ·  1499 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-218i-gran-coupe-40194587",
+    "image": "https://www.renocar.cz/helios_resources/images/40194587_00_40197745.jpg",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:40409908",
+    "title": "BMW 218i Gran Coupé",
+    "price": "594 214 Kč",
+    "details": "Kupé  ·  35 000 km  ·  1499 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-218i-gran-coupe-40409908",
+    "image": "https://www.renocar.cz/helios_resources/images/40409908_00_40409996.jpg",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:40410045",
+    "title": "BMW 218i Gran Coupé",
+    "price": "619 008 Kč",
+    "details": "Kupé  ·  28 450 km  ·  1499 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-218i-gran-coupe-40410045",
+    "image": "https://www.renocar.cz/helios_resources/images/40410045_00_40410084.jpg",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:40657398",
+    "title": "BMW 218i Gran Coupé",
+    "price": "660 330 Kč",
+    "details": "Kupé  ·  2024  ·  20 100 km  ·  1499 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-218i-gran-coupe-40657398",
+    "image": "https://www.renocar.cz/helios_resources/images/40657398_00_40808028.jpg",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:40664872",
+    "title": "BMW 320d xDrive sedan",
+    "price": "742 975 Kč",
+    "details": "Sedan  ·  2023  ·  54 769 km  ·  1995 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-320d-xdrive-sedan-40664872",
+    "image": "https://www.renocar.cz/helios_resources/images/40664872_00_41469257.JPG",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:40773353",
+    "title": "BMW 318i Touring",
+    "price": "734 710 Kč",
+    "details": "Touring/Kombi  ·  2025  ·  15 700 km  ·  1998 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-318i-touring-40773353",
+    "image": "https://www.renocar.cz/helios_resources/images/40773353_00_41478113.jpg",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:40829549",
+    "title": "BMW X1 sDrive 18i",
+    "price": "734 710 Kč",
+    "details": "SUV/SAV  ·  2024  ·  46 236 km  ·  1499 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-x1-sdrive-18i-40829549",
+    "image": "https://www.renocar.cz/helios_resources/images/40829549_00_40872956.JPG",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:40867402",
+    "title": "BMW 218i Active Tourer",
+    "price": "537 189 Kč",
+    "details": "MPV/Tourer  ·  2023  ·  26 650 km  ·  1499 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-218i-active-tourer-40867402",
+    "image": "https://www.renocar.cz/helios_resources/images/40867402_00_40927781.jpg",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:41324793",
+    "title": "BMW 118d",
+    "price": "726 446 Kč",
+    "details": "Hatchback  ·  2025  ·  21 752 km  ·  1995 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-118d-41324793",
+    "image": "https://www.renocar.cz/helios_resources/images/41324793_00_41343649.jpg",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:41507226",
+    "title": "BMW BMW - 120",
+    "price": "742 975 Kč",
+    "details": "Hatchback  ·  2025  ·  14 363 km  ·  1499 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-bmw-120-41507226",
+    "image": "https://www.renocar.cz/helios_resources/images/41507226_00_42516035.JPG",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:41658949",
+    "title": "BMW 118d (F70)",
+    "price": "726 446 Kč",
+    "details": "Hatchback  ·  2025  ·  11 400 km  ·  1995 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-118d-f70--41658949",
+    "image": "https://www.renocar.cz/helios_resources/images/41658949_00_41699818.jpg",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:42640114",
+    "title": "BMW 218i ActiveTourer Tažné Harman",
+    "price": "710 661 Kč",
+    "details": "MPV/Tourer  ·  2024  ·  9 827 km  ·  1499 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-218i-activetourer-tazne-harman-42640114",
+    "image": "https://www.renocar.cz/helios_resources/images/42640114_00_42947520.JPG",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:42640815",
+    "title": "BMW 220i ActiveTourer Tažné Harman",
+    "price": "710 661 Kč",
+    "details": "MPV/Tourer  ·  2024  ·  19 145 km  ·  1499 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-220i-activetourer-tazne-harman-42640815",
+    "image": "https://www.renocar.cz/helios_resources/images/42640815_00_42723259.jpg",
+    "found_at": "25.05.2026 19:57"
+  },
+  {
+    "id": "renocar:42768943",
+    "title": "BMW 430i Gran Coupe Mpaket",
+    "price": "701 652 Kč",
+    "details": "Kupé  ·  2022  ·  71 501 km  ·  1998 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-430i-gran-coupe-mpaket-42768943",
+    "image": "https://www.renocar.cz/helios_resources/images/42768943_00_42934993.jpeg",
+    "found_at": "25.05.2026 19:57"
   }
 ]
