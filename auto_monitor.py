@@ -18,6 +18,8 @@ from datetime import datetime, timedelta
 
 from bs4 import BeautifulSoup, NavigableString
 
+RENOCAR_BASE = "https://www.renocar.cz"
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 
@@ -218,6 +220,100 @@ def scrape_sauto(brand: str) -> list[dict]:
 
 
 # ─────────────────────────────────────────────
+#  SCRAPING RENOCAR.CZ (BMW skladové vozy)
+# ─────────────────────────────────────────────
+
+def _format_czk(value: int) -> str:
+    return f"{value:,}".replace(",", " ") + " Kč"
+
+
+def scrape_renocar() -> list[dict]:
+    brand = "bmw"
+    min_year = CONFIG["min_year_overrides"].get(brand, CONFIG["min_year"])
+    url = f"{RENOCAR_BASE}/?ajax=newFilterQuery-cars&brand={brand}&limit=500&offset=0"
+    cars = []
+    try:
+        result = subprocess.run(
+            ["curl", "-sL",
+             "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+             "-H", "Accept: application/json, text/plain, */*",
+             "-H", "X-Requested-With: XMLHttpRequest",
+             "-H", "Accept-Language: cs-CZ,cs;q=0.9",
+             url],
+            capture_output=True, text=True, timeout=30,
+        )
+        data = json.loads(result.stdout)
+        for c in data.get("cars", []):
+            try:
+                ad_id = f"renocar:{c['id']}"
+
+                title = c.get("name", "").strip()
+                if not title.lower().startswith("bmw"):
+                    continue
+
+                price_num = int(float(c.get("price") or 0))
+                if price_num <= 0:
+                    continue
+                if price_num > CONFIG["max_price_czk"] or price_num < CONFIG["min_price_czk"]:
+                    continue
+
+                km = int(c.get("tachometer_state") or 0)
+                if km > CONFIG["max_km"]:
+                    continue
+
+                year = 0
+                reg = c.get("date_of_first_registration") or ""
+                year_m = re.match(r"(\d{4})", reg)
+                if year_m:
+                    year = int(year_m.group(1))
+                if year and year < min_year:
+                    continue
+
+                body = (c.get("body_name") or "").strip()
+                displacement = (c.get("displacement") or "").strip()
+                parts = []
+                if body:
+                    parts.append(body)
+                if year:
+                    parts.append(str(year))
+                parts.append(f"{km:,}".replace(",", " ") + " km")
+                if displacement:
+                    parts.append(displacement)
+                parts.append("Renocar")
+                details = "  ·  ".join(parts)
+
+                slug = c.get("url") or ""
+                link = f"{RENOCAR_BASE}/vuz/{slug}-{c['id']}"
+
+                image = ""
+                raw_img = c.get("image")
+                if raw_img:
+                    try:
+                        img_obj = json.loads(raw_img) if isinstance(raw_img, str) else raw_img
+                        img_src = (img_obj or {}).get("src", "")
+                        if img_src:
+                            image = f"{RENOCAR_BASE}/{img_src.lstrip('/')}"
+                    except Exception:
+                        pass
+
+                cars.append({
+                    "id":      ad_id,
+                    "title":   title,
+                    "price":   _format_czk(price_num),
+                    "details": details,
+                    "link":    link,
+                    "image":   image,
+                })
+            except Exception:
+                continue
+    except Exception as e:
+        print(f"  [renocar.cz] Chyba: {e}")
+
+    print(f"  renocar.cz/{brand}: {len(cars)} inzerátů")
+    return cars
+
+
+# ─────────────────────────────────────────────
 #  HLAVNÍ LOGIKA
 # ─────────────────────────────────────────────
 
@@ -234,6 +330,7 @@ def main():
     all_cars = []
     for brand in CONFIG["brands"]:
         all_cars += scrape_sauto(brand)
+    all_cars += scrape_renocar()
 
     new_cars = [c for c in all_cars if c["id"] not in seen]
     print(f"  Nových: {len(new_cars)} | Dnes celkem: {len(today_cars)} | Nalezeno: {len(all_cars)}")
