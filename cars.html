@@ -503,6 +503,18 @@
           <button class="brand-btn" data-fuel="hybrid">Hybrid</button>
           <button class="brand-btn" data-fuel="electric">Elektro</button>
         </div>
+        <div class="brand-filter">
+          <button class="brand-btn active" data-model="all">Vše</button>
+          <button class="brand-btn" data-model="x1">X1</button>
+          <button class="brand-btn" data-model="x2">X2</button>
+          <button class="brand-btn" data-model="x3">X3</button>
+          <button class="brand-btn" data-model="x4">X4</button>
+          <button class="brand-btn" data-model="x5">X5</button>
+          <button class="brand-btn" data-model="gla">GLA</button>
+          <button class="brand-btn" data-model="glb">GLB</button>
+          <button class="brand-btn" data-model="glc">GLC</button>
+          <button class="brand-btn" data-model="gle">GLE</button>
+        </div>
       </div>
       <div class="filters-right">
         <p class="results-count" id="results-count"></p>
@@ -544,6 +556,7 @@
     let summaryCache = null;
     let activeBrands = new Set(); // empty = all
     let activeFuels  = new Set(); // empty = all
+    let activeModels = new Set(); // empty = all
     let sortValue    = 'date-desc';
     const PRICE_MIN  = 300000;
     const PRICE_MAX  = 750000;
@@ -691,6 +704,11 @@
           if (!brandOk) return false;
         }
         if (activeFuels.size > 0 && !activeFuels.has(fuelType(c))) return false;
+        if (activeModels.size > 0) {
+          const t = c.title.toLowerCase();
+          const modelOk = [...activeModels].some(m => new RegExp(`\\b${m}\\b`).test(t));
+          if (!modelOk) return false;
+        }
         const price = parsePrice(c);
         if (price > 0 && (price < priceMin || price > priceMax)) return false;
         return true;
@@ -708,6 +726,13 @@
       document.querySelectorAll('[data-fuel]').forEach(btn => {
         const fuel = btn.dataset.fuel;
         btn.classList.toggle('active', fuel === 'all' ? activeFuels.size === 0 : activeFuels.has(fuel));
+      });
+    }
+
+    function updateModelButtons() {
+      document.querySelectorAll('[data-model]').forEach(btn => {
+        const model = btn.dataset.model;
+        btn.classList.toggle('active', model === 'all' ? activeModels.size === 0 : activeModels.has(model));
       });
     }
 
@@ -796,6 +821,21 @@
           activeFuels.add(fuel);
         }
         updateFuelButtons();
+        renderCars();
+      });
+    });
+
+    document.querySelectorAll('[data-model]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const model = btn.dataset.model;
+        if (model === 'all') {
+          activeModels.clear();
+        } else if (activeModels.has(model)) {
+          activeModels.delete(model);
+        } else {
+          activeModels.add(model);
+        }
+        updateModelButtons();
         renderCars();
       });
     });
