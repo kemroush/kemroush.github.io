@@ -1,0 +1,38 @@
+[
+  {
+    "id": "210490046",
+    "title": "BMW Řada 2",
+    "price": "668 000 Kč",
+    "details": "2022, 91 000 km , Nafta , Automatická  ·  Litoměřice  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/210490046",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_B/kO7neTVgOQCsFBPBmJGuOF0E/1153.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.05.2026 12:01"
+  },
+  {
+    "id": "210491348",
+    "title": "Mini Cooper S 2.0 AUT",
+    "price": "699 000 Kč",
+    "details": "2023, 32 755 km , Benzín , Automatická  ·  Praha-západ  ·  Future Drivalia",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/210491348",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_B/kQMlcCt5zmBDkXaUpGuRgJg/6179.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.05.2026 12:01"
+  },
+  {
+    "id": "mns:23394",
+    "title": "Mercedes-Benz Třída A 200, 1.majitel, CZ",
+    "price": "623 150 Kč",
+    "details": "Třída A 200, 1.majitel, CZ  ·  2024  ·  25 272 km  ·  Benzín  ·  CENTRUM Moravia Sever, spol.s r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/23394",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/06785991_1.jpg",
+    "found_at": "26.05.2026 12:01"
+  },
+  {
+    "id": "mns:23394",
+    "title": "Mercedes-Benz Třída A 200, 1.majitel, CZ",
+    "price": "623 150 Kč",
+    "details": "Třída A 200, 1.majitel, CZ  ·  2024  ·  25 272 km  ·  Benzín  ·  CENTRUM Moravia Sever, spol.s r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/23394",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/06785991_1.jpg",
+    "found_at": "26.05.2026 12:01"
+  }
+]
