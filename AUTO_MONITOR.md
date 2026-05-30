@@ -1,6 +1,6 @@
 # Auto Monitor
 
-Hlídač nových ojetých BMW / Mercedes / MINI na sauto.cz + skladových BMW na renocar.cz + skladových Mercedes na mercedesnasklade.cz. Výsledky jsou na `cars.html`.
+Hlídač nových ojetých BMW / Mercedes / MINI na sauto.cz + skladových BMW na renocar.cz + skladových Mercedes na mercedesnasklade.cz + ojetých BMW / MINI z Future Drivalia (future.drivalia.cz). Výsledky jsou na `cars.html`.
 
 ## Jak to funguje
 
@@ -41,6 +41,8 @@ URL parametry filtru jsou v `scrape_sauto()`:
 `scrape_renocar()` volá JSON endpoint `?ajax=newFilterQuery-cars&brand=bmw&limit=500` a aplikuje stejné cenové / kilometrové / rokové filtry (BMW od 2022). API vrací cenu **bez DPH** v poli `price` — ve scraperu se násobí `(1 + vat/100)` (typicky ×1.21) aby zobrazená cena odpovídala té na renocar.cz. ID jsou prefixované `renocar:` aby nekolidovaly se sauto.cz.
 
 `scrape_mercedesnasklade()` scrapuje stránkovaný listing `mercedesnasklade.cz/?sp-min=…&sp-max=…&km-max=…&cy-min=…&p=N` (server-side filtry), iteruje stránky dokud nejsou prázdné. Cena se čte z `.price.dph b` (s DPH). ID prefix `mns:`.
+
+`scrape_drivalia()` volá WP AJAX endpoint `future.drivalia.cz/wp-admin/admin-ajax.php` s `action=ddf_query`. Nonce se vytahuje fresh z `/vozidla/` při každém běhu (anonymní WP nonce je stabilní napříč requesty bez cookies). Filtry (`price_min/max`, `km_max`, `year_min`, `brand[]=…`) jdou server-side. Iteruje brandy `bmw` a `mini` (Mercedes-Benz Drivalia nemají), pro každý prochází stránky dokud `hasMore=true`. Data čte z `product_data` v JSON odpovědi, obrázky z přiloženého HTML `cards` (joinuje přes URL slug). ID prefix `drivalia:` + leading numeric WP product ID.
 
 ## Frontend filtry (cars.html)
 

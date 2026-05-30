@@ -7,5 +7,41 @@
     "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/210518438",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qB_C/kQMlcCt5zmCni4DBt3GwfrwD/65f7.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "30.05.2026 10:31"
+  },
+  {
+    "id": "drivalia:582800",
+    "title": "BMW X3",
+    "price": "729 000 Kč",
+    "details": "20d AUT xDrive  ·  SUV  ·  2022  ·  92 933 km  ·  Nafta  ·  Future Drivalia",
+    "link": "https://future.drivalia.cz/vozidla/582800-cs-bmw-x3/",
+    "image": "https://future.drivalia.cz/wp-content/uploads/2026/05/drivalia-Na5sKiGB-1024x576.jpg",
+    "found_at": "30.05.2026 13:07"
+  },
+  {
+    "id": "drivalia:603830",
+    "title": "BMW X1",
+    "price": "599 000 Kč",
+    "details": "20d AUT xDrive M Sport  ·  SUV  ·  2022  ·  97 877 km  ·  Nafta  ·  Future Drivalia",
+    "link": "https://future.drivalia.cz/vozidla/603830-cs-bmw-x1/",
+    "image": "https://future.drivalia.cz/wp-content/uploads/2026/05/drivalia-LXfiA5Lg-1024x576.jpg",
+    "found_at": "30.05.2026 13:07"
+  },
+  {
+    "id": "drivalia:618602",
+    "title": "Mini Cooper S",
+    "price": "699 000 Kč",
+    "details": "2.0 AUT  ·  hatchback  ·  2023  ·  32 755 km  ·  Benzín  ·  Future Drivalia",
+    "link": "https://future.drivalia.cz/vozidla/618602-cs-mini-cooper-s/",
+    "image": "https://future.drivalia.cz/wp-content/uploads/2026/05/drivalia-AaIjGoxx-1024x576.jpg",
+    "found_at": "30.05.2026 13:07"
+  },
+  {
+    "id": "drivalia:618608",
+    "title": "Mini Cooper S",
+    "price": "609 000 Kč",
+    "details": "2.0 AUT  ·  hatchback  ·  2023  ·  48 312 km  ·  Benzín  ·  Future Drivalia",
+    "link": "https://future.drivalia.cz/vozidla/618608-cs-mini-cooper-s/",
+    "image": "https://future.drivalia.cz/wp-content/uploads/2026/05/drivalia-ApBFUlZP-1024x576.jpg",
+    "found_at": "30.05.2026 13:07"
   }
 ]
