@@ -252,7 +252,9 @@ def scrape_renocar() -> list[dict]:
                 if not title.lower().startswith("bmw"):
                     continue
 
-                price_num = int(float(c.get("price") or 0))
+                price_net = float(c.get("price") or 0)
+                vat_rate = float(c.get("vat") or 21)
+                price_num = round(price_net * (1 + vat_rate / 100))
                 if price_num <= 0:
                     continue
                 if price_num > CONFIG["max_price_czk"] or price_num < CONFIG["min_price_czk"]:
