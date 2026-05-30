@@ -20,6 +20,7 @@ from bs4 import BeautifulSoup, NavigableString
 
 RENOCAR_BASE = "https://www.renocar.cz"
 MNS_BASE = "https://www.mercedesnasklade.cz"
+DRIVALIA_BASE = "https://future.drivalia.cz"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -434,6 +435,156 @@ def scrape_mercedesnasklade() -> list[dict]:
 
 
 # ─────────────────────────────────────────────
+#  SCRAPING FUTURE.DRIVALIA.CZ
+# ─────────────────────────────────────────────
+
+# Mapování interních značek CONFIG na slugy v Drivalia API.
+# Mercedes-Benz v Drivalia nemají, takže ho přeskočíme.
+DRIVALIA_BRAND_SLUGS = {
+    "bmw":           "bmw",
+    "mini":          "mini",
+}
+
+
+def _drivalia_nonce() -> str:
+    result = subprocess.run(
+        ["curl", "-sL",
+         "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+         f"{DRIVALIA_BASE}/vozidla/"],
+        capture_output=True, text=True, timeout=30,
+    )
+    m = re.search(r'"action":"ddf_query","nonce":"([a-f0-9]+)"', result.stdout)
+    return m.group(1) if m else ""
+
+
+def _drivalia_fetch_page(brand_slug: str, page: int, nonce: str, min_year: int) -> dict:
+    args = [
+        "curl", "-sL", "-X", "POST",
+        f"{DRIVALIA_BASE}/wp-admin/admin-ajax.php",
+        "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+        "-H", "X-Requested-With: XMLHttpRequest",
+        "-H", "Accept: application/json, text/javascript, */*; q=0.01",
+        "--data-urlencode", "action=ddf_query",
+        "--data-urlencode", f"nonce={nonce}",
+        "--data-urlencode", f"page={page}",
+        "--data-urlencode", "sort=date-desc",
+        "--data-urlencode", f"price_min={CONFIG['min_price_czk']}",
+        "--data-urlencode", f"price_max={CONFIG['max_price_czk']}",
+        "--data-urlencode", f"km_max={CONFIG['max_km']}",
+        "--data-urlencode", f"year_min={min_year}",
+        "--data-urlencode", f"brand[]={brand_slug}",
+    ]
+    result = subprocess.run(args, capture_output=True, text=True, timeout=30)
+    return json.loads(result.stdout)
+
+
+def scrape_drivalia() -> list[dict]:
+    nonce = _drivalia_nonce()
+    if not nonce:
+        print("  [future.drivalia.cz] Nepodařilo se získat nonce")
+        return []
+
+    cars = []
+    for brand, brand_slug in DRIVALIA_BRAND_SLUGS.items():
+        min_year = CONFIG["min_year_overrides"].get(brand, CONFIG["min_year"])
+        brand_count = 0
+        try:
+            for page in range(1, CONFIG["max_pages"] + 1):
+                resp = _drivalia_fetch_page(brand_slug, page, nonce, min_year)
+                if not resp.get("success"):
+                    break
+                data = resp.get("data", {})
+                products = data.get("product_data") or []
+                if not products:
+                    break
+
+                # Z HTML karet vytáhneme obrázky a spárujeme se slug ID
+                images = {}
+                cards_html = data.get("cards") or ""
+                if cards_html:
+                    soup = BeautifulSoup(cards_html, "lxml")
+                    for card in soup.select("div.car"):
+                        link_el = card.select_one("a[href*='/vozidla/']")
+                        img_el = card.select_one("img")
+                        if link_el and img_el:
+                            href = link_el.get("href", "")
+                            slug_m = re.search(r"/vozidla/([^/]+)/", href)
+                            if slug_m:
+                                images[slug_m.group(1)] = img_el.get("src", "")
+
+                for p in products:
+                    try:
+                        slug = p.get("id") or ""
+                        if not slug:
+                            continue
+                        pid_m = re.match(r"(\d+)", slug)
+                        ad_id = f"drivalia:{pid_m.group(1)}" if pid_m else f"drivalia:{slug}"
+
+                        brand_name = (p.get("brand") or "").strip()
+                        name = (p.get("name") or "").strip()
+                        title = name if name.lower().startswith(brand_name.lower()) else f"{brand_name} {name}".strip()
+
+                        price_num = int(round(float(p.get("price") or 0)))
+                        if price_num <= 0:
+                            continue
+                        if price_num > CONFIG["max_price_czk"] or price_num < CONFIG["min_price_czk"]:
+                            continue
+
+                        km_raw = p.get("dimension5") or 0
+                        km = int(float(km_raw)) if km_raw else 0
+                        if km > CONFIG["max_km"]:
+                            continue
+
+                        reg = p.get("dimension56") or ""
+                        year_m = re.match(r"(\d{4})", reg)
+                        year = int(year_m.group(1)) if year_m else 0
+                        if year and year < min_year:
+                            continue
+
+                        body = (p.get("dimension1") or "").strip()
+                        fuel = (p.get("dimension2") or "").strip()
+                        variant = (p.get("variant") or "").strip()
+
+                        parts = []
+                        if variant:
+                            parts.append(variant)
+                        if body:
+                            parts.append(body)
+                        if year:
+                            parts.append(str(year))
+                        if km:
+                            parts.append(f"{km:,}".replace(",", " ") + " km")
+                        if fuel:
+                            parts.append(fuel)
+                        parts.append("Future Drivalia")
+                        details = "  ·  ".join(parts)
+
+                        link = f"{DRIVALIA_BASE}/vozidla/{slug}/"
+                        image = images.get(slug, "")
+
+                        cars.append({
+                            "id":      ad_id,
+                            "title":   title,
+                            "price":   _format_czk(price_num),
+                            "details": details,
+                            "link":    link,
+                            "image":   image,
+                        })
+                        brand_count += 1
+                    except Exception:
+                        continue
+
+                if not data.get("hasMore"):
+                    break
+        except Exception as e:
+            print(f"  [future.drivalia.cz/{brand_slug}] Chyba: {e}")
+
+        print(f"  future.drivalia.cz/{brand_slug}: {brand_count} inzerátů")
+
+    return cars
+
+
+# ─────────────────────────────────────────────
 #  HLAVNÍ LOGIKA
 # ─────────────────────────────────────────────
 
@@ -452,6 +603,7 @@ def main():
         all_cars += scrape_sauto(brand)
     all_cars += scrape_renocar()
     all_cars += scrape_mercedesnasklade()
+    all_cars += scrape_drivalia()
 
     new_cars = [c for c in all_cars if c["id"] not in seen]
     print(f"  Nových: {len(new_cars)} | Dnes celkem: {len(today_cars)} | Nalezeno: {len(all_cars)}")
