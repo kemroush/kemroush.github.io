@@ -16,5 +16,95 @@
     "link": "https://www.sauto.cz/osobni/detail/mini/cooper/209761899",
     "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/kBfrbpoeNCqNsfBErFuZC0c/77bb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "10.06.2026 12:07"
+  },
+  {
+    "id": "210586277",
+    "title": "BMW i3 120Ah / 42,2kWh / 17.900km",
+    "price": "569 000 Kč",
+    "details": "2022, 17 900 km , Elektro , Automatická  ·  Plzeň-město  ·  AUTO KARLOV",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/210586277",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/kQMlcCt5zmCCIyqIQpG3NHz2/6f28.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.06.2026 20:03"
+  },
+  {
+    "id": "210583346",
+    "title": "Mercedes-Benz Třídy A A-Třída 200 Progressive Line",
+    "price": "690 000 Kč",
+    "details": "2025, 15 266 km , Benzín , Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210583346",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/kQMlcCt5zmChFvGFfcG3FiAC/6efe.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.06.2026 20:03"
+  },
+  {
+    "id": "210583331",
+    "title": "Mercedes-Benz CLA CLA-Třída 200d Shooting Brake",
+    "price": "680 000 Kč",
+    "details": "2023, 32 001 km , Nafta , Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210583331",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/kQMlcCt5zmC5zFHFl0G3Fh0z/8198.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.06.2026 20:03"
+  },
+  {
+    "id": "210583328",
+    "title": "Mercedes-Benz Třídy A A 180",
+    "price": "535 000 Kč",
+    "details": "2021, 57 500 km , Benzín , Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210583328",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/kQMlcCt5zmC5zFHFkbG3Fh6M/33c3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.06.2026 20:03"
+  },
+  {
+    "id": "210583316",
+    "title": "Mercedes-Benz Třídy A A 180",
+    "price": "490 000 Kč",
+    "details": "2021, 78 000 km , Benzín , Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210583316",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/kQMlcCt5zmC5zFHFlrG3Fh4t/80c8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.06.2026 20:03"
+  },
+  {
+    "id": "mns:24183",
+    "title": "Mercedes-Benz Třída A 200",
+    "price": "690 000 Kč",
+    "details": "Třída A 200  ·  2025  ·  15 266 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24183",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/09c27c2e-109f-40c3-a210-11254cbd1dee.jpeg",
+    "found_at": "10.06.2026 20:03"
+  },
+  {
+    "id": "mns:24180",
+    "title": "Mercedes-Benz Třída A 180",
+    "price": "490 000 Kč",
+    "details": "Třída A 180  ·  2021  ·  78 000 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24180",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/2c5dfd24-0aba-4318-ae2e-5bbf729a4718.jpeg",
+    "found_at": "10.06.2026 20:03"
+  },
+  {
+    "id": "mns:24177",
+    "title": "Mercedes-Benz Třída A 180",
+    "price": "535 000 Kč",
+    "details": "Třída A 180  ·  2021  ·  57 500 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24177",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/4312e95b-5914-4387-bede-de1fe5d807a6.jpeg",
+    "found_at": "10.06.2026 20:03"
+  },
+  {
+    "id": "mns:24176",
+    "title": "Mercedes-Benz CLA 200d Shooting Brake",
+    "price": "680 000 Kč",
+    "details": "CLA 200d Shooting Brake  ·  2023  ·  32 001 km  ·  Nafta  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24176",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/53251243-1b25-4708-852a-37c3e56df4af.jpeg",
+    "found_at": "10.06.2026 20:03"
+  },
+  {
+    "id": "mns:24191",
+    "title": "Mercedes-Benz Vito 116 CDi KAWA L 4x4",
+    "price": "748 990 Kč",
+    "details": "Vito 116 CDi KAWA L 4x4  ·  2023  ·  77 580 km  ·  Nafta  ·  CENTRUM Moravia Sever, spol.s r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24191",
+    "image": "https://www.mercedesnasklade.cz/img/placeholder_mb.jpg",
+    "found_at": "10.06.2026 20:03"
   }
 ]
