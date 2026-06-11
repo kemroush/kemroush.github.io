@@ -52,5 +52,77 @@
     "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210361469",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qB_A/kcHp2YdDtBRc2UDwUGhbsD3/86d1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "11.06.2026 12:41"
+  },
+  {
+    "id": "210574916",
+    "title": "BMW Řada 3 Touring 320d mHEV xDrive",
+    "price": "726 300 Kč",
+    "details": "2023, 99 834 km , Nafta , Automatická  ·  Břeclav  ·  RF Motors Trading, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/210574916",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/nO2CysqjGrCP7qOIOhG2gv15/1cbc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "11.06.2026 20:17"
+  },
+  {
+    "id": "209317899",
+    "title": "Mercedes-Benz Třídy C C200 4matic  135 kW",
+    "price": "559 990 Kč",
+    "details": "2020, 49 327 km , Benzín , Automatická  ·  Nymburk  ·  Louda Auto+             ( 8 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/209317899",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/nCTUX1iX5BWZuTTy3GPdNYI/4fc9.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "11.06.2026 20:17"
+  },
+  {
+    "id": "210591170",
+    "title": "Mercedes-Benz Třídy A trida A 200 Progressive Line",
+    "price": "680 000 Kč",
+    "details": "2026, 10 563 km , Nafta , Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210591170",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/kQMlcCt5zmUKhkGAGG3rSt8/bc8e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "11.06.2026 20:17"
+  },
+  {
+    "id": "210591167",
+    "title": "Mercedes-Benz Třídy A A-Třída 200 Progressive Line",
+    "price": "690 000 Kč",
+    "details": "2025, 15 862 km , Benzín , Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210591167",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/nO2CysqjGrBgjUXJT1G3rSuH/8ca7.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "11.06.2026 20:17"
+  },
+  {
+    "id": "mns:24206",
+    "title": "Mercedes-Benz Třída A 200",
+    "price": "690 000 Kč",
+    "details": "Třída A 200  ·  2025  ·  15 862 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24206",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/e5159ef3-b64e-49fb-a3b3-74465d2c3e7b.jpeg",
+    "found_at": "11.06.2026 20:17"
+  },
+  {
+    "id": "mns:24201",
+    "title": "Mercedes-Benz Třída B 200",
+    "price": "665 000 Kč",
+    "details": "Třída B 200  ·  2025  ·  18 458 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24201",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/4224f77f-3695-41a6-a221-40237b45c17f.jpeg",
+    "found_at": "11.06.2026 20:17"
+  },
+  {
+    "id": "mns:24200",
+    "title": "Mercedes-Benz Třída A 200",
+    "price": "690 000 Kč",
+    "details": "Třída A 200  ·  2025  ·  23 719 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24200",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/379f8849-6371-4ca7-8264-a37dcae8b5f4.jpeg",
+    "found_at": "11.06.2026 20:17"
+  },
+  {
+    "id": "mns:24199",
+    "title": "Mercedes-Benz Třída B 200",
+    "price": "665 000 Kč",
+    "details": "Třída B 200  ·  2025  ·  20 037 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24199",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/51fd61a1-51a1-4d89-9ce0-54db38c91fb7.jpeg",
+    "found_at": "11.06.2026 20:17"
   }
 ]
