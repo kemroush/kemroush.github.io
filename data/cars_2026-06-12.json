@@ -25,5 +25,32 @@
     "link": "https://www.mercedesnasklade.cz/detail/24224",
     "image": "https://www.mercedesnasklade.cz/img/placeholder_mb.jpg",
     "found_at": "12.06.2026 12:18"
+  },
+  {
+    "id": "210600776",
+    "title": "BMW Řada 3 318i*DPH*HEAD-UP*LED*90t.KM",
+    "price": "658 000 Kč",
+    "details": "2024, 89 932 km , Benzín , Automatická  ·  Znojmo  ·  STOP CARS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/210600776",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/kQMlcCt5zmD87zEGiQG4Wv0T/5658.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.06.2026 19:38"
+  },
+  {
+    "id": "210598310",
+    "title": "Mini SE 135kW Panorama",
+    "price": "519 900 Kč",
+    "details": "2021, 62 044 km , Elektro , Automatická  ·  Hlavní město Praha  ·  EnergyCars - elektromobily - prodej, výkup a dovoz",
+    "link": "https://www.sauto.cz/osobni/detail/mini/ostatni/210598310",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/kQMlcCt5zmBDkXaKwzG4REyI/7315.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.06.2026 19:38"
+  },
+  {
+    "id": "mns:24231",
+    "title": "Mercedes-Benz Třída T 180d / PROGRESSIVE / S FDW",
+    "price": "520 300 Kč",
+    "details": "Třída T 180d / PROGRESSIVE / S FDW  ·  2022  ·  97 120 km  ·  Nafta  ·  CENTRUM Moravia Sever, spol.s r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24231",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/06786263_1.jpg",
+    "found_at": "12.06.2026 19:38"
   }
 ]
