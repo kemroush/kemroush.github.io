@@ -61,5 +61,41 @@
     "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210367883",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qB_A/nCTUX1iX5BWLrlBNIrGiFh7D/250c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "17.06.2026 13:01"
+  },
+  {
+    "id": "210626303",
+    "title": "BMW X1 X1 18i sDrive, Mpaket",
+    "price": "599 000 Kč",
+    "details": "2022, 49 574 km , Benzín , Automatická  ·  Brno-město  ·  Renocar a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x1/210626303",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/kQMlcCt5zmChFvGIFYG7Pt3L/a937.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "17.06.2026 19:49"
+  },
+  {
+    "id": "210624887",
+    "title": "Mercedes-Benz Třídy A A 200d",
+    "price": "677 600 Kč",
+    "details": "2023, 24 304 km , Nafta , Automatická  ·  Hlavní město Praha  ·  Daimler Truck Česká republika",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210624887",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/kQMlcCt5zmCni4DH9yG7MBSu/b76c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "17.06.2026 19:49"
+  },
+  {
+    "id": "210336815",
+    "title": "Mercedes-Benz Třídy A 200, AMG Line, AMG Line",
+    "price": "730 000 Kč",
+    "details": "2025, 15 636 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Mototechna",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210336815",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_B/nCTUX1iX5CNPfpB3sOGtw4WJ/3b0a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "17.06.2026 19:49"
+  },
+  {
+    "id": "renocar:43070912",
+    "title": "BMW X1 18i sDrive, Mpaket",
+    "price": "599 000 Kč",
+    "details": "SUV/SAV  ·  2022  ·  49 574 km  ·  1499 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-x1-18i-sdrive-mpaket-43070912",
+    "image": "https://www.renocar.cz/helios_resources/images/43070912_00_43079027.JPG",
+    "found_at": "17.06.2026 19:49"
   }
 ]
