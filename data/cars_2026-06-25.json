@@ -43,5 +43,41 @@
     "link": "https://www.sauto.cz/osobni/detail/mini/cooper/210671609",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qC_C/nO2CysqjGrud5yPzvHB0y24/b913.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "25.06.2026 14:23"
+  },
+  {
+    "id": "210673436",
+    "title": "BMW Řada 2 218i Active Tourer",
+    "price": "579 000 Kč",
+    "details": "2023, 57 000 km , Benzín , Automatická  ·  Ostrava-město  ·  CarTec Ostrava s.r.o., BMW Premium Selection",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/210673436",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_C/kQMlcCt5zmBDp4mKxVHB44HP/f189.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "25.06.2026 19:12"
+  },
+  {
+    "id": "210674738",
+    "title": "Mercedes-Benz CLA 200d AMG-LINE 110 kw",
+    "price": "679 900 Kč",
+    "details": "2022, 48 759 km , Nafta , Automatická  ·  Hlavní město Praha  ·  Direct auto Praha Horní Počernice I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210674738",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_C/kQMlcCt5zmUKhkKkxHB80Lw/c3f5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "25.06.2026 19:12"
+  },
+  {
+    "id": "210673115",
+    "title": "Mini Countryman Cooper",
+    "price": "669 999 Kč",
+    "details": "2024, 24 190 km , Benzín , Automatická  ·  Plzeň-město  ·  BMW invelt Plzeň",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/210673115",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_C/nO2CysqjGrRICCVg6HB4Ivz/9c65.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "25.06.2026 19:12"
+  },
+  {
+    "id": "mns:24410",
+    "title": "Mercedes-Benz CLA 200 kupé",
+    "price": "590 000 Kč",
+    "details": "CLA 200 kupé  ·  2022  ·  44 730 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24410",
+    "image": "https://www.mercedesnasklade.cz/media/cache/resolve/thumbnail_grid/images/ceed84a6-c7a5-424b-b380-ad3dc6f0c166.jpeg",
+    "found_at": "25.06.2026 19:12"
   }
 ]
