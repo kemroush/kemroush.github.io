@@ -34,5 +34,50 @@
     "link": "https://www.mercedesnasklade.cz/detail/21606",
     "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/5c90bc1b-4c42-44cf-a941-ea001f47f193.png",
     "found_at": "02.07.2026 14:09"
+  },
+  {
+    "id": "210403886",
+    "title": "BMW Řada 1 116",
+    "price": "750 000 Kč",
+    "details": "2025, 14 000 km , Benzín , Automatická  ·  Ostrava-město  ·  CarTec Ostrava s.r.o., BMW Premium Selection",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/210403886",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_A/kcHp2YdDtDrxR2BFpCGmGeUE/fbe5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "02.07.2026 18:52"
+  },
+  {
+    "id": "210712076",
+    "title": "Mercedes-Benz GLB 200d 4MATIC",
+    "price": "649 999 Kč",
+    "details": "2021, 94 510 km , Nafta , Automatická  ·  Hlavní město Praha  ·  UniCredit Leasing CZ, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210712076",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/nO2CysqjGrDPliFBoxHGD9lC/d44d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "02.07.2026 18:52"
+  },
+  {
+    "id": "210711986",
+    "title": "Mercedes-Benz CLA Mercedes-Benz CLA250 AMG 165kW",
+    "price": "649 000 Kč",
+    "details": "2020, 99 000 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210711986",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/nO2CysqjGrBgjUXBpuHGD0Xm/53ba.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "02.07.2026 18:52"
+  },
+  {
+    "id": "210711662",
+    "title": "Mercedes-Benz GLB 35 AMG 306 koní",
+    "price": "749 000 Kč",
+    "details": "2020, 92 452 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210711662",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/kQMlcCt5zmCCIyqSfUHGDJHK/8d85.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "02.07.2026 18:52"
+  },
+  {
+    "id": "210711173",
+    "title": "Mercedes-Benz Třídy E 300 de T Avantgarde, EQ, DPH",
+    "price": "590 000 Kč",
+    "details": "2020, 97 000 km , Hybridní , Automatická  ·  Benešov  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-e/210711173",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/kQMlcCt5zmCCIyqScFHGCbkh/aeef.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "02.07.2026 18:52"
   }
 ]
