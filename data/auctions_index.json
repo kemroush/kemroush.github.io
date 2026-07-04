@@ -1,22 +1,22 @@
 {
-  "last_updated": "2026-07-04T11:14:49",
+  "last_updated": "2026-07-04T19:57:35",
   "today": "2026-07-04",
-  "total": 1281,
-  "new_today": 20,
+  "total": 1416,
+  "new_today": 0,
   "per_portal": {
-    "okdrazby": 536,
+    "okdrazby": 671,
     "portaldrazeb": 735,
     "exdrazby": 0,
     "drazby-exekutori": 10
   },
   "per_category": {
-    "ostatni": 613,
+    "ostatni": 748,
     "automobily": 135,
     "domy": 201,
     "pozemky": 247,
     "byty": 85
   },
   "per_status": {
-    "prepared": 1281
+    "prepared": 1416
   }
 }
