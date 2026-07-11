@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Auto Monitor - sledování nových BMW a Mercedes na sauto.cz
+Auto Monitor - sledování nových BMW a Mercedes na sauto.cz,
+renocar.cz, mercedesnasklade.cz, future.drivalia.cz a nabidky.bmw.cz
 
 Generuje:
   data/index.json            – seznam dostupných dní (čte JS v cars.html)
@@ -21,6 +22,9 @@ from bs4 import BeautifulSoup, NavigableString
 RENOCAR_BASE = "https://www.renocar.cz"
 MNS_BASE = "https://www.mercedesnasklade.cz"
 DRIVALIA_BASE = "https://future.drivalia.cz"
+BMWOJETE_BASE = "https://nabidky.bmw.cz"
+# Podepsaný (šířka/hash) prefix pro náhledové obrázky – konstanta ze šablony webu.
+BMWOJETE_IMG_PREFIX = f"{BMWOJETE_BASE}/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -318,6 +322,103 @@ def scrape_renocar() -> list[dict]:
 
 
 # ─────────────────────────────────────────────
+#  SCRAPING NABIDKY.BMW.CZ (oficiální ojeté BMW + MINI)
+# ─────────────────────────────────────────────
+
+def scrape_bmwojete() -> list[dict]:
+    """Oficiální burza ojetých vozů BMW/MINI. JSON API řadí podle ceny
+    vzestupně, takže po překročení max_price se dá skončit. Parametr
+    ``$offset`` API ignoruje, proto se stránkuje jedním velkým ``$limit``."""
+    url = f"{BMWOJETE_BASE}/ojete/api/v1/ems/bmw-used-cs_CZ/search"
+    cars = []
+    try:
+        body = json.dumps({
+            "$offset": 0,
+            "$limit":  500,
+            "$sort":   [{"$field": "transactionalPrice", "$order": "asc"}],
+        })
+        result = subprocess.run(
+            ["curl", "-sL", "-X", "POST", url,
+             "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+             "-H", "Content-Type: application/json;charset=UTF-8",
+             "-H", "Accept: application/json",
+             "-H", "Accept-Language: cs-CZ,cs;q=0.9",
+             "--data", body],
+            capture_output=True, text=True, timeout=30,
+        )
+        data = json.loads(result.stdout)
+        items = data.get("$list", [])
+
+        for v in items:
+            try:
+                price_num = int(v.get("transactionalPrice") or 0)
+                # Řazeno vzestupně: jakmile cena přeteče max, končíme úplně.
+                if price_num > CONFIG["max_price_czk"]:
+                    break
+                if price_num < CONFIG["min_price_czk"]:
+                    continue
+
+                title = (v.get("title") or "").strip()
+                title_lower = title.lower()
+                # Web míchá BMW i MINI; jinou značku (kdyby přišla) přeskoč.
+                if title_lower.startswith("bmw"):
+                    brand = "bmw"
+                elif title_lower.startswith("mini"):
+                    brand = "mini"
+                else:
+                    continue
+                min_year = CONFIG["min_year_overrides"].get(brand, CONFIG["min_year"])
+
+                km = int(v.get("mileage") or 0)
+                if km > CONFIG["max_km"]:
+                    continue
+
+                year = int(v.get("productionYear") or 0)
+                if year and year < min_year:
+                    continue
+
+                dealer = ((v.get("dealer") or {}).get("name") or "").strip()
+                if any(b in dealer.lower() for b in CONFIG["blocked_sellers"]):
+                    continue
+
+                fuel = ((v.get("fuel") or {}).get("label") or "").strip()
+
+                parts = []
+                if year:
+                    parts.append(str(year))
+                parts.append(f"{km:,}".replace(",", " ") + " km")
+                if fuel:
+                    parts.append(fuel)
+                if dealer:
+                    parts.append(dealer)
+                details = "  ·  ".join(parts)
+
+                vid = v.get("id")
+                link = f"{BMWOJETE_BASE}/ojete/hledat/detaily/{vid}/"
+
+                image = ""
+                if (v.get("images") or 0) > 0:
+                    stamp = v.get("imagesLastChanged") or ""
+                    image = f"{BMWOJETE_IMG_PREFIX}/{vid}?{stamp}"
+
+                cars.append({
+                    "id":      f"bmwojete:{vid}",
+                    "title":   title,
+                    "price":   _format_czk(price_num),
+                    "details": details,
+                    "link":    link,
+                    "image":   image,
+                })
+            except Exception:
+                continue
+    except Exception as e:
+        print(f"  [nabidky.bmw.cz] Chyba: {e}")
+
+    print(f"  nabidky.bmw.cz: {len(cars)} inzerátů")
+    return cars
+
+
+# ─────────────────────────────────────────────
 #  SCRAPING MERCEDESNASKLADE.CZ
 # ─────────────────────────────────────────────
 
@@ -602,6 +703,7 @@ def main():
     for brand in CONFIG["brands"]:
         all_cars += scrape_sauto(brand)
     all_cars += scrape_renocar()
+    all_cars += scrape_bmwojete()
     all_cars += scrape_mercedesnasklade()
     all_cars += scrape_drivalia()
 
