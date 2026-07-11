@@ -510,6 +510,7 @@
           <button class="brand-btn" data-model="x3">X3</button>
           <button class="brand-btn" data-model="gla">GLA</button>
           <button class="brand-btn" data-model="glb">GLB</button>
+          <button class="brand-btn" data-model="glc">GLC</button>
         </div>
       </div>
       <div class="filters-right">
@@ -887,11 +888,12 @@
       const urlList = urls.join("\n");
       currentPrompt = `Jsem na českém trhu ojetých aut a hledám BMW, Mercedes nebo Mini s automatem, ročník 2020+, do 100 000 km, cena 300 000–750 000 Kč. Moje oblíbené modely jsou BMW X1 a Mercedes GLA — pokud se mezi nimi nějaké objeví, vypíchni je.
 
-Tady jsou data z mého agregátoru za posledních ${numDays} dní (každý soubor = jeden den, nová auta přidaná ten den). Agregátor sbírá inzeráty ze čtyř portálů:
+Tady jsou data z mého agregátoru za posledních ${numDays} dní (každý soubor = jeden den, nová auta přidaná ten den). Agregátor sbírá inzeráty z pěti portálů:
 - sauto.cz (bazar, BMW + Mercedes + Mini, ID inzerátu je čistě číselné)
 - renocar.cz (BMW skladové vozy, ID s prefixem "renocar:")
 - mercedesnasklade.cz (Mercedes skladové vozy, ID s prefixem "mns:")
 - future.drivalia.cz (BMW + Mini skladové vozy, ID s prefixem "drivalia:")
+- nabidky.bmw.cz (oficiální ojeté BMW + Mini, ID s prefixem "bmwojete:")
 
 ${urlList}
 
@@ -899,8 +901,8 @@ Prosím:
 1. Načti všechny soubory (některé nemusí existovat — přeskoč je)
 2. Odfiltruj elektromobily a auta mimo moje kritéria
 3. Vyber TOP tipy — prioritizuj: nízký nájezd, dobrý motor (B47/B48/OM654/M260), soukromý prodejce, dobrá cena/hodnota
-4. Upozorni na přefouknuté dealerské ceny (renocar, mercedesnasklade a drivalia jsou všechno dealerské sklady — typicky dráž než bazar na sauto)
-5. Ke každému autu uveď přímý odkaz z pole "link" (může vést na kterýkoliv ze čtyř portálů) a v závorce zdroj (sauto / renocar / mercedesnasklade / drivalia)
+4. Upozorni na přefouknuté dealerské ceny (renocar, mercedesnasklade, drivalia i nabidky.bmw.cz jsou všechno dealerské sklady — typicky dráž než bazar na sauto)
+5. Ke každému autu uveď přímý odkaz z pole "link" (může vést na kterýkoliv z pěti portálů) a v závorce zdroj (sauto / renocar / mercedesnasklade / drivalia / bmw.cz)
 6. Na závěr doporuč 1-3 nejlepší kousky týdne napříč všemi portály`;
 
       document.getElementById("claude-prompt-area").value = currentPrompt;

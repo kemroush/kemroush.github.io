@@ -1,6 +1,6 @@
 # Auto Monitor
 
-Hlídač nových ojetých BMW / Mercedes / MINI na sauto.cz + skladových BMW na renocar.cz + skladových Mercedes na mercedesnasklade.cz + ojetých BMW / MINI z Future Drivalia (future.drivalia.cz). Výsledky jsou na `cars.html`.
+Hlídač nových ojetých BMW / Mercedes / MINI na sauto.cz + skladových BMW na renocar.cz + skladových Mercedes na mercedesnasklade.cz + ojetých BMW / MINI z Future Drivalia (future.drivalia.cz) + oficiálních ojetých BMW / MINI z nabidky.bmw.cz. Výsledky jsou na `cars.html`.
 
 ## Jak to funguje
 
@@ -44,11 +44,13 @@ URL parametry filtru jsou v `scrape_sauto()`:
 
 `scrape_drivalia()` volá WP AJAX endpoint `future.drivalia.cz/wp-admin/admin-ajax.php` s `action=ddf_query`. Nonce se vytahuje fresh z `/vozidla/` při každém běhu (anonymní WP nonce je stabilní napříč requesty bez cookies). Filtry (`price_min/max`, `km_max`, `year_min`, `brand[]=…`) jdou server-side. Iteruje brandy `bmw` a `mini` (Mercedes-Benz Drivalia nemají), pro každý prochází stránky dokud `hasMore=true`. Data čte z `product_data` v JSON odpovědi, obrázky z přiloženého HTML `cards` (joinuje přes URL slug). ID prefix `drivalia:` + leading numeric WP product ID.
 
+`scrape_bmwojete()` volá JSON API oficiální burzy ojetých vozů `nabidky.bmw.cz` — `POST /ojete/api/v1/ems/bmw-used-cs_CZ/search` s tělem `{"$offset":0,"$limit":500,"$sort":[{"$field":"transactionalPrice","$order":"asc"}]}`. **Pozor:** API ignoruje `$offset` (stránkování nefunguje) a ignoruje i field-level filtry — funguje jen `$sort`. Proto se stáhne jeden velký `$limit` seřazený podle ceny vzestupně a filtruje se klientsky; jakmile cena přeteče `max_price_czk`, cyklus končí. Cena `transactionalPrice` je **s DPH** (gross). Web míchá BMW i MINI, značka se pozná z prefixu `title` (per-brand `min_year`: BMW 2022, MINI 2020). Obrázek se skládá z podepsaného prefixu `.../vehicle/704/<hash>/<id>?<imagesLastChanged>` (hash je konstanta ze šablony webu). Odkaz na detail `.../ojete/hledat/detaily/<id>/`. ID prefix `bmwojete:`.
+
 ## Frontend filtry (cars.html)
 
 - Řádek značek: Vše / BMW / Mercedes / Mini / Besties
 - Řádek paliva: Vše / Spalovací / Hybrid / Elektro
-- Řádek modelů: Vše / X1 / X2 / X3 / GLA / GLB (regex `\b<model>\b` proti `title`)
+- Řádek modelů: Vše / X1 / X2 / X3 / GLA / GLB / GLC (regex `\b<model>\b` proti `title`)
 - Cenový posuvník 300k–750k
 
 Filtry se průnikují (AND mezi řádky, OR uvnitř řádku).
