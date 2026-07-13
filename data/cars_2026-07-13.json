@@ -34,5 +34,41 @@
     "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/210672854",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qC_C/kQMlcCt5zmwiaBKPlHB39eB/911d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "13.07.2026 14:33"
+  },
+  {
+    "id": "210761459",
+    "title": "BMW X1 sDrive18i",
+    "price": "699 999 Kč",
+    "details": "2023, 39 352 km , Benzín , Automatická  ·  Plzeň-město  ·  BMW | MINI invelt Plzeň, ojeté vozy",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x1/210761459",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/nO2CysqjGrCP7qOvHUHMbVGG/f4c8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "13.07.2026 19:14"
+  },
+  {
+    "id": "210762788",
+    "title": "Mini COOPER SE 32kWh 135kW PANORAMA",
+    "price": "420 000 Kč",
+    "details": "2021, 58 000 km , Elektro , Automatická  ·  Brno-město  ·  SLAVA AUTO",
+    "link": "https://www.sauto.cz/osobni/detail/mini/ostatni/210762788",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/kQMlcCt5zmC5zFH7MJHMdsws/a502.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "13.07.2026 19:14"
+  },
+  {
+    "id": "210761447",
+    "title": "Mini Cooper C",
+    "price": "649 000 Kč",
+    "details": "2025, 12 000 km , Benzín , Automatická  ·  Plzeň-město  ·  BMW | MINI invelt Plzeň, ojeté vozy",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/210761447",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/nO2CysqjGrCDmo6xMNHMbUfb/934f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "13.07.2026 19:14"
+  },
+  {
+    "id": "mns:21552",
+    "title": "Mercedes-Benz Třída A 200 d",
+    "price": "735 000 Kč",
+    "details": "Třída A 200 d  ·  2024  ·  9 820 km  ·  Nafta  ·  S. & W. Automobily s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/21552",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/262de360-304a-4177-8ea1-1eeee6bf51a0.png",
+    "found_at": "13.07.2026 19:14"
   }
 ]
