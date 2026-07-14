@@ -1,229 +1,5 @@
 [
   {
-    "id": "portaldrazeb:9pW7x",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Soubor movitých věcí",
-    "location": "",
-    "min_bid_czk": 500,
-    "min_bid_text": "500 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "09:04",
-    "image": "",
-    "link": "https://www.portaldrazeb.cz/drazba/067ex3771-25-39-9pw7x",
-    "badges": [],
-    "first_seen": "2026-06-12",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:XYPBY",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Zemědělská inženýrská stavba v katastrálním území Podveky na pozemku jiného vlastníka",
-    "location": "Kutná Hora",
-    "min_bid_czk": 500,
-    "min_bid_text": "500 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "11:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/voZ3J",
-    "link": "https://www.portaldrazeb.cz/drazba/149ex294-23-66-xypby",
-    "badges": [
-      "Elektronická",
-      "Opakovaná"
-    ],
-    "first_seen": "2026-06-09",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:Yko83",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Soubor movitých věcí",
-    "location": "",
-    "min_bid_czk": 600,
-    "min_bid_text": "600 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "09:08",
-    "image": "",
-    "link": "https://www.portaldrazeb.cz/drazba/067ex12101-14-191-yko83",
-    "badges": [],
-    "first_seen": "2026-06-12",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:WePnP",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Soubor movitých věcí",
-    "location": "",
-    "min_bid_czk": 700,
-    "min_bid_text": "700 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "09:03",
-    "image": "",
-    "link": "https://www.portaldrazeb.cz/drazba/067ex7694-25-50-wepnp",
-    "badges": [],
-    "first_seen": "2026-06-12",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:rDXBq",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Soubor movitých věcí",
-    "location": "",
-    "min_bid_czk": 700,
-    "min_bid_text": "700 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "09:07",
-    "image": "",
-    "link": "https://www.portaldrazeb.cz/drazba/067ex8727-25-34-rdxbq",
-    "badges": [],
-    "first_seen": "2026-06-12",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:7pWbe",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "automobily",
-    "status": "prepared",
-    "title": "Osobní automobil Škoda Superb",
-    "location": "",
-    "min_bid_czk": 1000,
-    "min_bid_text": "1 000 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "11:00",
-    "image": "",
-    "link": "https://www.portaldrazeb.cz/drazba/149ex2877-22-107-7pwbe",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-06-11",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:7pWw8",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Soubor movitých věcí",
-    "location": "",
-    "min_bid_czk": 1000,
-    "min_bid_text": "1 000 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "09:06",
-    "image": "",
-    "link": "https://www.portaldrazeb.cz/drazba/067ex21975-17-181-7pww8",
-    "badges": [],
-    "first_seen": "2026-06-12",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:XYPrQ",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Soubor movitých věcí",
-    "location": "",
-    "min_bid_czk": 1550,
-    "min_bid_text": "1 550 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "09:05",
-    "image": "",
-    "link": "https://www.portaldrazeb.cz/drazba/067ex7832-24-52-xyprq",
-    "badges": [],
-    "first_seen": "2026-06-12",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:rDXw1",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Ideální spoluv. podíl -1/2 - pozemek p.č. 1085 (+ neevidovaný objekt v KN) a  zahrada p.č. 183/65 vše v k.ú. Svojetice, okres Praha-východ",
-    "location": "Praha",
-    "min_bid_czk": 2000,
-    "min_bid_text": "2 000 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "12:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/meybv",
-    "link": "https://www.portaldrazeb.cz/drazba/149ex670-25-51-rdxw1",
-    "badges": [
-      "Elektronická",
-      "Opakovaná"
-    ],
-    "first_seen": "2026-06-09",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:5pWwN",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Soubor movitých věcí",
-    "location": "",
-    "min_bid_czk": 2400,
-    "min_bid_text": "2 400 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "09:01",
-    "image": "",
-    "link": "https://www.portaldrazeb.cz/drazba/067ex3784-18-141-5pwwn",
-    "badges": [],
-    "first_seen": "2026-06-12",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:D5WKm",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Soubor movitých věcí",
-    "location": "",
-    "min_bid_czk": 3900,
-    "min_bid_text": "3 900 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "09:02",
-    "image": "",
-    "link": "https://www.portaldrazeb.cz/drazba/067ex1388-25-67-d5wkm",
-    "badges": [],
-    "first_seen": "2026-06-12",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:aboxa",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "automobily",
-    "status": "prepared",
-    "title": "OA: VW TOURAN",
-    "location": "",
-    "min_bid_czk": 33000,
-    "min_bid_text": "33 000 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "09:09",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/Wlj8a",
-    "link": "https://www.portaldrazeb.cz/drazba/067ex9157-25-147-aboxa",
-    "badges": [],
-    "first_seen": "2026-06-12",
-    "last_seen": "2026-07-14"
-  },
-  {
     "id": "okdrazby:23219",
     "portal": "okdrazby",
     "portal_label": "OK Dražby",
@@ -242,45 +18,6 @@
       "Opakovaná"
     ],
     "first_seen": "2026-05-12",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:rDQz1",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Opakovaná dražba chaty v obci Újezd u Chocně, okres Ústí nad Orlicí",
-    "location": "Ústí nad Orlicí",
-    "min_bid_czk": 200400,
-    "min_bid_text": "200 400 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "11:30",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/Wleyz",
-    "link": "https://www.portaldrazeb.cz/drazba/139ex00224-24-395-rdqz1",
-    "badges": [
-      "Elektronická",
-      "Opakovaná"
-    ],
-    "first_seen": "2026-05-13",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:rDXLq",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "automobily",
-    "status": "prepared",
-    "title": "OA:MERCEDES BENZ",
-    "location": "",
-    "min_bid_czk": 300000,
-    "min_bid_text": "300 000 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "09:10",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/pevrZ",
-    "link": "https://www.portaldrazeb.cz/drazba/067ex6436-25-100-rdxlq",
-    "badges": [],
-    "first_seen": "2026-06-12",
     "last_seen": "2026-07-14"
   },
   {
@@ -304,26 +41,6 @@
     "last_seen": "2026-07-14"
   },
   {
-    "id": "portaldrazeb:XYPlY",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "byty",
-    "status": "prepared",
-    "title": "byt 2+1, Sadová 2436, Aš",
-    "location": "Cheb",
-    "min_bid_czk": 948000,
-    "min_bid_text": "948 000 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "11:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/xMlmk",
-    "link": "https://www.portaldrazeb.cz/drazba/121ex1695-15-88-xyply",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-06-06",
-    "last_seen": "2026-07-14"
-  },
-  {
     "id": "okdrazby:24575",
     "portal": "okdrazby",
     "portal_label": "OK Dražby",
@@ -339,27 +56,6 @@
     "link": "https://okdrazby.cz/drazba/24575-spoluvlastnicky-podil-1-2-na-p",
     "badges": [
       "Připravovaná"
-    ],
-    "first_seen": "2026-06-11",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:AVWAj",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "dražba pozemků v k.ú. Mošnov",
-    "location": "Nový Jičín",
-    "min_bid_czk": 5139166,
-    "min_bid_text": "5 139 166 Kč",
-    "start_date": "2026-07-14",
-    "start_time": "12:00",
-    "image": "",
-    "link": "https://www.portaldrazeb.cz/drazba/162dd1-26-avwaj",
-    "badges": [
-      "Elektronická",
-      "Dobrovolná"
     ],
     "first_seen": "2026-06-11",
     "last_seen": "2026-07-14"
@@ -1504,47 +1200,6 @@
       "Elektronická"
     ],
     "first_seen": "2026-06-10",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:poPOY",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "domy",
-    "status": "prepared",
-    "title": "Rodinný dům , Jičín, podíl 1/2",
-    "location": "Jičín",
-    "min_bid_czk": 810000,
-    "min_bid_text": "810 000 Kč",
-    "start_date": "2026-07-16",
-    "start_time": "08:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/B0J5y",
-    "link": "https://www.portaldrazeb.cz/drazba/230ex2653-25-84-popoy",
-    "badges": [
-      "Elektronická",
-      "Opakovaná"
-    ],
-    "first_seen": "2026-06-19",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:ky4ak",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "domy",
-    "status": "prepared",
-    "title": "Rodinný dům, Křenovice, podíl 1/2",
-    "location": "Přerov",
-    "min_bid_czk": 1122000,
-    "min_bid_text": "1 122 000 Kč",
-    "start_date": "2026-07-16",
-    "start_time": "10:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/meQnG",
-    "link": "https://www.portaldrazeb.cz/drazba/230ex3893-25-54-ky4ak",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-06-13",
     "last_seen": "2026-07-14"
   },
   {
@@ -10966,26 +10621,6 @@
     "last_seen": "2026-07-14"
   },
   {
-    "id": "portaldrazeb:JkWwj",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Soubor: právnická literatura aj.",
-    "location": "Praha",
-    "min_bid_czk": 300,
-    "min_bid_text": "300 Kč",
-    "start_date": "2026-07-23",
-    "start_time": "11:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/peBXd",
-    "link": "https://www.portaldrazeb.cz/drazba/206ex62-26-96-jkwwj",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-06-24",
-    "last_seen": "2026-07-14"
-  },
-  {
     "id": "portaldrazeb:7pWyV",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -11059,26 +10694,6 @@
       "Připravovaná"
     ],
     "first_seen": "2026-07-03",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "portaldrazeb:WePEV",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Soubor: elektronika",
-    "location": "Praha",
-    "min_bid_czk": 1500,
-    "min_bid_text": "1 500 Kč",
-    "start_date": "2026-07-23",
-    "start_time": "11:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/eeybx",
-    "link": "https://www.portaldrazeb.cz/drazba/206ex62-26-79-wepev",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-06-19",
     "last_seen": "2026-07-14"
   },
   {
@@ -14177,6 +13792,26 @@
     "start_time": "08:00",
     "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/25479/images/main/preview",
     "link": "https://okdrazby.cz/drazba/25479-akumulatorova-sekacka-na-travu",
+    "badges": [
+      "Připravovaná"
+    ],
+    "first_seen": "2026-07-12",
+    "last_seen": "2026-07-14"
+  },
+  {
+    "id": "okdrazby:25480",
+    "portal": "okdrazby",
+    "portal_label": "OK Dražby",
+    "category": "ostatni",
+    "status": "prepared",
+    "title": "Vysavač SILVERCREST SHZK 600 B3 - 2 v 1",
+    "location": "Litoměřice",
+    "min_bid_czk": 50,
+    "min_bid_text": "50 Kč",
+    "start_date": "2026-07-27",
+    "start_time": "08:30",
+    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/25480/images/main/preview",
+    "link": "https://okdrazby.cz/drazba/25480-vysavac-silvercrest-shzk-600-b",
     "badges": [
       "Připravovaná"
     ],
@@ -18941,26 +18576,6 @@
     "start_time": "08:00",
     "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/25667/images/main/preview",
     "link": "https://okdrazby.cz/drazba/25667-venkovni-wi-fi-kamera-d-link-d",
-    "badges": [
-      "Připravovaná"
-    ],
-    "first_seen": "2026-07-14",
-    "last_seen": "2026-07-14"
-  },
-  {
-    "id": "okdrazby:25668",
-    "portal": "okdrazby",
-    "portal_label": "OK Dražby",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Pěnovací tryska s autošamponem Kärcher FJ 10 C",
-    "location": "Litoměřice",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-07-31",
-    "start_time": "08:00",
-    "image": "https://d1ws838f4e5d65.cloudfront.net/api/v1/portal/auctions/25668/images/main/preview",
-    "link": "https://okdrazby.cz/drazba/25668-penovaci-tryska-s-autosamponem",
     "badges": [
       "Připravovaná"
     ],
@@ -23781,7 +23396,7 @@
     "min_bid_text": "4 870 000 Kč",
     "start_date": "2026-08-18",
     "start_time": "08:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/0LmgW",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/11m9z",
     "link": "https://www.portaldrazeb.cz/drazba/236ex00028-21-874-d5gdx",
     "badges": [
       "Elektronická"
@@ -24606,26 +24221,6 @@
     "last_seen": "2026-07-14"
   },
   {
-    "id": "portaldrazeb:7pW2n",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Elektrická pila PARKSIDE",
-    "location": "",
-    "min_bid_czk": 50,
-    "min_bid_text": "50 Kč",
-    "start_date": "2026-08-20",
-    "start_time": "11:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/3Nd10",
-    "link": "https://www.portaldrazeb.cz/drazba/207ex141-25-64-7pw2n",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-06-25",
-    "last_seen": "2026-07-14"
-  },
-  {
     "id": "portaldrazeb:AVW0N",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -24805,23 +24400,23 @@
     "last_seen": "2026-07-14"
   },
   {
-    "id": "portaldrazeb:WeJzx",
+    "id": "portaldrazeb:1bp9n",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
-    "category": "domy",
+    "category": "byty",
     "status": "prepared",
-    "title": "Dražba spoluvlastnického podílu 1/2 rodinného domu v obci Praha -Benice",
+    "title": "Dražba bytu 2+kk, k. ú. Loděnice u Berouna",
     "location": "",
-    "min_bid_czk": 10000,
-    "min_bid_text": "10 000 Kč",
+    "min_bid_czk": 20000,
+    "min_bid_text": "20 000 Kč",
     "start_date": "2026-08-25",
-    "start_time": "07:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/Nl7gg",
-    "link": "https://www.portaldrazeb.cz/drazba/150ex3486-25-75-wejzx",
+    "start_time": "08:00",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/jejyM",
+    "link": "https://www.portaldrazeb.cz/drazba/147ex538-25-53-1bp9n",
     "badges": [
       "Elektronická"
     ],
-    "first_seen": "2026-07-02",
+    "first_seen": "2026-07-14",
     "last_seen": "2026-07-14"
   },
   {
@@ -26634,6 +26229,26 @@
     "last_seen": "2026-07-14"
   },
   {
+    "id": "portaldrazeb:E81Lm",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "pozemky",
+    "status": "prepared",
+    "title": "Podíly na pozemcích v k.ú. Kotenčice, okr. Příbram",
+    "location": "Příbram",
+    "min_bid_czk": 160667,
+    "min_bid_text": "160 667 Kč",
+    "start_date": "2026-09-09",
+    "start_time": "11:00",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/oeLd9",
+    "link": "https://www.portaldrazeb.cz/drazba/203ex7087-12-e81lm",
+    "badges": [
+      "Elektronická"
+    ],
+    "first_seen": "2026-07-14",
+    "last_seen": "2026-07-14"
+  },
+  {
     "id": "portaldrazeb:7pJz8",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -26772,6 +26387,26 @@
       "Dobrovolná"
     ],
     "first_seen": "2026-07-11",
+    "last_seen": "2026-07-14"
+  },
+  {
+    "id": "portaldrazeb:7pW2n",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "ostatni",
+    "status": "prepared",
+    "title": "Elektrická pila PARKSIDE",
+    "location": "",
+    "min_bid_czk": 50,
+    "min_bid_text": "50 Kč",
+    "start_date": "2026-09-10",
+    "start_time": "11:00",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/3Nd10",
+    "link": "https://www.portaldrazeb.cz/drazba/207ex141-25-64-7pw2n",
+    "badges": [
+      "Elektronická"
+    ],
+    "first_seen": "2026-06-25",
     "last_seen": "2026-07-14"
   },
   {
