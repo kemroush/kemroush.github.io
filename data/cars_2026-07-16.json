@@ -1,0 +1,47 @@
+[
+  {
+    "id": "210779843",
+    "title": "BMW Řada 2 220i xDrive Gran Coupe Mpaket",
+    "price": "599 000 Kč",
+    "details": "2022, 62 012 km , Benzín , Automatická  ·  Brno-město  ·  Renocar a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/210779843",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kQMlcCt5zmEA35RBHswHOFfla/a18a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "16.07.2026 13:42"
+  },
+  {
+    "id": "210780017",
+    "title": "Mini Cooper SE 135 kW HUD Tepelné čerpadlo",
+    "price": "529 900 Kč",
+    "details": "2021, 18 621 km , Elektro , Automatická  ·  Hlavní město Praha  ·  EnergyCars - elektromobily - prodej, výkup a dovoz",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/210780017",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/nO2CysqjGrScbvBAdyHOF7gx/f3c3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "16.07.2026 13:42"
+  },
+  {
+    "id": "renocar:43186422",
+    "title": "BMW 220i xDrive Gran Coupe Mpaket",
+    "price": "599 000 Kč",
+    "details": "Kupé  ·  2022  ·  62 012 km  ·  1998 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-220i-xdrive-gran-coupe-mpaket-43186422",
+    "image": "https://www.renocar.cz/helios_resources/images/43186422_00_43189600.JPG",
+    "found_at": "16.07.2026 13:42"
+  },
+  {
+    "id": "bmwojete:270547",
+    "title": "BMW 220i xDrive Gran Coupe",
+    "price": "599 000 Kč",
+    "details": "2022  ·  62 012 km  ·  Benzín  ·  Renocar a.s., Brno",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/270547/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/270547?2026-07-16T08:56:32+00:00",
+    "found_at": "16.07.2026 13:42"
+  },
+  {
+    "id": "bmwojete:270635",
+    "title": "MINI Cooper C",
+    "price": "649 000 Kč",
+    "details": "2024  ·  11 200 km  ·  Benzín  ·  Renocar a.s., Brno",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/270635/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/270635?2026-07-16T10:56:53+00:00",
+    "found_at": "16.07.2026 13:42"
+  }
+]
