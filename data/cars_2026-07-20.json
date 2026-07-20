@@ -34,5 +34,59 @@
     "link": "https://www.sauto.cz/osobni/detail/mini/cooper/210797558",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/nO2CysqjGrRICCB5S1HQcRje/2422.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "20.07.2026 14:18"
+  },
+  {
+    "id": "210800621",
+    "title": "Mercedes-Benz CLA 200 SB*ČR*AMG*LED*KAM*PANO",
+    "price": "739 000 Kč",
+    "details": "2023, 39 895 km , Benzín , Automatická  ·  Mladá Boleslav  ·  MMC Centrum",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210800621",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/nO2CysqjGrRICCB7WWHQktxo/bc21.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "20.07.2026 18:25"
+  },
+  {
+    "id": "210800108",
+    "title": "Mercedes-Benz Třídy A 200d Progressive",
+    "price": "669 654 Kč",
+    "details": "2022, 82 595 km , Nafta , Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210800108",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kQMlcCt5zmC5zFHBdUqHQjWDc/d97c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "20.07.2026 18:25"
+  },
+  {
+    "id": "210798968",
+    "title": "Mercedes-Benz Třídy A A-Třída 180",
+    "price": "716 125 Kč",
+    "details": "2026, 3 333 km , Benzín , Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210798968",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kQMlcCt5zmChFvGfFwHQguyk/8fa3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "20.07.2026 18:25"
+  },
+  {
+    "id": "mns:24578",
+    "title": "Mercedes-Benz Třída A 180",
+    "price": "716 125 Kč",
+    "details": "Třída A 180  ·  2026  ·  3 333 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24578",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/c3727d7d-4fb4-4977-9fe4-c0f96fb7e2f9.jpeg",
+    "found_at": "20.07.2026 18:25"
+  },
+  {
+    "id": "mns:24571",
+    "title": "Mercedes-Benz Třída A 180",
+    "price": "706 638 Kč",
+    "details": "Třída A 180  ·  2026  ·  3 333 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24571",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/828723e2-3e2a-4bd6-a4d1-4db92040b858.jpeg",
+    "found_at": "20.07.2026 18:25"
+  },
+  {
+    "id": "mns:22233",
+    "title": "Mercedes-Benz GLB 200d 4M AMG",
+    "price": "749 000 Kč",
+    "details": "GLB 200d 4M AMG  ·  2022  ·  100 000 km  ·  Nafta  ·  AutoWallis České Budějovice a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/22233",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/08728196_1.jpg",
+    "found_at": "20.07.2026 18:25"
   }
 ]
