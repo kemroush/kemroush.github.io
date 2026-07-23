@@ -7,5 +7,32 @@
     "link": "https://www.sauto.cz/osobni/detail/mini/cooper/210815300",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kPucWHXu9oKIk0Dx4HSHWTY/277a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "23.07.2026 10:34"
+  },
+  {
+    "id": "210819143",
+    "title": "BMW i3 120Ah",
+    "price": "559 000 Kč",
+    "details": "2022, 39 600 km , Elektro , Automatická  ·  Zlín  ·  Renocar Synot, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/210819143",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kOyy3Gv43yDwtd2W5HSS7Wg/44cf.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "23.07.2026 18:37"
+  },
+  {
+    "id": "210818705",
+    "title": "BMW Řada 1 118i",
+    "price": "499 000 Kč",
+    "details": "2022, 61 000 km , Benzín , Automatická  ·  Ostrava-město  ·  CarTec Ostrava s.r.o., BMW Premium Selection",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/210818705",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kPucWHXu9oKIk0GXTHSR1Ru/cb42.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "23.07.2026 18:37"
+  },
+  {
+    "id": "bmwojete:267644",
+    "title": "BMW 118i Hatchback",
+    "price": "499 000 Kč",
+    "details": "2022  ·  61 000 km  ·  Benzín  ·  CarTec Ostrava s.r.o.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/267644/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/267644?2026-07-23T12:23:15+00:00",
+    "found_at": "23.07.2026 18:37"
   }
 ]
