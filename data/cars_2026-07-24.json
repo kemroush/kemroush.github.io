@@ -25,5 +25,50 @@
     "link": "https://www.mercedesnasklade.cz/detail/24629",
     "image": "https://www.mercedesnasklade.cz/media/cache/resolve/thumbnail_grid/images/e0677b22-d087-4476-b254-865af9f91bba.jpeg",
     "found_at": "24.07.2026 10:30"
+  },
+  {
+    "id": "210824063",
+    "title": "BMW X1 18i 100kW LED KAMERA CZ",
+    "price": "749 000 Kč",
+    "details": "2024, 15 000 km , Benzín , Automatická  ·  Rokycany  ·  B&B Cars 4You s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x1/210824063",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kOyy3Gv43yHy5jG5jHSzZMJ/949d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "24.07.2026 13:43"
+  },
+  {
+    "id": "210823079",
+    "title": "Mercedes-Benz Třídy A A-Třída 180",
+    "price": "716 125 Kč",
+    "details": "2026, 3 333 km , Benzín , Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210823079",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kOyy3Gv43yDNiHVE3mHSxJtl/ced5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "24.07.2026 13:43"
+  },
+  {
+    "id": "210822539",
+    "title": "Mercedes-Benz GLA 200 d 4MATIC",
+    "price": "700 000 Kč",
+    "details": "2021, 49 000 km , Nafta , Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/210822539",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/nEwftpXyZDPeBmqGHSvr05/ca1b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "24.07.2026 13:43"
+  },
+  {
+    "id": "mns:24637",
+    "title": "Mercedes-Benz Třída A 180",
+    "price": "716 125 Kč",
+    "details": "Třída A 180  ·  2026  ·  3 333 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24637",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/86edb058-e9c2-4818-acb2-e7e2cbc73575.jpeg",
+    "found_at": "24.07.2026 13:43"
+  },
+  {
+    "id": "mns:24634",
+    "title": "Mercedes-Benz GLA 200 d 4MATIC",
+    "price": "700 000 Kč",
+    "details": "GLA 200 d 4MATIC  ·  2021  ·  49 000 km  ·  Nafta  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24634",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/720c1e02-b366-4f3a-ba3a-e4ed041276ae.jpeg",
+    "found_at": "24.07.2026 13:43"
   }
 ]
