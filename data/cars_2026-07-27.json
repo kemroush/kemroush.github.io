@@ -34,5 +34,32 @@
     "link": "https://www.mercedesnasklade.cz/detail/24666",
     "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/bce2b1bc-f44f-4ce2-8829-75723246b514.jpeg",
     "found_at": "27.07.2026 14:57"
+  },
+  {
+    "id": "210449483",
+    "title": "Mercedes-Benz GLB 200d 4Matic,360,Matrix,Záruka",
+    "price": "749 000 Kč",
+    "details": "2021, 83 500 km , Nafta , Automatická  ·  Most  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210449483",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_B/kcHp2YdDtCJexHWSGqSWsI/9fcd.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.07.2026 18:59"
+  },
+  {
+    "id": "210835262",
+    "title": "Mercedes-Benz GLA 1,3 200 1.majitel CZ ZÁNOVNÍ",
+    "price": "729 000 Kč",
+    "details": "2022, 54 700 km , Benzín , Automatická  ·  České Budějovice  ·  AUTOCENTRUM DAN A SYN",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/210835262",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_C/nEwftpXyZDMeBxVcIHUn1L0/4e74.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.07.2026 18:59"
+  },
+  {
+    "id": "bmwojete:272358",
+    "title": "BMW 220i xDrive Gran Coupe",
+    "price": "599 000 Kč",
+    "details": "2022  ·  62 024 km  ·  Benzín  ·  Renocar a.s., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/272358/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/272358?2026-07-27T13:43:03+00:00",
+    "found_at": "27.07.2026 18:59"
   }
 ]
