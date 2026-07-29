@@ -34,5 +34,41 @@
     "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/272803/",
     "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/272803?2026-07-29T12:02:10+00:00",
     "found_at": "29.07.2026 14:02"
+  },
+  {
+    "id": "210848432",
+    "title": "BMW X1 xDrive20i",
+    "price": "569 000 Kč",
+    "details": "2022, 78 500 km , Benzín , Automatická  ·  Hlavní město Praha  ·  BMW CarTec Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x1/210848432",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_C/nEwftpXyZ4AdfBHxHVwvdA/9351.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "29.07.2026 18:23"
+  },
+  {
+    "id": "210848084",
+    "title": "BMW Řada 3 318d 110kW CZ DPH",
+    "price": "619 900 Kč",
+    "details": "2022, 96 000 km , Nafta , Automatická  ·  Hlavní město Praha  ·  GlobalAuto.cz",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/210848084",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_C/kOyy3Gv43yBZFliFhQHVv5P5/e4e9.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "29.07.2026 18:23"
+  },
+  {
+    "id": "208828467",
+    "title": "BMW X1 x1 xDrive 25e NAVI LED KAMERA",
+    "price": "739 990 Kč",
+    "details": "2024, 5 500 km , Hybridní , Automatická  ·  Pardubice  ·  Auto Vašíček",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x1/208828467",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_ob_B/kBj94XhVwDhmNhBmnDyB7eX/1b03.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "29.07.2026 18:23"
+  },
+  {
+    "id": "bmwojete:272826",
+    "title": "BMW 320d xDrive Sedan",
+    "price": "679 000 Kč",
+    "details": "2022  ·  51 037 km  ·  Diesel  ·  Invelt s.r.o., Plzen",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/272826/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/272826?2026-07-29T13:00:18+00:00",
+    "found_at": "29.07.2026 18:23"
   }
 ]
