@@ -7,5 +7,32 @@
     "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/272675/",
     "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/272675?2026-07-29T08:11:35+00:00",
     "found_at": "29.07.2026 10:44"
+  },
+  {
+    "id": "210847244",
+    "title": "BMW i3 120Ah, SoH 99%",
+    "price": "599 000 Kč",
+    "details": "2022, 30 100 km , Elektro , Automatická  ·  Hlavní město Praha  ·  BW Motors, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/210847244",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_C/nEwftpXyZBRWuKBLoHVt8Ov/d7a3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "29.07.2026 14:02"
+  },
+  {
+    "id": "bmwojete:272657",
+    "title": "BMW X1 xDrive20i",
+    "price": "596 000 Kč",
+    "details": "2022  ·  78 500 km  ·  Benzín  ·  CarTec Praha s.r.o.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/272657/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/272657?2026-07-29T11:37:03+00:00",
+    "found_at": "29.07.2026 14:02"
+  },
+  {
+    "id": "bmwojete:272803",
+    "title": "BMW X1 sDrive18i",
+    "price": "684 999 Kč",
+    "details": "2023  ·  21 154 km  ·  Benzín  ·  Invelt s.r.o., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/272803/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/272803?2026-07-29T12:02:10+00:00",
+    "found_at": "29.07.2026 14:02"
   }
 ]
