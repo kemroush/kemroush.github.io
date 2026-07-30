@@ -25,5 +25,23 @@
     "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/272954/",
     "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/272954?2026-07-30T09:33:30+00:00",
     "found_at": "30.07.2026 13:53"
+  },
+  {
+    "id": "210855671",
+    "title": "BMW i3 120Ah",
+    "price": "579 000 Kč",
+    "details": "2022, 16 920 km , Elektro , Automatická  ·  Karlovy Vary  ·  BASE NEXT, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/210855671",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_C/kO7lxrd9zlC6PMOClxHWYnRf/1aff.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "30.07.2026 18:37"
+  },
+  {
+    "id": "mns:18828",
+    "title": "Mercedes-Benz Třída T 200",
+    "price": "724 790 Kč",
+    "details": "Třída T 200  ·  2025  ·  12 914 km  ·  Elektro  ·  CENTRUM Moravia Sever, spol.s r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/18828",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/06785664_1.jpg",
+    "found_at": "30.07.2026 18:37"
   }
 ]
