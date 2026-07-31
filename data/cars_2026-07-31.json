@@ -43,5 +43,41 @@
     "link": "https://www.sauto.cz/osobni/detail/mini/cooper/210859400",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qD_C/kO7lxrd9zlCI59dFs9HW1vCi/3a04.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "31.07.2026 14:02"
+  },
+  {
+    "id": "210611033",
+    "title": "Mercedes-Benz GLB 2,0 220D  ČR,4MATIC,A/T,AMG",
+    "price": "749 900 Kč",
+    "details": "2020, 41 922 km , Nafta , Automatická  ·  Zlín  ·  RADEK DURĎA AUTO, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210611033",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/kQMlcCt5zmChFvGpeCHKpxfG/35f8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "31.07.2026 18:46"
+  },
+  {
+    "id": "bmwojete:273199",
+    "title": "MINI Cooper D Countryman",
+    "price": "568 000 Kč",
+    "details": "2022  ·  71 900 km  ·  Diesel  ·  CarTec Praha s.r.o.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/273199/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/273199?2026-07-31T12:34:15+00:00",
+    "found_at": "31.07.2026 18:46"
+  },
+  {
+    "id": "mns:24711",
+    "title": "Mercedes-Benz Citan Tourer PRO 113 aut.",
+    "price": "549 000 Kč",
+    "details": "Citan Tourer PRO 113 aut.  ·  2025  ·  21 000 km  ·  Benzín  ·  AutoWallis České Budějovice a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/24711",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/08728381_1.jpg",
+    "found_at": "31.07.2026 18:46"
+  },
+  {
+    "id": "mns:24704",
+    "title": "Mercedes-Benz Citan Výprodej 2026",
+    "price": "715 352 Kč",
+    "details": "Citan Výprodej 2026  ·  2026  ·  5 km  ·  Elektro  ·  VSP Auto, s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24704",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/9135364e-32dd-4919-9964-28d65f4e8c43.jpeg",
+    "found_at": "31.07.2026 18:46"
   }
 ]
