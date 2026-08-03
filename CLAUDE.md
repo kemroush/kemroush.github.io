@@ -1,6 +1,6 @@
 # CLAUDE.md — kemroush.github.io
 
-Personal website + auto/auction monitoring tools. Hosted on **GitHub Pages** at kemroush.cz (auto-deploys from `main`).
+Personal website + auto/auction monitoring tools. Hosted on **GitHub Pages** at https://kemroush.github.io/ (auto-deploys from `main`). No custom domain — kemroush.cz is not registered.
 
 ## Layout
 - **`index.html`** — landing page (single file)
@@ -23,4 +23,4 @@ Personal website + auto/auction monitoring tools. Hosted on **GitHub Pages** at 
 **Hands-off unless explicitly asked:** `auto_monitor.py`, `auction_monitor.py`, `scrapers/`, `.github/workflows/`, anything in `data/`.
 
 ## Deploy
-GitHub Pages serves `main` directly — no build step. Merge a PR → live within ~1 minute at kemroush.cz.
+GitHub Pages serves `main` directly — no build step. Merge a PR → live within ~1 minute at https://kemroush.github.io/.
