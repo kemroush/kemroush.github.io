@@ -124,5 +124,32 @@
     "link": "https://www.mercedesnasklade.cz/detail/24543",
     "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/4341dd0c-f962-448c-9ac1-ae448c28b9ed.png",
     "found_at": "10.08.2026 13:10"
+  },
+  {
+    "id": "210876722",
+    "title": "BMW Řada 1 116",
+    "price": "739 000 Kč",
+    "details": "2026, 1 km , Benzín , Automatická  ·  Zlín  ·  Renocar Synot, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/210876722",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/kO7lxrd9zlJdsvaQvHZQMAF/f755.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.08.2026 18:01"
+  },
+  {
+    "id": "bmwojete:271512",
+    "title": "BMW 220i xDrive Gran Coupe",
+    "price": "555 000 Kč",
+    "details": "2022  ·  92 000 km  ·  Benzín  ·  CarTec Ostrava s.r.o.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/271512/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/271512?2026-08-10T12:37:26+00:00",
+    "found_at": "10.08.2026 18:01"
+  },
+  {
+    "id": "mns:24859",
+    "title": "Mercedes-Benz GLB 200",
+    "price": "599 000 Kč",
+    "details": "GLB 200  ·  2021  ·  94 288 km  ·  Benzín  ·  S. & W. Automobily s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24859",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/a23402c4-d049-43fb-878a-f8e4a2c1fb68.png",
+    "found_at": "10.08.2026 18:01"
   }
 ]
