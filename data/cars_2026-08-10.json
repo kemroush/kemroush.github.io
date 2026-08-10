@@ -70,5 +70,59 @@
     "link": "https://www.mercedesnasklade.cz/detail/24765",
     "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/55800007_2.jpg",
     "found_at": "10.08.2026 09:46"
+  },
+  {
+    "id": "210907326",
+    "title": "BMW Řada 2 220i xDrive Gran Coupé",
+    "price": "555 000 Kč",
+    "details": "2022, 92 000 km , Benzín , Automatická  ·  Ostrava-město  ·  CarTec Ostrava s.r.o., BMW Premium Selection",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/210907326",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/nPYADvcUkmBzBfmCLFHcvHEk/be57.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.08.2026 13:10"
+  },
+  {
+    "id": "210906867",
+    "title": "Mercedes-Benz CLA 250 e Shooting Brake",
+    "price": "724 790 Kč",
+    "details": "2024, 40 615 km , Hybridní , Automatická  ·  Praha-východ  ·  Hoffmann & Žižák",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210906867",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/kPVqmweP7JBIZIOBp3HctYLd/8f4e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.08.2026 13:10"
+  },
+  {
+    "id": "210782081",
+    "title": "Mercedes-Benz Třídy A AMG paket 200d",
+    "price": "738 100 Kč",
+    "details": "2025, 31 805 km , Nafta , Automatická  ·  Plzeň-město  ·  Mercedes-Benz | VSP Auto, s.r.o. - autorizovaný opravce a prodejce",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210782081",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/nO2CysqjGrCe62NBBxaHOLpBU/877e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.08.2026 13:10"
+  },
+  {
+    "id": "210906648",
+    "title": "Mini Cooper S Paket XL, Masáž, H/K, Panorama",
+    "price": "729 000 Kč",
+    "details": "2024, 19 020 km , Benzín , Automatická  ·  Hlavní město Praha  ·  MACH Motors Praha",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/210906648",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/nPYADvcUkmCbUhRBaqHcshIk/1c5b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.08.2026 13:10"
+  },
+  {
+    "id": "mns:24856",
+    "title": "Mercedes-Benz CLA 250 e Shooting Brake",
+    "price": "724 790 Kč",
+    "details": "CLA 250 e Shooting Brake  ·  2025  ·  40 615 km  ·  Hybridní - benzín  ·  Hoffmann a Žižák spol. s r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24856",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/828b0865-acfd-4388-8a57-260dc27f5357.jpeg",
+    "found_at": "10.08.2026 13:10"
+  },
+  {
+    "id": "mns:24543",
+    "title": "Mercedes-Benz Třída A 200d",
+    "price": "738 100 Kč",
+    "details": "Třída A 200d  ·  2025  ·  31 805 km  ·  Nafta  ·  VSP Auto, s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24543",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/4341dd0c-f962-448c-9ac1-ae448c28b9ed.png",
+    "found_at": "10.08.2026 13:10"
   }
 ]
