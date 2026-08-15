@@ -2937,26 +2937,6 @@
     "last_seen": "2026-08-15"
   },
   {
-    "id": "portaldrazeb:2yanK",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "byty",
-    "status": "prepared",
-    "title": "Dražba bytu o velikosti 1+kk v obci Kladno, Kročehlavy",
-    "location": "",
-    "min_bid_czk": 10000,
-    "min_bid_text": "10 000 Kč",
-    "start_date": "2026-08-18",
-    "start_time": "07:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/7v6od",
-    "link": "https://www.portaldrazeb.cz/drazba/150ex2094-25-43-2yank",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-05-16",
-    "last_seen": "2026-08-15"
-  },
-  {
     "id": "portaldrazeb:4pZw3",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -2974,6 +2954,26 @@
       "Elektronická"
     ],
     "first_seen": "2026-07-11",
+    "last_seen": "2026-08-15"
+  },
+  {
+    "id": "portaldrazeb:2yanK",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "byty",
+    "status": "prepared",
+    "title": "Dražba bytu o velikosti 1+kk v obci Kladno, Kročehlavy",
+    "location": "",
+    "min_bid_czk": 10000,
+    "min_bid_text": "10 000 Kč",
+    "start_date": "2026-08-18",
+    "start_time": "07:00",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/7v6od",
+    "link": "https://www.portaldrazeb.cz/drazba/150ex2094-25-43-2yank",
+    "badges": [
+      "Elektronická"
+    ],
+    "first_seen": "2026-05-16",
     "last_seen": "2026-08-15"
   },
   {
@@ -10516,65 +10516,6 @@
     "last_seen": "2026-08-15"
   },
   {
-    "id": "portaldrazeb:Jke4w",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "automobily",
-    "status": "prepared",
-    "title": "Dražba OA Škoda Fabia, Drozdov, okr. Beroun",
-    "location": "",
-    "min_bid_czk": 1000,
-    "min_bid_text": "1 000 Kč",
-    "start_date": "2026-08-24",
-    "start_time": "08:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/NlnZp",
-    "link": "https://www.portaldrazeb.cz/drazba/129ex5527-24-41-jke4w",
-    "badges": [],
-    "first_seen": "2026-07-17",
-    "last_seen": "2026-08-15"
-  },
-  {
-    "id": "portaldrazeb:AV2Qr",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "domy",
-    "status": "prepared",
-    "title": "Ideální spoluvlastnický podíl 1/8 rodinného domu s pozemky v obci  Měcholupy, k.ú. Milošice",
-    "location": "",
-    "min_bid_czk": 1000,
-    "min_bid_text": "1 000 Kč",
-    "start_date": "2026-08-24",
-    "start_time": "07:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/wXOnX",
-    "link": "https://www.portaldrazeb.cz/drazba/094ex11023-24-474-av2qr",
-    "badges": [
-      "Elektronická",
-      "Opakovaná"
-    ],
-    "first_seen": "2026-07-22",
-    "last_seen": "2026-08-15"
-  },
-  {
-    "id": "portaldrazeb:QopkY",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "domy",
-    "status": "prepared",
-    "title": "Podíl 1/2 rodinného domu s pozemky v obci  Staré Město pod Landštejnem",
-    "location": "",
-    "min_bid_czk": 1000,
-    "min_bid_text": "1 000 Kč",
-    "start_date": "2026-08-24",
-    "start_time": "08:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/Jl4AB",
-    "link": "https://www.portaldrazeb.cz/drazba/094ex6437-05-1161-qopky",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-07-22",
-    "last_seen": "2026-08-15"
-  },
-  {
     "id": "portaldrazeb:poNbY",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -10632,6 +10573,65 @@
       "Elektronická"
     ],
     "first_seen": "2026-07-24",
+    "last_seen": "2026-08-15"
+  },
+  {
+    "id": "portaldrazeb:Jke4w",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "automobily",
+    "status": "prepared",
+    "title": "Dražba OA Škoda Fabia, Drozdov, okr. Beroun",
+    "location": "",
+    "min_bid_czk": 1000,
+    "min_bid_text": "1 000 Kč",
+    "start_date": "2026-08-24",
+    "start_time": "08:00",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/NlnZp",
+    "link": "https://www.portaldrazeb.cz/drazba/129ex5527-24-41-jke4w",
+    "badges": [],
+    "first_seen": "2026-07-17",
+    "last_seen": "2026-08-15"
+  },
+  {
+    "id": "portaldrazeb:AV2Qr",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "domy",
+    "status": "prepared",
+    "title": "Ideální spoluvlastnický podíl 1/8 rodinného domu s pozemky v obci  Měcholupy, k.ú. Milošice",
+    "location": "",
+    "min_bid_czk": 1000,
+    "min_bid_text": "1 000 Kč",
+    "start_date": "2026-08-24",
+    "start_time": "07:00",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/wXOnX",
+    "link": "https://www.portaldrazeb.cz/drazba/094ex11023-24-474-av2qr",
+    "badges": [
+      "Elektronická",
+      "Opakovaná"
+    ],
+    "first_seen": "2026-07-22",
+    "last_seen": "2026-08-15"
+  },
+  {
+    "id": "portaldrazeb:QopkY",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "domy",
+    "status": "prepared",
+    "title": "Podíl 1/2 rodinného domu s pozemky v obci  Staré Město pod Landštejnem",
+    "location": "",
+    "min_bid_czk": 1000,
+    "min_bid_text": "1 000 Kč",
+    "start_date": "2026-08-24",
+    "start_time": "08:00",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/Jl4AB",
+    "link": "https://www.portaldrazeb.cz/drazba/094ex6437-05-1161-qopky",
+    "badges": [
+      "Elektronická"
+    ],
+    "first_seen": "2026-07-22",
     "last_seen": "2026-08-15"
   },
   {
@@ -10998,27 +10998,6 @@
     "last_seen": "2026-08-15"
   },
   {
-    "id": "portaldrazeb:AV2qr",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Dražba rodinného domu v Nedašově Lhotě - rozdělení společné věci",
-    "location": "",
-    "min_bid_czk": 10000,
-    "min_bid_text": "10 000 Kč",
-    "start_date": "2026-08-25",
-    "start_time": "08:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/MZdgY",
-    "link": "https://www.portaldrazeb.cz/drazba/235ex10-26-60-av2qr",
-    "badges": [
-      "Elektronická",
-      "Opakovaná"
-    ],
-    "first_seen": "2026-07-21",
-    "last_seen": "2026-08-15"
-  },
-  {
     "id": "portaldrazeb:D5gpP",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -11037,6 +11016,27 @@
       "Dobrovolná"
     ],
     "first_seen": "2026-07-23",
+    "last_seen": "2026-08-15"
+  },
+  {
+    "id": "portaldrazeb:AV2qr",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "ostatni",
+    "status": "prepared",
+    "title": "Dražba rodinného domu v Nedašově Lhotě - rozdělení společné věci",
+    "location": "",
+    "min_bid_czk": 10000,
+    "min_bid_text": "10 000 Kč",
+    "start_date": "2026-08-25",
+    "start_time": "08:00",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/MZdgY",
+    "link": "https://www.portaldrazeb.cz/drazba/235ex10-26-60-av2qr",
+    "badges": [
+      "Elektronická",
+      "Opakovaná"
+    ],
+    "first_seen": "2026-07-21",
     "last_seen": "2026-08-15"
   },
   {
@@ -12626,27 +12626,6 @@
     "last_seen": "2026-08-15"
   },
   {
-    "id": "portaldrazeb:XYqm9",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "byty",
-    "status": "prepared",
-    "title": "Byt 1+1 (č.j. 1281/14)  vč. podílu (133/10000) na společných částech domu a pozemku v obci Stříbro",
-    "location": "",
-    "min_bid_czk": 1000,
-    "min_bid_text": "1 000 Kč",
-    "start_date": "2026-08-26",
-    "start_time": "07:30",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/wXO94",
-    "link": "https://www.portaldrazeb.cz/drazba/130dd2-26-11-xyqm9",
-    "badges": [
-      "Elektronická",
-      "Dobrovolná"
-    ],
-    "first_seen": "2026-07-18",
-    "last_seen": "2026-08-15"
-  },
-  {
     "id": "portaldrazeb:7pJqa",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -12684,6 +12663,27 @@
       "Elektronická"
     ],
     "first_seen": "2026-07-25",
+    "last_seen": "2026-08-15"
+  },
+  {
+    "id": "portaldrazeb:XYqm9",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "byty",
+    "status": "prepared",
+    "title": "Byt 1+1 (č.j. 1281/14)  vč. podílu (133/10000) na společných částech domu a pozemku v obci Stříbro",
+    "location": "",
+    "min_bid_czk": 1000,
+    "min_bid_text": "1 000 Kč",
+    "start_date": "2026-08-26",
+    "start_time": "07:30",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/wXO94",
+    "link": "https://www.portaldrazeb.cz/drazba/130dd2-26-11-xyqm9",
+    "badges": [
+      "Elektronická",
+      "Dobrovolná"
+    ],
+    "first_seen": "2026-07-18",
     "last_seen": "2026-08-15"
   },
   {
@@ -17112,26 +17112,6 @@
     "last_seen": "2026-08-15"
   },
   {
-    "id": "portaldrazeb:AV21X",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "pozemky",
-    "status": "prepared",
-    "title": "Spoluvlastnický podíl ve výši 1/4 na pozemcích v Obci Pchery, okres Kladno",
-    "location": "",
-    "min_bid_czk": 10000,
-    "min_bid_text": "10 000 Kč",
-    "start_date": "2026-09-02",
-    "start_time": "08:30",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/oe4xg",
-    "link": "https://www.portaldrazeb.cz/drazba/223ex1259-03-av21x",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-07-17",
-    "last_seen": "2026-08-15"
-  },
-  {
     "id": "portaldrazeb:E81ab",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -17150,6 +17130,26 @@
       "Dobrovolná"
     ],
     "first_seen": "2026-07-24",
+    "last_seen": "2026-08-15"
+  },
+  {
+    "id": "portaldrazeb:AV21X",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "pozemky",
+    "status": "prepared",
+    "title": "Spoluvlastnický podíl ve výši 1/4 na pozemcích v Obci Pchery, okres Kladno",
+    "location": "",
+    "min_bid_czk": 10000,
+    "min_bid_text": "10 000 Kč",
+    "start_date": "2026-09-02",
+    "start_time": "08:30",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/oe4xg",
+    "link": "https://www.portaldrazeb.cz/drazba/223ex1259-03-av21x",
+    "badges": [
+      "Elektronická"
+    ],
+    "first_seen": "2026-07-17",
     "last_seen": "2026-08-15"
   },
   {
@@ -19675,26 +19675,6 @@
     "last_seen": "2026-08-15"
   },
   {
-    "id": "portaldrazeb:rDX7x",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "ostatni",
-    "status": "prepared",
-    "title": "Dražba jiné budovy v obci Kroměříž",
-    "location": "",
-    "min_bid_czk": 10000,
-    "min_bid_text": "10 000 Kč",
-    "start_date": "2026-09-08",
-    "start_time": "07:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/112jz",
-    "link": "https://www.portaldrazeb.cz/drazba/150ex1819-25-120-rdx7x",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-06-10",
-    "last_seen": "2026-08-15"
-  },
-  {
     "id": "portaldrazeb:WeJeZ",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -19712,6 +19692,26 @@
       "Elektronická"
     ],
     "first_seen": "2026-07-11",
+    "last_seen": "2026-08-15"
+  },
+  {
+    "id": "portaldrazeb:rDX7x",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "ostatni",
+    "status": "prepared",
+    "title": "Dražba jiné budovy v obci Kroměříž",
+    "location": "",
+    "min_bid_czk": 10000,
+    "min_bid_text": "10 000 Kč",
+    "start_date": "2026-09-08",
+    "start_time": "07:00",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/112jz",
+    "link": "https://www.portaldrazeb.cz/drazba/150ex1819-25-120-rdx7x",
+    "badges": [
+      "Elektronická"
+    ],
+    "first_seen": "2026-06-10",
     "last_seen": "2026-08-15"
   },
   {
@@ -20585,26 +20585,6 @@
     "last_seen": "2026-08-15"
   },
   {
-    "id": "portaldrazeb:E815k",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "domy",
-    "status": "prepared",
-    "title": "Podíl 2/3 na RD Prosetín",
-    "location": "",
-    "min_bid_czk": 10000,
-    "min_bid_text": "10 000 Kč",
-    "start_date": "2026-09-09",
-    "start_time": "08:30",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/mevOv",
-    "link": "https://www.portaldrazeb.cz/drazba/197ex1051-24-53-e815k",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-07-08",
-    "last_seen": "2026-08-15"
-  },
-  {
     "id": "portaldrazeb:rD4mg",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -20622,6 +20602,26 @@
       "Elektronická"
     ],
     "first_seen": "2026-07-16",
+    "last_seen": "2026-08-15"
+  },
+  {
+    "id": "portaldrazeb:E815k",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "domy",
+    "status": "prepared",
+    "title": "Podíl 2/3 na RD Prosetín",
+    "location": "",
+    "min_bid_czk": 10000,
+    "min_bid_text": "10 000 Kč",
+    "start_date": "2026-09-09",
+    "start_time": "08:30",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/mevOv",
+    "link": "https://www.portaldrazeb.cz/drazba/197ex1051-24-53-e815k",
+    "badges": [
+      "Elektronická"
+    ],
+    "first_seen": "2026-07-08",
     "last_seen": "2026-08-15"
   },
   {
@@ -22668,6 +22668,26 @@
     "last_seen": "2026-08-15"
   },
   {
+    "id": "portaldrazeb:lDP8D",
+    "portal": "portaldrazeb",
+    "portal_label": "Portál Dražeb",
+    "category": "pozemky",
+    "status": "prepared",
+    "title": "pozemek pod garážemi v k.ú. Moravská Ostrava",
+    "location": "Ostrava",
+    "min_bid_czk": 2000,
+    "min_bid_text": "2 000 Kč",
+    "start_date": "2026-09-15",
+    "start_time": "11:00",
+    "image": "https://www.portaldrazeb.cz/upload/auction-image/MZmaP",
+    "link": "https://www.portaldrazeb.cz/drazba/121ex2795-17-176-ldp8d",
+    "badges": [
+      "Elektronická"
+    ],
+    "first_seen": "2026-06-23",
+    "last_seen": "2026-08-15"
+  },
+  {
     "id": "portaldrazeb:E8WJA",
     "portal": "portaldrazeb",
     "portal_label": "Portál Dražeb",
@@ -22701,26 +22721,6 @@
     "start_time": "09:00",
     "image": "https://www.portaldrazeb.cz/upload/auction-image/meBPg",
     "link": "https://www.portaldrazeb.cz/drazba/121ex2795-17-173-5pwlb",
-    "badges": [
-      "Elektronická"
-    ],
-    "first_seen": "2026-06-23",
-    "last_seen": "2026-08-15"
-  },
-  {
-    "id": "portaldrazeb:lDP8D",
-    "portal": "portaldrazeb",
-    "portal_label": "Portál Dražeb",
-    "category": "pozemky",
-    "status": "prepared",
-    "title": "pozemek pod garážemi v k.ú. Moravská Ostrava",
-    "location": "Ostrava",
-    "min_bid_czk": 2000,
-    "min_bid_text": "2 000 Kč",
-    "start_date": "2026-09-15",
-    "start_time": "11:00",
-    "image": "https://www.portaldrazeb.cz/upload/auction-image/MZmaP",
-    "link": "https://www.portaldrazeb.cz/drazba/121ex2795-17-176-ldp8d",
     "badges": [
       "Elektronická"
     ],
