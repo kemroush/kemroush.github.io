@@ -1,22 +1,22 @@
 {
-  "last_updated": "2026-08-20T19:20:20",
-  "today": "2026-08-20",
-  "total": 1338,
-  "new_today": 54,
+  "last_updated": "2026-08-21T09:35:23",
+  "today": "2026-08-21",
+  "total": 1370,
+  "new_today": 107,
   "per_portal": {
-    "okdrazby": 573,
-    "portaldrazeb": 755,
+    "okdrazby": 567,
+    "portaldrazeb": 793,
     "exdrazby": 0,
     "drazby-exekutori": 10
   },
   "per_category": {
-    "pozemky": 282,
-    "byty": 86,
-    "ostatni": 610,
-    "automobily": 136,
-    "domy": 224
+    "ostatni": 615,
+    "pozemky": 291,
+    "automobily": 135,
+    "domy": 241,
+    "byty": 88
   },
   "per_status": {
-    "prepared": 1338
+    "prepared": 1370
   }
 }
