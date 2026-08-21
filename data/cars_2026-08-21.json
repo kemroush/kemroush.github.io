@@ -16,5 +16,50 @@
     "link": "https://www.sauto.cz/osobni/detail/mini/countryman/210969528",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JCkmYdD40Hi0gYq/69f5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "21.08.2026 08:51"
+  },
+  {
+    "id": "210974031",
+    "title": "Mercedes-Benz EQB 250 | Progressive",
+    "price": "744 900 Kč",
+    "details": "2024, 32 900 km , Elektro , Automatická  ·  Praha-západ  ·  Optimum Cars Prague",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/eqb/210974031",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JBcGUhB03HjP8cu/e379.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "21.08.2026 17:35"
+  },
+  {
+    "id": "210972600",
+    "title": "Mercedes-Benz Třídy A A-Třída 180",
+    "price": "680 000 Kč",
+    "details": "2025, 19 899 km , Benzín , Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210972600",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JBdV1WBFQHjLul1/cb25.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "21.08.2026 17:35"
+  },
+  {
+    "id": "210974259",
+    "title": "Mini JCW JOHN COOPER WORKS – REMUS",
+    "price": "649 990 Kč",
+    "details": "2021, 59 000 km , Benzín , Automatická  ·  Brno-venkov  ·  Autobazar Auto Centro - Rajhrad",
+    "link": "https://www.sauto.cz/osobni/detail/mini/ostatni/210974259",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JCpoDkW0HjQo7c/9951.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "21.08.2026 17:35"
+  },
+  {
+    "id": "210972846",
+    "title": "Mini Countryman Countryman Cooper S ALL4",
+    "price": "629 000 Kč",
+    "details": "2020, 67 800 km , Benzín , Automatická  ·  Praha-východ  ·  RENOCAR, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/210972846",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/nPYADvcUkmDNojLWaHjMUTZ/5e7e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "21.08.2026 17:35"
+  },
+  {
+    "id": "mns:24933",
+    "title": "Mercedes-Benz Třída A 180",
+    "price": "680 000 Kč",
+    "details": "Třída A 180  ·  2025  ·  19 899 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24933",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/0a3e57ba-50ab-4b89-ac9b-1f742612905a.jpeg",
+    "found_at": "21.08.2026 17:35"
   }
 ]
