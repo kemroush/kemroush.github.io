@@ -320,7 +320,19 @@
       resultBlock.classList.remove('visible');
     }
 
+    // Files this big are not pulled fully into memory — ffmpeg reads them
+    // lazily via WORKERFS so a multi-GB video doesn't spike RAM (bod 2).
+    const LARGE_FILE_BYTES = 150 * 1024 * 1024;
+
     async function decodeAudio(file) {
+      if (file.size >= LARGE_FILE_BYTES) {
+        try {
+          return await extractAudioWithFfmpeg(file);
+        } catch (err) {
+          console.warn('ffmpeg (velký soubor) selhal, zkouším nativní dekódování:', err);
+          return await decodeAudioNative(file);
+        }
+      }
       try {
         return await decodeAudioNative(file);
       } catch (err) {
@@ -331,26 +343,32 @@
 
     // Fast path: browser's built-in decoder. Works for common MOV/MP4 + AAC.
     async function decodeAudioNative(file) {
-      const arrayBuffer = await file.arrayBuffer();
+      let arrayBuffer = await file.arrayBuffer();
       const audioContext = new (window.AudioContext || window.webkitAudioContext)({ sampleRate: 16000 });
-      const decoded = await audioContext.decodeAudioData(arrayBuffer);
+      let decoded;
+      try {
+        decoded = await audioContext.decodeAudioData(arrayBuffer);
+      } finally {
+        arrayBuffer = null; // release the full-file buffer ASAP (bod 1)
+      }
 
-      let audioData;
+      // Copy into a standalone buffer so we can drop the AudioBuffer right away
+      // instead of holding it alive through a channel-data view.
+      const length = decoded.length;
+      const audioData = new Float32Array(length);
       if (decoded.numberOfChannels === 1) {
-        audioData = decoded.getChannelData(0);
+        audioData.set(decoded.getChannelData(0));
       } else {
         const ch0 = decoded.getChannelData(0);
         const ch1 = decoded.getChannelData(1);
-        audioData = new Float32Array(ch0.length);
-        for (let i = 0; i < ch0.length; i++) {
-          audioData[i] = (ch0[i] + ch1[i]) / 2;
-        }
+        for (let i = 0; i < length; i++) audioData[i] = (ch0[i] + ch1[i]) / 2;
       }
-
+      decoded = null;
       await audioContext.close();
+
       // decodeAudioData can succeed yet yield silence/empty for codecs it can't
       // truly handle — treat that as a failure so the ffmpeg fallback kicks in.
-      if (!audioData || audioData.length === 0) throw new Error('empty audio');
+      if (!audioData.length) throw new Error('empty audio');
       return audioData;
     }
 
@@ -387,18 +405,47 @@
     async function extractAudioWithFfmpeg(file) {
       const ffmpeg = await loadFfmpeg();
       setStatus('Rozbaluji zvuk (ffmpeg)…', true);
-      const inName = 'input_' + Date.now();
       const outName = 'output.f32le';
-      await ffmpeg.writeFile(inName, new Uint8Array(await file.arrayBuffer()));
-      await ffmpeg.exec(['-i', inName, '-vn', '-ac', '1', '-ar', '16000', '-f', 'f32le', outName]);
-      const data = await ffmpeg.readFile(outName);
-      ffmpeg.deleteFile(inName).catch(() => {});
-      ffmpeg.deleteFile(outName).catch(() => {});
-      const bytes = data instanceof Uint8Array ? data : new Uint8Array(data);
-      // slice(0) guarantees a fresh, 4-byte-aligned ArrayBuffer for Float32Array
-      const audioData = new Float32Array(bytes.slice(0).buffer);
-      if (!audioData.length) throw new Error('ffmpeg vrátil prázdný zvuk');
-      return audioData;
+      const mountDir = '/mnt_' + Date.now();
+      let mounted = false;
+      let inPath = null;
+      let writtenName = null;
+
+      try {
+        // Preferred: mount the File via WORKERFS so ffmpeg streams it from disk
+        // instead of copying the whole thing into the wasm heap (bod 2).
+        try {
+          await ffmpeg.createDir(mountDir);
+          mounted = await ffmpeg.mount('WORKERFS', { files: [file] }, mountDir);
+        } catch (e) {
+          mounted = false;
+        }
+
+        if (mounted) {
+          inPath = `${mountDir}/${file.name}`;
+        } else {
+          // WORKERFS unavailable — fall back to copying the file into the FS.
+          writtenName = 'input_' + Date.now();
+          await ffmpeg.writeFile(writtenName, new Uint8Array(await file.arrayBuffer()));
+          inPath = writtenName;
+        }
+
+        await ffmpeg.exec(['-i', inPath, '-vn', '-ac', '1', '-ar', '16000', '-f', 'f32le', outName]);
+        const data = await ffmpeg.readFile(outName);
+        const bytes = data instanceof Uint8Array ? data : new Uint8Array(data);
+        // slice(0) guarantees a fresh, 4-byte-aligned ArrayBuffer for Float32Array
+        const audioData = new Float32Array(bytes.slice(0).buffer);
+        if (!audioData.length) throw new Error('ffmpeg vrátil prázdný zvuk');
+        return audioData;
+      } finally {
+        ffmpeg.deleteFile(outName).catch(() => {});
+        if (mounted) {
+          ffmpeg.unmount(mountDir).catch(() => {});
+          ffmpeg.deleteDir(mountDir).catch(() => {});
+        } else if (writtenName) {
+          ffmpeg.deleteFile(writtenName).catch(() => {});
+        }
+      }
     }
 
     function ensureWorker() {
