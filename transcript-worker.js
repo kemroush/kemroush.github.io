@@ -9,7 +9,10 @@ const MODEL_ID = 'onnx-community/whisper-medium-ONNX';
 // we avoid it. On the WASM/CPU fallback we use fp32 encoder + q8 decoder, which
 // is proven correct on CPU.
 const DTYPE = {
-  webgpu: { encoder_model: 'fp16', decoder_model_merged: 'q4' },
+  // fp32 encoder: some WebGPU stacks (incl. this user's Mac) produce broken
+  // output with the fp16 encoder, so we keep the encoder at fp32 and only
+  // quantize the decoder for speed.
+  webgpu: { encoder_model: 'fp32', decoder_model_merged: 'q4' },
   wasm: { encoder_model: 'fp32', decoder_model_merged: 'q8' },
 };
 
@@ -25,16 +28,22 @@ async function getTranscriber(device, progress_callback) {
   return cache[device];
 }
 
-// WebGPU can silently emit numerically broken output on some hardware/drivers,
-// which Whisper turns into an endlessly repeating string. Detect that so we can
+// WebGPU can silently emit numerically broken output on some hardware/drivers.
+// This shows up two ways: an endlessly repeating string, OR a near-empty result
+// (e.g. "Pou a") for audio that clearly contains speech. Detect both so we can
 // retry on the WASM backend instead of handing the user garbage.
-function looksDegenerate(text) {
-  if (!text) return true;
-  const words = text.trim().split(/\s+/);
-  if (words.length < 12) return false;
-  const tail = words.slice(-40);
-  const uniqueRatio = new Set(tail).size / tail.length;
-  return uniqueRatio <= 0.2;
+function looksBroken(text, durationSec) {
+  const t = (text || '').trim();
+  // Near-empty output for non-trivial audio.
+  const chars = t.replace(/\s+/g, '').length;
+  if (durationSec >= 4 && chars < Math.max(8, durationSec * 2)) return true;
+  // Long repeating loop.
+  const words = t.split(/\s+/);
+  if (words.length >= 12) {
+    const tail = words.slice(-40);
+    if (new Set(tail).size / tail.length <= 0.2) return true;
+  }
+  return false;
 }
 
 function transcribe(asr, audio, language) {
@@ -66,11 +75,12 @@ self.onmessage = async (event) => {
     }
 
     const backup = device === 'webgpu' ? Float32Array.from(audio) : null;
+    const durationSec = audio.length / 16000;
 
     self.postMessage({ type: 'status', message: 'Přepisuji zvuk…' });
     let result = await transcribe(asr, audio, language);
 
-    if (device === 'webgpu' && looksDegenerate(result.text)) {
+    if (device === 'webgpu' && looksBroken(result.text, durationSec)) {
       self.postMessage({ type: 'status', message: 'WebGPU vrátil chybný výstup, opakuji přes WASM (pomalejší)…' });
       const wasmAsr = await getTranscriber('wasm', progress_callback);
       result = await transcribe(wasmAsr, backup, language);
