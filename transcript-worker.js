@@ -2,8 +2,16 @@ import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@huggingface/transfo
 
 env.allowLocalModels = false;
 
-const MODEL_ID = 'onnx-community/whisper-small';
-const DTYPE = { encoder_model: 'fp32', decoder_model_merged: 'q4' };
+const MODEL_ID = 'onnx-community/whisper-medium-ONNX';
+
+// Device-specific precision. On WebGPU (Metal on the user's Mac) fp16 is stable
+// and half the size of fp32; the q8/int8 *encoder* is what produced garbage, so
+// we avoid it. On the WASM/CPU fallback we use fp32 encoder + q8 decoder, which
+// is proven correct on CPU.
+const DTYPE = {
+  webgpu: { encoder_model: 'fp16', decoder_model_merged: 'q4' },
+  wasm: { encoder_model: 'fp32', decoder_model_merged: 'q8' },
+};
 
 const cache = {};
 
@@ -11,7 +19,7 @@ async function getTranscriber(device, progress_callback) {
   if (cache[device]) return cache[device];
   cache[device] = await pipeline('automatic-speech-recognition', MODEL_ID, {
     device,
-    dtype: DTYPE,
+    dtype: DTYPE[device],
     progress_callback,
   });
   return cache[device];
