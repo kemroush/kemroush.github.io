@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transkript — kemroush</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='43.3' viewBox='0 0 75 43.3'%3E%3Cpath d='M25,0 L50,0 L62.5,21.65 L50,43.3 L25,43.3 L12.5,21.65 Z M0,21.65 L12.5,21.65 M62.5,21.65 L75,21.65' fill='none' stroke='%23ffffff' stroke-opacity='0.03' stroke-width='0.5'/%3E%3C/svg%3E");
+      background-size: 75px 43.3px;
+      color: #e6edf3;
+      min-height: 100vh;
+      padding: 3rem 1.5rem;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    a.back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: #8b949e;
+      text-decoration: none;
+      font-size: 0.85rem;
+      margin-bottom: 2rem;
+      transition: color 0.2s;
+    }
+
+    a.back:hover { color: #f0883e; }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #8b949e;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background-color: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .drop-zone {
+      border: 1.5px dashed #30363d;
+      border-radius: 10px;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.2s, background-color 0.2s;
+    }
+
+    .drop-zone:hover,
+    .drop-zone.dragover {
+      border-color: #f0883e;
+      background-color: rgba(240, 136, 62, 0.05);
+    }
+
+    .drop-zone p {
+      color: #8b949e;
+      font-size: 0.9rem;
+    }
+
+    .drop-zone strong {
+      color: #e6edf3;
+      font-weight: 600;
+    }
+
+    input[type="file"] { display: none; }
+
+    .options {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .options label {
+      font-size: 0.8rem;
+      color: #8b949e;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    select {
+      background-color: #0d1117;
+      color: #e6edf3;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 0.4rem 0.6rem;
+      font-family: inherit;
+      font-size: 0.85rem;
+    }
+
+    button {
+      background-color: #f0883e;
+      color: #0d1117;
+      border: none;
+      border-radius: 8px;
+      padding: 0.6rem 1.2rem;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    button:hover { opacity: 0.85; }
+
+    button:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    button.secondary {
+      background-color: #21262d;
+      color: #e6edf3;
+    }
+
+    .status-block {
+      display: none;
+      margin-top: 1.25rem;
+    }
+
+    .status-block.visible { display: block; }
+
+    .status-text {
+      font-size: 0.85rem;
+      color: #8b949e;
+      margin-bottom: 0.6rem;
+    }
+
+    progress {
+      width: 100%;
+      height: 8px;
+      border-radius: 4px;
+      overflow: hidden;
+      appearance: none;
+    }
+
+    progress::-webkit-progress-bar { background-color: #21262d; border-radius: 4px; }
+    progress::-webkit-progress-value { background-color: #f0883e; border-radius: 4px; }
+    progress::-moz-progress-bar { background-color: #f0883e; border-radius: 4px; }
+
+    .result-block { display: none; margin-top: 1.25rem; }
+    .result-block.visible { display: block; }
+
+    textarea {
+      width: 100%;
+      min-height: 220px;
+      background-color: #0d1117;
+      color: #e6edf3;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 0.9rem;
+      font-family: inherit;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      resize: vertical;
+    }
+
+    .result-actions {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 0.9rem;
+    }
+
+    .note {
+      font-size: 0.75rem;
+      color: #484f58;
+      margin-top: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .error-text {
+      color: #f85149;
+      font-size: 0.85rem;
+      margin-top: 0.6rem;
+      display: none;
+    }
+
+    .error-text.visible { display: block; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <a class="back" href="index.html">&larr; kemroush.</a>
+
+    <h1>transkript.</h1>
+    <p class="subtitle">Nahraj video nebo audio, přepis proběhne přímo v tvém prohlížeči (Whisper medium, WebGPU) &mdash; nic se nikam neposílá.</p>
+
+    <div class="card">
+      <div class="drop-zone" id="dropZone">
+        <p><strong>Klikni pro výběr souboru</strong><br>nebo ho sem přetáhni (video/audio)</p>
+      </div>
+      <input type="file" id="fileInput" accept="video/*,audio/*">
+
+      <div class="options">
+        <label>
+          Jazyk
+          <select id="languageSelect">
+            <option value="czech" selected>Čeština</option>
+            <option value="slovak">Slovenčina</option>
+            <option value="english">English</option>
+            <option value="">Autodetekce</option>
+          </select>
+        </label>
+        <button id="transcribeBtn" disabled>Přepsat</button>
+      </div>
+
+      <div class="status-block" id="statusBlock">
+        <p class="status-text" id="statusText">Připravuji…</p>
+        <progress id="progressBar" value="0" max="100"></progress>
+      </div>
+
+      <p class="error-text" id="errorText"></p>
+    </div>
+
+    <div class="card result-block" id="resultBlock">
+      <textarea id="resultText" readonly></textarea>
+      <div class="result-actions">
+        <button id="copyBtn" class="secondary">Kopírovat</button>
+        <button id="downloadBtn" class="secondary">Stáhnout .txt</button>
+      </div>
+    </div>
+
+    <p class="note">
+      Při prvním použití se stáhne model (~0,5&nbsp;GB) a uloží se v prohlížeči pro příště.
+      Pro rozumnou rychlost je potřeba prohlížeč s podporou WebGPU (Chrome/Edge); bez ní poběží přepis pomaleji na WASM/CPU.
+      Delší videa mohou trvat i několik minut. Pokud prohlížeč neumí zvuk z videa přečíst sám, dorozbalí se přes ffmpeg.wasm (stáhne se jen v takovém případě).
+    </p>
+  </main>
+
+  <script type="module">
+    const dropZone = document.getElementById('dropZone');
+    const fileInput = document.getElementById('fileInput');
+    const transcribeBtn = document.getElementById('transcribeBtn');
+    const languageSelect = document.getElementById('languageSelect');
+    const statusBlock = document.getElementById('statusBlock');
+    const statusText = document.getElementById('statusText');
+    const progressBar = document.getElementById('progressBar');
+    const errorText = document.getElementById('errorText');
+    const resultBlock = document.getElementById('resultBlock');
+    const resultText = document.getElementById('resultText');
+    const copyBtn = document.getElementById('copyBtn');
+    const downloadBtn = document.getElementById('downloadBtn');
+
+    let selectedFile = null;
+    let worker = null;
+    const fileProgress = new Map();
+
+    function setStatus(message, indeterminate = false) {
+      statusBlock.classList.add('visible');
+      statusText.textContent = message;
+      if (indeterminate) progressBar.removeAttribute('value');
+      else progressBar.setAttribute('value', '0');
+    }
+
+    function setError(message) {
+      errorText.textContent = message;
+      errorText.classList.toggle('visible', Boolean(message));
+    }
+
+    dropZone.addEventListener('click', () => fileInput.click());
+
+    dropZone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      dropZone.classList.add('dragover');
+    });
+
+    dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+
+    dropZone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropZone.classList.remove('dragover');
+      if (e.dataTransfer.files.length) handleFile(e.dataTransfer.files[0]);
+    });
+
+    fileInput.addEventListener('change', () => {
+      if (fileInput.files.length) handleFile(fileInput.files[0]);
+    });
+
+    function handleFile(file) {
+      selectedFile = file;
+      setError('');
+      dropZone.querySelector('p').innerHTML = `<strong>${file.name}</strong><br>${(file.size / 1024 / 1024).toFixed(1)} MB`;
+      transcribeBtn.disabled = false;
+      resultBlock.classList.remove('visible');
+    }
+
+    async function decodeAudio(file) {
+      try {
+        return await decodeAudioNative(file);
+      } catch (err) {
+        console.warn('Nativní dekódování selhalo, zkouším ffmpeg.wasm:', err);
+        return await extractAudioWithFfmpeg(file);
+      }
+    }
+
+    // Fast path: browser's built-in decoder. Works for common MOV/MP4 + AAC.
+    async function decodeAudioNative(file) {
+      const arrayBuffer = await file.arrayBuffer();
+      const audioContext = new (window.AudioContext || window.webkitAudioContext)({ sampleRate: 16000 });
+      const decoded = await audioContext.decodeAudioData(arrayBuffer);
+
+      let audioData;
+      if (decoded.numberOfChannels === 1) {
+        audioData = decoded.getChannelData(0);
+      } else {
+        const ch0 = decoded.getChannelData(0);
+        const ch1 = decoded.getChannelData(1);
+        audioData = new Float32Array(ch0.length);
+        for (let i = 0; i < ch0.length; i++) {
+          audioData[i] = (ch0[i] + ch1[i]) / 2;
+        }
+      }
+
+      await audioContext.close();
+      // decodeAudioData can succeed yet yield silence/empty for codecs it can't
+      // truly handle — treat that as a failure so the ffmpeg fallback kicks in.
+      if (!audioData || audioData.length === 0) throw new Error('empty audio');
+      return audioData;
+    }
+
+    // Fallback path: extract 16 kHz mono float PCM with ffmpeg.wasm for codecs
+    // the browser can't decode. Single-threaded core — no SharedArrayBuffer,
+    // so it works on GitHub Pages (no cross-origin isolation headers).
+    let ffmpegPromise = null;
+
+    // The ffmpeg glue JS (index/classes/const/worker/…) is vendored same-origin
+    // under ./vendor/ffmpeg/ so the module Worker and its relative imports load
+    // without cross-origin restrictions. Only the heavy wasm core is fetched
+    // from the CDN, and only when this fallback actually runs.
+    async function toBlobURL(url, type) {
+      const buf = await (await fetch(url)).arrayBuffer();
+      return URL.createObjectURL(new Blob([buf], { type }));
+    }
+
+    function loadFfmpeg() {
+      if (ffmpegPromise) return ffmpegPromise;
+      ffmpegPromise = (async () => {
+        setStatus('Načítám ffmpeg…', true);
+        const { FFmpeg } = await import('./vendor/ffmpeg/index.js');
+        const ffmpeg = new FFmpeg();
+        const core = 'https://cdn.jsdelivr.net/npm/@ffmpeg/core@0.12.10/dist/esm';
+        await ffmpeg.load({
+          coreURL: await toBlobURL(`${core}/ffmpeg-core.js`, 'text/javascript'),
+          wasmURL: await toBlobURL(`${core}/ffmpeg-core.wasm`, 'application/wasm'),
+        });
+        return ffmpeg;
+      })();
+      return ffmpegPromise;
+    }
+
+    async function extractAudioWithFfmpeg(file) {
+      const ffmpeg = await loadFfmpeg();
+      setStatus('Rozbaluji zvuk (ffmpeg)…', true);
+      const inName = 'input_' + Date.now();
+      const outName = 'output.f32le';
+      await ffmpeg.writeFile(inName, new Uint8Array(await file.arrayBuffer()));
+      await ffmpeg.exec(['-i', inName, '-vn', '-ac', '1', '-ar', '16000', '-f', 'f32le', outName]);
+      const data = await ffmpeg.readFile(outName);
+      ffmpeg.deleteFile(inName).catch(() => {});
+      ffmpeg.deleteFile(outName).catch(() => {});
+      const bytes = data instanceof Uint8Array ? data : new Uint8Array(data);
+      // slice(0) guarantees a fresh, 4-byte-aligned ArrayBuffer for Float32Array
+      const audioData = new Float32Array(bytes.slice(0).buffer);
+      if (!audioData.length) throw new Error('ffmpeg vrátil prázdný zvuk');
+      return audioData;
+    }
+
+    function ensureWorker() {
+      if (worker) return worker;
+      worker = new Worker('transcript-worker.js', { type: 'module' });
+
+      worker.onmessage = (event) => {
+        const { type, data, message, text } = event.data;
+
+        if (type === 'progress') {
+          if (data.status === 'progress') {
+            fileProgress.set(data.file, data.progress || 0);
+          } else if (data.status === 'done') {
+            fileProgress.set(data.file, 100);
+          }
+          const values = [...fileProgress.values()];
+          const avg = values.length ? values.reduce((a, b) => a + b, 0) / values.length : 0;
+          setStatus(`Stahuji model… ${avg.toFixed(0)}%`);
+          progressBar.value = avg;
+        } else if (type === 'status') {
+          setStatus(message, true);
+        } else if (type === 'result') {
+          statusBlock.classList.remove('visible');
+          resultText.value = text.trim();
+          resultBlock.classList.add('visible');
+          transcribeBtn.disabled = false;
+        } else if (type === 'error') {
+          statusBlock.classList.remove('visible');
+          setError(`Chyba: ${message}`);
+          transcribeBtn.disabled = false;
+        }
+      };
+
+      worker.onerror = (err) => {
+        statusBlock.classList.remove('visible');
+        setError(`Chyba workeru: ${err.message}`);
+        transcribeBtn.disabled = false;
+      };
+
+      return worker;
+    }
+
+    transcribeBtn.addEventListener('click', async () => {
+      if (!selectedFile) return;
+      setError('');
+      transcribeBtn.disabled = true;
+      fileProgress.clear();
+
+      try {
+        setStatus('Extrahuji zvuk z videa…', true);
+        const audio = await decodeAudio(selectedFile);
+
+        const w = ensureWorker();
+        setStatus('Připravuji model…', true);
+        w.postMessage(
+          { type: 'transcribe', audio, language: languageSelect.value },
+          [audio.buffer]
+        );
+      } catch (err) {
+        statusBlock.classList.remove('visible');
+        setError(`Nepodařilo se zpracovat soubor: ${err.message}`);
+        transcribeBtn.disabled = false;
+      }
+    });
+
+    copyBtn.addEventListener('click', async () => {
+      await navigator.clipboard.writeText(resultText.value);
+      copyBtn.textContent = 'Zkopírováno!';
+      setTimeout(() => (copyBtn.textContent = 'Kopírovat'), 1500);
+    });
+
+    downloadBtn.addEventListener('click', () => {
+      const blob = new Blob([resultText.value], { type: 'text/plain;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = (selectedFile?.name?.replace(/\.[^.]+$/, '') || 'transkript') + '.txt';
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>
