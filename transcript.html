@@ -246,6 +246,7 @@
       </div>
 
       <p class="error-text" id="errorText"></p>
+      <p class="note" id="debugInfo" style="display:none; margin-top:0.75rem; white-space:pre-wrap;"></p>
     </div>
 
     <div class="card result-block" id="resultBlock">
@@ -467,6 +468,10 @@
           progressBar.value = avg;
         } else if (type === 'status') {
           setStatus(message, true);
+        } else if (type === 'debug') {
+          const dbg = document.getElementById('debugInfo');
+          dbg.textContent = 'ⓘ ' + message;
+          dbg.style.display = 'block';
         } else if (type === 'result') {
           statusBlock.classList.remove('visible');
           resultText.value = text.trim();

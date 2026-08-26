@@ -79,13 +79,22 @@ self.onmessage = async (event) => {
 
     self.postMessage({ type: 'status', message: 'Přepisuji zvuk…' });
     let result = await transcribe(asr, audio, language);
+    const rawFirst = (result.text || '').trim();
 
+    let fellBack = false;
     if (device === 'webgpu' && looksBroken(result.text, durationSec)) {
+      fellBack = true;
       self.postMessage({ type: 'status', message: 'WebGPU vrátil chybný výstup, opakuji přes WASM (pomalejší)…' });
       const wasmAsr = await getTranscriber('wasm', progress_callback);
       result = await transcribe(wasmAsr, backup, language);
     }
 
+    self.postMessage({
+      type: 'debug',
+      message: `zvuk: ${durationSec.toFixed(1)}s · 1. backend: ${device} · délka 1. výstupu: ${rawFirst.length} znaků`
+        + (fellBack ? ` · fallback→WASM: ano (WASM výstup ${(result.text || '').trim().length} znaků)` : ' · fallback: ne')
+        + `\n1. výstup (prvních 80): ${JSON.stringify(rawFirst.slice(0, 80))}`,
+    });
     self.postMessage({ type: 'result', text: result.text });
   } catch (err) {
     self.postMessage({ type: 'error', message: err?.message || String(err) });
