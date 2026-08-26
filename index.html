@@ -118,6 +118,18 @@
       box-shadow: 0 0 16px rgba(240, 136, 62, 0.15);
     }
 
+    .links a.retired {
+      opacity: 0.3;
+      filter: grayscale(1);
+    }
+
+    .links a.retired:hover {
+      opacity: 0.55;
+      color: #8b949e;
+      background-color: #161b22;
+      box-shadow: none;
+    }
+
     .links svg {
       width: 22px;
       height: 22px;
@@ -157,7 +169,7 @@
           </a>
 
           <!-- CCE-C1 Czech Exam Practice -->
-          <a href="cce-c1.html" aria-label="CCE-C1 Practice">
+          <a class="retired" href="cce-c1.html" aria-label="CCE-C1 Practice (archivováno)" title="Archivováno — už není aktuální">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 14l9-5-9-5-9 5 9 5z"/>
               <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
