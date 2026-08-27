@@ -1,0 +1,65 @@
+[
+  {
+    "id": "211005798",
+    "title": "BMW i3 120Ah Sport paket",
+    "price": "589 000 Kč",
+    "details": "2022, 44 450 km , Elektro , Automatická  ·  Karlovy Vary  ·  BASE NEXT, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/211005798",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_C/kPVqmweP7JD9RxnHW1HmxEMV/fb56.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.08.2026 19:26"
+  },
+  {
+    "id": "211005099",
+    "title": "BMW Řada 2 218i Gran Coupe M Sport",
+    "price": "729 000 Kč",
+    "details": "2024, 14 630 km , Benzín , Automatická  ·  Karlovy Vary  ·  BASE NEXT, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211005099",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_C/nPYADvcUkmBFAg3DU1HmvDjj/3540.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.08.2026 19:26"
+  },
+  {
+    "id": "210697889",
+    "title": "BMW Řada 3 320d xDrive,Touring,Tažné",
+    "price": "749 000 Kč",
+    "details": "2022, 84 529 km , Nafta , Automatická  ·  Brno-město  ·  Renocar a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/210697889",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_C/kQMlcCt5zmEA35RMQxHE1tz0/3252.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.08.2026 19:26"
+  },
+  {
+    "id": "211004982",
+    "title": "Mercedes-Benz GLA 200d,1.MAJ,ČR,DPH,Kamera",
+    "price": "699 000 Kč",
+    "details": "2023, 36 142 km , Nafta , Automatická  ·  Praha-západ  ·  Auta z Firem",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/211004982",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_C/kPVqmweP7JCNF9HKDCHmuq6k/3822.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.08.2026 19:26"
+  },
+  {
+    "id": "210985206",
+    "title": "Mercedes-Benz GLA 250 e",
+    "price": "690 000 Kč",
+    "details": "2023, 26 326 km , Hybridní , Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/210985206",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JBdV1WDfFHk9fmP/2f31.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.08.2026 19:26"
+  },
+  {
+    "id": "211001196",
+    "title": "Mini Countryman JCW ALL4 Sage Green",
+    "price": "699 000 Kč",
+    "details": "2021, 56 889 km , Benzín , Automatická  ·  Brno-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/211001196",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_C/kPVqmweP7JB4z4nGuQHmk6KH/220e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.08.2026 19:26"
+  },
+  {
+    "id": "renocar:43127867",
+    "title": "BMW 320d xDrive,Touring,Tažné",
+    "price": "749 000 Kč",
+    "details": "Touring/Kombi  ·  2022  ·  84 529 km  ·  1995 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-320d-xdrive-touring-tazne-43127867",
+    "image": "https://www.renocar.cz/helios_resources/images/43127867_00_43128098.JPG",
+    "found_at": "27.08.2026 19:26"
+  }
+]
