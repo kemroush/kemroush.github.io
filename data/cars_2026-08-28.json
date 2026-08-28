@@ -1,0 +1,47 @@
+[
+  {
+    "id": "211011138",
+    "title": "BMW X1 X1 xDrive18d Mpaket",
+    "price": "599 000 Kč",
+    "details": "2022, 85 887 km , Nafta , Automatická  ·  Praha-východ  ·  RENOCAR, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x1/211011138",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_C/nPYADvcUkmBcG9Pp0HnVUE3/efa7.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "28.08.2026 20:20"
+  },
+  {
+    "id": "211007511",
+    "title": "BMW Řada 3 320 d T xDrive Shadow-Line",
+    "price": "746 570 Kč",
+    "details": "2023, 35 000 km , Nafta , Automatická  ·  Hlavní město Praha  ·  Auto Targa, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/211007511",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_C/kPVqmweP7JCNF9HBXpHnJh78/40fb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "28.08.2026 20:20"
+  },
+  {
+    "id": "211012677",
+    "title": "Mini Cooper S MINI Countryman Cooper S ALL4",
+    "price": "499 000 Kč",
+    "details": "2020, 92 000 km , Benzín , Automatická  ·  Pardubice  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/211012677",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_C/nPYADvcUkmCfYovEvnHnbwSk/723a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "28.08.2026 20:20"
+  },
+  {
+    "id": "renocar:43354797",
+    "title": "BMW X1 xDrive18d Mpaket",
+    "price": "599 000 Kč",
+    "details": "SUV/SAV  ·  2022  ·  85 887 km  ·  1995 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-x1-xdrive18d-mpaket-43354797",
+    "image": "https://www.renocar.cz/helios_resources/images/43354797_00_43358760.jpg",
+    "found_at": "28.08.2026 20:20"
+  },
+  {
+    "id": "bmwojete:277780",
+    "title": "MINI Cooper SE",
+    "price": "589 000 Kč",
+    "details": "2023  ·  30 658 km  ·  Elektřina  ·  CarTec Praha s.r.o.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/277780/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/277780?2026-08-28T09:54:58+00:00",
+    "found_at": "28.08.2026 20:20"
+  }
+]
