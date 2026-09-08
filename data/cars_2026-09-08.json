@@ -70,5 +70,32 @@
     "link": "https://www.mercedesnasklade.cz/detail/25097",
     "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/8d430deb-f69c-4698-8fd4-9a809602d012.png",
     "found_at": "08.09.2026 12:51"
+  },
+  {
+    "id": "211068066",
+    "title": "BMW X2 25 E xDrive GPS NAVI DPH",
+    "price": "620 000 Kč",
+    "details": "2022, 78 680 km , Hybridní , Automatická  ·  Olomouc  ·  Auto Samson Plus, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x2/211068066",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKREB0TcXEHtxHtw/df97.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "08.09.2026 20:23"
+  },
+  {
+    "id": "211065594",
+    "title": "Mini Cooper S ALL4",
+    "price": "669 900 Kč",
+    "details": "2022, 15 779 km , Benzín , Automatická  ·  Hlavní město Praha  ·  BMW | MINI invelt Praha - ojeté vozy",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/211065594",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKRB7OXgCDXHtswVZ/1883.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "08.09.2026 20:23"
+  },
+  {
+    "id": "bmwojete:279551",
+    "title": "MINI Cooper S ALL4 Countryman",
+    "price": "669 900 Kč",
+    "details": "2022  ·  15 779 km  ·  Benzín  ·  Invelt s.r.o., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/279551/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/279551?2026-09-08T11:06:21+00:00",
+    "found_at": "08.09.2026 20:23"
   }
 ]
