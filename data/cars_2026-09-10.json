@@ -25,5 +25,41 @@
     "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211080936",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKREB0TcdtHu2D0b/39e8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "10.09.2026 12:53"
+  },
+  {
+    "id": "211081569",
+    "title": "Mercedes-Benz Třídy A 2,0 200d DPH AMG NZTOP 360° ČR",
+    "price": "688 999 Kč",
+    "details": "2023, 63 278 km , Nafta , Automatická  ·  Olomouc  ·  AUTO A1",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211081569",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKRDbeZQFGdHu4FVG/2642.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.09.2026 20:11"
+  },
+  {
+    "id": "211083945",
+    "title": "Mini Cooper 1.5T  5dv",
+    "price": "349 999 Kč",
+    "details": "2021, 48 267 km , Benzín , Automatická  ·  Hlavní město Praha  ·  UniCredit Leasing CZ, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211083945",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKRB7OXgBW2Hu9wB9/ae1c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.09.2026 20:11"
+  },
+  {
+    "id": "210371717",
+    "title": "Mini Cooper JCW 4ALL Clubman ČR 1 maj. DPH",
+    "price": "699 950 Kč",
+    "details": "2020, 29 000 km , Benzín , Automatická  ·  Ostrava-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/210371717",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_A/nCTUX1iX5CFdAHBN9WGiKq4s/a9bc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.09.2026 20:11"
+  },
+  {
+    "id": "bmwojete:280125",
+    "title": "BMW 218i Gran Coupé",
+    "price": "440 000 Kč",
+    "details": "2022  ·  73 754 km  ·  Benzín  ·  ACR auto, a.s.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/280125/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/280125?2026-09-10T14:22:28+00:00",
+    "found_at": "10.09.2026 20:11"
   }
 ]
