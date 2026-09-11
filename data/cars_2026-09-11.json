@@ -16,5 +16,59 @@
     "link": "https://future.drivalia.cz/vozidla/603866-cs-bmw-rada-1/",
     "image": "https://future.drivalia.cz/wp-content/themes/drivalia/theme/img/car_placeholder.png",
     "found_at": "11.09.2026 12:50"
+  },
+  {
+    "id": "211090827",
+    "title": "Mercedes-Benz GLA 200d Progressive*LED*TAŽNÉ",
+    "price": "743 507 Kč",
+    "details": "2022, 85 404 km , Nafta , Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/211090827",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/nOdL4BtPEyCly89qOHvlDpS/89f2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "11.09.2026 20:15"
+  },
+  {
+    "id": "211089573",
+    "title": "Mercedes-Benz CLA 180 1,3/100kW ČR 1.MAJ 15TKM",
+    "price": "729 000 Kč",
+    "details": "2023, 15 592 km , Benzín , Automatická  ·  Praha-východ  ·  Sell My Car",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211089573",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKREB0TcEquHvh0Ya/3faa.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "11.09.2026 20:15"
+  },
+  {
+    "id": "211021029",
+    "title": "Mercedes-Benz GLC 2,0 220d 4MATIC AMG linie",
+    "price": "749 000 Kč",
+    "details": "2020, 81 550 km , Nafta , Automatická  ·  Zlín  ·  SAMOHÝL MB, a.s. - Certified",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glc/211021029",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_C/nPYADvcUkmBcG9PD19HpD6Nk/e39f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "11.09.2026 20:15"
+  },
+  {
+    "id": "211089774",
+    "title": "Mini Cooper C 115 KW AUTOMAT JCW CZ 1",
+    "price": "589 000 Kč",
+    "details": "2024, 16 995 km , Benzín , Automatická  ·  Hlavní město Praha  ·  AUTO FALTYS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211089774",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/nOdL4BtPEyDrQHrC5vHvhRbs/92fc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "11.09.2026 20:15"
+  },
+  {
+    "id": "bmwojete:280344",
+    "title": "BMW i3 120Ah",
+    "price": "649 000 Kč",
+    "details": "2022  ·  24 990 km  ·  Elektřina  ·  Invelt s.r.o., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/280344/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/280344?2026-09-11T14:06:59+00:00",
+    "found_at": "11.09.2026 20:15"
+  },
+  {
+    "id": "mns:24992",
+    "title": "Mercedes-Benz GLC 220d 4MATIC AMG linie",
+    "price": "749 000 Kč",
+    "details": "GLC 220d 4MATIC AMG linie  ·  2020  ·  81 550 km  ·  Nafta  ·  SAMOHÝL MB a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/24992",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/e4b6e8e5-ec91-4871-812b-e32d3fc33c0c.jpeg",
+    "found_at": "11.09.2026 20:15"
   }
 ]
