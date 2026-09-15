@@ -25,5 +25,41 @@
     "link": "https://www.mercedesnasklade.cz/detail/20405",
     "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/f5b2d75c-eb35-4576-92bd-6a727fcbabce.png",
     "found_at": "15.09.2026 13:20"
+  },
+  {
+    "id": "bmwojete:280842",
+    "title": "MINI Cooper Hatch",
+    "price": "449 000 Kč",
+    "details": "2021  ·  20 676 km  ·  Benzín  ·  Renocar a.s., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/280842/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/280842?2026-09-15T14:52:17+00:00",
+    "found_at": "15.09.2026 20:45"
+  },
+  {
+    "id": "bmwojete:280845",
+    "title": "BMW i3 120Ah",
+    "price": "549 000 Kč",
+    "details": "2022  ·  50 083 km  ·  Elektřina  ·  Renocar a.s., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/280845/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/280845?2026-09-15T15:29:14+00:00",
+    "found_at": "15.09.2026 20:45"
+  },
+  {
+    "id": "mns:25153",
+    "title": "Mercedes-Benz CLA 200d Shooting Brake",
+    "price": "699 000 Kč",
+    "details": "CLA 200d Shooting Brake  ·  2024  ·  29 000 km  ·  Nafta  ·  AutoWallis České Budějovice a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/25153",
+    "image": "https://www.mercedesnasklade.cz/build/images/placeholder_mb.891db290.jpg",
+    "found_at": "15.09.2026 20:45"
+  },
+  {
+    "id": "mns:20549",
+    "title": "Mercedes-Benz Třída A 250 e",
+    "price": "699 900 Kč",
+    "details": "Třída A 250 e  ·  2024  ·  11 204 km  ·  Hybridní - benzín  ·  S. & W. Automobily s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/20549",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/12997307-ea0a-448b-87f5-ed539520b7a1.png",
+    "found_at": "15.09.2026 20:45"
   }
 ]
