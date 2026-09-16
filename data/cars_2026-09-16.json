@@ -1,0 +1,65 @@
+[
+  {
+    "id": "211114893",
+    "title": "BMW i3",
+    "price": "570 000 Kč",
+    "details": "2022, 39 000 km , Elektro , Automatická  ·  Kladno  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/211114893",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyBFnmYW0HyYBqj/9653.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "16.09.2026 13:04"
+  },
+  {
+    "id": "211113048",
+    "title": "BMW Řada 1 BMW 120I M-Sport Panorama",
+    "price": "699 000 Kč",
+    "details": "2023, 25 625 km , Benzín , Automatická  ·  Hradec Králové  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/211113048",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRD1EvuWuHyUmx7/6384.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "16.09.2026 13:04"
+  },
+  {
+    "id": "210703421",
+    "title": "BMW i3 120Ah 42,2 kWh",
+    "price": "519 000 Kč",
+    "details": "2022, 43 443 km , Elektro , Automatická  ·  Zlín  ·  HS Centrum, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/210703421",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/kQMlcCt5zmwiaBMT0HFYXWq/4638.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "16.09.2026 13:04"
+  },
+  {
+    "id": "211115025",
+    "title": "Mercedes-Benz GLA 180d Aut.",
+    "price": "590 000 Kč",
+    "details": "2020, 54 124 km , Nafta , Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/211115025",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyD4lWfB2UHyYQgb/8a30.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "16.09.2026 13:04"
+  },
+  {
+    "id": "211112001",
+    "title": "Mercedes-Benz CLA CLA 200d Shooting Brake",
+    "price": "749 000 Kč",
+    "details": "2023, 70 000 km , Nafta , Automatická  ·  Jihlava  ·  AUTO JIHLAVA člen skupiny AUTO UH s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211112001",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRIhAnBXJHyRZyt/173d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "16.09.2026 13:04"
+  },
+  {
+    "id": "211112448",
+    "title": "Mini Cooper Cooper",
+    "price": "449 000 Kč",
+    "details": "2021, 20 683 km , Benzín , Automatická  ·  Praha-východ  ·  RENOCAR, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211112448",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyvOo9BhBHySXjn/a616.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "16.09.2026 13:04"
+  },
+  {
+    "id": "mns:25164",
+    "title": "Mercedes-Benz Třída A 180",
+    "price": "680 000 Kč",
+    "details": "Třída A 180  ·  2025  ·  12 386 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/25164",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/33d46b3f-870d-4691-b91c-67271fed771a.jpeg",
+    "found_at": "16.09.2026 13:04"
+  }
+]
