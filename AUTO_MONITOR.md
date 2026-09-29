@@ -46,9 +46,13 @@ URL parametry filtru jsou v `scrape_sauto()`:
 
 `scrape_bmwojete()` volá JSON API oficiální burzy ojetých vozů `nabidky.bmw.cz` — `POST /ojete/api/v1/ems/bmw-used-cs_CZ/search` s tělem `{"$offset":0,"$limit":500,"$sort":[{"$field":"transactionalPrice","$order":"asc"}]}`. **Pozor:** API ignoruje `$offset` (stránkování nefunguje) a ignoruje i field-level filtry — funguje jen `$sort`. Proto se stáhne jeden velký `$limit` seřazený podle ceny vzestupně a filtruje se klientsky; jakmile cena přeteče `max_price_czk`, cyklus končí. Cena `transactionalPrice` je **s DPH** (gross). Web míchá BMW i MINI, značka se pozná z prefixu `title` (per-brand `min_year`: BMW 2022, MINI 2020). Obrázek se skládá z podepsaného prefixu `.../vehicle/704/<hash>/<id>?<imagesLastChanged>` (hash je konstanta ze šablony webu). Odkaz na detail `.../ojete/hledat/detaily/<id>/`. ID prefix `bmwojete:`.
 
+## Hlídání zlevnění
+
+`data/prices.json` drží poslední známou cenu (číslo v Kč) každého auta podle `id`. Při každém běhu se u aut, která už jsou v `seen_cars.json`, porovná aktuální cena s uloženou; je-li nižší, auto se přidá do dnešního `cars_YYYY-MM-DD.json` s poli `old_price` (předchozí cena, formátovaný string) a `price_drop_at`. Pokud už auto v dnešním souboru je (nové dnes nebo zlevněné dřív během dne), jen se mu aktualizuje `price` a `old_price` zůstane ta původní. Auta viděná před zavedením `prices.json` se při prvním běhu jen zaznamenají (bez alertu). Zdražení se neoznamuje, jen se přepíše uložená cena. Auto, které vypadne z filtrů (např. zdraží nad `max_price_czk`), se nesleduje, dokud se znovu neobjeví.
+
 ## Frontend filtry (cars.html)
 
-- Řádek značek: Vše / BMW / Mercedes / Mini / Besties
+- Řádek značek: Vše / BMW / Mercedes / Mini / Besties / Zlevněné (jen auta s `old_price`)
 - Řádek paliva: Vše / Spalovací / Hybrid / Elektro
 - Řádek modelů: Vše / X1 / X2 / X3 / GLA / GLB / GLC (regex `\b<model>\b` proti `title`)
 - Cenový posuvník 300k–750k

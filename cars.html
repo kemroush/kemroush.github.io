@@ -187,6 +187,23 @@
       white-space: nowrap;
       font-size: 0.9rem;
     }
+    .car-old-price {
+      color: #484f58;
+      text-decoration: line-through;
+      font-size: 0.78rem;
+      margin-right: 0.4rem;
+      white-space: nowrap;
+    }
+    .car-drop {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #3fb950;
+      background: rgba(63, 185, 80, 0.12);
+      border-radius: 6px;
+      padding: 0.1rem 0.45rem;
+      margin-bottom: 0.3rem;
+    }
     .car-details {
       font-size: 0.78rem;
       color: #8b949e;
@@ -496,6 +513,7 @@
           <button class="brand-btn" data-brand="mercedes">Mercedes</button>
           <button class="brand-btn" data-brand="mini">Mini</button>
           <button class="brand-btn" data-brand="besties">Besties</button>
+          <button class="brand-btn" id="drops-btn">Zlevněné</button>
         </div>
         <div class="brand-filter">
           <button class="brand-btn active" data-fuel="all">Vše</button>
@@ -554,6 +572,7 @@
     let activeBrands = new Set(); // empty = all
     let activeFuels  = new Set(); // empty = all
     let activeModels = new Set(); // empty = all
+    let dropsOnly    = false;
     let sortValue    = 'date-desc';
     const PRICE_MIN  = 300000;
     const PRICE_MAX  = 750000;
@@ -692,6 +711,7 @@
 
     function filteredCars() {
       return allCars.filter(c => {
+        if (dropsOnly && !c.old_price) return false;
         if (activeBrands.size > 0) {
           const t = c.title.toLowerCase();
           const brandOk = (activeBrands.has('bmw')      && t.startsWith('bmw'))
@@ -747,10 +767,12 @@
           <div class="car-body">
             <div class="car-top">
               <span class="car-title">${c.title}</span>
-              <span class="car-price">${c.price}</span>
+              <span>${c.old_price ? `<span class="car-old-price">${c.old_price}</span>` : ''}<span class="car-price">${c.price}</span></span>
             </div>
+            ${c.old_price ? `<div class="car-drop">zlevněno o ${formatPrice(parseInt(c.old_price.replace(/\D/g, '')) - parsePrice(c))}</div>` : ''}
             <div class="car-details">${c.details}</div>
-            ${c.found_at ? `<div class="car-time">nalezeno ${c.found_at}</div>` : ''}
+            ${c.price_drop_at ? `<div class="car-time">zlevněno ${c.price_drop_at}</div>`
+              : c.found_at ? `<div class="car-time">nalezeno ${c.found_at}</div>` : ''}
           </div>
         </a>
       `).join('');
@@ -805,6 +827,12 @@
         updateBrandButtons();
         renderCars();
       });
+    });
+
+    document.getElementById('drops-btn').addEventListener('click', e => {
+      dropsOnly = !dropsOnly;
+      e.target.classList.toggle('active', dropsOnly);
+      renderCars();
     });
 
     document.querySelectorAll('[data-fuel]').forEach(btn => {
