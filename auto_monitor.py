@@ -5,7 +5,8 @@ renocar.cz, mercedesnasklade.cz, future.drivalia.cz a nabidky.bmw.cz
 
 Generuje:
   data/index.json            – seznam dostupných dní (čte JS v cars.html)
-  data/cars_YYYY-MM-DD.json  – inzeráty per den
+  data/cars_YYYY-MM-DD.json  – inzeráty per den (nová + zlevněná auta)
+  data/prices.json           – poslední známá cena každého auta (pro hlídání zlevnění)
 
 Požadavky:
   pip install beautifulsoup4 lxml
@@ -40,6 +41,7 @@ CONFIG = {
     "max_pages":       5,
     "seen_file":     os.path.join(DATA_DIR, "seen_cars.json"),
     "index_file":    os.path.join(DATA_DIR, "index.json"),
+    "prices_file":   os.path.join(DATA_DIR, "prices.json"),
 }
 
 # ─────────────────────────────────────────────
@@ -65,6 +67,24 @@ def save_seen(seen: set):
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(CONFIG["seen_file"], "w", encoding="utf-8") as f:
         json.dump(list(seen), f, ensure_ascii=False, indent=2)
+
+
+def load_prices() -> dict:
+    if os.path.exists(CONFIG["prices_file"]):
+        with open(CONFIG["prices_file"], "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def save_prices(prices: dict):
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(CONFIG["prices_file"], "w", encoding="utf-8") as f:
+        json.dump(prices, f, ensure_ascii=False, indent=2, sort_keys=True)
+
+
+def parse_price(price: str) -> int:
+    digits = re.sub(r"\D", "", price or "")
+    return int(digits) if digits else 0
 
 
 def load_today_cars(path: str) -> list:
@@ -708,12 +728,43 @@ def main():
     all_cars += scrape_drivalia()
 
     new_cars = [c for c in all_cars if c["id"] not in seen]
-    print(f"  Nových: {len(new_cars)} | Dnes celkem: {len(today_cars)} | Nalezeno: {len(all_cars)}")
 
-    if new_cars:
+    # Zlevnění: už viděné auto s nižší cenou než při minulém běhu.
+    # Auta viděná před zavedením prices.json se při prvním běhu jen zaznamenají.
+    prices = load_prices()
+    drops = []
+    for c in all_cars:
+        price_num = parse_price(c["price"])
+        if not price_num:
+            continue
+        old_num = prices.get(c["id"])
+        if c["id"] in seen and old_num and price_num < old_num:
+            c["old_price"] = _format_czk(old_num)
+            drops.append(c)
+        prices[c["id"]] = price_num
+    save_prices(prices)
+
+    print(f"  Nových: {len(new_cars)} | Zlevněných: {len(drops)} | Dnes celkem: {len(today_cars)} | Nalezeno: {len(all_cars)}")
+
+    if new_cars or drops:
         for c in new_cars:
             c["found_at"] = now_str
         today_cars.extend(new_cars)
+
+        today_by_id = {c["id"]: c for c in today_cars}
+        for c in drops:
+            existing = today_by_id.get(c["id"])
+            if existing:
+                # Auto už dnes v seznamu je – jen aktualizuj cenu,
+                # původní "old_price" (ze začátku dne) zachovej.
+                existing.setdefault("old_price", c["old_price"])
+                existing["price"] = c["price"]
+                existing["price_drop_at"] = now_str
+            else:
+                c["found_at"] = now_str
+                c["price_drop_at"] = now_str
+                today_cars.append(c)
+
         save_today_cars(cars_file, today_cars)
         update_index(day_key, len(today_cars), now_str)
 
@@ -722,7 +773,7 @@ def main():
 
         print(f"✅ Uloženo → data/cars_{day_key}.json ({len(today_cars)} aut dnes)")
     else:
-        print("  Žádná nová auta od posledního spuštění.")
+        print("  Žádná nová ani zlevněná auta od posledního spuštění.")
 
 
 if __name__ == "__main__":
