@@ -60,5 +60,72 @@
     "old_price": "739 000 Kč",
     "found_at": "30.09.2026 14:08",
     "price_drop_at": "30.09.2026 14:08"
+  },
+  {
+    "id": "211193523",
+    "title": "BMW Řada 2 220d Gran Coupé M Sport",
+    "price": "699 900 Kč",
+    "details": "2022, 45 867 km , Nafta , Automatická  ·  Hlavní město Praha  ·  ABT Czech s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211193523",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/kcKfrMAkFDvG5qG5DH6pFgO/36ff.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "30.09.2026 21:52"
+  },
+  {
+    "id": "184439447",
+    "title": "BMW Řada 3 320d xDrive Touring",
+    "price": "739 000 Kč",
+    "details": "2023, 97 000 km , Nafta , Automatická  ·  Liberec  ·  CarTec Liberec, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/184439447",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_QN_Et/o8UJA5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "30.09.2026 21:52"
+  },
+  {
+    "id": "211166763",
+    "title": "Mercedes-Benz Třídy C Mercedes Benz S206 C220D",
+    "price": "750 000 Kč",
+    "details": "2021, 87 000 km , Nafta , Automatická  ·  Kolín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/211166763",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRZSJdFSbH3h4vI/642d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "30.09.2026 21:52"
+  },
+  {
+    "id": "211193040",
+    "title": "Mini Cooper S 2.0i,141kW,1.MAJ-ČR!17 Tis-km!",
+    "price": "499 000 Kč",
+    "details": "2020, 17 800 km , Benzín , Automatická  ·  Prostějov  ·  Pěkná auta s.r.o",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/211193040",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/kcKfrMAkFCDh88HBdH6oVC7/222b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "30.09.2026 21:52"
+  },
+  {
+    "id": "bmwojete:283597",
+    "title": "BMW i3 120Ah",
+    "price": "499 000 Kč",
+    "details": "2022  ·  56 682 km  ·  Elektřina  ·  ACR auto, a.s.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/283597/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/283597?2026-09-30T13:15:20+00:00",
+    "found_at": "30.09.2026 21:52"
+  },
+  {
+    "id": "211042620",
+    "title": "BMW Řada 2 TOP STAV | SERVIS | TAŽNÉ",
+    "price": "528 000 Kč",
+    "details": "2023, 64 500 km , Nafta , Automatická  ·  Kladno  ·  Lemon Car Showroom",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211042620",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyBFnmYVPH2ALnC/14a6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "530 000 Kč",
+    "found_at": "30.09.2026 21:52",
+    "price_drop_at": "30.09.2026 21:52"
+  },
+  {
+    "id": "210403886",
+    "title": "BMW Řada 1 116",
+    "price": "733 000 Kč",
+    "details": "2025, 20 000 km , Benzín , Automatická  ·  Ostrava-město  ·  CarTec Ostrava s.r.o., BMW Premium Selection",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/210403886",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_A/kcHp2YdDtDrxR2BFpCGmGeUE/fbe5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "750 000 Kč",
+    "found_at": "30.09.2026 21:52",
+    "price_drop_at": "30.09.2026 21:52"
   }
 ]
