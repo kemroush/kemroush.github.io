@@ -7,5 +7,58 @@
     "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210984027",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/nPYADvcUkmDcXILWaHk7LzK/5afd.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "30.09.2026 09:45"
+  },
+  {
+    "id": "211190976",
+    "title": "BMW Řada 2 218i Gran Coupé",
+    "price": "749 000 Kč",
+    "details": "2025, 23 950 km , Benzín , Automatická  ·  Hlavní město Praha  ·  BMW CarTec Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211190976",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/nCR9NVflLBaEbFGUzH6iuhI/2038.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "30.09.2026 14:08"
+  },
+  {
+    "id": "210671924",
+    "title": "BMW Řada 1 116",
+    "price": "719 000 Kč",
+    "details": "2025, 12 000 km , Benzín , Automatická  ·  Ostrava-město  ·  CarTec Ostrava s.r.o., BMW Premium Selection",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/210671924",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_C/nO2CysqjGrB9kIMW5BHB1enA/5ff1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "749 000 Kč",
+    "found_at": "30.09.2026 14:08",
+    "price_drop_at": "30.09.2026 14:08"
+  },
+  {
+    "id": "210802244",
+    "title": "Mercedes-Benz CLA d Shooting Brake",
+    "price": "679 000 Kč",
+    "details": "2022, 67 809 km , Nafta , Automatická  ·  Praha-východ  ·  Hoffmann & Žižák",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210802244",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/nO573v8MsN3e2PCzLHa9xka/c9d4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "699 000 Kč",
+    "found_at": "30.09.2026 14:08",
+    "price_drop_at": "30.09.2026 14:08"
+  },
+  {
+    "id": "mns:24589",
+    "title": "Mercedes-Benz CLA d Shooting Brake",
+    "price": "679 000 Kč",
+    "details": "CLA d Shooting Brake  ·  2022  ·  67 809 km  ·  Nafta  ·  Hoffmann a Žižák spol. s r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24589",
+    "image": "https://www.mercedesnasklade.cz/media/cache/resolve/thumbnail_grid/images/99214472-90b5-4d93-96b3-61ac9a709e7f.jpeg",
+    "old_price": "699 000 Kč",
+    "found_at": "30.09.2026 14:08",
+    "price_drop_at": "30.09.2026 14:08"
+  },
+  {
+    "id": "mns:24455",
+    "title": "Mercedes-Benz GLB 220d Progressive",
+    "price": "695 000 Kč",
+    "details": "GLB 220d Progressive  ·  2022  ·  66 422 km  ·  Nafta  ·  SAMOHÝL MB a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/24455",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/fd9b7975-1da8-4a43-ba89-33abd20f3e31.jpeg",
+    "old_price": "739 000 Kč",
+    "found_at": "30.09.2026 14:08",
+    "price_drop_at": "30.09.2026 14:08"
   }
 ]
