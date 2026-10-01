@@ -111,5 +111,67 @@
     "old_price": "699 000 Kč",
     "found_at": "01.10.2026 14:41",
     "price_drop_at": "01.10.2026 14:41"
+  },
+  {
+    "id": "211193676",
+    "title": "BMW i3 120Ah NAVI LED  SOH 98%",
+    "price": "469 000 Kč",
+    "details": "2022, 75 486 km , Elektro , Automatická  ·  Frýdek-Místek  ·  AUTO VAŠEK s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/211193676",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLnoRVHDhH7Hx0p/87a7.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "01.10.2026 22:11"
+  },
+  {
+    "id": "bmwojete:284003",
+    "title": "BMW i3 120Ah",
+    "price": "549 000 Kč",
+    "details": "2022  ·  50 087 km  ·  Elektřina  ·  Renocar a.s., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/284003/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/284003?2026-10-01T14:13:52+00:00",
+    "found_at": "01.10.2026 22:11"
+  },
+  {
+    "id": "209104680",
+    "title": "BMW Řada 3 320d xDrive M-SPORT 1M ČR",
+    "price": "618 000 Kč",
+    "details": "2022, 86 166 km , Nafta , Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/209104680",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_od_A/nO0bgvR9rXBDWR9E7sEQmX98/7c8b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "638 000 Kč",
+    "found_at": "01.10.2026 22:11",
+    "price_drop_at": "01.10.2026 22:11"
+  },
+  {
+    "id": "bmwojete:266211",
+    "title": "BMW 218i",
+    "price": "497 000 Kč",
+    "details": "2023  ·  57 000 km  ·  Benzín  ·  CarTec Ostrava s.r.o.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/266211/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/266211?2026-06-30T07:31:55+00:00",
+    "old_price": "508 000 Kč",
+    "found_at": "01.10.2026 22:11",
+    "price_drop_at": "01.10.2026 22:11"
+  },
+  {
+    "id": "bmwojete:267096",
+    "title": "BMW 116",
+    "price": "719 000 Kč",
+    "details": "2025  ·  13 000 km  ·  Benzín  ·  CarTec Ostrava s.r.o.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/267096/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/267096?2026-06-29T07:01:52+00:00",
+    "old_price": "749 000 Kč",
+    "found_at": "01.10.2026 22:11",
+    "price_drop_at": "01.10.2026 22:11"
+  },
+  {
+    "id": "bmwojete:258796",
+    "title": "BMW 116",
+    "price": "733 000 Kč",
+    "details": "2025  ·  20 000 km  ·  Benzín  ·  CarTec Ostrava s.r.o.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/258796/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/258796?2026-05-13T09:39:37+00:00",
+    "old_price": "750 000 Kč",
+    "found_at": "01.10.2026 22:11",
+    "price_drop_at": "01.10.2026 22:11"
   }
 ]
