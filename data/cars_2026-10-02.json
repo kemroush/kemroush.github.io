@@ -49,5 +49,94 @@
     "old_price": "710 000 Kč",
     "found_at": "02.10.2026 14:06",
     "price_drop_at": "02.10.2026 14:06"
+  },
+  {
+    "id": "210202786",
+    "title": "BMW Řada 3 2,0 318i 115kw LED, AUT, ČR",
+    "price": "729 900 Kč",
+    "details": "2024, 39 813 km , Benzín , Automatická  ·  Praha-východ  ·  AUTA Z OPERÁKU",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/210202786",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/kcHp2YdDtBwNESbkrGRoNKj/9842.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "02.10.2026 21:48"
+  },
+  {
+    "id": "211209351",
+    "title": "Mercedes-Benz EQB 300 4matic SoH 95,5%",
+    "price": "739 000 Kč",
+    "details": "2022, 80 451 km , Elektro , Automatická  ·  Hlavní město Praha  ·  Sema Cars",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/eqb/211209351",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLBaEbFJCCH74LLA/4083.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "02.10.2026 21:48"
+  },
+  {
+    "id": "211207491",
+    "title": "Mercedes-Benz CLA 1,3 250e kupé AMG linie",
+    "price": "647 350 Kč",
+    "details": "2022, 72 943 km , Hybridní , Automatická  ·  Zlín  ·  SAMOHÝL MB, a.s. - Certified",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211207491",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLwO7jOokH7zChD/7615.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "02.10.2026 21:48"
+  },
+  {
+    "id": "211207014",
+    "title": "Mini Cooper S",
+    "price": "722 000 Kč",
+    "details": "2025, 19 000 km , Benzín , Automatická  ·  Ostrava-město  ·  CarTec Ostrava s.r.o., BMW Premium Selection",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211207014",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFMsuhOUgH7xxee/5815.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "02.10.2026 21:48"
+  },
+  {
+    "id": "mns:25349",
+    "title": "Mercedes-Benz CLA 250e kupé AMG linie",
+    "price": "647 350 Kč",
+    "details": "CLA 250e kupé AMG linie  ·  2022  ·  72 943 km  ·  Hybridní - benzín  ·  SAMOHÝL MB a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/25349",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/4e01c814-d008-470e-b0b4-edfb23a5d2ec.jpeg",
+    "found_at": "02.10.2026 21:48"
+  },
+  {
+    "id": "211176753",
+    "title": "BMW Řada 3 BMW 320d 140 kW MHEV",
+    "price": "675 000 Kč",
+    "details": "2023, 48 556 km , Nafta , Automatická  ·  Ostrava-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/211176753",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/nOdL4BtPEyBFnmYBCNH43WOj/9e52.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "690 000 Kč",
+    "found_at": "02.10.2026 21:48",
+    "price_drop_at": "02.10.2026 21:48"
+  },
+  {
+    "id": "210836900",
+    "title": "Mercedes-Benz CLA 180 100kW AUTOMAT NAVI ČR",
+    "price": "529 999 Kč",
+    "details": "2020, 88 985 km , Benzín , Automatická  ·  Hlavní město Praha  ·  MAMA CAR a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210836900",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_C/nEwftpXyZBRWuKBRfHVQ9Iv/3b3a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "539 999 Kč",
+    "found_at": "02.10.2026 21:48",
+    "price_drop_at": "02.10.2026 21:48"
+  },
+  {
+    "id": "210826073",
+    "title": "Mercedes-Benz Třídy A 250i 165kW NAVI PANORAMA ČR",
+    "price": "529 999 Kč",
+    "details": "2021, 95 175 km , Benzín , Automatická  ·  Hlavní město Praha  ·  MAMA CAR a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210826073",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_C/nEwftpXyZ4AdfjGrHUtdaT/0371.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "549 999 Kč",
+    "found_at": "02.10.2026 21:48",
+    "price_drop_at": "02.10.2026 21:48"
+  },
+  {
+    "id": "210974259",
+    "title": "Mini JCW JOHN COOPER WORKS – REMUS",
+    "price": "599 990 Kč",
+    "details": "2021, 59 000 km , Benzín , Automatická  ·  Brno-venkov  ·  Autobazar Auto Centro - Rajhrad",
+    "link": "https://www.sauto.cz/osobni/detail/mini/ostatni/210974259",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JCpoDkW0HjQo7c/9951.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "649 990 Kč",
+    "found_at": "02.10.2026 21:48",
+    "price_drop_at": "02.10.2026 21:48"
   }
 ]
