@@ -1,0 +1,53 @@
+[
+  {
+    "id": "210278129",
+    "title": "BMW Řada 3 2,0 318i aut,Led,Advantage,CZ",
+    "price": "729 000 Kč",
+    "details": "2024, 39 204 km , Benzín , Automatická  ·  Praha-západ  ·  Ford Kačmáček",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/210278129",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/nCTUX1iX5CDciVBTC9GZOO5m/50fd.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "02.10.2026 14:06"
+  },
+  {
+    "id": "bmwojete:255557",
+    "title": "MINI S 5-doors",
+    "price": "730 000 Kč",
+    "details": "2025  ·  3 196 km  ·  Benzín  ·  BMW Czech Republic",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/255557/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/255557?2026-08-16T06:16:07+00:00",
+    "found_at": "02.10.2026 14:06"
+  },
+  {
+    "id": "211157850",
+    "title": "BMW Řada 1 118i m",
+    "price": "599 000 Kč",
+    "details": "2024, 17 000 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/211157850",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRZSJdVjH2lKeg/3d2d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "629 000 Kč",
+    "found_at": "02.10.2026 14:06",
+    "price_drop_at": "02.10.2026 14:06"
+  },
+  {
+    "id": "210981288",
+    "title": "Mercedes-Benz GLB 200, záruka, matrix, nez.top.",
+    "price": "700 000 Kč",
+    "details": "2021, 72 500 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210981288",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyD4lWfC8XHy5NKS/6d51.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "719 000 Kč",
+    "found_at": "02.10.2026 14:06",
+    "price_drop_at": "02.10.2026 14:06"
+  },
+  {
+    "id": "bmwojete:252911",
+    "title": "MINI C 5-doors",
+    "price": "680 000 Kč",
+    "details": "2025  ·  4 789 km  ·  Benzín  ·  BMW Czech Republic",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/252911/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/252911?2026-08-16T06:15:49+00:00",
+    "old_price": "710 000 Kč",
+    "found_at": "02.10.2026 14:06",
+    "price_drop_at": "02.10.2026 14:06"
+  }
+]
