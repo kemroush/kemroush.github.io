@@ -91,5 +91,56 @@
     "old_price": "739 990 Kč",
     "found_at": "05.10.2026 15:58",
     "price_drop_at": "05.10.2026 15:58"
+  },
+  {
+    "id": "211219875",
+    "title": "BMW i3",
+    "price": "513 415 Kč",
+    "details": "2022, 99 639 km , Elektro , Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/211219875",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFMsuhLbLH9ji81/429e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "05.10.2026 23:52"
+  },
+  {
+    "id": "211219797",
+    "title": "Mini Clubman 2.0 225 KW JCW ALL4 ČR 1 maj",
+    "price": "649 999 Kč",
+    "details": "2021, 92 957 km , Benzín , Automatická  ·  Příbram  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/clubman/211219797",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFW9k4URAH9jgko/25f5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "05.10.2026 23:52"
+  },
+  {
+    "id": "210990600",
+    "title": "BMW Řada 3 320e AUT Luxury Line",
+    "price": "599 000 Kč",
+    "details": "2022, 96 945 km , Hybridní , Automatická  ·  Praha-západ  ·  Future Drivalia",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/210990600",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/nPYADvcUkmCbUhRELsHliPih/a5f2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "649 000 Kč",
+    "found_at": "05.10.2026 23:52",
+    "price_drop_at": "05.10.2026 23:52"
+  },
+  {
+    "id": "210703421",
+    "title": "BMW i3 120Ah 42,2 kWh",
+    "price": "499 000 Kč",
+    "details": "2022, 43 443 km , Elektro , Automatická  ·  Zlín  ·  HS Centrum, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/210703421",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/kQMlcCt5zmwiaBMT0HFYXWq/4638.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "509 000 Kč",
+    "found_at": "05.10.2026 23:52",
+    "price_drop_at": "05.10.2026 23:52"
+  },
+  {
+    "id": "drivalia:591515",
+    "title": "BMW Řada 3",
+    "price": "599 000 Kč",
+    "details": "320e AUT Luxury Line  ·  sedan  ·  2022  ·  96 945 km  ·  Plug-in Hybrid benzín  ·  Future Drivalia",
+    "link": "https://future.drivalia.cz/vozidla/591515-cs-bmw-rada-3/",
+    "image": "https://future.drivalia.cz/wp-content/uploads/2026/10/drivalia-MDnMlKK8-1024x576.jpg",
+    "old_price": "649 000 Kč",
+    "found_at": "05.10.2026 23:52",
+    "price_drop_at": "05.10.2026 23:52"
   }
 ]
