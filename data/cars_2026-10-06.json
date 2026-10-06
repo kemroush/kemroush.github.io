@@ -67,13 +67,13 @@
   {
     "id": "211042620",
     "title": "BMW Řada 2 TOP STAV | SERVIS | TAŽNÉ",
-    "price": "525 000 Kč",
+    "price": "524 000 Kč",
     "details": "2023, 64 500 km , Nafta , Automatická  ·  Kladno  ·  Lemon Car Showroom",
     "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211042620",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyBFnmYVPH2ALnC/14a6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "old_price": "527 000 Kč",
     "found_at": "06.10.2026 14:59",
-    "price_drop_at": "06.10.2026 14:59"
+    "price_drop_at": "06.10.2026 22:03"
   },
   {
     "id": "210967773",
@@ -140,5 +140,32 @@
     "old_price": "640 090 Kč",
     "found_at": "06.10.2026 14:59",
     "price_drop_at": "06.10.2026 14:59"
+  },
+  {
+    "id": "211229373",
+    "title": "Mercedes-Benz Třídy A 200, Automat, Serv.kniha, Kůže",
+    "price": "630 000 Kč",
+    "details": "2024, 31 895 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Mototechna",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211229373",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFnIwlUfZIASwer/f3f4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "06.10.2026 22:03"
+  },
+  {
+    "id": "211226163",
+    "title": "Mercedes-Benz CLA Shooting Brake CLA 200 Shootin",
+    "price": "690 000 Kč",
+    "details": "2022, 39 000 km , Benzín , Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211226163",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFnIwlTLlIAItHA/490d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "06.10.2026 22:03"
+  },
+  {
+    "id": "211226205",
+    "title": "Mini Cooper",
+    "price": "446 367 Kč",
+    "details": "2023, 26 423 km , Elektro , Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211226205",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLBkdq1VFYIAIyHl/6c10.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "06.10.2026 22:03"
   }
 ]
