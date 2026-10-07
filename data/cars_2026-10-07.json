@@ -29,12 +29,54 @@
   {
     "id": "211042620",
     "title": "BMW Řada 2 TOP STAV | SERVIS | TAŽNÉ",
-    "price": "523 000 Kč",
+    "price": "520 000 Kč",
     "details": "2023, 64 500 km , Nafta , Automatická  ·  Kladno  ·  Lemon Car Showroom",
     "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211042620",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyBFnmYVPH2ALnC/14a6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "old_price": "524 000 Kč",
     "found_at": "07.10.2026 14:53",
-    "price_drop_at": "07.10.2026 14:53"
+    "price_drop_at": "07.10.2026 22:28"
+  },
+  {
+    "id": "mns:25421",
+    "title": "Mercedes-Benz Sprinter 311 CDI Tourer 9Míst",
+    "price": "749 900 Kč",
+    "details": "Sprinter 311 CDI Tourer 9Míst  ·  2023  ·  74 040 km  ·  Nafta  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/25421",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/c4df6ab0-0688-4996-a14d-86622a3826d7.jpeg",
+    "found_at": "07.10.2026 22:28"
+  },
+  {
+    "id": "210533141",
+    "title": "BMW Řada 2 218i Active Tourer, 1. Majitel",
+    "price": "549 900 Kč",
+    "details": "2023, 33 320 km , Benzín , Automatická  ·  Brno-město  ·  RENOCAR BMW, MINI a BMW MOTORRAD",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/210533141",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/nO2CysqjGrB9kIMFy3GyVIbi/13de.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "559 900 Kč",
+    "found_at": "07.10.2026 22:28",
+    "price_drop_at": "07.10.2026 22:28"
+  },
+  {
+    "id": "renocar:42971753",
+    "title": "BMW 218i Active Tourer, 1. Majitel",
+    "price": "549 900 Kč",
+    "details": "MPV/Tourer  ·  2023  ·  33 320 km  ·  1499 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-218i-active-tourer-1-majitel-42971753",
+    "image": "https://www.renocar.cz/helios_resources/images/42971753_00_43008233.JPG",
+    "old_price": "559 900 Kč",
+    "found_at": "07.10.2026 22:28",
+    "price_drop_at": "07.10.2026 22:28"
+  },
+  {
+    "id": "mns:18828",
+    "title": "Mercedes-Benz Třída T 200",
+    "price": "700 590 Kč",
+    "details": "Třída T 200  ·  2025  ·  16 478 km  ·  Elektro  ·  CENTRUM Moravia Sever, spol.s r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/18828",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/06785664_1.jpg",
+    "old_price": "724 790 Kč",
+    "found_at": "07.10.2026 22:28",
+    "price_drop_at": "07.10.2026 22:28"
   }
 ]
