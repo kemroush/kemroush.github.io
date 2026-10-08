@@ -62,5 +62,56 @@
     "old_price": "528 000 Kč",
     "found_at": "08.10.2026 15:02",
     "price_drop_at": "08.10.2026 15:02"
+  },
+  {
+    "id": "211244505",
+    "title": "Mercedes-Benz Třídy E 300 de, AVANTGARDE, DPH",
+    "price": "729 999 Kč",
+    "details": "2022, 54 850 km , Hybridní , Automatická  ·  Vyškov  ·  WAuto",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-e/211244505",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFCpZ9wXkzIBcuuT/0cda.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "08.10.2026 22:32"
+  },
+  {
+    "id": "211243691",
+    "title": "Mercedes-Benz Třídy A A 200 AMG Line",
+    "price": "690 000 Kč",
+    "details": "2023, 23 450 km , Benzín , Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211243691",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFDbqUhBBK5IBV9lJ/e05f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "08.10.2026 22:32"
+  },
+  {
+    "id": "209796831",
+    "title": "BMW Řada 3 320 xD ///M*TAŽNÉ*ČR*MOD 2023",
+    "price": "718 000 Kč",
+    "details": "2022, 78 772 km , Nafta , Automatická  ·  Znojmo  ·  STOP CARS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/209796831",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/kcHp2YdDtEBMvIVRPGRnFgA/1fb4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "728 000 Kč",
+    "found_at": "08.10.2026 22:32",
+    "price_drop_at": "08.10.2026 22:32"
+  },
+  {
+    "id": "211005099",
+    "title": "BMW Řada 2 218i Gran Coupe M Sport",
+    "price": "689 000 Kč",
+    "details": "2024, 17 850 km , Benzín , Automatická  ·  Karlovy Vary  ·  BASE NEXT, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211005099",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_C/nPYADvcUkmBFAg3DU1HmvDjj/3540.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "729 000 Kč",
+    "found_at": "08.10.2026 22:32",
+    "price_drop_at": "08.10.2026 22:32"
+  },
+  {
+    "id": "210962028",
+    "title": "BMW rad 3 Touring",
+    "price": "609 756 Kč",
+    "details": "2022, 80 422 km , Nafta , Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/ostatni/210962028",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JB3Lg9FFkHiJNvG/6b63.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "653 023 Kč",
+    "found_at": "08.10.2026 22:32",
+    "price_drop_at": "08.10.2026 22:32"
   }
 ]
