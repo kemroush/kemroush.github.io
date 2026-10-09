@@ -82,5 +82,34 @@
     "old_price": "439 000 Kč",
     "found_at": "09.10.2026 14:48",
     "price_drop_at": "09.10.2026 14:48"
+  },
+  {
+    "id": "211249038",
+    "title": "Mini Cooper SE ACC KeyGo HuD Záruka 9/2028",
+    "price": "548 000 Kč",
+    "details": "2022, 26 000 km , Elektro , Automatická  ·  Karlovy Vary  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211249038",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFDbqUhBF57IB5SgG/0338.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "09.10.2026 22:01"
+  },
+  {
+    "id": "bmwojete:285404",
+    "title": "BMW 420i Gran Coupe",
+    "price": "699 000 Kč",
+    "details": "2022  ·  68 800 km  ·  Benzín  ·  Renocar a.s., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/285404/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/285404?2026-10-09T14:32:16+00:00",
+    "found_at": "09.10.2026 22:01"
+  },
+  {
+    "id": "210999420",
+    "title": "Mercedes-Benz GLA 250 165kW 4MATIC AMG ČR",
+    "price": "729 999 Kč",
+    "details": "2020, 44 418 km , Benzín , Automatická  ·  Hlavní město Praha  ·  MAMA CAR a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/210999420",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JB3Lg9BW0HmNuMZ/bdbd.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "749 999 Kč",
+    "found_at": "09.10.2026 22:01",
+    "price_drop_at": "09.10.2026 22:01"
   }
 ]
