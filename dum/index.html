@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <style>html{color-scheme:light}:root{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>Výminek Jesenice 3D</title>
+<title>Výminek 3D</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap">
 <style>
   /* Layout: one-screen viewer. Slim header, 3D stage takes all remaining height, two control rows at the bottom within thumb reach. */
@@ -73,7 +73,8 @@
   .help { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: 16px; background: rgba(20, 22, 24, 0.5); }
   .help-card { box-sizing: border-box; width: 100%; max-width: 470px; max-height: 100%; overflow: auto; display: flex; flex-direction: column;
     background: var(--panel); color: var(--fg); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px 16px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); }
-  .help-card h2 { margin: 0 0 4px; font-size: 17px; font-weight: 600; }
+  .help-head { display: flex; align-items: center; gap: 12px; }
+  .help-card h2 { margin: 0; font-size: 17px; font-weight: 600; }
   .help-card h3 { margin: 14px 0 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
   .help-card section { display: block; }
   .help-card dl { margin: 0; display: grid; grid-template-columns: minmax(96px, auto) 1fr; gap: 7px 14px; align-items: baseline; font-size: 14px; line-height: 1.35; }
@@ -85,14 +86,14 @@
   .help-foot { display: flex; align-items: center; gap: 12px; margin-top: 16px; }
   .help-foot p { flex: 1 1 auto; font-size: 12.5px; }
   .help-foot button { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); }
-  @media (pointer: coarse) { .help-touch { order: -1; } .help-card h2 { order: -2; } }
+  @media (pointer: coarse) { .help-touch { order: -1; } .help-head { order: -2; } }
 </style>
 
 </head>
 <body>
 <div class="app">
   <header>
-    <h1 data-i18n="title">Výminek Jesenice</h1>
+    <h1 data-i18n="title">Výminek</h1>
     <span class="meta">Blokki 2blokki C · 12,83 × 5,54 <span data-i18n="m">m</span> · 52,12 <span data-i18n="m">m</span>² · <span data-i18n="state">stav modelu 9. 10. 2026</span></span>
     <button id="helpBtn" class="helpbtn" type="button" aria-haspopup="dialog" data-i18n="helpBtn">Ovládání</button>
     <span class="seg lang" role="group" aria-label="Jazyk / Язык">
@@ -126,7 +127,13 @@
 
 <div class="help" id="help" hidden>
   <div class="help-card" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
-    <h2 id="helpTitle" data-i18n="helpTitle">Jak se v modelu pohybovat</h2>
+    <div class="help-head">
+      <h2 id="helpTitle" data-i18n="helpTitle">Jak se v modelu pohybovat</h2>
+      <span class="seg lang" role="group" aria-label="Jazyk / Язык">
+        <button type="button" lang="cs" data-lang="cs" aria-pressed="true">CZ</button>
+        <button type="button" lang="ru" data-lang="ru" aria-pressed="false">RU</button>
+      </span>
+    </div>
     <section>
       <h3 data-i18n="hKeys">Klávesnice</h3>
       <dl>
@@ -170,7 +177,7 @@
   // Language: Czech (default) and Russian. ?lang=ru in the URL opens the Russian version directly.
   var TEXT = {
     cs: {
-      doc: 'Výminek Jesenice 3D', title: 'Výminek Jesenice', m: 'm', state: 'stav modelu 9. 10. 2026',
+      doc: 'Výminek 3D', title: 'Výminek', m: 'm', state: 'stav modelu 9. 10. 2026',
       canvas: '3D model domu a pozemku',
       hint: 'Joystickem jdeš dopředu, dozadu a do stran. Tažením prstu se rozhlížíš, šipkami vpravo měníš výšku.',
       hintKeys: 'Klávesami W A S D (nebo šipkami) chodíš, E jde výš a Q níž. Tažením myši se rozhlížíš, kolečkem přibližuješ.',
@@ -193,7 +200,7 @@
       hButtonsV: 'Pohledy tě přenesou do jednotlivých místností nebo nad pozemek. Bez střechy, Bez zeleně a Řez ve výšce odkryjí vnitřek domu.'
     },
     ru: {
-      doc: 'Домик в Есенице 3D', title: 'Домик в Есенице', m: 'м', state: 'модель от 9.10.2026',
+      doc: 'Домик 3D', title: 'Домик', m: 'м', state: 'модель от 9.10.2026',
       canvas: '3D-модель дома и участка',
       hint: 'Джойстиком можно двигаться вперёд, назад и в стороны. Проведите пальцем, чтобы осмотреться, стрелками справа меняется высота.',
       hintKeys: 'Клавишами W A S D (или стрелками) можно ходить, E — выше, Q — ниже. Мышью можно осмотреться, колёсиком — приблизить.',
@@ -259,7 +266,22 @@
   window.addEventListener('keydown', function (ev) {
     if (helpEl.hidden) return;
     if (ev.key === 'Escape') { ev.preventDefault(); closeHelp(); }
-    else if (ev.key === 'Tab') { ev.preventDefault(); helpClose.focus(); }   // keep focus inside the window
+    else if (ev.key === 'Tab') {   // keep focus inside the window
+      var fs = Array.prototype.slice.call(helpEl.querySelectorAll('button'));
+      var i = fs.indexOf(document.activeElement) + (ev.shiftKey ? -1 : 1);
+      ev.preventDefault(); fs[(i + fs.length) % fs.length].focus();
+    }
+  });
+  // Language switch inside the guide (the one in the header is covered while the guide is open)
+  var helpLangs = helpEl.querySelectorAll('[data-lang]');
+  helpLangs.forEach(function (b) {
+    b.addEventListener('click', function () {
+      lang = b.getAttribute('data-lang'); applyLang();
+      try { localStorage.setItem('vyminek-jazyk', lang); } catch (e) {}
+    });
+  });
+  langHooks.push(function () {
+    helpLangs.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-lang') === lang ? 'true' : 'false'); });
   });
   var helpSeen = false;
   try { helpSeen = localStorage.getItem('vyminek-navod') === '1'; } catch (e) {}
