@@ -63,37 +63,43 @@
   .seg button { border-radius: 0; margin-left: -1px; }
   .seg button:first-child { border-radius: 6px 0 0 6px; margin-left: 0; }
   .seg button:last-child { border-radius: 0 6px 6px 0; }
+  .lang { margin-left: auto; align-self: center; }
+  .lang button { min-height: 32px; padding: 5px 10px; font-size: 13px; }
 </style>
 
 </head>
 <body>
 <div class="app">
   <header>
-    <h1>Výminek Jesenice</h1>
-    <span class="meta">Blokki 2blokki C · 12,83 × 5,54 m · 52,12 m² · stav modelu 9. 10. 2026</span>
+    <h1 data-i18n="title">Výminek Jesenice</h1>
+    <span class="meta">Blokki 2blokki C · 12,83 × 5,54 <span data-i18n="m">m</span> · 52,12 <span data-i18n="m">m</span>² · <span data-i18n="state">stav modelu 9. 10. 2026</span></span>
+    <span class="seg lang" role="group" aria-label="Jazyk / Язык">
+      <button id="lang-cs" type="button" lang="cs" aria-pressed="true">CZ</button>
+      <button id="lang-ru" type="button" lang="ru" aria-pressed="false">RU</button>
+    </span>
   </header>
 
   <div class="stage">
-    <canvas id="c" tabindex="0" aria-label="3D model domu a pozemku"></canvas>
-    <div class="hint" id="hint">Joystickem jdeš dopředu, dozadu a do stran. Tažením prstu se rozhlížíš, šipkami vpravo měníš výšku.</div>
-    <div class="pad" id="joy" role="application" aria-label="Joystick pro pohyb: dopředu, dozadu, doleva, doprava"><div id="knob"></div></div>
+    <canvas id="c" tabindex="0" data-i18n-aria="canvas" aria-label="3D model domu a pozemku"></canvas>
+    <div class="hint" id="hint" data-i18n="hint">Joystickem jdeš dopředu, dozadu a do stran. Tažením prstu se rozhlížíš, šipkami vpravo měníš výšku.</div>
+    <div class="pad" id="joy" role="application" data-i18n-aria="joy" aria-label="Joystick pro pohyb: dopředu, dozadu, doleva, doprava"><div id="knob"></div></div>
     <div class="pad" id="lift">
-      <button id="up" type="button" aria-label="Nahoru">▲</button>
-      <button id="down" type="button" aria-label="Dolů">▼</button>
+      <button id="up" type="button" data-i18n-aria="up" aria-label="Nahoru">▲</button>
+      <button id="down" type="button" data-i18n-aria="down" aria-label="Dolů">▼</button>
     </div>
     <div id="status">Načítám model…</div>
   </div>
 
-  <nav class="row" id="views" aria-label="Pohledy"></nav>
+  <nav class="row" id="views" data-i18n-aria="views" aria-label="Pohledy"></nav>
 
   <div class="row tools">
-    <span class="seg" role="group" aria-label="Verze modelu">
-      <button id="ver-v1" type="button" aria-pressed="true">Původní verze</button>
-      <button id="ver-v2" type="button" aria-pressed="false">Nová verze</button>
+    <span class="seg" role="group" data-i18n-aria="version" aria-label="Verze modelu">
+      <button id="ver-v1" type="button" aria-pressed="true" data-i18n="v1">Původní verze</button>
+      <button id="ver-v2" type="button" aria-pressed="false" data-i18n="v2">Nová verze</button>
     </span>
-    <button id="roof" type="button" aria-pressed="false">Bez střechy</button>
-    <button id="green" type="button" aria-pressed="false">Bez zeleně</button>
-    <label class="cut" for="cutH">Řez ve výšce
+    <button id="roof" type="button" aria-pressed="false" data-i18n="roof">Bez střechy</button>
+    <button id="green" type="button" aria-pressed="false" data-i18n="green">Bez zeleně</button>
+    <label class="cut" for="cutH"><span data-i18n="cut">Řez ve výšce</span>
       <input id="cutH" type="range" min="0.3" max="4.5" step="0.05" value="4.5">
       <output id="cutV" for="cutH">vypnuto</output>
     </label>
@@ -105,9 +111,61 @@
 <script src="https://cdn.jsdelivr.net/npm/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
 <script>
 (function () {
+  // Language: Czech (default) and Russian. ?lang=ru in the URL opens the Russian version directly.
+  var TEXT = {
+    cs: {
+      doc: 'Výminek Jesenice 3D', title: 'Výminek Jesenice', m: 'm', state: 'stav modelu 9. 10. 2026',
+      canvas: '3D model domu a pozemku',
+      hint: 'Joystickem jdeš dopředu, dozadu a do stran. Tažením prstu se rozhlížíš, šipkami vpravo měníš výšku.',
+      joy: 'Joystick pro pohyb: dopředu, dozadu, doleva, doprava', up: 'Nahoru', down: 'Dolů',
+      loading: 'Načítám model…', failModel: 'Model se nepodařilo načíst. Zkus stránku obnovit.',
+      failLib: 'Nepodařilo se načíst 3D knihovnu. Zkus stránku otevřít znovu s připojením k internetu.',
+      views: 'Pohledy', version: 'Verze modelu', v1: 'Původní verze', v2: 'Nová verze',
+      roof: 'Bez střechy', green: 'Bez zeleně', cut: 'Řez ve výšce', cutOff: 'vypnuto',
+      celek: 'Celý pozemek', dum: 'Dům od vstupu', zahrada: 'Dům ze zahrady', pudorys: 'Půdorys',
+      obyvak: 'Obývací pokoj', kuchyn: 'Kuchyň', loznice: 'Ložnice', pracovna: 'Pracovna', koupelna: 'Koupelna', zadveri: 'Zádveří'
+    },
+    ru: {
+      doc: 'Домик в Есенице 3D', title: 'Домик в Есенице', m: 'м', state: 'модель от 9.10.2026',
+      canvas: '3D-модель дома и участка',
+      hint: 'Джойстиком можно двигаться вперёд, назад и в стороны. Проведите пальцем, чтобы осмотреться, стрелками справа меняется высота.',
+      joy: 'Джойстик для движения: вперёд, назад, влево, вправо', up: 'Вверх', down: 'Вниз',
+      loading: 'Загрузка модели…', failModel: 'Не удалось загрузить модель. Попробуйте обновить страницу.',
+      failLib: 'Не удалось загрузить 3D-библиотеку. Откройте страницу ещё раз при подключении к интернету.',
+      views: 'Виды', version: 'Версия модели', v1: 'Исходный вариант', v2: 'Новый вариант',
+      roof: 'Без крыши', green: 'Без зелени', cut: 'Разрез на высоте', cutOff: 'выкл.',
+      celek: 'Весь участок', dum: 'Дом со стороны входа', zahrada: 'Дом со стороны сада', pudorys: 'План',
+      obyvak: 'Гостиная', kuchyn: 'Кухня', loznice: 'Спальня', pracovna: 'Кабинет', koupelna: 'Ванная', zadveri: 'Прихожая'
+    }
+  };
+  var lang = 'cs';
+  try { var sl = localStorage.getItem('vyminek-jazyk'); if (TEXT[sl]) lang = sl; } catch (e) {}
+  var ql = (location.search.match(/[?&]lang=(\w+)/) || [])[1];
+  if (TEXT[ql]) lang = ql;
+  var langHooks = [];
+  function t(key) { return TEXT[lang][key]; }
+  function applyLang() {
+    document.documentElement.lang = lang;
+    document.title = t('doc');
+    document.querySelectorAll('[data-i18n]').forEach(function (el) { el.textContent = t(el.getAttribute('data-i18n')); });
+    document.querySelectorAll('[data-i18n-aria]').forEach(function (el) { el.setAttribute('aria-label', t(el.getAttribute('data-i18n-aria'))); });
+    Object.keys(TEXT).forEach(function (k) { document.getElementById('lang-' + k).setAttribute('aria-pressed', k === lang ? 'true' : 'false'); });
+    langHooks.forEach(function (f) { f(); });
+  }
+  Object.keys(TEXT).forEach(function (k) {
+    document.getElementById('lang-' + k).addEventListener('click', function () {
+      lang = k; applyLang();
+      try { localStorage.setItem('vyminek-jazyk', k); } catch (e) {}
+    });
+  });
+
   var statusEl = document.getElementById('status');
+  var statusKey = 'loading';
+  function setStatus(key) { statusKey = key; statusEl.hidden = false; statusEl.textContent = t(key); }
+  langHooks.push(function () { statusEl.textContent = t(statusKey); });
+  applyLang();
   if (!window.THREE || !THREE.OrbitControls || !THREE.GLTFLoader) {
-    statusEl.textContent = 'Nepodařilo se načíst 3D knihovnu. Zkus stránku otevřít znovu s připojením k internetu.';
+    setStatus('failLib');
     return;
   }
 
@@ -280,10 +338,11 @@
   var viewButtons = {};
   VIEWS.forEach(function (v) {
     var b = document.createElement('button');
-    b.type = 'button'; b.textContent = v.label; b.id = 'view-' + v.id; b.setAttribute('aria-pressed', 'false');
+    b.type = 'button'; b.textContent = t(v.id); b.id = 'view-' + v.id; b.setAttribute('aria-pressed', 'false');
     b.addEventListener('click', function () { markView(v.id); goTo(v, false); });
     viewsEl.appendChild(b); viewButtons[v.id] = b;
   });
+  langHooks.push(function () { VIEWS.forEach(function (v) { viewButtons[v.id].textContent = t(v.id); }); });
   function markView(id) {
     Object.keys(viewButtons).forEach(function (k) { viewButtons[k].setAttribute('aria-pressed', k === id ? 'true' : 'false'); });
   }
@@ -320,10 +379,11 @@
   var cutIn = document.getElementById('cutH'), cutOut = document.getElementById('cutV');
   function setCut() {
     var h = parseFloat(cutIn.value);
-    if (h >= 4.45) { renderer.clippingPlanes = []; cutOut.textContent = 'vypnuto'; }
-    else { cutPlane.constant = h; renderer.clippingPlanes = [cutPlane]; cutOut.textContent = h.toFixed(2).replace('.', ',') + ' m'; }
+    if (h >= 4.45) { renderer.clippingPlanes = []; cutOut.textContent = t('cutOff'); }
+    else { cutPlane.constant = h; renderer.clippingPlanes = [cutPlane]; cutOut.textContent = h.toFixed(2).replace('.', ',') + ' ' + t('m'); }
   }
   cutIn.addEventListener('input', setCut);
+  langHooks.push(setCut);
   setCut();
 
   function resize() {
@@ -375,8 +435,8 @@
     var M_ = MODELS[key];
     if (M_.root || M_.loading) return;
     M_.loading = true;
-    statusEl.hidden = false; statusEl.textContent = 'Načítám model…';
-    function fail() { M_.loading = false; statusEl.hidden = false; statusEl.textContent = 'Model se nepodařilo načíst. Zkus stránku obnovit.'; }
+    setStatus('loading');
+    function fail() { M_.loading = false; setStatus('failModel'); }
     fetch(M_.file).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.text();
