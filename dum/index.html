@@ -65,6 +65,27 @@
   .seg button:last-child { border-radius: 0 6px 6px 0; }
   .lang { margin-left: auto; align-self: center; }
   .lang button { min-height: 32px; padding: 5px 10px; font-size: 13px; }
+  /* Controls guide: button in the header + window shown on the first visit */
+  .helpbtn { margin-left: auto; align-self: center; min-height: 32px; padding: 5px 10px; font-size: 13px; }
+  .helpbtn::before { content: "?"; display: inline-block; width: 1.25em; height: 1.25em; line-height: 1.25em; margin-right: 6px; border-radius: 50%;
+    background: var(--accent); color: var(--accent-fg); font-weight: 600; text-align: center; }
+  .helpbtn + .lang { margin-left: 0; }
+  .help { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: 16px; background: rgba(20, 22, 24, 0.5); }
+  .help-card { box-sizing: border-box; width: 100%; max-width: 470px; max-height: 100%; overflow: auto; display: flex; flex-direction: column;
+    background: var(--panel); color: var(--fg); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px 16px; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); }
+  .help-card h2 { margin: 0 0 4px; font-size: 17px; font-weight: 600; }
+  .help-card h3 { margin: 14px 0 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+  .help-card section { display: block; }
+  .help-card dl { margin: 0; display: grid; grid-template-columns: minmax(96px, auto) 1fr; gap: 7px 14px; align-items: baseline; font-size: 14px; line-height: 1.35; }
+  .help-card dt { white-space: nowrap; font-weight: 500; }
+  .help-card dd { margin: 0; color: var(--muted); }
+  .help-card p { margin: 0; font-size: 14px; line-height: 1.4; color: var(--muted); }
+  .help-card kbd { display: inline-block; min-width: 1.5em; box-sizing: border-box; padding: 2px 5px; margin-right: 3px; border: 1px solid var(--line); border-bottom-width: 2px;
+    border-radius: 5px; background: transparent; color: var(--fg); font: inherit; font-size: 12.5px; font-weight: 600; text-align: center; }
+  .help-foot { display: flex; align-items: center; gap: 12px; margin-top: 16px; }
+  .help-foot p { flex: 1 1 auto; font-size: 12.5px; }
+  .help-foot button { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); }
+  @media (pointer: coarse) { .help-touch { order: -1; } .help-card h2 { order: -2; } }
 </style>
 
 </head>
@@ -73,6 +94,7 @@
   <header>
     <h1 data-i18n="title">Výminek Jesenice</h1>
     <span class="meta">Blokki 2blokki C · 12,83 × 5,54 <span data-i18n="m">m</span> · 52,12 <span data-i18n="m">m</span>² · <span data-i18n="state">stav modelu 9. 10. 2026</span></span>
+    <button id="helpBtn" class="helpbtn" type="button" aria-haspopup="dialog" data-i18n="helpBtn">Ovládání</button>
     <span class="seg lang" role="group" aria-label="Jazyk / Язык">
       <button id="lang-cs" type="button" lang="cs" aria-pressed="true">CZ</button>
       <button id="lang-ru" type="button" lang="ru" aria-pressed="false">RU</button>
@@ -102,6 +124,44 @@
   </div>
 </div>
 
+<div class="help" id="help" hidden>
+  <div class="help-card" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+    <h2 id="helpTitle" data-i18n="helpTitle">Jak se v modelu pohybovat</h2>
+    <section>
+      <h3 data-i18n="hKeys">Klávesnice</h3>
+      <dl>
+        <dt><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></dt><dd data-i18n="hKeysMove">chůze dopředu, doleva, dozadu a doprava (stejně fungují šipky)</dd>
+        <dt><kbd>E</kbd><kbd>Q</kbd></dt><dd data-i18n="hKeysLift">E výš, Q níž</dd>
+      </dl>
+    </section>
+    <section>
+      <h3 data-i18n="hMouse">Myš</h3>
+      <dl>
+        <dt data-i18n="hDragK">Tažení</dt><dd data-i18n="hDragV">otáčení pohledu, uvnitř domu rozhlížení</dd>
+        <dt data-i18n="hWheelK">Kolečko</dt><dd data-i18n="hWheelV">přiblížení a oddálení, při procházení krok dopředu a dozadu</dd>
+        <dt data-i18n="hRightK">Pravé tlačítko</dt><dd data-i18n="hRightV">tažením posouváš pohled do stran (v přehledu shora)</dd>
+      </dl>
+    </section>
+    <section class="help-touch">
+      <h3 data-i18n="hTouch">Telefon a tablet</h3>
+      <dl>
+        <dt data-i18n="hJoyK">Joystick vlevo</dt><dd data-i18n="hJoyV">chůze dopředu, dozadu a do stran</dd>
+        <dt>▲ ▼</dt><dd data-i18n="hLiftV">výš a níž</dd>
+        <dt data-i18n="hFingerK">Jeden prst</dt><dd data-i18n="hFingerV">tažením se rozhlížíš</dd>
+        <dt data-i18n="hPinchK">Dva prsty</dt><dd data-i18n="hPinchV">přiblížení a posun (v přehledu shora)</dd>
+      </dl>
+    </section>
+    <section>
+      <h3 data-i18n="hButtons">Tlačítka dole</h3>
+      <p data-i18n="hButtonsV">Pohledy tě přenesou do jednotlivých místností nebo nad pozemek. Bez střechy, Bez zeleně a Řez ve výšce odkryjí vnitřek domu.</p>
+    </section>
+    <div class="help-foot">
+      <p data-i18n="helpAgain">Návod kdykoli znovu otevřeš tlačítkem Ovládání nahoře.</p>
+      <button id="helpClose" type="button" data-i18n="helpClose">Rozumím</button>
+    </div>
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/three@0.146.0/build/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.146.0/examples/js/controls/OrbitControls.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
@@ -113,31 +173,55 @@
       doc: 'Výminek Jesenice 3D', title: 'Výminek Jesenice', m: 'm', state: 'stav modelu 9. 10. 2026',
       canvas: '3D model domu a pozemku',
       hint: 'Joystickem jdeš dopředu, dozadu a do stran. Tažením prstu se rozhlížíš, šipkami vpravo měníš výšku.',
+      hintKeys: 'Klávesami W A S D (nebo šipkami) chodíš, E jde výš a Q níž. Tažením myši se rozhlížíš, kolečkem přibližuješ.',
       joy: 'Joystick pro pohyb: dopředu, dozadu, doleva, doprava', up: 'Nahoru', down: 'Dolů',
       loading: 'Načítám model…', failModel: 'Model se nepodařilo načíst. Zkus stránku obnovit.',
       failLib: 'Nepodařilo se načíst 3D knihovnu. Zkus stránku otevřít znovu s připojením k internetu.',
       views: 'Pohledy', version: 'Verze modelu', v1: 'Původní verze', v2: 'Nová verze',
       roof: 'Bez střechy', green: 'Bez zeleně', cut: 'Řez ve výšce', cutOff: 'vypnuto',
       celek: 'Celý pozemek', dum: 'Dům od vstupu', zahrada: 'Dům ze zahrady', pudorys: 'Půdorys',
-      obyvak: 'Obývací pokoj', kuchyn: 'Kuchyň', loznice: 'Ložnice', pracovna: 'Pracovna', koupelna: 'Koupelna', zadveri: 'Zádveří'
+      obyvak: 'Obývací pokoj', kuchyn: 'Kuchyň', loznice: 'Ložnice', pracovna: 'Pracovna', koupelna: 'Koupelna', zadveri: 'Zádveří',
+      helpBtn: 'Ovládání', helpTitle: 'Jak se v modelu pohybovat', helpClose: 'Rozumím',
+      helpAgain: 'Návod kdykoli znovu otevřeš tlačítkem Ovládání nahoře.',
+      hKeys: 'Klávesnice', hKeysMove: 'chůze dopředu, doleva, dozadu a doprava (stejně fungují šipky)', hKeysLift: 'E výš, Q níž',
+      hMouse: 'Myš', hDragK: 'Tažení', hDragV: 'otáčení pohledu, uvnitř domu rozhlížení',
+      hWheelK: 'Kolečko', hWheelV: 'přiblížení a oddálení, při procházení krok dopředu a dozadu',
+      hRightK: 'Pravé tlačítko', hRightV: 'tažením posouváš pohled do stran (v přehledu shora)',
+      hTouch: 'Telefon a tablet', hJoyK: 'Joystick vlevo', hJoyV: 'chůze dopředu, dozadu a do stran', hLiftV: 'výš a níž',
+      hFingerK: 'Jeden prst', hFingerV: 'tažením se rozhlížíš', hPinchK: 'Dva prsty', hPinchV: 'přiblížení a posun (v přehledu shora)',
+      hButtons: 'Tlačítka dole',
+      hButtonsV: 'Pohledy tě přenesou do jednotlivých místností nebo nad pozemek. Bez střechy, Bez zeleně a Řez ve výšce odkryjí vnitřek domu.'
     },
     ru: {
       doc: 'Домик в Есенице 3D', title: 'Домик в Есенице', m: 'м', state: 'модель от 9.10.2026',
       canvas: '3D-модель дома и участка',
       hint: 'Джойстиком можно двигаться вперёд, назад и в стороны. Проведите пальцем, чтобы осмотреться, стрелками справа меняется высота.',
+      hintKeys: 'Клавишами W A S D (или стрелками) можно ходить, E — выше, Q — ниже. Мышью можно осмотреться, колёсиком — приблизить.',
       joy: 'Джойстик для движения: вперёд, назад, влево, вправо', up: 'Вверх', down: 'Вниз',
       loading: 'Загрузка модели…', failModel: 'Не удалось загрузить модель. Попробуйте обновить страницу.',
       failLib: 'Не удалось загрузить 3D-библиотеку. Откройте страницу ещё раз при подключении к интернету.',
       views: 'Виды', version: 'Версия модели', v1: 'Исходный вариант', v2: 'Новый вариант',
       roof: 'Без крыши', green: 'Без зелени', cut: 'Разрез на высоте', cutOff: 'выкл.',
       celek: 'Весь участок', dum: 'Дом со стороны входа', zahrada: 'Дом со стороны сада', pudorys: 'План',
-      obyvak: 'Гостиная', kuchyn: 'Кухня', loznice: 'Спальня', pracovna: 'Кабинет', koupelna: 'Ванная', zadveri: 'Прихожая'
+      obyvak: 'Гостиная', kuchyn: 'Кухня', loznice: 'Спальня', pracovna: 'Кабинет', koupelna: 'Ванная', zadveri: 'Прихожая',
+      helpBtn: 'Управление', helpTitle: 'Как перемещаться по модели', helpClose: 'Понятно',
+      helpAgain: 'Подсказку можно открыть снова кнопкой «Управление» вверху.',
+      hKeys: 'Клавиатура', hKeysMove: 'движение вперёд, влево, назад и вправо (стрелки работают так же)', hKeysLift: 'E — выше, Q — ниже',
+      hMouse: 'Мышь', hDragK: 'Перетаскивание', hDragV: 'поворот вида, внутри дома — осмотреться',
+      hWheelK: 'Колёсико', hWheelV: 'приближение и отдаление, при прогулке — шаг вперёд и назад',
+      hRightK: 'Правая кнопка', hRightV: 'перетаскиванием вид сдвигается в стороны (в обзоре сверху)',
+      hTouch: 'Телефон и планшет', hJoyK: 'Джойстик слева', hJoyV: 'движение вперёд, назад и в стороны', hLiftV: 'выше и ниже',
+      hFingerK: 'Один палец', hFingerV: 'проведите, чтобы осмотреться', hPinchK: 'Два пальца', hPinchV: 'приближение и сдвиг (в обзоре сверху)',
+      hButtons: 'Кнопки внизу',
+      hButtonsV: 'Виды переносят в отдельные комнаты или над участок. «Без крыши», «Без зелени» и «Разрез на высоте» открывают дом изнутри.'
     }
   };
   var lang = 'cs';
   try { var sl = localStorage.getItem('vyminek-jazyk'); if (TEXT[sl]) lang = sl; } catch (e) {}
   var ql = (location.search.match(/[?&]lang=(\w+)/) || [])[1];
   if (TEXT[ql]) lang = ql;
+  // On a computer (mouse, no touch screen) the line above the model describes the keyboard instead of the joystick.
+  if (window.matchMedia && !window.matchMedia('(pointer: coarse)').matches) document.getElementById('hint').setAttribute('data-i18n', 'hintKeys');
   var langHooks = [];
   function t(key) { return TEXT[lang][key]; }
   function applyLang() {
@@ -154,6 +238,32 @@
       try { localStorage.setItem('vyminek-jazyk', k); } catch (e) {}
     });
   });
+
+  // Controls guide: opens by itself on the first visit, later from the button in the header.
+  var helpEl = document.getElementById('help'), helpBtn = document.getElementById('helpBtn'), helpClose = document.getElementById('helpClose');
+  var helpBack = null;
+  function openHelp(back) {
+    helpBack = back || null;
+    helpEl.hidden = false;
+    try { helpClose.focus(); } catch (e) {}
+  }
+  function closeHelp() {
+    if (helpEl.hidden) return;
+    helpEl.hidden = true;
+    try { localStorage.setItem('vyminek-navod', '1'); } catch (e) {}
+    try { (helpBack || document.getElementById('c')).focus(); } catch (e) {}
+  }
+  helpBtn.addEventListener('click', function () { openHelp(helpBtn); });
+  helpClose.addEventListener('click', closeHelp);
+  helpEl.addEventListener('pointerdown', function (ev) { if (ev.target === helpEl) closeHelp(); });
+  window.addEventListener('keydown', function (ev) {
+    if (helpEl.hidden) return;
+    if (ev.key === 'Escape') { ev.preventDefault(); closeHelp(); }
+    else if (ev.key === 'Tab') { ev.preventDefault(); helpClose.focus(); }   // keep focus inside the window
+  });
+  var helpSeen = false;
+  try { helpSeen = localStorage.getItem('vyminek-navod') === '1'; } catch (e) {}
+  if (!helpSeen) openHelp(null);
 
   var statusEl = document.getElementById('status');
   var statusKey = 'loading';
@@ -298,6 +408,7 @@
   var KEYMAP = { w: 'f', ArrowUp: 'f', s: 'b', ArrowDown: 'b', a: 'l', ArrowLeft: 'l', d: 'r', ArrowRight: 'r', e: 'u', q: 'd' };
   window.addEventListener('keydown', function (ev) {
     if (ev.target && ev.target.tagName === 'INPUT') return;
+    if (!helpEl.hidden) return;
     var k = KEYMAP[ev.key]; if (!k) return;
     if (ev.target === canvas || ev.target === document.body) ev.preventDefault();
     keys[k] = true;
