@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<style>html{color-scheme:light}:root{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Výminek Jesenice 3D</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap">
+<style>
+  /* Layout: one-screen viewer. Slim header, 3D stage takes all remaining height, two control rows at the bottom within thumb reach. */
+  :root {
+    --sky: #dfe6e8;          /* scene background */
+    --ground: #b9c2b4;       /* land beyond the plot */
+    --panel: #f6f5f2;
+    --line: #d5d3cc;
+    --fg: #23262a;           /* anthracite, as the window frames */
+    --muted: #666a6e;
+    --accent: #5b3b27;       /* walnut, as the joinery */
+    --accent-fg: #f6f1ea;
+    --font: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --sky: #1a2024; --ground: #2a302b; --panel: #23272b; --line: #3a3f44;
+      --fg: #ecebe7; --muted: #a3a7ab; --accent: #d2ab82; --accent-fg: #22190f;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --sky: #1a2024; --ground: #2a302b; --panel: #23272b; --line: #3a3f44;
+    --fg: #ecebe7; --muted: #a3a7ab; --accent: #d2ab82; --accent-fg: #22190f;
+    color-scheme: dark;
+  }
+  html, body { height: 100%; }
+  body { background: var(--panel); color: var(--fg); font-family: var(--font); font-size: 15px; overflow: hidden; }
+  .app { height: 100%; display: flex; flex-direction: column; }
+  header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; padding: 10px 16px; border-bottom: 1px solid var(--line); }
+  h1 { margin: 0; font-size: 17px; font-weight: 600; letter-spacing: 0.01em; }
+  .meta { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+  .stage { position: relative; flex: 1 1 auto; min-height: 0; background: var(--sky); }
+  canvas { display: block; width: 100%; height: 100%; touch-action: none; outline-offset: -3px; }
+  #status { position: absolute; inset: 0; display: grid; place-items: center; padding: 16px; text-align: center; color: var(--fg); pointer-events: none; }
+  .hint { position: absolute; left: 16px; right: 16px; top: 10px; color: var(--muted); font-size: 12.5px; pointer-events: none; text-wrap: balance; }
+  .row { display: flex; gap: 8px; padding: 8px 16px; overflow-x: auto; scrollbar-width: none; border-top: 1px solid var(--line); }
+  .row::-webkit-scrollbar { display: none; }
+  .row.tools { align-items: center; flex-wrap: wrap; overflow: visible; padding-bottom: 12px; }
+  button { font: inherit; font-size: 14px; font-weight: 500; color: var(--fg); background: transparent; border: 1px solid var(--line);
+    border-radius: 6px; padding: 9px 13px; min-height: 40px; white-space: nowrap; cursor: pointer; flex: 0 0 auto; }
+  button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); }
+  button:focus-visible, input:focus-visible, canvas:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .cut { display: flex; align-items: center; gap: 10px; flex: 1 1 220px; min-width: 0; color: var(--muted); font-size: 13px; }
+  .cut input { flex: 1 1 auto; min-width: 0; accent-color: var(--accent); }
+  .cut output { min-width: 4.5em; text-align: right; color: var(--fg); font-variant-numeric: tabular-nums; }
+  .pad { position: absolute; bottom: 14px; display: flex; touch-action: none; user-select: none; -webkit-user-select: none; }
+  #joy { left: 16px; width: 104px; height: 104px; border-radius: 50%; background: var(--panel); border: 1px solid var(--line); opacity: 0.9;
+    align-items: center; justify-content: center; cursor: grab; }
+  #joy::before { content: ""; position: absolute; inset: 14px; border-radius: 50%; border: 1px dashed var(--line); }
+  #knob { width: 46px; height: 46px; border-radius: 50%; background: var(--accent); pointer-events: none; will-change: transform; }
+  #lift { right: 16px; flex-direction: column; gap: 8px; }
+  #lift button { width: 48px; height: 48px; padding: 0; font-size: 18px; background: var(--panel); opacity: 0.9; border-radius: 50%; }
+  .seg { display: inline-flex; flex: 0 0 auto; }
+  .seg button { border-radius: 0; margin-left: -1px; }
+  .seg button:first-child { border-radius: 6px 0 0 6px; margin-left: 0; }
+  .seg button:last-child { border-radius: 0 6px 6px 0; }
+</style>
+
+</head>
+<body>
+<div class="app">
+  <header>
+    <h1>Výminek Jesenice</h1>
+    <span class="meta">Blokki 2blokki C · 12,83 × 5,54 m · 52,12 m² · stav modelu 9. 10. 2026</span>
+  </header>
+
+  <div class="stage">
+    <canvas id="c" tabindex="0" aria-label="3D model domu a pozemku"></canvas>
+    <div class="hint" id="hint">Joystickem jdeš dopředu, dozadu a do stran. Tažením prstu se rozhlížíš, šipkami vpravo měníš výšku.</div>
+    <div class="pad" id="joy" role="application" aria-label="Joystick pro pohyb: dopředu, dozadu, doleva, doprava"><div id="knob"></div></div>
+    <div class="pad" id="lift">
+      <button id="up" type="button" aria-label="Nahoru">▲</button>
+      <button id="down" type="button" aria-label="Dolů">▼</button>
+    </div>
+    <div id="status">Načítám model…</div>
+  </div>
+
+  <nav class="row" id="views" aria-label="Pohledy"></nav>
+
+  <div class="row tools">
+    <span class="seg" role="group" aria-label="Verze modelu">
+      <button id="ver-v1" type="button" aria-pressed="true">Původní verze</button>
+      <button id="ver-v2" type="button" aria-pressed="false">Nová verze</button>
+    </span>
+    <button id="roof" type="button" aria-pressed="false">Bez střechy</button>
+    <button id="green" type="button" aria-pressed="false">Bez zeleně</button>
+    <label class="cut" for="cutH">Řez ve výšce
+      <input id="cutH" type="range" min="0.3" max="4.5" step="0.05" value="4.5">
+      <output id="cutV" for="cutH">vypnuto</output>
+    </label>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.146.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.146.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
+<script>
+(function () {
+  var statusEl = document.getElementById('status');
+  if (!window.THREE || !THREE.OrbitControls || !THREE.GLTFLoader) {
+    statusEl.textContent = 'Nepodařilo se načíst 3D knihovnu. Zkus stránku otevřít znovu s připojením k internetu.';
+    return;
+  }
+
+  var canvas = document.getElementById('c');
+  var stage = canvas.parentElement;
+  var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.outputEncoding = THREE.sRGBEncoding;
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+  var scene = new THREE.Scene();
+  var camera = new THREE.PerspectiveCamera(50, 1, 0.05, 600);
+  var controls = new THREE.OrbitControls(camera, canvas);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.12;
+  controls.minDistance = 0.3;
+  controls.maxDistance = 140;
+  controls.maxPolarAngle = Math.PI * 0.495;
+  controls.zoomSpeed = 0.9;
+
+  var hemi = new THREE.HemisphereLight(0xffffff, 0x8a8f86, 0.78);
+  scene.add(hemi);
+  var sun = new THREE.DirectionalLight(0xfff4e2, 0.85);
+  sun.position.set(-30, 45, 28);
+  sun.castShadow = true;
+  sun.shadow.mapSize.set(2048, 2048);
+  var sc = sun.shadow.camera;
+  sc.left = -45; sc.right = 45; sc.top = 45; sc.bottom = -45; sc.near = 1; sc.far = 160;
+  sun.shadow.bias = -0.0006;
+  sun.shadow.normalBias = 0.03;
+  scene.add(sun);
+  scene.add(sun.target);
+
+  var groundMat = new THREE.MeshLambertMaterial({ color: 0xb9c2b4 });
+  var ground = new THREE.Mesh(new THREE.CircleGeometry(220, 48), groundMat);
+  ground.rotation.x = -Math.PI / 2;
+  ground.position.y = -0.56;
+  ground.receiveShadow = true;
+  scene.add(ground);
+
+  function token(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+  function applyTheme() {
+    scene.background = new THREE.Color(token('--sky') || '#dfe6e8');
+    groundMat.color.set(token('--ground') || '#b9c2b4');
+  }
+  applyTheme();
+  if (window.matchMedia) {
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
+    if (mq.addEventListener) mq.addEventListener('change', applyTheme);
+  }
+  new MutationObserver(applyTheme).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+  // Model coordinates (x along the house, y across, z up) to three.js (Y up).
+  var WX = 0.565, WY = 0.44;
+  function M(x, y, z) { return new THREE.Vector3(x, z, -y); }
+  function I(x, y, z) { return M(x + WX, y + WY, z); }   // interior coordinates from the floor plan
+
+  var VIEWS = [
+    { id: 'celek',    label: 'Celý pozemek', pos: M(4, -30, 24),       look: M(-3, 5, 0) },
+    { id: 'dum',      label: 'Dům od vstupu', pos: M(-5, -9, 5.5),     look: M(6.4, 2.8, 1.2) },
+    { id: 'zahrada',  label: 'Dům ze zahrady', pos: M(3, 17, 3.2),     look: M(6.4, 3.5, 1.2) },
+    { id: 'pudorys',  label: 'Půdorys', pos: M(6.41, 2.3, 15),         look: M(6.41, 2.77, 0), roofOff: true },
+    { id: 'obyvak',   label: 'Obývací pokoj', pos: I(6.9, 4.3, 1.6),   look: I(10.6, 1.9, 0.9) , walk: true },
+    { id: 'kuchyn',   label: 'Kuchyň', pos: I(11.2, 2.1, 1.6),         look: I(7.8, 0.9, 0.95) , walk: true },
+    { id: 'loznice',  label: 'Ložnice', pos: I(2.6, 2.0, 1.6),         look: I(0.9, 0.8, 0.6) , walk: true },
+    { id: 'pracovna', label: 'Pracovna', pos: I(3.3, 2.8, 1.6),        look: I(1.0, 4.2, 0.9) , walk: true },
+    { id: 'koupelna', label: 'Koupelna', pos: I(5.2, 2.0, 1.6),        look: I(6.2, 0.6, 0.9) , walk: true },
+    { id: 'zadveri',  label: 'Zádveří', pos: I(4.5, 3.2, 1.6),         look: I(4.3, 0.2, 1.1) , walk: true }
+  ];
+
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var anim = null;
+  // Two ways of moving: orbiting around a point (overview) and walking (joystick, look around in place).
+  var walk = false;
+  function setMode(w) {
+    walk = w;
+    controls.enableZoom = !w; controls.enablePan = !w;
+    controls.rotateSpeed = w ? -0.55 : 1;
+    controls.minPolarAngle = w ? Math.PI * 0.08 : 0;
+    controls.maxPolarAngle = w ? Math.PI * 0.92 : Math.PI * 0.495;
+    controls.minDistance = w ? 0.05 : 0.3;
+  }
+  function nearTarget(pos, look) {
+    var d = look.clone().sub(pos);
+    if (d.lengthSq() < 1e-8) d.set(0, 0, -1);
+    return pos.clone().addScaledVector(d.normalize(), 0.5);
+  }
+  function enterWalk() {
+    if (walk) return;
+    anim = null;
+    controls.target.copy(nearTarget(camera.position, controls.target));
+    setMode(true);
+    controls.update();
+  }
+  function goTo(v, instant) {
+    if (v.roofOff) setRoof(true);
+    setMode(!!v.walk);
+    var toT = v.walk ? nearTarget(v.pos, v.look) : v.look;
+    var fromP = camera.position.clone(), fromT = controls.target.clone();
+    if (instant || reduceMotion) {
+      camera.position.copy(v.pos); controls.target.copy(toT); controls.update(); return;
+    }
+    anim = { t0: performance.now(), d: 700, fromP: fromP, fromT: fromT, toP: v.pos, toT: toT };
+  }
+
+  // Joystick, height buttons, keyboard
+  var joy = { x: 0, y: 0 }, vert = 0, keys = {};
+  var joyEl = document.getElementById('joy'), knob = document.getElementById('knob'), JR = 34;
+  function joyMove(ev) {
+    var r = joyEl.getBoundingClientRect();
+    var dx = ev.clientX - (r.left + r.width / 2), dy = ev.clientY - (r.top + r.height / 2);
+    var len = Math.hypot(dx, dy);
+    if (len > JR) { dx *= JR / len; dy *= JR / len; }
+    knob.style.transform = 'translate(' + dx + 'px,' + dy + 'px)';
+    joy.x = Math.abs(dx) < JR * 0.12 ? 0 : dx / JR;
+    joy.y = Math.abs(dy) < JR * 0.12 ? 0 : dy / JR;
+  }
+  function joyEnd() { joy.x = 0; joy.y = 0; knob.style.transform = ''; }
+  joyEl.addEventListener('pointerdown', function (ev) {
+    ev.preventDefault();
+    try { joyEl.setPointerCapture(ev.pointerId); } catch (e) {}
+    document.getElementById('hint').hidden = true; markView(null); joyMove(ev);
+  });
+  joyEl.addEventListener('pointermove', function (ev) { if (ev.buttons || ev.pointerType === 'touch') { if (joyEl.hasPointerCapture && joyEl.hasPointerCapture(ev.pointerId)) joyMove(ev); } });
+  ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(function (t) { joyEl.addEventListener(t, joyEnd); });
+  [['up', 1], ['down', -1]].forEach(function (d) {
+    var el = document.getElementById(d[0]);
+    el.addEventListener('pointerdown', function (ev) { ev.preventDefault(); try { el.setPointerCapture(ev.pointerId); } catch (e) {} vert = d[1]; markView(null); });
+    ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(function (t) { el.addEventListener(t, function () { vert = 0; }); });
+    el.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ') vert = d[1]; });
+    el.addEventListener('keyup', function () { vert = 0; });
+  });
+  var KEYMAP = { w: 'f', ArrowUp: 'f', s: 'b', ArrowDown: 'b', a: 'l', ArrowLeft: 'l', d: 'r', ArrowRight: 'r', e: 'u', q: 'd' };
+  window.addEventListener('keydown', function (ev) {
+    if (ev.target && ev.target.tagName === 'INPUT') return;
+    var k = KEYMAP[ev.key]; if (!k) return;
+    if (ev.target === canvas || ev.target === document.body) ev.preventDefault();
+    keys[k] = true;
+  });
+  window.addEventListener('keyup', function (ev) { var k = KEYMAP[ev.key]; if (k) keys[k] = false; });
+  window.addEventListener('blur', function () { keys = {}; vert = 0; joyEnd(); });
+  canvas.addEventListener('wheel', function (ev) {
+    if (!walk) return;
+    ev.preventDefault();
+    var d = new THREE.Vector3(); camera.getWorldDirection(d);
+    d.multiplyScalar(-ev.deltaY * 0.004);
+    camera.position.add(d); controls.target.add(d);
+  }, { passive: false });
+
+  var fwd = new THREE.Vector3(), mv = new THREE.Vector3();
+  function step(dt) {
+    var jx = joy.x + (keys.r ? 1 : 0) - (keys.l ? 1 : 0);
+    var jy = joy.y + (keys.b ? 1 : 0) - (keys.f ? 1 : 0);
+    var jv = vert + (keys.u ? 1 : 0) - (keys.d ? 1 : 0);
+    if (!jx && !jy && !jv) return;
+    enterWalk();
+    camera.getWorldDirection(fwd); fwd.y = 0;
+    if (fwd.lengthSq() < 1e-4) { fwd.set(0, 1, 0).applyQuaternion(camera.quaternion); fwd.y = 0; }
+    fwd.normalize();
+    var sp = Math.max(1.6, Math.min(12, (camera.position.y + 0.4) * 0.7)) * dt;   // faster when high above the plot
+    mv.set(0, 0, 0).addScaledVector(fwd, -jy * sp);
+    mv.x += -fwd.z * jx * sp; mv.z += fwd.x * jx * sp;
+    mv.y = jv * sp * 0.8;
+    if (camera.position.y + mv.y < 0.25) mv.y = 0.25 - camera.position.y;
+    camera.position.add(mv); controls.target.add(mv);
+  }
+
+  var viewsEl = document.getElementById('views');
+  var viewButtons = {};
+  VIEWS.forEach(function (v) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.textContent = v.label; b.id = 'view-' + v.id; b.setAttribute('aria-pressed', 'false');
+    b.addEventListener('click', function () { markView(v.id); goTo(v, false); });
+    viewsEl.appendChild(b); viewButtons[v.id] = b;
+  });
+  function markView(id) {
+    Object.keys(viewButtons).forEach(function (k) { viewButtons[k].setAttribute('aria-pressed', k === id ? 'true' : 'false'); });
+  }
+  controls.addEventListener('start', function () { markView(null); document.getElementById('hint').hidden = true; });
+
+  // Layers
+  var MODELS = { v1: { file: 'model.txt', root: null, roof: [], green: [], loading: false },
+                 v2: { file: 'model2.txt', root: null, roof: [], green: [], loading: false } };
+  var current = 'v1', roofOff = false, greenOff = false;
+  function applyLayers() {
+    Object.keys(MODELS).forEach(function (k) {
+      var m = MODELS[k];
+      if (m.root) m.root.visible = (k === current);
+      m.roof.forEach(function (o) { o.visible = !roofOff; });
+      m.green.forEach(function (o) { o.visible = !greenOff; });
+    });
+  }
+  var ROOF_RE = /ST1|podhled|Střešní|Oplechování|komín/;
+  var GREEN_RE = /[Tt]úje|živý|Smrk|smrk|Borovice|strom|Jehličnan|Araukárie|Keře/;
+  var roofBtn = document.getElementById('roof'), greenBtn = document.getElementById('green');
+  function setRoof(off) {
+    roofOff = off; applyLayers();
+    roofBtn.setAttribute('aria-pressed', off ? 'true' : 'false');
+  }
+  function setGreen(off) {
+    greenOff = off; applyLayers();
+    greenBtn.setAttribute('aria-pressed', off ? 'true' : 'false');
+  }
+  roofBtn.addEventListener('click', function () { setRoof(roofBtn.getAttribute('aria-pressed') !== 'true'); });
+  greenBtn.addEventListener('click', function () { setGreen(greenBtn.getAttribute('aria-pressed') !== 'true'); });
+
+  // Horizontal cut
+  var cutPlane = new THREE.Plane(new THREE.Vector3(0, -1, 0), 4.5);
+  var cutIn = document.getElementById('cutH'), cutOut = document.getElementById('cutV');
+  function setCut() {
+    var h = parseFloat(cutIn.value);
+    if (h >= 4.45) { renderer.clippingPlanes = []; cutOut.textContent = 'vypnuto'; }
+    else { cutPlane.constant = h; renderer.clippingPlanes = [cutPlane]; cutOut.textContent = h.toFixed(2).replace('.', ',') + ' m'; }
+  }
+  cutIn.addEventListener('input', setCut);
+  setCut();
+
+  function resize() {
+    var w = stage.clientWidth, h = stage.clientHeight;
+    if (!w || !h) return;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.fov = w < h ? 62 : 50;       // wider lens on a portrait phone
+    camera.updateProjectionMatrix();
+  }
+  if (window.ResizeObserver) new ResizeObserver(resize).observe(stage);
+  window.addEventListener('resize', resize);
+  resize();
+
+  goTo(VIEWS[1], true);
+  markView('dum');
+
+  function prepare(gltf, key) {
+    var M_ = MODELS[key];
+    gltf.scene.traverse(function (o) {
+      var name = (o.userData && o.userData.name) || o.name || '';
+      if (o.isMesh) {
+        var mats = Array.isArray(o.material) ? o.material : [o.material];
+        var glass = false;
+        mats.forEach(function (m) {
+          if (!m) return;
+          if (/Sklo/.test(m.name || '')) {
+            glass = true; m.transparent = true; m.opacity = 0.28; m.depthWrite = false; m.roughness = 0.1; m.metalness = 0;
+          } else if (m.transparent || m.opacity < 1) {
+            m.transparent = true;                                  // sheer curtains keep their own opacity
+          } else if (key === 'v1') {
+            m.roughness = 0.88; m.metalness = /Nerez/.test(m.name || '') ? 0.6 : 0;
+          }
+          if (m.map) m.map.anisotropy = 4;
+          m.side = THREE.DoubleSide;
+        });
+        o.castShadow = !glass; o.receiveShadow = true;
+      }
+      if (name && o.parent === gltf.scene) {
+        if (ROOF_RE.test(name)) M_.roof.push(o);
+        if (/^IfcGeographicElement/.test(name) && GREEN_RE.test(name)) M_.green.push(o);
+      }
+    });
+    M_.root = gltf.scene;
+    scene.add(gltf.scene);
+  }
+  // Models ship as base64 text next to the page (binary .glb files are not served).
+  function loadModel(key) {
+    var M_ = MODELS[key];
+    if (M_.root || M_.loading) return;
+    M_.loading = true;
+    statusEl.hidden = false; statusEl.textContent = 'Načítám model…';
+    function fail() { M_.loading = false; statusEl.hidden = false; statusEl.textContent = 'Model se nepodařilo načíst. Zkus stránku obnovit.'; }
+    fetch(M_.file).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.text();
+    }).then(function (b64) {
+      var bin = atob(b64.trim());
+      var buf = new Uint8Array(bin.length);
+      for (var i = 0; i < bin.length; i++) buf[i] = bin.charCodeAt(i);
+      // Decode embedded textures through <img> instead of fetch(blob:), which the page's sandbox may refuse.
+      var cib = window.createImageBitmap;
+      try { window.createImageBitmap = undefined; } catch (e) {}
+      try {
+        new THREE.GLTFLoader().parse(buf.buffer, '', function (gltf) {
+          prepare(gltf, key); M_.loading = false; applyLayers(); statusEl.hidden = true;
+        }, fail);
+      } finally {
+        try { window.createImageBitmap = cib; } catch (e) {}
+      }
+    }).catch(fail);
+  }
+  function showVersion(key) {
+    current = key;
+    Object.keys(MODELS).forEach(function (k) { document.getElementById('ver-' + k).setAttribute('aria-pressed', k === key ? 'true' : 'false'); });
+    applyLayers();
+    loadModel(key);
+    try { localStorage.setItem('vyminek-verze', key); } catch (e) {}
+  }
+  Object.keys(MODELS).forEach(function (k) {
+    document.getElementById('ver-' + k).addEventListener('click', function () { showVersion(k); });
+  });
+  var startVersion = 'v1';
+  try { var sv = localStorage.getItem('vyminek-verze'); if (sv && MODELS[sv]) startVersion = sv; } catch (e) {}
+  showVersion(startVersion);
+
+  var lastT = 0;
+  function frame(now) {
+    var dt = Math.min(0.05, lastT ? (now - lastT) / 1000 : 0); lastT = now;
+    step(dt);
+    if (anim) {
+      var k = Math.min(1, (now - anim.t0) / anim.d);
+      var e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+      camera.position.lerpVectors(anim.fromP, anim.toP, e);
+      controls.target.lerpVectors(anim.fromT, anim.toT, e);
+      if (k >= 1) anim = null;
+    }
+    controls.update();
+    renderer.render(scene, camera);
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+
+</body>
+</html>
