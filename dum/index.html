@@ -93,10 +93,6 @@
   <nav class="row" id="views" data-i18n-aria="views" aria-label="Pohledy"></nav>
 
   <div class="row tools">
-    <span class="seg" role="group" data-i18n-aria="version" aria-label="Verze modelu">
-      <button id="ver-v1" type="button" aria-pressed="true" data-i18n="v1">Původní verze</button>
-      <button id="ver-v2" type="button" aria-pressed="false" data-i18n="v2">Nová verze</button>
-    </span>
     <button id="roof" type="button" aria-pressed="false" data-i18n="roof">Bez střechy</button>
     <button id="green" type="button" aria-pressed="false" data-i18n="green">Bez zeleně</button>
     <label class="cut" for="cutH"><span data-i18n="cut">Řez ve výšce</span>
@@ -349,9 +345,8 @@
   controls.addEventListener('start', function () { markView(null); document.getElementById('hint').hidden = true; });
 
   // Layers
-  var MODELS = { v1: { file: 'model.txt', root: null, roof: [], green: [], loading: false },
-                 v2: { file: 'model2.txt', root: null, roof: [], green: [], loading: false } };
-  var current = 'v1', roofOff = false, greenOff = false;
+  var MODELS = { v2: { file: 'model2.txt', root: null, roof: [], green: [], loading: false } };
+  var current = 'v2', roofOff = false, greenOff = false;
   function applyLayers() {
     Object.keys(MODELS).forEach(function (k) {
       var m = MODELS[k];
@@ -456,19 +451,7 @@
       }
     }).catch(fail);
   }
-  function showVersion(key) {
-    current = key;
-    Object.keys(MODELS).forEach(function (k) { document.getElementById('ver-' + k).setAttribute('aria-pressed', k === key ? 'true' : 'false'); });
-    applyLayers();
-    loadModel(key);
-    try { localStorage.setItem('vyminek-verze', key); } catch (e) {}
-  }
-  Object.keys(MODELS).forEach(function (k) {
-    document.getElementById('ver-' + k).addEventListener('click', function () { showVersion(k); });
-  });
-  var startVersion = 'v1';
-  try { var sv = localStorage.getItem('vyminek-verze'); if (sv && MODELS[sv]) startVersion = sv; } catch (e) {}
-  showVersion(startVersion);
+  loadModel(current);
 
   var lastT = 0;
   function frame(now) {
