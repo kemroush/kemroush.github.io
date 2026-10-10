@@ -187,6 +187,12 @@
       white-space: nowrap;
       font-size: 0.9rem;
     }
+    .car-card.gone { opacity: 0.4; }
+    .car-gone {
+      font-size: 0.7rem;
+      color: #8b949e;
+      margin-top: 0.3rem;
+    }
     .car-old-price {
       color: #484f58;
       text-decoration: line-through;
@@ -573,6 +579,8 @@
     let activeFuels  = new Set(); // empty = all
     let activeModels = new Set(); // empty = all
     let dropsOnly    = false;
+    let tracked      = null;  // id → {price, last_seen}; null = neznámo (nic neztlumovat)
+    let goneCutoff   = '';
     let sortValue    = 'date-desc';
     const PRICE_MIN  = 300000;
     const PRICE_MAX  = 750000;
@@ -712,6 +720,7 @@
     function filteredCars() {
       return allCars.filter(c => {
         if (dropsOnly && !c.old_price) return false;
+        if (summaryMode && isGone(c)) return false;
         if (activeBrands.size > 0) {
           const t = c.title.toLowerCase();
           const brandOk = (activeBrands.has('bmw')      && t.startsWith('bmw'))
@@ -753,6 +762,14 @@
       });
     }
 
+    // Auto není v nabídce, když ho bot neviděl ani dnes, ani včera
+    // (den tolerance kvůli občasnému selhání scraperu).
+    function isGone(c) {
+      if (!tracked) return false;
+      const t = tracked[c.id];
+      return !t || t.last_seen < goneCutoff;
+    }
+
     function renderCars() {
       const cars = filteredCars();
       const list = document.getElementById('cars-list');
@@ -762,7 +779,7 @@
         return;
       }
       list.innerHTML = sortedCars(cars).map(c => `
-        <a href="${c.link}" class="car-card" target="_blank" rel="noopener">
+        <a href="${c.link}" class="car-card${isGone(c) ? ' gone' : ''}" target="_blank" rel="noopener">
           ${c.image ? `<div class="car-thumb"><img src="${c.image}" alt="" loading="lazy"></div>` : ''}
           <div class="car-body">
             <div class="car-top">
@@ -773,6 +790,7 @@
             <div class="car-details">${c.details}</div>
             ${c.price_drop_at ? `<div class="car-time">zlevněno ${c.price_drop_at}</div>`
               : c.found_at ? `<div class="car-time">nalezeno ${c.found_at}</div>` : ''}
+            ${isGone(c) ? '<div class="car-gone">už není v nabídce</div>' : ''}
           </div>
         </a>
       `).join('');
@@ -872,7 +890,23 @@
       if (e.key === 'ArrowRight' && idx > 0)              showDay(idx - 1);
     });
 
+    async function loadTracked() {
+      try {
+        const res = await fetch('data/tracked.json');
+        if (!res.ok) return;
+        tracked = await res.json();
+        const latest = Object.values(tracked).reduce((m, t) => t.last_seen > m ? t.last_seen : m, '');
+        if (!latest) { tracked = null; return; }
+        const d = new Date(latest + 'T12:00:00');
+        d.setDate(d.getDate() - 1);
+        goneCutoff = d.toISOString().slice(0, 10);
+      } catch {
+        tracked = null;
+      }
+    }
+
     async function init() {
+      await loadTracked();
       try {
         const res   = await fetch('data/index.json');
         const index = await res.json();

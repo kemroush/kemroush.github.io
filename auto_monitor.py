@@ -6,7 +6,7 @@ renocar.cz, mercedesnasklade.cz, future.drivalia.cz a nabidky.bmw.cz
 Generuje:
   data/index.json            – seznam dostupných dní (čte JS v cars.html)
   data/cars_YYYY-MM-DD.json  – inzeráty per den (nová + zlevněná auta)
-  data/prices.json           – poslední známá cena každého auta (pro hlídání zlevnění)
+  data/tracked.json          – id → {price, last_seen} (hlídání zlevnění, úklid, stav "v nabídce")
 
 Požadavky:
   pip install beautifulsoup4 lxml
@@ -41,7 +41,9 @@ CONFIG = {
     "max_pages":       5,
     "seen_file":     os.path.join(DATA_DIR, "seen_cars.json"),
     "index_file":    os.path.join(DATA_DIR, "index.json"),
-    "prices_file":   os.path.join(DATA_DIR, "prices.json"),
+    "tracked_file":  os.path.join(DATA_DIR, "tracked.json"),
+    "keep_days":     60,   # denní soubory cars_*.json starší než tohle se mažou
+    "forget_days":   30,   # auto nevidané tak dlouho se zapomene (seen + tracked)
 }
 
 # ─────────────────────────────────────────────
@@ -69,17 +71,58 @@ def save_seen(seen: set):
         json.dump(list(seen), f, ensure_ascii=False, indent=2)
 
 
-def load_prices() -> dict:
-    if os.path.exists(CONFIG["prices_file"]):
-        with open(CONFIG["prices_file"], "r", encoding="utf-8") as f:
+def load_tracked() -> dict:
+    if os.path.exists(CONFIG["tracked_file"]):
+        with open(CONFIG["tracked_file"], "r", encoding="utf-8") as f:
             return json.load(f)
     return {}
 
 
-def save_prices(prices: dict):
+def save_tracked(tracked: dict):
     os.makedirs(DATA_DIR, exist_ok=True)
-    with open(CONFIG["prices_file"], "w", encoding="utf-8") as f:
-        json.dump(prices, f, ensure_ascii=False, indent=2, sort_keys=True)
+    with open(CONFIG["tracked_file"], "w", encoding="utf-8") as f:
+        json.dump(tracked, f, ensure_ascii=False, indent=1, sort_keys=True)
+
+
+def forget_stale(seen: set, tracked: dict, day_key: str) -> int:
+    """Zapomene auta nevidaná déle než forget_days (ze seen i tracked).
+    ID ze seen bez záznamu v tracked (starší než tracked.json) dostanou
+    last_seen = dnes, takže se mažou až po celé lhůtě – kdyby scraper
+    zrovna selhal, auto se nevrátí jako „nové“."""
+    for car_id in seen:
+        tracked.setdefault(car_id, {"price": 0, "last_seen": day_key})
+    cutoff = (datetime.strptime(day_key, "%Y-%m-%d")
+              - timedelta(days=CONFIG["forget_days"])).strftime("%Y-%m-%d")
+    stale = [i for i, t in tracked.items() if t["last_seen"] < cutoff]
+    for car_id in stale:
+        del tracked[car_id]
+        seen.discard(car_id)
+    return len(stale)
+
+
+def prune_old_days(day_key: str) -> int:
+    """Smaže cars_YYYY-MM-DD.json starší než keep_days a vyřadí je z index.json."""
+    cutoff = (datetime.strptime(day_key, "%Y-%m-%d")
+              - timedelta(days=CONFIG["keep_days"])).strftime("%Y-%m-%d")
+    removed = 0
+    for name in os.listdir(DATA_DIR):
+        m = re.fullmatch(r"cars_(\d{4}-\d{2}-\d{2})\.json", name)
+        if m and m.group(1) < cutoff:
+            os.remove(os.path.join(DATA_DIR, name))
+            removed += 1
+
+    index_file = CONFIG["index_file"]
+    if os.path.exists(index_file):
+        with open(index_file, "r", encoding="utf-8") as f:
+            index = json.load(f)
+        kept = [d for d in index["days"] if d["key"] >= cutoff]
+        if len(kept) != len(index["days"]):
+            index["days"] = kept
+            if kept:
+                index["latest"] = kept[0]["key"]
+            with open(index_file, "w", encoding="utf-8") as f:
+                json.dump(index, f, ensure_ascii=False, indent=2)
+    return removed
 
 
 def parse_price(price: str) -> int:
@@ -730,19 +773,16 @@ def main():
     new_cars = [c for c in all_cars if c["id"] not in seen]
 
     # Zlevnění: už viděné auto s nižší cenou než při minulém běhu.
-    # Auta viděná před zavedením prices.json se při prvním běhu jen zaznamenají.
-    prices = load_prices()
+    # Auta viděná před zavedením tracked.json se při prvním běhu jen zaznamenají.
+    tracked = load_tracked()
     drops = []
     for c in all_cars:
         price_num = parse_price(c["price"])
-        if not price_num:
-            continue
-        old_num = prices.get(c["id"])
-        if c["id"] in seen and old_num and price_num < old_num:
+        old_num = tracked.get(c["id"], {}).get("price", 0)
+        if c["id"] in seen and price_num and old_num and price_num < old_num:
             c["old_price"] = _format_czk(old_num)
             drops.append(c)
-        prices[c["id"]] = price_num
-    save_prices(prices)
+        tracked[c["id"]] = {"price": price_num or old_num, "last_seen": day_key}
 
     print(f"  Nových: {len(new_cars)} | Zlevněných: {len(drops)} | Dnes celkem: {len(today_cars)} | Nalezeno: {len(all_cars)}")
 
@@ -769,11 +809,18 @@ def main():
         update_index(day_key, len(today_cars), now_str)
 
         seen.update(c["id"] for c in new_cars)
-        save_seen(seen)
 
         print(f"✅ Uloženo → data/cars_{day_key}.json ({len(today_cars)} aut dnes)")
     else:
         print("  Žádná nová ani zlevněná auta od posledního spuštění.")
+
+    # Úklid: zapomenout dlouho nevidaná auta, smazat staré denní soubory.
+    forgotten = forget_stale(seen, tracked, day_key)
+    save_seen(seen)
+    save_tracked(tracked)
+    removed = prune_old_days(day_key)
+    if forgotten or removed:
+        print(f"🧹 Zapomenuto aut: {forgotten} | Smazáno denních souborů: {removed}")
 
 
 if __name__ == "__main__":
