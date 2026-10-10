@@ -173,6 +173,7 @@
       doc: 'Výminek Jesenice 3D', title: 'Výminek Jesenice', m: 'm', state: 'stav modelu 9. 10. 2026',
       canvas: '3D model domu a pozemku',
       hint: 'Joystickem jdeš dopředu, dozadu a do stran. Tažením prstu se rozhlížíš, šipkami vpravo měníš výšku.',
+      hintKeys: 'Klávesami W A S D (nebo šipkami) chodíš, E jde výš a Q níž. Tažením myši se rozhlížíš, kolečkem přibližuješ.',
       joy: 'Joystick pro pohyb: dopředu, dozadu, doleva, doprava', up: 'Nahoru', down: 'Dolů',
       loading: 'Načítám model…', failModel: 'Model se nepodařilo načíst. Zkus stránku obnovit.',
       failLib: 'Nepodařilo se načíst 3D knihovnu. Zkus stránku otevřít znovu s připojením k internetu.',
@@ -195,6 +196,7 @@
       doc: 'Домик в Есенице 3D', title: 'Домик в Есенице', m: 'м', state: 'модель от 9.10.2026',
       canvas: '3D-модель дома и участка',
       hint: 'Джойстиком можно двигаться вперёд, назад и в стороны. Проведите пальцем, чтобы осмотреться, стрелками справа меняется высота.',
+      hintKeys: 'Клавишами W A S D (или стрелками) можно ходить, E — выше, Q — ниже. Мышью можно осмотреться, колёсиком — приблизить.',
       joy: 'Джойстик для движения: вперёд, назад, влево, вправо', up: 'Вверх', down: 'Вниз',
       loading: 'Загрузка модели…', failModel: 'Не удалось загрузить модель. Попробуйте обновить страницу.',
       failLib: 'Не удалось загрузить 3D-библиотеку. Откройте страницу ещё раз при подключении к интернету.',
@@ -218,6 +220,8 @@
   try { var sl = localStorage.getItem('vyminek-jazyk'); if (TEXT[sl]) lang = sl; } catch (e) {}
   var ql = (location.search.match(/[?&]lang=(\w+)/) || [])[1];
   if (TEXT[ql]) lang = ql;
+  // On a computer (mouse, no touch screen) the line above the model describes the keyboard instead of the joystick.
+  if (window.matchMedia && !window.matchMedia('(pointer: coarse)').matches) document.getElementById('hint').setAttribute('data-i18n', 'hintKeys');
   var langHooks = [];
   function t(key) { return TEXT[lang][key]; }
   function applyLang() {
