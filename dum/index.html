@@ -129,6 +129,7 @@
   <div class="row tools">
     <button id="roof" type="button" aria-pressed="false" data-i18n="roof">Bez střechy</button>
     <button id="green" type="button" aria-pressed="false" data-i18n="green">Bez zeleně</button>
+    <button id="facade" type="button" aria-pressed="false" data-i18n="facade">Zvětralá fasáda</button>
     <label class="cut" for="cutH"><span data-i18n="cut">Řez ve výšce</span>
       <input id="cutH" type="range" min="0.3" max="4.5" step="0.05" value="4.5">
       <output id="cutV" for="cutH">vypnuto</output>
@@ -171,7 +172,7 @@
     </section>
     <section>
       <h3 data-i18n="hButtons">Tlačítka dole</h3>
-      <p data-i18n="hButtonsV">V řádku Exteriér přepínáš varianty domu (terasa, zimní zahrada, patro), v řádku Interiér varianty rozmístění nábytku. Pohledy tě přenesou do jednotlivých místností nebo nad pozemek. Bez střechy, Bez zeleně a Řez ve výšce odkryjí vnitřek domu.</p>
+      <p data-i18n="hButtonsV">V řádku Exteriér přepínáš varianty domu (terasa, zimní zahrada, patro), v řádku Interiér varianty rozmístění nábytku. Pohledy tě přenesou do jednotlivých místností nebo nad pozemek. Bez střechy, Bez zeleně a Řez ve výšce odkryjí vnitřek domu. Zvětralá fasáda ukáže modřínový obklad zešedlý po pár letech venku.</p>
     </section>
     <div class="help-foot">
       <p data-i18n="helpAgain">Návod kdykoli znovu otevřeš tlačítkem Ovládání nahoře.</p>
@@ -196,7 +197,7 @@
       loading: 'Načítám model…', failModel: 'Model se nepodařilo načíst. Zkus stránku obnovit.',
       failLib: 'Nepodařilo se načíst 3D knihovnu. Zkus stránku otevřít znovu s připojením k internetu.',
       views: 'Pohledy', version: 'Verze modelu', v1: 'Původní verze', v2: 'Nová verze',
-      roof: 'Bez střechy', green: 'Bez zeleně', cut: 'Řez ve výšce', cutOff: 'vypnuto',
+      roof: 'Bez střechy', green: 'Bez zeleně', facade: 'Zvětralá fasáda', cut: 'Řez ve výšce', cutOff: 'vypnuto',
       celek: 'Celý pozemek', dum: 'Dům od vstupu', zahrada: 'Dům ze zahrady', pudorys: 'Půdorys',
       obyvak: 'Obývací pokoj', kuchyn: 'Kuchyň', loznice: 'Ložnice', pracovna: 'Pracovna', koupelna: 'Koupelna', zadveri: 'Zádveří',
       variants: 'Varianty interiéru', variantsLabel: 'Interiér',
@@ -213,7 +214,7 @@
       hTouch: 'Telefon a tablet', hJoyK: 'Joystick vlevo', hJoyV: 'chůze dopředu, dozadu a do stran', hLiftV: 'výš a níž',
       hFingerK: 'Jeden prst', hFingerV: 'tažením se rozhlížíš', hPinchK: 'Dva prsty', hPinchV: 'přiblížení a posun (v přehledu shora)',
       hButtons: 'Tlačítka dole',
-      hButtonsV: 'V řádku Exteriér přepínáš varianty domu (terasa, zimní zahrada, patro), v řádku Interiér varianty rozmístění nábytku. Pohledy tě přenesou do jednotlivých místností nebo nad pozemek. Bez střechy, Bez zeleně a Řez ve výšce odkryjí vnitřek domu.'
+      hButtonsV: 'V řádku Exteriér přepínáš varianty domu (terasa, zimní zahrada, patro), v řádku Interiér varianty rozmístění nábytku. Pohledy tě přenesou do jednotlivých místností nebo nad pozemek. Bez střechy, Bez zeleně a Řez ve výšce odkryjí vnitřek domu. Zvětralá fasáda ukáže modřínový obklad zešedlý po pár letech venku.'
     },
     ru: {
       doc: 'Домик 3D', title: 'Домик', m: 'м', state: 'модель от 11.10.2026',
@@ -224,7 +225,7 @@
       loading: 'Загрузка модели…', failModel: 'Не удалось загрузить модель. Попробуйте обновить страницу.',
       failLib: 'Не удалось загрузить 3D-библиотеку. Откройте страницу ещё раз при подключении к интернету.',
       views: 'Виды', version: 'Версия модели', v1: 'Исходный вариант', v2: 'Новый вариант',
-      roof: 'Без крыши', green: 'Без зелени', cut: 'Разрез на высоте', cutOff: 'выкл.',
+      roof: 'Без крыши', green: 'Без зелени', facade: 'Посеревший фасад', cut: 'Разрез на высоте', cutOff: 'выкл.',
       celek: 'Весь участок', dum: 'Дом со стороны входа', zahrada: 'Дом со стороны сада', pudorys: 'План',
       obyvak: 'Гостиная', kuchyn: 'Кухня', loznice: 'Спальня', pracovna: 'Кабинет', koupelna: 'Ванная', zadveri: 'Прихожая',
       variants: 'Варианты интерьера', variantsLabel: 'Интерьер',
@@ -241,7 +242,7 @@
       hTouch: 'Телефон и планшет', hJoyK: 'Джойстик слева', hJoyV: 'движение вперёд, назад и в стороны', hLiftV: 'выше и ниже',
       hFingerK: 'Один палец', hFingerV: 'проведите, чтобы осмотреться', hPinchK: 'Два пальца', hPinchV: 'приближение и сдвиг (в обзоре сверху)',
       hButtons: 'Кнопки внизу',
-      hButtonsV: 'В строке «Экстерьер» переключаются варианты дома (терраса, зимний сад, второй этаж), в строке «Интерьер» — варианты расстановки мебели. Виды переносят в отдельные комнаты или над участок. «Без крыши», «Без зелени» и «Разрез на высоте» открывают дом изнутри.'
+      hButtonsV: 'В строке «Экстерьер» переключаются варианты дома (терраса, зимний сад, второй этаж), в строке «Интерьер» — варианты расстановки мебели. Виды переносят в отдельные комнаты или над участок. «Без крыши», «Без зелени» и «Разрез на высоте» открывают дом изнутри. «Посеревший фасад» показывает обшивку из лиственницы через несколько лет на улице.'
     }
   };
   var lang = 'cs';
@@ -520,7 +521,7 @@
   // Layers
   // The house, garden and fixed rooms load once (BASE). Furniture of the living room, kitchen and study
   // comes in separate files, one per interior variant, fetched the first time a variant is shown.
-  var FILES_VER = '5';
+  var FILES_VER = '6';
   var BASE = { file: 'model2.txt?v=' + FILES_VER, root: null, roof: [], green: [], clear: [], loading: false, base: true };
   var VARIANTS = ['0', '1', '2', '3', '4', '5'];
   var VARS = {};
@@ -598,6 +599,24 @@
     greenBtn.setAttribute('aria-pressed', off ? 'true' : 'false');
   }
   roofBtn.addEventListener('click', function () { setRoof(roofBtn.getAttribute('aria-pressed') !== 'true'); });
+  // Facade: untreated larch, new (warm) or weathered (grey). Both wood textures ship inside the base model on
+  // two tiny sample squares; switching points every facade material, in every loaded model, at the chosen one.
+  var FACADE_RE = /Fasádní prkna/, SAMPLE_RE = /Vzorek fasády – (nový|zvětralý)/;
+  var facadeMaps = {}, facadeMats = [], facadeOld = false;
+  try { facadeOld = localStorage.getItem('vyminek-fasada') === 'zvetraly'; } catch (e) {}
+  var facadeBtn = document.getElementById('facade');
+  facadeBtn.setAttribute('aria-pressed', facadeOld ? 'true' : 'false');
+  function applyFacade() {
+    var map = facadeMaps[facadeOld ? 'zvětralý' : 'nový'];
+    if (!map) return;
+    facadeMats.forEach(function (m) { if (m.map !== map) { m.map = map; m.needsUpdate = true; } });
+  }
+  facadeBtn.addEventListener('click', function () {
+    facadeOld = !facadeOld;
+    facadeBtn.setAttribute('aria-pressed', facadeOld ? 'true' : 'false');
+    try { localStorage.setItem('vyminek-fasada', facadeOld ? 'zvetraly' : 'novy'); } catch (e) {}
+    applyFacade();
+  });
   greenBtn.addEventListener('click', function () { setGreen(greenBtn.getAttribute('aria-pressed') !== 'true'); });
 
   // Horizontal cut
@@ -640,6 +659,9 @@
       if (o.isMesh) {
         var mats = Array.isArray(o.material) ? o.material : [o.material];
         var glass = false;
+        var sample = SAMPLE_RE.exec(name);
+        if (sample) { if (mats[0] && mats[0].map) facadeMaps[sample[1]] = mats[0].map; o.visible = false; }
+        else mats.forEach(function (m) { if (m && FACADE_RE.test(m.name || '') && facadeMats.indexOf(m) < 0) facadeMats.push(m); });
         mats.forEach(function (m) {
           if (!m) return;
           if (/Sklo/.test(m.name || '')) {
@@ -684,7 +706,7 @@
       try { window.createImageBitmap = undefined; } catch (e) {}
       try {
         new THREE.GLTFLoader().parse(buf.buffer, '', function (gltf) {
-          prepare(gltf, M_); M_.loading = false; applyLayers();
+          prepare(gltf, M_); M_.loading = false; applyLayers(); applyFacade();
           if (!busy() && statusKey !== 'failModel') statusEl.hidden = true;
         }, fail);
       } finally {
