@@ -203,7 +203,7 @@
       variants: 'Varianty interiéru', variantsLabel: 'Interiér',
       houses: 'Varianty exteriéru', housesLabel: 'Exteriér',
       ext0: 'Podle projektu', extA: 'Terasa se stříškou', extB: 'Zimní zahrada', extC: 'Patro napříč', extD: 'Patro a terasa',
-      terasa: 'Terasa', zimni: 'Zimní zahrada', patro: 'Patro', sauna: 'Sauna', altan: 'Altán',
+      terasa: 'Terasa', zimni: 'Zimní zahrada', patro: 'Patro', sauna: 'Sauna', altan: 'Altán', vjezd: 'Vjezd a parkování',
       var0: 'Aktuální návrh', var1: 'Varianta 1', var2: 'Varianta 2', var3: 'Varianta 3', var4: 'Varianta 4', var5: 'Varianta 5',
       helpBtn: 'Ovládání', helpTitle: 'Jak se v modelu pohybovat', helpClose: 'Rozumím',
       helpAgain: 'Návod kdykoli znovu otevřeš tlačítkem Ovládání nahoře.',
@@ -231,7 +231,7 @@
       variants: 'Варианты интерьера', variantsLabel: 'Интерьер',
       houses: 'Варианты экстерьера', housesLabel: 'Экстерьер',
       ext0: 'По проекту', extA: 'Терраса с навесом', extB: 'Зимний сад', extC: 'Этаж поперёк', extD: 'Этаж и терраса',
-      terasa: 'Терраса', zimni: 'Зимний сад', patro: 'Второй этаж', sauna: 'Сауна', altan: 'Беседка',
+      terasa: 'Терраса', zimni: 'Зимний сад', patro: 'Второй этаж', sauna: 'Сауна', altan: 'Беседка', vjezd: 'Въезд и парковка',
       var0: 'Текущий проект', var1: 'Вариант 1', var2: 'Вариант 2', var3: 'Вариант 3', var4: 'Вариант 4', var5: 'Вариант 5',
       helpBtn: 'Управление', helpTitle: 'Как перемещаться по модели', helpClose: 'Понятно',
       helpAgain: 'Подсказку можно открыть снова кнопкой «Управление» вверху.',
@@ -378,6 +378,7 @@
     { id: 'celek',    label: 'Celý pozemek', pos: M(4, -30, 24),       look: M(-3, 5, 0) },
     { id: 'dum',      label: 'Dům od vstupu', pos: M(-5, -9, 5.5),     look: M(6.4, 2.8, 1.2) },
     { id: 'zahrada',  label: 'Dům ze zahrady', pos: M(3, 17, 3.2),     look: M(6.4, 3.5, 1.2) },
+    { id: 'vjezd',    label: 'Vjezd a parkování', pos: M(-5.2, -1.7, 1.75), look: M(8.0, -2.3, 0.9), walk: true },
     { id: 'sauna',    label: 'Sauna', pos: M(4.9, 14.3, 1.6),          look: M(1.9, 17.3, 1.0), walk: true },
     { id: 'altan',    label: 'Altán', pos: M(5.4, 15.4, 1.6),          look: M(8.7, 17.7, 1.0), walk: true },
     { id: 'pudorys',  label: 'Půdorys', pos: M(6.41, 2.3, 15),         look: M(6.41, 2.77, 0), roofOff: true },
@@ -521,7 +522,7 @@
   // Layers
   // The house, garden and fixed rooms load once (BASE). Furniture of the living room, kitchen and study
   // comes in separate files, one per interior variant, fetched the first time a variant is shown.
-  var FILES_VER = '6';
+  var FILES_VER = '7';
   var BASE = { file: 'model2.txt?v=' + FILES_VER, root: null, roof: [], green: [], clear: [], loading: false, base: true };
   var VARIANTS = ['0', '1', '2', '3', '4', '5'];
   var VARS = {};
