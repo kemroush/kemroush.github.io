@@ -202,7 +202,7 @@
       obyvak: 'Obývací pokoj', kuchyn: 'Kuchyň', loznice: 'Ložnice', pracovna: 'Pracovna', koupelna: 'Koupelna', zadveri: 'Zádveří',
       variants: 'Varianty interiéru', variantsLabel: 'Interiér',
       houses: 'Varianty exteriéru', housesLabel: 'Exteriér',
-      ext0: 'Podle projektu', extA: 'Terasa se stříškou', extB: 'Zimní zahrada', extC: 'Patro napříč', extD: 'Patro a terasa',
+      ext0: 'Podle projektu', extA: 'Terasa se stříškou', extB: 'Zimní zahrada', extD: 'Patro a terasa',
       terasa: 'Terasa', zimni: 'Zimní zahrada', patro: 'Patro', sauna: 'Sauna', altan: 'Altán', vjezd: 'Vjezd a parkování',
       var0: 'Aktuální návrh', var1: 'Varianta 1', var2: 'Varianta 2', var3: 'Varianta 3', var4: 'Varianta 4', var5: 'Varianta 5',
       helpBtn: 'Ovládání', helpTitle: 'Jak se v modelu pohybovat', helpClose: 'Rozumím',
@@ -230,7 +230,7 @@
       obyvak: 'Гостиная', kuchyn: 'Кухня', loznice: 'Спальня', pracovna: 'Кабинет', koupelna: 'Ванная', zadveri: 'Прихожая',
       variants: 'Варианты интерьера', variantsLabel: 'Интерьер',
       houses: 'Варианты экстерьера', housesLabel: 'Экстерьер',
-      ext0: 'По проекту', extA: 'Терраса с навесом', extB: 'Зимний сад', extC: 'Этаж поперёк', extD: 'Этаж и терраса',
+      ext0: 'По проекту', extA: 'Терраса с навесом', extB: 'Зимний сад', extD: 'Этаж и терраса',
       terasa: 'Терраса', zimni: 'Зимний сад', patro: 'Второй этаж', sauna: 'Сауна', altan: 'Беседка', vjezd: 'Въезд и парковка',
       var0: 'Текущий проект', var1: 'Вариант 1', var2: 'Вариант 2', var3: 'Вариант 3', var4: 'Вариант 4', var5: 'Вариант 5',
       helpBtn: 'Управление', helpTitle: 'Как перемещаться по модели', helpClose: 'Понятно',
@@ -389,9 +389,8 @@
     { id: 'koupelna', label: 'Koupelna', pos: I(5.2, 2.0, 1.6),        look: I(6.2, 0.6, 0.9) , walk: true },
     { id: 'zadveri',  label: 'Zádveří', pos: I(4.5, 3.2, 1.6),         look: I(4.3, 0.2, 1.1) , walk: true },
     // Shown only with the exterior variants listed in "houses"; "by" overrides the camera for one variant.
-    { id: 'terasa',   label: 'Terasa', pos: M(9.4, 8.4, 1.6),          look: M(4.5, 6.8, 1.1), walk: true, houses: 'ABCD' },
-    { id: 'patro',    label: 'Patro', pos: M(4.5, 1.5, 5.0),           look: M(6.5, 5.5, 4.6), walk: true, houses: 'CD',
-      by: { C: { pos: M(1.5, 1.0, 5.0), look: M(3.0, 3.2, 4.6) } } }
+    { id: 'terasa',   label: 'Terasa', pos: M(9.4, 8.4, 1.6),          look: M(4.5, 6.8, 1.1), walk: true, houses: 'ABD' },
+    { id: 'patro',    label: 'Patro', pos: M(4.5, 1.5, 5.0),           look: M(6.5, 5.5, 4.6), walk: true, houses: 'D' }
   ];
 
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -533,7 +532,7 @@
   if (VARS[qv]) variant = qv;
   // Exterior variants: additions to the house (terrace, winter garden, upper floor). One file each, fetched
   // the first time a variant is shown. They combine freely with the interior variants.
-  var HOUSES = ['0', 'A', 'B', 'C', 'D'];
+  var HOUSES = ['0', 'A', 'B', 'D'];
   var EXT = {};
   HOUSES.slice(1).forEach(function (k) { EXT[k] = { file: 'ext' + k + '.txt?v=' + FILES_VER, root: null, roof: [], green: [], loading: false, ext: true }; });
   var house = '0';
@@ -623,7 +622,7 @@
   // Horizontal cut
   var cutPlane = new THREE.Plane(new THREE.Vector3(0, -1, 0), 4.5);
   var cutIn = document.getElementById('cutH'), cutOut = document.getElementById('cutV');
-  function cutTop() { return (house === 'C' || house === 'D') ? 7.5 : 4.5; }
+  function cutTop() { return house === 'D' ? 7.5 : 4.5; }
   function fitCut() {
     var off = parseFloat(cutIn.value) >= parseFloat(cutIn.max) - 0.05;
     cutIn.max = cutTop();
