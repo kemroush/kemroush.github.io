@@ -44,6 +44,9 @@
   .hint { position: absolute; left: 16px; right: 16px; top: 10px; color: var(--muted); font-size: 12.5px; pointer-events: none; text-wrap: balance; }
   .row { display: flex; gap: 8px; padding: 8px 16px; overflow-x: auto; scrollbar-width: none; border-top: 1px solid var(--line); }
   .row::-webkit-scrollbar { display: none; }
+  .row.variants { align-items: center; padding-top: 6px; padding-bottom: 6px; }
+  .row.variants button { min-height: 34px; padding: 6px 12px; }
+  .rowlabel { flex: 0 0 auto; color: var(--muted); font-size: 13px; margin-right: 2px; }
   .row.tools { align-items: center; flex-wrap: wrap; overflow: visible; padding-bottom: 12px; }
   button { font: inherit; font-size: 14px; font-weight: 500; color: var(--fg); background: transparent; border: 1px solid var(--line);
     border-radius: 6px; padding: 9px 13px; min-height: 40px; white-space: nowrap; cursor: pointer; flex: 0 0 auto; }
@@ -113,6 +116,10 @@
     <div id="status">Načítám model…</div>
   </div>
 
+  <nav class="row variants" id="variants" data-i18n-aria="variants" aria-label="Varianty interiéru">
+    <span class="rowlabel" data-i18n="variantsLabel">Interiér</span>
+  </nav>
+
   <nav class="row" id="views" data-i18n-aria="views" aria-label="Pohledy"></nav>
 
   <div class="row tools">
@@ -160,7 +167,7 @@
     </section>
     <section>
       <h3 data-i18n="hButtons">Tlačítka dole</h3>
-      <p data-i18n="hButtonsV">Pohledy tě přenesou do jednotlivých místností nebo nad pozemek. Bez střechy, Bez zeleně a Řez ve výšce odkryjí vnitřek domu.</p>
+      <p data-i18n="hButtonsV">V řádku Interiér přepínáš varianty rozmístění nábytku. Pohledy tě přenesou do jednotlivých místností nebo nad pozemek. Bez střechy, Bez zeleně a Řez ve výšce odkryjí vnitřek domu.</p>
     </section>
     <div class="help-foot">
       <p data-i18n="helpAgain">Návod kdykoli znovu otevřeš tlačítkem Ovládání nahoře.</p>
@@ -188,6 +195,8 @@
       roof: 'Bez střechy', green: 'Bez zeleně', cut: 'Řez ve výšce', cutOff: 'vypnuto',
       celek: 'Celý pozemek', dum: 'Dům od vstupu', zahrada: 'Dům ze zahrady', pudorys: 'Půdorys',
       obyvak: 'Obývací pokoj', kuchyn: 'Kuchyň', loznice: 'Ložnice', pracovna: 'Pracovna', koupelna: 'Koupelna', zadveri: 'Zádveří',
+      variants: 'Varianty interiéru', variantsLabel: 'Interiér',
+      var0: 'Aktuální návrh', var1: 'Varianta 1', var2: 'Varianta 2', var3: 'Varianta 3', var4: 'Varianta 4', var5: 'Varianta 5',
       helpBtn: 'Ovládání', helpTitle: 'Jak se v modelu pohybovat', helpClose: 'Rozumím',
       helpAgain: 'Návod kdykoli znovu otevřeš tlačítkem Ovládání nahoře.',
       hKeys: 'Klávesnice', hKeysMove: 'chůze dopředu, doleva, dozadu a doprava (stejně fungují šipky)', hKeysLift: 'E výš, Q níž',
@@ -197,7 +206,7 @@
       hTouch: 'Telefon a tablet', hJoyK: 'Joystick vlevo', hJoyV: 'chůze dopředu, dozadu a do stran', hLiftV: 'výš a níž',
       hFingerK: 'Jeden prst', hFingerV: 'tažením se rozhlížíš', hPinchK: 'Dva prsty', hPinchV: 'přiblížení a posun (v přehledu shora)',
       hButtons: 'Tlačítka dole',
-      hButtonsV: 'Pohledy tě přenesou do jednotlivých místností nebo nad pozemek. Bez střechy, Bez zeleně a Řez ve výšce odkryjí vnitřek domu.'
+      hButtonsV: 'V řádku Interiér přepínáš varianty rozmístění nábytku. Pohledy tě přenesou do jednotlivých místností nebo nad pozemek. Bez střechy, Bez zeleně a Řez ve výšce odkryjí vnitřek domu.'
     },
     ru: {
       doc: 'Домик 3D', title: 'Домик', m: 'м', state: 'модель от 9.10.2026',
@@ -211,6 +220,8 @@
       roof: 'Без крыши', green: 'Без зелени', cut: 'Разрез на высоте', cutOff: 'выкл.',
       celek: 'Весь участок', dum: 'Дом со стороны входа', zahrada: 'Дом со стороны сада', pudorys: 'План',
       obyvak: 'Гостиная', kuchyn: 'Кухня', loznice: 'Спальня', pracovna: 'Кабинет', koupelna: 'Ванная', zadveri: 'Прихожая',
+      variants: 'Варианты интерьера', variantsLabel: 'Интерьер',
+      var0: 'Текущий проект', var1: 'Вариант 1', var2: 'Вариант 2', var3: 'Вариант 3', var4: 'Вариант 4', var5: 'Вариант 5',
       helpBtn: 'Управление', helpTitle: 'Как перемещаться по модели', helpClose: 'Понятно',
       helpAgain: 'Подсказку можно открыть снова кнопкой «Управление» вверху.',
       hKeys: 'Клавиатура', hKeysMove: 'движение вперёд, влево, назад и вправо (стрелки работают так же)', hKeysLift: 'E — выше, Q — ниже',
@@ -220,7 +231,7 @@
       hTouch: 'Телефон и планшет', hJoyK: 'Джойстик слева', hJoyV: 'движение вперёд, назад и в стороны', hLiftV: 'выше и ниже',
       hFingerK: 'Один палец', hFingerV: 'проведите, чтобы осмотреться', hPinchK: 'Два пальца', hPinchV: 'приближение и сдвиг (в обзоре сверху)',
       hButtons: 'Кнопки внизу',
-      hButtonsV: 'Виды переносят в отдельные комнаты или над участок. «Без крыши», «Без зелени» и «Разрез на высоте» открывают дом изнутри.'
+      hButtonsV: 'В строке «Интерьер» переключаются варианты расстановки мебели. Виды переносят в отдельные комнаты или над участок. «Без крыши», «Без зелени» и «Разрез на высоте» открывают дом изнутри.'
     }
   };
   var lang = 'cs';
@@ -478,15 +489,37 @@
   controls.addEventListener('start', function () { markView(null); document.getElementById('hint').hidden = true; });
 
   // Layers
-  var MODELS = { v2: { file: 'model2.txt', root: null, roof: [], green: [], loading: false } };
-  var current = 'v2', roofOff = false, greenOff = false;
+  // The house, garden and fixed rooms load once (BASE). Furniture of the living room, kitchen and study
+  // comes in separate files, one per interior variant, fetched the first time a variant is shown.
+  var FILES_VER = '3';
+  var BASE = { file: 'model2.txt?v=' + FILES_VER, root: null, roof: [], green: [], loading: false, base: true };
+  var VARIANTS = ['0', '1', '2', '3', '4', '5'];
+  var VARS = {};
+  VARIANTS.forEach(function (k) { VARS[k] = { file: 'var' + k + '.txt?v=' + FILES_VER, root: null, roof: [], green: [], loading: false }; });
+  var variant = '0', roofOff = false, greenOff = false;
+  try { var sv = localStorage.getItem('vyminek-varianta'); if (VARS[sv]) variant = sv; } catch (e) {}
+  var qv = (location.search.match(/[?&]varianta=(\d)/) || [])[1];
+  if (VARS[qv]) variant = qv;
   function applyLayers() {
-    Object.keys(MODELS).forEach(function (k) {
-      var m = MODELS[k];
-      if (m.root) m.root.visible = (k === current);
-      m.roof.forEach(function (o) { o.visible = !roofOff; });
-      m.green.forEach(function (o) { o.visible = !greenOff; });
-    });
+    BASE.roof.forEach(function (o) { o.visible = !roofOff; });
+    BASE.green.forEach(function (o) { o.visible = !greenOff; });
+    VARIANTS.forEach(function (k) { if (VARS[k].root) VARS[k].root.visible = (k === variant); });
+  }
+  var variantsEl = document.getElementById('variants'), variantButtons = {};
+  VARIANTS.forEach(function (k) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.id = 'variant-' + k; b.textContent = t('var' + k);
+    b.setAttribute('aria-pressed', k === variant ? 'true' : 'false');
+    b.addEventListener('click', function () { setVariant(k); });
+    variantsEl.appendChild(b); variantButtons[k] = b;
+  });
+  langHooks.push(function () { VARIANTS.forEach(function (k) { variantButtons[k].textContent = t('var' + k); }); });
+  function setVariant(k) {
+    variant = k;
+    try { localStorage.setItem('vyminek-varianta', k); } catch (e) {}
+    VARIANTS.forEach(function (j) { variantButtons[j].setAttribute('aria-pressed', j === k ? 'true' : 'false'); });
+    applyLayers();
+    loadModel(VARS[k]);
   }
   var ROOF_RE = /ST1|podhled|Střešní|Oplechování|komín/;
   var GREEN_RE = /[Tt]úje|živý|Smrk|smrk|Borovice|strom|Jehličnan|Araukárie|Keře/;
@@ -529,8 +562,7 @@
   goTo(VIEWS[1], true);
   markView('dum');
 
-  function prepare(gltf, key) {
-    var M_ = MODELS[key];
+  function prepare(gltf, M_) {
     gltf.scene.traverse(function (o) {
       var name = (o.userData && o.userData.name) || o.name || '';
       if (o.isMesh) {
@@ -542,15 +574,13 @@
             glass = true; m.transparent = true; m.opacity = 0.28; m.depthWrite = false; m.roughness = 0.1; m.metalness = 0;
           } else if (m.transparent || m.opacity < 1) {
             m.transparent = true;                                  // sheer curtains keep their own opacity
-          } else if (key === 'v1') {
-            m.roughness = 0.88; m.metalness = /Nerez/.test(m.name || '') ? 0.6 : 0;
           }
           if (m.map) m.map.anisotropy = 4;
           m.side = THREE.DoubleSide;
         });
         o.castShadow = !glass; o.receiveShadow = true;
       }
-      if (name && o.parent === gltf.scene) {
+      if (M_.base && name && o.parent === gltf.scene) {
         if (ROOF_RE.test(name)) M_.roof.push(o);
         if (/^IfcGeographicElement/.test(name) && GREEN_RE.test(name)) M_.green.push(o);
       }
@@ -559,8 +589,8 @@
     scene.add(gltf.scene);
   }
   // Models ship as base64 text next to the page (binary .glb files are not served).
-  function loadModel(key) {
-    var M_ = MODELS[key];
+  function busy() { return BASE.loading || VARIANTS.some(function (k) { return VARS[k].loading; }); }
+  function loadModel(M_) {
     if (M_.root || M_.loading) return;
     M_.loading = true;
     setStatus('loading');
@@ -577,14 +607,16 @@
       try { window.createImageBitmap = undefined; } catch (e) {}
       try {
         new THREE.GLTFLoader().parse(buf.buffer, '', function (gltf) {
-          prepare(gltf, key); M_.loading = false; applyLayers(); statusEl.hidden = true;
+          prepare(gltf, M_); M_.loading = false; applyLayers();
+          if (!busy() && statusKey !== 'failModel') statusEl.hidden = true;
         }, fail);
       } finally {
         try { window.createImageBitmap = cib; } catch (e) {}
       }
     }).catch(fail);
   }
-  loadModel(current);
+  loadModel(BASE);
+  loadModel(VARS[variant]);
 
   var lastT = 0;
   function frame(now) {
