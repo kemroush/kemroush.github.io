@@ -164,5 +164,65 @@
     "old_price": "660 000 Kč",
     "found_at": "13.10.2026 15:48",
     "price_drop_at": "13.10.2026 15:48"
+  },
+  {
+    "id": "211268322",
+    "title": "BMW X1 18i 100kW LED KAMERA CZ",
+    "price": "699 000 Kč",
+    "details": "2024, 15 000 km , Benzín , Automatická  ·  Rokycany  ·  B&B Cars 4You s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x1/211268322",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFnIwlu7YIEPXxZ/0710.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "13.10.2026 22:33"
+  },
+  {
+    "id": "211268961",
+    "title": "Mercedes-Benz Třídy A 120kw, odpočet DPH",
+    "price": "605 000 Kč",
+    "details": "2020, 97 000 km , Benzín , Automatická  ·  Ostrava-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211268961",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFDbqUhBbvhIEQaal/2c3b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "13.10.2026 22:33"
+  },
+  {
+    "id": "211270941",
+    "title": "Mini Clubman 2023, 77.000 km, benzín, autom",
+    "price": "449 000 Kč",
+    "details": "2023, 77 000 km , Benzín , Automatická  ·  Brno-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/clubman/211270941",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFDbqUhBdDeIEX6oU/dbca.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "13.10.2026 22:33"
+  },
+  {
+    "id": "210874898",
+    "title": "Mercedes-Benz GLB 200d 4Matic Progressive, DPH",
+    "price": "699 990 Kč",
+    "details": "2022, 77 300 km , Nafta , Automatická  ·  Plzeň-město  ·  MPcars - prověřené vozy",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210874898",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRDbeZQBXnH3smcj/b86b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "709 990 Kč",
+    "found_at": "13.10.2026 22:33",
+    "price_drop_at": "13.10.2026 22:33"
+  },
+  {
+    "id": "211187214",
+    "title": "Mercedes-Benz Třídy A AMG line—Night—1majitel—záruka",
+    "price": "603 790 Kč",
+    "details": "2023, 55 726 km , Benzín , Automatická  ·  Brno-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211187214",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/nCR9NVflLCnfP0DIsH6K6rH/8d73.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "611 050 Kč",
+    "found_at": "13.10.2026 22:33",
+    "price_drop_at": "13.10.2026 22:33"
+  },
+  {
+    "id": "211146953",
+    "title": "Mercedes-Benz CLA 250 4MATIC AMG Packet",
+    "price": "720 000 Kč",
+    "details": "2022, 63 000 km , Benzín , Automatická  ·  Litoměřice  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211146953",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRDgcHsEIMH10aVY/0c92.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "745 000 Kč",
+    "found_at": "13.10.2026 22:33",
+    "price_drop_at": "13.10.2026 22:33"
   }
 ]
