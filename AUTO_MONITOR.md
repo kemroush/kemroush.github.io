@@ -46,6 +46,21 @@ URL parametry filtru jsou v `scrape_sauto()`:
 
 `scrape_bmwojete()` volá JSON API oficiální burzy ojetých vozů `nabidky.bmw.cz` — `POST /ojete/api/v1/ems/bmw-used-cs_CZ/search` s tělem `{"$offset":0,"$limit":500,"$sort":[{"$field":"transactionalPrice","$order":"asc"}]}`. **Pozor:** API ignoruje `$offset` (stránkování nefunguje) a ignoruje i field-level filtry — funguje jen `$sort`. Proto se stáhne jeden velký `$limit` seřazený podle ceny vzestupně a filtruje se klientsky; jakmile cena přeteče `max_price_czk`, cyklus končí. Cena `transactionalPrice` je **s DPH** (gross). Web míchá BMW i MINI, značka se pozná z prefixu `title` (per-brand `min_year`: BMW 2022, MINI 2020). Obrázek se skládá z podepsaného prefixu `.../vehicle/704/<hash>/<id>?<imagesLastChanged>` (hash je konstanta ze šablony webu). Odkaz na detail `.../ojete/hledat/detaily/<id>/`. ID prefix `bmwojete:`.
 
+## Dodávky (samostatný feed)
+
+Stejný běh `auto_monitor.py` sbírá i ojeté dodávky ze sauto.cz (kategorie užitková) a ukládá je **odděleně** od aut:
+
+```
+data/vans_index.json         – seznam dní (jako index.json)
+data/vans_YYYY-MM-DD.json    – nové + zlevněné dodávky daného dne
+data/vans_seen.json          – viděná ID
+data/vans_tracked.json       – id → {price, last_seen}
+```
+
+`scrape_sauto_vans()` volá interní JSON API `https://www.sauto.cz/api/v1/items/search?price_from=…&price_to=…&condition_seo=ojete&category_id=839&operating_lease=false&limit=100&offset=N` (839 = užitková), stránkuje po 100, dokud stránka není kratší. Filtry jsou v `VAN_CONFIG`: 40–150k Kč, rok 2008+, 1 000–300 000 km a whitelist `manufacturer_seo/model_seo` jen středních a velkých dodávek (Transit, Transporter, Proace, Vito, Master, Trafic, Vivaro, Boxer, Jumper, Ducato, Sprinter, Crafter…). Malé dodávky (Caddy, Kangoo, Berlingo, Praktik…) a pick-upy se přeskakují. `blocked_sellers` platí i tady. ID jsou čistě číselná (sauto ID). Když scraper vrátí 0 dodávek (nejspíš selhal request), feed dodávek se ten běh vůbec neukládá.
+
+Na `cars.html` se mezi feedy přepíná přepínačem **Auta / Dodávky**; přímý odkaz na dodávky je `cars.html#dodavky`.
+
 ## Hlídání zlevnění
 
 `data/prices.json` drží poslední známou cenu (číslo v Kč) každého auta podle `id`. Při každém běhu se u aut, která už jsou v `seen_cars.json`, porovná aktuální cena s uloženou; je-li nižší, auto se přidá do dnešního `cars_YYYY-MM-DD.json` s poli `old_price` (předchozí cena, formátovaný string) a `price_drop_at`. Pokud už auto v dnešním souboru je (nové dnes nebo zlevněné dřív během dne), jen se mu aktualizuje `price` a `old_price` zůstane ta původní. Auta viděná před zavedením `prices.json` se při prvním běhu jen zaznamenají (bez alertu). Zdražení se neoznamuje, jen se přepíše uložená cena. Auto, které vypadne z filtrů (např. zdraží nad `max_price_czk`), se nesleduje, dokud se znovu neobjeví.
@@ -55,7 +70,9 @@ URL parametry filtru jsou v `scrape_sauto()`:
 - Řádek značek: Vše / BMW / Mercedes / Mini / Besties / Zlevněné (jen auta s `old_price`)
 - Řádek paliva: Vše / Spalovací / Hybrid / Elektro
 - Řádek modelů: Vše / X1 / X2 / X3 / GLA / GLB / GLC (regex `\b<model>\b` proti `title`)
-- Cenový posuvník 300k–750k
+- Řádek prodejců: Všichni / Soukromí / Bazary (podle „Soukromý“ na konci `details`)
+- Cenový posuvník 300k–750k (u dodávek 40k–150k)
+- V režimu Dodávky: řádek značek VW / Ford / Toyota / Mercedes / Renault / Opel / Peugeot / Citroën / Fiat; řádky paliva a modelů se skryjí
 
 Filtry se průnikují (AND mezi řádky, OR uvnitř řádku).
 
