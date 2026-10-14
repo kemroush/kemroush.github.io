@@ -344,11 +344,13 @@
   {
     "id": "211167972",
     "title": "Ford Transit 2,2 TDCI  L3H2  9 MÍST",
-    "price": "149 000 Kč",
+    "price": "148 000 Kč",
     "details": "2010  ·  279 000 km  ·  Nafta  ·  Manuální  ·  Kladno  ·  AF cars",
     "link": "https://www.sauto.cz/uzitkova/detail/ford/transit/211167972",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRCO7AFGfNH3ldMD/e5b5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
-    "found_at": "14.10.2026 09:57"
+    "found_at": "14.10.2026 09:57",
+    "old_price": "149 000 Kč",
+    "price_drop_at": "14.10.2026 21:13"
   },
   {
     "id": "209753268",
@@ -650,11 +652,13 @@
   {
     "id": "209737659",
     "title": "Citroën Jumper 2,0 BlueHDi  L1H1 tažné",
-    "price": "129 001 Kč",
+    "price": "119 000 Kč",
     "details": "2017  ·  289 280 km  ·  Nafta  ·  Manuální  ·  Písek  ·  Auto Kápl",
     "link": "https://www.sauto.cz/uzitkova/detail/citroen/jumper/209737659",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qA_C/nCTUX1iX5DwDWzBdCSGd8Zu4/a0e1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
-    "found_at": "14.10.2026 09:57"
+    "found_at": "14.10.2026 09:57",
+    "old_price": "129 001 Kč",
+    "price_drop_at": "14.10.2026 21:13"
   },
   {
     "id": "209732364",
@@ -880,5 +884,23 @@
     "link": "https://www.sauto.cz/uzitkova/detail/ford/transit/211273080",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCR9NVflLwO7jpplIEs44q/b19e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "14.10.2026 13:25"
+  },
+  {
+    "id": "211278159",
+    "title": "Fiat Scudo 2012 294tis km",
+    "price": "121 000 Kč",
+    "details": "2012  ·  294 000 km  ·  Nafta  ·  Břeclav  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/fiat/scudo/211278159",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFDbqUhBhGtIE2pzs/fcdf.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "14.10.2026 21:13"
+  },
+  {
+    "id": "211277379",
+    "title": "Renault Trafic Trafic 2.0 dCi 115, tažné",
+    "price": "149 000 Kč",
+    "details": "2012  ·  208 014 km  ·  Nafta  ·  Manuální  ·  Pelhřimov  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/renault/trafic/211277379",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFDbqUhBg0TIE0w4s/6845.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "14.10.2026 21:13"
   }
 ]
