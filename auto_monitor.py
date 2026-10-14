@@ -8,6 +8,9 @@ Generuje:
   data/cars_YYYY-MM-DD.json  – inzeráty per den (nová + zlevněná auta)
   data/tracked.json          – id → {price, last_seen} (hlídání zlevnění, úklid, stav "v nabídce")
 
+Druhý, oddělený feed – dodávky (užitková na sauto.cz, VAN_CONFIG):
+  data/vans_index.json, data/vans_YYYY-MM-DD.json, data/vans_seen.json, data/vans_tracked.json
+
 Požadavky:
   pip install beautifulsoup4 lxml
 """
@@ -46,6 +49,37 @@ CONFIG = {
     "forget_days":   30,   # auto nevidané tak dlouho se zapomene (seen + tracked)
 }
 
+# Dodávky – samostatný feed se samostatnými soubory (nemíchá se s auty).
+VAN_CONFIG = {
+    "min_price_czk": 40_000,    # pod tím bývají vraky / na díly
+    "max_price_czk": 150_000,
+    "max_km":        300_000,
+    "min_km":        1_000,     # nesmyslné / nevyplněné tachometry
+    "min_year":      2008,
+    "max_pages":     20,        # × 100 inzerátů z API
+    # Jen střední a velké dodávky (manufacturer_seo/model_seo ze sauto API).
+    # Malé (Caddy, Kangoo, Berlingo, Praktik…) a pick-upy se přeskakují.
+    "models": {
+        "ford/transit", "ford/transit-custom", "ford/tourneo-custom",
+        "volkswagen/transporter", "volkswagen/multivan", "volkswagen/caravelle",
+        "volkswagen/crafter", "volkswagen/lt",
+        "mercedes-benz/vito", "mercedes-benz/viano", "mercedes-benz/sprinter",
+        "renault/master", "renault/trafic",
+        "opel/movano", "opel/vivaro",
+        "fiat/ducato", "fiat/scudo", "fiat/talento",
+        "peugeot/boxer", "peugeot/expert",
+        "citroen/jumper", "citroen/jumpy",
+        "toyota/proace",
+        "iveco/daily",
+        "nissan/primastar", "nissan/interstar", "nissan/nv300", "nissan/nv400",
+        "hyundai/h-1",
+    },
+    "seen_file":     os.path.join(DATA_DIR, "vans_seen.json"),
+    "index_file":    os.path.join(DATA_DIR, "vans_index.json"),
+    "tracked_file":  os.path.join(DATA_DIR, "vans_tracked.json"),
+    "file_prefix":   "vans_",
+}
+
 # ─────────────────────────────────────────────
 #  POMOCNÉ FUNKCE
 # ─────────────────────────────────────────────
@@ -58,29 +92,29 @@ def get_day_key() -> str:
     return now.strftime("%Y-%m-%d")
 
 
-def load_seen() -> set:
-    if os.path.exists(CONFIG["seen_file"]):
-        with open(CONFIG["seen_file"], "r", encoding="utf-8") as f:
+def load_seen(path: str = CONFIG["seen_file"]) -> set:
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as f:
             return set(json.load(f))
     return set()
 
 
-def save_seen(seen: set):
+def save_seen(seen: set, path: str = CONFIG["seen_file"]):
     os.makedirs(DATA_DIR, exist_ok=True)
-    with open(CONFIG["seen_file"], "w", encoding="utf-8") as f:
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(list(seen), f, ensure_ascii=False, indent=2)
 
 
-def load_tracked() -> dict:
-    if os.path.exists(CONFIG["tracked_file"]):
-        with open(CONFIG["tracked_file"], "r", encoding="utf-8") as f:
+def load_tracked(path: str = CONFIG["tracked_file"]) -> dict:
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
     return {}
 
 
-def save_tracked(tracked: dict):
+def save_tracked(tracked: dict, path: str = CONFIG["tracked_file"]):
     os.makedirs(DATA_DIR, exist_ok=True)
-    with open(CONFIG["tracked_file"], "w", encoding="utf-8") as f:
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(tracked, f, ensure_ascii=False, indent=1, sort_keys=True)
 
 
@@ -100,18 +134,18 @@ def forget_stale(seen: set, tracked: dict, day_key: str) -> int:
     return len(stale)
 
 
-def prune_old_days(day_key: str) -> int:
-    """Smaže cars_YYYY-MM-DD.json starší než keep_days a vyřadí je z index.json."""
+def prune_old_days(day_key: str, prefix: str = "cars_",
+                   index_file: str = CONFIG["index_file"]) -> int:
+    """Smaže <prefix>YYYY-MM-DD.json starší než keep_days a vyřadí je z indexu."""
     cutoff = (datetime.strptime(day_key, "%Y-%m-%d")
               - timedelta(days=CONFIG["keep_days"])).strftime("%Y-%m-%d")
     removed = 0
     for name in os.listdir(DATA_DIR):
-        m = re.fullmatch(r"cars_(\d{4}-\d{2}-\d{2})\.json", name)
+        m = re.fullmatch(re.escape(prefix) + r"(\d{4}-\d{2}-\d{2})\.json", name)
         if m and m.group(1) < cutoff:
             os.remove(os.path.join(DATA_DIR, name))
             removed += 1
 
-    index_file = CONFIG["index_file"]
     if os.path.exists(index_file):
         with open(index_file, "r", encoding="utf-8") as f:
             index = json.load(f)
@@ -143,9 +177,9 @@ def save_today_cars(path: str, cars: list):
         json.dump(cars, f, ensure_ascii=False, indent=2)
 
 
-def update_index(day_key: str, count: int, updated_at: str):
+def update_index(day_key: str, count: int, updated_at: str,
+                 index_file: str = CONFIG["index_file"]):
     """Udržuje data/index.json – seznam dní s metadaty pro JS navigaci."""
-    index_file = CONFIG["index_file"]
     if os.path.exists(index_file):
         with open(index_file, "r", encoding="utf-8") as f:
             index = json.load(f)
@@ -749,32 +783,128 @@ def scrape_drivalia() -> list[dict]:
 
 
 # ─────────────────────────────────────────────
+#  SCRAPING SAUTO.CZ – DODÁVKY (užitková, JSON API)
+# ─────────────────────────────────────────────
+
+SAUTO_IMG_SUFFIX = "?fl=exf|res,360,270,3|jpg,80,,1"
+
+
+def scrape_sauto_vans() -> list[dict]:
+    """Užitková vozidla ze sauto.cz přes interní JSON API (category_id=839).
+    Cenový filtr jde server-side, zbytek (model, rok, km) klientsky."""
+    vc = VAN_CONFIG
+    base = (
+        "https://www.sauto.cz/api/v1/items/search"
+        f"?price_from={vc['min_price_czk']}&price_to={vc['max_price_czk']}"
+        "&condition_seo=ojete&category_id=839&operating_lease=false&limit=100"
+    )
+    vans = []
+    try:
+        for page in range(vc["max_pages"]):
+            result = subprocess.run(
+                ["curl", "-sL",
+                 "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+                 "-H", "Accept: application/json, text/plain, */*",
+                 "-H", "Accept-Language: cs-CZ,cs;q=0.9",
+                 "-H", "Referer: https://www.sauto.cz/inzerce/uzitkova",
+                 f"{base}&offset={page * 100}"],
+                capture_output=True, text=True, timeout=30,
+            )
+            items = json.loads(result.stdout).get("results") or []
+
+            for v in items:
+                try:
+                    man = v.get("manufacturer_cb") or {}
+                    model = v.get("model_cb") or {}
+                    key = f"{man.get('seo_name', '')}/{model.get('seo_name', '')}"
+                    if key not in vc["models"]:
+                        continue
+
+                    price_num = int(v.get("price") or 0)
+                    if v.get("price_by_agreement") or price_num <= 0:
+                        continue
+                    if price_num < vc["min_price_czk"] or price_num > vc["max_price_czk"]:
+                        continue
+
+                    km = int(v.get("tachometer") or 0)
+                    if km < vc["min_km"] or km > vc["max_km"]:
+                        continue
+
+                    year_m = re.match(r"(\d{4})", v.get("manufacturing_date")
+                                      or v.get("in_operation_date") or "")
+                    year = int(year_m.group(1)) if year_m else 0
+                    if not year or year < vc["min_year"]:
+                        continue
+
+                    premise = (v.get("premise") or {}).get("name") or ""
+                    if any(b in premise.lower() for b in CONFIG["blocked_sellers"]):
+                        continue
+                    seller = premise.strip() or "Soukromý"
+
+                    # „Opel Vivaro, 1,9 CDTI“ → „Opel Vivaro 1,9 CDTI“ (jen první čárka)
+                    title = re.sub(r"\s*,\s*", " ", (v.get("name") or "").strip(), count=1).strip()
+                    if not title:
+                        title = f"{man.get('name', '')} {model.get('name', '')}".strip()
+
+                    fuel = ((v.get("fuel_cb") or {}).get("name") or "").strip()
+                    gearbox = ((v.get("gearbox_cb") or {}).get("name") or "").strip()
+                    loc = v.get("locality") or {}
+                    place = (loc.get("district") or loc.get("municipality") or "").strip()
+
+                    parts = [str(year), f"{km:,}".replace(",", " ") + " km"]
+                    parts += [x for x in (fuel, gearbox, place, seller) if x]
+                    details = "  ·  ".join(parts)
+
+                    vid = v.get("id")
+                    link = (f"https://www.sauto.cz/uzitkova/detail/"
+                            f"{man.get('seo_name', '')}/{model.get('seo_name', '')}/{vid}")
+
+                    image = ""
+                    imgs = v.get("images") or []
+                    if imgs and imgs[0].get("url"):
+                        image = imgs[0]["url"]
+                        if image.startswith("//"):
+                            image = "https:" + image
+                        image += SAUTO_IMG_SUFFIX
+
+                    vans.append({
+                        "id":      str(vid),
+                        "title":   title,
+                        "price":   _format_czk(price_num),
+                        "details": details,
+                        "link":    link,
+                        "image":   image,
+                    })
+                except Exception:
+                    continue
+
+            if len(items) < 100:
+                break
+    except Exception as e:
+        print(f"  [sauto.cz/uzitkova] Chyba: {e}")
+
+    print(f"  sauto.cz/uzitkova (dodávky): {len(vans)} inzerátů")
+    return vans
+
+
+# ─────────────────────────────────────────────
 #  HLAVNÍ LOGIKA
 # ─────────────────────────────────────────────
 
-def main():
-    now_str = datetime.now().strftime("%d.%m.%Y %H:%M")
-    day_key = get_day_key()
+def process_feed(label: str, all_cars: list, prefix: str, seen_file: str,
+                 tracked_file: str, index_file: str, day_key: str, now_str: str):
+    """Společná logika pro jeden feed (auta / dodávky): nové + zlevněné
+    inzeráty do denního souboru, index, seen, tracked a úklid."""
+    cars_file = os.path.join(DATA_DIR, f"{prefix}{day_key}.json")
 
-    cars_file = os.path.join(DATA_DIR, f"cars_{day_key}.json")
-
-    print(f"[{now_str}] Den: {day_key} | Spouštím kontrolu...")
-
-    seen       = load_seen()
+    seen       = load_seen(seen_file)
     today_cars = load_today_cars(cars_file)
-    all_cars = []
-    for brand in CONFIG["brands"]:
-        all_cars += scrape_sauto(brand)
-    all_cars += scrape_renocar()
-    all_cars += scrape_bmwojete()
-    all_cars += scrape_mercedesnasklade()
-    all_cars += scrape_drivalia()
 
     new_cars = [c for c in all_cars if c["id"] not in seen]
 
     # Zlevnění: už viděné auto s nižší cenou než při minulém běhu.
     # Auta viděná před zavedením tracked.json se při prvním běhu jen zaznamenají.
-    tracked = load_tracked()
+    tracked = load_tracked(tracked_file)
     drops = []
     for c in all_cars:
         price_num = parse_price(c["price"])
@@ -784,7 +914,7 @@ def main():
             drops.append(c)
         tracked[c["id"]] = {"price": price_num or old_num, "last_seen": day_key}
 
-    print(f"  Nových: {len(new_cars)} | Zlevněných: {len(drops)} | Dnes celkem: {len(today_cars)} | Nalezeno: {len(all_cars)}")
+    print(f"  [{label}] Nových: {len(new_cars)} | Zlevněných: {len(drops)} | Dnes celkem: {len(today_cars)} | Nalezeno: {len(all_cars)}")
 
     if new_cars or drops:
         for c in new_cars:
@@ -806,21 +936,51 @@ def main():
                 today_cars.append(c)
 
         save_today_cars(cars_file, today_cars)
-        update_index(day_key, len(today_cars), now_str)
+        update_index(day_key, len(today_cars), now_str, index_file)
 
         seen.update(c["id"] for c in new_cars)
 
-        print(f"✅ Uloženo → data/cars_{day_key}.json ({len(today_cars)} aut dnes)")
+        print(f"✅ [{label}] Uloženo → data/{prefix}{day_key}.json ({len(today_cars)} dnes)")
     else:
-        print("  Žádná nová ani zlevněná auta od posledního spuštění.")
+        print(f"  [{label}] Žádné nové ani zlevněné inzeráty od posledního spuštění.")
 
-    # Úklid: zapomenout dlouho nevidaná auta, smazat staré denní soubory.
+    # Úklid: zapomenout dlouho nevidané inzeráty, smazat staré denní soubory.
     forgotten = forget_stale(seen, tracked, day_key)
-    save_seen(seen)
-    save_tracked(tracked)
-    removed = prune_old_days(day_key)
+    save_seen(seen, seen_file)
+    save_tracked(tracked, tracked_file)
+    removed = prune_old_days(day_key, prefix, index_file)
     if forgotten or removed:
-        print(f"🧹 Zapomenuto aut: {forgotten} | Smazáno denních souborů: {removed}")
+        print(f"🧹 [{label}] Zapomenuto: {forgotten} | Smazáno denních souborů: {removed}")
+
+
+def main():
+    now_str = datetime.now().strftime("%d.%m.%Y %H:%M")
+    day_key = get_day_key()
+
+    print(f"[{now_str}] Den: {day_key} | Spouštím kontrolu...")
+
+    all_cars = []
+    for brand in CONFIG["brands"]:
+        all_cars += scrape_sauto(brand)
+    all_cars += scrape_renocar()
+    all_cars += scrape_bmwojete()
+    all_cars += scrape_mercedesnasklade()
+    all_cars += scrape_drivalia()
+
+    process_feed("auta", all_cars, "cars_", CONFIG["seen_file"],
+                 CONFIG["tracked_file"], CONFIG["index_file"], day_key, now_str)
+
+    # Dodávky – samostatně, aby případná chyba nerozbila feed aut.
+    try:
+        vans = scrape_sauto_vans()
+        # Prázdný výsledek = nejspíš selhal request; nic neukládej, ať se
+        # dodávky zítra neobjeví znovu jako „nové“ a neodečte se last_seen.
+        if vans:
+            process_feed("dodávky", vans, VAN_CONFIG["file_prefix"],
+                         VAN_CONFIG["seen_file"], VAN_CONFIG["tracked_file"],
+                         VAN_CONFIG["index_file"], day_key, now_str)
+    except Exception as e:
+        print(f"  [dodávky] Chyba: {e}")
 
 
 if __name__ == "__main__":

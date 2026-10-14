@@ -67,8 +67,35 @@
       font-size: 1.75rem;
       font-weight: 700;
       letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    /* ── Mode switch (Auta / Dodávky) ── */
+    .mode-switch {
+      display: inline-flex;
+      background: #161b22;
+      border-radius: 10px;
+      padding: 3px;
+      gap: 2px;
       margin-bottom: 1.5rem;
     }
+    .mode-btn {
+      border: none;
+      background: transparent;
+      color: #8b949e;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 0.4rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: color 0.2s, background 0.2s;
+    }
+    .mode-btn:hover { color: #e6edf3; }
+    .mode-btn.active { background: #f0883e; color: #0d1117; }
+
+    body.mode-vans .cars-only { display: none; }
+    body:not(.mode-vans) .vans-only { display: none; }
 
     /* ── Day navigation ── */
     .day-nav {
@@ -480,7 +507,12 @@
       </div>
     </div>
 
-    <h1>Ghetto car store</h1>
+    <h1 id="page-title">Ghetto car store</h1>
+
+    <div class="mode-switch" role="tablist">
+      <button class="mode-btn active" data-mode="cars" role="tab">Auta</button>
+      <button class="mode-btn" data-mode="vans" role="tab">Dodávky</button>
+    </div>
 
     <div class="day-nav">
       <button class="nav-btn" id="prev-btn" title="Starší den">
@@ -509,25 +541,43 @@
       </button>
     </div>
 
-    <p class="filter">BMW, Mercedes & Mini · Automat · 2020+ · do 100 000 km · 300k – 750k</p>
+    <p class="filter" id="filter-desc">BMW, Mercedes & Mini · Automat · 2020+ · do 100 000 km · 300k – 750k</p>
 
     <div class="filters-wrapper">
       <div class="filters-left">
-        <div class="brand-filter">
+        <div class="brand-filter cars-only">
           <button class="brand-btn active" data-brand="all">Vše</button>
           <button class="brand-btn" data-brand="bmw">BMW</button>
           <button class="brand-btn" data-brand="mercedes">Mercedes</button>
           <button class="brand-btn" data-brand="mini">Mini</button>
           <button class="brand-btn" data-brand="besties">Besties</button>
-          <button class="brand-btn" id="drops-btn">Zlevněné</button>
+          <button class="brand-btn drops-btn">Zlevněné</button>
+        </div>
+        <div class="brand-filter vans-only">
+          <button class="brand-btn active" data-brand="all">Vše</button>
+          <button class="brand-btn" data-brand="volkswagen">VW</button>
+          <button class="brand-btn" data-brand="ford">Ford</button>
+          <button class="brand-btn" data-brand="toyota">Toyota</button>
+          <button class="brand-btn" data-brand="mercedes">Mercedes</button>
+          <button class="brand-btn" data-brand="renault">Renault</button>
+          <button class="brand-btn" data-brand="opel">Opel</button>
+          <button class="brand-btn" data-brand="peugeot">Peugeot</button>
+          <button class="brand-btn" data-brand="citroen">Citroën</button>
+          <button class="brand-btn" data-brand="fiat">Fiat</button>
+          <button class="brand-btn drops-btn">Zlevněné</button>
         </div>
         <div class="brand-filter">
+          <button class="brand-btn active" data-seller="all">Všichni prodejci</button>
+          <button class="brand-btn" data-seller="private">Soukromí</button>
+          <button class="brand-btn" data-seller="dealer">Bazary</button>
+        </div>
+        <div class="brand-filter cars-only">
           <button class="brand-btn active" data-fuel="all">Vše</button>
           <button class="brand-btn" data-fuel="ice">Spalovací</button>
           <button class="brand-btn" data-fuel="hybrid">Hybrid</button>
           <button class="brand-btn" data-fuel="electric">Elektro</button>
         </div>
-        <div class="brand-filter">
+        <div class="brand-filter cars-only">
           <button class="brand-btn active" data-model="all">Vše</button>
           <button class="brand-btn" data-model="x1">X1</button>
           <button class="brand-btn" data-model="x2">X2</button>
@@ -578,12 +628,34 @@
     let activeBrands = new Set(); // empty = all
     let activeFuels  = new Set(); // empty = all
     let activeModels = new Set(); // empty = all
+    let activeSeller = 'all'; // all | private | dealer
     let dropsOnly    = false;
     let tracked      = null;  // id → {price, last_seen}; null = neznámo (nic neztlumovat)
     let goneCutoff   = '';
     let sortValue    = 'date-desc';
-    const PRICE_MIN  = 300000;
-    const PRICE_MAX  = 750000;
+
+    // Dva oddělené feedy: auta (cars_*) a dodávky (vans_*), každý se svými soubory.
+    const MODES = {
+      cars: {
+        title:   'Ghetto car store',
+        desc:    'BMW, Mercedes & Mini · Automat · 2020+ · do 100 000 km · 300k – 750k',
+        prefix:  'cars_',
+        index:   'data/index.json',
+        tracked: 'data/tracked.json',
+        priceMin: 300000, priceMax: 750000, priceStep: 5000,
+      },
+      vans: {
+        title:   'Ghetto van store',
+        desc:    'Dodávky (Transit, Transporter, Proace, Vito, Master…) · 2008+ · do 300 000 km · 40k – 150k',
+        prefix:  'vans_',
+        index:   'data/vans_index.json',
+        tracked: 'data/vans_tracked.json',
+        priceMin: 40000, priceMax: 150000, priceStep: 5000,
+      },
+    };
+    let mode         = location.hash === '#dodavky' ? 'vans' : 'cars';
+    let PRICE_MIN    = MODES[mode].priceMin;
+    let PRICE_MAX    = MODES[mode].priceMax;
     let priceMin     = PRICE_MIN;
     let priceMax     = PRICE_MAX;
 
@@ -623,7 +695,7 @@
       list.innerHTML = '<p class="state-msg">Načítám...</p>';
 
       try {
-        const res = await fetch(`data/cars_${days[i].key}.json`);
+        const res = await fetch(`data/${MODES[mode].prefix}${days[i].key}.json`);
         allCars   = await res.json();
         renderCars();
       } catch {
@@ -638,7 +710,7 @@
       if (!summaryCache) {
         try {
           const results = await Promise.all(days.map(d =>
-            fetch(`data/cars_${d.key}.json`).then(r => r.ok ? r.json() : []).catch(() => [])
+            fetch(`data/${MODES[mode].prefix}${d.key}.json`).then(r => r.ok ? r.json() : []).catch(() => [])
           ));
           const seen = new Set();
           summaryCache = results.flat().filter(c => {
@@ -722,12 +794,16 @@
         if (dropsOnly && !c.old_price) return false;
         if (summaryMode && isGone(c)) return false;
         if (activeBrands.size > 0) {
-          const t = c.title.toLowerCase();
-          const brandOk = (activeBrands.has('bmw')      && t.startsWith('bmw'))
-                       || (activeBrands.has('mercedes') && t.startsWith('mercedes'))
-                       || (activeBrands.has('mini')     && t.startsWith('mini'))
-                       || (activeBrands.has('besties')  && ((t.startsWith('bmw') && /\bx1\b/.test(t)) || (t.startsWith('mercedes') && /\bgla\b/.test(t))));
+          // bez diakritiky, ať „Citroën“ projde jako „citroen“
+          const t = c.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+          const brandOk = [...activeBrands].some(b => b === 'besties'
+            ? (t.startsWith('bmw') && /\bx1\b/.test(t)) || (t.startsWith('mercedes') && /\bgla\b/.test(t))
+            : t.startsWith(b));
           if (!brandOk) return false;
+        }
+        if (activeSeller !== 'all') {
+          const isPrivate = /·\s*Soukromý\s*$/.test(c.details);
+          if ((activeSeller === 'private') !== isPrivate) return false;
         }
         if (activeFuels.size > 0 && !activeFuels.has(fuelType(c))) return false;
         if (activeModels.size > 0) {
@@ -830,7 +906,7 @@
       renderCars();
     });
 
-    updatePriceSlider();
+    applyModeUi();
 
     document.querySelectorAll('[data-brand]').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -847,11 +923,66 @@
       });
     });
 
-    document.getElementById('drops-btn').addEventListener('click', e => {
-      dropsOnly = !dropsOnly;
-      e.target.classList.toggle('active', dropsOnly);
-      renderCars();
+    document.querySelectorAll('.drops-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        dropsOnly = !dropsOnly;
+        document.querySelectorAll('.drops-btn').forEach(b => b.classList.toggle('active', dropsOnly));
+        renderCars();
+      });
     });
+
+    document.querySelectorAll('[data-seller]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeSeller = btn.dataset.seller;
+        document.querySelectorAll('[data-seller]').forEach(b =>
+          b.classList.toggle('active', b.dataset.seller === activeSeller));
+        renderCars();
+      });
+    });
+
+    function applyModeUi() {
+      const cfg = MODES[mode];
+      document.body.classList.toggle('mode-vans', mode === 'vans');
+      document.getElementById('page-title').textContent = cfg.title;
+      document.getElementById('filter-desc').textContent = cfg.desc;
+      document.title = cfg.title;
+      document.querySelectorAll('[data-mode]').forEach(b =>
+        b.classList.toggle('active', b.dataset.mode === mode));
+
+      PRICE_MIN = cfg.priceMin; PRICE_MAX = cfg.priceMax;
+      priceMin = PRICE_MIN; priceMax = PRICE_MAX;
+      for (const id of ['price-min', 'price-max']) {
+        const el = document.getElementById(id);
+        el.min = PRICE_MIN; el.max = PRICE_MAX; el.step = cfg.priceStep;
+      }
+      document.getElementById('price-min').value = PRICE_MIN;
+      document.getElementById('price-max').value = PRICE_MAX;
+      updatePriceSlider();
+    }
+
+    async function setMode(m) {
+      if (m === mode) return;
+      mode = m;
+      history.replaceState(null, '', m === 'vans' ? '#dodavky' : location.pathname + location.search);
+
+      // Filtry jsou per-feed, při přepnutí začni načisto.
+      activeBrands.clear(); activeFuels.clear(); activeModels.clear();
+      activeSeller = 'all'; dropsOnly = false;
+      updateBrandButtons(); updateFuelButtons(); updateModelButtons();
+      document.querySelectorAll('[data-seller]').forEach(b =>
+        b.classList.toggle('active', b.dataset.seller === 'all'));
+      document.querySelectorAll('.drops-btn').forEach(b => b.classList.remove('active'));
+
+      summaryCache = null;
+      applyModeUi();
+      await init();
+    }
+
+    document.querySelectorAll('[data-mode]').forEach(btn => {
+      btn.addEventListener('click', () => setMode(btn.dataset.mode));
+    });
+    window.addEventListener('hashchange', () =>
+      setMode(location.hash === '#dodavky' ? 'vans' : 'cars'));
 
     document.querySelectorAll('[data-fuel]').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -892,7 +1023,8 @@
 
     async function loadTracked() {
       try {
-        const res = await fetch('data/tracked.json');
+        tracked = null;
+        const res = await fetch(MODES[mode].tracked);
         if (!res.ok) return;
         tracked = await res.json();
         const latest = Object.values(tracked).reduce((m, t) => t.last_seen > m ? t.last_seen : m, '');
@@ -906,14 +1038,23 @@
     }
 
     async function init() {
+      const list = document.getElementById('cars-list');
+      list.innerHTML = '<p class="state-msg">Načítám...</p>';
+      days = []; allCars = []; idx = 0;
+      document.getElementById('day-label').textContent = '–';
+      document.getElementById('day-meta').textContent = '';
+      document.getElementById('results-count').textContent = '';
       await loadTracked();
       try {
-        const res   = await fetch('data/index.json');
-        const index = await res.json();
-        days = index.days;
-        if (days.length) showDay(0);
-        else document.getElementById('cars-list').innerHTML =
-          '<p class="state-msg">Zatím žádné záznamy.</p>';
+        const res   = await fetch(MODES[mode].index);
+        const index = res.ok ? await res.json() : { days: [] };
+        days = index.days || [];
+        if (days.length) {
+          if (summaryMode) showSummary(); else showDay(0);
+        }
+        else list.innerHTML = mode === 'vans'
+          ? '<p class="state-msg">Zatím žádné dodávky – začnou se sbírat při příštím běhu bota.</p>'
+          : '<p class="state-msg">Zatím žádné záznamy.</p>';
       } catch {
         document.getElementById('cars-list').innerHTML =
           '<p class="state-msg">Nepodařilo se načíst index.</p>';
@@ -924,7 +1065,7 @@
 
     // === CLAUDE ANALYZE INTEGRATION ===
 
-    const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/kemroush/kemroush.github.io/main/data/cars_";
+    const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/kemroush/kemroush.github.io/main/data/";
     let currentPrompt = "";
 
     function openClaudeAnalysis() {
@@ -945,9 +1086,23 @@
         const yyyy = date.getFullYear();
         const mm = String(date.getMonth() + 1).padStart(2, "0");
         const dd = String(date.getDate()).padStart(2, "0");
-        urls.push(`${GITHUB_RAW_BASE}${yyyy}-${mm}-${dd}.json`);
+        urls.push(`${GITHUB_RAW_BASE}${MODES[mode].prefix}${yyyy}-${mm}-${dd}.json`);
       }
       const urlList = urls.join("\n");
+      if (mode === 'vans') {
+        currentPrompt = `Hledám ojetou dodávku na českém trhu do 150 000 Kč. Poslouží na odvoz věcí a materiálu z pozemku, kde stavím domek – nemusí být hezká, ale má být pojízdná, ne vrak, a bez drahých skrytých vad. Mám rád VW Transporter (T5), ale beru i Ford Transit, Toyota Proace / Peugeot Expert / Citroën Jumpy, Vito, Trafic, Vivaro, Master, Boxer, Jumper a podobné.
+
+Tady jsou data z mého agregátoru za posledních ${numDays} dní (každý soubor = jeden den, nové nebo zlevněné dodávky ze sauto.cz, kategorie užitková; agregátor už filtruje 40–150k Kč, rok 2008+, do 300 000 km a jen střední/velké dodávky):
+
+${urlList}
+
+Prosím:
+1. Načti všechny soubory (některé nemusí existovat — přeskoč je)
+2. Seřaď podle poměru cena / stav / riziko — zohledni spolehlivost motoru (dobře: VW 1.9 TDI PD, Ford 2.4 TDCi, PSA 2.0 HDi; pozor: VW 2.5 TDI R5, Renault 2.0 dCi s 6st. převodovkou, Delphi palivový systém u Fordů), DPF/AdBlue u novějších ročníků a nájezd
+3. Preferuj soukromé prodejce a auta z ČR; upozorni na podezřele levné kusy, dovozy a podivné inzeráty
+4. Ke každému autu uveď přímý odkaz z pole "link" a krátce, na co se při prohlídce zaměřit
+5. Na závěr doporuč 1-3 nejlepší kousky`;
+      } else {
       currentPrompt = `Jsem na českém trhu ojetých aut a hledám BMW, Mercedes nebo Mini s automatem, ročník 2020+, do 100 000 km, cena 300 000–750 000 Kč. Moje oblíbené modely jsou BMW X1 a Mercedes GLA — pokud se mezi nimi nějaké objeví, vypíchni je.
 
 Tady jsou data z mého agregátoru za posledních ${numDays} dní (každý soubor = jeden den, nová auta přidaná ten den). Agregátor sbírá inzeráty z pěti portálů:
@@ -966,6 +1121,7 @@ Prosím:
 4. Upozorni na přefouknuté dealerské ceny (renocar, mercedesnasklade, drivalia i nabidky.bmw.cz jsou všechno dealerské sklady — typicky dráž než bazar na sauto)
 5. Ke každému autu uveď přímý odkaz z pole "link" (může vést na kterýkoliv z pěti portálů) a v závorce zdroj (sauto / renocar / mercedesnasklade / drivalia / bmw.cz)
 6. Na závěr doporuč 1-3 nejlepší kousky týdne napříč všemi portály`;
+      }
 
       document.getElementById("claude-prompt-area").value = currentPrompt;
       document.getElementById("claude-copy-btn").textContent = "Kopírovat";
