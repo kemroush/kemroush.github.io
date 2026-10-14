@@ -7,5 +7,34 @@
     "link": "https://future.drivalia.cz/vozidla/624041-cs-bmw-rada-2/",
     "image": "https://future.drivalia.cz/wp-content/uploads/2026/10/drivalia-QJahZGIv-1024x576.jpg",
     "found_at": "14.10.2026 09:57"
+  },
+  {
+    "id": "211272951",
+    "title": "BMW Řada 2 1.5 218i",
+    "price": "519 000 Kč",
+    "details": "2023, 79 292 km , Benzín , Automatická  ·  Praha-západ  ·  Future Drivalia",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211272951",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCR9NVflLBaEbFPJxIEr9un/d0ba.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "14.10.2026 13:25"
+  },
+  {
+    "id": "211273920",
+    "title": "Mercedes-Benz CLA 180",
+    "price": "649 999 Kč",
+    "details": "2023, 59 742 km , Benzín , Automatická  ·  Hlavní město Praha  ·  UniCredit Leasing CZ, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211273920",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFCDh88nFRIEuUDy/11d8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "14.10.2026 13:25"
+  },
+  {
+    "id": "211042620",
+    "title": "BMW Řada 2 TOP STAV | SERVIS | TAŽNÉ",
+    "price": "508 000 Kč",
+    "details": "2023, 64 500 km , Nafta , Automatická  ·  Kladno  ·  Lemon Car Showroom",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211042620",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCR9NVflLwO7jpvAIEvYQg/503b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "510 000 Kč",
+    "found_at": "14.10.2026 13:25",
+    "price_drop_at": "14.10.2026 13:25"
   }
 ]
