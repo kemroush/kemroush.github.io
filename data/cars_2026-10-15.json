@@ -1,0 +1,51 @@
+[
+  {
+    "id": "211279875",
+    "title": "BMW Řada 3 2.0 320i AT 135 kW",
+    "price": "629 990 Kč",
+    "details": "2022, 87 344 km , Benzín , Automatická  ·  Nymburk  ·  Louda Auto+  ( 6 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/211279875",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFCpZ9wMpfIFNUmg/fe7b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "15.10.2026 13:02"
+  },
+  {
+    "id": "211282272",
+    "title": "Mercedes-Benz GLB 200d AUT 4MATIC",
+    "price": "679 000 Kč",
+    "details": "2021, 97 051 km , Nafta , Automatická  ·  Praha-západ  ·  Future Drivalia",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/211282272",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFB3JsTBHktIFVGX5/6155.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "15.10.2026 13:02"
+  },
+  {
+    "id": "bmwojete:286177",
+    "title": "MINI Aceman SE",
+    "price": "740 000 Kč",
+    "details": "2024  ·  9 489 km  ·  Elektřina  ·  BMW Czech Republic",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/286177/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/286177?2026-10-15T07:11:14+00:00",
+    "found_at": "15.10.2026 13:02"
+  },
+  {
+    "id": "208790889",
+    "title": "BMW Řada 2 218i 100 kW Active Tourer",
+    "price": "649 000 Kč",
+    "details": "2024, 5 500 km , Benzín , Automatická  ·  Hradec Králové  ·  OLFIN Car s.r.o. - Centrum ojetých vozů HK",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/208790889",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_od_B/nPSV1TXV2nBusAfBnTEafMHY/cc05.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "659 000 Kč",
+    "found_at": "15.10.2026 13:02",
+    "price_drop_at": "15.10.2026 13:02"
+  },
+  {
+    "id": "211249038",
+    "title": "Mini Cooper SE ACC KeyGo HuD Záruka 9/2028",
+    "price": "528 000 Kč",
+    "details": "2022, 26 000 km , Elektro , Automatická  ·  Karlovy Vary  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211249038",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFDzJCCpewIEUTq0/d80f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "548 000 Kč",
+    "found_at": "15.10.2026 13:02",
+    "price_drop_at": "15.10.2026 13:02"
+  }
+]
