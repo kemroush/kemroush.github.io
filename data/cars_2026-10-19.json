@@ -1,0 +1,82 @@
+[
+  {
+    "id": "211301274",
+    "title": "BMW Řada 3 xDrive20d-LCI-G21-Tažné-R17",
+    "price": "719 999 Kč",
+    "details": "2022, 84 700 km , Nafta , Automatická  ·  Svitavy  ·  Auta ProTo, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/211301274",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFDbqUhHLkIHoHwf/87ff.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "19.10.2026 14:32"
+  },
+  {
+    "id": "211300389",
+    "title": "Mercedes-Benz Třídy A 1,3 A 180 sedan,CZ původ,1.maj",
+    "price": "499 000 Kč",
+    "details": "2021, 97 712 km , Benzín , Automatická  ·  Hradec Králové  ·  Fa RENE, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211300389",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFMsuhBI1IHlasA/2274.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "19.10.2026 14:32"
+  },
+  {
+    "id": "211299744",
+    "title": "Mercedes-Benz Třídy C Mercedes Benz C220d 4matic",
+    "price": "639 000 Kč",
+    "details": "2021, 96 000 km , Nafta , Automatická  ·  Tábor  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/211299744",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCR9NVflLChOIjthIHhXIy/d8ef.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "19.10.2026 14:32"
+  },
+  {
+    "id": "211299651",
+    "title": "Mini Cooper S Mini Cooper SE elektro",
+    "price": "440 000 Kč",
+    "details": "2022, 86 000 km , Elektro , Automatická  ·  Ostrava-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/211299651",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFMsuhcmIHX1y1/bc68.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "19.10.2026 14:32"
+  },
+  {
+    "id": "211042620",
+    "title": "BMW Řada 2 218d ACTIVE TOURER | SERVIS",
+    "price": "499 000 Kč",
+    "details": "2023, 64 500 km , Nafta , Automatická  ·  Kladno  ·  Lemon Car Showroom",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211042620",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCR9NVflLwO7jpvAIEvYQg/503b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "500 000 Kč",
+    "found_at": "19.10.2026 14:32",
+    "price_drop_at": "19.10.2026 14:32"
+  },
+  {
+    "id": "210297659",
+    "title": "BMW Řada 2 218i Gran Coupé",
+    "price": "699 000 Kč",
+    "details": "2024, 35 000 km , Benzín , Automatická  ·  Hlavní město Praha  ·  BMW CarTec Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/210297659",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_C/kcHp2YdDtCJexHwIGefkIH/7343.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "709 000 Kč",
+    "found_at": "19.10.2026 14:32",
+    "price_drop_at": "19.10.2026 14:32"
+  },
+  {
+    "id": "209080941",
+    "title": "BMW Řada 2 218i Gran Coupé",
+    "price": "679 000 Kč",
+    "details": "2024, 34 000 km , Benzín , Automatická  ·  Hlavní město Praha  ·  BMW CarTec Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/209080941",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_B/kOzmiQlmfoKFXEBwuErWf20/82c4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "699 000 Kč",
+    "found_at": "19.10.2026 14:32",
+    "price_drop_at": "19.10.2026 14:32"
+  },
+  {
+    "id": "211153182",
+    "title": "Mercedes-Benz Třídy A A35AMG*225kw*4x4*Panorama*",
+    "price": "649 000 Kč",
+    "details": "2020, 82 000 km , Benzín , Automatická  ·  Praha-západ  ·  I LIKE CAR",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211153182",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyvOo9CnyH2ZbU2/0300.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "659 000 Kč",
+    "found_at": "19.10.2026 14:32",
+    "price_drop_at": "19.10.2026 14:32"
+  }
+]
