@@ -18,5 +18,36 @@
     "old_price": "99 500 Kč",
     "found_at": "19.10.2026 14:32",
     "price_drop_at": "19.10.2026 14:32"
+  },
+  {
+    "id": "211273185",
+    "title": "Mercedes-Benz Vito 313 CDI",
+    "price": "129 900 Kč",
+    "details": "2012  ·  249 900 km  ·  Nafta  ·  Manuální  ·  Jablonec nad Nisou  ·  Autocentrum TOZDA s.r.o.",
+    "link": "https://www.sauto.cz/uzitkova/detail/mercedes-benz/vito/211273185",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFCHDToMYWIE841n/d72a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "19.10.2026 22:26"
+  },
+  {
+    "id": "206969487",
+    "title": "Ford Transit 2,2 TDCI SWB 260 KLIMA TAŽNÉ",
+    "price": "129 000 Kč",
+    "details": "2012  ·  226 572 km  ·  Nafta  ·  Manuální  ·  Brno-město  ·  EUROCARS BRNO s.r.o.",
+    "link": "https://www.sauto.cz/uzitkova/detail/ford/transit/206969487",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_gW_z/BbGIF3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "134 000 Kč",
+    "found_at": "19.10.2026 22:26",
+    "price_drop_at": "19.10.2026 22:26"
+  },
+  {
+    "id": "206045355",
+    "title": "Ford Transit 2,2 TDCI 63KW SWB 260 KLIMA TZ",
+    "price": "125 000 Kč",
+    "details": "2011  ·  233 000 km  ·  Nafta  ·  Manuální  ·  Brno-město  ·  EUROCARS BRNO s.r.o.",
+    "link": "https://www.sauto.cz/uzitkova/detail/ford/transit/206045355",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_gV_0/zy0I2d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "135 000 Kč",
+    "found_at": "19.10.2026 22:26",
+    "price_drop_at": "19.10.2026 22:26"
   }
 ]
