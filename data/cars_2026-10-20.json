@@ -1,0 +1,62 @@
+[
+  {
+    "id": "211308258",
+    "title": "BMW X3 X3 xDrive20d",
+    "price": "699 000 Kč",
+    "details": "2022, 83 747 km , Nafta , Automatická  ·  Praha-východ  ·  RENOCAR, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x3/211308258",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nPQ64TBsMvD902hDOWIIONBq/4678.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "20.10.2026 13:07"
+  },
+  {
+    "id": "211308297",
+    "title": "Mercedes-Benz CLA CLA 200 AMG, Edition, ČR",
+    "price": "699 000 Kč",
+    "details": "2021, 29 291 km , Benzín , Automatická  ·  Brno-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211308297",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nPQ64TBsMvNXddDbGIIOqlq/7feb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "20.10.2026 13:07"
+  },
+  {
+    "id": "210800843",
+    "title": "Mini Cooper S",
+    "price": "749 000 Kč",
+    "details": "2022, 46 900 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Advantage Cars",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/210800843",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/nO2CysqjGrBgjUXBWUcHQlXM1/5658.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "20.10.2026 13:07"
+  },
+  {
+    "id": "210398645",
+    "title": "BMW Řada 3 320d xDrive/ACC/PANO/TAZNE",
+    "price": "715 000 Kč",
+    "details": "2023, 86 000 km , Nafta , Automatická  ·  Hlavní město Praha  ·  Jan Vašíček",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/210398645",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_B/nCTUX1iX5CoHumBWb8GqsCIi/5314.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "729 000 Kč",
+    "found_at": "20.10.2026 13:07",
+    "price_drop_at": "20.10.2026 13:07"
+  },
+  {
+    "id": "211219797",
+    "title": "Mini Clubman 2.0 225 KW JCW ALL4 ČR 1 maj",
+    "price": "629 999 Kč",
+    "details": "2021, 92 957 km , Benzín , Automatická  ·  Příbram  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/clubman/211219797",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFW9k4URAH9jgko/25f5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "639 999 Kč",
+    "found_at": "20.10.2026 13:07",
+    "price_drop_at": "20.10.2026 13:07"
+  },
+  {
+    "id": "211299651",
+    "title": "Mini Cooper S Mini Cooper SE elektro",
+    "price": "428 000 Kč",
+    "details": "2022, 86 000 km , Elektro , Automatická  ·  Ostrava-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/211299651",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFMsuhcmIHX1y1/bc68.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "440 000 Kč",
+    "found_at": "20.10.2026 13:07",
+    "price_drop_at": "20.10.2026 13:07"
+  }
+]
