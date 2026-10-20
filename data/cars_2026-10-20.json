@@ -58,5 +58,154 @@
     "old_price": "440 000 Kč",
     "found_at": "20.10.2026 13:07",
     "price_drop_at": "20.10.2026 13:07"
+  },
+  {
+    "id": "211313013",
+    "title": "BMW Řada 2 220d - tažné, záruka",
+    "price": "715 000 Kč",
+    "details": "2025, 9 300 km , Nafta , Automatická  ·  České Budějovice  ·  BMW ACR auto",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211313013",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPw320bnC5lmsPDdQIIXVQP/9581.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "20.10.2026 21:01"
+  },
+  {
+    "id": "211309545",
+    "title": "Mercedes-Benz Třídy A 200 Progressive Line",
+    "price": "649 900 Kč",
+    "details": "2025, 10 260 km , Benzín , Automatická  ·  Karlovy Vary  ·  S. & W. Automobily, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211309545",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nPQ64TBsMvCorp5DPaIIRf0i/31de.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "20.10.2026 21:01"
+  },
+  {
+    "id": "211303761",
+    "title": "Mercedes-Benz Třídy C C180 Avantgarde Advance",
+    "price": "749 595 Kč",
+    "details": "2025, 5 600 km , Benzín , Automatická  ·  Hlavní město Praha  ·  CAR MOTORS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/211303761",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPw320bnC5C2PLRC5MIIYd6o/37ed.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "20.10.2026 21:01"
+  },
+  {
+    "id": "renocar:43556587",
+    "title": "BMW X3 xDrive20d",
+    "price": "699 000 Kč",
+    "details": "SUV/SAV  ·  2022  ·  83 747 km  ·  1995 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-x3-xdrive20d-43556587",
+    "image": "https://www.renocar.cz/helios_resources/images/43556587_00_43560290.jpg",
+    "found_at": "20.10.2026 21:01"
+  },
+  {
+    "id": "bmwojete:287180",
+    "title": "BMW 220d",
+    "price": "715 000 Kč",
+    "details": "2025  ·  9 300 km  ·  Diesel  ·  ACR auto, a.s.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/287180/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/287180?2026-10-20T14:09:44+00:00",
+    "found_at": "20.10.2026 21:01"
+  },
+  {
+    "id": "mns:25522",
+    "title": "Mercedes-Benz Třída A 200 Progressive",
+    "price": "688 999 Kč",
+    "details": "Třída A 200 Progressive  ·  2025  ·  8 000 km  ·  Benzín  ·  AutoWallis České Budějovice a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/25522",
+    "image": "https://www.mercedesnasklade.cz/build/images/placeholder_mb.891db290.jpg",
+    "found_at": "20.10.2026 21:01"
+  },
+  {
+    "id": "mns:25523",
+    "title": "Mercedes-Benz Třída A 200d AMG",
+    "price": "739 000 Kč",
+    "details": "Třída A 200d AMG  ·  2025  ·  12 000 km  ·  Nafta  ·  AutoWallis České Budějovice a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/25523",
+    "image": "https://www.mercedesnasklade.cz/build/images/placeholder_mb.891db290.jpg",
+    "found_at": "20.10.2026 21:01"
+  },
+  {
+    "id": "mns:25516",
+    "title": "Mercedes-Benz Třída A 200 Progressive Line",
+    "price": "649 900 Kč",
+    "details": "Třída A 200 Progressive Line  ·  2025  ·  10 260 km  ·  Benzín  ·  S. & W. Automobily s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/25516",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/ed309022-4c6d-4530-8af3-888505556211.png",
+    "found_at": "20.10.2026 21:01"
+  },
+  {
+    "id": "211224510",
+    "title": "BMW Řada 3 320d xDrive M-Sport,ČR,1.Maj.",
+    "price": "699 000 Kč",
+    "details": "2022, 69 357 km , Nafta , Automatická  ·  Olomouc  ·  ZdeKupAuto Olomouc",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/211224510",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLCsdQ6MPoIAEqU2/b24d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "725 000 Kč",
+    "found_at": "20.10.2026 21:01",
+    "price_drop_at": "20.10.2026 21:01"
+  },
+  {
+    "id": "210790442",
+    "title": "BMW Řada 2 řady 2 | 223d xDrive",
+    "price": "714 000 Kč",
+    "details": "2024, 42 324 km , Nafta , Automatická  ·  Hlavní město Praha  ·  BMW | MINI invelt Praha - ojeté vozy",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/210790442",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kQMlcCt5zmUKhkfTdHQd9rD/0cd5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "744 000 Kč",
+    "found_at": "20.10.2026 21:01",
+    "price_drop_at": "20.10.2026 21:01"
+  },
+  {
+    "id": "210676817",
+    "title": "BMW Řada 1 118i",
+    "price": "599 000 Kč",
+    "details": "2023, 32 992 km , Benzín , Automatická  ·  Plzeň-město  ·  BMW | MINI invelt Praha - ojeté vozy",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/210676817",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_C/kQMlcCt5zmD87zEK6THCVgC6/b1a3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "629 000 Kč",
+    "found_at": "20.10.2026 21:01",
+    "price_drop_at": "20.10.2026 21:01"
+  },
+  {
+    "id": "210820166",
+    "title": "BMW Řada 2 218i Active Tourer Luxury Line",
+    "price": "569 900 Kč",
+    "details": "2024, 48 722 km , Benzín , Automatická  ·  Pardubice  ·  Trendcars",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/210820166",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/nOa03Se6MmBV0HpDEMHSW1bG/242e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "575 000 Kč",
+    "found_at": "20.10.2026 21:01",
+    "price_drop_at": "20.10.2026 21:01"
+  },
+  {
+    "id": "211143717",
+    "title": "Mercedes-Benz CLA 200d LED A/T NAVI KAMERA",
+    "price": "488 000 Kč",
+    "details": "2022, 79 138 km , Nafta , Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211143717",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyDrQHrVqH1bRsX/cd69.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "498 000 Kč",
+    "found_at": "20.10.2026 21:01",
+    "price_drop_at": "20.10.2026 21:01"
+  },
+  {
+    "id": "bmwojete:227259",
+    "title": "MINI Cooper C",
+    "price": "569 000 Kč",
+    "details": "2024  ·  11 478 km  ·  Benzín  ·  Invelt s.r.o., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/227259/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/227259?2025-11-14T07:40:07+00:00",
+    "old_price": "599 000 Kč",
+    "found_at": "20.10.2026 21:01",
+    "price_drop_at": "20.10.2026 21:01"
+  },
+  {
+    "id": "bmwojete:200876",
+    "title": "BMW 118i Hatch",
+    "price": "599 000 Kč",
+    "details": "2023  ·  32 992 km  ·  Benzín  ·  Invelt s.r.o., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/200876/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/200876?2025-10-09T07:02:36+00:00",
+    "old_price": "629 000 Kč",
+    "found_at": "20.10.2026 21:01",
+    "price_drop_at": "20.10.2026 21:01"
   }
 ]
