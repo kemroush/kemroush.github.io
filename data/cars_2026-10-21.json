@@ -54,5 +54,103 @@
     "old_price": "599 000 Kč",
     "found_at": "21.10.2026 13:23",
     "price_drop_at": "21.10.2026 13:23"
+  },
+  {
+    "id": "211184619",
+    "title": "BMW Řada 2 218d Active Tourer",
+    "price": "735 000 Kč",
+    "details": "2025, 0 km , Nafta , Automatická  ·  Olomouc  ·  BMW CarTec Olomouc, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211184619",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/nCR9NVflLChOIjEfaH6ciws/df60.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "21.10.2026 21:09"
+  },
+  {
+    "id": "211321671",
+    "title": "Mercedes-Benz EQA 250 EDITION 1*SoH 97%*TAŽNÉ*ČR",
+    "price": "748 000 Kč",
+    "details": "2021, 74 911 km , Elektro , Automatická  ·  Znojmo  ·  STOP CARS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/eqa/211321671",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEeDb3WcBsZII9kF5/067b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "21.10.2026 21:09"
+  },
+  {
+    "id": "211320474",
+    "title": "Mercedes-Benz Třídy C 2,0 220d,147kW,ČR,NAVI,360,",
+    "price": "690 000 Kč",
+    "details": "2022, 60 000 km , Nafta , Automatická  ·  Zlín  ·  AUTOCAR ANVY, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/211320474",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEeD8XKqUTII6i8l/8cdf.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "21.10.2026 21:09"
+  },
+  {
+    "id": "211318080",
+    "title": "Mercedes-Benz Vito Vito Tourer 114CDI",
+    "price": "739 000 Kč",
+    "details": "2023, 67 000 km , Nafta , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/vito/211318080",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/ncz4PZ5CZBEoJ9USII2icY/d7e3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "21.10.2026 21:09"
+  },
+  {
+    "id": "211318398",
+    "title": "Mercedes-Benz GLB PROGRESSIVE 200d 4MATIC",
+    "price": "749 000 Kč",
+    "details": "2023, 68 931 km , Nafta , Automatická  ·  Plzeň-město  ·  Mercedes-Benz | VSP Auto, s.r.o. - autorizovaný opravce a prodejce",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/211318398",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nPQ64TBsMvDLsWDGdHII10Sq/61d0.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "21.10.2026 21:09"
+  },
+  {
+    "id": "211197441",
+    "title": "Mercedes-Benz Třídy E 2,0 ALLTERRAIN,143 kw,DPH, CZ",
+    "price": "740 000 Kč",
+    "details": "2021, 85 474 km , Nafta , Automatická  ·  Příbram  ·  Autopark Milín",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-e/211197441",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLCnfP0KG8H7GZkR/ab23.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "21.10.2026 21:09"
+  },
+  {
+    "id": "207920878",
+    "title": "BMW Řada 2 218i Active Tourer",
+    "price": "599 999 Kč",
+    "details": "2023, 26 650 km , Benzín , Automatická  ·  Praha-východ  ·  RENOCAR, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/207920878",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_A/kcHp2YdDtBM3KVchF8BwVX/ee5c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "649 999 Kč",
+    "found_at": "21.10.2026 21:09",
+    "price_drop_at": "21.10.2026 21:09"
+  },
+  {
+    "id": "208412603",
+    "title": "Mercedes-Benz Třídy E 2,0 E  300de 4Matic Avantgarde",
+    "price": "699 000 Kč",
+    "details": "2021, 88 879 km , Hybridní , Automatická  ·  Uherské Hradiště  ·  AutoAWS",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-e/208412603",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oc_A/nPvSisOTaMtTNgCrKEAHXTz/068f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "749 000 Kč",
+    "found_at": "21.10.2026 21:09",
+    "price_drop_at": "21.10.2026 21:09"
+  },
+  {
+    "id": "210906648",
+    "title": "Mini Cooper S Paket XL, Masáž, H/K, Panorama",
+    "price": "699 000 Kč",
+    "details": "2024, 19 020 km , Benzín , Automatická  ·  Hlavní město Praha  ·  MACH Motors Praha",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/210906648",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/nPYADvcUkmCbUhRBaqHcshIk/1c5b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "719 000 Kč",
+    "found_at": "21.10.2026 21:09",
+    "price_drop_at": "21.10.2026 21:09"
+  },
+  {
+    "id": "renocar:40867402",
+    "title": "BMW 218i Active Tourer",
+    "price": "599 999 Kč",
+    "details": "MPV/Tourer  ·  2023  ·  26 650 km  ·  1499 ccm  ·  Renocar",
+    "link": "https://www.renocar.cz/vuz/bmw-218i-active-tourer-40867402",
+    "image": "https://www.renocar.cz/helios_resources/images/40867402_00_40927781.jpg",
+    "old_price": "649 999 Kč",
+    "found_at": "21.10.2026 21:09",
+    "price_drop_at": "21.10.2026 21:09"
   }
 ]
