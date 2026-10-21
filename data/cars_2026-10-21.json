@@ -1,0 +1,58 @@
+[
+  {
+    "id": "211317702",
+    "title": "Mercedes-Benz CLA CLA 200 Shooting Brake NAVI",
+    "price": "719 990 Kč",
+    "details": "2025, 12 351 km , Benzín , Automatická  ·  Pardubice  ·  Auto Vašíček",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211317702",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nPQ64TBsMv4DeCJCSII1FC3/88eb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "21.10.2026 13:23"
+  },
+  {
+    "id": "211317342",
+    "title": "Mercedes-Benz Třídy A Progressive",
+    "price": "729 000 Kč",
+    "details": "2025, 19 991 km , Benzín , Automatická  ·  Praha-východ  ·  Hoffmann & Žižák",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211317342",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nPQ64TBsMvBXFDPGB0IIzqms/9642.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "21.10.2026 13:23"
+  },
+  {
+    "id": "bmwojete:287313",
+    "title": "MINI Cooper SE",
+    "price": "589 000 Kč",
+    "details": "2023  ·  23 095 km  ·  Elektřina  ·  CarTec Praha s.r.o.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/287313/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/287313?2026-10-21T09:26:14+00:00",
+    "found_at": "21.10.2026 13:23"
+  },
+  {
+    "id": "mns:25538",
+    "title": "Mercedes-Benz GLB 200d 4MATIC",
+    "price": "749 000 Kč",
+    "details": "GLB 200d 4MATIC  ·  2023  ·  68 931 km  ·  Nafta  ·  VSP Auto, s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/25538",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/06f09cdd-29a8-4e7e-b864-c855364a0283.png",
+    "found_at": "21.10.2026 13:23"
+  },
+  {
+    "id": "mns:25536",
+    "title": "Mercedes-Benz Třída A Progressive",
+    "price": "729 000 Kč",
+    "details": "Třída A Progressive  ·  2025  ·  19 991 km  ·  Benzín  ·  Hoffmann a Žižák spol. s r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/25536",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/b5495a1a-2d23-4f19-937a-6a57fb4e0002.jpeg",
+    "found_at": "21.10.2026 13:23"
+  },
+  {
+    "id": "210761447",
+    "title": "Mini Cooper C",
+    "price": "569 000 Kč",
+    "details": "2025, 12 000 km , Benzín , Automatická  ·  Plzeň-město  ·  BMW invelt Plzeň - ojeté vozy",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/210761447",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/nO2CysqjGrCDmo6xMNHMbUfb/934f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "599 000 Kč",
+    "found_at": "21.10.2026 13:23",
+    "price_drop_at": "21.10.2026 13:23"
+  }
+]
