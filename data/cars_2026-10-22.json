@@ -1,0 +1,77 @@
+[
+  {
+    "id": "211324128",
+    "title": "Mini Countryman Countryman Cooper D ALL4",
+    "price": "499 000 Kč",
+    "details": "2022, 90 871 km , Nafta , Automatická  ·  Praha-východ  ·  RENOCAR, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/211324128",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUBiA4qUPIJXqh1/32ae.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "22.10.2026 13:23"
+  },
+  {
+    "id": "211230192",
+    "title": "BMW X2 2.0d 140kW XDrive M-Paket",
+    "price": "714 900 Kč",
+    "details": "2023, 80 774 km , Nafta , Automatická  ·  Kladno  ·  AUTOBOND PLUS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x2/211230192",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLCsdQ6OtEIAjOHb/b168.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "724 900 Kč",
+    "found_at": "22.10.2026 13:23",
+    "price_drop_at": "22.10.2026 13:23"
+  },
+  {
+    "id": "210802244",
+    "title": "Mercedes-Benz CLA d Shooting Brake",
+    "price": "669 000 Kč",
+    "details": "2022, 67 809 km , Nafta , Automatická  ·  Praha-východ  ·  Hoffmann & Žižák",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210802244",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/nO573v8MsN3e2PCzLHa9xka/c9d4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "679 000 Kč",
+    "found_at": "22.10.2026 13:23",
+    "price_drop_at": "22.10.2026 13:23"
+  },
+  {
+    "id": "bmwojete:205438",
+    "title": "BMW 218i Active Tourer",
+    "price": "599 999 Kč",
+    "details": "2022  ·  26 772 km  ·  Benzín  ·  Renocar a.s., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/205438/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/205438?2025-07-14T12:47:11+00:00",
+    "old_price": "649 999 Kč",
+    "found_at": "22.10.2026 13:23",
+    "price_drop_at": "22.10.2026 13:23"
+  },
+  {
+    "id": "bmwojete:149847",
+    "title": "BMW 223d xDrive Active Tourer",
+    "price": "714 000 Kč",
+    "details": "2023  ·  12 129 km  ·  Diesel  ·  Invelt s.r.o., Plzen",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/149847/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/149847?2024-08-06T07:53:45+00:00",
+    "old_price": "744 000 Kč",
+    "found_at": "22.10.2026 13:23",
+    "price_drop_at": "22.10.2026 13:23"
+  },
+  {
+    "id": "mns:24589",
+    "title": "Mercedes-Benz CLA d Shooting Brake",
+    "price": "669 000 Kč",
+    "details": "CLA d Shooting Brake  ·  2022  ·  67 809 km  ·  Nafta  ·  Hoffmann a Žižák spol. s r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24589",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/6c031a77-b44d-4216-9904-46b3336081ae.jpeg",
+    "old_price": "679 000 Kč",
+    "found_at": "22.10.2026 13:23",
+    "price_drop_at": "22.10.2026 13:23"
+  },
+  {
+    "id": "drivalia:591515",
+    "title": "BMW Řada 3",
+    "price": "539 000 Kč",
+    "details": "320e AUT Luxury Line  ·  sedan  ·  2022  ·  96 945 km  ·  Plug-in Hybrid benzín  ·  Future Drivalia",
+    "link": "https://future.drivalia.cz/vozidla/591515-cs-bmw-rada-3/",
+    "image": "https://future.drivalia.cz/wp-content/uploads/2026/10/drivalia-LY6hXkxi-1024x576.jpg",
+    "old_price": "549 000 Kč",
+    "found_at": "22.10.2026 13:23",
+    "price_drop_at": "22.10.2026 13:23"
+  }
+]
