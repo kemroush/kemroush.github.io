@@ -70,7 +70,7 @@
       margin-bottom: 1rem;
     }
 
-    /* ── Mode switch (Auta / Dodávky) ── */
+    /* ── Mode switch (Auta / Dodávky / Ari) ── */
     .mode-switch {
       display: inline-flex;
       background: #161b22;
@@ -94,8 +94,11 @@
     .mode-btn:hover { color: #e6edf3; }
     .mode-btn.active { background: #f0883e; color: #0d1117; }
 
-    body.mode-vans .cars-only { display: none; }
+    body.mode-vans .cars-only,
+    body.mode-ari .cars-only { display: none; }
     body:not(.mode-vans) .vans-only { display: none; }
+    body:not(.mode-ari) .ari-only { display: none; }
+    body.mode-vans .not-vans { display: none; }
 
     /* ── Day navigation ── */
     .day-nav {
@@ -512,6 +515,7 @@
     <div class="mode-switch" role="tablist">
       <button class="mode-btn active" data-mode="cars" role="tab">Auta</button>
       <button class="mode-btn" data-mode="vans" role="tab">Dodávky</button>
+      <button class="mode-btn" data-mode="ari" role="tab">Ari</button>
     </div>
 
     <div class="day-nav">
@@ -566,12 +570,21 @@
           <button class="brand-btn" data-brand="fiat">Fiat</button>
           <button class="brand-btn drops-btn">Zlevněné</button>
         </div>
+        <div class="brand-filter ari-only">
+          <button class="brand-btn active" data-brand="all">Vše</button>
+          <button class="brand-btn" data-brand="toyota">Toyota</button>
+          <button class="brand-btn" data-brand="audi">Audi</button>
+          <button class="brand-btn" data-brand="mercedes">Mercedes</button>
+          <button class="brand-btn" data-brand="bmw">BMW</button>
+          <button class="brand-btn" data-brand="others">Ostatní</button>
+          <button class="brand-btn drops-btn">Zlevněné</button>
+        </div>
         <div class="brand-filter">
           <button class="brand-btn active" data-seller="all">Všichni prodejci</button>
           <button class="brand-btn" data-seller="private">Soukromí</button>
           <button class="brand-btn" data-seller="dealer">Bazary</button>
         </div>
-        <div class="brand-filter cars-only">
+        <div class="brand-filter not-vans">
           <button class="brand-btn active" data-fuel="all">Vše</button>
           <button class="brand-btn" data-fuel="ice">Spalovací</button>
           <button class="brand-btn" data-fuel="hybrid">Hybrid</button>
@@ -652,8 +665,22 @@
         tracked: 'data/vans_tracked.json',
         priceMin: 40000, priceMax: 150000, priceStep: 5000,
       },
+      ari: {
+        title:   'Ari car store',
+        desc:    'Malá auta s automatem (Toyota, Audi A1/A3, Mercedes A, BMW 1/2 a podobná) · bez Mini · 2014+ · do 250 000 km · 100k – 400k',
+        prefix:  'ari_',
+        index:   'data/ari_index.json',
+        tracked: 'data/ari_tracked.json',
+        priceMin: 100000, priceMax: 400000, priceStep: 5000,
+      },
     };
-    let mode         = location.hash === '#dodavky' ? 'vans' : 'cars';
+    // Hash v URL ↔ feed: cars.html (auta), cars.html#dodavky, cars.html#ari
+    const MODE_HASH = { cars: '', vans: '#dodavky', ari: '#ari' };
+    const modeFromHash = () =>
+      Object.keys(MODE_HASH).find(m => MODE_HASH[m] && MODE_HASH[m] === location.hash) || 'cars';
+    // Značky s vlastním tlačítkem v Ari feedu; „Ostatní“ = vše ostatní.
+    const ARI_MAIN_BRANDS = ['toyota', 'audi', 'mercedes', 'bmw'];
+    let mode         = modeFromHash();
     let PRICE_MIN    = MODES[mode].priceMin;
     let PRICE_MAX    = MODES[mode].priceMax;
     let priceMin     = PRICE_MIN;
@@ -798,6 +825,8 @@
           const t = c.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
           const brandOk = [...activeBrands].some(b => b === 'besties'
             ? (t.startsWith('bmw') && /\bx1\b/.test(t)) || (t.startsWith('mercedes') && /\bgla\b/.test(t))
+            : b === 'others'
+            ? !ARI_MAIN_BRANDS.some(x => t.startsWith(x))
             : t.startsWith(b));
           if (!brandOk) return false;
         }
@@ -943,6 +972,7 @@
     function applyModeUi() {
       const cfg = MODES[mode];
       document.body.classList.toggle('mode-vans', mode === 'vans');
+      document.body.classList.toggle('mode-ari', mode === 'ari');
       document.getElementById('page-title').textContent = cfg.title;
       document.getElementById('filter-desc').textContent = cfg.desc;
       document.title = cfg.title;
@@ -963,7 +993,7 @@
     async function setMode(m) {
       if (m === mode) return;
       mode = m;
-      history.replaceState(null, '', m === 'vans' ? '#dodavky' : location.pathname + location.search);
+      history.replaceState(null, '', MODE_HASH[m] || location.pathname + location.search);
 
       // Filtry jsou per-feed, při přepnutí začni načisto.
       activeBrands.clear(); activeFuels.clear(); activeModels.clear();
@@ -981,8 +1011,7 @@
     document.querySelectorAll('[data-mode]').forEach(btn => {
       btn.addEventListener('click', () => setMode(btn.dataset.mode));
     });
-    window.addEventListener('hashchange', () =>
-      setMode(location.hash === '#dodavky' ? 'vans' : 'cars'));
+    window.addEventListener('hashchange', () => setMode(modeFromHash()));
 
     document.querySelectorAll('[data-fuel]').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -1054,6 +1083,8 @@
         }
         else list.innerHTML = mode === 'vans'
           ? '<p class="state-msg">Zatím žádné dodávky – začnou se sbírat při příštím běhu bota.</p>'
+          : mode === 'ari'
+          ? '<p class="state-msg">Zatím žádná auta pro Ari – začnou se sbírat při příštím běhu bota.</p>'
           : '<p class="state-msg">Zatím žádné záznamy.</p>';
       } catch {
         document.getElementById('cars-list').innerHTML =
@@ -1102,6 +1133,20 @@ Prosím:
 3. Preferuj soukromé prodejce a auta z ČR; upozorni na podezřele levné kusy, dovozy a podivné inzeráty
 4. Ke každému autu uveď přímý odkaz z pole "link" a krátce, na co se při prohlídce zaměřit
 5. Na závěr doporuč 1-3 nejlepší kousky`;
+      } else if (mode === 'ari') {
+        currentPrompt = `Hledám malé ojeté auto s automatem na českém trhu do 400 000 Kč. Hlavně automat, ideálně hezký interiér; nájezd tolik neřešíme. Líbí se nám třeba Toyota (Yaris, Corolla, C-HR…), Audi A1, Mercedes třída A nebo BMW řada 1 a podobná auta. Mini Cooper nechceme.
+
+Tady jsou data z mého agregátoru za posledních ${numDays} dní (každý soubor = jeden den, nová nebo zlevněná auta ze sauto.cz; agregátor už filtruje automat, 100–400k Kč, rok 2014+, do 250 000 km a whitelist malých modelů):
+
+${urlList}
+
+Prosím:
+1. Načti všechny soubory (některé nemusí existovat — přeskoč je)
+2. Seřaď podle poměru cena / stav / riziko — zohledni spolehlivost převodovky (dobře: Toyota hybrid e-CVT, klasické měniče; pozor: suché DSG DQ200, starší dvouspojkové a robotizované převodovky) a motoru
+3. Vypíchni auta s hezčím interiérem / vyšší výbavou (kůže, větší displej, ambientní osvětlení, prémiové značky)
+4. Preferuj soukromé prodejce a auta z ČR; upozorni na podezřele levné kusy, dovozy a podivné inzeráty
+5. Ke každému autu uveď přímý odkaz z pole "link" a krátce, na co se při prohlídce zaměřit
+6. Na závěr doporuč 1-3 nejlepší kousky`;
       } else {
       currentPrompt = `Jsem na českém trhu ojetých aut a hledám BMW, Mercedes nebo Mini s automatem, ročník 2020+, do 100 000 km, cena 300 000–750 000 Kč. Moje oblíbené modely jsou BMW X1 a Mercedes GLA — pokud se mezi nimi nějaké objeví, vypíchni je.
 

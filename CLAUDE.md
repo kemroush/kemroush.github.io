@@ -4,7 +4,7 @@ Personal website + auto/auction monitoring tools. Hosted on **GitHub Pages** at 
 
 ## Layout
 - **`index.html`** — landing page (single file)
-- **`cars.html`** — car monitoring dashboard (sauto.cz, renocar.cz, future.drivalia.cz, mercedesnasklade); switch Auta / Dodávky, vans feed at `cars.html#dodavky` (`data/vans_*`)
+- **`cars.html`** — car monitoring dashboard (sauto.cz, renocar.cz, future.drivalia.cz, mercedesnasklade); switch Auta / Dodávky / Ari, vans feed at `cars.html#dodavky` (`data/vans_*`), Ari car store (small automatic cars for Ari) at `cars.html#ari` (`data/ari_*`)
 - **`hokynarstvi.html`** — auctions dashboard
 - **`auto_monitor.py`** + **`scrapers/`** — car scraper bot (runs via GitHub Actions, commits to `data/`)
 - **`auction_monitor.py`** — auctions scraper

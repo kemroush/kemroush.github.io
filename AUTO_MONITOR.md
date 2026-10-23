@@ -59,7 +59,22 @@ data/vans_tracked.json       – id → {price, last_seen}
 
 `scrape_sauto_vans()` volá interní JSON API `https://www.sauto.cz/api/v1/items/search?price_from=…&price_to=…&condition_seo=ojete&category_id=839&operating_lease=false&limit=100&offset=N` (839 = užitková), stránkuje po 100, dokud stránka není kratší. Filtry jsou v `VAN_CONFIG`: 40–150k Kč, rok 2008+, 1 000–300 000 km a whitelist `manufacturer_seo/model_seo` jen středních a velkých dodávek (Transit, Transporter, Proace, Vito, Master, Trafic, Vivaro, Boxer, Jumper, Ducato, Sprinter, Crafter…). Malé dodávky (Caddy, Kangoo, Berlingo, Praktik…) a pick-upy se přeskakují. `blocked_sellers` platí i tady. ID jsou čistě číselná (sauto ID). Když scraper vrátí 0 dodávek (nejspíš selhal request), feed dodávek se ten běh vůbec neukládá.
 
-Na `cars.html` se mezi feedy přepíná přepínačem **Auta / Dodávky**; přímý odkaz na dodávky je `cars.html#dodavky`.
+Na `cars.html` se mezi feedy přepíná přepínačem **Auta / Dodávky / Ari**; přímý odkaz na dodávky je `cars.html#dodavky`.
+
+## Ari car store (samostatný feed)
+
+Třetí feed ve stejném běhu `auto_monitor.py` – malá ojetá auta s automatem pro Ari ze sauto.cz (osobní). Ukládá se **odděleně**:
+
+```
+data/ari_index.json          – seznam dní
+data/ari_YYYY-MM-DD.json     – nová + zlevněná auta daného dne
+data/ari_seen.json           – viděná ID
+data/ari_tracked.json        – id → {price, last_seen}
+```
+
+`scrape_sauto_ari()` volá stejné JSON API jako dodávky, jen `category_id=838` (osobní) a navíc server-side `gearbox_seo=automaticka`, `tachometer_to=…` a `manufacturer_model_seo=toyota:yaris,c-hr|audi:a1,a3|…` (formát: značka`:`modely oddělené čárkou, značky oddělené `|`). Stránkuje po 100. Filtry jsou v `ARI_CONFIG`: 100–400k Kč, rok 2014+ (rok jde jen klientsky – `manufacturing_date_from` API nepodporuje), 1 000–250 000 km, whitelist malých modelů (Toyota Yaris/Aygo/Auris/Corolla/C-HR, Audi A1/A3, Mercedes třída A/CLA, BMW řada 1/2, VW Polo/Golf, Škoda Fabia/Scala, Seat Ibiza/Leon, Cupra, Peugeot 208/2008, Mazda 2/3, Lexus CT/UX, DS 3, Hyundai i20, Kia Rio/Stonic). **Mini je explicitně blokované** (`blocked_manufacturers`). `blocked_sellers` platí i tady. Odkaz na detail `https://www.sauto.cz/osobni/detail/<značka>/<model>/<id>`.
+
+**Pozor:** neznámé `model_seo` API tiše ignoruje a vrátí celou značku – proto se whitelist kontroluje i klientsky. Nový model přidej do `ARI_CONFIG["models"]` jen se správným `seo_name` ze sauto (vidět v URL detailu inzerátu). Když scraper vrátí 0 aut, feed se ten běh neukládá.
 
 ## Hlídání zlevnění
 
@@ -73,6 +88,7 @@ Na `cars.html` se mezi feedy přepíná přepínačem **Auta / Dodávky**; pří
 - Řádek prodejců: Všichni / Soukromí / Bazary (podle „Soukromý“ na konci `details`)
 - Cenový posuvník 300k–750k (u dodávek 40k–150k)
 - V režimu Dodávky: řádek značek VW / Ford / Toyota / Mercedes / Renault / Opel / Peugeot / Citroën / Fiat; řádky paliva a modelů se skryjí
+- V režimu Ari (`cars.html#ari`): řádek značek Toyota / Audi / Mercedes / BMW / Ostatní, cena 100k–400k; řádek paliva zůstává, řádek modelů se skryje
 
 Filtry se průnikují (AND mezi řádky, OR uvnitř řádku).
 
