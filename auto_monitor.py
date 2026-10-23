@@ -11,6 +11,9 @@ Generuje:
 Druhý, oddělený feed – dodávky (užitková na sauto.cz, VAN_CONFIG):
   data/vans_index.json, data/vans_YYYY-MM-DD.json, data/vans_seen.json, data/vans_tracked.json
 
+Třetí, oddělený feed – Ari car store (malá auta s automatem na sauto.cz, ARI_CONFIG):
+  data/ari_index.json, data/ari_YYYY-MM-DD.json, data/ari_seen.json, data/ari_tracked.json
+
 Požadavky:
   pip install beautifulsoup4 lxml
 """
@@ -19,6 +22,7 @@ import json
 import os
 import re
 import subprocess
+import urllib.parse
 from datetime import datetime, timedelta
 
 from bs4 import BeautifulSoup, NavigableString
@@ -78,6 +82,39 @@ VAN_CONFIG = {
     "index_file":    os.path.join(DATA_DIR, "vans_index.json"),
     "tracked_file":  os.path.join(DATA_DIR, "vans_tracked.json"),
     "file_prefix":   "vans_",
+}
+
+# Ari car store – malá auta s automatem pro Ari, samostatný feed (ari_*).
+ARI_CONFIG = {
+    "min_price_czk": 100_000,   # pod tím bývají vraky / na díly
+    "max_price_czk": 400_000,
+    "max_km":        250_000,   # nájezd moc nevadí, jen pojistka proti extrémům
+    "min_km":        1_000,     # nesmyslné / nevyplněné tachometry
+    "min_year":      2014,
+    "max_pages":     30,        # × 100 inzerátů z API (~12 stránek v 10/2026)
+    # manufacturer_seo → model_seo ze sauto API. Pozor: neznámé model_seo API
+    # tiše ignoruje a vrátí celou značku → whitelist se proto kontroluje i klientsky.
+    "models": {
+        "toyota":        ["yaris", "yaris-cross", "aygo", "auris", "corolla", "c-hr"],
+        "audi":          ["a1", "a3"],
+        "mercedes-benz": ["tridy-a", "cla"],
+        "bmw":           ["rada-1", "rada-2"],
+        "volkswagen":    ["polo", "golf"],
+        "skoda":         ["fabia", "scala"],
+        "seat":          ["ibiza", "leon"],
+        "cupra":         ["leon", "born"],
+        "peugeot":       ["208", "2008"],
+        "mazda":         ["2", "2-hybrid", "3"],
+        "lexus":         ["ct-200h", "ux-200", "ux-250h", "ux-300e"],
+        "ds":            ["3", "3-crossback"],
+        "hyundai":       ["i20"],
+        "kia":           ["rio", "stonic"],
+    },
+    "blocked_manufacturers": {"mini"},   # Mini Ari nechce
+    "seen_file":     os.path.join(DATA_DIR, "ari_seen.json"),
+    "index_file":    os.path.join(DATA_DIR, "ari_index.json"),
+    "tracked_file":  os.path.join(DATA_DIR, "ari_tracked.json"),
+    "file_prefix":   "ari_",
 }
 
 # ─────────────────────────────────────────────
@@ -888,6 +925,120 @@ def scrape_sauto_vans() -> list[dict]:
 
 
 # ─────────────────────────────────────────────
+#  SCRAPING SAUTO.CZ – ARI CAR STORE (malá auta s automatem, JSON API)
+# ─────────────────────────────────────────────
+
+def scrape_sauto_ari() -> list[dict]:
+    """Malá ojetá auta s automatem ze sauto.cz přes interní JSON API
+    (category_id=838 = osobní). Cena, převodovka, km a whitelist modelů
+    jdou server-side (manufacturer_model_seo=znacka:m1,m2|znacka2:m3),
+    rok + kontrola whitelistu klientsky."""
+    ac = ARI_CONFIG
+    mm = "|".join(f"{man}:{','.join(models)}" for man, models in ac["models"].items())
+    base = (
+        "https://www.sauto.cz/api/v1/items/search"
+        f"?price_from={ac['min_price_czk']}&price_to={ac['max_price_czk']}"
+        f"&tachometer_to={ac['max_km']}"
+        "&condition_seo=ojete&category_id=838&gearbox_seo=automaticka"
+        "&operating_lease=false&limit=100"
+        f"&manufacturer_model_seo={urllib.parse.quote(mm, safe='')}"
+    )
+    cars = []
+    try:
+        for page in range(ac["max_pages"]):
+            result = subprocess.run(
+                ["curl", "-sL",
+                 "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+                 "-H", "Accept: application/json, text/plain, */*",
+                 "-H", "Accept-Language: cs-CZ,cs;q=0.9",
+                 "-H", "Referer: https://www.sauto.cz/inzerce/osobni",
+                 f"{base}&offset={page * 100}"],
+                capture_output=True, text=True, timeout=30,
+            )
+            items = json.loads(result.stdout).get("results") or []
+
+            for v in items:
+                try:
+                    man = v.get("manufacturer_cb") or {}
+                    model = v.get("model_cb") or {}
+                    man_seo = man.get("seo_name", "")
+                    model_seo = model.get("seo_name", "")
+                    if man_seo in ac["blocked_manufacturers"]:
+                        continue
+                    if model_seo not in ac["models"].get(man_seo, []):
+                        continue
+
+                    gearbox_cb = v.get("gearbox_cb") or {}
+                    if gearbox_cb.get("seo_name") != "automaticka":
+                        continue
+
+                    price_num = int(v.get("price") or 0)
+                    if v.get("price_by_agreement") or price_num <= 0:
+                        continue
+                    if price_num < ac["min_price_czk"] or price_num > ac["max_price_czk"]:
+                        continue
+
+                    km = int(v.get("tachometer") or 0)
+                    if km < ac["min_km"] or km > ac["max_km"]:
+                        continue
+
+                    year_m = re.match(r"(\d{4})", v.get("manufacturing_date")
+                                      or v.get("in_operation_date") or "")
+                    year = int(year_m.group(1)) if year_m else 0
+                    if not year or year < ac["min_year"]:
+                        continue
+
+                    premise = (v.get("premise") or {}).get("name") or ""
+                    if any(b in premise.lower() for b in CONFIG["blocked_sellers"]):
+                        continue
+                    seller = premise.strip() or "Soukromý"
+
+                    # „Toyota Yaris, 1.5 Hybrid“ → „Toyota Yaris 1.5 Hybrid“ (jen první čárka)
+                    title = re.sub(r"\s*,\s*", " ", (v.get("name") or "").strip(), count=1).strip()
+                    if not title:
+                        title = f"{man.get('name', '')} {model.get('name', '')}".strip()
+
+                    fuel = ((v.get("fuel_cb") or {}).get("name") or "").strip()
+                    gearbox = (gearbox_cb.get("name") or "").strip()
+                    loc = v.get("locality") or {}
+                    place = (loc.get("district") or loc.get("municipality") or "").strip()
+
+                    parts = [str(year), f"{km:,}".replace(",", " ") + " km"]
+                    parts += [x for x in (fuel, gearbox, place, seller) if x]
+                    details = "  ·  ".join(parts)
+
+                    vid = v.get("id")
+                    link = f"https://www.sauto.cz/osobni/detail/{man_seo}/{model_seo}/{vid}"
+
+                    image = ""
+                    imgs = v.get("images") or []
+                    if imgs and imgs[0].get("url"):
+                        image = imgs[0]["url"]
+                        if image.startswith("//"):
+                            image = "https:" + image
+                        image += SAUTO_IMG_SUFFIX
+
+                    cars.append({
+                        "id":      str(vid),
+                        "title":   title,
+                        "price":   _format_czk(price_num),
+                        "details": details,
+                        "link":    link,
+                        "image":   image,
+                    })
+                except Exception:
+                    continue
+
+            if len(items) < 100:
+                break
+    except Exception as e:
+        print(f"  [sauto.cz/ari] Chyba: {e}")
+
+    print(f"  sauto.cz/osobni (Ari): {len(cars)} inzerátů")
+    return cars
+
+
+# ─────────────────────────────────────────────
 #  HLAVNÍ LOGIKA
 # ─────────────────────────────────────────────
 
@@ -981,6 +1132,16 @@ def main():
                          VAN_CONFIG["index_file"], day_key, now_str)
     except Exception as e:
         print(f"  [dodávky] Chyba: {e}")
+
+    # Ari car store – samostatně, stejná logika jako u dodávek.
+    try:
+        ari = scrape_sauto_ari()
+        if ari:
+            process_feed("ari", ari, ARI_CONFIG["file_prefix"],
+                         ARI_CONFIG["seen_file"], ARI_CONFIG["tracked_file"],
+                         ARI_CONFIG["index_file"], day_key, now_str)
+    except Exception as e:
+        print(f"  [ari] Chyba: {e}")
 
 
 if __name__ == "__main__":
