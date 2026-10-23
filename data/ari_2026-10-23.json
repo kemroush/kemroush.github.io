@@ -614,11 +614,13 @@
   {
     "id": "209916981",
     "title": "Škoda Scala Style 1.0 TSI 81 kW",
-    "price": "315 990 Kč",
+    "price": "299 990 Kč",
     "details": "2023  ·  151 958 km  ·  Benzín  ·  Automatická  ·  Nymburk  ·  Louda Auto+  ( 6 poboček v 6 krajích )",
     "link": "https://www.sauto.cz/osobni/detail/skoda/scala/209916981",
     "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/kY1K2LlXQBsPCGCKcFzDXiO/7220.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
-    "found_at": "23.10.2026 21:24"
+    "found_at": "23.10.2026 21:24",
+    "old_price": "315 990 Kč",
+    "price_drop_at": "23.10.2026 23:55"
   },
   {
     "id": "210421532",
@@ -7864,5 +7866,32 @@
     "link": "https://www.sauto.cz/osobni/detail/audi/a3/130929784",
     "image": "https://d19-a.sdn.cz/d_19/c_img_gZ_i/lawRv5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "23.10.2026 21:24"
+  },
+  {
+    "id": "211336758",
+    "title": "Volkswagen Golf TOP STAV Garážovaný",
+    "price": "209 000 Kč",
+    "details": "2014  ·  109 000 km  ·  Elektro  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211336758",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEe0kCSYhtIKOszL/30ff.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "23.10.2026 23:55"
+  },
+  {
+    "id": "211336737",
+    "title": "Toyota Corolla GR Sport Dynamic 2.0 HSD",
+    "price": "350 000 Kč",
+    "details": "2020  ·  125 543 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211336737",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUBL8BsBDcbIKOjPu/52b5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "23.10.2026 23:55"
+  },
+  {
+    "id": "211157097",
+    "title": "Peugeot 2008 1.2 PT,Active,AT,TZ,navi",
+    "price": "205 000 Kč",
+    "details": "2016  ·  77 952 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/peugeot/2008/211157097",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/k0OqwCKRZSJdBDIH4YpSY/b6bd.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "23.10.2026 23:55"
   }
 ]
