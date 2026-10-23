@@ -38,5 +38,92 @@
     "old_price": "739 000 Kč",
     "found_at": "23.10.2026 13:13",
     "price_drop_at": "23.10.2026 13:13"
+  },
+  {
+    "id": "211336485",
+    "title": "Mercedes-Benz Třídy E E 400d 4MATIC",
+    "price": "543 200 Kč",
+    "details": "2020, 76 000 km , Nafta , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-e/211336485",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUCaRYmST0IKMfdI/0030.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "23.10.2026 20:55"
+  },
+  {
+    "id": "211335234",
+    "title": "Mercedes-Benz GLC 2,0 220d 4MATIC AT ČR",
+    "price": "699 000 Kč",
+    "details": "2021, 93 043 km , Nafta , Automatická  ·  Hlavní město Praha  ·  DAJBYCH – Land Rover Praha",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glc/211335234",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEeCdpo1cUHIKHrlr/34a2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "23.10.2026 20:55"
+  },
+  {
+    "id": "211333389",
+    "title": "Mercedes-Benz GLB PROGRESSIVE 200d 4MATIC",
+    "price": "699 000 Kč",
+    "details": "2022, 99 096 km , Nafta , Automatická  ·  Plzeň-město  ·  Mercedes-Benz | VSP Auto, s.r.o. - autorizovaný opravce a prodejce",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/211333389",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEeC2TMrYTKIKDgc5/ad34.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "23.10.2026 20:55"
+  },
+  {
+    "id": "211332963",
+    "title": "Mercedes-Benz GLB 35 AMG/Webasto/4matic/Panorama",
+    "price": "725 000 Kč",
+    "details": "2022, 100 000 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/211332963",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUChHuMOdoIKCwwi/4d2b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "23.10.2026 20:55"
+  },
+  {
+    "id": "211335447",
+    "title": "Mini JCW Coutryman ALL4 Fullservis/",
+    "price": "670 000 Kč",
+    "details": "2022, 38 700 km , Benzín , Automatická  ·  Hlavní město Praha  ·  EMOTION CARS",
+    "link": "https://www.sauto.cz/osobni/detail/mini/ostatni/211335447",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUBL8Bs0ZPIKIPiJ/1e02.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "23.10.2026 20:55"
+  },
+  {
+    "id": "mns:25554",
+    "title": "Mercedes-Benz GLB 200d 4MATIC",
+    "price": "699 000 Kč",
+    "details": "GLB 200d 4MATIC  ·  2022  ·  99 096 km  ·  Nafta  ·  VSP Auto, s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/25554",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/c203903c-e084-4767-aa4a-8eb3805510d2.png",
+    "found_at": "23.10.2026 20:55"
+  },
+  {
+    "id": "209796831",
+    "title": "BMW Řada 3 320 xD ///M*TAŽNÉ*ČR*MOD 2023",
+    "price": "698 000 Kč",
+    "details": "2022, 78 772 km , Nafta , Automatická  ·  Znojmo  ·  STOP CARS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/209796831",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/kcHp2YdDtEBMvIVRPGRnFgA/1fb4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "718 000 Kč",
+    "found_at": "23.10.2026 20:55",
+    "price_drop_at": "23.10.2026 20:55"
+  },
+  {
+    "id": "207812699",
+    "title": "BMW Řada 5 520dxDrive,M-Packet,Tažné,ACC",
+    "price": "699 000 Kč",
+    "details": "2022, 79 473 km , Nafta , Automatická  ·  Mělník  ·  Auta z Firem",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-5/207812699",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/nOdL4BtPEyBFnmYD21Hu6ZWF/a9a5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "749 000 Kč",
+    "found_at": "23.10.2026 20:55",
+    "price_drop_at": "23.10.2026 20:55"
+  },
+  {
+    "id": "209104680",
+    "title": "BMW Řada 3 320d xDrive M-SPORT 1M ČR",
+    "price": "598 000 Kč",
+    "details": "2022, 86 166 km , Nafta , Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/209104680",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_od_A/nO0bgvR9rXBDWR9E7sEQmX98/7c8b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "618 000 Kč",
+    "found_at": "23.10.2026 20:55",
+    "price_drop_at": "23.10.2026 20:55"
   }
 ]
