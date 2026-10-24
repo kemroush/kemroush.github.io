@@ -96,7 +96,7 @@ data/ari_tracked.json        – id → {price, last_seen}
 - Řádek prodejců: Všichni / Soukromí / Bazary (podle „Soukromý“ na konci `details`)
 - Cenový posuvník 300k–750k (u dodávek 40k–150k)
 - V režimu Dodávky: řádek značek VW / Ford / Toyota / Mercedes / Renault / Opel / Peugeot / Citroën / Fiat; řádky paliva a modelů se skryjí
-- V režimu Ari (`cars.html#ari`): řádek značek Toyota / Audi / Mercedes / BMW / Ostatní, cena 100k–400k; řádek paliva zůstává, řádek modelů se skryje
+- V režimu Ari (`cars.html#ari`): řádek všech značek s počty (jen ty, co v datech jsou); po výběru značky se ukáže řádek jejích modelů s počty. Značka a model se čtou z odkazu na inzerát (`/osobni/detail/<značka>/<model>/`), popisky jsou v `ARI_BRANDS` v `cars.html`. Cena 100k–400k, řádek paliva zůstává
 
 Filtry se průnikují (AND mezi řádky, OR uvnitř řádku).
 
