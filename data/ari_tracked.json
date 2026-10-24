@@ -1,5 +1,8 @@
 {
  "130929784": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389900
  },
@@ -8,6 +11,9 @@
   "price": 255500
  },
  "180940544": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 219999
  },
@@ -28,6 +34,9 @@
   "price": 339000
  },
  "196297711": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 189000
  },
@@ -36,6 +45,10 @@
   "price": 289000
  },
  "206911332": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369990
  },
@@ -48,10 +61,17 @@
   "price": 310000
  },
  "207510846": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 389990
  },
  "207887746": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319000
  },
@@ -64,6 +84,10 @@
   "price": 255000
  },
  "208275287": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 249900
  },
@@ -80,30 +104,55 @@
   "price": 399900
  },
  "208453586": {
+  "eq": [
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 279900
  },
  "208469660": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 356000
  },
  "208489094": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 345000
  },
  "208543868": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 229000
  },
  "208571270": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 249990
  },
  "208603442": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 259900
  },
  "208623875": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 398000
  },
@@ -116,10 +165,16 @@
   "price": 314990
  },
  "208732682": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 299999
  },
  "208769886": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 329999
  },
@@ -128,6 +183,10 @@
   "price": 259000
  },
  "208821429": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379900
  },
@@ -136,10 +195,16 @@
   "price": 279900
  },
  "208840212": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 215000
  },
  "208879368": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 325000
  },
@@ -152,6 +217,10 @@
   "price": 209000
  },
  "209047497": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 329900
  },
@@ -160,10 +229,17 @@
   "price": 210000
  },
  "209068977": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 259000
  },
  "209072592": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 240000
  },
@@ -172,50 +248,91 @@
   "price": 309999
  },
  "209177058": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 284900
  },
  "209186808": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359900
  },
  "209213793": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369900
  },
  "209250222": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 309900
  },
  "209269683": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 290000
  },
  "209295522": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 301290
  },
  "209319582": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 240000
  },
  "209333130": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 199000
  },
  "209351799": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 169900
  },
  "209389464": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 369877
  },
  "209401098": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 209000
  },
  "209409357": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 289877
  },
@@ -224,10 +341,18 @@
   "price": 199877
  },
  "209444844": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 348000
  },
  "209458500": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 334900
  },
@@ -236,42 +361,77 @@
   "price": 275000
  },
  "209508828": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 368900
  },
  "209529006": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319000
  },
  "209540430": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 209900
  },
  "209563500": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 350990
  },
  "209567448": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 323990
  },
  "209569713": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 184900
  },
  "209570088": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 209900
  },
  "209575158": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 289900
  },
  "209580906": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 239000
  },
  "209591190": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 185000
  },
@@ -280,10 +440,16 @@
   "price": 299900
  },
  "209620047": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 328990
  },
  "209642127": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 219900
  },
@@ -292,22 +458,39 @@
   "price": 249999
  },
  "209655528": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 249000
  },
  "209712081": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 199877
  },
  "209737524": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "209741874": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 165000
  },
  "209751192": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 242000
  },
@@ -316,62 +499,112 @@
   "price": 240000
  },
  "209756277": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319000
  },
  "209765922": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 209000
  },
  "209773578": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 230000
  },
  "209782866": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 310000
  },
  "209785980": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 285000
  },
  "209787189": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 345000
  },
  "209787354": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349800
  },
  "209797965": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 279000
  },
  "209803794": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 398000
  },
  "209810676": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 229900
  },
  "209830506": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349900
  },
  "209845413": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 380000
  },
  "209856354": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 359000
  },
  "209857545": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 254000
  },
  "209879265": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359900
  },
@@ -384,6 +617,11 @@
   "price": 203000
  },
  "209903625": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 289990
  },
@@ -392,6 +630,10 @@
   "price": 369000
  },
  "209907828": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299000
  },
@@ -400,22 +642,41 @@
   "price": 259000
  },
  "209916981": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299990
  },
  "209917560": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299000
  },
  "209919048": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 139800
  },
  "209923122": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299000
  },
  "209929245": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 285990
  },
@@ -424,14 +685,26 @@
   "price": 280000
  },
  "209943342": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 259000
  },
  "209954286": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 269877
  },
  "209978766": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299990
  },
@@ -440,14 +713,24 @@
   "price": 299900
  },
  "210005937": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 229900
  },
  "210023571": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 309900
  },
  "210026502": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 378000
  },
@@ -464,10 +747,18 @@
   "price": 195000
  },
  "210058286": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 370000
  },
  "210077942": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
@@ -476,54 +767,99 @@
   "price": 315000
  },
  "210084722": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 189000
  },
  "210089708": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399800
  },
  "210089960": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 359900
  },
  "210098090": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 348000
  },
  "210103325": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 289000
  },
  "210106682": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 325000
  },
  "210119714": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 384999
  },
  "210124253": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 366900
  },
  "210124316": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 334000
  },
  "210126467": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 309000
  },
  "210135833": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 199000
  },
  "210147050": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 285000
  },
  "210148286": {
+  "eq": [
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 237999
  },
@@ -532,6 +868,10 @@
   "price": 384990
  },
  "210150776": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 269000
  },
@@ -540,6 +880,9 @@
   "price": 269000
  },
  "210162416": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 268000
  },
@@ -548,22 +891,40 @@
   "price": 279000
  },
  "210164972": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 289000
  },
  "210189974": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 305000
  },
  "210193298": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389900
  },
  "210194006": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 189999
  },
  "210196388": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 249990
  },
@@ -572,50 +933,91 @@
   "price": 299000
  },
  "210210431": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 345000
  },
  "210217007": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 279990
  },
  "210218054": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 260000
  },
  "210218657": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319900
  },
  "210223832": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 280000
  },
  "210226298": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 209900
  },
  "210231935": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299900
  },
  "210240236": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "210245324": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389000
  },
  "210248840": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 384999
  },
  "210249335": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319900
  },
  "210249935": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 289900
  },
@@ -624,30 +1026,53 @@
   "price": 219900
  },
  "210254132": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 374890
  },
  "210260114": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 289000
  },
  "210262802": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 308000
  },
  "210264002": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 340000
  },
  "210272504": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 229900
  },
  "210275033": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 249900
  },
  "210293243": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 379999
  },
@@ -660,14 +1085,25 @@
   "price": 339900
  },
  "210309527": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379000
  },
  "210316688": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 328900
  },
  "210317843": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319877
  },
@@ -676,10 +1112,16 @@
   "price": 325000
  },
  "210322160": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 284900
  },
  "210325148": {
+  "eq": [
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 309900
  },
@@ -692,14 +1134,23 @@
   "price": 331990
  },
  "210330707": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 309000
  },
  "210337853": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 199000
  },
  "210345143": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 329900
  },
@@ -712,42 +1163,79 @@
   "price": 199900
  },
  "210351938": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 355000
  },
  "210353147": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 299000
  },
  "210354929": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 328000
  },
  "210361241": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 334000
  },
  "210363302": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 128800
  },
  "210364091": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 369000
  },
  "210366815": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 358000
  },
  "210378722": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 229900
  },
  "210388193": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 229990
  },
  "210391199": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359900
  },
@@ -756,86 +1244,163 @@
   "price": 275000
  },
  "210399989": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 269000
  },
  "210408968": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
-  "price": 230000
+  "price": 223000
  },
  "210410066": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 279000
  },
  "210410999": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 338418
  },
  "210413375": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 239000
  },
  "210415124": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339900
  },
  "210416210": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 239999
  },
  "210416222": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 249990
  },
  "210421460": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 189000
  },
  "210421532": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 308900
  },
  "210425333": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 390000
  },
  "210429344": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 395000
  },
  "210430217": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 353000
  },
  "210430646": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 309900
  },
  "210431294": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 199000
  },
  "210434552": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349900
  },
  "210445031": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339000
  },
  "210447713": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 369000
  },
  "210453410": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 266000
  },
  "210453413": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 309000
  },
  "210457232": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299000
  },
@@ -852,10 +1417,18 @@
   "price": 189000
  },
  "210481304": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 289000
  },
  "210484454": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349000
  },
@@ -868,74 +1441,134 @@
   "price": 379900
  },
  "210491933": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "210492986": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389900
  },
  "210494069": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 284000
  },
  "210495056": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 370000
  },
  "210498785": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 359000
  },
  "210503936": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 375000
  },
  "210508961": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389999
  },
  "210518222": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 365000
  },
  "210526460": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 279900
  },
  "210530669": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 315000
  },
  "210531776": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 344000
  },
  "210531890": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 225000
  },
  "210531950": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 375000
  },
  "210534662": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "210535112": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 209900
  },
  "210536147": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 220000
  },
  "210545963": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 260000
  },
  "210549206": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 309000
  },
@@ -944,62 +1577,114 @@
   "price": 285000
  },
  "210556784": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 249990
  },
  "210558359": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "210562772": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 370000
  },
  "210562928": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 350000
  },
  "210563450": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 199000
  },
  "210567041": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 374900
  },
  "210568949": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 235000
  },
  "210572000": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 325000
  },
  "210572048": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359000
  },
  "210576017": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 298900
  },
  "210577196": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 239000
  },
  "210587138": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 169990
  },
  "210587642": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 265000
  },
  "210592883": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "210597371": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389900
  },
@@ -1008,18 +1693,33 @@
   "price": 375000
  },
  "210608675": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 309900
  },
  "210610664": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 309900
  },
  "210615446": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 214900
  },
  "210615966": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389999
  },
@@ -1028,70 +1728,133 @@
   "price": 269999
  },
  "210618179": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 268000
  },
  "210623054": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 219900
  },
  "210623222": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 375000
  },
  "210623294": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379000
  },
  "210623438": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 371000
  },
  "210623441": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369900
  },
  "210626348": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389000
  },
  "210628307": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 274900
  },
  "210634121": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 215000
  },
  "210635432": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 309900
  },
  "210638255": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 388000
  },
  "210643721": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 375000
  },
  "210643916": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 229900
  },
  "210644036": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 259000
  },
  "210644708": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "210650741": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399999
  },
  "210653000": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
@@ -1100,10 +1863,18 @@
   "price": 379000
  },
  "210670178": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 298000
  },
  "210670997": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359000
  },
@@ -1112,6 +1883,10 @@
   "price": 400000
  },
  "210675053": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 340000
  },
@@ -1120,34 +1895,61 @@
   "price": 289000
  },
  "210684290": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "210689057": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 279000
  },
  "210693947": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 278600
  },
  "210698645": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 199900
  },
  "210699380": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 315000
  },
  "210706424": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 354900
  },
  "210713540": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359900
  },
  "210714455": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 279000
  },
@@ -1160,18 +1962,32 @@
   "price": 334900
  },
  "210729341": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 313000
  },
  "210729581": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379000
  },
  "210731186": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 379990
  },
  "210738365": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 238000
  },
@@ -1180,6 +1996,9 @@
   "price": 369000
  },
  "210739535": {
+  "eq": [
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 190000
  },
@@ -1188,22 +2007,40 @@
   "price": 289900
  },
  "210741884": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 345000
  },
  "210743816": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349555
  },
  "210745196": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299900
  },
  "210746372": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 360000
  },
  "210747422": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 289900
  },
@@ -1216,14 +2053,23 @@
   "price": 349900
  },
  "210755072": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349900
  },
  "210757124": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 309900
  },
  "210759089": {
+  "eq": [
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
@@ -1232,10 +2078,16 @@
   "price": 193000
  },
  "210764063": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 360000
  },
  "210764138": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 229000
  },
@@ -1244,14 +2096,24 @@
   "price": 399900
  },
  "210766394": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 249000
  },
  "210767978": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 249877
  },
  "210770444": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 386878
  },
@@ -1260,42 +2122,78 @@
   "price": 298900
  },
  "210784352": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349000
  },
  "210785627": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 220000
  },
  "210786194": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 288000
  },
  "210787706": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 299900
  },
  "210790307": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 309000
  },
  "210790310": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299000
  },
  "210793928": {
+  "eq": [
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 389000
  },
  "210794951": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 259000
  },
  "210796838": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 269990
  },
  "210797162": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 389900
  },
@@ -1304,34 +2202,64 @@
   "price": 189000
  },
  "210799196": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 396900
  },
  "210799232": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "210800231": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 199000
  },
  "210802190": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379000
  },
  "210805016": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 269900
  },
  "210810227": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399999
  },
  "210811901": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 235000
  },
  "210812537": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369000
  },
@@ -1340,6 +2268,10 @@
   "price": 200000
  },
  "210817883": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 375000
  },
@@ -1348,78 +2280,143 @@
   "price": 375000
  },
  "210822734": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 249990
  },
  "210823133": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 239900
  },
  "210826535": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 324900
  },
  "210831692": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319900
  },
  "210834512": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 370000
  },
  "210840722": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 358000
  },
  "210840788": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379000
  },
  "210847358": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319000
  },
  "210850694": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 209900
  },
  "210852275": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "210852602": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 340000
  },
  "210853766": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 149000
  },
  "210854825": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 228900
  },
  "210856940": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 249900
  },
  "210857369": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399888
  },
  "210859601": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 174900
  },
  "210862724": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 359990
  },
  "210870515": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "210871448": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 225000
  },
@@ -1432,62 +2429,117 @@
   "price": 289900
  },
  "210874661": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299000
  },
  "210874799": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 199000
  },
  "210874952": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 328900
  },
  "210876476": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319900
  },
  "210878243": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389900
  },
  "210878969": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 259000
  },
  "210881750": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 245000
  },
  "210883925": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 379000
  },
  "210884429": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359900
  },
  "210885373": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 265000
  },
  "210885583": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299000
  },
  "210886065": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 375000
  },
  "210890241": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 380000
  },
  "210892941": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 269900
  },
  "210894333": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 239990
  },
@@ -1496,22 +2548,41 @@
   "price": 395000
  },
  "210894891": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 229000
  },
  "210896178": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 398000
  },
  "210901152": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 229000
  },
  "210904017": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 350000
  },
  "210904944": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359990
  },
@@ -1520,58 +2591,108 @@
   "price": 299999
  },
  "210906222": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 339000
  },
  "210907617": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 239900
  },
  "210910614": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349900
  },
  "210910707": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339990
  },
  "210912505": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "210914202": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "210916251": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "210919398": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349999
  },
  "210922038": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
-  "price": 239990
+  "price": 238990
  },
  "210922101": {
   "last_seen": "2026-10-24",
   "price": 299900
  },
  "210923472": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379900
  },
  "210923769": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 393000
  },
  "210924066": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 360000
  },
  "210924531": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 248000
  },
@@ -1580,34 +2701,64 @@
   "price": 369900
  },
  "210928392": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 275000
  },
  "210929016": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359000
  },
  "210929049": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 290000
  },
  "210929211": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339900
  },
  "210930366": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 229999
  },
  "210932418": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389000
  },
  "210933354": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 169000
  },
  "210934371": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
@@ -1616,6 +2767,10 @@
   "price": 309900
  },
  "210936879": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 327000
  },
@@ -1624,54 +2779,96 @@
   "price": 309900
  },
  "210940503": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 289900
  },
  "210940647": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 369000
  },
  "210943167": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379990
  },
  "210944085": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 210800
  },
  "210944088": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 325000
  },
  "210944463": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 335000
  },
  "210944613": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 266000
  },
  "210947430": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 398000
  },
  "210947628": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "210947889": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 244000
  },
  "210952815": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 345000
  },
  "210953343": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339899
  },
  "210953853": {
+  "eq": [
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 318000
  },
@@ -1684,6 +2881,9 @@
   "price": 189000
  },
  "210957705": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 239990
  },
@@ -1692,50 +2892,94 @@
   "price": 270000
  },
  "210962043": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349900
  },
  "210962670": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 324990
  },
  "210964080": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 350000
  },
  "210965214": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369000
  },
  "210965685": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 383000
  },
  "210967236": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339000
  },
  "210967926": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379900
  },
  "210968082": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369990
  },
  "210969021": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369000
  },
  "210970989": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 365456
  },
  "210971337": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 325000
  },
  "210973878": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 325000
  },
@@ -1748,6 +2992,10 @@
   "price": 352800
  },
  "210976965": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 358000
  },
@@ -1756,6 +3004,9 @@
   "price": 332000
  },
  "210977643": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 364900
  },
@@ -1764,38 +3015,72 @@
   "price": 299000
  },
  "210981792": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 359990
  },
  "210983265": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 339000
  },
  "210984582": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 225000
  },
  "210985767": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 320000
  },
  "210986052": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319990
  },
  "210986586": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 165000
  },
  "210988545": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 339900
  },
  "210989283": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 398000
  },
  "210993630": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
@@ -1804,18 +3089,31 @@
   "price": 222999
  },
  "210997431": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319900
  },
  "210997521": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 285000
  },
  "210999411": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349000
  },
  "210999423": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 368000
  },
@@ -1824,10 +3122,18 @@
   "price": 209000
  },
  "211005519": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "211009830": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 298999
  },
@@ -1836,42 +3142,79 @@
   "price": 266600
  },
  "211013691": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "211013934": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211016319": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 358000
  },
  "211017273": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299900
  },
  "211017420": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 324990
  },
  "211017429": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 329990
  },
  "211020438": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339999
  },
  "211022337": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299900
  },
  "211022463": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379990
  },
  "211022880": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 240000
  },
@@ -1880,6 +3223,10 @@
   "price": 199900
  },
  "211036944": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 199000
  },
@@ -1888,6 +3235,9 @@
   "price": 210000
  },
  "211040799": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339900
  },
@@ -1896,50 +3246,96 @@
   "price": 359990
  },
  "211043025": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 230000
  },
  "211043100": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 328800
  },
  "211043466": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 324900
  },
  "211045428": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349000
  },
  "211046067": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 298000
  },
  "211046283": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 179000
  },
  "211049016": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 289000
  },
  "211049808": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 399800
  },
  "211050612": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319000
  },
  "211050702": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 219000
  },
  "211052094": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339999
  },
  "211054380": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 259900
  },
@@ -1948,14 +3344,24 @@
   "price": 334900
  },
  "211055280": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 269900
  },
  "211055574": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 294900
  },
  "211055643": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 374990
  },
@@ -1968,10 +3374,17 @@
   "price": 289000
  },
  "211057062": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 205000
  },
  "211057425": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 350000
  },
@@ -1980,10 +3393,18 @@
   "price": 299900
  },
  "211058877": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 348000
  },
  "211058880": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 320000
  },
@@ -1992,30 +3413,58 @@
   "price": 299000
  },
  "211062483": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 337000
  },
  "211062708": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389000
  },
  "211063725": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211064748": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 219900
+ },
+ "211066479": {
+  "eq": [
+   "carplay"
+  ],
+  "last_seen": "2026-10-24",
+  "price": 269000
  },
  "211066602": {
   "last_seen": "2026-10-24",
   "price": 319900
  },
  "211067622": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 269000
  },
  "211068183": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319900
  },
@@ -2024,42 +3473,78 @@
   "price": 138000
  },
  "211073460": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 295000
  },
  "211073847": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319990
  },
  "211074132": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379000
  },
  "211074915": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349000
  },
  "211077489": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 239900
  },
  "211078824": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 189000
  },
  "211081959": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 294900
  },
  "211084632": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 350000
  },
  "211084977": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "211089669": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 284999
  },
@@ -2072,82 +3557,155 @@
   "price": 320000
  },
  "211091229": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 358000
  },
  "211091769": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 359000
  },
  "211092012": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 236000
  },
  "211092456": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 328000
  },
  "211095609": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 389800
  },
  "211096245": {
+  "eq": [
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 284900
  },
  "211100292": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299000
  },
  "211100298": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369900
  },
  "211100601": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 268000
  },
  "211101648": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 296000
  },
  "211101672": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 300000
  },
  "211101810": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369900
  },
  "211102407": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359900
  },
  "211102602": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 388000
  },
  "211103151": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 368000
  },
  "211103628": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 219000
  },
  "211104822": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379000
  },
  "211104870": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349900
  },
  "211106901": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369000
  },
  "211110183": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319000
  },
@@ -2156,78 +3714,150 @@
   "price": 249900
  },
  "211113252": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349000
  },
  "211114083": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 339900
  },
  "211116621": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349000
  },
  "211117785": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 398000
  },
  "211118283": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369000
  },
  "211118289": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 388000
  },
  "211118991": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 309000
  },
  "211119120": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 228000
  },
  "211120659": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 245000
  },
  "211120893": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 215000
  },
  "211121910": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "211121916": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "211121919": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "211123629": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 300000
  },
  "211124178": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 329900
  },
  "211124241": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211124637": {
+  "eq": [
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 294900
  },
  "211125192": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 329000
  },
  "211130247": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 398000
  },
@@ -2236,6 +3866,9 @@
   "price": 250000
  },
  "211130922": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
@@ -2244,18 +3877,33 @@
   "price": 254800
  },
  "211134243": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359000
  },
  "211135467": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 229000
  },
  "211138578": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 298300
  },
  "211140126": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
@@ -2264,6 +3912,10 @@
   "price": 349990
  },
  "211140594": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 298990
  },
@@ -2272,6 +3924,9 @@
   "price": 275900
  },
  "211142595": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 325000
  },
@@ -2280,34 +3935,62 @@
   "price": 335000
  },
  "211143906": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 329900
  },
  "211144104": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349990
  },
  "211148562": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 288000
  },
  "211149744": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 238000
  },
  "211150308": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299900
  },
  "211150440": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211151346": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 244405
  },
  "211151541": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 210000
  },
@@ -2328,6 +4011,10 @@
   "price": 205000
  },
  "211157907": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
@@ -2336,18 +4023,31 @@
   "price": 185000
  },
  "211158315": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389900
  },
  "211161234": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 249900
  },
  "211162005": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349000
  },
  "211163352": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 279000
  },
@@ -2356,18 +4056,33 @@
   "price": 369900
  },
  "211163853": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211165812": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211167237": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 169900
  },
  "211167462": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 276600
  },
@@ -2376,14 +4091,23 @@
   "price": 339000
  },
  "211169568": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 210000
  },
  "211170831": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 329900
  },
  "211171074": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369900
  },
@@ -2392,18 +4116,35 @@
   "price": 249877
  },
  "211173189": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 396662
  },
  "211173216": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 378963
  },
  "211173546": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349000
  },
  "211173918": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 324999
  },
@@ -2412,42 +4153,80 @@
   "price": 265000
  },
  "211174908": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 156000
  },
  "211176276": {
+  "eq": [
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 389900
  },
  "211178973": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389000
  },
  "211179495": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 370000
  },
  "211181133": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379900
  },
  "211181196": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339900
  },
  "211181337": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369000
  },
  "211181367": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 329000
  },
  "211184109": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389000
  },
  "211184409": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 300000
  },
@@ -2456,10 +4235,16 @@
   "price": 399000
  },
  "211184475": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 269800
  },
  "211186206": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 289000
  },
@@ -2468,10 +4253,16 @@
   "price": 299000
  },
  "211187583": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 338700
  },
  "211191231": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 238800
  },
@@ -2484,22 +4275,42 @@
   "price": 322900
  },
  "211192488": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 285000
  },
  "211193316": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389000
  },
  "211193526": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 322000
  },
  "211195041": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 263300
  },
  "211196604": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 257000
  },
@@ -2508,6 +4319,10 @@
   "price": 269500
  },
  "211196667": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339000
  },
@@ -2516,18 +4331,31 @@
   "price": 290000
  },
  "211198587": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359000
  },
  "211198833": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359900
  },
  "211201839": {
+  "eq": [
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 329900
  },
  "211201866": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 318000
  },
@@ -2536,26 +4364,48 @@
   "price": 293300
  },
  "211202586": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 340000
  },
  "211202715": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 322938
  },
  "211203522": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 348000
  },
  "211206027": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379990
  },
  "211206567": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211207527": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 380000
  },
@@ -2564,22 +4414,42 @@
   "price": 269900
  },
  "211208646": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389900
  },
  "211209480": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 394000
  },
  "211209840": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349000
  },
  "211209843": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 398000
  },
  "211210584": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 249000
  },
@@ -2588,46 +4458,87 @@
   "price": 279609
  },
  "211210893": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 310000
  },
  "211210932": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 369000
  },
  "211211181": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359000
  },
  "211212132": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 390000
  },
  "211212705": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 316000
  },
  "211213032": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 330000
  },
  "211213203": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211214790": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 233300
  },
  "211216044": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 329000
  },
  "211216770": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 220000
  },
  "211217010": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 367840
  },
@@ -2636,34 +4547,62 @@
   "price": 279900
  },
  "211218552": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 199000
  },
  "211219395": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 395000
  },
  "211219947": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
-  "price": 399000
+  "price": 385000
  },
  "211221468": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 390000
  },
  "211223492": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 349900
  },
  "211223550": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "211223700": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 342000
  },
  "211224108": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 189900
  },
@@ -2672,26 +4611,51 @@
   "price": 399000
  },
  "211230660": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 350000
  },
  "211232931": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299000
  },
  "211233153": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 338000
  },
  "211234659": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 390000
  },
  "211236486": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "211236690": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359900
  },
@@ -2700,38 +4664,67 @@
   "price": 189900
  },
  "211237593": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "211237680": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 219900
  },
  "211238121": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 353293
  },
  "211240643": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 219999
  },
  "211241567": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211241629": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 319000
  },
  "211241855": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 209900
  },
  "211242141": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 232900
  },
  "211242673": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
@@ -2740,42 +4733,83 @@
   "price": 145000
  },
  "211242757": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379000
  },
  "211242761": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389000
  },
  "211242785": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 350000
  },
  "211242937": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399888
  },
  "211243649": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 348900
  },
  "211244159": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 325900
  },
  "211244327": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389900
  },
  "211244473": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 346000
  },
  "211245097": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 274990
  },
  "211245471": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359000
  },
@@ -2784,26 +4818,48 @@
   "price": 339000
  },
  "211245672": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 210000
  },
  "211246557": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211246776": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399999
  },
  "211247760": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319000
  },
  "211248573": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 219000
  },
  "211249083": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 360000
  },
@@ -2812,10 +4868,17 @@
   "price": 239900
  },
  "211251249": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 210000
  },
  "211251405": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 295000
  },
@@ -2824,10 +4887,16 @@
   "price": 319000
  },
  "211252530": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 400000
  },
  "211252803": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 300000
  },
@@ -2836,18 +4905,32 @@
   "price": 230000
  },
  "211253619": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211253760": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 259990
  },
  "211254642": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 215000
  },
  "211255263": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379000
  },
@@ -2856,10 +4939,18 @@
   "price": 179999
  },
  "211256349": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211257126": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 239000
  },
@@ -2868,10 +4959,16 @@
   "price": 314900
  },
  "211257855": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359900
  },
  "211258161": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 270000
  },
@@ -2880,10 +4977,16 @@
   "price": 319900
  },
  "211259520": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 285000
  },
  "211259706": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 339900
  },
@@ -2892,22 +4995,43 @@
   "price": 289000
  },
  "211260858": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 280000
  },
  "211260879": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 239999
  },
  "211261566": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 390000
  },
  "211262730": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379900
  },
  "211264143": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 328000
  },
@@ -2916,90 +5040,175 @@
   "price": 348000
  },
  "211265472": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 329000
  },
  "211265646": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 329000
  },
  "211266276": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 316826
  },
  "211266372": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 279000
  },
  "211266546": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 309000
  },
  "211266789": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 324900
  },
  "211267248": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379000
  },
  "211268907": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369000
  },
  "211269315": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 400000
  },
  "211269348": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339000
  },
  "211270098": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 329000
  },
  "211270848": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211270854": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 357000
  },
  "211271079": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 335000
  },
  "211271091": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 320000
  },
  "211272768": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 219900
  },
  "211273821": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 320000
  },
  "211274172": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 289000
  },
  "211274349": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319000
  },
  "211274619": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379000
  },
  "211274835": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339000
  },
  "211274907": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369000
  },
@@ -3020,42 +5229,79 @@
   "price": 320000
  },
  "211276455": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339900
  },
  "211279281": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379000
  },
  "211279620": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 269000
  },
  "211280160": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 377000
  },
  "211280550": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 135000
  },
  "211281159": {
+  "eq": [
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 249000
  },
  "211281414": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 225000
  },
  "211281549": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 319900
  },
  "211281759": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389000
  },
  "211282329": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339900
  },
@@ -3064,30 +5310,58 @@
   "price": 345000
  },
  "211283088": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 320000
  },
  "211283118": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379900
  },
  "211283934": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 249900
  },
  "211284282": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 249000
  },
  "211284345": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 359000
  },
  "211284552": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
-  "price": 339000
+  "price": 329000
  },
  "211284864": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339000
  },
@@ -3096,50 +5370,90 @@
   "price": 214900
  },
  "211285491": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389000
  },
  "211285860": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 398000
  },
  "211286502": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 280000
  },
  "211286628": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369888
  },
  "211288536": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 190000
  },
  "211288857": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 180000
  },
  "211288992": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 239800
  },
  "211289688": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 249000
  },
  "211290255": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 309800
  },
  "211291038": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 218000
  },
  "211291461": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "211292700": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 264900
  },
@@ -3148,38 +5462,71 @@
   "price": 269000
  },
  "211293582": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 199900
  },
  "211294470": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339000
  },
  "211294494": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 329000
  },
  "211294497": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211294707": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
-  "price": 369000
+  "price": 349000
  },
  "211295913": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 380000
  },
  "211296318": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 395000
  },
  "211296543": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 400000
  },
  "211296903": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369000
  },
@@ -3192,14 +5539,27 @@
   "price": 200000
  },
  "211299537": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 390000
  },
  "211299600": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 380000
  },
  "211299687": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 387990
  },
@@ -3208,14 +5568,24 @@
   "price": 338800
  },
  "211299957": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 225000
  },
  "211300143": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 369900
  },
  "211300917": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 254900
  },
@@ -3224,26 +5594,49 @@
   "price": 219000
  },
  "211301091": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 279999
  },
  "211301103": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 345000
  },
  "211301217": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 229000
  },
  "211301520": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 189900
  },
  "211301844": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 389000
  },
  "211302828": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 350000
  },
@@ -3252,30 +5645,52 @@
   "price": 355000
  },
  "211304649": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 369000
  },
  "211305390": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 199000
  },
  "211305483": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 350000
  },
  "211305651": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399990
  },
  "211305759": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 388000
  },
  "211306128": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 347500
  },
  "211306287": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 370000
  },
@@ -3284,10 +5699,16 @@
   "price": 179999
  },
  "211308723": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 219000
  },
  "211309221": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 280000
  },
@@ -3296,30 +5717,54 @@
   "price": 275000
  },
  "211312473": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 279900
  },
  "211312542": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 289000
  },
  "211313004": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299900
  },
  "211313313": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 400000
  },
  "211313376": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 384000
  },
  "211314303": {
+  "eq": [
+   "carplay"
+  ],
   "last_seen": "2026-10-24",
   "price": 339000
  },
  "211314990": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 310000
  },
@@ -3328,62 +5773,118 @@
   "price": 395000
  },
  "211316508": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "211317024": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 195000
  },
  "211318059": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 265000
  },
  "211318908": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 386000
  },
  "211319037": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 311000
  },
  "211319838": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 329000
  },
  "211319877": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 300000
  },
  "211320072": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 389900
  },
  "211320234": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 249900
  },
  "211320405": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399999
  },
  "211320873": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399990
  },
  "211321782": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 219000
  },
  "211321809": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 319000
  },
  "211323132": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379900
  },
  "211324362": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 298000
  },
@@ -3392,10 +5893,16 @@
   "price": 399000
  },
  "211326249": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 299999
  },
  "211326393": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 219900
  },
@@ -3408,10 +5915,18 @@
   "price": 278000
  },
  "211328805": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399990
  },
  "211328817": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 369990
  },
@@ -3420,38 +5935,69 @@
   "price": 349900
  },
  "211329081": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 309990
  },
  "211329162": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 130000
  },
  "211329204": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 277900
  },
  "211329378": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211329441": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 335000
  },
  "211329654": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399888
  },
  "211330662": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399900
  },
  "211330749": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 375000
  },
  "211331367": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399990
  },
@@ -3460,18 +6006,32 @@
   "price": 345000
  },
  "211331583": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211332405": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 399000
  },
  "211333059": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 199990
  },
  "211333425": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 339900
  },
@@ -3480,35 +6040,76 @@
   "price": 209900
  },
  "211334454": {
+  "eq": [
+   "carplay",
+   "ambient"
+  ],
   "last_seen": "2026-10-24",
   "price": 228000
  },
  "211335144": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379999
  },
  "211336278": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 222222
  },
  "211336299": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 249000
  },
  "211336323": {
+  "eq": [
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 345000
  },
  "211336737": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 350000
  },
  "211336758": {
+  "eq": [
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 209000
  },
  "211337091": {
+  "eq": [
+   "carplay",
+   "heated"
+  ],
   "last_seen": "2026-10-24",
   "price": 379900
+ },
+ "211337862": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
+  "last_seen": "2026-10-24",
+  "price": 274900
  }
 }

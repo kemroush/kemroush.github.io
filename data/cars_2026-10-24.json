@@ -227,11 +227,13 @@
   {
     "id": "209549100",
     "title": "Mercedes-Benz Třídy B 1,3 Distronic Pano CarPlay",
-    "price": "469 000 Kč",
+    "price": "449 000 Kč",
     "details": "2021  ·  64 100 km  ·  Benzín  ·  Automatická  ·  Příbram  ·  Auto Evropská",
     "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/209549100",
     "image": "https://d19-a.sdn.cz/d_19/c_img_og_A/kOzkBkwYBTqAqfE5iFKus9m/936a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
-    "found_at": "24.10.2026 11:05"
+    "found_at": "24.10.2026 11:05",
+    "old_price": "469 000 Kč",
+    "price_drop_at": "24.10.2026 13:23"
   },
   {
     "id": "208931433",
@@ -286,5 +288,17 @@
     "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/206514936",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFMsuhhZIHjZsX/533f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "24.10.2026 11:05"
+  },
+  {
+    "id": "211337337",
+    "title": "Mercedes-Benz GLC 200d 4MATIC Č.R. 35000km !!!",
+    "price": "749 000 Kč",
+    "details": "2020  ·  35 050 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Praha-východ  ·  Jan Fořt",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glc/211337337",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEeCsx6aBUkiIKh5OV/7fca.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient"
+    ],
+    "found_at": "24.10.2026 13:23"
   }
 ]

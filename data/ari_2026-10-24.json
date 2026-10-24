@@ -84,5 +84,105 @@
     "old_price": "369 000 Kč",
     "found_at": "24.10.2026 11:05",
     "price_drop_at": "24.10.2026 11:05"
+  },
+  {
+    "id": "211337862",
+    "title": "Volkswagen Golf 1.4 TSi 110kw Led! Navi!",
+    "price": "274 900 Kč",
+    "details": "2017  ·  189 033 km  ·  Benzín  ·  Automatická  ·  Pardubice  ·  Auto Šimon",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211337862",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUD9Qxwck9IKmSgW/e4ef.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "24.10.2026 13:23"
+  },
+  {
+    "id": "211066479",
+    "title": "Volkswagen Golf 1.4 TSI 92 KW JOIN DSG AUTOMAT",
+    "price": "269 000 Kč",
+    "details": "2018  ·  159 500 km  ·  Benzín  ·  Automatická  ·  Opava  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211066479",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUB13Cveh1IKk7U5/fe52.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "24.10.2026 13:23"
+  },
+  {
+    "id": "211294707",
+    "title": "Škoda Scala Style 81kw DSG navi LED -DPH",
+    "price": "349 000 Kč",
+    "details": "2024  ·  139 000 km  ·  Benzín  ·  Automatická  ·  Brno-město  ·  Nestočeno.cz",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211294707",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCR9NVflLrfprJkjIGdMHZ/f046.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "369 000 Kč",
+    "found_at": "24.10.2026 13:23",
+    "price_drop_at": "24.10.2026 13:23"
+  },
+  {
+    "id": "211284552",
+    "title": "Seat Leon 2,0 TDI TAŽNÉ KAMERA",
+    "price": "329 000 Kč",
+    "details": "2023  ·  153 281 km  ·  Nafta  ·  Automatická  ·  Příbram  ·  Auto Evropská",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211284552",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nPQ64TBsMv4DeCH2AII11J8/61b8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "339 000 Kč",
+    "found_at": "24.10.2026 13:23",
+    "price_drop_at": "24.10.2026 13:23"
+  },
+  {
+    "id": "210922038",
+    "title": "Toyota Auris 1,8 NOVÁ BATERIE+SERVIS TOYOTA",
+    "price": "238 990 Kč",
+    "details": "2015  ·  189 999 km  ·  Hybridní  ·  Automatická  ·  Brno-město  ·  Gamacar",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/auris/210922038",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/nPYADvcUkmDcXILC4OHd9bjn/c385.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "239 990 Kč",
+    "found_at": "24.10.2026 13:23",
+    "price_drop_at": "24.10.2026 13:23"
+  },
+  {
+    "id": "211219947",
+    "title": "Toyota C-HR 1.8 Hybrid e-CVT Style",
+    "price": "385 000 Kč",
+    "details": "2018  ·  117 003 km  ·  Hybridní  ·  Automatická  ·  Liberec  ·  AUTO KP PLUS",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/c-hr/211219947",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFB3JsTeaSH9ju0x/6f1e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "399 000 Kč",
+    "found_at": "24.10.2026 13:23",
+    "price_drop_at": "24.10.2026 13:23"
+  },
+  {
+    "id": "210408968",
+    "title": "Škoda Fabia 1.2 TSi,Joy,DSG,navi",
+    "price": "223 000 Kč",
+    "details": "2016  ·  126 467 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/fabia/210408968",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_B/nCTUX1iX5CNPfpBylJGqdUgw/fab4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "230 000 Kč",
+    "found_at": "24.10.2026 13:23",
+    "price_drop_at": "24.10.2026 13:23"
   }
 ]
