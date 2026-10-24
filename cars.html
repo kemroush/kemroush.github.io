@@ -296,6 +296,9 @@
       color: #0d1117;
       font-weight: 600;
     }
+    .chip-group { display: contents; }
+    .brand-btn .cnt { opacity: 0.6; margin-left: 0.3em; font-size: 0.9em; }
+    .chip-hint { color: #6e7681; font-size: 0.78rem; align-self: center; }
 
     /* ── Price range slider ── */
     .price-filter { margin-bottom: 1rem; }
@@ -571,12 +574,7 @@
           <button class="brand-btn drops-btn">Zlevněné</button>
         </div>
         <div class="brand-filter ari-only">
-          <button class="brand-btn active" data-brand="all">Vše</button>
-          <button class="brand-btn" data-brand="toyota">Toyota</button>
-          <button class="brand-btn" data-brand="audi">Audi</button>
-          <button class="brand-btn" data-brand="mercedes">Mercedes</button>
-          <button class="brand-btn" data-brand="bmw">BMW</button>
-          <button class="brand-btn" data-brand="others">Ostatní</button>
+          <span class="chip-group" id="ari-brands"></span>
           <button class="brand-btn drops-btn">Zlevněné</button>
         </div>
         <div class="brand-filter">
@@ -590,6 +588,7 @@
           <button class="brand-btn" data-fuel="hybrid">Hybrid</button>
           <button class="brand-btn" data-fuel="electric">Elektro</button>
         </div>
+        <div class="brand-filter ari-only" id="ari-models"></div>
         <div class="brand-filter cars-only">
           <button class="brand-btn active" data-model="all">Vše</button>
           <button class="brand-btn" data-model="x1">X1</button>
@@ -678,13 +677,49 @@
     const MODE_HASH = { cars: '', vans: '#dodavky', ari: '#ari' };
     const modeFromHash = () =>
       Object.keys(MODE_HASH).find(m => MODE_HASH[m] && MODE_HASH[m] === location.hash) || 'cars';
-    // Značky s vlastním tlačítkem v Ari feedu; „Ostatní“ = vše ostatní.
-    const ARI_MAIN_BRANDS = ['toyota', 'audi', 'mercedes', 'bmw'];
+    // Ari feed: značky a modely podle sauto seo názvů (z odkazu na inzerát,
+    // …/osobni/detail/<značka>/<model>/<id>). Pořadí = pořadí tlačítek;
+    // co tu chybí, se zobrazí pod seo názvem.
+    const ARI_BRANDS = {
+      'toyota':        ['Toyota',   { 'yaris': 'Yaris', 'yaris-cross': 'Yaris Cross', 'aygo': 'Aygo', 'auris': 'Auris', 'corolla': 'Corolla', 'c-hr': 'C-HR' }],
+      'audi':          ['Audi',     { 'a1': 'A1', 'a3': 'A3' }],
+      'mercedes-benz': ['Mercedes', { 'tridy-a': 'Třída A', 'cla': 'CLA' }],
+      'bmw':           ['BMW',      { 'rada-1': 'Řada 1', 'rada-2': 'Řada 2' }],
+      'volkswagen':    ['VW',       { 'polo': 'Polo', 'golf': 'Golf' }],
+      'skoda':         ['Škoda',    { 'fabia': 'Fabia', 'scala': 'Scala' }],
+      'seat':          ['Seat',     { 'ibiza': 'Ibiza', 'leon': 'Leon' }],
+      'cupra':         ['Cupra',    { 'leon': 'Leon', 'born': 'Born' }],
+      'peugeot':       ['Peugeot',  { '208': '208', '2008': '2008' }],
+      'mazda':         ['Mazda',    { '2': '2', '2-hybrid': '2 Hybrid', '3': '3' }],
+      'lexus':         ['Lexus',    { 'ct-200h': 'CT 200h', 'ux-200': 'UX 200', 'ux-250h': 'UX 250h', 'ux-300e': 'UX 300e' }],
+      'ds':            ['DS',       { '3': '3', '3-crossback': '3 Crossback' }],
+      'hyundai':       ['Hyundai',  { 'i20': 'i20' }],
+      'kia':           ['Kia',      { 'rio': 'Rio', 'stonic': 'Stonic' }],
+    };
+    function sautoKey(c) {
+      const m = (c.link || '').match(/\/detail\/([^/]+)\/([^/]+)\//);
+      return m ? { man: m[1], model: m[2] } : { man: '', model: '' };
+    }
     let mode         = modeFromHash();
     let PRICE_MIN    = MODES[mode].priceMin;
     let PRICE_MAX    = MODES[mode].priceMax;
     let priceMin     = PRICE_MIN;
     let priceMax     = PRICE_MAX;
+
+    // GitHub Pages cachuje JSON ~10 min – bot data mění, chceme vždy čerstvé.
+    const NO_CACHE = { cache: 'no-cache' };
+
+    // Texty inzerátů píšou prodejci → do HTML jen escapované.
+    const esc = s => String(s ?? '').replace(/[&<>"']/g,
+      ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]);
+    const safeUrl = u => /^https?:\/\//i.test(u || '') ? esc(u) : '#';
+
+    // Pohon 4×4: nová data ho mají v details, u starších se pozná z názvu.
+    const AWD_RE = /xdrive|4matic|all4|quattro|\b4x4|4×4/i;
+    function detailsText(c) {
+      const d = c.details || '';
+      return !d.includes('4×4') && AWD_RE.test(c.title || '') ? `${d}  ·  4×4` : d;
+    }
 
     function formatDay(key) {
       const [y, m, d] = key.split('-');
@@ -722,7 +757,7 @@
       list.innerHTML = '<p class="state-msg">Načítám...</p>';
 
       try {
-        const res = await fetch(`data/${MODES[mode].prefix}${days[i].key}.json`);
+        const res = await fetch(`data/${MODES[mode].prefix}${days[i].key}.json`, NO_CACHE);
         allCars   = await res.json();
         renderCars();
       } catch {
@@ -737,7 +772,7 @@
       if (!summaryCache) {
         try {
           const results = await Promise.all(days.map(d =>
-            fetch(`data/${MODES[mode].prefix}${d.key}.json`).then(r => r.ok ? r.json() : []).catch(() => [])
+            fetch(`data/${MODES[mode].prefix}${d.key}.json`, NO_CACHE).then(r => r.ok ? r.json() : []).catch(() => [])
           ));
           const seen = new Set();
           summaryCache = results.flat().filter(c => {
@@ -823,11 +858,11 @@
         if (activeBrands.size > 0) {
           // bez diakritiky, ať „Citroën“ projde jako „citroen“
           const t = c.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-          const brandOk = [...activeBrands].some(b => b === 'besties'
-            ? (t.startsWith('bmw') && /\bx1\b/.test(t)) || (t.startsWith('mercedes') && /\bgla\b/.test(t))
-            : b === 'others'
-            ? !ARI_MAIN_BRANDS.some(x => t.startsWith(x))
-            : t.startsWith(b));
+          const brandOk = mode === 'ari'
+            ? activeBrands.has(sautoKey(c).man)
+            : [...activeBrands].some(b => b === 'besties'
+              ? (t.startsWith('bmw') && /\bx1\b/.test(t)) || (t.startsWith('mercedes') && /\bgla\b/.test(t))
+              : t.startsWith(b));
           if (!brandOk) return false;
         }
         if (activeSeller !== 'all') {
@@ -836,8 +871,17 @@
         }
         if (activeFuels.size > 0 && !activeFuels.has(fuelType(c))) return false;
         if (activeModels.size > 0) {
-          const t = c.title.toLowerCase();
-          const modelOk = [...activeModels].some(m => new RegExp(`\\b${m}\\b`).test(t));
+          let modelOk;
+          if (mode === 'ari') {
+            // Výběr modelu omezuje jen svou značku – u značky bez vybraného
+            // modelu se ukážou všechny její modely.
+            const k = sautoKey(c);
+            const brandHasPick = [...activeModels].some(m => m.startsWith(k.man + '/'));
+            modelOk = !brandHasPick || activeModels.has(`${k.man}/${k.model}`);
+          } else {
+            const t = c.title.toLowerCase();
+            modelOk = [...activeModels].some(m => new RegExp(`\\b${m}\\b`).test(t));
+          }
           if (!modelOk) return false;
         }
         const price = parsePrice(c);
@@ -875,7 +919,70 @@
       return !t || t.last_seen < goneCutoff;
     }
 
+    // Ari: řádek značek a modelů se staví z dat aktuálního dne / historie
+    // (s počty). Modely se ukážou po výběru značky.
+    function renderAriFilters() {
+      if (mode !== 'ari') return;
+      const brandCnt = {}, modelCnt = {};
+      for (const c of allCars) {
+        const k = sautoKey(c);
+        brandCnt[k.man] = (brandCnt[k.man] || 0) + 1;
+        modelCnt[`${k.man}/${k.model}`] = (modelCnt[`${k.man}/${k.model}`] || 0) + 1;
+      }
+      const chip = (attr, val, label, cnt, active) =>
+        `<button class="brand-btn${active ? ' active' : ''}" ${attr}="${esc(val)}">${esc(label)}${cnt != null ? `<span class="cnt">${cnt}</span>` : ''}</button>`;
+
+      const brandKeys = [...Object.keys(ARI_BRANDS), ...Object.keys(brandCnt).filter(b => b && !ARI_BRANDS[b])]
+        .filter(b => brandCnt[b] || activeBrands.has(b));
+      document.getElementById('ari-brands').innerHTML =
+        chip('data-ari-brand', 'all', 'Vše', null, activeBrands.size === 0) +
+        brandKeys.map(b => chip('data-ari-brand', b, (ARI_BRANDS[b] || [b])[0], brandCnt[b] || 0, activeBrands.has(b))).join('');
+
+      const modelsEl = document.getElementById('ari-models');
+      if (activeBrands.size === 0) {
+        modelsEl.innerHTML = '<span class="chip-hint">Modely se ukážou po výběru značky</span>';
+        return;
+      }
+      const models = [];
+      for (const b of brandKeys.filter(b => activeBrands.has(b))) {
+        const names = (ARI_BRANDS[b] || [b, {}])[1];
+        const keys = [...Object.keys(names),
+          ...Object.keys(modelCnt).filter(k => k.startsWith(b + '/')).map(k => k.slice(b.length + 1)).filter(m => !names[m])];
+        for (const m of keys) {
+          const key = `${b}/${m}`;
+          if (!modelCnt[key] && !activeModels.has(key)) continue;
+          const label = activeBrands.size > 1 ? `${(ARI_BRANDS[b] || [b])[0]} ${names[m] || m}` : (names[m] || m);
+          models.push(chip('data-ari-model', key, label, modelCnt[key] || 0, activeModels.has(key)));
+        }
+      }
+      modelsEl.innerHTML = chip('data-ari-model', 'all', 'Vše', null, activeModels.size === 0) + models.join('');
+    }
+
+    document.getElementById('ari-brands').addEventListener('click', e => {
+      const btn = e.target.closest('[data-ari-brand]');
+      if (!btn) return;
+      const b = btn.dataset.ariBrand;
+      if (b === 'all') activeBrands.clear();
+      else if (activeBrands.has(b)) activeBrands.delete(b);
+      else activeBrands.add(b);
+      // Modely odznačených značek pryč z výběru.
+      for (const k of [...activeModels]) {
+        if (!activeBrands.has(k.split('/')[0])) activeModels.delete(k);
+      }
+      renderCars();
+    });
+    document.getElementById('ari-models').addEventListener('click', e => {
+      const btn = e.target.closest('[data-ari-model]');
+      if (!btn) return;
+      const m = btn.dataset.ariModel;
+      if (m === 'all') activeModels.clear();
+      else if (activeModels.has(m)) activeModels.delete(m);
+      else activeModels.add(m);
+      renderCars();
+    });
+
     function renderCars() {
+      renderAriFilters();
       const cars = filteredCars();
       const list = document.getElementById('cars-list');
       document.getElementById('results-count').textContent = `${cars.length} ${cars.length === 1 ? 'výsledek' : cars.length >= 2 && cars.length <= 4 ? 'výsledky' : 'výsledků'}`;
@@ -884,17 +991,17 @@
         return;
       }
       list.innerHTML = sortedCars(cars).map(c => `
-        <a href="${c.link}" class="car-card${isGone(c) ? ' gone' : ''}" target="_blank" rel="noopener">
-          ${c.image ? `<div class="car-thumb"><img src="${c.image}" alt="" loading="lazy"></div>` : ''}
+        <a href="${safeUrl(c.link)}" class="car-card${isGone(c) ? ' gone' : ''}" target="_blank" rel="noopener">
+          ${c.image ? `<div class="car-thumb"><img src="${safeUrl(c.image)}" alt="" loading="lazy"></div>` : ''}
           <div class="car-body">
             <div class="car-top">
-              <span class="car-title">${c.title}</span>
-              <span>${c.old_price ? `<span class="car-old-price">${c.old_price}</span>` : ''}<span class="car-price">${c.price}</span></span>
+              <span class="car-title">${esc(c.title)}</span>
+              <span>${c.old_price ? `<span class="car-old-price">${esc(c.old_price)}</span>` : ''}<span class="car-price">${esc(c.price)}</span></span>
             </div>
             ${c.old_price ? `<div class="car-drop">zlevněno o ${formatPrice(parseInt(c.old_price.replace(/\D/g, '')) - parsePrice(c))}</div>` : ''}
-            <div class="car-details">${c.details}</div>
-            ${c.price_drop_at ? `<div class="car-time">zlevněno ${c.price_drop_at}</div>`
-              : c.found_at ? `<div class="car-time">nalezeno ${c.found_at}</div>` : ''}
+            <div class="car-details">${esc(detailsText(c))}</div>
+            ${c.price_drop_at ? `<div class="car-time">zlevněno ${esc(c.price_drop_at)}</div>`
+              : c.found_at ? `<div class="car-time">nalezeno ${esc(c.found_at)}</div>` : ''}
             ${isGone(c) ? '<div class="car-gone">už není v nabídce</div>' : ''}
           </div>
         </a>
@@ -1053,7 +1160,7 @@
     async function loadTracked() {
       try {
         tracked = null;
-        const res = await fetch(MODES[mode].tracked);
+        const res = await fetch(MODES[mode].tracked, NO_CACHE);
         if (!res.ok) return;
         tracked = await res.json();
         const latest = Object.values(tracked).reduce((m, t) => t.last_seen > m ? t.last_seen : m, '');
@@ -1075,7 +1182,7 @@
       document.getElementById('results-count').textContent = '';
       await loadTracked();
       try {
-        const res   = await fetch(MODES[mode].index);
+        const res   = await fetch(MODES[mode].index, NO_CACHE);
         const index = res.ok ? await res.json() : { days: [] };
         days = index.days || [];
         if (days.length) {
@@ -1143,10 +1250,11 @@ ${urlList}
 Prosím:
 1. Načti všechny soubory (některé nemusí existovat — přeskoč je)
 2. Seřaď podle poměru cena / stav / riziko — zohledni spolehlivost převodovky (dobře: Toyota hybrid e-CVT, klasické měniče; pozor: suché DSG DQ200, starší dvouspojkové a robotizované převodovky) a motoru
-3. Vypíchni auta s hezčím interiérem / vyšší výbavou (kůže, větší displej, ambientní osvětlení, prémiové značky)
-4. Preferuj soukromé prodejce a auta z ČR; upozorni na podezřele levné kusy, dovozy a podivné inzeráty
-5. Ke každému autu uveď přímý odkaz z pole "link" a krátce, na co se při prohlídce zaměřit
-6. Na závěr doporuč 1-3 nejlepší kousky`;
+3. Upozorni, pokud má auto pohon 4×4 (štítek "4×4" v "details")
+4. Vypíchni auta s hezčím interiérem / vyšší výbavou (kůže, větší displej, ambientní osvětlení, prémiové značky)
+5. Preferuj soukromé prodejce a auta z ČR; upozorni na podezřele levné kusy, dovozy a podivné inzeráty
+6. Ke každému autu uveď přímý odkaz z pole "link" a krátce, na co se při prohlídce zaměřit
+7. Na závěr doporuč 1-3 nejlepší kousky`;
       } else {
       currentPrompt = `Jsem na českém trhu ojetých aut a hledám BMW, Mercedes nebo Mini s automatem, ročník 2020+, do 100 000 km, cena 300 000–750 000 Kč. Moje oblíbené modely jsou BMW X1 a Mercedes GLA — pokud se mezi nimi nějaké objeví, vypíchni je.
 
@@ -1161,7 +1269,7 @@ ${urlList}
 
 Prosím:
 1. Načti všechny soubory (některé nemusí existovat — přeskoč je)
-2. Odfiltruj elektromobily a auta mimo moje kritéria
+2. Odfiltruj elektromobily a auta mimo moje kritéria — nechci pohon 4×4 (xDrive / 4MATIC / ALL4); takové inzeráty mají v "details" štítek "4×4" nebo to mají v názvu
 3. Vyber TOP tipy — prioritizuj: nízký nájezd, dobrý motor (B47/B48/OM654/M260), soukromý prodejce, dobrá cena/hodnota
 4. Upozorni na přefouknuté dealerské ceny (renocar, mercedesnasklade, drivalia i nabidky.bmw.cz jsou všechno dealerské sklady — typicky dráž než bazar na sauto)
 5. Ke každému autu uveď přímý odkaz z pole "link" (může vést na kterýkoliv z pěti portálů) a v závorce zdroj (sauto / renocar / mercedesnasklade / drivalia / bmw.cz)

@@ -2,16 +2,29 @@ name: Auto Monitor
 
 on:
   schedule:
-    # 7:00, 11:00, 16:00, 20:00 CET (UTC+1) → 6:00, 10:00, 15:00, 19:00 UTC
-    - cron: '0 6,10,15,19 * * *'
+    # 7:17, 11:17, 16:17, 20:17 CET (UTC+1); v létě (CEST) o hodinu později.
+    # Schválně ne v celou hodinu – GitHub běhy v :00 často zpožďuje o hodiny
+    # nebo úplně zahazuje (ranní běh se tak dřív skoro nikdy nespustil).
+    - cron: '17 6,10,15,19 * * *'
   workflow_dispatch:  # možnost spustit ručně
+    inputs:
+      dry_run:
+        description: 'Jen nanečisto – stáhnout a vypsat, nic neukládat ani necommitovat'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
 
+# Nikdy dva běhy naráz (ruční + plánovaný) – jinak by si přepisovaly data.
+concurrency:
+  group: auto-monitor
+  cancel-in-progress: false
+
 jobs:
   monitor:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     env:
       TZ: Europe/Prague  # správný den-klíč při přechodu v 6:00
 
@@ -19,18 +32,29 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v5
 
+      # Vlastní Python, ať bot nezávisí na systémovém Pythonu runneru
+      # (ubuntu-latest přechází na Ubuntu 26).
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
       - name: Install dependencies
         run: pip install beautifulsoup4 lxml
 
       - name: Run auto monitor
+        env:
+          DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
         run: python3 auto_monitor.py
 
       - name: Commit results
+        if: ${{ !inputs.dry_run }}
         run: |
           git config user.name "Auto Monitor"
           git config user.email "action@github.com"
           git add data/
           git diff --staged --quiet && echo "Žádné změny." || (
             git commit -m "auto-monitor: $(date +'%Y-%m-%d %H:%M %Z')" &&
-            git push
+            # Když mezitím přibyl commit na main (např. merge PR), přeskládej a zkus znovu.
+            (git push || (git pull --rebase && git push))
           )
