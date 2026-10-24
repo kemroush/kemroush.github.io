@@ -32,6 +32,13 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v5
 
+      # Vlastní Python, ať bot nezávisí na systémovém Pythonu runneru
+      # (ubuntu-latest přechází na Ubuntu 26).
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
       - name: Install dependencies
         run: pip install beautifulsoup4 lxml
 
