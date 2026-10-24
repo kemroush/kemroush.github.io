@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Auto Monitor - sledování nových BMW a Mercedes na sauto.cz,
-renocar.cz, mercedesnasklade.cz, future.drivalia.cz a nabidky.bmw.cz
+Auto Monitor – sledování nových a zlevněných ojetých BMW / Mercedes / MINI
+na sauto.cz, renocar.cz, mercedesnasklade.cz, future.drivalia.cz a nabidky.bmw.cz
 
 Generuje:
   data/index.json            – seznam dostupných dní (čte JS v cars.html)
@@ -15,17 +15,21 @@ Třetí, oddělený feed – Ari car store (malá auta s automatem na sauto.cz, 
   data/ari_index.json, data/ari_YYYY-MM-DD.json, data/ari_seen.json, data/ari_tracked.json
 
 Požadavky:
-  pip install beautifulsoup4 lxml
+  pip install beautifulsoup4 lxml   (+ curl v systému)
+
+Spuštění nanečisto (nic se neukládá):
+  DRY_RUN=1 python3 auto_monitor.py
 """
 
 import json
 import os
 import re
 import subprocess
+import time
 import urllib.parse
 from datetime import datetime, timedelta
 
-from bs4 import BeautifulSoup, NavigableString
+from bs4 import BeautifulSoup
 
 RENOCAR_BASE = "https://www.renocar.cz"
 MNS_BASE = "https://www.mercedesnasklade.cz"
@@ -45,7 +49,8 @@ CONFIG = {
     "min_year_overrides": {"bmw": 2022},
     "brands":        ["bmw", "mercedes-benz", "mini"],
     "blocked_sellers": ["davo car", "aaa auto", "auta super"],
-    "max_pages":       5,
+    "max_pages":       5,     # stránky u Drivalia
+    "sauto_max_pages": 20,    # × 100 inzerátů ze sauto API (~8 stránek v 10/2026)
     "seen_file":     os.path.join(DATA_DIR, "seen_cars.json"),
     "index_file":    os.path.join(DATA_DIR, "index.json"),
     "tracked_file":  os.path.join(DATA_DIR, "tracked.json"),
@@ -239,133 +244,245 @@ def update_index(day_key: str, count: int, updated_at: str,
 
 
 # ─────────────────────────────────────────────
-#  SCRAPING SAUTO.CZ
+#  STAHOVÁNÍ (curl s opakováním)
 # ─────────────────────────────────────────────
 
-def scrape_sauto(brand: str) -> list[dict]:
-    min_year = CONFIG["min_year_overrides"].get(brand, CONFIG["min_year"])
-    base_url = (
-        f"https://www.sauto.cz/inzerce/osobni/{brand}"
-        f"?cena-od={CONFIG['min_price_czk']}"
-        f"&cena-do={CONFIG['max_price_czk']}"
-        f"&vyrobeno-od={min_year}"
-        f"&km-do={CONFIG['max_km']}"
-        f"&prevodovka=automaticka&razeni=datum-vlozeni-desc"
-    )
+UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36")
+
+# DRY_RUN=1 → jen stáhne a vypíše, co by se uložilo; nic nezapisuje.
+DRY_RUN = os.environ.get("DRY_RUN", "").strip().lower() in ("1", "true", "yes")
+
+# Pohon 4×4 v názvu (xDrive20d, 4MATIC+, ALL4, quattro…) – u zdrojů,
+# které pohon neposílají zvlášť.
+AWD_RE = re.compile(r"xdrive|4matic|all4|quattro|\b4x4|4×4", re.IGNORECASE)
+AWD_TAG = "4×4"
+
+
+def fetch(url: str, *, headers: dict | None = None, curl_args: tuple = (),
+          as_json: bool = False, attempts: int = 3, timeout: int = 30):
+    """Stáhne URL přes curl. Při chybě curl, prázdné odpovědi nebo
+    nevalidním JSON to zkusí znovu (celkem ``attempts``×, s pauzou).
+    Vrací text, nebo rozparsovaný JSON (``as_json=True``). Po posledním
+    neúspěchu vyhodí výjimku – zachytí ji volající scraper."""
+    cmd = ["curl", "-sL", "--max-time", str(timeout), "-H", f"User-Agent: {UA}"]
+    for key, value in (headers or {}).items():
+        cmd += ["-H", f"{key}: {value}"]
+    cmd += [*curl_args, url]
+
+    last_err = None
+    for attempt in range(1, attempts + 1):
+        try:
+            res = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout + 15)
+            if res.returncode != 0:
+                raise RuntimeError(f"curl skončil s kódem {res.returncode}")
+            if not res.stdout.strip():
+                raise RuntimeError("prázdná odpověď")
+            return json.loads(res.stdout) if as_json else res.stdout
+        except Exception as e:
+            last_err = e
+            if attempt < attempts:
+                time.sleep(3 * attempt)
+    raise RuntimeError(f"{url[:90]} – {attempts}× neúspěšně: {last_err}")
+
+
+def _km_str(km: int) -> str:
+    return f"{km:,}".replace(",", " ") + " km"
+
+
+def _format_czk(value: int) -> str:
+    return f"{value:,}".replace(",", "\xa0") + "\xa0Kč"
+
+
+# ─────────────────────────────────────────────
+#  SCRAPING SAUTO.CZ (interní JSON API – auta, dodávky, Ari)
+# ─────────────────────────────────────────────
+
+SAUTO_API = "https://www.sauto.cz/api/v1/items/search"
+SAUTO_IMG_SUFFIX = "?fl=exf|res,360,270,3|jpg,80,,1"
+
+
+def _sauto_search(params: dict, max_pages: int, referer: str) -> list[dict]:
+    """Všechny stránky (po 100) z ``/api/v1/items/search``. Výsledky
+    odduplikuje podle ID (pořadí se během stránkování může posunout).
+    Když stránka selže i po opakování, vrátí to, co stihl stáhnout."""
+    base = f"{SAUTO_API}?{urllib.parse.urlencode(params)}&limit=100"
+    headers = {
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "cs-CZ,cs;q=0.9",
+        "Referer": referer,
+    }
+    items, ids = [], set()
+    for page in range(max_pages):
+        try:
+            data = fetch(f"{base}&offset={page * 100}", headers=headers, as_json=True)
+        except Exception as e:
+            print(f"  [sauto.cz] Chyba na stránce {page + 1}: {e}")
+            break
+        results = data.get("results") or []
+        for v in results:
+            vid = v.get("id")
+            if vid is not None and vid not in ids:
+                ids.add(vid)
+                items.append(v)
+        if len(results) < 100:
+            break
+    else:
+        print(f"  [sauto.cz] Pozor: dosažen limit {max_pages} stránek, výsledky můžou být neúplné")
+    return items
+
+
+def _scrape_sauto_feed(label: str, cfg: dict, *, category_id: int, section: str,
+                       referer: str, model_ok, min_year_for,
+                       extra_params: dict | None = None) -> list[dict]:
+    """Společný scraper pro všechny sauto feedy. ``model_ok(man_seo, model_seo)``
+    rozhoduje o whitelistu, ``min_year_for(man_seo)`` vrací minimální rok.
+    Ceny, km a převodovka se filtrují server-side i klientsky (API občas
+    neznámé parametry tiše ignoruje)."""
+    params = {
+        "price_from": cfg["min_price_czk"],
+        "price_to": cfg["max_price_czk"],
+        "condition_seo": "ojete",
+        "category_id": category_id,
+        "operating_lease": "false",
+        **(extra_params or {}),
+    }
+    gearbox_req = params.get("gearbox_seo")
+    min_km = cfg.get("min_km", 0)
+
+    items = _sauto_search(params, cfg["max_pages"], referer)
+    # Pohon se v listingu neposílá – zjistí se druhým dotazem s drive_seo=4x4.
+    awd_ids = set()
+    if items:
+        awd_ids = {v["id"] for v in _sauto_search({**params, "drive_seo": "4x4"},
+                                                   cfg["max_pages"], referer)}
+
     cars = []
-    try:
-        for page in range(1, CONFIG["max_pages"] + 1):
-            url = base_url if page == 1 else f"{base_url}&strana={page}"
-            result = subprocess.run(
-                ["curl", "-sL",
-                 "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-                 "-H", "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                 "-H", "Accept-Language: cs-CZ,cs;q=0.9",
-                 url],
-                capture_output=True, text=True, timeout=30,
-            )
-            soup = BeautifulSoup(result.stdout, "lxml")
-            items = soup.select("li.c-item.c-item--hor")
-            if not items:
-                break  # žádné další výsledky
+    for v in items:
+        try:
+            man = v.get("manufacturer_cb") or {}
+            model = v.get("model_cb") or {}
+            man_seo = man.get("seo_name", "")
+            model_seo = model.get("seo_name", "")
+            if not model_ok(man_seo, model_seo):
+                continue
 
-            for item in items:
-                try:
-                    ad_id = None
-                    for cls in item.get("class", []):
-                        m = re.match(r"^c-item-(\d+)$", cls)
-                        if m:
-                            ad_id = m.group(1)
-                            break
+            gearbox_cb = v.get("gearbox_cb") or {}
+            if gearbox_req and gearbox_cb.get("seo_name") != gearbox_req:
+                continue
 
-                    name_el   = item.select_one("span.c-item__name")
-                    suffix_el = item.select_one("span.c-item__name--suffix")
-                    direct = "".join(str(t).strip() for t in name_el.children
-                                     if isinstance(t, NavigableString)).rstrip(",").strip() if name_el else ""
-                    suffix = suffix_el.get_text(strip=True) if suffix_el else ""
-                    title  = f"{direct} {suffix}".strip()
+            price_num = int(v.get("price") or 0)
+            if v.get("price_by_agreement") or price_num <= 0:
+                continue
+            if price_num < cfg["min_price_czk"] or price_num > cfg["max_price_czk"]:
+                continue
 
-                    price_el = item.select_one("div.c-item__price")
-                    price    = price_el.get_text(strip=True) if price_el else "Cena neuvedena"
+            km = int(v.get("tachometer") or 0)
+            if km < min_km or km > cfg["max_km"]:
+                continue
 
-                    info_el   = item.select_one("div.c-item__info")
-                    info_text = info_el.get_text(" ", strip=True) if info_el else ""
+            year_m = re.match(r"(\d{4})", v.get("manufacturing_date")
+                              or v.get("in_operation_date") or "")
+            year = int(year_m.group(1)) if year_m else 0
+            if not year or year < min_year_for(man_seo):
+                continue
 
-                    loc_el   = item.select_one("div.c-item__locality")
-                    location = loc_el.get_text(strip=True) if loc_el else ""
+            premise = ((v.get("premise") or {}).get("name") or "").strip()
+            if any(b in premise.lower() for b in CONFIG["blocked_sellers"]):
+                continue
+            seller = premise or "Soukromý"
 
-                    seller_el   = item.select_one("div.c-item__seller")
-                    seller_text = seller_el.get_text(strip=True) if seller_el else ""
-                    seller_type = "Soukromý" if seller_text == "Soukromý prodejce" else seller_text
+            # „Opel Vivaro, 1,9 CDTI“ → „Opel Vivaro 1,9 CDTI“ (jen první čárka)
+            title = re.sub(r"\s*,\s*", " ", (v.get("name") or "").strip(), count=1).strip()
+            if not title:
+                title = f"{man.get('name', '')} {model.get('name', '')}".strip()
 
-                    details = f"{info_text}  ·  {location}  ·  {seller_type}".strip(" ·").strip()
+            fuel = ((v.get("fuel_cb") or {}).get("name") or "").strip()
+            gearbox = (gearbox_cb.get("name") or "").strip()
+            awd = AWD_TAG if (v["id"] in awd_ids or AWD_RE.search(title)) else ""
+            loc = v.get("locality") or {}
+            place = (loc.get("district") or loc.get("municipality") or "").strip()
 
-                    link_el = item.select_one("a[href]")
-                    href    = link_el["href"] if link_el else ""
-                    link    = href if href.startswith("http") else f"https://www.sauto.cz{href}"
+            parts = [str(year), _km_str(km)]
+            parts += [x for x in (fuel, awd, gearbox, place, seller) if x]
 
-                    img_el = item.select_one("img.c-item__image")
-                    img_src = img_el["src"] if img_el else ""
-                    if img_src.startswith("//"):
-                        img_src = "https:" + img_src
+            vid = v["id"]
+            image = ""
+            imgs = v.get("images") or []
+            if imgs and imgs[0].get("url"):
+                image = imgs[0]["url"]
+                if image.startswith("//"):
+                    image = "https:" + image
+                image += SAUTO_IMG_SUFFIX
 
-                    if not ad_id:
-                        ad_id = link
+            cars.append({
+                "id":      str(vid),
+                "title":   title,
+                "price":   _format_czk(price_num),
+                "details": "  ·  ".join(parts),
+                "link":    f"https://www.sauto.cz/{section}/detail/{man_seo}/{model_seo}/{vid}",
+                "image":   image,
+            })
+        except Exception:
+            continue
 
-                    # Filtr: blokovaní prodejci
-                    seller_lower = seller_text.lower()
-                    if any(b in seller_lower for b in CONFIG["blocked_sellers"]):
-                        continue
-
-                    # Záložní filtr: značka (pro případ sponzorovaných výsledků jiných značek)
-                    title_lower = title.lower()
-                    brand_prefixes = ["bmw", "mercedes", "mini"]
-                    if not any(title_lower.startswith(b) for b in brand_prefixes):
-                        continue
-
-                    # Filtr: rok (BMW má vyšší min_year přes min_year_overrides)
-                    year_m = re.search(r'\b(20\d{2})\b', info_text)
-                    if year_m and int(year_m.group(1)) < min_year:
-                        continue
-
-                    # Filtr: km
-                    km_m = re.search(r'([\d\s\u00a0]+)\s*km', info_text)
-                    if km_m:
-                        km = int(re.sub(r'\D', '', km_m.group(1)))
-                        if km > CONFIG["max_km"]:
-                            continue
-
-                    # Filtr: cena
-                    price_num = int(re.sub(r"[^\d]", "", price)) if re.search(r"\d", price) else 0
-                    if price_num > CONFIG["max_price_czk"] or (price_num > 0 and price_num < CONFIG["min_price_czk"]):
-                        continue
-
-                    if title and link:
-                        cars.append({
-                            "id":      ad_id,
-                            "title":   title,
-                            "price":   price,
-                            "details": details,
-                            "link":    link,
-                            "image":   img_src,
-                        })
-                except Exception:
-                    continue
-
-    except Exception as e:
-        print(f"  [sauto.cz/{brand}] Chyba: {e}")
-
-    print(f"  sauto.cz/{brand}: {len(cars)} inzerátů")
+    n_awd = sum(1 for c in cars if AWD_TAG in c["details"])
+    print(f"  sauto.cz/{label}: {len(cars)} inzerátů ({n_awd}× {AWD_TAG})")
     return cars
+
+
+def scrape_sauto() -> list[dict]:
+    """Ojeté BMW / Mercedes / MINI s automatem (osobní, category_id=838)."""
+    brands = CONFIG["brands"]
+    return _scrape_sauto_feed(
+        "osobni (" + ", ".join(brands) + ")", {**CONFIG, "max_pages": CONFIG["sauto_max_pages"]},
+        category_id=838, section="osobni",
+        referer="https://www.sauto.cz/inzerce/osobni",
+        model_ok=lambda man, model: man in brands,
+        min_year_for=lambda man: CONFIG["min_year_overrides"].get(man, CONFIG["min_year"]),
+        extra_params={
+            "gearbox_seo": "automaticka",
+            "tachometer_to": CONFIG["max_km"],
+            "manufacturer_model_seo": "|".join(brands),
+        },
+    )
+
+
+def scrape_sauto_vans() -> list[dict]:
+    """Střední a velké dodávky (užitková, category_id=839)."""
+    vc = VAN_CONFIG
+    return _scrape_sauto_feed(
+        "uzitkova (dodávky)", vc,
+        category_id=839, section="uzitkova",
+        referer="https://www.sauto.cz/inzerce/uzitkova",
+        model_ok=lambda man, model: f"{man}/{model}" in vc["models"],
+        min_year_for=lambda man: vc["min_year"],
+    )
+
+
+def scrape_sauto_ari() -> list[dict]:
+    """Malá auta s automatem pro Ari (osobní, category_id=838). Whitelist
+    modelů jde i server-side (manufacturer_model_seo=znacka:m1,m2|znacka2:m3)."""
+    ac = ARI_CONFIG
+    mm = "|".join(f"{man}:{','.join(models)}" for man, models in ac["models"].items())
+    return _scrape_sauto_feed(
+        "osobni (Ari)", ac,
+        category_id=838, section="osobni",
+        referer="https://www.sauto.cz/inzerce/osobni",
+        model_ok=lambda man, model: (man not in ac["blocked_manufacturers"]
+                                     and model in ac["models"].get(man, [])),
+        min_year_for=lambda man: ac["min_year"],
+        extra_params={
+            "gearbox_seo": "automaticka",
+            "tachometer_to": ac["max_km"],
+            "manufacturer_model_seo": mm,
+        },
+    )
 
 
 # ─────────────────────────────────────────────
 #  SCRAPING RENOCAR.CZ (BMW skladové vozy)
 # ─────────────────────────────────────────────
-
-def _format_czk(value: int) -> str:
-    return f"{value:,}".replace(",", " ") + " Kč"
-
 
 def scrape_renocar() -> list[dict]:
     brand = "bmw"
@@ -373,16 +490,11 @@ def scrape_renocar() -> list[dict]:
     url = f"{RENOCAR_BASE}/?ajax=newFilterQuery-cars&brand={brand}&limit=500&offset=0"
     cars = []
     try:
-        result = subprocess.run(
-            ["curl", "-sL",
-             "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-             "-H", "Accept: application/json, text/plain, */*",
-             "-H", "X-Requested-With: XMLHttpRequest",
-             "-H", "Accept-Language: cs-CZ,cs;q=0.9",
-             url],
-            capture_output=True, text=True, timeout=30,
-        )
-        data = json.loads(result.stdout)
+        data = fetch(url, as_json=True, headers={
+            "Accept": "application/json, text/plain, */*",
+            "X-Requested-With": "XMLHttpRequest",
+            "Accept-Language": "cs-CZ,cs;q=0.9",
+        })
         for c in data.get("cars", []):
             try:
                 ad_id = f"renocar:{c['id']}"
@@ -421,6 +533,8 @@ def scrape_renocar() -> list[dict]:
                 parts.append(f"{km:,}".replace(",", " ") + " km")
                 if displacement:
                     parts.append(displacement)
+                if AWD_RE.search(title):
+                    parts.append(AWD_TAG)
                 parts.append("Renocar")
                 details = "  ·  ".join(parts)
 
@@ -471,16 +585,11 @@ def scrape_bmwojete() -> list[dict]:
             "$limit":  500,
             "$sort":   [{"$field": "transactionalPrice", "$order": "asc"}],
         })
-        result = subprocess.run(
-            ["curl", "-sL", "-X", "POST", url,
-             "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-             "-H", "Content-Type: application/json;charset=UTF-8",
-             "-H", "Accept: application/json",
-             "-H", "Accept-Language: cs-CZ,cs;q=0.9",
-             "--data", body],
-            capture_output=True, text=True, timeout=30,
-        )
-        data = json.loads(result.stdout)
+        data = fetch(url, as_json=True, curl_args=("-X", "POST", "--data", body), headers={
+            "Content-Type": "application/json;charset=UTF-8",
+            "Accept": "application/json",
+            "Accept-Language": "cs-CZ,cs;q=0.9",
+        })
         items = data.get("$list", [])
 
         for v in items:
@@ -523,6 +632,8 @@ def scrape_bmwojete() -> list[dict]:
                 parts.append(f"{km:,}".replace(",", " ") + " km")
                 if fuel:
                     parts.append(fuel)
+                if AWD_RE.search(title):
+                    parts.append(AWD_TAG)
                 if dealer:
                     parts.append(dealer)
                 details = "  ·  ".join(parts)
@@ -567,15 +678,11 @@ def scrape_mercedesnasklade() -> list[dict]:
     try:
         for page in range(1, 21):
             url = base if page == 1 else f"{base}&p={page}"
-            result = subprocess.run(
-                ["curl", "-sL",
-                 "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-                 "-H", "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                 "-H", "Accept-Language: cs-CZ,cs;q=0.9",
-                 url],
-                capture_output=True, text=True, timeout=30,
-            )
-            soup = BeautifulSoup(result.stdout, "lxml")
+            html = fetch(url, headers={
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "cs-CZ,cs;q=0.9",
+            })
+            soup = BeautifulSoup(html, "lxml")
             items = soup.select(".car-item")
             if not items:
                 break
@@ -642,6 +749,8 @@ def scrape_mercedesnasklade() -> list[dict]:
                         parts.append(f"{km:,}".replace(",", " ") + " km")
                     if fuel:
                         parts.append(fuel)
+                    if AWD_RE.search(title):
+                        parts.append(AWD_TAG)
                     if seller:
                         parts.append(seller)
                     details = "  ·  ".join(parts)
@@ -682,23 +791,18 @@ DRIVALIA_BRAND_SLUGS = {
 
 
 def _drivalia_nonce() -> str:
-    result = subprocess.run(
-        ["curl", "-sL",
-         "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-         f"{DRIVALIA_BASE}/vozidla/"],
-        capture_output=True, text=True, timeout=30,
-    )
-    m = re.search(r'"action":"ddf_query","nonce":"([a-f0-9]+)"', result.stdout)
+    try:
+        html = fetch(f"{DRIVALIA_BASE}/vozidla/")
+    except Exception as e:
+        print(f"  [future.drivalia.cz] Chyba: {e}")
+        return ""
+    m = re.search(r'"action":"ddf_query","nonce":"([a-f0-9]+)"', html)
     return m.group(1) if m else ""
 
 
 def _drivalia_fetch_page(brand_slug: str, page: int, nonce: str, min_year: int) -> dict:
-    args = [
-        "curl", "-sL", "-X", "POST",
-        f"{DRIVALIA_BASE}/wp-admin/admin-ajax.php",
-        "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-        "-H", "X-Requested-With: XMLHttpRequest",
-        "-H", "Accept: application/json, text/javascript, */*; q=0.01",
+    form = (
+        "-X", "POST",
         "--data-urlencode", "action=ddf_query",
         "--data-urlencode", f"nonce={nonce}",
         "--data-urlencode", f"page={page}",
@@ -708,9 +812,12 @@ def _drivalia_fetch_page(brand_slug: str, page: int, nonce: str, min_year: int) 
         "--data-urlencode", f"km_max={CONFIG['max_km']}",
         "--data-urlencode", f"year_min={min_year}",
         "--data-urlencode", f"brand[]={brand_slug}",
-    ]
-    result = subprocess.run(args, capture_output=True, text=True, timeout=30)
-    return json.loads(result.stdout)
+    )
+    return fetch(f"{DRIVALIA_BASE}/wp-admin/admin-ajax.php", as_json=True, curl_args=form,
+                 headers={
+                     "X-Requested-With": "XMLHttpRequest",
+                     "Accept": "application/json, text/javascript, */*; q=0.01",
+                 })
 
 
 def scrape_drivalia() -> list[dict]:
@@ -791,6 +898,8 @@ def scrape_drivalia() -> list[dict]:
                             parts.append(f"{km:,}".replace(",", " ") + " km")
                         if fuel:
                             parts.append(fuel)
+                        if AWD_RE.search(title):
+                            parts.append(AWD_TAG)
                         parts.append("Future Drivalia")
                         details = "  ·  ".join(parts)
 
@@ -820,232 +929,31 @@ def scrape_drivalia() -> list[dict]:
 
 
 # ─────────────────────────────────────────────
-#  SCRAPING SAUTO.CZ – DODÁVKY (užitková, JSON API)
-# ─────────────────────────────────────────────
-
-SAUTO_IMG_SUFFIX = "?fl=exf|res,360,270,3|jpg,80,,1"
-
-
-def scrape_sauto_vans() -> list[dict]:
-    """Užitková vozidla ze sauto.cz přes interní JSON API (category_id=839).
-    Cenový filtr jde server-side, zbytek (model, rok, km) klientsky."""
-    vc = VAN_CONFIG
-    base = (
-        "https://www.sauto.cz/api/v1/items/search"
-        f"?price_from={vc['min_price_czk']}&price_to={vc['max_price_czk']}"
-        "&condition_seo=ojete&category_id=839&operating_lease=false&limit=100"
-    )
-    vans = []
-    try:
-        for page in range(vc["max_pages"]):
-            result = subprocess.run(
-                ["curl", "-sL",
-                 "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-                 "-H", "Accept: application/json, text/plain, */*",
-                 "-H", "Accept-Language: cs-CZ,cs;q=0.9",
-                 "-H", "Referer: https://www.sauto.cz/inzerce/uzitkova",
-                 f"{base}&offset={page * 100}"],
-                capture_output=True, text=True, timeout=30,
-            )
-            items = json.loads(result.stdout).get("results") or []
-
-            for v in items:
-                try:
-                    man = v.get("manufacturer_cb") or {}
-                    model = v.get("model_cb") or {}
-                    key = f"{man.get('seo_name', '')}/{model.get('seo_name', '')}"
-                    if key not in vc["models"]:
-                        continue
-
-                    price_num = int(v.get("price") or 0)
-                    if v.get("price_by_agreement") or price_num <= 0:
-                        continue
-                    if price_num < vc["min_price_czk"] or price_num > vc["max_price_czk"]:
-                        continue
-
-                    km = int(v.get("tachometer") or 0)
-                    if km < vc["min_km"] or km > vc["max_km"]:
-                        continue
-
-                    year_m = re.match(r"(\d{4})", v.get("manufacturing_date")
-                                      or v.get("in_operation_date") or "")
-                    year = int(year_m.group(1)) if year_m else 0
-                    if not year or year < vc["min_year"]:
-                        continue
-
-                    premise = (v.get("premise") or {}).get("name") or ""
-                    if any(b in premise.lower() for b in CONFIG["blocked_sellers"]):
-                        continue
-                    seller = premise.strip() or "Soukromý"
-
-                    # „Opel Vivaro, 1,9 CDTI“ → „Opel Vivaro 1,9 CDTI“ (jen první čárka)
-                    title = re.sub(r"\s*,\s*", " ", (v.get("name") or "").strip(), count=1).strip()
-                    if not title:
-                        title = f"{man.get('name', '')} {model.get('name', '')}".strip()
-
-                    fuel = ((v.get("fuel_cb") or {}).get("name") or "").strip()
-                    gearbox = ((v.get("gearbox_cb") or {}).get("name") or "").strip()
-                    loc = v.get("locality") or {}
-                    place = (loc.get("district") or loc.get("municipality") or "").strip()
-
-                    parts = [str(year), f"{km:,}".replace(",", " ") + " km"]
-                    parts += [x for x in (fuel, gearbox, place, seller) if x]
-                    details = "  ·  ".join(parts)
-
-                    vid = v.get("id")
-                    link = (f"https://www.sauto.cz/uzitkova/detail/"
-                            f"{man.get('seo_name', '')}/{model.get('seo_name', '')}/{vid}")
-
-                    image = ""
-                    imgs = v.get("images") or []
-                    if imgs and imgs[0].get("url"):
-                        image = imgs[0]["url"]
-                        if image.startswith("//"):
-                            image = "https:" + image
-                        image += SAUTO_IMG_SUFFIX
-
-                    vans.append({
-                        "id":      str(vid),
-                        "title":   title,
-                        "price":   _format_czk(price_num),
-                        "details": details,
-                        "link":    link,
-                        "image":   image,
-                    })
-                except Exception:
-                    continue
-
-            if len(items) < 100:
-                break
-    except Exception as e:
-        print(f"  [sauto.cz/uzitkova] Chyba: {e}")
-
-    print(f"  sauto.cz/uzitkova (dodávky): {len(vans)} inzerátů")
-    return vans
-
-
-# ─────────────────────────────────────────────
-#  SCRAPING SAUTO.CZ – ARI CAR STORE (malá auta s automatem, JSON API)
-# ─────────────────────────────────────────────
-
-def scrape_sauto_ari() -> list[dict]:
-    """Malá ojetá auta s automatem ze sauto.cz přes interní JSON API
-    (category_id=838 = osobní). Cena, převodovka, km a whitelist modelů
-    jdou server-side (manufacturer_model_seo=znacka:m1,m2|znacka2:m3),
-    rok + kontrola whitelistu klientsky."""
-    ac = ARI_CONFIG
-    mm = "|".join(f"{man}:{','.join(models)}" for man, models in ac["models"].items())
-    base = (
-        "https://www.sauto.cz/api/v1/items/search"
-        f"?price_from={ac['min_price_czk']}&price_to={ac['max_price_czk']}"
-        f"&tachometer_to={ac['max_km']}"
-        "&condition_seo=ojete&category_id=838&gearbox_seo=automaticka"
-        "&operating_lease=false&limit=100"
-        f"&manufacturer_model_seo={urllib.parse.quote(mm, safe='')}"
-    )
-    cars = []
-    try:
-        for page in range(ac["max_pages"]):
-            result = subprocess.run(
-                ["curl", "-sL",
-                 "-H", "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-                 "-H", "Accept: application/json, text/plain, */*",
-                 "-H", "Accept-Language: cs-CZ,cs;q=0.9",
-                 "-H", "Referer: https://www.sauto.cz/inzerce/osobni",
-                 f"{base}&offset={page * 100}"],
-                capture_output=True, text=True, timeout=30,
-            )
-            items = json.loads(result.stdout).get("results") or []
-
-            for v in items:
-                try:
-                    man = v.get("manufacturer_cb") or {}
-                    model = v.get("model_cb") or {}
-                    man_seo = man.get("seo_name", "")
-                    model_seo = model.get("seo_name", "")
-                    if man_seo in ac["blocked_manufacturers"]:
-                        continue
-                    if model_seo not in ac["models"].get(man_seo, []):
-                        continue
-
-                    gearbox_cb = v.get("gearbox_cb") or {}
-                    if gearbox_cb.get("seo_name") != "automaticka":
-                        continue
-
-                    price_num = int(v.get("price") or 0)
-                    if v.get("price_by_agreement") or price_num <= 0:
-                        continue
-                    if price_num < ac["min_price_czk"] or price_num > ac["max_price_czk"]:
-                        continue
-
-                    km = int(v.get("tachometer") or 0)
-                    if km < ac["min_km"] or km > ac["max_km"]:
-                        continue
-
-                    year_m = re.match(r"(\d{4})", v.get("manufacturing_date")
-                                      or v.get("in_operation_date") or "")
-                    year = int(year_m.group(1)) if year_m else 0
-                    if not year or year < ac["min_year"]:
-                        continue
-
-                    premise = (v.get("premise") or {}).get("name") or ""
-                    if any(b in premise.lower() for b in CONFIG["blocked_sellers"]):
-                        continue
-                    seller = premise.strip() or "Soukromý"
-
-                    # „Toyota Yaris, 1.5 Hybrid“ → „Toyota Yaris 1.5 Hybrid“ (jen první čárka)
-                    title = re.sub(r"\s*,\s*", " ", (v.get("name") or "").strip(), count=1).strip()
-                    if not title:
-                        title = f"{man.get('name', '')} {model.get('name', '')}".strip()
-
-                    fuel = ((v.get("fuel_cb") or {}).get("name") or "").strip()
-                    gearbox = (gearbox_cb.get("name") or "").strip()
-                    loc = v.get("locality") or {}
-                    place = (loc.get("district") or loc.get("municipality") or "").strip()
-
-                    parts = [str(year), f"{km:,}".replace(",", " ") + " km"]
-                    parts += [x for x in (fuel, gearbox, place, seller) if x]
-                    details = "  ·  ".join(parts)
-
-                    vid = v.get("id")
-                    link = f"https://www.sauto.cz/osobni/detail/{man_seo}/{model_seo}/{vid}"
-
-                    image = ""
-                    imgs = v.get("images") or []
-                    if imgs and imgs[0].get("url"):
-                        image = imgs[0]["url"]
-                        if image.startswith("//"):
-                            image = "https:" + image
-                        image += SAUTO_IMG_SUFFIX
-
-                    cars.append({
-                        "id":      str(vid),
-                        "title":   title,
-                        "price":   _format_czk(price_num),
-                        "details": details,
-                        "link":    link,
-                        "image":   image,
-                    })
-                except Exception:
-                    continue
-
-            if len(items) < 100:
-                break
-    except Exception as e:
-        print(f"  [sauto.cz/ari] Chyba: {e}")
-
-    print(f"  sauto.cz/osobni (Ari): {len(cars)} inzerátů")
-    return cars
-
-
-# ─────────────────────────────────────────────
 #  HLAVNÍ LOGIKA
 # ─────────────────────────────────────────────
 
+def _notice(msg: str):
+    """Řádek do logu; v GitHub Actions navíc jako anotace běhu (vidět
+    v přehledu runu bez otevírání logu)."""
+    print(msg)
+    if os.environ.get("GITHUB_ACTIONS"):
+        print(f"::notice title=Auto Monitor::{msg}")
+
+
+def _source_of(car_id: str) -> str:
+    return car_id.split(":", 1)[0] if ":" in car_id else "sauto"
+
+
 def process_feed(label: str, all_cars: list, prefix: str, seen_file: str,
                  tracked_file: str, index_file: str, day_key: str, now_str: str):
-    """Společná logika pro jeden feed (auta / dodávky): nové + zlevněné
+    """Společná logika pro jeden feed (auta / dodávky / Ari): nové + zlevněné
     inzeráty do denního souboru, index, seen, tracked a úklid."""
+    # Stejné ID dvakrát (posun při stránkování, dva zdroje) → jen jednou.
+    unique = {}
+    for c in all_cars:
+        unique.setdefault(c["id"], c)
+    all_cars = list(unique.values())
+
     cars_file = os.path.join(DATA_DIR, f"{prefix}{day_key}.json")
 
     seen       = load_seen(seen_file)
@@ -1065,7 +973,18 @@ def process_feed(label: str, all_cars: list, prefix: str, seen_file: str,
             drops.append(c)
         tracked[c["id"]] = {"price": price_num or old_num, "last_seen": day_key}
 
-    print(f"  [{label}] Nových: {len(new_cars)} | Zlevněných: {len(drops)} | Dnes celkem: {len(today_cars)} | Nalezeno: {len(all_cars)}")
+    by_source = {}
+    for c in all_cars:
+        s = _source_of(c["id"])
+        by_source[s] = by_source.get(s, 0) + 1
+    sources = ", ".join(f"{s} {n}" for s, n in by_source.items())
+    _notice(f"[{label}] nalezeno {len(all_cars)} ({sources}) | nových {len(new_cars)}"
+            f" | zlevněných {len(drops)}" + (" | DRY RUN – nic se neukládá" if DRY_RUN else ""))
+
+    if DRY_RUN:
+        for c in new_cars[:5]:
+            print(f"    nové: {c['title']} – {c['price']} – {c['details']}")
+        return
 
     if new_cars or drops:
         for c in new_cars:
@@ -1104,44 +1023,46 @@ def process_feed(label: str, all_cars: list, prefix: str, seen_file: str,
         print(f"🧹 [{label}] Zapomenuto: {forgotten} | Smazáno denních souborů: {removed}")
 
 
+def _run_feed(label: str, scrapers: list, prefix: str, seen_file: str,
+              tracked_file: str, index_file: str, day_key: str, now_str: str):
+    """Spustí scrapery feedu (každý zvlášť, ať chyba jednoho neshodí ostatní)
+    a výsledek zpracuje. Prázdný výsledek = nejspíš selhalo stahování; pak se
+    nic neukládá, ať se inzeráty zítra neobjeví znovu jako „nové“."""
+    found = []
+    for scraper in scrapers:
+        try:
+            found += scraper()
+        except Exception as e:
+            print(f"  [{label}/{scraper.__name__}] Chyba: {e}")
+    if not found:
+        _notice(f"[{label}] nic nenalezeno – feed se tento běh neukládá")
+        return
+    try:
+        process_feed(label, found, prefix, seen_file, tracked_file, index_file,
+                     day_key, now_str)
+    except Exception as e:
+        print(f"  [{label}] Chyba při ukládání: {e}")
+
+
 def main():
     now_str = datetime.now().strftime("%d.%m.%Y %H:%M")
     day_key = get_day_key()
 
-    print(f"[{now_str}] Den: {day_key} | Spouštím kontrolu...")
+    print(f"[{now_str}] Den: {day_key} | Spouštím kontrolu…" + (" (DRY RUN)" if DRY_RUN else ""))
 
-    all_cars = []
-    for brand in CONFIG["brands"]:
-        all_cars += scrape_sauto(brand)
-    all_cars += scrape_renocar()
-    all_cars += scrape_bmwojete()
-    all_cars += scrape_mercedesnasklade()
-    all_cars += scrape_drivalia()
+    _run_feed("auta",
+              [scrape_sauto, scrape_renocar, scrape_bmwojete,
+               scrape_mercedesnasklade, scrape_drivalia],
+              "cars_", CONFIG["seen_file"], CONFIG["tracked_file"],
+              CONFIG["index_file"], day_key, now_str)
 
-    process_feed("auta", all_cars, "cars_", CONFIG["seen_file"],
-                 CONFIG["tracked_file"], CONFIG["index_file"], day_key, now_str)
+    _run_feed("dodávky", [scrape_sauto_vans],
+              VAN_CONFIG["file_prefix"], VAN_CONFIG["seen_file"],
+              VAN_CONFIG["tracked_file"], VAN_CONFIG["index_file"], day_key, now_str)
 
-    # Dodávky – samostatně, aby případná chyba nerozbila feed aut.
-    try:
-        vans = scrape_sauto_vans()
-        # Prázdný výsledek = nejspíš selhal request; nic neukládej, ať se
-        # dodávky zítra neobjeví znovu jako „nové“ a neodečte se last_seen.
-        if vans:
-            process_feed("dodávky", vans, VAN_CONFIG["file_prefix"],
-                         VAN_CONFIG["seen_file"], VAN_CONFIG["tracked_file"],
-                         VAN_CONFIG["index_file"], day_key, now_str)
-    except Exception as e:
-        print(f"  [dodávky] Chyba: {e}")
-
-    # Ari car store – samostatně, stejná logika jako u dodávek.
-    try:
-        ari = scrape_sauto_ari()
-        if ari:
-            process_feed("ari", ari, ARI_CONFIG["file_prefix"],
-                         ARI_CONFIG["seen_file"], ARI_CONFIG["tracked_file"],
-                         ARI_CONFIG["index_file"], day_key, now_str)
-    except Exception as e:
-        print(f"  [ari] Chyba: {e}")
+    _run_feed("ari", [scrape_sauto_ari],
+              ARI_CONFIG["file_prefix"], ARI_CONFIG["seen_file"],
+              ARI_CONFIG["tracked_file"], ARI_CONFIG["index_file"], day_key, now_str)
 
 
 if __name__ == "__main__":

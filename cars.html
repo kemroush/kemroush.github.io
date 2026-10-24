@@ -686,6 +686,21 @@
     let priceMin     = PRICE_MIN;
     let priceMax     = PRICE_MAX;
 
+    // GitHub Pages cachuje JSON ~10 min – bot data mění, chceme vždy čerstvé.
+    const NO_CACHE = { cache: 'no-cache' };
+
+    // Texty inzerátů píšou prodejci → do HTML jen escapované.
+    const esc = s => String(s ?? '').replace(/[&<>"']/g,
+      ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]);
+    const safeUrl = u => /^https?:\/\//i.test(u || '') ? esc(u) : '#';
+
+    // Pohon 4×4: nová data ho mají v details, u starších se pozná z názvu.
+    const AWD_RE = /xdrive|4matic|all4|quattro|\b4x4|4×4/i;
+    function detailsText(c) {
+      const d = c.details || '';
+      return !d.includes('4×4') && AWD_RE.test(c.title || '') ? `${d}  ·  4×4` : d;
+    }
+
     function formatDay(key) {
       const [y, m, d] = key.split('-');
       return `${parseInt(d)}. ${parseInt(m)}. ${y}`;
@@ -722,7 +737,7 @@
       list.innerHTML = '<p class="state-msg">Načítám...</p>';
 
       try {
-        const res = await fetch(`data/${MODES[mode].prefix}${days[i].key}.json`);
+        const res = await fetch(`data/${MODES[mode].prefix}${days[i].key}.json`, NO_CACHE);
         allCars   = await res.json();
         renderCars();
       } catch {
@@ -737,7 +752,7 @@
       if (!summaryCache) {
         try {
           const results = await Promise.all(days.map(d =>
-            fetch(`data/${MODES[mode].prefix}${d.key}.json`).then(r => r.ok ? r.json() : []).catch(() => [])
+            fetch(`data/${MODES[mode].prefix}${d.key}.json`, NO_CACHE).then(r => r.ok ? r.json() : []).catch(() => [])
           ));
           const seen = new Set();
           summaryCache = results.flat().filter(c => {
@@ -884,17 +899,17 @@
         return;
       }
       list.innerHTML = sortedCars(cars).map(c => `
-        <a href="${c.link}" class="car-card${isGone(c) ? ' gone' : ''}" target="_blank" rel="noopener">
-          ${c.image ? `<div class="car-thumb"><img src="${c.image}" alt="" loading="lazy"></div>` : ''}
+        <a href="${safeUrl(c.link)}" class="car-card${isGone(c) ? ' gone' : ''}" target="_blank" rel="noopener">
+          ${c.image ? `<div class="car-thumb"><img src="${safeUrl(c.image)}" alt="" loading="lazy"></div>` : ''}
           <div class="car-body">
             <div class="car-top">
-              <span class="car-title">${c.title}</span>
-              <span>${c.old_price ? `<span class="car-old-price">${c.old_price}</span>` : ''}<span class="car-price">${c.price}</span></span>
+              <span class="car-title">${esc(c.title)}</span>
+              <span>${c.old_price ? `<span class="car-old-price">${esc(c.old_price)}</span>` : ''}<span class="car-price">${esc(c.price)}</span></span>
             </div>
             ${c.old_price ? `<div class="car-drop">zlevněno o ${formatPrice(parseInt(c.old_price.replace(/\D/g, '')) - parsePrice(c))}</div>` : ''}
-            <div class="car-details">${c.details}</div>
-            ${c.price_drop_at ? `<div class="car-time">zlevněno ${c.price_drop_at}</div>`
-              : c.found_at ? `<div class="car-time">nalezeno ${c.found_at}</div>` : ''}
+            <div class="car-details">${esc(detailsText(c))}</div>
+            ${c.price_drop_at ? `<div class="car-time">zlevněno ${esc(c.price_drop_at)}</div>`
+              : c.found_at ? `<div class="car-time">nalezeno ${esc(c.found_at)}</div>` : ''}
             ${isGone(c) ? '<div class="car-gone">už není v nabídce</div>' : ''}
           </div>
         </a>
@@ -1053,7 +1068,7 @@
     async function loadTracked() {
       try {
         tracked = null;
-        const res = await fetch(MODES[mode].tracked);
+        const res = await fetch(MODES[mode].tracked, NO_CACHE);
         if (!res.ok) return;
         tracked = await res.json();
         const latest = Object.values(tracked).reduce((m, t) => t.last_seen > m ? t.last_seen : m, '');
@@ -1075,7 +1090,7 @@
       document.getElementById('results-count').textContent = '';
       await loadTracked();
       try {
-        const res   = await fetch(MODES[mode].index);
+        const res   = await fetch(MODES[mode].index, NO_CACHE);
         const index = res.ok ? await res.json() : { days: [] };
         days = index.days || [];
         if (days.length) {
@@ -1143,10 +1158,11 @@ ${urlList}
 Prosím:
 1. Načti všechny soubory (některé nemusí existovat — přeskoč je)
 2. Seřaď podle poměru cena / stav / riziko — zohledni spolehlivost převodovky (dobře: Toyota hybrid e-CVT, klasické měniče; pozor: suché DSG DQ200, starší dvouspojkové a robotizované převodovky) a motoru
-3. Vypíchni auta s hezčím interiérem / vyšší výbavou (kůže, větší displej, ambientní osvětlení, prémiové značky)
-4. Preferuj soukromé prodejce a auta z ČR; upozorni na podezřele levné kusy, dovozy a podivné inzeráty
-5. Ke každému autu uveď přímý odkaz z pole "link" a krátce, na co se při prohlídce zaměřit
-6. Na závěr doporuč 1-3 nejlepší kousky`;
+3. Upozorni, pokud má auto pohon 4×4 (štítek "4×4" v "details")
+4. Vypíchni auta s hezčím interiérem / vyšší výbavou (kůže, větší displej, ambientní osvětlení, prémiové značky)
+5. Preferuj soukromé prodejce a auta z ČR; upozorni na podezřele levné kusy, dovozy a podivné inzeráty
+6. Ke každému autu uveď přímý odkaz z pole "link" a krátce, na co se při prohlídce zaměřit
+7. Na závěr doporuč 1-3 nejlepší kousky`;
       } else {
       currentPrompt = `Jsem na českém trhu ojetých aut a hledám BMW, Mercedes nebo Mini s automatem, ročník 2020+, do 100 000 km, cena 300 000–750 000 Kč. Moje oblíbené modely jsou BMW X1 a Mercedes GLA — pokud se mezi nimi nějaké objeví, vypíchni je.
 
@@ -1161,7 +1177,7 @@ ${urlList}
 
 Prosím:
 1. Načti všechny soubory (některé nemusí existovat — přeskoč je)
-2. Odfiltruj elektromobily a auta mimo moje kritéria
+2. Odfiltruj elektromobily a auta mimo moje kritéria — nechci pohon 4×4 (xDrive / 4MATIC / ALL4); takové inzeráty mají v "details" štítek "4×4" nebo to mají v názvu
 3. Vyber TOP tipy — prioritizuj: nízký nájezd, dobrý motor (B47/B48/OM654/M260), soukromý prodejce, dobrá cena/hodnota
 4. Upozorni na přefouknuté dealerské ceny (renocar, mercedesnasklade, drivalia i nabidky.bmw.cz jsou všechno dealerské sklady — typicky dráž než bazar na sauto)
 5. Ke každému autu uveď přímý odkaz z pole "link" (může vést na kterýkoliv z pěti portálů) a v závorce zdroj (sauto / renocar / mercedesnasklade / drivalia / bmw.cz)
