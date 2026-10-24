@@ -258,6 +258,15 @@ DRY_RUN = os.environ.get("DRY_RUN", "").strip().lower() in ("1", "true", "yes")
 AWD_RE = re.compile(r"xdrive|4matic|all4|quattro|\b4x4|4×4", re.IGNORECASE)
 AWD_TAG = "4×4"
 
+# Výbava, která se u sauto inzerátů zobrazuje jako štítek. Klíč = kód ve
+# datech (pole "eq"), hodnota = ID položky výbavy v sauto (equipment_cb).
+# Další položku stačí přidat sem a popisek do EQ_LABELS v cars.html.
+SAUTO_EQUIPMENT = {
+    "carplay": 278,   # Apple Car Play
+    "ambient": 276,   # Ambientní LED osvětlení interiéru
+    "heated":  42,    # Vyhřívaná sedadla
+}
+
 
 def fetch(url: str, *, headers: dict | None = None, curl_args: tuple = (),
           as_json: bool = False, attempts: int = 3, timeout: int = 30):
@@ -351,11 +360,26 @@ def _scrape_sauto_feed(label: str, cfg: dict, *, category_id: int, section: str,
     min_km = cfg.get("min_km", 0)
 
     items = _sauto_search(params, cfg["max_pages"], referer)
-    # Pohon se v listingu neposílá – zjistí se druhým dotazem s drive_seo=4x4.
-    awd_ids = set()
+    all_ids = {v["id"] for v in items}
+
+    def subset(extra: dict, what: str) -> set:
+        """ID aut, která projdou filtrem navíc. Neznámý filtr nebo hodnotu
+        (např. položku výbavy, kterou kategorie nemá) API tiše ignoruje
+        a vrátí všechno – to by označilo každé auto, takže se zahodí."""
+        ids = {v["id"] for v in _sauto_search({**params, **extra}, cfg["max_pages"], referer)}
+        if len(all_ids) >= 20 and ids >= all_ids:
+            print(f"  [sauto.cz/{label}] Filtr {what} se nejspíš ignoruje (vrátil všech "
+                  f"{len(all_ids)} aut) – přeskakuju")
+            return set()
+        return ids
+
+    # Pohon ani výbava se v listingu neposílají – zjistí se dotazy navíc
+    # (drive_seo=4x4, equipment_cb=<id> pro každou položku SAUTO_EQUIPMENT).
+    awd_ids, eq_ids = set(), {}
     if items:
-        awd_ids = {v["id"] for v in _sauto_search({**params, "drive_seo": "4x4"},
-                                                   cfg["max_pages"], referer)}
+        awd_ids = subset({"drive_seo": "4x4"}, "4×4")
+        for code, eq_id in SAUTO_EQUIPMENT.items():
+            eq_ids[code] = subset({"equipment_cb": eq_id}, f"výbavy {code} (#{eq_id})")
 
     cars = []
     for v in items:
@@ -415,19 +439,24 @@ def _scrape_sauto_feed(label: str, cfg: dict, *, category_id: int, section: str,
                     image = "https:" + image
                 image += SAUTO_IMG_SUFFIX
 
-            cars.append({
+            car = {
                 "id":      str(vid),
                 "title":   title,
                 "price":   _format_czk(price_num),
                 "details": "  ·  ".join(parts),
                 "link":    f"https://www.sauto.cz/{section}/detail/{man_seo}/{model_seo}/{vid}",
                 "image":   image,
-            })
+            }
+            eq = [code for code, ids in eq_ids.items() if vid in ids]
+            if eq:
+                car["eq"] = eq
+            cars.append(car)
         except Exception:
             continue
 
     n_awd = sum(1 for c in cars if AWD_TAG in c["details"])
-    print(f"  sauto.cz/{label}: {len(cars)} inzerátů ({n_awd}× {AWD_TAG})")
+    n_eq = ", ".join(f"{code} {sum(code in c.get('eq', []) for c in cars)}" for code in SAUTO_EQUIPMENT)
+    print(f"  sauto.cz/{label}: {len(cars)} inzerátů ({n_awd}× {AWD_TAG}; výbava: {n_eq})")
     return cars
 
 
@@ -972,14 +1001,22 @@ def process_feed(label: str, all_cars: list, prefix: str, seen_file: str,
             c["old_price"] = _format_czk(old_num)
             drops.append(c)
         tracked[c["id"]] = {"price": price_num or old_num, "last_seen": day_key}
+        # Aktuální výbava – stránka z ní kreslí štítky i u starších inzerátů.
+        if c.get("eq"):
+            tracked[c["id"]]["eq"] = c["eq"]
 
     by_source = {}
     for c in all_cars:
         s = _source_of(c["id"])
         by_source[s] = by_source.get(s, 0) + 1
     sources = ", ".join(f"{s} {n}" for s, n in by_source.items())
+    eq_counts = {}
+    for c in all_cars:
+        for e in c.get("eq", []):
+            eq_counts[e] = eq_counts.get(e, 0) + 1
+    eq_part = (" | výbava: " + ", ".join(f"{e} {n}" for e, n in eq_counts.items())) if eq_counts else ""
     _notice(f"[{label}] nalezeno {len(all_cars)} ({sources}) | nových {len(new_cars)}"
-            f" | zlevněných {len(drops)}" + (" | DRY RUN – nic se neukládá" if DRY_RUN else ""))
+            f" | zlevněných {len(drops)}{eq_part}" + (" | DRY RUN – nic se neukládá" if DRY_RUN else ""))
 
     if DRY_RUN:
         for c in new_cars[:5]:
