@@ -1,14 +1,5 @@
 [
   {
-    "id": "211337091",
-    "title": "Volkswagen Golf 1,0 TSi DSG Life 93tkm.ČR",
-    "price": "379 900 Kč",
-    "details": "2023  ·  93 260 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  AutoPalace Spořilov",
-    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211337091",
-    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEeD8XKqfefIKbxPh/a539.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
-    "found_at": "24.10.2026 11:05"
-  },
-  {
     "id": "211167462",
     "title": "Volkswagen Golf 1.6 TDi,Comfortline,DSG",
     "price": "276 600 Kč",
@@ -53,17 +44,6 @@
     "price_drop_at": "24.10.2026 11:05"
   },
   {
-    "id": "210943167",
-    "title": "Škoda Scala Fresh 1,0 TSI 81 kW DSG7/P1572",
-    "price": "379 990 Kč",
-    "details": "2023  ·  70 500 km  ·  Benzín  ·  Automatická  ·  Žďár nad Sázavou  ·  AUTO DOBROVOLNÝ V.M. s.r.o.",
-    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/210943167",
-    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/nPYADvcUkmCfYovBcDHgrkjy/a03c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
-    "old_price": "389 989 Kč",
-    "found_at": "24.10.2026 11:05",
-    "price_drop_at": "24.10.2026 11:05"
-  },
-  {
     "id": "210790307",
     "title": "Volkswagen Golf 1.5 TSI DSG CarPlay ACC Senzor",
     "price": "309 000 Kč",
@@ -73,58 +53,6 @@
     "old_price": "319 000 Kč",
     "found_at": "24.10.2026 11:05",
     "price_drop_at": "24.10.2026 11:05"
-  },
-  {
-    "id": "210784352",
-    "title": "Seat Leon Cupra 300 DCC bez OPF!",
-    "price": "349 000 Kč",
-    "details": "2017  ·  195 000 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Automaton s.r.o.",
-    "link": "https://www.sauto.cz/osobni/detail/seat/leon/210784352",
-    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kQMlcCt5zmBDkXaUieHOWYrA/1697.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
-    "old_price": "369 000 Kč",
-    "found_at": "24.10.2026 11:05",
-    "price_drop_at": "24.10.2026 11:05"
-  },
-  {
-    "id": "211337862",
-    "title": "Volkswagen Golf 1.4 TSi 110kw Led! Navi!",
-    "price": "274 900 Kč",
-    "details": "2017  ·  189 033 km  ·  Benzín  ·  Automatická  ·  Pardubice  ·  Auto Šimon",
-    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211337862",
-    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUD9Qxwck9IKmSgW/e4ef.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
-    "eq": [
-      "carplay",
-      "ambient",
-      "heated"
-    ],
-    "found_at": "24.10.2026 13:23"
-  },
-  {
-    "id": "211066479",
-    "title": "Volkswagen Golf 1.4 TSI 92 KW JOIN DSG AUTOMAT",
-    "price": "269 000 Kč",
-    "details": "2018  ·  159 500 km  ·  Benzín  ·  Automatická  ·  Opava  ·  Soukromý",
-    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211066479",
-    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUB13Cveh1IKk7U5/fe52.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
-    "eq": [
-      "carplay"
-    ],
-    "found_at": "24.10.2026 13:23"
-  },
-  {
-    "id": "211294707",
-    "title": "Škoda Scala Style 81kw DSG navi LED -DPH",
-    "price": "349 000 Kč",
-    "details": "2024  ·  139 000 km  ·  Benzín  ·  Automatická  ·  Brno-město  ·  Nestočeno.cz",
-    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211294707",
-    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCR9NVflLrfprJkjIGdMHZ/f046.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
-    "eq": [
-      "carplay",
-      "ambient"
-    ],
-    "old_price": "369 000 Kč",
-    "found_at": "24.10.2026 13:23",
-    "price_drop_at": "24.10.2026 13:23"
   },
   {
     "id": "211284552",
@@ -167,21 +95,6 @@
       "heated"
     ],
     "old_price": "399 000 Kč",
-    "found_at": "24.10.2026 13:23",
-    "price_drop_at": "24.10.2026 13:23"
-  },
-  {
-    "id": "210408968",
-    "title": "Škoda Fabia 1.2 TSi,Joy,DSG,navi",
-    "price": "223 000 Kč",
-    "details": "2016  ·  126 467 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
-    "link": "https://www.sauto.cz/osobni/detail/skoda/fabia/210408968",
-    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_B/nCTUX1iX5CNPfpBylJGqdUgw/fab4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
-    "eq": [
-      "carplay",
-      "heated"
-    ],
-    "old_price": "230 000 Kč",
     "found_at": "24.10.2026 13:23",
     "price_drop_at": "24.10.2026 13:23"
   }
