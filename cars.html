@@ -245,6 +245,16 @@
       color: #30363d;
       margin-top: 0.3rem;
     }
+    .car-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.35rem; }
+    .car-tag {
+      font-size: 0.68rem;
+      font-weight: 600;
+      color: #58a6ff;
+      background: rgba(88, 166, 255, 0.12);
+      border-radius: 6px;
+      padding: 0.1rem 0.45rem;
+      white-space: nowrap;
+    }
 
     .state-msg {
       color: #8b949e;
@@ -732,6 +742,14 @@
 
     // Pohon 4×4: nová data ho mají v details, u starších se pozná z názvu.
     const AWD_RE = /xdrive|4matic|all4|quattro|\b4x4|4×4/i;
+
+    // Výbava ze sauto (pole "eq", kódy z SAUTO_EQUIPMENT v auto_monitor.py).
+    // Bere se aktuální stav z tracked.json, jinak to, co bylo v denním souboru.
+    const EQ_LABELS = { carplay: 'Apple CarPlay', ambient: 'Ambientní osvětlení', heated: 'Vyhřívaná sedadla' };
+    function equipmentOf(c) {
+      const t = tracked && tracked[c.id];
+      return (t && t.eq) || c.eq || [];
+    }
     function detailsText(c) {
       const d = c.details || '';
       return !d.includes('4×4') && AWD_RE.test(c.title || '') ? `${d}  ·  4×4` : d;
@@ -994,6 +1012,8 @@
             </div>
             ${c.old_price ? `<div class="car-drop">zlevněno o ${formatPrice(parseInt(c.old_price.replace(/\D/g, '')) - parsePrice(c))}</div>` : ''}
             <div class="car-details">${esc(detailsText(c))}</div>
+            ${equipmentOf(c).length ? `<div class="car-tags">${equipmentOf(c).map(e =>
+              `<span class="car-tag">${esc(EQ_LABELS[e] || e)}</span>`).join('')}</div>` : ''}
             ${c.price_drop_at ? `<div class="car-time">zlevněno ${esc(c.price_drop_at)}</div>`
               : c.found_at ? `<div class="car-time">nalezeno ${esc(c.found_at)}</div>` : ''}
             ${isGone(c) ? '<div class="car-gone">už není v nabídce</div>' : ''}
@@ -1215,7 +1235,7 @@ Prosím:
 1. Načti všechny soubory (některé nemusí existovat — přeskoč je)
 2. Seřaď podle poměru cena / stav / riziko — zohledni spolehlivost převodovky (dobře: Toyota hybrid e-CVT, klasické měniče; pozor: suché DSG DQ200, starší dvouspojkové a robotizované převodovky) a motoru
 3. Upozorni, pokud má auto pohon 4×4 (štítek "4×4" v "details")
-4. Vypíchni auta s hezčím interiérem / vyšší výbavou (kůže, větší displej, ambientní osvětlení, prémiové značky)
+4. Vypíchni auta s hezčím interiérem / vyšší výbavou (kůže, větší displej, ambientní osvětlení, prémiové značky). Pole "eq" u sauto inzerátů uvádí výbavu: carplay = Apple CarPlay, ambient = ambientní osvětlení interiéru, heated = vyhřívaná sedadla
 5. Preferuj soukromé prodejce a auta z ČR; upozorni na podezřele levné kusy, dovozy a podivné inzeráty
 6. Ke každému autu uveď přímý odkaz z pole "link" a krátce, na co se při prohlídce zaměřit
 7. Na závěr doporuč 1-3 nejlepší kousky`;
@@ -1233,7 +1253,7 @@ ${urlList}
 
 Prosím:
 1. Načti všechny soubory (některé nemusí existovat — přeskoč je)
-2. Odfiltruj elektromobily a auta mimo moje kritéria — nechci pohon 4×4 (xDrive / 4MATIC / ALL4); takové inzeráty mají v "details" štítek "4×4" nebo to mají v názvu
+2. Odfiltruj elektromobily a auta mimo moje kritéria — nechci pohon 4×4 (xDrive / 4MATIC / ALL4); takové inzeráty mají v "details" štítek "4×4" nebo to mají v názvu. Pole "eq" u sauto inzerátů uvádí výbavu (carplay = Apple CarPlay, ambient = ambientní osvětlení, heated = vyhřívaná sedadla)
 3. Vyber TOP tipy — prioritizuj: nízký nájezd, dobrý motor (B47/B48/OM654/M260), soukromý prodejce, dobrá cena/hodnota
 4. Upozorni na přefouknuté dealerské ceny (renocar, mercedesnasklade, drivalia i nabidky.bmw.cz jsou všechno dealerské sklady — typicky dráž než bazar na sauto)
 5. Ke každému autu uveď přímý odkaz z pole "link" (může vést na kterýkoliv z pěti portálů) a v závorce zdroj (sauto / renocar / mercedesnasklade / drivalia / bmw.cz)

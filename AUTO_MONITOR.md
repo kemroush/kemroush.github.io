@@ -44,6 +44,8 @@ CONFIG = {
 
 Všechny tři sauto feedy sdílí `_scrape_sauto_feed()`; liší se jen konfigurací, kategorií a whitelistem modelů. Výsledky se deduplikují podle ID.
 
+**Výbava (štítky):** sauto výbavu v listingu neposílá, ale vyhledávání umí filtr `equipment_cb=<id>`. Pro každou položku z `SAUTO_EQUIPMENT` (Apple CarPlay #278, ambientní osvětlení #276, vyhřívaná sedadla #42) se pustí jeden dotaz navíc a nalezená auta dostanou pole `eq` (`["carplay", "ambient", "heated"]`). Ukládá se do denního souboru i do `*tracked.json`, takže stránka kreslí štítky i u starších inzerátů. Další položku stačí přidat do `SAUTO_EQUIPMENT` (ID je vidět v `equipment_cb` v detailu `GET /api/v1/items/<id>`) a popisek do `EQ_LABELS` v `cars.html`. Jen sauto – dealerské zdroje výbavu nemají.
+
 **Pohon 4×4:** sauto ho v listingu neposílá, takže se stejný dotaz pustí ještě jednou s `drive_seo=4x4` a nalezená ID dostanou do `details` štítek `4×4` (hned za palivem). U ostatních zdrojů se 4×4 pozná z názvu (`xDrive`, `4MATIC`, `ALL4`, `quattro`, `4x4`). Stránka štítek u starších inzerátů bez něj doplní podle názvu.
 
 `scrape_renocar()` volá JSON endpoint `?ajax=newFilterQuery-cars&brand=bmw&limit=500` a aplikuje stejné cenové / kilometrové / rokové filtry (BMW od 2022). API vrací cenu **bez DPH** v poli `price` — ve scraperu se násobí `(1 + vat/100)` (typicky ×1.21) aby zobrazená cena odpovídala té na renocar.cz. ID jsou prefixované `renocar:` aby nekolidovaly se sauto.cz.
