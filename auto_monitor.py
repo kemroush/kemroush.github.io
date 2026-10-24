@@ -494,7 +494,7 @@ def scrape_sauto_ari() -> list[dict]:
     modelů jde i server-side (manufacturer_model_seo=znacka:m1,m2|znacka2:m3)."""
     ac = ARI_CONFIG
     mm = "|".join(f"{man}:{','.join(models)}" for man, models in ac["models"].items())
-    return _scrape_sauto_feed(
+    cars = _scrape_sauto_feed(
         "osobni (Ari)", ac,
         category_id=838, section="osobni",
         referer="https://www.sauto.cz/inzerce/osobni",
@@ -507,6 +507,128 @@ def scrape_sauto_ari() -> list[dict]:
             "manufacturer_model_seo": mm,
         },
     )
+    kept = []
+    dropped: dict[str, int] = {}
+    for car in cars:
+        reason = ari_exclusion_reason(car)
+        if reason:
+            dropped[reason] = dropped.get(reason, 0) + 1
+        else:
+            kept.append(car)
+    if dropped:
+        print("  [ari] vyřazeno rizikových pohonů: "
+              + ", ".join(f"{k} {v}×" for k, v in sorted(dropped.items())))
+    return kept
+
+
+# Ari: pohony, které z feedu vypadávají (spolehlivost / výkon / mimo záměr).
+# Vyhodnocuje se z titulku + detailu inzerátu, protože sauto API motor nevrací.
+_ARI_VAG_BRANDS = ("skoda", "volkswagen", "seat", "cupra")
+_ARI_SPORT_RE = re.compile(r"\bgti\b|\bgtd\b|\bcupra\b|\bleon\s*r\b|\bgolf\s*r\b(?!\s*-?\s*line)|2[.,]0\s*tsi\s*r\b|221\s*kw", re.I)
+_ARI_ELECTRIC_RE = re.compile(r"\be-?golf\b|golf\s+e\b|\bgte\b|\bphev\b|plug-?in|\b225xe\b|\bkwh\b|\bid\.?\s?[34]\b|\bborn\b", re.I)
+_ARI_OLD_TSI_RE = re.compile(r"(?<!\d)1[.,][0248](?!\d)|(?<!\d)(?:70|77|81|85|92|103|90)\s*kw\b", re.I)
+_ARI_TSI_15_RE = re.compile(r"(?<!\d)1[.,]5(?!\d)|(?<!\d)(?:110|130)\s*kw\b", re.I)
+
+
+def ari_exclusion_reason(car: dict) -> str:
+    """Důvod vyřazení inzerátu z Ari feedu, nebo "" když zůstává."""
+    title = car.get("title", "")
+    t = title.lower()
+    details = car.get("details", "").lower()
+    m = re.search(r"/osobni/detail/([^/]+)/([^/]+)/", car.get("link", ""))
+    man, model = (m.group(1), m.group(2)) if m else ("", "")
+    diesel = "nafta" in details or bool(re.search(r"tdi|hdi|cdi", t))
+    hybrid_ok = man in ("toyota", "mazda", "lexus")
+
+    # Ultra nízký výkon: Toyota Aygo (~51–53 kW), Peugeot 1.2 VTi 60 kW
+    if model == "aygo":
+        return "ultra nízký výkon (Aygo)"
+    if re.search(r"\bvti\b", t):
+        return "ultra nízký výkon (VTi)"
+
+    # Elektro / plug-in hybrid mimo záměr (e-Golf, Golf GTE, e-208, 225xe…)
+    # Pozor: sauto má u e-Golfů často palivo „Benzín“, proto i titulek.
+    if not hybrid_ok and ("elektro" in details or _ARI_ELECTRIC_RE.search(t)):
+        return "elektro / plug-in hybrid"
+
+    # Sporťáky VAG (GTI, GTD, Golf R, Cupra…); samotné 4x4 diesely nechávám
+    if man == "cupra" or (man in _ARI_VAG_BRANDS and _ARI_SPORT_RE.search(t)):
+        return "sporťák (VAG)"
+
+    # Skupina 10: Peugeot / DS benzín = 1.2 PureTech (rozvod v oleji, EAT6/EAT8)
+    if man in ("peugeot", "ds") and not diesel:
+        return "PSA 1.2 PureTech"
+
+    # Skupina 9 (část): Audi A1/A3 benzín + S tronic (1.0/1.4 TFSI, DQ200)
+    if man == "audi" and not diesel:
+        return "Audi benzín + S tronic"
+
+    # Skupiny 8 + 9: VAG benzín s 1.0/1.2/1.4/1.8 TSI + suchá/starší DSG
+    if man in _ARI_VAG_BRANDS and not diesel:
+        if _ARI_TSI_15_RE.search(t) and not re.search(r"(?<!\d)1[.,][0248](?!\d)", t):
+            return ""                                   # 1.5 TSI evo zůstává
+        if _ARI_OLD_TSI_RE.search(t):
+            return "VAG 1.0/1.2/1.4/1.8 TSI + DSG"
+        # motor nenapsán: malé modely jsou skoro vždy 1.0/1.2 TSI + DSG7
+        if model in ("fabia", "polo", "ibiza", "scala", "a1") and "tdi" not in t:
+            return "VAG TSI + DSG (motor neuveden)"
+    return ""
+
+
+def purge_ari_excluded() -> int:
+    """Jednorázový/průběžný úklid: z už uložených Ari souborů (ari_YYYY-MM-DD.json)
+    odstraní inzeráty, které by dnešní filtr (ari_exclusion_reason) vyřadil, a
+    smaže jejich ID ze seen/tracked. Prázdné denní soubory se smažou i z indexu.
+    Bezpečné spouštět opakovaně – po prvním úklidu už nemá co mazat."""
+    ac = ARI_CONFIG
+    prefix_re = re.compile(re.escape(ac["file_prefix"]) + r"(\d{4}-\d{2}-\d{2})\.json")
+    removed_ids: set[str] = set()
+    counts: dict[str, int] = {}        # day_key → nový počet
+    emptied: set[str] = set()
+    for name in sorted(os.listdir(DATA_DIR)):
+        m = prefix_re.fullmatch(name)
+        if not m:
+            continue
+        path = os.path.join(DATA_DIR, name)
+        cars = load_today_cars(path)
+        kept = [c for c in cars if not ari_exclusion_reason(c)]
+        if len(kept) == len(cars):
+            continue
+        removed_ids.update(c["id"] for c in cars if ari_exclusion_reason(c))
+        if DRY_RUN:
+            print(f"  [ari/úklid] {name}: {len(cars)} → {len(kept)} (DRY RUN)")
+            continue
+        if kept:
+            save_today_cars(path, kept)
+            counts[m.group(1)] = len(kept)
+        else:
+            os.remove(path)
+            emptied.add(m.group(1))
+    if DRY_RUN or not removed_ids:
+        return len(removed_ids)
+
+    index_file = ac["index_file"]
+    if os.path.exists(index_file):
+        with open(index_file, "r", encoding="utf-8") as f:
+            index = json.load(f)
+        index["days"] = [d for d in index["days"] if d["key"] not in emptied]
+        for d in index["days"]:
+            if d["key"] in counts:
+                d["count"] = counts[d["key"]]
+        if index["days"]:
+            index["latest"] = index["days"][0]["key"]
+        with open(index_file, "w", encoding="utf-8") as f:
+            json.dump(index, f, ensure_ascii=False, indent=2)
+
+    seen = load_seen(ac["seen_file"])
+    tracked = load_tracked(ac["tracked_file"])
+    seen -= removed_ids
+    for car_id in removed_ids:
+        tracked.pop(car_id, None)
+    save_seen(seen, ac["seen_file"])
+    save_tracked(tracked, ac["tracked_file"])
+    print(f"🧹 [ari] Z historie odstraněno {len(removed_ids)} vyřazených inzerátů")
+    return len(removed_ids)
 
 
 # ─────────────────────────────────────────────
@@ -1096,6 +1218,11 @@ def main():
     _run_feed("dodávky", [scrape_sauto_vans],
               VAN_CONFIG["file_prefix"], VAN_CONFIG["seen_file"],
               VAN_CONFIG["tracked_file"], VAN_CONFIG["index_file"], day_key, now_str)
+
+    try:
+        purge_ari_excluded()
+    except Exception as e:
+        print(f"  [ari/úklid] Chyba: {e}")
 
     _run_feed("ari", [scrape_sauto_ari],
               ARI_CONFIG["file_prefix"], ARI_CONFIG["seen_file"],
