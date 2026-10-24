@@ -360,17 +360,26 @@ def _scrape_sauto_feed(label: str, cfg: dict, *, category_id: int, section: str,
     min_km = cfg.get("min_km", 0)
 
     items = _sauto_search(params, cfg["max_pages"], referer)
-    # Pohon se v listingu neposílá – zjistí se druhým dotazem s drive_seo=4x4.
-    awd_ids = set()
+    all_ids = {v["id"] for v in items}
+
+    def subset(extra: dict, what: str) -> set:
+        """ID aut, která projdou filtrem navíc. Neznámý filtr nebo hodnotu
+        (např. položku výbavy, kterou kategorie nemá) API tiše ignoruje
+        a vrátí všechno – to by označilo každé auto, takže se zahodí."""
+        ids = {v["id"] for v in _sauto_search({**params, **extra}, cfg["max_pages"], referer)}
+        if len(all_ids) >= 20 and ids >= all_ids:
+            print(f"  [sauto.cz/{label}] Filtr {what} se nejspíš ignoruje (vrátil všech "
+                  f"{len(all_ids)} aut) – přeskakuju")
+            return set()
+        return ids
+
+    # Pohon ani výbava se v listingu neposílají – zjistí se dotazy navíc
+    # (drive_seo=4x4, equipment_cb=<id> pro každou položku SAUTO_EQUIPMENT).
+    awd_ids, eq_ids = set(), {}
     if items:
-        awd_ids = {v["id"] for v in _sauto_search({**params, "drive_seo": "4x4"},
-                                                   cfg["max_pages"], referer)}
-    # Výbava taky není v listingu – jeden dotaz s equipment_cb=<id> na položku.
-    eq_ids = {}
-    if items:
+        awd_ids = subset({"drive_seo": "4x4"}, "4×4")
         for code, eq_id in SAUTO_EQUIPMENT.items():
-            eq_ids[code] = {v["id"] for v in _sauto_search({**params, "equipment_cb": eq_id},
-                                                            cfg["max_pages"], referer)}
+            eq_ids[code] = subset({"equipment_cb": eq_id}, f"výbavy {code} (#{eq_id})")
 
     cars = []
     for v in items:
