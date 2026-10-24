@@ -314,5 +314,36 @@
       "heated"
     ],
     "found_at": "24.10.2026 20:07"
+  },
+  {
+    "id": "210981288",
+    "title": "Mercedes-Benz GLB 200, záruka, matrix, nez.top.",
+    "price": "659 000 Kč",
+    "details": "2021  ·  72 500 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210981288",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyD4lWfC8XHy5NKS/6d51.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "679 000 Kč",
+    "found_at": "24.10.2026 23:36",
+    "price_drop_at": "24.10.2026 23:36"
+  },
+  {
+    "id": "211299744",
+    "title": "Mercedes-Benz Třídy C Mercedes Benz C220d 4matic",
+    "price": "599 900 Kč",
+    "details": "2020  ·  96 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Tábor  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/211299744",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCR9NVflLChOIjthIHhXIy/d8ef.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "639 000 Kč",
+    "found_at": "24.10.2026 23:36",
+    "price_drop_at": "24.10.2026 23:36"
   }
 ]
