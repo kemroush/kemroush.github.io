@@ -97,5 +97,46 @@
     "old_price": "399 000 Kč",
     "found_at": "24.10.2026 13:23",
     "price_drop_at": "24.10.2026 13:23"
+  },
+  {
+    "id": "211339446",
+    "title": "Seat Leon FR-Line 1.5 eTSI 2021",
+    "price": "309 000 Kč",
+    "details": "2021  ·  210 000 km  ·  Benzín  ·  Automatická  ·  Rokycany  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211339446",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUB6IMDBjKgIKwJvx/d3ef.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "24.10.2026 20:07"
+  },
+  {
+    "id": "211339257",
+    "title": "Škoda Fabia 1.4TDI 66KW,DSG,FRONT ASSIST",
+    "price": "189 990 Kč",
+    "details": "2017  ·  219 457 km  ·  Nafta  ·  Automatická  ·  Semily  ·  Autobazar Miroslav Škaloud",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/fabia/211339257",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUCHypVeFWIKtZy8/033e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "24.10.2026 20:07"
+  },
+  {
+    "id": "211281414",
+    "title": "Seat Leon 2.0 TDI, 135 KW",
+    "price": "200 000 Kč",
+    "details": "2017  ·  220 000 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211281414",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFCDh88qABIFTbNh/8423.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "225 000 Kč",
+    "found_at": "24.10.2026 20:07",
+    "price_drop_at": "24.10.2026 20:07"
   }
 ]

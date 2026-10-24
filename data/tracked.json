@@ -4884,6 +4884,15 @@
   "last_seen": "2026-10-24",
   "price": 749000
  },
+ "211339290": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
+  "last_seen": "2026-10-24",
+  "price": 689000
+ },
  "bmwojete:115185": {
   "last_seen": "2026-10-10",
   "price": 0
