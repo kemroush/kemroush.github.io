@@ -90,13 +90,15 @@ data/ari_tracked.json        – id → {price, last_seen}
 
 ## Frontend filtry (cars.html)
 
-- Řádek značek: Vše / BMW / Mercedes / Mini / Besties / Zlevněné (jen auta s `old_price`)
-- Řádek paliva: Vše / Spalovací / Hybrid / Elektro
-- Řádek modelů: Vše / X1 / X2 / X3 / GLA / GLB / GLC (regex `\b<model>\b` proti `title`)
+Ve všech třech feedech (Auta / Dodávky / Ari) stejně:
+
+- **Řádek značek** s počty – staví se z dat zobrazeného dne / historie, ukazují se jen značky, které v datech jsou. Pořadí tlačítek je v `BRAND_ORDER` (zbytek podle počtu). U Aut navíc **Besties** (BMW X1 + Mercedes GLA) a všude **Zlevněné** (jen auta s `old_price`).
+- **Řádek modelů** s počty – ukáže se po výběru značky. Výběr modelu omezuje jen svou značku (např. Toyota Yaris + celá Škoda).
+- Počty = kolik aut se ukáže po kliknutí (ostatní filtry se započítávají, v historii se nepočítají prodaná auta).
+- Značka a model jsou sauto seo názvy: u sauto z odkazu (`/<sekce>/detail/<značka>/<model>/<id>`), u dealerských zdrojů z názvu (`titleKey()`: BMW 218i → `bmw/rada-2`, Mercedes-Benz Třída A 200 → `mercedes-benz/tridy-a`, MINI Cooper SE ALL4 → `mini/countryman`…), takže dealer i bazar spadnou pod stejný model. Popisky dělá `modelLabel()`, výjimky jsou v `MODEL_LABELS`.
 - Řádek prodejců: Všichni / Soukromí / Bazary (podle „Soukromý“ na konci `details`)
-- Cenový posuvník 300k–750k (u dodávek 40k–150k)
-- V režimu Dodávky: řádek značek VW / Ford / Toyota / Mercedes / Renault / Opel / Peugeot / Citroën / Fiat; řádky paliva a modelů se skryjí
-- V režimu Ari (`cars.html#ari`): řádek všech značek s počty (jen ty, co v datech jsou); po výběru značky se ukáže řádek jejích modelů s počty. Značka a model se čtou z odkazu na inzerát (`/osobni/detail/<značka>/<model>/`), popisky jsou v `ARI_BRANDS` v `cars.html`. Cena 100k–400k, řádek paliva zůstává
+- Řádek paliva: Vše / Spalovací / Hybrid / Elektro (ne u Dodávek)
+- Cenový posuvník 300k–750k (Dodávky 40k–150k, Ari 100k–400k)
 
 Filtry se průnikují (AND mezi řádky, OR uvnitř řádku).
 
