@@ -1001,8 +1001,13 @@ def process_feed(label: str, all_cars: list, prefix: str, seen_file: str,
         s = _source_of(c["id"])
         by_source[s] = by_source.get(s, 0) + 1
     sources = ", ".join(f"{s} {n}" for s, n in by_source.items())
+    eq_counts = {}
+    for c in all_cars:
+        for e in c.get("eq", []):
+            eq_counts[e] = eq_counts.get(e, 0) + 1
+    eq_part = (" | výbava: " + ", ".join(f"{e} {n}" for e, n in eq_counts.items())) if eq_counts else ""
     _notice(f"[{label}] nalezeno {len(all_cars)} ({sources}) | nových {len(new_cars)}"
-            f" | zlevněných {len(drops)}" + (" | DRY RUN – nic se neukládá" if DRY_RUN else ""))
+            f" | zlevněných {len(drops)}{eq_part}" + (" | DRY RUN – nic se neukládá" if DRY_RUN else ""))
 
     if DRY_RUN:
         for c in new_cars[:5]:
