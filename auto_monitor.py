@@ -575,6 +575,62 @@ def ari_exclusion_reason(car: dict) -> str:
     return ""
 
 
+def purge_ari_excluded() -> int:
+    """Jednorázový/průběžný úklid: z už uložených Ari souborů (ari_YYYY-MM-DD.json)
+    odstraní inzeráty, které by dnešní filtr (ari_exclusion_reason) vyřadil, a
+    smaže jejich ID ze seen/tracked. Prázdné denní soubory se smažou i z indexu.
+    Bezpečné spouštět opakovaně – po prvním úklidu už nemá co mazat."""
+    ac = ARI_CONFIG
+    prefix_re = re.compile(re.escape(ac["file_prefix"]) + r"(\d{4}-\d{2}-\d{2})\.json")
+    removed_ids: set[str] = set()
+    counts: dict[str, int] = {}        # day_key → nový počet
+    emptied: set[str] = set()
+    for name in sorted(os.listdir(DATA_DIR)):
+        m = prefix_re.fullmatch(name)
+        if not m:
+            continue
+        path = os.path.join(DATA_DIR, name)
+        cars = load_today_cars(path)
+        kept = [c for c in cars if not ari_exclusion_reason(c)]
+        if len(kept) == len(cars):
+            continue
+        removed_ids.update(c["id"] for c in cars if ari_exclusion_reason(c))
+        if DRY_RUN:
+            print(f"  [ari/úklid] {name}: {len(cars)} → {len(kept)} (DRY RUN)")
+            continue
+        if kept:
+            save_today_cars(path, kept)
+            counts[m.group(1)] = len(kept)
+        else:
+            os.remove(path)
+            emptied.add(m.group(1))
+    if DRY_RUN or not removed_ids:
+        return len(removed_ids)
+
+    index_file = ac["index_file"]
+    if os.path.exists(index_file):
+        with open(index_file, "r", encoding="utf-8") as f:
+            index = json.load(f)
+        index["days"] = [d for d in index["days"] if d["key"] not in emptied]
+        for d in index["days"]:
+            if d["key"] in counts:
+                d["count"] = counts[d["key"]]
+        if index["days"]:
+            index["latest"] = index["days"][0]["key"]
+        with open(index_file, "w", encoding="utf-8") as f:
+            json.dump(index, f, ensure_ascii=False, indent=2)
+
+    seen = load_seen(ac["seen_file"])
+    tracked = load_tracked(ac["tracked_file"])
+    seen -= removed_ids
+    for car_id in removed_ids:
+        tracked.pop(car_id, None)
+    save_seen(seen, ac["seen_file"])
+    save_tracked(tracked, ac["tracked_file"])
+    print(f"🧹 [ari] Z historie odstraněno {len(removed_ids)} vyřazených inzerátů")
+    return len(removed_ids)
+
+
 # ─────────────────────────────────────────────
 #  SCRAPING RENOCAR.CZ (BMW skladové vozy)
 # ─────────────────────────────────────────────
@@ -1162,6 +1218,11 @@ def main():
     _run_feed("dodávky", [scrape_sauto_vans],
               VAN_CONFIG["file_prefix"], VAN_CONFIG["seen_file"],
               VAN_CONFIG["tracked_file"], VAN_CONFIG["index_file"], day_key, now_str)
+
+    try:
+        purge_ari_excluded()
+    except Exception as e:
+        print(f"  [ari/úklid] Chyba: {e}")
 
     _run_feed("ari", [scrape_sauto_ari],
               ARI_CONFIG["file_prefix"], ARI_CONFIG["seen_file"],
