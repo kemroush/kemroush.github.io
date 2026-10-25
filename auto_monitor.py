@@ -103,7 +103,9 @@ ARI_CONFIG = {
         "toyota":        ["yaris", "yaris-cross", "aygo", "auris", "corolla", "c-hr"],
         "audi":          ["a1", "a3"],
         "mercedes-benz": ["tridy-a", "cla"],
-        "bmw":           ["rada-1", "rada-2"],
+        "volvo":         ["v40", "v40-cross-country"],
+        "infiniti":      ["q30"],
+        "bmw":           ["rada-1"],                       # řada 2 vyřazena (Ari nechce)
         "volkswagen":    ["polo", "golf"],
         "skoda":         ["fabia", "scala"],
         "seat":          ["ibiza", "leon"],
@@ -507,6 +509,17 @@ def scrape_sauto_ari() -> list[dict]:
             "manufacturer_model_seo": mm,
         },
     )
+    per_model: dict[str, int] = {}
+    for car in cars:
+        mm_ = re.search(r"/osobni/detail/([^/]+/[^/]+)/", car.get("link", ""))
+        if mm_:
+            per_model[mm_.group(1)] = per_model.get(mm_.group(1), 0) + 1
+    configured = [f"{man}/{mod}" for man, mods in ac["models"].items() for mod in mods]
+    print("  [ari] podle modelu: " + ", ".join(f"{k} {per_model[k]}" for k in sorted(per_model)))
+    empty = [m for m in configured if m not in per_model]
+    if empty:
+        print("  [ari] žádné inzeráty pro: " + ", ".join(empty)
+              + " (zkontroluj seo název modelu v ARI_CONFIG)")
     kept = []
     dropped: dict[str, int] = {}
     for car in cars:
@@ -539,6 +552,10 @@ def ari_exclusion_reason(car: dict) -> str:
     man, model = (m.group(1), m.group(2)) if m else ("", "")
     diesel = "nafta" in details or bool(re.search(r"tdi|hdi|cdi", t))
     hybrid_ok = man in ("toyota", "mazda", "lexus")
+
+    # Model mimo whitelist (např. BMW řada 2 po odebrání) – uklidí i uloženou historii
+    if man and model and model not in ARI_CONFIG["models"].get(man, []):
+        return "model mimo whitelist"
 
     # Ultra nízký výkon: Toyota Aygo (~51–53 kW), Peugeot 1.2 VTi 60 kW
     if model == "aygo":
