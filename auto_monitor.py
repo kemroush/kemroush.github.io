@@ -102,7 +102,7 @@ ARI_CONFIG = {
     "models": {
         "toyota":        ["yaris", "yaris-cross", "aygo", "auris", "corolla", "c-hr"],
         "audi":          ["a1", "a3"],
-        "mercedes-benz": ["tridy-a", "tridy-b", "cla"],
+        "mercedes-benz": ["tridy-a", "cla"],
         "volvo":         ["v40", "v40-cross-country"],
         "infiniti":      ["q30"],
         "bmw":           ["rada-1"],                       # řada 2 vyřazena (Ari nechce)
