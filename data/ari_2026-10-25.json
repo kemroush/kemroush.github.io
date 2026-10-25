@@ -24,5 +24,51 @@
       "heated"
     ],
     "found_at": "25.10.2026 09:14"
+  },
+  {
+    "id": "211173546",
+    "title": "Škoda Scala 1.6 TDi DSG Style | Panorama",
+    "price": "315 000 Kč",
+    "details": "2019  ·  115 000 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211173546",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLChOIjHcqH9iksD/e07b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "349 000 Kč",
+    "found_at": "25.10.2026 12:22",
+    "price_drop_at": "25.10.2026 12:22"
+  },
+  {
+    "id": "210320363",
+    "title": "Mercedes-Benz Třídy A Mercedes Benz A 180 D",
+    "price": "309 000 Kč",
+    "details": "2016  ·  95 820 km  ·  Nafta  ·  Automatická  ·  Praha-západ  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210320363",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRCO7AFDluH3JxL2/d69b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "325 000 Kč",
+    "found_at": "25.10.2026 12:22",
+    "price_drop_at": "25.10.2026 12:22"
+  },
+  {
+    "id": "211284345",
+    "title": "Seat Leon 2,0 TDI TAŽNÉ KAMERA",
+    "price": "329 000 Kč",
+    "details": "2022  ·  140 343 km  ·  Nafta  ·  Automatická  ·  Příbram  ·  Auto Evropská",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211284345",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCR9NVflLChOIjxfwIFZ5YI/5354.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "359 000 Kč",
+    "found_at": "25.10.2026 12:22",
+    "price_drop_at": "25.10.2026 12:22"
   }
 ]
