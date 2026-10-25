@@ -70,5 +70,343 @@
     "old_price": "359 000 Kč",
     "found_at": "25.10.2026 12:22",
     "price_drop_at": "25.10.2026 12:22"
+  },
+  {
+    "id": "211185042",
+    "title": "Seat Leon 2.0 TDI 110kw 7°DSG",
+    "price": "335 000 Kč",
+    "details": "2022  ·  172 280 km  ·  Nafta  ·  Automatická  ·  Pelhřimov  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211185042",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/nCR9NVflLCnfP05mH6Ev0W/9ab4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "211340931",
+    "title": "Seat Leon Xcellence 2.0 TDI 110kW DSG",
+    "price": "339 000 Kč",
+    "details": "2023  ·  162 816 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Autodraft",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211340931",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kPyfG4fPEeBPfwtBE2qILRORs/ccea.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "211340538",
+    "title": "Volkswagen Golf 2.0 TDI DSG, Klima Tempomat",
+    "price": "230 000 Kč",
+    "details": "2014  ·  197 000 km  ·  Nafta  ·  Automatická  ·  Opava  ·  Autobazar M+S, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211340538",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEeCdpo1BDcOILOSIJ/9667.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "211013664",
+    "title": "Volvo V40 2.0D3 AUT CROSS COUNTRY TAŽNÉ",
+    "price": "229 000 Kč",
+    "details": "2014  ·  171 665 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  Zeno cars",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211013664",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_C/nPYADvcUkmCbUhRWWHn0haL/1563.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "210899916",
+    "title": "Volvo V40 2.0i AUT 1MAJITEL CROSS COUNTR",
+    "price": "273 000 Kč",
+    "details": "2015  ·  154 571 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Brno-město  ·  Zeno cars",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210899916",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/nO573v8MsNB7y8tXFIHbKwTC/442b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "210132887",
+    "title": "Volvo V40 2.0 D2, 88kW, AUTOMAT",
+    "price": "319 000 Kč",
+    "details": "2019  ·  80 600 km  ·  Nafta  ·  Automatická  ·  Olomouc  ·  JUSTCARS prověřené vozy se zárukou",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210132887",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_C/nCTUX1iX5BWLrlKoxGKHyml/abd5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "210642743",
+    "title": "Volvo V40 2,0 D3 Cross Country Adapt.tem",
+    "price": "289 000 Kč",
+    "details": "2017  ·  80 658 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  AutoPalace Vysočany",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210642743",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/kQMlcCt5zmBDkXaXl8HGlakt/dd63.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "210883208",
+    "title": "Volvo V40 2.0 D3/110kW ČR",
+    "price": "209 900 Kč",
+    "details": "2017  ·  147 593 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Lenner Motors s.r.o. - prodej zánovních vozů",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210883208",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/kO7lxrd9zlOWhOgyhHZyyce/41a2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "211312401",
+    "title": "Volvo V40 2.0 D3,2.maj,AT",
+    "price": "230 000 Kč",
+    "details": "2016  ·  132 406 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211312401",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPw320bnC5B3zcjDIzIIVitN/981f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "210126821",
+    "title": "Volvo V40 2,0 D AT DIGIKLIMA TZ PARKOVAC",
+    "price": "210 000 Kč",
+    "details": "2015  ·  169 704 km  ·  Nafta  ·  Automatická  ·  Kutná Hora  ·  AutoMojžíš",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210126821",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_C/kcHp2YdDtDgLT0IMAGJj6IP/8b63.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "211307271",
+    "title": "Volvo V40 T2 MOMENTUM AUT",
+    "price": "299 000 Kč",
+    "details": "2018  ·  78 860 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Cardion Cars Dejvice (Auto Dejvice)",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211307271",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nPQ64TBsMvBXFDPCfFIIMfQa/9707.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "211283367",
+    "title": "Volvo V40 T2 AUTOMAT",
+    "price": "349 500 Kč",
+    "details": "2017  ·  24 922 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211283367",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFCpZ9wNrBIFYHms/b3c4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "211255380",
+    "title": "Volvo V40 AUTOMAT, 4X4, NOVÉ ROZVODY",
+    "price": "229 000 Kč",
+    "details": "2014  ·  205 515 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Zlín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211255380",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLCnfP06gMIDJIzy/7f10.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "211224966",
+    "title": "Volvo V40 T2 MOMENTUM AUT",
+    "price": "359 000 Kč",
+    "details": "2019  ·  79 028 km  ·  Benzín  ·  Automatická  ·  Praha-východ  ·  Cardion Cars Průhonice (Auto Průhonice)",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211224966",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFW9k4ZLkIAGIUt/0ca1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "211212225",
+    "title": "Volvo V40",
+    "price": "256 638 Kč",
+    "details": "2017  ·  168 263 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211212225",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLCNT9cPJOH8f1AZ/a1eb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "210448166",
+    "title": "Volvo V40 2,0 D2  AUTOMAT,VÝHŘEVY",
+    "price": "179 900 Kč",
+    "details": "2015  ·  194 617 km  ·  Nafta  ·  Automatická  ·  Zlín  ·  RADEK DURĎA AUTO, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210448166",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/kQMlcCt5zmCCIyqSLtHF2lf2/9c50.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "211144533",
+    "title": "Volvo V40 2.0 D,2.maj,Cross Country",
+    "price": "290 000 Kč",
+    "details": "2017  ·  151 080 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211144533",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyvOo9EaDH3PpmD/d503.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "210674612",
+    "title": "Volvo V40 CROSS COUNTRY 2,0 D3 AUTOMAT",
+    "price": "318 000 Kč",
+    "details": "2019  ·  120 199 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  AUTO JAROV",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210674612",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_C/nO2CysqjGrCP7qOQslHB8XxE/1c79.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "211121718",
+    "title": "Volvo V40 CC D3 MOMENTUM AUT",
+    "price": "319 000 Kč",
+    "details": "2018  ·  103 767 km  ·  Nafta  ·  Automatická  ·  Praha-východ  ·  Cardion Cars Průhonice (Auto Průhonice)",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211121718",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRD1EvuV9Hy7KZq/d2a5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "210904392",
+    "title": "Volvo V40 2.0 D4 140 kW Cross Country",
+    "price": "254 900 Kč",
+    "details": "2014  ·  156 587 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210904392",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/nPYADvcUkmBcsRhsCHj6JXb/dacb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "211089351",
+    "title": "Volvo V40 2.0 D2,AT,LED,+kola",
+    "price": "260 000 Kč",
+    "details": "2018  ·  144 517 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211089351",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/nOdL4BtPEyC2Er4COfHvgPte/af98.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "210974691",
+    "title": "Volvo V40 2,0 D 3  ODPOČET  DPH !!!",
+    "price": "249 000 Kč",
+    "details": "2019  ·  152 740 km  ·  Nafta  ·  Automatická  ·  Litoměřice  ·  LZ AUTO",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210974691",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/nPYADvcUkmBFAg3WYHjSVnf/2303.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "210927978",
+    "title": "Volvo V40 1.6 D2,Cross Country,AT",
+    "price": "183 000 Kč",
+    "details": "2014  ·  142 185 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210927978",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JBIZIOCLyHfRRaN/dfe9.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "210912461",
+    "title": "Volvo V40 CROSS COUNTRY D3 DRIVE-E",
+    "price": "250 000 Kč",
+    "details": "2016  ·  147 661 km  ·  Nafta  ·  Automatická  ·  Česká Lípa  ·  Auto Nord Group - VW, Das WeltAuto",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210912461",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/kPVqmweP7JBcGUhEqsHdQx7J/fd23.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "210861731",
+    "title": "Volvo V40 2,0 D3 Cross Country",
+    "price": "329 900 Kč",
+    "details": "2018  ·  95 800 km  ·  Nafta  ·  Automatická  ·  Hradec Králové  ·  Dekom System s.r.o. - Referenční a ojeté vozy",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210861731",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_C/kO7lxrd9zlOWhOHD0HW8K2e/112d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "210594923",
+    "title": "Volvo V40 2.0 D2,AT,LED,kůže",
+    "price": "299 000 Kč",
+    "details": "2019  ·  154 891 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210594923",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/nO2CysqjGrDPliFjqRHK9bXj/fadf.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "210495482",
+    "title": "Volvo V40 2.0D,ČR,servis.kniha,AT",
+    "price": "295 000 Kč",
+    "details": "2018  ·  94 965 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210495482",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/kQMlcCt5zmBDkXaIQWG2EMy4/f9f6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "209399550",
+    "title": "Volvo V40 Cross Country 2.0 D3 110 kW",
+    "price": "338 990 Kč",
+    "details": "2016  ·  110 069 km  ·  Nafta  ·  Automatická  ·  Nymburk  ·  Louda Auto+  ( 6 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/209399550",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_B/nCTUX1iX5Do9kXBUG7GpCdMP/05db.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "209252841",
+    "title": "Volvo V40 D3 FWD MOMENTUM AUTOMAT",
+    "price": "299 000 Kč",
+    "details": "2019  ·  130 000 km  ·  Nafta  ·  Automatická  ·  Praha-západ  ·  Auto Kurtz s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/209252841",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_A/kBlLbSfl8CDPLmDLYEg6qIA/ff37.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "211331556",
+    "title": "Hyundai i20 1.0T-GDI,ČR,AUTOMAT,ZÁRUKA",
+    "price": "338 000 Kč",
+    "details": "2023  ·  65 000 km  ·  Benzín  ·  Automatická  ·  Třebíč  ·  Ekonomické vozy s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/hyundai/i20/211331556",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUCaRYmN6sIJ8yqA/9cdc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "345 000 Kč",
+    "found_at": "25.10.2026 19:23",
+    "price_drop_at": "25.10.2026 19:23"
   }
 ]

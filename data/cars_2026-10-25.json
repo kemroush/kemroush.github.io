@@ -11,5 +11,42 @@
       "ambient"
     ],
     "found_at": "25.10.2026 09:14"
+  },
+  {
+    "id": "211339803",
+    "title": "Mercedes-Benz Vito Vito 114 Tourer 9 extralong",
+    "price": "719 000 Kč",
+    "details": "2022  ·  97 000 km  ·  Nafta  ·  Automatická  ·  Benešov  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/vito/211339803",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUD8nez3xuILS13t/b87e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "210521831",
+    "title": "BMW Řada 2 BMW 218i Gran Coupé LuxuryLine",
+    "price": "539 000 Kč",
+    "details": "2022  ·  71 427 km  ·  Benzín  ·  Automatická  ·  Ostrava-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/210521831",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/kQMlcCt5zmCCIyqM7WG9iKZZ/955b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "559 000 Kč",
+    "found_at": "25.10.2026 19:23",
+    "price_drop_at": "25.10.2026 19:23"
+  },
+  {
+    "id": "211119135",
+    "title": "Mercedes-Benz GLA 2.0 D 220d,1.maj,ČR,AT",
+    "price": "665 000 Kč",
+    "details": "2021  ·  46 981 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/211119135",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRCO7AF4LHyjLCV/7632.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "old_price": "680 000 Kč",
+    "found_at": "25.10.2026 19:23",
+    "price_drop_at": "25.10.2026 19:23"
   }
 ]
