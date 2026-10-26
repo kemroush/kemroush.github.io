@@ -47,5 +47,34 @@
     "old_price": "664 000 Kč",
     "found_at": "26.10.2026 13:56",
     "price_drop_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "211069374",
+    "title": "BMW Řada 5 530e xDrive Model Luxury",
+    "price": "749 000 Kč",
+    "details": "2022  ·  64 383 km  ·  Hybridní  ·  4×4  ·  Automatická  ·  Karlovy Vary  ·  BASE NEXT, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-5/211069374",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKRDgcHszpHtz9tD/5ce9.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "26.10.2026 21:28"
+  },
+  {
+    "id": "211174134",
+    "title": "Mercedes-Benz GLB 200 D 4 Matic Progressive",
+    "price": "689 900 Kč",
+    "details": "2021  ·  48 231 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/211174134",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/nOdL4BtPEyC2Er4o4H4PklL/c207.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "699 900 Kč",
+    "found_at": "26.10.2026 21:28",
+    "price_drop_at": "26.10.2026 21:28"
   }
 ]

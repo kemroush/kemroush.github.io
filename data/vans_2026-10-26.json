@@ -29,5 +29,32 @@
     "old_price": "99 220 Kč",
     "found_at": "26.10.2026 13:56",
     "price_drop_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "211347723",
+    "title": "Ford Transit 300M 2.2 TDCi (81kW)",
+    "price": "129 000 Kč",
+    "details": "2008  ·  261 000 km  ·  Nafta  ·  Manuální  ·  Brno-venkov  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/ford/transit/211347723",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nCXhmtHPUCaRYmBO60IL7gcf/78a6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.10.2026 21:28"
+  },
+  {
+    "id": "211347525",
+    "title": "Peugeot Expert 2,0 HDi DPH",
+    "price": "139 900 Kč",
+    "details": "2012  ·  213 484 km  ·  Nafta  ·  Manuální  ·  Jindřichův Hradec  ·  Autobazar IS-Auto s.r.o.",
+    "link": "https://www.sauto.cz/uzitkova/detail/peugeot/expert/211347525",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkBQkMFKrLIL5E6R/a056.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.10.2026 21:28"
+  },
+  {
+    "id": "211346931",
+    "title": "Fiat Scudo 2.0 TDI prodloužená verze",
+    "price": "135 000 Kč",
+    "details": "2009  ·  197 400 km  ·  Nafta  ·  Manuální  ·  Hradec Králové  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/fiat/scudo/211346931",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkCJCefDk5IL4a7N/0acb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.10.2026 21:28"
   }
 ]

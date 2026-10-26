@@ -161,5 +161,133 @@
     "old_price": "230 000 Kč",
     "found_at": "26.10.2026 13:56",
     "price_drop_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "211347927",
+    "title": "Seat Leon 2.0 TDI 135 kW FR",
+    "price": "229 900 Kč",
+    "details": "2017  ·  220 874 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211347927",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nCXhmtHPUBiA4qBQhiIL7uUP/0fb2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "26.10.2026 21:28"
+  },
+  {
+    "id": "211347417",
+    "title": "Škoda Scala 1.5 TSI 110kW DSG Monte Carlo",
+    "price": "326 000 Kč",
+    "details": "2019  ·  108 136 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Autodraft",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211347417",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nCXhmtHPUCaRYmBM6VIL4rNO/ce88.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "26.10.2026 21:28"
+  },
+  {
+    "id": "211346385",
+    "title": "Škoda Scala 1.5 TSi,Style,AT",
+    "price": "365 000 Kč",
+    "details": "2019  ·  96 628 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211346385",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nCXhmtHPUB854tBZypIL2dNZ/521d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.10.2026 21:28"
+  },
+  {
+    "id": "211345890",
+    "title": "Škoda Scala STYLE 1,5 TSI 110 kW DSG/LED,K",
+    "price": "369 900 Kč",
+    "details": "2019  ·  90 846 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  AUTO JAROV",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211345890",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nCXhmtHPUD8nezBTULIL1BQ1/e3a9.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "26.10.2026 21:28"
+  },
+  {
+    "id": "210026502",
+    "title": "Volkswagen Golf 2,0 TDI 110kW DSG Life Záruka",
+    "price": "368 000 Kč",
+    "details": "2022  ·  141 977 km  ·  Nafta  ·  Automatická  ·  Tábor  ·  Andy-auta, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210026502",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtEBMvIEkPGGIeP7/dc03.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "378 000 Kč",
+    "found_at": "26.10.2026 21:28",
+    "price_drop_at": "26.10.2026 21:28"
+  },
+  {
+    "id": "211210866",
+    "title": "Mercedes-Benz CLA",
+    "price": "267 771 Kč",
+    "details": "2017  ·  196 671 km  ·  Benzín  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211210866",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFnIwlB1zH8TvuD/df9d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "279 609 Kč",
+    "found_at": "26.10.2026 21:28",
+    "price_drop_at": "26.10.2026 21:28"
+  },
+  {
+    "id": "211196604",
+    "title": "Toyota Auris 1,8 HYBRID KAMERA, SERVISKA",
+    "price": "249 900 Kč",
+    "details": "2014  ·  115 631 km  ·  Hybridní  ·  Automatická  ·  Ústí nad Orlicí  ·  Jan Lajza - Lajza Auto",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/auris/211196604",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFCpZ9wFV2H7D9Ux/3748.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "257 000 Kč",
+    "found_at": "26.10.2026 21:28",
+    "price_drop_at": "26.10.2026 21:28"
+  },
+  {
+    "id": "211176276",
+    "title": "Seat Leon FR 2.0 TDI DSG",
+    "price": "384 900 Kč",
+    "details": "2020  ·  116 141 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211176276",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/k0OqwCKREB0TcB3gH4wnZU/2d8f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient"
+    ],
+    "old_price": "389 900 Kč",
+    "found_at": "26.10.2026 21:28",
+    "price_drop_at": "26.10.2026 21:28"
+  },
+  {
+    "id": "211043466",
+    "title": "Seat Leon 2.0 TDi 110KW",
+    "price": "319 900 Kč",
+    "details": "2021  ·  179 000 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211043466",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/nQNUzrWdcWBYX3RGOAHq4i7f/93fc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "324 900 Kč",
+    "found_at": "26.10.2026 21:28",
+    "price_drop_at": "26.10.2026 21:28"
+  },
+  {
+    "id": "210249335",
+    "title": "Mazda 3 2.0 Skyactiv-G 88kW Signature+",
+    "price": "299 900 Kč",
+    "details": "2018  ·  124 999 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/mazda/3/210249335",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/nCTUX1iX5CDciVBW7rGbG55F/5604.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "319 900 Kč",
+    "found_at": "26.10.2026 21:28",
+    "price_drop_at": "26.10.2026 21:28"
   }
 ]
