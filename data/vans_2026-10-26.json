@@ -1,0 +1,33 @@
+[
+  {
+    "id": "211342617",
+    "title": "Ford Transit 2.2TDCi L1H1,1.maj,ČR",
+    "price": "100 000 Kč",
+    "details": "2009  ·  229 119 km  ·  Nafta  ·  Manuální  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/uzitkova/detail/ford/transit/211342617",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kPyfG4fPEeC2yv3BYqJILr5Qa/b1db.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "211146174",
+    "title": "Ford Transit 300L 2.2 TDCi L2H2 stk 09/2028",
+    "price": "74 000 Kč",
+    "details": "2008  ·  230 000 km  ·  Nafta  ·  Manuální  ·  Jablonec nad Nisou  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/ford/transit/211146174",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRCO7AFeIH12jAM/93b8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "89 000 Kč",
+    "found_at": "26.10.2026 13:56",
+    "price_drop_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "211183983",
+    "title": "Volkswagen Transporter 2.5 TDI 4x4",
+    "price": "80 000 Kč",
+    "details": "2008  ·  245 000 km  ·  Nafta  ·  4×4  ·  Manuální  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/volkswagen/transporter/211183983",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/kcKfrMAkFDvG5qf5H58btX/130d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "99 220 Kč",
+    "found_at": "26.10.2026 13:56",
+    "price_drop_at": "26.10.2026 13:56"
+  }
+]

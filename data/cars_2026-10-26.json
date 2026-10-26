@@ -1,0 +1,51 @@
+[
+  {
+    "id": "211343889",
+    "title": "BMW Řada 2 220 Gran Coupé | ČR |",
+    "price": "719 000 Kč",
+    "details": "2025  ·  9 450 km  ·  Benzín  ·  Automatická  ·  Zlín  ·  Renocar Synot, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211343889",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nCXhmtHPUB854tBVaEILvovJ/5b5d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "bmwojete:287999",
+    "title": "BMW 220 Gran Coupé",
+    "price": "719 000 Kč",
+    "details": "2024  ·  9 450 km  ·  Benzín  ·  Renocar Synot, a.s.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/287999/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/287999?2026-10-26T09:57:03+00:00",
+    "found_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "209671662",
+    "title": "BMW X2 2.0xD M-paket-AT-KŮŽE-NAVI-ČR!",
+    "price": "624 400 Kč",
+    "details": "2022  ·  86 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Ostrava-město  ·  Auta NEJ, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x2/209671662",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/kY1K2LlXQDnuVLYXFvKT3h/ed89.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "634 400 Kč",
+    "found_at": "26.10.2026 13:56",
+    "price_drop_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "bmwojete:133049",
+    "title": "BMW 118d Hatchback",
+    "price": "599 000 Kč",
+    "details": "2023  ·  29 248 km  ·  Diesel  ·  Invelt s.r.o., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/133049/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/133049?2024-11-04T08:21:55+00:00",
+    "old_price": "664 000 Kč",
+    "found_at": "26.10.2026 13:56",
+    "price_drop_at": "26.10.2026 13:56"
+  }
+]

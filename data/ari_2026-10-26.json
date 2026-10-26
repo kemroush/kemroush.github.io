@@ -21,5 +21,145 @@
     "old_price": "339 000 Kč",
     "found_at": "26.10.2026 07:34",
     "price_drop_at": "26.10.2026 07:34"
+  },
+  {
+    "id": "211344330",
+    "title": "Škoda Scala Style 1.5 TSI 110kW Style DSG",
+    "price": "349 000 Kč",
+    "details": "2019  ·  112 085 km  ·  Benzín  ·  Automatická  ·  Hradec Králové  ·  OLFIN Car s.r.o. - Centrum ojetých vozů HK",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211344330",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nCXhmtHPUD8nezBQqeILxdsa/808a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "211344195",
+    "title": "Toyota Auris 1.8i Hybrid Navi alu klima",
+    "price": "319 900 Kč",
+    "details": "2016  ·  109 000 km  ·  Benzín  ·  Automatická  ·  Brno-venkov  ·  AUTOBAZAR automobilovysvet.cz",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/auris/211344195",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nCXhmtHPUBL8BsDdHaILxQ9K/6c62.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "211343523",
+    "title": "Audi A3",
+    "price": "326 700 Kč",
+    "details": "2019  ·  127 395 km  ·  Nafta  ·  Automatická  ·  Zlín  ·  BV Auto Zlín, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/211343523",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kPyfG4fPEeC2yv3BZfZILuXiG/387f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "211343007",
+    "title": "Toyota Auris 1,8-HSD, serviska, 2x kola",
+    "price": "258 600 Kč",
+    "details": "2015  ·  124 000 km  ·  Hybridní  ·  Automatická  ·  České Budějovice  ·  ASTON eurotrading",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/auris/211343007",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nCXhmtHPUB854tBTT2ILsnpQ/417b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "211043025",
+    "title": "Volkswagen Golf 2.0TDi,DSG",
+    "price": "220 600 Kč",
+    "details": "2019  ·  228 207 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211043025",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRDbeZQViH1Z7aC/9622.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "old_price": "230 000 Kč",
+    "found_at": "26.10.2026 13:56",
+    "price_drop_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "211336737",
+    "title": "Toyota Corolla GR Sport Dynamic 2.0 HSD",
+    "price": "250 000 Kč",
+    "details": "2020  ·  125 543 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211336737",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUBL8BsBDcbIKOjPu/52b5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "350 000 Kč",
+    "found_at": "26.10.2026 13:56",
+    "price_drop_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "210642743",
+    "title": "Volvo V40 2,0 D3 Cross Country Adapt.tem",
+    "price": "285 000 Kč",
+    "details": "2017  ·  80 658 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  AutoPalace Vysočany",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210642743",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/kQMlcCt5zmBDkXaXl8HGlakt/dd63.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "289 000 Kč",
+    "found_at": "26.10.2026 13:56",
+    "price_drop_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "210883208",
+    "title": "Volvo V40 2.0 D3/110kW ČR",
+    "price": "199 900 Kč",
+    "details": "2017  ·  147 593 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Lenner Motors s.r.o. - prodej zánovních vozů",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210883208",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/kO7lxrd9zlOWhOgyhHZyyce/41a2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "209 900 Kč",
+    "found_at": "26.10.2026 13:56",
+    "price_drop_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "211192488",
+    "title": "Volkswagen Golf 2.0 TDi,Allstar,DSG,navi",
+    "price": "275 700 Kč",
+    "details": "2016  ·  137 041 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211192488",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLCNT9chTRIA4AeD/ef47.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "285 000 Kč",
+    "found_at": "26.10.2026 13:56",
+    "price_drop_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "210797162",
+    "title": "Volkswagen Golf 1.5 eTSI Style 110kW",
+    "price": "375 900 Kč",
+    "details": "2021  ·  165 946 km  ·  Benzín  ·  Automatická  ·  Karlovy Vary  ·  AUTO MUDRA, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210797162",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kQMlcCt5zmCCIyqCLxhHQa7aQ/0226.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "389 900 Kč",
+    "found_at": "26.10.2026 13:56",
+    "price_drop_at": "26.10.2026 13:56"
+  },
+  {
+    "id": "209773578",
+    "title": "Seat Leon 1.6 TDi,Style,DSG,LED,ALU",
+    "price": "220 000 Kč",
+    "details": "2019  ·  163 734 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/209773578",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/nO2CysqjGrScbvDdEGxhSxO/486a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "230 000 Kč",
+    "found_at": "26.10.2026 13:56",
+    "price_drop_at": "26.10.2026 13:56"
   }
 ]
