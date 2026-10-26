@@ -1,0 +1,25 @@
+[
+  {
+    "id": "210625355",
+    "title": "Volkswagen Golf 2.0TDi DSG 110kW",
+    "price": "199 999 Kč",
+    "details": "2014  ·  220 594 km  ·  Nafta  ·  Automatická  ·  Cheb  ·  AUTO YETTI s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210625355",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/kQMlcCt5zmBDp4mIJAG7NKdE/079f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "26.10.2026 07:34"
+  },
+  {
+    "id": "211245603",
+    "title": "Toyota Auris 1.8 e-CVT 100KW HYBRID",
+    "price": "319 000 Kč",
+    "details": "2018  ·  127 141 km  ·  Hybridní  ·  Automatická  ·  Most  ·  AUTO HANOUSEK s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/auris/211245603",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLnoRVKTMIBvyKN/4e62.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "339 000 Kč",
+    "found_at": "26.10.2026 07:34",
+    "price_drop_at": "26.10.2026 07:34"
+  }
+]
