@@ -1,0 +1,67 @@
+[
+  {
+    "id": "211350876",
+    "title": "Škoda Scala 1,5 TSI DSG Style Bi-LED",
+    "price": "369 000 Kč",
+    "details": "2024  ·  141 677 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  CARS & CARE Business Lease",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211350876",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TBSHZcCSMIMWigr/f4c7.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "27.10.2026 13:07"
+  },
+  {
+    "id": "211348410",
+    "title": "Seat Leon 2.0TDI,AT,navi,LED",
+    "price": "175 000 Kč",
+    "details": "2015  ·  227 383 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211348410",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdk3whEc1VIMC6Tv/3a76.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "27.10.2026 13:07"
+  },
+  {
+    "id": "211212225",
+    "title": "Volvo V40",
+    "price": "243 406 Kč",
+    "details": "2017  ·  168 263 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211212225",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLCNT9cPJOH8f1AZ/a1eb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "256 638 Kč",
+    "found_at": "27.10.2026 13:07",
+    "price_drop_at": "27.10.2026 13:07"
+  },
+  {
+    "id": "211184466",
+    "title": "Mercedes-Benz Třídy A 220d 4MATIC AMG",
+    "price": "379 000 Kč",
+    "details": "2017  ·  129 904 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Nový Jičín  ·  AUTOLET",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211184466",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nCXhmtHPUD8nezBdY3IMQNSr/ae4e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "399 000 Kč",
+    "found_at": "27.10.2026 13:07",
+    "price_drop_at": "27.10.2026 13:07"
+  },
+  {
+    "id": "210615966",
+    "title": "Volkswagen Polo R-LINE/1.5TSI/DSG/VIRTUAL",
+    "price": "379 999 Kč",
+    "details": "2019  ·  121 051 km  ·  Benzín  ·  Automatická  ·  Plzeň-město  ·  AutoBezObalu - prověřené vozy",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/polo/210615966",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/nO2CysqjGrCP7qOL1aG6hms3/391a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "389 999 Kč",
+    "found_at": "27.10.2026 13:07",
+    "price_drop_at": "27.10.2026 13:07"
+  }
+]
