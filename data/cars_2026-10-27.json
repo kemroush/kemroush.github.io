@@ -133,5 +133,137 @@
     "old_price": "699 000 Kč",
     "found_at": "27.10.2026 13:07",
     "price_drop_at": "27.10.2026 13:07"
+  },
+  {
+    "id": "211353126",
+    "title": "Mercedes-Benz Třídy C C 220 d 4MATIC kombi",
+    "price": "699 000 Kč",
+    "details": "2021  ·  77 950 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Brno-město  ·  Hedin Automotive Czech Republic, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/211353126",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TnJSEGJ6IMcEBH/d1ed.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "208628234",
+    "title": "BMW Řada 2 218d Active Tourer",
+    "price": "649 000 Kč",
+    "details": "2024  ·  6 050 km  ·  Nafta  ·  Automatická  ·  Zlín  ·  Renocar Synot, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/208628234",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oa_A/kOeDqKABdsBfbp9ePDc10v8/357e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "bmwojete:199979",
+    "title": "BMW 218d Active Tourer",
+    "price": "649 000 Kč",
+    "details": "2024  ·  6 050 km  ·  Diesel  ·  Renocar Synot, a.s.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/199979/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/199979?2025-06-12T11:53:24+00:00",
+    "found_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "mns:25587",
+    "title": "Mercedes-Benz Třída C 220 d 4MATIC kombi",
+    "price": "699 000 Kč",
+    "details": "Třída C 220 d 4MATIC kombi  ·  2021  ·  77 950 km  ·  Nafta  ·  4×4  ·  Hedin Automotive Czech Republic, a.s. Vídeňská",
+    "link": "https://www.mercedesnasklade.cz/detail/25587",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/07490090_1.jpg",
+    "found_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "mns:25585",
+    "title": "Mercedes-Benz Sprinter 211CDI/K FWD",
+    "price": "604 988 Kč",
+    "details": "Sprinter 211CDI/K FWD  ·  2022  ·  72 500 km  ·  Nafta  ·  VSP Auto, s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/25585",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/dcaf1044-c60a-4282-990e-ac376b084f8c.png",
+    "found_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "210343190",
+    "title": "Mercedes-Benz GLB 200d/4Matic AT ČR 1.Maj 7Míst",
+    "price": "679 900 Kč",
+    "details": "2022  ·  90 203 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Lenner Motors s.r.o. - prodej zánovních vozů",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210343190",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFCpZ9wfG9IHnjC2/7551.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "699 900 Kč",
+    "found_at": "27.10.2026 21:05",
+    "price_drop_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "211165662",
+    "title": "Mercedes-Benz EQC Prodam hezky vuz",
+    "price": "700 000 Kč",
+    "details": "2020  ·  98 000 km  ·  Elektro  ·  4×4  ·  Automatická  ·  Olomouc  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/eqc/211165662",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRDgcHs8uH3NXLc/b831.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "750 000 Kč",
+    "found_at": "27.10.2026 21:05",
+    "price_drop_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "210703421",
+    "title": "BMW i3 120Ah 42,2 kWh",
+    "price": "492 000 Kč",
+    "details": "2022  ·  43 443 km  ·  Elektro  ·  Automatická  ·  Zlín  ·  HS Centrum, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/210703421",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/kQMlcCt5zmwiaBMT0HFYXWq/4638.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "499 000 Kč",
+    "found_at": "27.10.2026 21:05",
+    "price_drop_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "mns:24604",
+    "title": "Mercedes-Benz Třída B 200 Progressive",
+    "price": "669 001 Kč",
+    "details": "Třída B 200 Progressive  ·  2025  ·  21 000 km  ·  Benzín  ·  AutoWallis České Budějovice a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/24604",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/08728367_1.jpg",
+    "old_price": "679 000 Kč",
+    "found_at": "27.10.2026 21:05",
+    "price_drop_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "mns:23388",
+    "title": "Mercedes-Benz Třída C 200 4MATIC kombi",
+    "price": "669 001 Kč",
+    "details": "Třída C 200 4MATIC kombi  ·  2023  ·  77 000 km  ·  Benzín  ·  4×4  ·  AutoWallis České Budějovice a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/23388",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/08728268_1.jpg",
+    "old_price": "699 000 Kč",
+    "found_at": "27.10.2026 21:05",
+    "price_drop_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "drivalia:593942",
+    "title": "BMW Řada 5",
+    "price": "649 000 Kč",
+    "details": "520d AUT Touring  ·  kombi  ·  2022  ·  74 350 km  ·  Nafta  ·  Future Drivalia",
+    "link": "https://future.drivalia.cz/vozidla/593942-cs-bmw-rada-5/",
+    "image": "https://future.drivalia.cz/wp-content/uploads/2026/10/drivalia-pKFumKJB-1024x576.jpg",
+    "old_price": "699 000 Kč",
+    "found_at": "27.10.2026 21:05",
+    "price_drop_at": "27.10.2026 21:05"
   }
 ]

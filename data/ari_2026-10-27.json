@@ -63,5 +63,172 @@
     "old_price": "389 999 Kč",
     "found_at": "27.10.2026 13:07",
     "price_drop_at": "27.10.2026 13:07"
+  },
+  {
+    "id": "211355916",
+    "title": "Volkswagen Golf 2.0 TDI 110 kW R-Line",
+    "price": "279 900 Kč",
+    "details": "2020  ·  177 697 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211355916",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TDi9WNNprIMil0q/9fd3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "211355184",
+    "title": "Škoda Scala 1,5 TSI 110 Style AT",
+    "price": "369 000 Kč",
+    "details": "2023  ·  120 725 km  ·  Benzín  ·  Automatická  ·  Praha-západ  ·  Auto RUPEXIM",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211355184",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkB87eWTLuIMgisH/0f91.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "210684887",
+    "title": "Mercedes-Benz Třídy A A220 CDI 4MATIC - odpočet DPH",
+    "price": "280 000 Kč",
+    "details": "2015  ·  192 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Frýdek-Místek  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210684887",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_C/kQMlcCt5zmwiaBLJtHDjaLN/79dc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "211353570",
+    "title": "Toyota Corolla 1,8 HEV GR Spot Dynamic",
+    "price": "369 900 Kč",
+    "details": "2020  ·  122 626 km  ·  Hybridní  ·  Automatická  ·  Praha-západ  ·  TOYOTA TSUSHO PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211353570",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TBSHZcH2FIMefmi/3435.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "211353180",
+    "title": "Toyota C-HR 1,8HSD E-CVT AC Active",
+    "price": "399 900 Kč",
+    "details": "2018  ·  95 354 km  ·  Hybridní  ·  Automatická  ·  Praha-západ  ·  TOYOTA TSUSHO PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/c-hr/211353180",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86Tw5RPQbaIMdgjN/488b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "211352343",
+    "title": "Mercedes-Benz Třídy A Mercedes-Benz A 200d rv. 2016",
+    "price": "300 000 Kč",
+    "details": "2016  ·  103 000 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211352343",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkC4TclQYkIMavRS/5c8d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "211352334",
+    "title": "Toyota Corolla 1.8HSD, ČR-1m, ComTech, DPH",
+    "price": "359 900 Kč",
+    "details": "2019  ·  118 193 km  ·  Hybridní  ·  Automatická  ·  Příbram  ·  Toyota Dolák Příbram",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211352334",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TDzG4UHWTIMaU3C/93dc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "211351353",
+    "title": "Seat Leon Seat Leon 79tis.Km 2.0TDI, DSG",
+    "price": "345 000 Kč",
+    "details": "2023  ·  79 300 km  ·  Nafta  ·  Automatická  ·  Plzeň-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211351353",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkDyuEmnFHIMYRjf/da04.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "210445031",
+    "title": "Volkswagen Golf 2,0TDi /110 kW DSG Life",
+    "price": "329 000 Kč",
+    "details": "2022  ·  171 351 km  ·  Nafta  ·  Automatická  ·  Ústí nad Labem  ·  OKIM, spol. s r.o. Ústí nad Labem",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210445031",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/nCR9NVflLChOIjEsWH6gOYb/3e89.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "339 000 Kč",
+    "found_at": "27.10.2026 21:05",
+    "price_drop_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "211150440",
+    "title": "Mercedes-Benz Třídy A 1,3 A180 AT",
+    "price": "379 000 Kč",
+    "details": "2020  ·  168 746 km  ·  Benzín  ·  Automatická  ·  Praha-západ  ·  Auto RUPEXIM",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211150440",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKREBG8FVZH19VRi/db23.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "399 000 Kč",
+    "found_at": "27.10.2026 21:05",
+    "price_drop_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "210670178",
+    "title": "Mercedes-Benz CLA 220D 170PS AMG SB COMBI MB TOP",
+    "price": "288 000 Kč",
+    "details": "2018  ·  217 000 km  ·  Nafta  ·  Automatická  ·  Brno-venkov  ·  AUTO TS IMPORT BRNO s.r.o",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210670178",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_C/kQMlcCt5zmwiaBKIjHBvh7G/b10e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "298 000 Kč",
+    "found_at": "27.10.2026 21:05",
+    "price_drop_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "210327905",
+    "title": "Toyota Yaris 1.5i 16v HYBRID 142TKM TOP 1A!",
+    "price": "248 000 Kč",
+    "details": "2017  ·  142 000 km  ·  Hybridní  ·  Automatická  ·  Brno-venkov  ·  AUTO TS IMPORT BRNO s.r.o",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/yaris/210327905",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_C/kcHp2YdDtCJexH9n3GdZ2kw/d922.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "258 000 Kč",
+    "found_at": "27.10.2026 21:05",
+    "price_drop_at": "27.10.2026 21:05"
+  },
+  {
+    "id": "209269683",
+    "title": "BMW Řada 1 118D, 2.0D, 110KW",
+    "price": "270 000 Kč",
+    "details": "2017  ·  88 899 km  ·  Nafta  ·  Automatická  ·  Hodonín  ·  Autopark Kyjov",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/209269683",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_A/kBlLbSfl8BOkUvVWEjP6Kr/3033.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "290 000 Kč",
+    "found_at": "27.10.2026 21:05",
+    "price_drop_at": "27.10.2026 21:05"
   }
 ]
