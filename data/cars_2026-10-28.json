@@ -1,0 +1,92 @@
+[
+  {
+    "id": "211356117",
+    "title": "BMW Řada 2 Grand Coupe M, servis BMW,",
+    "price": "575 000 Kč",
+    "details": "2022  ·  76 000 km  ·  Nafta  ·  Automatická  ·  Hodonín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211356117",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdk3RI9ZQSIMk8yH/e50d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "28.10.2026 13:50"
+  },
+  {
+    "id": "210984027",
+    "title": "Mercedes-Benz GLB 250, CZ, nez.topení, 4MATIC",
+    "price": "710 000 Kč",
+    "details": "2022  ·  67 600 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Brno-venkov  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210984027",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/nPYADvcUkmDcXILWaHk7LzK/5afd.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "730 000 Kč",
+    "found_at": "28.10.2026 13:50",
+    "price_drop_at": "28.10.2026 13:50"
+  },
+  {
+    "id": "211138701",
+    "title": "Mini Cooper John Cooper Works",
+    "price": "539 000 Kč",
+    "details": "2020  ·  54 500 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211138701",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyBFnmYDMWH03zuP/c7e7.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "579 000 Kč",
+    "found_at": "28.10.2026 13:50",
+    "price_drop_at": "28.10.2026 13:50"
+  },
+  {
+    "id": "211103559",
+    "title": "Mercedes-Benz GLC Mercedes-Benz GLC AMG 2020 85K",
+    "price": "699 000 Kč",
+    "details": "2021  ·  85 000 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glc/211103559",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyCly89WyHxatMP/5f83.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient"
+    ],
+    "old_price": "750 000 Kč",
+    "found_at": "28.10.2026 13:50",
+    "price_drop_at": "28.10.2026 13:50"
+  },
+  {
+    "id": "210976071",
+    "title": "BMW Řada 1 118i",
+    "price": "559 000 Kč",
+    "details": "2023  ·  29 936 km  ·  Benzín  ·  Automatická  ·  Plzeň-město  ·  BMW invelt Plzeň - ojeté vozy",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/210976071",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/nPYADvcUkmDNojLWmHja0OV/2d81.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "599 000 Kč",
+    "found_at": "28.10.2026 13:50",
+    "price_drop_at": "28.10.2026 13:50"
+  },
+  {
+    "id": "211056057",
+    "title": "Mercedes-Benz Třídy B 1.3T B200,ČR,AT,LED",
+    "price": "618 800 Kč",
+    "details": "2024  ·  21 889 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/211056057",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKRCO7AFEMpHvdzKg/85d4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "630 000 Kč",
+    "found_at": "28.10.2026 13:50",
+    "price_drop_at": "28.10.2026 13:50"
+  }
+]
