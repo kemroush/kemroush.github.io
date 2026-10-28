@@ -88,5 +88,46 @@
     "old_price": "630 000 Kč",
     "found_at": "28.10.2026 13:50",
     "price_drop_at": "28.10.2026 13:50"
+  },
+  {
+    "id": "211358700",
+    "title": "Mercedes-Benz GLA Mercedes-Benz GLA 250e AMG,1Ma",
+    "price": "665 000 Kč",
+    "details": "2022  ·  54 070 km  ·  Hybridní  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/211358700",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86Tw5RPBY32INFXSV/14f0.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient"
+    ],
+    "found_at": "28.10.2026 21:15"
+  },
+  {
+    "id": "211358274",
+    "title": "Mercedes-Benz CLA",
+    "price": "650 000 Kč",
+    "details": "2023  ·  68 115 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211358274",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkBQkMFB8w2INBTbV/d0e6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "found_at": "28.10.2026 21:15"
+  },
+  {
+    "id": "210868181",
+    "title": "BMW rad 3 Touring",
+    "price": "681 277 Kč",
+    "details": "2023  ·  63 106 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/ostatni/210868181",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/kO7lxrd9zlCcay5VnzHYVeKY/fb51.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "701 848 Kč",
+    "found_at": "28.10.2026 21:15",
+    "price_drop_at": "28.10.2026 21:15"
   }
 ]
