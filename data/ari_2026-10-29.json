@@ -1,0 +1,94 @@
+[
+  {
+    "id": "211362018",
+    "title": "Škoda Scala 1.5 TSi,ČR,Style,AT",
+    "price": "379 000 Kč",
+    "details": "2020  ·  74 310 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211362018",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkB87eWBAZsINisL3/6ebe.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "29.10.2026 13:56"
+  },
+  {
+    "id": "211214325",
+    "title": "Volkswagen Golf 2.0 TDI",
+    "price": "238 000 Kč",
+    "details": "2014  ·  239 000 km  ·  Nafta  ·  Automatická  ·  Břeclav  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211214325",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFDvG5qH3DH9Esaw/282c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "29.10.2026 13:56"
+  },
+  {
+    "id": "210970989",
+    "title": "Mercedes-Benz CLA",
+    "price": "352 687 Kč",
+    "details": "2015  ·  135 177 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210970989",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/nPYADvcUkmDNojLBptHjHnxv/a50d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "old_price": "365 456 Kč",
+    "found_at": "29.10.2026 13:56",
+    "price_drop_at": "29.10.2026 13:56"
+  },
+  {
+    "id": "210929016",
+    "title": "Toyota C-HR COMFORT 1.2 85kW, ČR, 1.maj",
+    "price": "329 000 Kč",
+    "details": "2017  ·  31 540 km  ·  Benzín  ·  Automatická  ·  Pardubice  ·  AUTO IN, s.r.o. ( 20 provozoven v ČR )",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/c-hr/210929016",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLrfprWf8IBNozX/1bbe.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "359 000 Kč",
+    "found_at": "29.10.2026 13:56",
+    "price_drop_at": "29.10.2026 13:56"
+  },
+  {
+    "id": "210923769",
+    "title": "Volkswagen Golf 1.5eTSI 8 Automat Led Virtual",
+    "price": "389 000 Kč",
+    "details": "2020  ·  116 000 km  ·  Hybridní  ·  Automatická  ·  Ostrava-město  ·  Autobazar Styl",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210923769",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/nPYADvcUkmBFAg3aZHeJHCa/a1b2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "393 000 Kč",
+    "found_at": "29.10.2026 13:56",
+    "price_drop_at": "29.10.2026 13:56"
+  },
+  {
+    "id": "210872294",
+    "title": "Škoda Scala 1.5 TSi,Style,DSG,kamera",
+    "price": "288 000 Kč",
+    "details": "2020  ·  166 713 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/210872294",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/kO7lxrd9zlC6PMOyveHby1TU/312b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "300 000 Kč",
+    "found_at": "29.10.2026 13:56",
+    "price_drop_at": "29.10.2026 13:56"
+  },
+  {
+    "id": "210207239",
+    "title": "Škoda Scala 1.5 TSi,1.maj,ČR,Style",
+    "price": "348 000 Kč",
+    "details": "2020  ·  55 555 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/210207239",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEe0kCSy3BILHmsw/d373.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "363 000 Kč",
+    "found_at": "29.10.2026 13:56",
+    "price_drop_at": "29.10.2026 13:56"
+  }
+]
