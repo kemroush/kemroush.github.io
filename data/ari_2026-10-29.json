@@ -90,5 +90,65 @@
     "old_price": "363 000 Kč",
     "found_at": "29.10.2026 13:56",
     "price_drop_at": "29.10.2026 13:56"
+  },
+  {
+    "id": "211363914",
+    "title": "Mercedes-Benz CLA 180 AMG paket, Shooting brake",
+    "price": "399 000 Kč",
+    "details": "2017  ·  59 800 km  ·  Benzín  ·  Automatická  ·  Litoměřice  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211363914",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkBcInf7RTINnj2e/caa1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "29.10.2026 21:16"
+  },
+  {
+    "id": "211362990",
+    "title": "Audi A3",
+    "price": "243 157 Kč",
+    "details": "2015  ·  225 668 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/211362990",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TBSHZc2SRINlHdS/6226.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "29.10.2026 21:16"
+  },
+  {
+    "id": "211171074",
+    "title": "Mercedes-Benz CLA CLA200/130kW AMG LINE AT",
+    "price": "359 900 Kč",
+    "details": "2016  ·  198 330 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Lenner Motors s.r.o. - prodej zánovních vozů",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211171074",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyvOo9HOKH3tncc/37ab.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "369 900 Kč",
+    "found_at": "29.10.2026 21:16",
+    "price_drop_at": "29.10.2026 21:16"
+  },
+  {
+    "id": "211170831",
+    "title": "Mercedes-Benz Třídy A A200/100kW 4Matic AT",
+    "price": "299 900 Kč",
+    "details": "2016  ·  229 433 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Lenner Motors s.r.o. - prodej zánovních vozů",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211170831",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyvOo9G0MH3tPyb/4f98.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "329 900 Kč",
+    "found_at": "29.10.2026 21:16",
+    "price_drop_at": "29.10.2026 21:16"
+  },
+  {
+    "id": "210530669",
+    "title": "Volkswagen Golf Variant / 1,5 eTSI / 110 kW /",
+    "price": "300 000 Kč",
+    "details": "2023  ·  175 913 km  ·  Benzín  ·  Automatická  ·  Pardubice  ·  Autocentrum BARTH a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210530669",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/nO2CysqjGrud5yDyfGx6yDc/09e2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "315 000 Kč",
+    "found_at": "29.10.2026 21:16",
+    "price_drop_at": "29.10.2026 21:16"
   }
 ]

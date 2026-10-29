@@ -25,5 +25,63 @@
     "old_price": "399 000 Kč",
     "found_at": "29.10.2026 13:56",
     "price_drop_at": "29.10.2026 13:56"
+  },
+  {
+    "id": "bmwojete:288834",
+    "title": "BMW 223i Active Tourer",
+    "price": "598 000 Kč",
+    "details": "2023  ·  55 000 km  ·  Benzín  ·  CarTec Praha s.r.o.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/288834/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/288834?2026-10-29T14:25:32+00:00",
+    "found_at": "29.10.2026 21:16"
+  },
+  {
+    "id": "bmwojete:281563",
+    "title": "MINI Cooper S",
+    "price": "722 000 Kč",
+    "details": "2024  ·  18 500 km  ·  Benzín  ·  CarTec Ostrava s.r.o.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/281563/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/281563?2026-10-29T13:40:40+00:00",
+    "found_at": "29.10.2026 21:16"
+  },
+  {
+    "id": "bmwojete:288797",
+    "title": "BMW X2 M35i",
+    "price": "738 000 Kč",
+    "details": "2022  ·  92 500 km  ·  Benzín  ·  CarTec Praha s.r.o.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/288797/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/288797?2026-10-29T13:20:56+00:00",
+    "found_at": "29.10.2026 21:16"
+  },
+  {
+    "id": "210711173",
+    "title": "Mercedes-Benz Třídy E 300 de T Avantgarde, EQ, DPH",
+    "price": "469 000 Kč",
+    "details": "2020  ·  100 000 km  ·  Hybridní  ·  Automatická  ·  Benešov  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-e/210711173",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/kQMlcCt5zmEA35RNNCHGCbhQ/31ac.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "480 000 Kč",
+    "found_at": "29.10.2026 21:16",
+    "price_drop_at": "29.10.2026 21:16"
+  },
+  {
+    "id": "210874898",
+    "title": "Mercedes-Benz GLB 200d 4Matic Progressive, DPH",
+    "price": "698 000 Kč",
+    "details": "2022  ·  77 300 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Plzeň-město  ·  MPcars - prověřené vozy",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210874898",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRDbeZQBXnH3smcj/b86b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "699 990 Kč",
+    "found_at": "29.10.2026 21:16",
+    "price_drop_at": "29.10.2026 21:16"
   }
 ]
