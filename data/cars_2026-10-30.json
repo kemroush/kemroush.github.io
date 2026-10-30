@@ -38,5 +38,106 @@
     "old_price": "599 000 Kč",
     "found_at": "30.10.2026 13:50",
     "price_drop_at": "30.10.2026 13:50"
+  },
+  {
+    "id": "211369416",
+    "title": "BMW X3 Xdrive 20d",
+    "price": "699 000 Kč",
+    "details": "2022  ·  89 037 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Brno-město  ·  RENOCAR BMW, MINI a BMW MOTORRAD",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x3/211369416",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkDyuEmEVLvIONCMK/fc79.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "30.10.2026 20:55"
+  },
+  {
+    "id": "211369104",
+    "title": "Mercedes-Benz GLA GLA 200 Aut.LED NAVI KAMERA",
+    "price": "750 000 Kč",
+    "details": "2024  ·  15 000 km  ·  Benzín  ·  Automatická  ·  Pardubice  ·  Auto Vašíček",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/211369104",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkBQkMFUPIOL4HX/5042.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "30.10.2026 20:55"
+  },
+  {
+    "id": "211368531",
+    "title": "BMW X1 BMW X1 sDrive 18d A/T",
+    "price": "715 936 Kč",
+    "details": "2023  ·  96 900 km  ·  Nafta  ·  Automatická  ·  Zlín  ·  AUTO-PARK Czech, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x1/211368531",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TnJSEBUEBIOKqpv/f2ef.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "30.10.2026 20:55"
+  },
+  {
+    "id": "211034769",
+    "title": "Mercedes-Benz CLA CLA 200d Shooting Brake",
+    "price": "699 000 Kč",
+    "details": "2023  ·  12 000 km  ·  Nafta  ·  Automatická  ·  České Budějovice  ·  AutoWallis České Budějovice a.s. - Mercedes Benz",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211034769",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TkUyxBWrUIOOYXA/1d4a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "30.10.2026 20:55"
+  },
+  {
+    "id": "bmwojete:289164",
+    "title": "BMW X3 xDrive20d",
+    "price": "699 000 Kč",
+    "details": "2022  ·  89 037 km  ·  Diesel  ·  4×4  ·  Renocar a.s., Brno",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/289164/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/289164?2026-10-30T15:20:42+00:00",
+    "found_at": "30.10.2026 20:55"
+  },
+  {
+    "id": "211138029",
+    "title": "Mercedes-Benz GLB 2,0 250 4Matic AMG Line",
+    "price": "729 999 Kč",
+    "details": "2020  ·  99 950 km  ·  Benzín  ·  4×4  ·  Automatická  ·  České Budějovice  ·  AUTOCENTRUM DAN a SYN",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/211138029",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEeD8XKqVe0IJ9awE/e456.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "739 999 Kč",
+    "found_at": "30.10.2026 20:55",
+    "price_drop_at": "30.10.2026 20:55"
+  },
+  {
+    "id": "210869090",
+    "title": "Mercedes-Benz Třídy B 200d AUT Progressive Advanced",
+    "price": "579 000 Kč",
+    "details": "2023  ·  29 721 km  ·  Nafta  ·  Automatická  ·  Praha-západ  ·  Future Drivalia",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/210869090",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/nO573v8MsNB7y8tWrHYkhvu/ecbb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "629 000 Kč",
+    "found_at": "30.10.2026 20:55",
+    "price_drop_at": "30.10.2026 20:55"
+  },
+  {
+    "id": "211062084",
+    "title": "BMW Řada 3 330d xDrive",
+    "price": "599 900 Kč",
+    "details": "2022  ·  75 366 km  ·  Hybridní  ·  4×4  ·  Automatická  ·  Praha-západ  ·  AUTO ŠÍDLO s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/211062084",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/nOdL4BtPEyDrQHrBdzHtP2DJ/ca9b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "619 900 Kč",
+    "found_at": "30.10.2026 20:55",
+    "price_drop_at": "30.10.2026 20:55"
   }
 ]

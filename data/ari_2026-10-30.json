@@ -290,5 +290,121 @@
     "old_price": "309 000 Kč",
     "found_at": "30.10.2026 13:50",
     "price_drop_at": "30.10.2026 13:50"
+  },
+  {
+    "id": "211371684",
+    "title": "Škoda Scala Style Plus 1,6 TDI 85 KW DSG",
+    "price": "289 000 Kč",
+    "details": "2019  ·  172 000 km  ·  Nafta  ·  Automatická  ·  Tábor  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211371684",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TBgJSgBfVrIOUNtJ/7069.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "30.10.2026 20:55"
+  },
+  {
+    "id": "211371639",
+    "title": "Seat Leon FR 2.0 TDI 110kW DSG / ALU 18\"",
+    "price": "398 000 Kč",
+    "details": "2022  ·  143 187 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Autodraft",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211371639",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TDzG4UBh7RIOTwWv/846f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "30.10.2026 20:55"
+  },
+  {
+    "id": "211370742",
+    "title": "Volkswagen Golf 1.6 TDI 85KW, DSG",
+    "price": "266 200 Kč",
+    "details": "2019  ·  195 000 km  ·  Nafta  ·  Automatická  ·  Mělník  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211370742",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkBcInfBcmvIOPZi7/cd8a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "30.10.2026 20:55"
+  },
+  {
+    "id": "211370895",
+    "title": "Toyota Yaris 1.5Hybrid,54KW,CZ,1Maj",
+    "price": "249 900 Kč",
+    "details": "2020  ·  113 518 km  ·  Hybridní  ·  Automatická  ·  Hlavní město Praha  ·  Emil Frey - Ojeté vozy - Černý Most budova B",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/yaris/211370895",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TkUyxBWrUIOPaAC/752c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "30.10.2026 20:55"
+  },
+  {
+    "id": "211370856",
+    "title": "Seat Leon 1.5 TSi DSG-AUTOMAT STYLE",
+    "price": "379 900 Kč",
+    "details": "2021  ·  85 455 km  ·  Benzín  ·  Automatická  ·  Pardubice  ·  Trendcars",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211370856",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TBgJSgBbNvIOPamR/0004.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "30.10.2026 20:55"
+  },
+  {
+    "id": "211369530",
+    "title": "Volkswagen Golf 2.0 TDI 110kW, ser.historie",
+    "price": "369 000 Kč",
+    "details": "2022  ·  147 054 km  ·  Nafta  ·  Automatická  ·  Louny  ·  Fcar Louny s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211369530",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkDyuEmEXm1IONUAe/cc51.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "30.10.2026 20:55"
+  },
+  {
+    "id": "211368969",
+    "title": "Mercedes-Benz CLA 180 D Shooting Brake",
+    "price": "380 000 Kč",
+    "details": "2017  ·  141 800 km  ·  Nafta  ·  Automatická  ·  Bruntál  ·  AUTA NA SPLÁTKY",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211368969",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TDi9WNBWqKIOLeun/f374.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "30.10.2026 20:55"
+  },
+  {
+    "id": "210218657",
+    "title": "Volkswagen Golf 1,5 TSI 110kW DSG Edice Sound",
+    "price": "317 900 Kč",
+    "details": "2017  ·  129 000 km  ·  Benzín  ·  Automatická  ·  Praha-západ  ·  GROUP wagen s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210218657",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/kcHp2YdDtCJexHeyBGS1cJf/d5a8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "319 900 Kč",
+    "found_at": "30.10.2026 20:55",
+    "price_drop_at": "30.10.2026 20:55"
+  },
+  {
+    "id": "211193526",
+    "title": "Audi A3 2.0TDI Quattro Matrix Webasto",
+    "price": "315 000 Kč",
+    "details": "2018  ·  183 648 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Praha-východ  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/211193526",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/nCR9NVflLnoRVEsrH6o9K1/a693.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "333 000 Kč",
+    "found_at": "30.10.2026 20:55",
+    "price_drop_at": "30.10.2026 20:55"
   }
 ]
