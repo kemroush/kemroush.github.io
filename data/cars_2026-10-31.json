@@ -22,5 +22,63 @@
     "old_price": "399 999 Kč",
     "found_at": "31.10.2026 13:22",
     "price_drop_at": "31.10.2026 13:22"
+  },
+  {
+    "id": "211373322",
+    "title": "Mercedes-Benz Třídy B B220 2,0D AUTOMAT",
+    "price": "495 000 Kč",
+    "details": "2021  ·  98 000 km  ·  Nafta  ·  Automatická  ·  Pardubice  ·  DANISH EXPORT CARS",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/211373322",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TDi9WNB84rIOxxLa/0e04.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "31.10.2026 20:16"
+  },
+  {
+    "id": "211154613",
+    "title": "Mercedes-Benz Třídy C 220d AMG Line Panorama",
+    "price": "700 000 Kč",
+    "details": "2023  ·  98 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/211154613",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyBFnmYf7H2dehb/5440.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "31.10.2026 20:16"
+  },
+  {
+    "id": "211166763",
+    "title": "Mercedes-Benz Třídy C Mercedes Benz S206 C220D AMG",
+    "price": "680 000 Kč",
+    "details": "2021  ·  89 000 km  ·  Nafta  ·  Automatická  ·  Kolín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/211166763",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKREB0TcDZwH3h7YL/92f0.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "689 000 Kč",
+    "found_at": "31.10.2026 20:16",
+    "price_drop_at": "31.10.2026 20:16"
+  },
+  {
+    "id": "211339803",
+    "title": "Mercedes-Benz Vito Vito 114 Tourer 9 extralong",
+    "price": "699 000 Kč",
+    "details": "2022  ·  97 000 km  ·  Nafta  ·  Automatická  ·  Opava  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/vito/211339803",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUD8nez3xuILS13t/b87e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "old_price": "719 000 Kč",
+    "found_at": "31.10.2026 20:16",
+    "price_drop_at": "31.10.2026 20:16"
   }
 ]

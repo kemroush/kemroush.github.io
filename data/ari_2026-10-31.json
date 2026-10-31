@@ -100,5 +100,54 @@
     "old_price": "199 000 Kč",
     "found_at": "31.10.2026 13:22",
     "price_drop_at": "31.10.2026 13:22"
+  },
+  {
+    "id": "211360698",
+    "title": "Volkswagen Golf VW Golf VII 1.5 TSI DSG R-Line",
+    "price": "357 000 Kč",
+    "details": "2019  ·  140 500 km  ·  Benzín  ·  Automatická  ·  Jihlava  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211360698",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkB87eWBAZsINis5m/f84f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "31.10.2026 20:16"
+  },
+  {
+    "id": "211373757",
+    "title": "Toyota Corolla 2017,automat, 97kw",
+    "price": "215 000 Kč",
+    "details": "2017  ·  194 000 km  ·  Benzín  ·  Automatická  ·  Kladno  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211373757",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkC4TclCNVdIO0oWO/5204.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "31.10.2026 20:16"
+  },
+  {
+    "id": "210987177",
+    "title": "Mercedes-Benz CLA shooting break,4MATIC, webasto",
+    "price": "389 999 Kč",
+    "details": "2016  ·  108 515 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210987177",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JBdV1WqdHlhHHM/77ee.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "31.10.2026 20:16"
+  },
+  {
+    "id": "210936879",
+    "title": "Volkswagen Golf 2.0TDi,DSG",
+    "price": "315 000 Kč",
+    "details": "2023  ·  188 392 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210936879",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/nPYADvcUkmDj2BMCJYHfyefw/47b0.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "327 000 Kč",
+    "found_at": "31.10.2026 20:16",
+    "price_drop_at": "31.10.2026 20:16"
   }
 ]
