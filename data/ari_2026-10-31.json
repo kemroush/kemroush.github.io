@@ -1,0 +1,104 @@
+[
+  {
+    "id": "210918690",
+    "title": "Volkswagen Golf eTSI DSG| iQ.LIGHT|ODPOČET DPH",
+    "price": "349 900 Kč",
+    "details": "2021  ·  147 000 km  ·  Benzín  ·  Automatická  ·  Vsetín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210918690",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/kPVqmweP7JCCYLAEWkHd1BU4/07e8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "found_at": "31.10.2026 13:22"
+  },
+  {
+    "id": "211372752",
+    "title": "Mercedes-Benz CLA 2.0 180d Shooting Brake 8G",
+    "price": "379 000 Kč",
+    "details": "2022  ·  206 274 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  AUTO-VYHYBKA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211372752",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TBSHZcBzu0IOr8D0/1c17.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "31.10.2026 13:22"
+  },
+  {
+    "id": "211372251",
+    "title": "Volkswagen Golf 2.0",
+    "price": "171 000 Kč",
+    "details": "2014  ·  233 500 km  ·  Nafta  ·  Automatická  ·  Kladno  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211372251",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TBSHZcBsR9IOoeUK/58cd.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "31.10.2026 13:22"
+  },
+  {
+    "id": "211249086",
+    "title": "Škoda Scala 1.5TSi,1.maj,ČR,MC,DSG",
+    "price": "399 300 Kč",
+    "details": "2022  ·  81 071 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211249086",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFMsuhqSGIDvg51/3897.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "31.10.2026 13:22"
+  },
+  {
+    "id": "211370742",
+    "title": "Volkswagen Golf 1.6 TDI 85KW, DSG",
+    "price": "259 000 Kč",
+    "details": "2019  ·  195 000 km  ·  Nafta  ·  Automatická  ·  Mělník  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211370742",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkBcInfBcmvIOPZi7/cd8a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "266 200 Kč",
+    "found_at": "31.10.2026 13:22",
+    "price_drop_at": "31.10.2026 13:22"
+  },
+  {
+    "id": "211324383",
+    "title": "Volkswagen Golf 7 r",
+    "price": "390 000 Kč",
+    "details": "2016  ·  186 000 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Zlín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211324383",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUB854tUPIJYTd9/e74c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "400 000 Kč",
+    "found_at": "31.10.2026 13:22",
+    "price_drop_at": "31.10.2026 13:22"
+  },
+  {
+    "id": "210925869",
+    "title": "Mercedes-Benz CLA 1.6T CLA 200,AT,LED,navi",
+    "price": "388 600 Kč",
+    "details": "2017  ·  57 861 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210925869",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKRIhAnCSaHuftqL/8872.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "393 000 Kč",
+    "found_at": "31.10.2026 13:22",
+    "price_drop_at": "31.10.2026 13:22"
+  },
+  {
+    "id": "210135833",
+    "title": "Volkswagen Golf 2.0 TDi,Lounge,DSG,TZ",
+    "price": "189 000 Kč",
+    "details": "2015  ·  183 670 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210135833",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/kQMlcCt5zmCni4DrvXHKsj95/14b0.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "199 000 Kč",
+    "found_at": "31.10.2026 13:22",
+    "price_drop_at": "31.10.2026 13:22"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "211372836",
+    "title": "BMW Řada 2",
+    "price": "689 000 Kč",
+    "details": "2022  ·  70 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Příbram  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211372836",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkbxLFB8WYIOsw6l/e083.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "31.10.2026 13:22"
+  },
+  {
+    "id": "211349757",
+    "title": "Mini Cooper Baterie záruka 8 let/160tis km",
+    "price": "399 000 Kč",
+    "details": "2022  ·  18 600 km  ·  Elektro  ·  Automatická  ·  Brno-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211349757",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkBQkMFiEGIMTczX/4b91.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "399 999 Kč",
+    "found_at": "31.10.2026 13:22",
+    "price_drop_at": "31.10.2026 13:22"
+  }
+]
