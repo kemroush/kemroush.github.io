@@ -95,5 +95,59 @@
     "old_price": "400 000 Kč",
     "found_at": "01.11.2026 14:17",
     "price_drop_at": "01.11.2026 14:17"
+  },
+  {
+    "id": "211376226",
+    "title": "Volvo V40 Volvo V40 D2 1.6 D",
+    "price": "229 000 Kč",
+    "details": "2015  ·  122 600 km  ·  Nafta  ·  Automatická  ·  Hodonín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211376226",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TBSHZcCnrdIPb7QN/e796.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "01.11.2026 20:38"
+  },
+  {
+    "id": "210948978",
+    "title": "Audi A3 1.6 TDI 85 kW Sport",
+    "price": "329 900 Kč",
+    "details": "2019  ·  151 954 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/210948978",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JBcGUhC2BHj6AQK/833f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "01.11.2026 20:38"
+  },
+  {
+    "id": "210914202",
+    "title": "Volkswagen Golf 2.0TDi, LIFE, DSG, LED, ACC",
+    "price": "388 000 Kč",
+    "details": "2021  ·  117 000 km  ·  Nafta  ·  Automatická  ·  Liberec  ·  AUTOGARDEN, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210914202",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/kPVqmweP7JBcGUhWzHdWQf3/5f93.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "old_price": "399 900 Kč",
+    "found_at": "01.11.2026 20:38",
+    "price_drop_at": "01.11.2026 20:38"
+  },
+  {
+    "id": "211050612",
+    "title": "Seat Leon 2.0TDi Xcellence-AUT-LED-ACC",
+    "price": "309 000 Kč",
+    "details": "2021  ·  192 453 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  WAFER INVEST, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211050612",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/nOdL4BtPEyBHthwFPgHt4QaW/4a7a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "319 000 Kč",
+    "found_at": "01.11.2026 20:38",
+    "price_drop_at": "01.11.2026 20:38"
   }
 ]
