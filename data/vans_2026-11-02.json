@@ -1,0 +1,53 @@
+[
+  {
+    "id": "211379703",
+    "title": "Ford Transit 2,2 TDCI L3H2 KLIMA, DPH",
+    "price": "150 000 Kč",
+    "details": "2014  ·  197 000 km  ·  Nafta  ·  Manuální  ·  Třebíč  ·  AutoVojtik",
+    "link": "https://www.sauto.cz/uzitkova/detail/ford/transit/211379703",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TBctrNHqsVIP50nz/bc6a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "02.11.2026 16:44"
+  },
+  {
+    "id": "211209477",
+    "title": "Fiat Scudo 2.0JTD L2,Panorama,120kW",
+    "price": "131 600 Kč",
+    "details": "2011  ·  256 178 km  ·  Nafta  ·  Manuální  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/uzitkova/detail/fiat/scudo/211209477",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLChOIjiqhIDMEZq/c26b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "02.11.2026 16:44"
+  },
+  {
+    "id": "211347723",
+    "title": "Ford Transit 300M 2.2 TDCi (81kW)",
+    "price": "125 000 Kč",
+    "details": "2008  ·  261 000 km  ·  Nafta  ·  Manuální  ·  Brno-venkov  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/ford/transit/211347723",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nCXhmtHPUCaRYmBO60IL7gcf/78a6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "129 000 Kč",
+    "found_at": "02.11.2026 16:44",
+    "price_drop_at": "02.11.2026 16:44"
+  },
+  {
+    "id": "210532472",
+    "title": "Hyundai H 1 2,5 CRDi",
+    "price": "95 000 Kč",
+    "details": "2008  ·  246 900 km  ·  Nafta  ·  Manuální  ·  Beroun  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/hyundai/h-1/210532472",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/nO2CysqjGrCDmo6Eb7GyTzLY/ca87.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "100 000 Kč",
+    "found_at": "02.11.2026 16:44",
+    "price_drop_at": "02.11.2026 16:44"
+  },
+  {
+    "id": "209754759",
+    "title": "Citroën Jumper 2.2 HDi L1H1,ČR,AC",
+    "price": "72 600 Kč",
+    "details": "2012  ·  268 773 km  ·  Nafta  ·  Manuální  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/uzitkova/detail/citroen/jumper/209754759",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_B/nPXMbbUsvqECACpDxDFm72xd/9566.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "83 500 Kč",
+    "found_at": "02.11.2026 16:44",
+    "price_drop_at": "02.11.2026 16:44"
+  }
+]

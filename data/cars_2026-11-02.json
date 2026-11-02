@@ -1,0 +1,61 @@
+[
+  {
+    "id": "211378644",
+    "title": "BMW Řada 1 118 M Sport",
+    "price": "568 000 Kč",
+    "details": "2022  ·  65 465 km  ·  Nafta  ·  Automatická  ·  Ústí nad Labem  ·  KOPECKÝ AUTO s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/211378644",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TBgJSgC17FIP2l6w/eedc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "02.11.2026 16:44"
+  },
+  {
+    "id": "211377321",
+    "title": "Mercedes-Benz Třídy A Třída A 180",
+    "price": "680 000 Kč",
+    "details": "2026  ·  12 900 km  ·  Hybridní  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211377321",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TBSHZcCv1ZIPxlSv/722b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "02.11.2026 16:44"
+  },
+  {
+    "id": "211243393",
+    "title": "Mercedes-Benz Třídy C Mercedes-Benz C 300 e T AMG",
+    "price": "739 000 Kč",
+    "details": "2021  ·  79 000 km  ·  Hybridní  ·  Automatická  ·  České Budějovice  ·  AutoWallis České Budějovice a.s. - Mercedes Benz",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/211243393",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFnIwlbW0IBUfTO/12b8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "02.11.2026 16:44"
+  },
+  {
+    "id": "mns:25626",
+    "title": "Mercedes-Benz Třída A 180",
+    "price": "680 000 Kč",
+    "details": "Třída A 180  ·  2025  ·  12 900 km  ·  Hybridní - benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/25626",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/d568f529-6aee-4376-bb08-a5a20f16084b.jpeg",
+    "found_at": "02.11.2026 16:44"
+  },
+  {
+    "id": "bmwojete:201113",
+    "title": "BMW 118i Hatch",
+    "price": "559 000 Kč",
+    "details": "2023  ·  21 368 km  ·  Benzín  ·  Invelt s.r.o., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/201113/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/201113?2025-10-09T07:05:57+00:00",
+    "old_price": "599 000 Kč",
+    "found_at": "02.11.2026 16:44",
+    "price_drop_at": "02.11.2026 16:44"
+  }
+]
