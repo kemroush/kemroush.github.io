@@ -1,0 +1,89 @@
+[
+  {
+    "id": "211385298",
+    "title": "BMW i3 120Ah,125 kW, 2022, DPH",
+    "price": "586 850 Kč",
+    "details": "2022  ·  54 000 km  ·  Elektro  ·  Automatická  ·  Hlavní město Praha  ·  CARIO & EV MARKETPLACE",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/211385298",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkBQkMFEusPIQetl3/08bf.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "03.11.2026 15:08"
+  },
+  {
+    "id": "211384953",
+    "title": "Mini Cooper S MINI COOPER S",
+    "price": "495 000 Kč",
+    "details": "2021  ·  52 000 km  ·  Benzín  ·  Automatická  ·  Praha-východ  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/211384953",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkBcInfDIGaIQdX4P/0277.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "03.11.2026 15:08"
+  },
+  {
+    "id": "211385001",
+    "title": "Mercedes-Benz Třídy A 250 e AMG",
+    "price": "699 900 Kč",
+    "details": "2024  ·  13 358 km  ·  Hybridní  ·  Automatická  ·  Karlovy Vary  ·  S. & W. Automobily, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211385001",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkbxLFDPxmIQdMqE/52d6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "03.11.2026 15:08"
+  },
+  {
+    "id": "mns:25420",
+    "title": "Mercedes-Benz Sprinter 315 CDI A/T  6Míst",
+    "price": "699 900 Kč",
+    "details": "Sprinter 315 CDI A/T  6Míst  ·  2021  ·  74 064 km  ·  Nafta  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/25420",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/24684b2e-375c-472e-a53f-cdaa1992b72d.jpeg",
+    "found_at": "03.11.2026 15:08"
+  },
+  {
+    "id": "mns:25630",
+    "title": "Mercedes-Benz Třída A e AMG",
+    "price": "699 900 Kč",
+    "details": "Třída A e AMG  ·  2024  ·  13 358 km  ·  Hybridní - benzín  ·  S. & W. Automobily s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/25630",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/8be7a143-f514-41dd-9af4-aae91ab87ca9.png",
+    "found_at": "03.11.2026 15:08"
+  },
+  {
+    "id": "211339755",
+    "title": "Mercedes-Benz GLB 200 d 4MATIC – 110 kW",
+    "price": "649 000 Kč",
+    "details": "2022  ·  48 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Ostrava-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/211339755",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCXhmtHPUB6IMDB9SmILFMHe/cfeb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "659 000 Kč",
+    "found_at": "03.11.2026 15:08",
+    "price_drop_at": "03.11.2026 15:08"
+  },
+  {
+    "id": "211259838",
+    "title": "Mercedes-Benz GLA 200d",
+    "price": "629 000 Kč",
+    "details": "2020  ·  27 100 km  ·  Nafta  ·  Automatická  ·  Plzeň-město  ·  Porsche Plzeň - Borská pole",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/211259838",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLChOIjknYIDly6l/828a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "659 000 Kč",
+    "found_at": "03.11.2026 15:08",
+    "price_drop_at": "03.11.2026 15:08"
+  }
+]
