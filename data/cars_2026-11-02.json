@@ -57,5 +57,66 @@
     "old_price": "599 000 Kč",
     "found_at": "02.11.2026 16:44",
     "price_drop_at": "02.11.2026 16:44"
+  },
+  {
+    "id": "211382514",
+    "title": "Mercedes-Benz GLB Mercedes benz GLB 180 D",
+    "price": "650 000 Kč",
+    "details": "2020  ·  63 022 km  ·  Nafta  ·  Automatická  ·  Břeclav  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/211382514",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDhsIbHrnfIQGP4s/c85a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "03.11.2026 02:33"
+  },
+  {
+    "id": "211381926",
+    "title": "BMW Řada 2 218 D Gran Coupe",
+    "price": "550 000 Kč",
+    "details": "2022  ·  81 740 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211381926",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCfcGaDJmGIQCyFV/87ce.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "03.11.2026 02:33"
+  },
+  {
+    "id": "211381479",
+    "title": "Mercedes-Benz GLB 200d 4MATIC",
+    "price": "749 999 Kč",
+    "details": "2024  ·  52 967 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  UniCredit Leasing CZ, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/211381479",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TBSHZcC5VSIQAn9S/c21f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "03.11.2026 02:33"
+  },
+  {
+    "id": "211264182",
+    "title": "Mercedes-Benz CLA Mercedes-Benz CLA 200, benzín",
+    "price": "719 000 Kč",
+    "details": "2022  ·  80 500 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211264182",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFMsuhsLAIEEP3U/9571.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "749 000 Kč",
+    "found_at": "03.11.2026 02:33",
+    "price_drop_at": "03.11.2026 02:33"
+  },
+  {
+    "id": "211372836",
+    "title": "BMW Řada 2",
+    "price": "649 000 Kč",
+    "details": "2022  ·  70 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Příbram  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211372836",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkbxLFB8WYIOsw6l/e083.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "689 000 Kč",
+    "found_at": "03.11.2026 02:33",
+    "price_drop_at": "03.11.2026 02:33"
   }
 ]

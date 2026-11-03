@@ -271,5 +271,93 @@
     "old_price": "249 000 Kč",
     "found_at": "02.11.2026 16:44",
     "price_drop_at": "02.11.2026 16:44"
+  },
+  {
+    "id": "211382394",
+    "title": "Mazda 3 Mazda 3 hatchback 2.0 Skyactiv",
+    "price": "319 000 Kč",
+    "details": "2017  ·  91 000 km  ·  Benzín  ·  Automatická  ·  Brno-venkov  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mazda/3/211382394",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TnJSEC0BSIQFN5R/22bf.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "03.11.2026 02:33"
+  },
+  {
+    "id": "211382154",
+    "title": "Mercedes-Benz Třídy A A250 AMG 4matic",
+    "price": "329 000 Kč",
+    "details": "2014  ·  198 000 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Mladá Boleslav  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211382154",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkBcInfDAYLIQECU9/ec6a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "03.11.2026 02:33"
+  },
+  {
+    "id": "211382097",
+    "title": "Seat Leon Seat Leon 2.0 TSI, EXCELLENCE",
+    "price": "320 000 Kč",
+    "details": "2019  ·  184 218 km  ·  Benzín  ·  Automatická  ·  Most  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211382097",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDi9WNDN6MIQDm1b/2b11.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "03.11.2026 02:33"
+  },
+  {
+    "id": "211381824",
+    "title": "Mercedes-Benz CLA Mercedes Benz CLA 180 SB",
+    "price": "329 000 Kč",
+    "details": "2016  ·  96 541 km  ·  Benzín  ·  Automatická  ·  Plzeň-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211381824",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TCcWhaCp8UIQCfFo/9d99.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient"
+    ],
+    "found_at": "03.11.2026 02:33"
+  },
+  {
+    "id": "211381755",
+    "title": "Mercedes-Benz Třídy A A 180 | 1.6 Benzín Servis ČR",
+    "price": "290 000 Kč",
+    "details": "2016  ·  162 000 km  ·  Benzín  ·  Automatická  ·  Kladno  ·  Lemon Car Showroom",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211381755",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TBgJSgC8BwIQBw6K/e515.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "03.11.2026 02:33"
+  },
+  {
+    "id": "210587642",
+    "title": "Škoda Scala 1.5 TSi,ČR,Style,DSG",
+    "price": "255 000 Kč",
+    "details": "2022  ·  192 160 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/210587642",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/kQMlcCt5zmChFvGHeqG6SBke/b0f8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "265 000 Kč",
+    "found_at": "03.11.2026 02:33",
+    "price_drop_at": "03.11.2026 02:33"
+  },
+  {
+    "id": "209580906",
+    "title": "BMW Řada 1 1.5i 118i,Sport Line,AT",
+    "price": "225 000 Kč",
+    "details": "2015  ·  123 401 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/209580906",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLChOIjL30IANDe0/527d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "239 000 Kč",
+    "found_at": "03.11.2026 02:33",
+    "price_drop_at": "03.11.2026 02:33"
   }
 ]
