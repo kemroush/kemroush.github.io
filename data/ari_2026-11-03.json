@@ -184,5 +184,45 @@
     "old_price": "299 000 Kč",
     "found_at": "03.11.2026 15:08",
     "price_drop_at": "03.11.2026 15:08"
+  },
+  {
+    "id": "211387902",
+    "title": "Toyota Corolla 1,8 Hyb. Comfort AT",
+    "price": "345 000 Kč",
+    "details": "2020  ·  190 606 km  ·  Benzín  ·  Automatická  ·  Praha-západ  ·  Auto RUPEXIM",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211387902",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDi9WNDc0RIQmanb/f11e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "03.11.2026 21:57"
+  },
+  {
+    "id": "211387899",
+    "title": "Toyota Corolla 1,8 Hyb. Comfort AT",
+    "price": "375 000 Kč",
+    "details": "2020  ·  139 940 km  ·  Benzín  ·  Automatická  ·  Praha-západ  ·  Auto RUPEXIM",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211387899",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkDyuEmItvaIQmabq/8c34.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "03.11.2026 21:57"
+  },
+  {
+    "id": "210878243",
+    "title": "Audi A3 2.0 TDI 110 kW S-tronic",
+    "price": "384 900 Kč",
+    "details": "2018  ·  120 700 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/210878243",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/nPYADvcUkmCfYovCIEHg8i3f/df74.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "389 900 Kč",
+    "found_at": "03.11.2026 21:57",
+    "price_drop_at": "03.11.2026 21:57"
   }
 ]
