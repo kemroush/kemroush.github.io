@@ -96,7 +96,7 @@
   {
     "id": "211389339",
     "title": "Volkswagen Golf VW Golf, 2.0 TDi , R-line",
-    "price": "359 000 Kč",
+    "price": "345 000 Kč",
     "details": "2019  ·  141 000 km  ·  Nafta  ·  Automatická  ·  Teplice  ·  Soukromý",
     "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211389339",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TnJSEDLBZIQ8LCi/fa81.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
@@ -105,7 +105,9 @@
       "ambient",
       "heated"
     ],
-    "found_at": "04.11.2026 15:28"
+    "found_at": "04.11.2026 15:28",
+    "old_price": "359 000 Kč",
+    "price_drop_at": "04.11.2026 22:18"
   },
   {
     "id": "211388826",
@@ -400,5 +402,96 @@
     "old_price": "269 000 Kč",
     "found_at": "04.11.2026 15:28",
     "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "211394655",
+    "title": "Volkswagen Golf 2.0 TDI 110 kW Style",
+    "price": "389 900 Kč",
+    "details": "2020  ·  182 154 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211394655",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdk3RI9DOlZIRLc4x/6872.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "04.11.2026 22:18"
+  },
+  {
+    "id": "211387773",
+    "title": "Volkswagen Golf 2.0 TDi 110 kW DSG Highline",
+    "price": "280 000 Kč",
+    "details": "2017  ·  190 049 km  ·  Nafta  ·  Automatická  ·  Šumperk  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211387773",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkBQkMFFotkIRK6tn/280e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "04.11.2026 22:18"
+  },
+  {
+    "id": "211393749",
+    "title": "Mercedes-Benz Třídy A 1.6i,ČR,AT,bixen,autoAC",
+    "price": "270 000 Kč",
+    "details": "2016  ·  164 214 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211393749",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkbxLFDiUkIRIxvN/f439.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "04.11.2026 22:18"
+  },
+  {
+    "id": "211361688",
+    "title": "Volkswagen Golf TGi CNG Highline",
+    "price": "220 000 Kč",
+    "details": "2015  ·  60 900 km  ·  CNG + benzín  ·  Automatická  ·  Hlavní město Praha  ·  EMOTION CARS",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211361688",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkC4TclBDMNINhwZ6/52e2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "04.11.2026 22:18"
+  },
+  {
+    "id": "210993630",
+    "title": "Volkswagen Golf VIII 2.0 TDI Life DSG Matrix/P",
+    "price": "389 000 Kč",
+    "details": "2021  ·  118 762 km  ·  Nafta  ·  Automatická  ·  Cheb  ·  AutoPark MasCars",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210993630",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/nPYADvcUkmDcXILGLuHlqAhE/6c34.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "399 000 Kč",
+    "found_at": "04.11.2026 22:18",
+    "price_drop_at": "04.11.2026 22:18"
+  },
+  {
+    "id": "210364091",
+    "title": "Seat Leon 2.0 TDI Style DSG/LED",
+    "price": "359 000 Kč",
+    "details": "2021  ·  125 465 km  ·  Nafta  ·  Automatická  ·  Cheb  ·  AutoPark MasCars",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/210364091",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_A/nCTUX1iX5DwDWzBj49GhjY2G/bef3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "old_price": "369 000 Kč",
+    "found_at": "04.11.2026 22:18",
+    "price_drop_at": "04.11.2026 22:18"
+  },
+  {
+    "id": "210005838",
+    "title": "Toyota Corolla 1.8 E-CVT 72 kW Comfort",
+    "price": "289 900 Kč",
+    "details": "2020  ·  209 597 km  ·  Hybridní  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/210005838",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_A/kcHp2YdDtBM3KVapF76hLd/1309.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "299 900 Kč",
+    "found_at": "04.11.2026 22:18",
+    "price_drop_at": "04.11.2026 22:18"
   }
 ]

@@ -3810,7 +3810,7 @@
    "ambient"
   ],
   "last_seen": "2026-11-04",
-  "price": 498000
+  "price": 500000
  },
  "211045254": {
   "last_seen": "2026-10-10",
@@ -4825,6 +4825,24 @@
   "last_seen": "2026-11-04",
   "price": 649900
  },
+ "211311180": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
+  "last_seen": "2026-11-04",
+  "price": 689000
+ },
+ "211311186": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
+  "last_seen": "2026-11-04",
+  "price": 669000
+ },
  "211313013": {
   "eq": [
    "heated"
@@ -5595,6 +5613,10 @@
  "bmwojete:289164": {
   "last_seen": "2026-11-04",
   "price": 699000
+ },
+ "bmwojete:289237": {
+  "last_seen": "2026-11-04",
+  "price": 499000
  },
  "bmwojete:289732": {
   "last_seen": "2026-11-04",

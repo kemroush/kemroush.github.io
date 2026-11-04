@@ -386,5 +386,42 @@
     "old_price": "736 890 Kč",
     "found_at": "04.11.2026 15:28",
     "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "211311186",
+    "title": "Mercedes-Benz Třídy A A 200 Progressive",
+    "price": "669 000 Kč",
+    "details": "2025  ·  18 000 km  ·  Benzín  ·  Automatická  ·  České Budějovice  ·  AutoWallis České Budějovice a.s. - Mercedes Benz",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211311186",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TBSHZcDZ9zIRI04Y/39bf.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "04.11.2026 22:18"
+  },
+  {
+    "id": "211311180",
+    "title": "Mercedes-Benz Třídy A A 200 Progressive",
+    "price": "689 000 Kč",
+    "details": "2025  ·  8 000 km  ·  Benzín  ·  Automatická  ·  České Budějovice  ·  AutoWallis České Budějovice a.s. - Mercedes Benz",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211311180",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCJCefDn1PIRIHZW/e0df.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "04.11.2026 22:18"
+  },
+  {
+    "id": "bmwojete:289237",
+    "title": "BMW i3",
+    "price": "499 000 Kč",
+    "details": "2022  ·  25 000 km  ·  Elektřina  ·  Invelt s.r.o., Plzen",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/289237/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/289237?2026-11-04T14:33:30+00:00",
+    "found_at": "04.11.2026 22:18"
   }
 ]

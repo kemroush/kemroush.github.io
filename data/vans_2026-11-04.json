@@ -27,5 +27,23 @@
     "old_price": "149 999 Kč",
     "found_at": "04.11.2026 15:28",
     "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "211395837",
+    "title": "Citroën Jumpy 2016 2.0 HDi 94kW",
+    "price": "149 000 Kč",
+    "details": "2016  ·  220 196 km  ·  Nafta  ·  Manuální  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/citroen/jumpy/211395837",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TBgJSgDfxrIRRsad/014f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "04.11.2026 22:18"
+  },
+  {
+    "id": "211395528",
+    "title": "Fiat Ducato 2.0 MultiJet, Bus, 9Míst",
+    "price": "75 000 Kč",
+    "details": "2013  ·  167 719 km  ·  Nafta  ·  Manuální  ·  Hlavní město Praha  ·  AUTO DISKONT",
+    "link": "https://www.sauto.cz/uzitkova/detail/fiat/ducato/211395528",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkbxLFDmz6IRPpdE/6505.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "04.11.2026 22:18"
   }
 ]
