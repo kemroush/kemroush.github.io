@@ -1,0 +1,390 @@
+[
+  {
+    "id": "211390812",
+    "title": "Mini Cooper 1,5 AT7 AutoAC+PDC",
+    "price": "499 000 Kč",
+    "details": "2023  ·  80 656 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  CARS & CARE Business Lease",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211390812",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TCcWhaDFuPIRCG4Q/dea2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "found_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "211388634",
+    "title": "Mini Cooper S",
+    "price": "518 199 Kč",
+    "details": "2022  ·  68 368 km  ·  Benzín  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/211388634",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkDyuEmI2fNIQs8Nl/1775.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "210711164",
+    "title": "BMW Řada 5 2,0 530e xDrive A8 Luxury Line",
+    "price": "750 000 Kč",
+    "details": "2022  ·  65 890 km  ·  Hybridní  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  CARS & CARE Business Lease",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-5/210711164",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/nO2CysqjGrC2szhX6VHI1R5h/bf10.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "209987571",
+    "title": "Mercedes-Benz CLA 1,3 200 Progressive linie",
+    "price": "724 790 Kč",
+    "details": "2023  ·  30 048 km  ·  Benzín  ·  Automatická  ·  Zlín  ·  SAMOHÝL MB, a.s. - Certified",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/209987571",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_A/kY1K2LlXQBdLY8CEAF6lVHo/1bd1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "209775405",
+    "title": "BMW Řada 1 118d, Hatchback",
+    "price": "749 000 Kč",
+    "details": "2025  ·  21 443 km  ·  Nafta  ·  Automatická  ·  Hradec Králové  ·  BMW AutoWallis Hradec Králové a Pardubice",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/209775405",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtCJexHFRVGGsuiC/ad2d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "mns:23010",
+    "title": "Mercedes-Benz CLA 200 Progressive linie",
+    "price": "724 790 Kč",
+    "details": "CLA 200 Progressive linie  ·  2023  ·  30 048 km  ·  Benzín  ·  SAMOHÝL MB a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/23010",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/79f9874c-4299-4076-8e93-cd1285193b5f.jpeg",
+    "found_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "211219797",
+    "title": "Mini Clubman 2.0 225 KW JCW ALL4 ČR 1 maj",
+    "price": "610 003 Kč",
+    "details": "2021  ·  92 957 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Příbram  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/clubman/211219797",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFW9k4URAH9jgko/25f5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "619 999 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "210802244",
+    "title": "Mercedes-Benz CLA d Shooting Brake",
+    "price": "649 000 Kč",
+    "details": "2022  ·  67 809 km  ·  Nafta  ·  Automatická  ·  Praha-východ  ·  Hoffmann & Žižák",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210802244",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/nO573v8MsN3e2PCzLHa9xka/c9d4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "669 000 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "211166763",
+    "title": "Mercedes-Benz Třídy C Mercedes Benz S206 C220D AMG",
+    "price": "670 000 Kč",
+    "details": "2021  ·  89 000 km  ·  Nafta  ·  Automatická  ·  Kolín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/211166763",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKREB0TcDZwH3h7YL/92f0.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "680 000 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "211253304",
+    "title": "Mini Clubman F 54, výborný stav",
+    "price": "710 000 Kč",
+    "details": "2023  ·  50 000 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/clubman/211253304",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLCnfP02IZICh5rl/b5f8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "730 000 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "211258758",
+    "title": "Mercedes-Benz Třídy A 1,3 A 200 Progressive",
+    "price": "598 950 Kč",
+    "details": "2023  ·  45 611 km  ·  Benzín  ·  Automatická  ·  Zlín  ·  SAMOHÝL MB, a.s. - Certified",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211258758",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLnoRVX6SIDjMKI/0335.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "627 990 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "211223528",
+    "title": "Mercedes-Benz Třídy A 1,3 A 200 Progressive linie",
+    "price": "598 950 Kč",
+    "details": "2023  ·  32 801 km  ·  Benzín  ·  Automatická  ·  Zlín  ·  SAMOHÝL MB, a.s. - Certified",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211223528",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLBaEbFIfVIAB4dK/324e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "627 990 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "211219875",
+    "title": "BMW i3",
+    "price": "486 557 Kč",
+    "details": "2022  ·  99 639 km  ·  Elektro  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/211219875",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFMsuhLbLH9ji81/429e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "513 415 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "211089573",
+    "title": "Mercedes-Benz CLA 180 1,3/100kW ČR 1.MAJ 15TKM",
+    "price": "689 000 Kč",
+    "details": "2023  ·  15 592 km  ·  Benzín  ·  Automatická  ·  Praha-východ  ·  Sell My Car",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211089573",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKREB0TcEquHvh0Ya/3faa.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "699 000 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "210761237",
+    "title": "Mercedes-Benz CLA 1,3 200 Progressive linie",
+    "price": "695 750 Kč",
+    "details": "2024  ·  51 927 km  ·  Benzín  ·  Automatická  ·  Zlín  ·  SAMOHÝL MB, a.s. - Certified",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210761237",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/kQMlcCt5zmBDp4m4oqHMYusi/c831.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "736 890 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "210759422",
+    "title": "Mercedes-Benz CLA 1,3 200 Progressive linie",
+    "price": "683 650 Kč",
+    "details": "2023  ·  39 820 km  ·  Benzín  ·  Automatická  ·  Zlín  ·  SAMOHÝL MB, a.s. - Certified",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210759422",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/nO2CysqjGrRICCBDfGHMTowl/340b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "736 890 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "209836062",
+    "title": "Mercedes-Benz Třídy A 1,3 A 200 Progressive",
+    "price": "598 950 Kč",
+    "details": "2023  ·  32 363 km  ·  Benzín  ·  Automatická  ·  Zlín  ·  SAMOHÝL MB, a.s. - Certified",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/209836062",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/nPXMbbUsvqBj6FAFVcFqu9Jf/c811.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "627 990 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "209606499",
+    "title": "Mercedes-Benz CLA 1,3 200 Progressive linie",
+    "price": "683 650 Kč",
+    "details": "2023  ·  48 189 km  ·  Benzín  ·  Automatická  ·  Zlín  ·  SAMOHÝL MB, a.s. - Certified",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/209606499",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_A/kOzkBkwYBTqAqfEikFKIFfj/0926.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "724 790 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "209551836",
+    "title": "Mercedes-Benz CLA 1,3 200 Progressive linie",
+    "price": "683 650 Kč",
+    "details": "2023  ·  60 976 km  ·  Benzín  ·  Automatická  ·  Zlín  ·  SAMOHÝL MB, a.s. - Certified",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/209551836",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_of_B/nDJ4VEZEqBf89nr8FDukMK/a7b7.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "724 790 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "209261325",
+    "title": "Mercedes-Benz CLA 1,3 200  Progressive Linie",
+    "price": "683 650 Kč",
+    "details": "2023  ·  44 662 km  ·  Benzín  ·  Automatická  ·  Zlín  ·  SAMOHÝL MB, a.s. - Certified",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/209261325",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_A/nPSV1TXV2nCruJ2FbNEik4lN/1d11.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "724 790 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "mns:24589",
+    "title": "Mercedes-Benz CLA 200 d Shooting Brake",
+    "price": "649 000 Kč",
+    "details": "CLA 200 d Shooting Brake  ·  2022  ·  67 809 km  ·  Nafta  ·  Hoffmann a Žižák spol. s r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24589",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/c2960172-a30b-47b7-81ed-5ab1dbe55ec3.jpeg",
+    "old_price": "669 000 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "mns:23232",
+    "title": "Mercedes-Benz CLA 200 Progressive linie",
+    "price": "683 650 Kč",
+    "details": "CLA 200 Progressive linie  ·  2023  ·  60 976 km  ·  Benzín  ·  SAMOHÝL MB a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/23232",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/2118d77e-0ef3-4642-a58c-67aed407680d.jpeg",
+    "old_price": "724 790 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "mns:22295",
+    "title": "Mercedes-Benz Třída A 200 Progressive",
+    "price": "598 950 Kč",
+    "details": "Třída A 200 Progressive  ·  2023  ·  32 363 km  ·  Benzín  ·  SAMOHÝL MB a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/22295",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/c6253342-87b1-4f14-8b0d-06d702959031.jpeg",
+    "old_price": "627 990 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "mns:25449",
+    "title": "Mercedes-Benz Třída A 200 Progressive",
+    "price": "598 950 Kč",
+    "details": "Třída A 200 Progressive  ·  2023  ·  45 611 km  ·  Benzín  ·  SAMOHÝL MB a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/25449",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/bf78540a-ef39-41c5-9f9c-1e4cbb10c1d4.jpeg",
+    "old_price": "627 990 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "mns:25398",
+    "title": "Mercedes-Benz Třída A 200 Progressive linie",
+    "price": "598 950 Kč",
+    "details": "Třída A 200 Progressive linie  ·  2023  ·  32 801 km  ·  Benzín  ·  SAMOHÝL MB a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/25398",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/17156522-dd53-4bfa-88fd-9d99b97e74da.jpeg",
+    "old_price": "627 990 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "mns:21780",
+    "title": "Mercedes-Benz CLA 200 Progressive linie",
+    "price": "683 650 Kč",
+    "details": "CLA 200 Progressive linie  ·  2023  ·  48 189 km  ·  Benzín  ·  SAMOHÝL MB a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/21780",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/5a697dbf-6734-41b9-abe1-81a7c7ed22b7.jpeg",
+    "old_price": "724 790 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "mns:21332",
+    "title": "Mercedes-Benz CLA 200  Progressive Linie",
+    "price": "683 650 Kč",
+    "details": "CLA 200  Progressive Linie  ·  2023  ·  44 662 km  ·  Benzín  ·  SAMOHÝL MB a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/21332",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/e237d153-4213-4fb0-a20e-265eb532e566.jpeg",
+    "old_price": "724 790 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "mns:24530",
+    "title": "Mercedes-Benz CLA 200 Progressive linie",
+    "price": "683 650 Kč",
+    "details": "CLA 200 Progressive linie  ·  2023  ·  39 820 km  ·  Benzín  ·  SAMOHÝL MB a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/24530",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/a9bb0932-a531-419b-8770-312a532a4228.jpeg",
+    "old_price": "736 890 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  },
+  {
+    "id": "mns:24533",
+    "title": "Mercedes-Benz CLA 200 Progressive linie",
+    "price": "695 750 Kč",
+    "details": "CLA 200 Progressive linie  ·  2024  ·  51 927 km  ·  Benzín  ·  SAMOHÝL MB a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/24533",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/48b0c11e-066a-43ba-ade0-bc9a70d84609.jpeg",
+    "old_price": "736 890 Kč",
+    "found_at": "04.11.2026 15:28",
+    "price_drop_at": "04.11.2026 15:28"
+  }
+]
