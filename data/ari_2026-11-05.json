@@ -167,5 +167,108 @@
     "old_price": "222 999 Kč",
     "found_at": "05.11.2026 15:36",
     "price_drop_at": "05.11.2026 15:36"
+  },
+  {
+    "id": "211403118",
+    "title": "Volkswagen Golf 2.0 TDI 110kW DSG Style",
+    "price": "382 000 Kč",
+    "details": "2023  ·  170 345 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Autodraft",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211403118",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkB87eWDvJQIRzuKt/abeb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "05.11.2026 22:27"
+  },
+  {
+    "id": "211402059",
+    "title": "Škoda Scala 1,5 TSI STYLE DPH 1maj původČR",
+    "price": "379 800 Kč",
+    "details": "2023  ·  113 507 km  ·  Benzín  ·  Automatická  ·  Olomouc  ·  Auto TRAFEX - Autobazar Uničov",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211402059",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkB87eWDt9VIRumQ3/fac2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "05.11.2026 22:27"
+  },
+  {
+    "id": "211066794",
+    "title": "Volkswagen Golf 1,5 TSI EVO Life DSG 1.majitel",
+    "price": "395 000 Kč",
+    "details": "2023  ·  92 200 km  ·  Benzín  ·  Automatická  ·  České Budějovice  ·  AUTOCENTRUM DAN a SYN",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211066794",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKRD1EvuGm5HuyxXc/94cf.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "05.11.2026 22:27"
+  },
+  {
+    "id": "211184109",
+    "title": "Seat Leon 2.0TDI 110kW DSG FR ST,1.Maj",
+    "price": "385 000 Kč",
+    "details": "2022  ·  117 044 km  ·  Nafta  ·  Automatická  ·  Olomouc  ·  ZdeKupAuto Olomouc",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211184109",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/nOdL4BtPEyBuWMSCREH5840i/c4b2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "389 000 Kč",
+    "found_at": "05.11.2026 22:27",
+    "price_drop_at": "05.11.2026 22:27"
+  },
+  {
+    "id": "210840788",
+    "title": "Seat Leon 2.0TDI 110kW DSG FR ST,1.Maj",
+    "price": "378 000 Kč",
+    "details": "2022  ·  121 127 km  ·  Nafta  ·  Automatická  ·  Olomouc  ·  ZdeKupAuto Olomouc",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/210840788",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_C/nEwftpXyZJX4umEPHVIzaS/623d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "389 000 Kč",
+    "found_at": "05.11.2026 22:27",
+    "price_drop_at": "05.11.2026 22:27"
+  },
+  {
+    "id": "211390722",
+    "title": "Mercedes-Benz Třídy A koupeno v CR 1 majitel",
+    "price": "339 000 Kč",
+    "details": "2021  ·  198 000 km  ·  Hybridní  ·  Automatická  ·  Hlavní město Praha  ·  SIMPLY BUSSINES&FINANCING s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211390722",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86Tw5RPJD0wIRCCQA/da18.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "379 000 Kč",
+    "found_at": "05.11.2026 22:27",
+    "price_drop_at": "05.11.2026 22:27"
+  },
+  {
+    "id": "211270098",
+    "title": "Škoda Scala 1,5 TSI 110 Style AT",
+    "price": "309 000 Kč",
+    "details": "2023  ·  195 650 km  ·  Benzín  ·  Automatická  ·  Praha-západ  ·  Auto RUPEXIM",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211270098",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCR9NVflLrfpr5pSIETeUk/dea5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "329 000 Kč",
+    "found_at": "05.11.2026 22:27",
+    "price_drop_at": "05.11.2026 22:27"
   }
 ]

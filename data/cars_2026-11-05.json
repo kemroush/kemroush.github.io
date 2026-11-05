@@ -97,5 +97,134 @@
     "old_price": "659 000 Kč",
     "found_at": "05.11.2026 15:36",
     "price_drop_at": "05.11.2026 15:36"
+  },
+  {
+    "id": "211402020",
+    "title": "BMW Řada 3 320i M-Sport PRO",
+    "price": "699 000 Kč",
+    "details": "2023  ·  61 060 km  ·  Benzín  ·  Automatická  ·  Karlovy Vary  ·  BASE NEXT, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/211402020",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TnJSEDdkwIRuYVi/dd91.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "05.11.2026 22:27"
+  },
+  {
+    "id": "211401588",
+    "title": "BMW Řada 1 118d ///M*ZÁRUKA 1/28*DPH*ČR 1",
+    "price": "655 000 Kč",
+    "details": "2025  ·  44 472 km  ·  Nafta  ·  Automatická  ·  Znojmo  ·  STOP CARS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/211401588",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkC4TclD3CJIRsw72/95d4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "05.11.2026 22:27"
+  },
+  {
+    "id": "bmwojete:290148",
+    "title": "BMW 218i Gran Coupé",
+    "price": "569 000 Kč",
+    "details": "2023  ·  73 300 km  ·  Benzín  ·  CarTec Liberec, s.r.o.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/290148/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/290148?2026-11-05T15:52:23+00:00",
+    "found_at": "05.11.2026 22:27"
+  },
+  {
+    "id": "211332522",
+    "title": "BMW Řada 3 320d xDrive M-Sport,ČR,1.Maj.",
+    "price": "710 000 Kč",
+    "details": "2023  ·  65 207 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Olomouc  ·  ZdeKupAuto Olomouc",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/211332522",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEe0kCSTDfIKBYhY/c937.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "729 000 Kč",
+    "found_at": "05.11.2026 22:27",
+    "price_drop_at": "05.11.2026 22:27"
+  },
+  {
+    "id": "211224510",
+    "title": "BMW Řada 3 320d xDrive M-Sport,ČR,1.Maj.",
+    "price": "699 000 Kč",
+    "details": "2022  ·  69 357 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Olomouc  ·  ZdeKupAuto Olomouc",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/211224510",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLCsdQ6MPoIAEqU2/b24d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "725 000 Kč",
+    "found_at": "05.11.2026 22:27",
+    "price_drop_at": "05.11.2026 22:27"
+  },
+  {
+    "id": "211028736",
+    "title": "Mercedes-Benz CLA 200d shooting brake",
+    "price": "724 790 Kč",
+    "details": "2024  ·  42 655 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Daimler Truck Česká republika",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211028736",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/kPVqmweP7JBdV1WW5HprA4G/82d1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "736 890 Kč",
+    "found_at": "05.11.2026 22:27",
+    "price_drop_at": "05.11.2026 22:27"
+  },
+  {
+    "id": "210528341",
+    "title": "Mercedes-Benz GLB 200d 4MATIC",
+    "price": "724 790 Kč",
+    "details": "2024  ·  39 602 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Daimler Truck Česká republika",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210528341",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/nO2CysqjGrDPliFEDXGx0xW2/bd78.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "736 890 Kč",
+    "found_at": "05.11.2026 22:27",
+    "price_drop_at": "05.11.2026 22:27"
+  },
+  {
+    "id": "210446561",
+    "title": "Mercedes-Benz Třídy C C 220d 4MATIC kombi",
+    "price": "724 790 Kč",
+    "details": "2023  ·  92 135 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Daimler Truck Česká republika",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/210446561",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_B/kcHp2YdDtDrxR2S6GqLuJR/7a5d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "736 890 Kč",
+    "found_at": "05.11.2026 22:27",
+    "price_drop_at": "05.11.2026 22:27"
+  },
+  {
+    "id": "210166166",
+    "title": "Mercedes-Benz CLA 200d shooting brake",
+    "price": "699 000 Kč",
+    "details": "2024  ·  32 608 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Daimler Truck Česká republika",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210166166",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_C/kcHp2YdDtzYqGNtQGNi9Oi/ddea.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "724 790 Kč",
+    "found_at": "05.11.2026 22:27",
+    "price_drop_at": "05.11.2026 22:27"
   }
 ]
