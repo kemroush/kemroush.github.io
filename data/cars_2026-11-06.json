@@ -28,7 +28,7 @@
   {
     "id": "211403349",
     "title": "Mini Countryman Untamed Edition, NÁJEZD, Stav",
-    "price": "635 000 Kč",
+    "price": "622 000 Kč",
     "details": "2022  ·  48 820 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
     "link": "https://www.sauto.cz/osobni/detail/mini/countryman/211403349",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkC4TclECasIR3Ft5/0ec8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
@@ -37,7 +37,9 @@
       "ambient",
       "heated"
     ],
-    "found_at": "06.11.2026 15:13"
+    "found_at": "06.11.2026 15:13",
+    "old_price": "635 000 Kč",
+    "price_drop_at": "06.11.2026 21:52"
   },
   {
     "id": "211311192",
@@ -162,5 +164,83 @@
     "old_price": "719 000 Kč",
     "found_at": "06.11.2026 15:13",
     "price_drop_at": "06.11.2026 15:13"
+  },
+  {
+    "id": "211409295",
+    "title": "Mercedes-Benz E trieda",
+    "price": "730 107 Kč",
+    "details": "2020  ·  99 690 km  ·  Benzín  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/ostatni/211409295",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkC4TclEM5wISXLTn/abfb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "06.11.2026 21:52"
+  },
+  {
+    "id": "211408587",
+    "title": "Mercedes-Benz EQA 250",
+    "price": "365 450 Kč",
+    "details": "2022  ·  96 000 km  ·  Elektro  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/eqa/211408587",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TBSHZcD4v4ISVPqj/9d86.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "found_at": "06.11.2026 21:52"
+  },
+  {
+    "id": "211408914",
+    "title": "Mercedes-Benz Třídy A 220d*LED*360°Kamera",
+    "price": "748 077 Kč",
+    "details": "2023  ·  79 000 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211408914",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TBgJSgECaXISV8m9/72d7.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "06.11.2026 21:52"
+  },
+  {
+    "id": "211408857",
+    "title": "Mercedes-Benz CLA 250e SB AMG-Line*PANORAMA",
+    "price": "701 411 Kč",
+    "details": "2023  ·  87 466 km  ·  Hybridní  ·  Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211408857",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCJCefELacISVsvS/4bc8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "06.11.2026 21:52"
+  },
+  {
+    "id": "211408821",
+    "title": "Mercedes-Benz CLA 200d",
+    "price": "748 433 Kč",
+    "details": "2022  ·  88 500 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211408821",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TCEwoKSGbISVj6B/1c7a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "06.11.2026 21:52"
+  },
+  {
+    "id": "210791465",
+    "title": "Mini Countryman JCW ALL4  300K ČR H&K",
+    "price": "619 000 Kč",
+    "details": "2021  ·  47 491 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/210791465",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kQMlcCt5zmEA35RBQxxHPN11M/fd58.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "678 000 Kč",
+    "found_at": "06.11.2026 21:52",
+    "price_drop_at": "06.11.2026 21:52"
   }
 ]

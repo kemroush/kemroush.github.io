@@ -18,5 +18,32 @@
     "old_price": "140 000 Kč",
     "found_at": "06.11.2026 15:13",
     "price_drop_at": "06.11.2026 15:13"
+  },
+  {
+    "id": "211408548",
+    "title": "Ford Transit 350L 2.4TDCi 85kW TAŽNÉ",
+    "price": "138 000 Kč",
+    "details": "2010  ·  171 490 km  ·  Nafta  ·  Manuální  ·  Uherské Hradiště  ·  eMDeCARS",
+    "link": "https://www.sauto.cz/uzitkova/detail/ford/transit/211408548",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkB87eWEC7rISUiql/fd1e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "06.11.2026 21:52"
+  },
+  {
+    "id": "211407816",
+    "title": "Ford Transit 2,2TDCi  92kW   TREND",
+    "price": "129 000 Kč",
+    "details": "2012  ·  235 700 km  ·  Nafta  ·  Manuální  ·  Opava  ·  AUTOTIP Halfar s.r.o.",
+    "link": "https://www.sauto.cz/uzitkova/detail/ford/transit/211407816",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDrngKQ3AISSluD/0348.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "06.11.2026 21:52"
+  },
+  {
+    "id": "211407834",
+    "title": "Renault Trafic 2,0dCi 115 TAŽNÉ AC",
+    "price": "149 900 Kč",
+    "details": "2012  ·  208 035 km  ·  Nafta  ·  Manuální  ·  Pelhřimov  ·  VHCARS",
+    "link": "https://www.sauto.cz/uzitkova/detail/renault/trafic/211407834",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCfcGaD8XeISSjtt/3708.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "06.11.2026 21:52"
   }
 ]

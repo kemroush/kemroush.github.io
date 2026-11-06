@@ -135,5 +135,66 @@
     "old_price": "399 000 Kč",
     "found_at": "06.11.2026 15:13",
     "price_drop_at": "06.11.2026 15:13"
+  },
+  {
+    "id": "211409598",
+    "title": "Toyota Corolla 1.8 HSD Hybrid Selection",
+    "price": "379 990 Kč",
+    "details": "2019  ·  119 481 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211409598",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCfcGaEEIgISZWgA/9a0b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "06.11.2026 21:52"
+  },
+  {
+    "id": "211408926",
+    "title": "Volkswagen Golf R Line 1 majitel",
+    "price": "365 000 Kč",
+    "details": "2020  ·  61 780 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211408926",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCfcGaEBqzISWJ8B/a513.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient"
+    ],
+    "found_at": "06.11.2026 21:52"
+  },
+  {
+    "id": "210257054",
+    "title": "Volkswagen Golf 1.6 Tdi 81kw - Nové rozvody",
+    "price": "199 000 Kč",
+    "details": "2015  ·  188 430 km  ·  Nafta  ·  Automatická  ·  Chomutov  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210257054",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkC4TclCznSIPcDiS/adca.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "06.11.2026 21:52"
+  },
+  {
+    "id": "211408704",
+    "title": "Mazda 3 2,0 SKYACTIV AT NAVI TAŽNÉ ČR",
+    "price": "279 900 Kč",
+    "details": "2016  ·  157 561 km  ·  Benzín  ·  Automatická  ·  Brno-město  ·  AutoPalace Brno",
+    "link": "https://www.sauto.cz/osobni/detail/mazda/3/211408704",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDhsIbKG4gISVOBg/0761.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "06.11.2026 21:52"
+  },
+  {
+    "id": "210218657",
+    "title": "Volkswagen Golf 1,5 TSI 110kW DSG Edice Sound",
+    "price": "314 900 Kč",
+    "details": "2017  ·  129 000 km  ·  Benzín  ·  Automatická  ·  Praha-západ  ·  GROUP wagen s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210218657",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/kcHp2YdDtCJexHeyBGS1cJf/d5a8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "317 900 Kč",
+    "found_at": "06.11.2026 21:52",
+    "price_drop_at": "06.11.2026 21:52"
   }
 ]
