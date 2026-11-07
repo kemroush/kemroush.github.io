@@ -88,5 +88,45 @@
     "old_price": "314 990 Kč",
     "found_at": "07.11.2026 13:57",
     "price_drop_at": "07.11.2026 13:57"
+  },
+  {
+    "id": "211411665",
+    "title": "Mercedes-Benz Třídy A A200 / AMG LINE / AUTOMAT",
+    "price": "390 000 Kč",
+    "details": "2018  ·  164 000 km  ·  Benzín  ·  Automatická  ·  Praha-východ  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211411665",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDi9WNEjrCIS1YGC/11ab.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient"
+    ],
+    "found_at": "07.11.2026 20:24"
+  },
+  {
+    "id": "210562928",
+    "title": "Kia Stonic 1.0 T-GDi,ČR,AT,TZ,navi",
+    "price": "337 000 Kč",
+    "details": "2020  ·  25 590 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/kia/stonic/210562928",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/nO2CysqjGrDPliFPghHAfNBF/b5b6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "old_price": "350 000 Kč",
+    "found_at": "07.11.2026 20:24",
+    "price_drop_at": "07.11.2026 20:24"
+  },
+  {
+    "id": "210337853",
+    "title": "Seat Leon 2.0 TDi,FR,AT,panorama",
+    "price": "189 000 Kč",
+    "details": "2014  ·  156 319 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/210337853",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_C/kcHp2YdDtBM3KV9FaGfS7ia/ff93.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "199 000 Kč",
+    "found_at": "07.11.2026 20:24",
+    "price_drop_at": "07.11.2026 20:24"
   }
 ]
