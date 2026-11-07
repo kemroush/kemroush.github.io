@@ -1,0 +1,43 @@
+[
+  {
+    "id": "211411044",
+    "title": "Mini Cooper SE ELECTRIC 32,6 kWh DPH TOP",
+    "price": "399 000 Kč",
+    "details": "2021  ·  56 000 km  ·  Elektro  ·  Automatická  ·  Rychnov nad Kněžnou  ·  PR Agency Group, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211411044",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkC4TclEch9ISxBwG/a043.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "found_at": "07.11.2026 13:57"
+  },
+  {
+    "id": "211119135",
+    "title": "Mercedes-Benz GLA 2.0 D 220d,1.maj,ČR,AT",
+    "price": "650 500 Kč",
+    "details": "2021  ·  46 981 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/211119135",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRCO7AF4LHyjLCV/7632.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "old_price": "665 000 Kč",
+    "found_at": "07.11.2026 13:57",
+    "price_drop_at": "07.11.2026 13:57"
+  },
+  {
+    "id": "209775405",
+    "title": "BMW Řada 1 118d, Hatchback",
+    "price": "699 000 Kč",
+    "details": "2025  ·  21 443 km  ·  Nafta  ·  Automatická  ·  Hradec Králové  ·  BMW AutoWallis Hradec Králové a Pardubice",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/209775405",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtCJexHFRVGGsuiC/ad2d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "749 000 Kč",
+    "found_at": "07.11.2026 13:57",
+    "price_drop_at": "07.11.2026 13:57"
+  }
+]

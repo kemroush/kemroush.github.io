@@ -1,0 +1,92 @@
+[
+  {
+    "id": "211411341",
+    "title": "Volkswagen Golf 1.5 TSi",
+    "price": "274 000 Kč",
+    "details": "2019  ·  210 000 km  ·  Benzín  ·  Automatická  ·  Chomutov  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211411341",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkbxLFEgcxISzwE9/d6f8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "07.11.2026 13:57"
+  },
+  {
+    "id": "211411218",
+    "title": "Toyota Yaris Toyota Yaris 1.33 VVT-i 73 kW",
+    "price": "184 900 Kč",
+    "details": "2014  ·  123 593 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/yaris/211411218",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkBcInfEUaJISzGkp/35fa.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "07.11.2026 13:57"
+  },
+  {
+    "id": "211410798",
+    "title": "Volkswagen Golf 1.5 TSi",
+    "price": "264 000 Kč",
+    "details": "2018  ·  205 000 km  ·  Benzín  ·  Automatická  ·  Chomutov  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211410798",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkBQkMFHuWyISuqTc/de06.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "07.11.2026 13:57"
+  },
+  {
+    "id": "211084977",
+    "title": "Škoda Fabia 1.5 tsi 110 kW/DSG/DPH",
+    "price": "394 900 Kč",
+    "details": "2022  ·  62 000 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  CATCHY CARS",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/fabia/211084977",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKRDgcHsCwwHvq4Sh/f108.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "399 900 Kč",
+    "found_at": "07.11.2026 13:57",
+    "price_drop_at": "07.11.2026 13:57"
+  },
+  {
+    "id": "211295913",
+    "title": "Volkswagen Golf 1.5 e-TSi MHEV,ČR,Style",
+    "price": "370 100 Kč",
+    "details": "2020  ·  103 628 km  ·  Hybridní  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211295913",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nPQ64TBsMv4DeCGg6IIXpsA/0189.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "380 000 Kč",
+    "found_at": "07.11.2026 13:57",
+    "price_drop_at": "07.11.2026 13:57"
+  },
+  {
+    "id": "209741874",
+    "title": "Seat Leon 2.0TDi,Style,DSG,LED",
+    "price": "153 000 Kč",
+    "details": "2014  ·  221 336 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/209741874",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_A/nDJ4VEZEqxQDMWzLFiWHrp/790e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "165 000 Kč",
+    "found_at": "07.11.2026 13:57",
+    "price_drop_at": "07.11.2026 13:57"
+  },
+  {
+    "id": "208719551",
+    "title": "Seat Leon FR-line 2.0 TDI 135 kW",
+    "price": "279 990 Kč",
+    "details": "2016  ·  137 413 km  ·  Nafta  ·  Automatická  ·  Nymburk  ·  Louda Auto+  ( 6 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/208719551",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtBwNESFJzGDjvf9/9b21.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "314 990 Kč",
+    "found_at": "07.11.2026 13:57",
+    "price_drop_at": "07.11.2026 13:57"
+  }
+]
