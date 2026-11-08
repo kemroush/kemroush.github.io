@@ -149,5 +149,47 @@
     "old_price": "299 000 Kč",
     "found_at": "08.11.2026 14:19",
     "price_drop_at": "08.11.2026 14:19"
+  },
+  {
+    "id": "211415160",
+    "title": "Audi A3 2,0 TDI 110KW KAMERA ACC",
+    "price": "399 000 Kč",
+    "details": "2022  ·  126 332 km  ·  Nafta  ·  Automatická  ·  Příbram  ·  Auto Evropská",
+    "link": "https://www.sauto.cz/osobni/detail/audi/a3/211415160",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TBSHZcEuWMITiPpS/ea51.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "08.11.2026 20:39"
+  },
+  {
+    "id": "211358430",
+    "title": "Škoda Scala 1.5 TSI 110 kW, DSG, Style,DPH",
+    "price": "365 000 Kč",
+    "details": "2023  ·  117 830 km  ·  Benzín  ·  Automatická  ·  Zlín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211358430",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkBcInfnY3INCtmg/2b26.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "375 000 Kč",
+    "found_at": "08.11.2026 20:39",
+    "price_drop_at": "08.11.2026 20:39"
+  },
+  {
+    "id": "211255380",
+    "title": "Volvo V40 AUTOMAT, 4X4, NOVÉ ROZVODY",
+    "price": "199 000 Kč",
+    "details": "2014  ·  205 515 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Zlín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211255380",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLCnfP06gMIDJIzy/7f10.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "229 000 Kč",
+    "found_at": "08.11.2026 20:39",
+    "price_drop_at": "08.11.2026 20:39"
   }
 ]

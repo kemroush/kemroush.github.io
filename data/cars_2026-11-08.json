@@ -92,5 +92,50 @@
     "old_price": "699 000 Kč",
     "found_at": "08.11.2026 14:19",
     "price_drop_at": "08.11.2026 14:19"
+  },
+  {
+    "id": "211414782",
+    "title": "Mercedes-Benz Třídy B 1.3T B200,ČR",
+    "price": "450 000 Kč",
+    "details": "2021  ·  86 745 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/211414782",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkbxLFFCxDITgqhe/73fa.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "08.11.2026 20:39"
+  },
+  {
+    "id": "211077582",
+    "title": "Mercedes-Benz CLA 250 4matic AMG paket 2020",
+    "price": "590 000 Kč",
+    "details": "2020  ·  84 777 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Frýdek-Místek  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211077582",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdk3whENu0EITiefu/6272.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "699 000 Kč",
+    "found_at": "08.11.2026 20:39",
+    "price_drop_at": "08.11.2026 20:39"
+  },
+  {
+    "id": "211356117",
+    "title": "BMW Řada 2 Grand Coupe M, servis BMW,",
+    "price": "549 000 Kč",
+    "details": "2022  ·  76 000 km  ·  Nafta  ·  Automatická  ·  Hodonín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211356117",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdk3RI9ZQSIMk8yH/e50d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "575 000 Kč",
+    "found_at": "08.11.2026 20:39",
+    "price_drop_at": "08.11.2026 20:39"
   }
 ]
