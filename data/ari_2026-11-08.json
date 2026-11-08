@@ -1,0 +1,153 @@
+[
+  {
+    "id": "211413879",
+    "title": "Škoda Fabia 1:4TDI - 66KW COMBI DSG",
+    "price": "179 000 Kč",
+    "details": "2016  ·  202 000 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/fabia/211413879",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDrngKBFQ4ITaclI/fc4b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "08.11.2026 14:19"
+  },
+  {
+    "id": "211413732",
+    "title": "Škoda Scala 1.6",
+    "price": "320 000 Kč",
+    "details": "2019  ·  100 933 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211413732",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TCEwoKBGa3ITZIZp/ca1d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "08.11.2026 14:19"
+  },
+  {
+    "id": "211384926",
+    "title": "Volkswagen Golf 1,6 / 81 kW  DSG ČR",
+    "price": "279 000 Kč",
+    "details": "2016  ·  89 100 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211384926",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkC4TclDVvfIQdTZW/e356.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "08.11.2026 14:19"
+  },
+  {
+    "id": "211141290",
+    "title": "Volkswagen Golf VW Golf Variant Rline 2.0 TDI",
+    "price": "299 000 Kč",
+    "details": "2020  ·  208 000 km  ·  Nafta  ·  Automatická  ·  Prachatice  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211141290",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyBuWMS43H1ToaV/3a5d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "08.11.2026 14:19"
+  },
+  {
+    "id": "210189785",
+    "title": "BMW Řada 1 118d Sport Line",
+    "price": "275 000 Kč",
+    "details": "2017  ·  148 000 km  ·  Nafta  ·  Automatická  ·  Praha-západ  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/210189785",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/nCTUX1iX5CDciVU2FGOzCp8/073f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient"
+    ],
+    "found_at": "08.11.2026 14:19"
+  },
+  {
+    "id": "211412595",
+    "title": "Mercedes-Benz Třídy A A180d",
+    "price": "285 000 Kč",
+    "details": "2016  ·  110 850 km  ·  Nafta  ·  Automatická  ·  Ostrava-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211412595",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDrngKxgGITAoHP/611b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "08.11.2026 14:19"
+  },
+  {
+    "id": "208852362",
+    "title": "Seat Leon 2.0 TDi Style DSG",
+    "price": "399 877 Kč",
+    "details": "2021  ·  96 300 km  ·  Nafta  ·  Automatická  ·  Ostrava-město  ·  AUTOHITY CZ s. r. o.",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/208852362",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_ob_B/kBj94XhVwCIfQLpUD05o4c/102f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "08.11.2026 14:19"
+  },
+  {
+    "id": "211245471",
+    "title": "Volkswagen Golf 2.0TDI Comf el.vys.taž.virtual",
+    "price": "339 000 Kč",
+    "details": "2022  ·  185 986 km  ·  Nafta  ·  Automatická  ·  Jihlava  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211245471",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFDzJCCWoKIBwiLE/bde3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "349 000 Kč",
+    "found_at": "08.11.2026 14:19",
+    "price_drop_at": "08.11.2026 14:19"
+  },
+  {
+    "id": "210320363",
+    "title": "Mercedes-Benz Třídy A Mercedes Benz A 180 D",
+    "price": "290 000 Kč",
+    "details": "2016  ·  95 820 km  ·  Nafta  ·  Automatická  ·  Praha-západ  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210320363",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRDbeZQBvKH3JzPY/d69a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "309 000 Kč",
+    "found_at": "08.11.2026 14:19",
+    "price_drop_at": "08.11.2026 14:19"
+  },
+  {
+    "id": "211408926",
+    "title": "Volkswagen Golf R Line 1 majitel",
+    "price": "315 000 Kč",
+    "details": "2020  ·  61 780 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211408926",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCfcGaEBqzISWJ8B/a513.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient"
+    ],
+    "old_price": "365 000 Kč",
+    "found_at": "08.11.2026 14:19",
+    "price_drop_at": "08.11.2026 14:19"
+  },
+  {
+    "id": "211055643",
+    "title": "Volkswagen Golf Life Plus 1.5 TSI 96 kW",
+    "price": "364 990 Kč",
+    "details": "2022  ·  148 825 km  ·  Benzín  ·  Automatická  ·  Nymburk  ·  Louda Auto+  ( 6 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211055643",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKRIhAnXGHsrpYd/9d11.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "374 990 Kč",
+    "found_at": "08.11.2026 14:19",
+    "price_drop_at": "08.11.2026 14:19"
+  },
+  {
+    "id": "210353147",
+    "title": "Volkswagen Golf 110kw DSG STYLE odp.DPH",
+    "price": "289 000 Kč",
+    "details": "2022  ·  208 000 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  Nestočeno.cz",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210353147",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_A/nCTUX1iX5CDciVBgk6GfoWyX/0d79.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "299 000 Kč",
+    "found_at": "08.11.2026 14:19",
+    "price_drop_at": "08.11.2026 14:19"
+  }
+]
