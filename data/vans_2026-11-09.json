@@ -1,0 +1,40 @@
+[
+  {
+    "id": "211418697",
+    "title": "Peugeot Boxer L4 H2",
+    "price": "119 900 Kč",
+    "details": "2015  ·  250 000 km  ·  Nafta  ·  Manuální  ·  Hlavní město Praha  ·  AB auto",
+    "link": "https://www.sauto.cz/uzitkova/detail/peugeot/boxer/211418697",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkBQkMFKCMkIUA6V7/84c0.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "09.11.2026 17:12"
+  },
+  {
+    "id": "210725729",
+    "title": "Ford Transit 2.2 TDCi,103kW,L2H2,tažné 2,8t",
+    "price": "149 000 Kč",
+    "details": "2012  ·  129 000 km  ·  Nafta  ·  Manuální  ·  Trutnov  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/ford/transit/210725729",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/kQMlcCt5zmBDkXam6MHIUVUy/707d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "09.11.2026 17:12"
+  },
+  {
+    "id": "211416351",
+    "title": "Opel Vivaro 1.6CDTi L2H1,2.maj",
+    "price": "150 000 Kč",
+    "details": "2015  ·  276 383 km  ·  Nafta  ·  Manuální  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/uzitkova/detail/opel/vivaro/211416351",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDi9WNFaKTIUEraF/fcb1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "09.11.2026 17:12"
+  },
+  {
+    "id": "211183983",
+    "title": "Volkswagen Transporter 2.5 TDI 4x4 Odpočet DPH",
+    "price": "65 000 Kč",
+    "details": "2008  ·  245 000 km  ·  Nafta  ·  4×4  ·  Manuální  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/volkswagen/transporter/211183983",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/kcKfrMAkFDvG5qf5H58btX/130d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "80 000 Kč",
+    "found_at": "09.11.2026 17:12",
+    "price_drop_at": "09.11.2026 17:12"
+  }
+]
