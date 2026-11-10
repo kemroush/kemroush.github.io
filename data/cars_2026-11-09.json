@@ -181,5 +181,101 @@
     "old_price": "568 000 Kč",
     "found_at": "09.11.2026 17:12",
     "price_drop_at": "09.11.2026 17:12"
+  },
+  {
+    "id": "211422540",
+    "title": "Mercedes-Benz CLA Mercedes cla 220d DPH",
+    "price": "505 000 Kč",
+    "details": "2021  ·  83 000 km  ·  Nafta  ·  Automatická  ·  Prachatice  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211422540",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TkUyxFEDgIULfKf/e1b4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.11.2026 03:04"
+  },
+  {
+    "id": "211422423",
+    "title": "Mini Countryman 1.5i 100 kW Automat | 2022",
+    "price": "519 000 Kč",
+    "details": "2022  ·  67 000 km  ·  Benzín  ·  Automatická  ·  Plzeň-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/211422423",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdk3whEPBKIIUKhxd/e8f0.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.11.2026 03:04"
+  },
+  {
+    "id": "mns:25431",
+    "title": "Mercedes-Benz Třída C Mercedes-Benz C 300 e T AMG",
+    "price": "739 000 Kč",
+    "details": "Třída C Mercedes-Benz C 300 e T AMG  ·  2021  ·  79 000 km  ·  Hybridní - benzín  ·  AutoWallis České Budějovice a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/25431",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/08728445_1.jpg",
+    "found_at": "10.11.2026 03:04"
+  },
+  {
+    "id": "211075242",
+    "title": "Mini Cooper S 2.0T AT H/K ACC NAVI",
+    "price": "508 000 Kč",
+    "details": "2021  ·  61 708 km  ·  Benzín  ·  Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/211075242",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/nOdL4BtPEyCly89DinHuVIsm/23f8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "528 000 Kč",
+    "found_at": "10.11.2026 03:04",
+    "price_drop_at": "10.11.2026 03:04"
+  },
+  {
+    "id": "211272951",
+    "title": "BMW Řada 2 218i AUT Luxury Line",
+    "price": "479 000 Kč",
+    "details": "2023  ·  79 292 km  ·  Benzín  ·  Automatická  ·  Praha-západ  ·  Future Drivalia",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211272951",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCR9NVflLBaEbFPJxIEr9un/d0ba.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "519 000 Kč",
+    "found_at": "10.11.2026 03:04",
+    "price_drop_at": "10.11.2026 03:04"
+  },
+  {
+    "id": "210783560",
+    "title": "Mini Countryman D 2,0D JCW H/K HUD K360 PANOR",
+    "price": "718 000 Kč",
+    "details": "2024  ·  84 201 km  ·  Nafta  ·  Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/210783560",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kQMlcCt5zmChFvGKTpHOQKMI/e1cb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "738 000 Kč",
+    "found_at": "10.11.2026 03:04",
+    "price_drop_at": "10.11.2026 03:04"
+  },
+  {
+    "id": "mns:25031",
+    "title": "Mercedes-Benz Třída A 200",
+    "price": "679 000 Kč",
+    "details": "Třída A 200  ·  2025  ·  21 900 km  ·  Benzín  ·  Hedin Automotive Czech Republic, a.s. Vídeňská",
+    "link": "https://www.mercedesnasklade.cz/detail/25031",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/07490028_1.jpg",
+    "old_price": "699 000 Kč",
+    "found_at": "10.11.2026 03:04",
+    "price_drop_at": "10.11.2026 03:04"
+  },
+  {
+    "id": "drivalia:624041",
+    "title": "BMW Řada 2",
+    "price": "479 000 Kč",
+    "details": "218i AUT Luxury Line  ·  MPV  ·  2023  ·  79 292 km  ·  Benzín  ·  Future Drivalia",
+    "link": "https://future.drivalia.cz/vozidla/624041-cs-bmw-rada-2/",
+    "image": "https://future.drivalia.cz/wp-content/uploads/2026/11/drivalia-0y5IuT9G-1024x576.jpg",
+    "old_price": "519 000 Kč",
+    "found_at": "10.11.2026 03:04",
+    "price_drop_at": "10.11.2026 03:04"
   }
 ]
