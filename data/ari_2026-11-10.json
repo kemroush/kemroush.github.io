@@ -360,5 +360,83 @@
     "old_price": "240 000 Kč",
     "found_at": "10.11.2026 15:49",
     "price_drop_at": "10.11.2026 15:49"
+  },
+  {
+    "id": "211430094",
+    "title": "Mazda 3 2,0 132kW Skyactiv - X BOSE",
+    "price": "399 000 Kč",
+    "details": "2019  ·  28 910 km  ·  Benzín  ·  Automatická  ·  Vsetín  ·  Auto-Garant",
+    "link": "https://www.sauto.cz/osobni/detail/mazda/3/211430094",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDhsIbN29HIUqRit/4040.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "found_at": "10.11.2026 22:17"
+  },
+  {
+    "id": "211430829",
+    "title": "Mercedes-Benz CLA",
+    "price": "245 000 Kč",
+    "details": "2014  ·  180 000 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Platinum Cars autobazar",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211430829",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TnJSEFPCYIUrm4Y/7aa4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "10.11.2026 22:17"
+  },
+  {
+    "id": "211430676",
+    "title": "Toyota Corolla 1,8 Hyb. Comfort AT",
+    "price": "345 000 Kč",
+    "details": "2020  ·  192 877 km  ·  Hybridní  ·  Automatická  ·  Praha-západ  ·  Auto RUPEXIM",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211430676",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDi9WNFrtvIUrRor/085c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "10.11.2026 22:17"
+  },
+  {
+    "id": "211429713",
+    "title": "Seat Leon 2.0TDI 110kW,DSG FR ST,1.Maj",
+    "price": "399 000 Kč",
+    "details": "2022  ·  81 038 km  ·  Nafta  ·  Automatická  ·  Olomouc  ·  ZdeKupAuto Olomouc",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211429713",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCfcGaFaGzIUoxIG/c0fa.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "10.11.2026 22:17"
+  },
+  {
+    "id": "211066794",
+    "title": "Volkswagen Golf 1,5 TSI EVO Life DSG 1.majitel",
+    "price": "385 000 Kč",
+    "details": "2023  ·  92 200 km  ·  Benzín  ·  Automatická  ·  České Budějovice  ·  AUTOCENTRUM DAN a SYN",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211066794",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKRD1EvuGm5HuyxXc/94cf.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "395 000 Kč",
+    "found_at": "10.11.2026 22:17",
+    "price_drop_at": "10.11.2026 22:17"
+  },
+  {
+    "id": "211408926",
+    "title": "Volkswagen Golf R Line 1 majitel",
+    "price": "265 000 Kč",
+    "details": "2020  ·  61 780 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211408926",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCfcGaEBqzISWJ8B/a513.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient"
+    ],
+    "old_price": "315 000 Kč",
+    "found_at": "10.11.2026 22:17",
+    "price_drop_at": "10.11.2026 22:17"
   }
 ]

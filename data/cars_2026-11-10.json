@@ -251,5 +251,46 @@
     "old_price": "699 900 Kč",
     "found_at": "10.11.2026 15:49",
     "price_drop_at": "10.11.2026 15:49"
+  },
+  {
+    "id": "211429293",
+    "title": "Mini Cooper Auto na cestě",
+    "price": "500 000 Kč",
+    "details": "2023  ·  73 489 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Boss Auto CZ",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211429293",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCJCefFtrDIUoEev/683f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "10.11.2026 22:17"
+  },
+  {
+    "id": "210835223",
+    "title": "Mercedes-Benz GLA 200d 110 kW 4Matic",
+    "price": "730 990 Kč",
+    "details": "2023  ·  55 467 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/210835223",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_C/nEwftpXyZDr63VXRtHUnuvZ/e4b6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "10.11.2026 22:17"
+  },
+  {
+    "id": "210728663",
+    "title": "Mercedes-Benz Třídy B B 180D, 66 400 km,Automat",
+    "price": "430 000 Kč",
+    "details": "2020  ·  66 400 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/210728663",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/kQMlcCt5zmC5zFHbo6HI0pbf/26d0.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "450 000 Kč",
+    "found_at": "10.11.2026 22:17",
+    "price_drop_at": "10.11.2026 22:17"
   }
 ]
