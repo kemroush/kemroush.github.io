@@ -46,7 +46,9 @@ CONFIG = {
     "max_price_czk": 750_000,
     "max_km":        100_000,
     "min_year":      2020,
-    "min_year_overrides": {"bmw": 2022},
+    # Mini od 2014 = generace F (motory BMW B38/B48). Starší R-generace s motory
+    # Prince (N12–N18) se vyřazují i podle modelu – viz cars_exclusion_reason.
+    "min_year_overrides": {"bmw": 2022, "mini": 2014},
     # Mini jen ve starém designu (F56/F55/F57, F60, F54). Generace od 2024
     # (Cooper F66/J01, Countryman U25, Aceman) se vyřazují – viz cars_exclusion_reason.
     "max_year_overrides": {"mini": 2023},
@@ -553,12 +555,20 @@ def ari_exclusion_reason(car: dict) -> str:
     details = car.get("details", "").lower()
     m = re.search(r"/osobni/detail/([^/]+)/([^/]+)/", car.get("link", ""))
     man, model = (m.group(1), m.group(2)) if m else ("", "")
-    diesel = "nafta" in details or bool(re.search(r"tdi|hdi|cdi", t))
+    diesel = "nafta" in details or bool(re.search(r"tdi|hdi|cdi|\b1\d\d\s?d\b", t))
     hybrid_ok = man in ("toyota", "mazda", "lexus")
 
     # Model mimo whitelist (např. BMW řada 2 po odebrání) – uklidí i uloženou historii
     if man and model and model not in ARI_CONFIG["models"].get(man, []):
         return "model mimo whitelist"
+
+    # BMW řada 1 F20 benzín do 2015 = 1.6 N13 (odvozený z Prince: rozvody, olej).
+    # Facelift 2015 už má B38/B48 – ten zůstává, když je to v názvu poznat.
+    if man == "bmw" and not diesel:
+        y = re.match(r"\s*(\d{4})\b", car.get("details", ""))
+        y = int(y.group(1)) if y else 0
+        if y and y <= 2015 and not re.search(r"(?<!\d)1[.,]5(?!\d)|(?<!\d)2[.,]0(?!\d)|\bb38\b|\bb48\b", t):
+            return "BMW 1.6 N13 (Prince)"
 
     # Ultra nízký výkon: Toyota Aygo (~51–53 kW), Peugeot 1.2 VTi 60 kW
     if model == "aygo":
@@ -598,18 +608,39 @@ def ari_exclusion_reason(car: dict) -> str:
 _MINI_NEW_GEN_RE = re.compile(r"\baceman\b|\b(?:cooper|countryman)\s+[ce]\b", re.I)
 
 
+# R-generace Mini (2006–2016) s motory Prince: kupé, roadster a Paceman jiné nemají.
+_MINI_R_ONLY_RE = re.compile(r"\bpaceman\b|\broadster\b|\bcoup[eé]\b|\br5[5-9]\b|\br6[01]\b", re.I)
+# Od kdy je daný model Mini v generaci F (bez motorů Prince); hatchback F56 od 2014.
+_MINI_F_GEN_FROM = (("countryman", 2017), ("clubman", 2015), ("cabrio", 2016))
+
+
+def _year_of(car: dict) -> int:
+    m = re.match(r"\s*(\d{4})\b", car.get("details", ""))
+    return int(m.group(1)) if m else 0
+
+
 def cars_exclusion_reason(car: dict) -> str:
     """Důvod vyřazení inzerátu z feedu Auta, nebo "" když zůstává.
-    Zatím jen Mini nové generace (od 2024), jejichž design nechci."""
+    Mini jen generace F (2014–2023): bez R-generace s motory Prince
+    a bez nové generace od 2024, jejíž design nechci."""
     title = car.get("title", "")
     link = car.get("link", "").lower()
     if not (title.lower().startswith("mini") or "/mini/" in link):
         return ""
     if _MINI_NEW_GEN_RE.search(title):
         return "Mini nové generace (název)"
-    year_m = re.match(r"\s*(\d{4})\b", car.get("details", ""))
-    if year_m and int(year_m.group(1)) > CONFIG["max_year_overrides"]["mini"]:
+    year = _year_of(car)
+    if year and year > CONFIG["max_year_overrides"]["mini"]:
         return "Mini nové generace (ročník)"
+    text = f"{title} {link}".lower()
+    if _MINI_R_ONLY_RE.search(text):
+        return "Mini R-generace (motory Prince)"
+    if year:
+        if year < CONFIG["min_year_overrides"]["mini"]:
+            return "Mini R-generace (motory Prince)"
+        for model, f_from in _MINI_F_GEN_FROM:
+            if model in text and year < f_from:
+                return "Mini R-generace (motory Prince)"
     return ""
 
 
