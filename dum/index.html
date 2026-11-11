@@ -329,7 +329,7 @@
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   // Filmic tone mapping: bright surfaces roll off softly instead of clipping to flat white.
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.15;
+  renderer.toneMappingExposure = 0.9;
 
   var scene = new THREE.Scene();
   var camera = new THREE.PerspectiveCamera(50, 1, 0.05, 600);
@@ -343,7 +343,7 @@
 
   // Image-based lighting: a neutral studio environment gives steel, car paint, glass and lacquered
   // surfaces something to reflect. Without it (script failed to load) the old, stronger sky light is used.
-  var ENV_INTENSITY = 0.55, hasEnv = false;
+  var ENV_INTENSITY = 0.35, hasEnv = false;
   if (THREE.RoomEnvironment && THREE.PMREMGenerator) {
     try {
       var pmrem = new THREE.PMREMGenerator(renderer);
