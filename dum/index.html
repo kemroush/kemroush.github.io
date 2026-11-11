@@ -184,6 +184,7 @@
 <script src="https://cdn.jsdelivr.net/npm/three@0.146.0/build/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.146.0/examples/js/controls/OrbitControls.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.146.0/examples/js/environments/RoomEnvironment.js"></script>
 <script>
 (function () {
   // Language: Czech (default) and Russian. ?lang=ru in the URL opens the Russian version directly.
@@ -326,6 +327,9 @@
   renderer.outputEncoding = THREE.sRGBEncoding;
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  // Filmic tone mapping: bright surfaces roll off softly instead of clipping to flat white.
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.15;
 
   var scene = new THREE.Scene();
   var camera = new THREE.PerspectiveCamera(50, 1, 0.05, 600);
@@ -337,7 +341,18 @@
   controls.maxPolarAngle = Math.PI * 0.495;
   controls.zoomSpeed = 0.9;
 
-  var hemi = new THREE.HemisphereLight(0xffffff, 0x8a8f86, 0.78);
+  // Image-based lighting: a neutral studio environment gives steel, car paint, glass and lacquered
+  // surfaces something to reflect. Without it (script failed to load) the old, stronger sky light is used.
+  var ENV_INTENSITY = 0.55, hasEnv = false;
+  if (THREE.RoomEnvironment && THREE.PMREMGenerator) {
+    try {
+      var pmrem = new THREE.PMREMGenerator(renderer);
+      scene.environment = pmrem.fromScene(new THREE.RoomEnvironment(), 0.04).texture;
+      pmrem.dispose();
+      hasEnv = true;
+    } catch (e) { scene.environment = null; }
+  }
+  var hemi = new THREE.HemisphereLight(0xffffff, 0x8a8f86, hasEnv ? 0.4 : 0.78);
   scene.add(hemi);
   var sun = new THREE.DirectionalLight(0xfff4e2, 0.85);
   sun.position.set(-30, 45, 28);
@@ -455,15 +470,17 @@
     el.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ') vert = d[1]; });
     el.addEventListener('keyup', function () { vert = 0; });
   });
-  var KEYMAP = { w: 'f', ArrowUp: 'f', s: 'b', ArrowDown: 'b', a: 'l', ArrowLeft: 'l', d: 'r', ArrowRight: 'r', e: 'u', q: 'd' };
+  // Physical key positions (ev.code), so walking works on any keyboard layout (Russian, Caps Lock on).
+  var KEYMAP = { KeyW: 'f', ArrowUp: 'f', KeyS: 'b', ArrowDown: 'b', KeyA: 'l', ArrowLeft: 'l', KeyD: 'r', ArrowRight: 'r', KeyE: 'u', KeyQ: 'd' };
   window.addEventListener('keydown', function (ev) {
     if (ev.target && ev.target.tagName === 'INPUT') return;
     if (!helpEl.hidden) return;
-    var k = KEYMAP[ev.key]; if (!k) return;
+    if (ev.ctrlKey || ev.metaKey || ev.altKey) return;   // leave browser shortcuts alone
+    var k = KEYMAP[ev.code]; if (!k) return;
     if (ev.target === canvas || ev.target === document.body) ev.preventDefault();
     keys[k] = true;
   });
-  window.addEventListener('keyup', function (ev) { var k = KEYMAP[ev.key]; if (k) keys[k] = false; });
+  window.addEventListener('keyup', function (ev) { var k = KEYMAP[ev.code]; if (k) keys[k] = false; });
   window.addEventListener('blur', function () { keys = {}; vert = 0; joyEnd(); });
   canvas.addEventListener('wheel', function (ev) {
     if (!walk) return;
@@ -670,6 +687,7 @@
             m.transparent = true;                                  // sheer curtains keep their own opacity
           }
           if (m.map) m.map.anisotropy = 4;
+          if ('envMapIntensity' in m) m.envMapIntensity = ENV_INTENSITY;
           m.side = THREE.DoubleSide;
         });
         o.castShadow = !glass; o.receiveShadow = true;
