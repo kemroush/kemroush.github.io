@@ -47,6 +47,9 @@ CONFIG = {
     "max_km":        100_000,
     "min_year":      2020,
     "min_year_overrides": {"bmw": 2022},
+    # Mini jen ve starém designu (F56/F55/F57, F60, F54). Generace od 2024
+    # (Cooper F66/J01, Countryman U25, Aceman) se vyřazují – viz cars_exclusion_reason.
+    "max_year_overrides": {"mini": 2023},
     "brands":        ["bmw", "mercedes-benz", "mini"],
     "blocked_sellers": ["davo car", "aaa auto", "auta super"],
     "max_pages":       5,     # stránky u Drivalia
@@ -592,13 +595,31 @@ def ari_exclusion_reason(car: dict) -> str:
     return ""
 
 
-def purge_ari_excluded() -> int:
-    """Jednorázový/průběžný úklid: z už uložených Ari souborů (ari_YYYY-MM-DD.json)
-    odstraní inzeráty, které by dnešní filtr (ari_exclusion_reason) vyřadil, a
-    smaže jejich ID ze seen/tracked. Prázdné denní soubory se smažou i z indexu.
+_MINI_NEW_GEN_RE = re.compile(r"\baceman\b|\b(?:cooper|countryman)\s+[ce]\b", re.I)
+
+
+def cars_exclusion_reason(car: dict) -> str:
+    """Důvod vyřazení inzerátu z feedu Auta, nebo "" když zůstává.
+    Zatím jen Mini nové generace (od 2024), jejichž design nechci."""
+    title = car.get("title", "")
+    link = car.get("link", "").lower()
+    if not (title.lower().startswith("mini") or "/mini/" in link):
+        return ""
+    if _MINI_NEW_GEN_RE.search(title):
+        return "Mini nové generace (název)"
+    year_m = re.match(r"\s*(\d{4})\b", car.get("details", ""))
+    if year_m and int(year_m.group(1)) > CONFIG["max_year_overrides"]["mini"]:
+        return "Mini nové generace (ročník)"
+    return ""
+
+
+def _purge_excluded(label: str, prefix: str, seen_file: str, tracked_file: str,
+                    index_file: str, reason_fn) -> int:
+    """Průběžný úklid: z už uložených denních souborů feedu (<prefix>YYYY-MM-DD.json)
+    odstraní inzeráty, které by dnešní filtr (reason_fn) vyřadil, a smaže jejich
+    ID ze seen/tracked. Prázdné denní soubory se smažou i z indexu.
     Bezpečné spouštět opakovaně – po prvním úklidu už nemá co mazat."""
-    ac = ARI_CONFIG
-    prefix_re = re.compile(re.escape(ac["file_prefix"]) + r"(\d{4}-\d{2}-\d{2})\.json")
+    prefix_re = re.compile(re.escape(prefix) + r"(\d{4}-\d{2}-\d{2})\.json")
     removed_ids: set[str] = set()
     counts: dict[str, int] = {}        # day_key → nový počet
     emptied: set[str] = set()
@@ -608,12 +629,12 @@ def purge_ari_excluded() -> int:
             continue
         path = os.path.join(DATA_DIR, name)
         cars = load_today_cars(path)
-        kept = [c for c in cars if not ari_exclusion_reason(c)]
+        kept = [c for c in cars if not reason_fn(c)]
         if len(kept) == len(cars):
             continue
-        removed_ids.update(c["id"] for c in cars if ari_exclusion_reason(c))
+        removed_ids.update(c["id"] for c in cars if reason_fn(c))
         if DRY_RUN:
-            print(f"  [ari/úklid] {name}: {len(cars)} → {len(kept)} (DRY RUN)")
+            print(f"  [{label}/úklid] {name}: {len(cars)} → {len(kept)} (DRY RUN)")
             continue
         if kept:
             save_today_cars(path, kept)
@@ -624,7 +645,6 @@ def purge_ari_excluded() -> int:
     if DRY_RUN or not removed_ids:
         return len(removed_ids)
 
-    index_file = ac["index_file"]
     if os.path.exists(index_file):
         with open(index_file, "r", encoding="utf-8") as f:
             index = json.load(f)
@@ -637,15 +657,26 @@ def purge_ari_excluded() -> int:
         with open(index_file, "w", encoding="utf-8") as f:
             json.dump(index, f, ensure_ascii=False, indent=2)
 
-    seen = load_seen(ac["seen_file"])
-    tracked = load_tracked(ac["tracked_file"])
+    seen = load_seen(seen_file)
+    tracked = load_tracked(tracked_file)
     seen -= removed_ids
     for car_id in removed_ids:
         tracked.pop(car_id, None)
-    save_seen(seen, ac["seen_file"])
-    save_tracked(tracked, ac["tracked_file"])
-    print(f"🧹 [ari] Z historie odstraněno {len(removed_ids)} vyřazených inzerátů")
+    save_seen(seen, seen_file)
+    save_tracked(tracked, tracked_file)
+    print(f"🧹 [{label}] Z historie odstraněno {len(removed_ids)} vyřazených inzerátů")
     return len(removed_ids)
+
+
+def purge_ari_excluded() -> int:
+    ac = ARI_CONFIG
+    return _purge_excluded("ari", ac["file_prefix"], ac["seen_file"], ac["tracked_file"],
+                           ac["index_file"], ari_exclusion_reason)
+
+
+def purge_cars_excluded() -> int:
+    return _purge_excluded("auta", "cars_", CONFIG["seen_file"], CONFIG["tracked_file"],
+                           CONFIG["index_file"], cars_exclusion_reason)
 
 
 # ─────────────────────────────────────────────
@@ -1200,7 +1231,8 @@ def process_feed(label: str, all_cars: list, prefix: str, seen_file: str,
 
 
 def _run_feed(label: str, scrapers: list, prefix: str, seen_file: str,
-              tracked_file: str, index_file: str, day_key: str, now_str: str):
+              tracked_file: str, index_file: str, day_key: str, now_str: str,
+              exclude=None):
     """Spustí scrapery feedu (každý zvlášť, ať chyba jednoho neshodí ostatní)
     a výsledek zpracuje. Prázdný výsledek = nejspíš selhalo stahování; pak se
     nic neukládá, ať se inzeráty zítra neobjeví znovu jako „nové“."""
@@ -1210,6 +1242,11 @@ def _run_feed(label: str, scrapers: list, prefix: str, seen_file: str,
             found += scraper()
         except Exception as e:
             print(f"  [{label}/{scraper.__name__}] Chyba: {e}")
+    if exclude and found:
+        before = len(found)
+        found = [c for c in found if not exclude(c)]
+        if len(found) != before:
+            print(f"  [{label}] Vyřazeno filtrem: {before - len(found)}")
     if not found:
         _notice(f"[{label}] nic nenalezeno – feed se tento běh neukládá")
         return
@@ -1226,11 +1263,17 @@ def main():
 
     print(f"[{now_str}] Den: {day_key} | Spouštím kontrolu…" + (" (DRY RUN)" if DRY_RUN else ""))
 
+    try:
+        purge_cars_excluded()
+    except Exception as e:
+        print(f"  [auta/úklid] Chyba: {e}")
+
     _run_feed("auta",
               [scrape_sauto, scrape_renocar, scrape_bmwojete,
                scrape_mercedesnasklade, scrape_drivalia],
               "cars_", CONFIG["seen_file"], CONFIG["tracked_file"],
-              CONFIG["index_file"], day_key, now_str)
+              CONFIG["index_file"], day_key, now_str,
+              exclude=cars_exclusion_reason)
 
     _run_feed("dodávky", [scrape_sauto_vans],
               VAN_CONFIG["file_prefix"], VAN_CONFIG["seen_file"],

@@ -40,6 +40,8 @@ CONFIG = {
 }
 ```
 
+**Mini jen starý design.** Ve feedu Auta se po stažení ze všech zdrojů vyřazují Mini nové generace (od 2024: Cooper F66/J01, Countryman U25, Aceman) – `cars_exclusion_reason()`: ročník nad `max_year_overrides["mini"]` (2023), nebo v názvu Aceman / „Cooper C|E“ / „Countryman C|E“. Při každém běhu `purge_cars_excluded()` stejný filtr uplatní i na uloženou historii (`cars_*.json`, seen, tracked, index) – sdílí kód s úklidem Ari (`_purge_excluded()`).
+
 `scrape_sauto()` volá interní JSON API sauto.cz (stejné jako dodávky a Ari) – `https://www.sauto.cz/api/v1/items/search` s `category_id=838` (osobní), `condition_seo=ojete`, `gearbox_seo=automaticka`, `price_from/price_to`, `tachometer_to` a `manufacturer_model_seo=bmw|mercedes-benz|mini`; stránkuje po 100 (limit `sauto_max_pages`). Rok jde jen klientsky (`manufacturing_date_from` API nepodporuje). Dřív se četl HTML výpis s limitem 5 stránek, který u Mercedesů uřízl zhruba polovinu nabídky. ID jsou čistě číselná (sauto ID, stejná jako dřív).
 
 Všechny tři sauto feedy sdílí `_scrape_sauto_feed()`; liší se jen konfigurací, kategorií a whitelistem modelů. Výsledky se deduplikují podle ID.
