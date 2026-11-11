@@ -128,5 +128,493 @@
     "old_price": "699 000 Kč",
     "found_at": "11.11.2026 15:16",
     "price_drop_at": "11.11.2026 15:16"
+  },
+  {
+    "id": "211438401",
+    "title": "Mercedes-Benz Třídy C 200d T*9G*LED*Kamera",
+    "price": "656 794 Kč",
+    "details": "2023  ·  82 787 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  AutoExpo Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/211438401",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TBjrrQEvoIVSfE8/0fe2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "211062846",
+    "title": "Mini Countryman COOPER 1.5 SE ALL4-1.maj-ČR",
+    "price": "419 977 Kč",
+    "details": "2019  ·  100 000 km  ·  Hybridní  ·  4×4  ·  Automatická  ·  Jindřichův Hradec  ·  ROSOCAR",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/211062846",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/nOdL4BtPEyD4lWfqGHtXFX1/8a6c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "211321689",
+    "title": "BMW Řada 1 BMW M135i xDrive M Sport Pro",
+    "price": "739 000 Kč",
+    "details": "2022  ·  72 556 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/211321689",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEeushhxuIJAb3l/4c50.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "211437105",
+    "title": "Mercedes-Benz Třidy T T 180",
+    "price": "699 000 Kč",
+    "details": "2023  ·  55 000 km  ·  Benzín  ·  Automatická  ·  Jihlava  ·  AUTO JIHLAVA člen skupiny AUTO UH s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-t/211437105",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDhsIbOXTgIVOc7e/fbe4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "211436943",
+    "title": "Mercedes-Benz Třídy A A 250 e",
+    "price": "748 999 Kč",
+    "details": "2026  ·  16 600 km  ·  Hybridní  ·  Automatická  ·  Brno-město  ·  Hedin Automotive Czech Republic, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211436943",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkC4TclF1uqIVN7B3/b924.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "211333929",
+    "title": "Mini Clubman 2.0D / 110kW / 89tkm / Automat",
+    "price": "310 000 Kč",
+    "details": "2016  ·  89 500 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  RPD Auto CZ, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mini/clubman/211333929",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkDyuEmxonIMd0uq/7d64.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "211430103",
+    "title": "Mini Cooper Auto na cestě",
+    "price": "400 000 Kč",
+    "details": "2019  ·  48 485 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Boss Auto CZ",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211430103",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDi9WNFsCSIUqYoR/6d27.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "211429182",
+    "title": "Mini Countryman MINI Countryman SD ALL4 JCW",
+    "price": "530 000 Kč",
+    "details": "2018  ·  58 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Frýdek-Místek  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/211429182",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCJCefFtrDIUn059/caf4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "211428465",
+    "title": "Mini Cooper",
+    "price": "549 000 Kč",
+    "details": "2023  ·  19 077 km  ·  Elektro  ·  Automatická  ·  Kladno  ·  EVOO Centrum elektromobility",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211428465",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdk3whEPf7xIUnyz5/3a35.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "211426893",
+    "title": "Mini Countryman COOPER 1.5 PHEV SE ALL4",
+    "price": "428 000 Kč",
+    "details": "2019  ·  97 780 km  ·  Hybridní  ·  4×4  ·  Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/211426893",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDrngKB0NDIUkBEo/cc5b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "211283538",
+    "title": "Mini Cooper JCW Cabrio, ACC, H/K, HUD",
+    "price": "549 000 Kč",
+    "details": "2018  ·  75 620 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  MACH Motors Praha",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211283538",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCR9NVflLBkanYyyHIFYPRB/f74b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "211321071",
+    "title": "Mini Cooper Mini Cooper John Works JCW",
+    "price": "469 900 Kč",
+    "details": "2016  ·  52 000 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211321071",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEeD7yCdEoGII8Hci/be42.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "210436835",
+    "title": "Mini Cooper 1.5i,cabrio,100kw,48900km,navi",
+    "price": "349 000 Kč",
+    "details": "2019  ·  48 900 km  ·  Benzín  ·  Automatická  ·  Olomouc  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/210436835",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_B/nCTUX1iX5CNPfpBwabGpM0a5/9cba.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "193839157",
+    "title": "Mini Cooper S 5door 2.0i 141kW ČR DPH",
+    "price": "590 000 Kč",
+    "details": "2018  ·  53 695 km  ·  Benzín  ·  Automatická  ·  Kutná Hora  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/193839157",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_QK_FE/0G4fXS.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "211264515",
+    "title": "Mini Countryman Cooper S",
+    "price": "478 000 Kč",
+    "details": "2018  ·  99 200 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  BMW CarTec Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/211264515",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCR9NVflLwO7jqf5IE0HfH/a78a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "211013334",
+    "title": "Mini Cooper S 2,0 T.141kW H/K Pano. 2xSady k",
+    "price": "409 900 Kč",
+    "details": "2018  ·  73 930 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  AutoPalace Spořilov",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/211013334",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_C/nPYADvcUkmDOhBECG8Hntt4z/e108.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "211151673",
+    "title": "Mini Cooper",
+    "price": "457 780 Kč",
+    "details": "2019  ·  36 730 km  ·  Benzín  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211151673",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRCO7AFVOH2DzBD/e0fe.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "210946146",
+    "title": "Mercedes-Benz Třídy B B 180 d",
+    "price": "699 000 Kč",
+    "details": "2025  ·  13 500 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  Hedin Automotive Czech Republic, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/210946146",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JDZwL3BD5HjMs1x/e69f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "210677930",
+    "title": "Mercedes-Benz CLA 180 d Shooting Brake",
+    "price": "749 000 Kč",
+    "details": "2025  ·  9 600 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  Hedin Automotive Czech Republic, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210677930",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_C/kPVqmweP7JD9RxnKNBHnIaQA/a32a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "210531926",
+    "title": "Mini Countryman 2.0 D 4x4,AT,navi",
+    "price": "370 000 Kč",
+    "details": "2017  ·  95 117 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/210531926",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/kQMlcCt5zmD87zEDT9GyrH7J/b2b1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "210303206",
+    "title": "Mini Countryman COOPER SE ALL4",
+    "price": "479 000 Kč",
+    "details": "2019  ·  81 661 km  ·  Hybridní  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  AZ AUTO Soldát",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/210303206",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/nCTUX1iX5BWZuTBDViGa55AT/2e62.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "bmwojete:285688",
+    "title": "MINI Cooper S Countryman",
+    "price": "478 000 Kč",
+    "details": "2018  ·  99 200 km  ·  Benzín  ·  CarTec Praha s.r.o.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/285688/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/285688?2026-10-14T13:32:22+00:00",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "bmwojete:275627",
+    "title": "MINI Cooper S ALL4 Countryman",
+    "price": "569 000 Kč",
+    "details": "2019  ·  67 803 km  ·  Benzín  ·  4×4  ·  Renocar a.s., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/275627/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/275627?2026-08-26T09:29:09+00:00",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "bmwojete:232891",
+    "title": "BMW 118d",
+    "price": "698 000 Kč",
+    "details": "2025  ·  8 000 km  ·  Diesel  ·  AutoWallis",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/232891/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/232891?2026-02-04T17:57:51+00:00",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "bmwojete:270201",
+    "title": "BMW 118d",
+    "price": "698 000 Kč",
+    "details": "2025  ·  12 000 km  ·  Diesel  ·  AutoWallis",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/270201/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/270201?2026-07-14T11:58:11+00:00",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "bmwojete:231248",
+    "title": "BMW 118d",
+    "price": "698 000 Kč",
+    "details": "2025  ·  13 495 km  ·  Diesel  ·  AutoWallis",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/231248/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/231248?2026-01-22T07:48:46+00:00",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "bmwojete:232898",
+    "title": "BMW 118d",
+    "price": "698 000 Kč",
+    "details": "2025  ·  12 000 km  ·  Diesel  ·  AutoWallis",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/232898/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/232898?2026-01-12T08:44:24+00:00",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "bmwojete:232893",
+    "title": "BMW 118d",
+    "price": "698 000 Kč",
+    "details": "2025  ·  17 280 km  ·  Diesel  ·  AutoWallis",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/232893/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/232893?2026-01-12T07:48:51+00:00",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "bmwojete:282134",
+    "title": "BMW 118d",
+    "price": "729 000 Kč",
+    "details": "2026  ·  13 500 km  ·  Diesel  ·  AutoWallis",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/282134/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/282134?2026-09-23T07:12:54+00:00",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "bmwojete:230490",
+    "title": "BMW 118d",
+    "price": "729 000 Kč",
+    "details": "2025  ·  21 443 km  ·  Diesel  ·  AutoWallis",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/230490/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/230490?2025-12-15T15:27:26+00:00",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "bmwojete:232884",
+    "title": "BMW 118d",
+    "price": "729 000 Kč",
+    "details": "2025  ·  21 500 km  ·  Diesel  ·  AutoWallis",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/232884/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/232884?2026-01-12T08:53:48+00:00",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "bmwojete:232888",
+    "title": "BMW 118d",
+    "price": "729 000 Kč",
+    "details": "2025  ·  8 000 km  ·  Diesel  ·  AutoWallis",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/232888/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/232888?2026-01-12T08:50:21+00:00",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "bmwojete:240278",
+    "title": "BMW 118d",
+    "price": "748 000 Kč",
+    "details": "2025  ·  9 500 km  ·  Diesel  ·  AutoWallis",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/240278/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/240278?2026-02-05T21:26:00+00:00",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "mns:25773",
+    "title": "Mercedes-Benz Třída A 250 e",
+    "price": "748 998 Kč",
+    "details": "Třída A 250 e  ·  2026  ·  16 600 km  ·  Hybridní - benzín  ·  Hedin Automotive Czech Republic, a.s. Vídeňská",
+    "link": "https://www.mercedesnasklade.cz/detail/25773",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/07490092_1.jpg",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "mns:25038",
+    "title": "Mercedes-Benz Třída B 180 d",
+    "price": "699 000 Kč",
+    "details": "Třída B 180 d  ·  2025  ·  13 500 km  ·  Nafta  ·  Hedin Automotive Czech Republic, a.s. Vídeňská",
+    "link": "https://www.mercedesnasklade.cz/detail/25038",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/07490060_1.jpg",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "mns:25004",
+    "title": "Mercedes-Benz CLA 180 d Shooting Brake",
+    "price": "749 000 Kč",
+    "details": "CLA 180 d Shooting Brake  ·  2025  ·  9 600 km  ·  Nafta  ·  Hedin Automotive Czech Republic, a.s. Vídeňská",
+    "link": "https://www.mercedesnasklade.cz/detail/25004",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/07490057_1.jpg",
+    "found_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "210638690",
+    "title": "Mercedes-Benz Třídy B B 180",
+    "price": "699 000 Kč",
+    "details": "2025  ·  11 500 km  ·  Benzín  ·  Automatická  ·  Brno-město  ·  Hedin Automotive Czech Republic, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/210638690",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JDZwL3BAnHjMk3w/ff95.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "749 000 Kč",
+    "found_at": "11.11.2026 22:55",
+    "price_drop_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "210623429",
+    "title": "Mercedes-Benz Třídy B B 180 d",
+    "price": "699 000 Kč",
+    "details": "2025  ·  12 100 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  Hedin Automotive Czech Republic, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/210623429",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/nPYADvcUkmBzBfmEvdHjMjUV/e9ab.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "739 000 Kč",
+    "found_at": "11.11.2026 22:55",
+    "price_drop_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "210508676",
+    "title": "Mercedes-Benz Třídy B B 200",
+    "price": "649 000 Kč",
+    "details": "2025  ·  20 700 km  ·  Benzín  ·  Automatická  ·  Brno-město  ·  Hedin Automotive Czech Republic, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/210508676",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/nPYADvcUkmBFAg3BrQHpdbkh/8b7e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "old_price": "679 000 Kč",
+    "found_at": "11.11.2026 22:55",
+    "price_drop_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "bmwojete:262255",
+    "title": "BMW 218i Active Tourer",
+    "price": "499 800 Kč",
+    "details": "2023  ·  32 320 km  ·  Benzín  ·  Renocar a.s., Brno",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/262255/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/262255?2026-06-02T07:22:29+00:00",
+    "old_price": "549 900 Kč",
+    "found_at": "11.11.2026 22:55",
+    "price_drop_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "mns:25034",
+    "title": "Mercedes-Benz Třída B 200",
+    "price": "649 000 Kč",
+    "details": "Třída B 200  ·  2025  ·  20 700 km  ·  Benzín  ·  Hedin Automotive Czech Republic, a.s. Vídeňská",
+    "link": "https://www.mercedesnasklade.cz/detail/25034",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/07490012_1.jpg",
+    "old_price": "679 000 Kč",
+    "found_at": "11.11.2026 22:55",
+    "price_drop_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "mns:25036",
+    "title": "Mercedes-Benz Třída B 180 d",
+    "price": "699 000 Kč",
+    "details": "Třída B 180 d  ·  2025  ·  12 100 km  ·  Nafta  ·  Hedin Automotive Czech Republic, a.s. Vídeňská",
+    "link": "https://www.mercedesnasklade.cz/detail/25036",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/07490006_1.jpg",
+    "old_price": "739 000 Kč",
+    "found_at": "11.11.2026 22:55",
+    "price_drop_at": "11.11.2026 22:55"
+  },
+  {
+    "id": "mns:25037",
+    "title": "Mercedes-Benz Třída B 180",
+    "price": "699 000 Kč",
+    "details": "Třída B 180  ·  2025  ·  11 500 km  ·  Benzín  ·  Hedin Automotive Czech Republic, a.s. Vídeňská",
+    "link": "https://www.mercedesnasklade.cz/detail/25037",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/07490015_1.jpg",
+    "old_price": "749 000 Kč",
+    "found_at": "11.11.2026 22:55",
+    "price_drop_at": "11.11.2026 22:55"
   }
 ]

@@ -18,30 +18,12 @@
     "found_at": "21.09.2026 14:19"
   },
   {
-    "id": "210981819",
-    "title": "Mini Cooper Cooper SE",
-    "price": "749 000 Kč",
-    "details": "2024, 20 500 km , Elektro , Automatická  ·  Praha-východ  ·  RENOCAR, a.s.",
-    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/210981819",
-    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JDZwL3BxMHkk2Tm/ee17.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
-    "found_at": "21.09.2026 14:19"
-  },
-  {
     "id": "bmwojete:281729",
     "title": "MINI One Hatch",
     "price": "349 999 Kč",
     "details": "2021  ·  14 878 km  ·  Benzín  ·  Invelt s.r.o., Praha",
     "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/281729/",
     "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/281729?2026-09-21T09:41:23+00:00",
-    "found_at": "21.09.2026 14:19"
-  },
-  {
-    "id": "bmwojete:277276",
-    "title": "MINI Cooper SE",
-    "price": "749 000 Kč",
-    "details": "2024  ·  20 500 km  ·  Elektřina  ·  Renocar a.s., Praha",
-    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/277276/",
-    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/277276?2026-08-26T09:14:04+00:00",
     "found_at": "21.09.2026 14:19"
   },
   {
@@ -123,15 +105,6 @@
     "details": "2022, 79 138 km , Nafta , Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
     "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211143717",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyDrQHrVqH1bRsX/cd69.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
-    "found_at": "21.09.2026 21:53"
-  },
-  {
-    "id": "211144695",
-    "title": "Mini Cooper S Cooper S, Záruka, Automat",
-    "price": "620 000 Kč",
-    "details": "2024, 62 130 km , Benzín , Automatická  ·  Hlavní město Praha  ·  Mototechna",
-    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/211144695",
-    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyBiPBFVpH1cgek/d88e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "21.09.2026 21:53"
   }
 ]
