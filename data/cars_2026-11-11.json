@@ -1,0 +1,132 @@
+[
+  {
+    "id": "211436574",
+    "title": "Mercedes-Benz Třidy T 180 CDI/S PROGRESIVE",
+    "price": "519 000 Kč",
+    "details": "2022  ·  90 600 km  ·  Nafta  ·  Automatická  ·  Plzeň-město  ·  Mercedes-Benz | VSP Auto, s.r.o. - autorizovaný opravce a prodejce",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-t/211436574",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkBcInfFs9lIVM8qw/d0d3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "11.11.2026 15:16"
+  },
+  {
+    "id": "211436271",
+    "title": "Mercedes-Benz GLA",
+    "price": "599 000 Kč",
+    "details": "2021  ·  99 910 km  ·  Nafta  ·  Automatická  ·  Brno-venkov  ·  Campingworld Neugebauer",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/211436271",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDi9WNF4WxIVMQAm/30a2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "11.11.2026 15:16"
+  },
+  {
+    "id": "211432674",
+    "title": "Mercedes-Benz CLA 180 SB Progressive*Kamera*",
+    "price": "738 100 Kč",
+    "details": "2025  ·  8 037 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto Targa, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211432674",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCfcGaFlQaIVD67w/4f3b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "11.11.2026 15:16"
+  },
+  {
+    "id": "211432494",
+    "title": "Mercedes-Benz Třídy A 180 PROGRESSIVE-ADVANCED",
+    "price": "673 970 Kč",
+    "details": "2025  ·  15 355 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto Targa, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211432494",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCfcGaFjRSIVDJvM/c0ec.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "11.11.2026 15:16"
+  },
+  {
+    "id": "211432155",
+    "title": "Mercedes-Benz Třídy C 220 d T 9G- Avantgarde*Kamera*",
+    "price": "676 390 Kč",
+    "details": "2023  ·  46 618 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto Targa, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/211432155",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDhsIbOKSlIVAqDQ/7be7.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "11.11.2026 15:16"
+  },
+  {
+    "id": "bmwojete:207296",
+    "title": "BMW 118d",
+    "price": "698 000 Kč",
+    "details": "2025  ·  18 500 km  ·  Diesel  ·  AutoWallis",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/207296/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/207296?2025-08-01T09:41:26+00:00",
+    "found_at": "11.11.2026 15:16"
+  },
+  {
+    "id": "bmwojete:255337",
+    "title": "BMW 118d",
+    "price": "748 000 Kč",
+    "details": "2025  ·  22 500 km  ·  Diesel  ·  AutoWallis",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/255337/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/255337?2026-06-04T09:06:12+00:00",
+    "found_at": "11.11.2026 15:16"
+  },
+  {
+    "id": "mns:25766",
+    "title": "Mercedes-Benz Třída T 180 CDI/S",
+    "price": "519 000 Kč",
+    "details": "Třída T 180 CDI/S  ·  2022  ·  90 600 km  ·  Nafta  ·  VSP Auto, s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/25766",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/c757f2eb-fc43-4841-9834-3f9763639374.png",
+    "found_at": "11.11.2026 15:16"
+  },
+  {
+    "id": "209338362",
+    "title": "Mercedes-Benz CLA 200 SB AMG NIGHT, PANORAMA",
+    "price": "650 000 Kč",
+    "details": "2022  ·  54 750 km  ·  Benzín  ·  Automatická  ·  Karviná  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/209338362",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_B/kOzmiQlmfoDdPdoCTsEqNNsX/359d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "675 000 Kč",
+    "found_at": "11.11.2026 15:16",
+    "price_drop_at": "11.11.2026 15:16"
+  },
+  {
+    "id": "209826339",
+    "title": "Mercedes-Benz Třídy C 200d Touring MATRIX ACC",
+    "price": "659 000 Kč",
+    "details": "2024  ·  49 300 km  ·  Nafta  ·  Automatická  ·  Plzeň-město  ·  SURF AUTO",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/209826339",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_B/kBfrbpoeNDpoIQDExFpTvj9/61b6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "675 000 Kč",
+    "found_at": "11.11.2026 15:16",
+    "price_drop_at": "11.11.2026 15:16"
+  },
+  {
+    "id": "bmwojete:214003",
+    "title": "BMW 118d",
+    "price": "649 000 Kč",
+    "details": "2025  ·  14 000 km  ·  Diesel  ·  AutoWallis",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/214003/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/214003?2026-02-13T12:26:26+00:00",
+    "old_price": "699 000 Kč",
+    "found_at": "11.11.2026 15:16",
+    "price_drop_at": "11.11.2026 15:16"
+  }
+]
