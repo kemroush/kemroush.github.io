@@ -761,5 +761,90 @@
     "old_price": "700 000 Kč",
     "found_at": "12.11.2026 16:09",
     "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "211444776",
+    "title": "Mini Countryman 1.5 100kW Untamed HEAD-UP ČR",
+    "price": "449 900 Kč",
+    "details": "2022  ·  64 200 km  ·  Benzín  ·  Automatická  ·  Olomouc  ·  NejlepšíCenyAut.cz Tomáš Kadula",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/211444776",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkBcInfGB8CIV08sH/2981.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "12.11.2026 22:50"
+  },
+  {
+    "id": "211444434",
+    "title": "BMW X1 xDrive 18d Automat LED TAŽNÉ",
+    "price": "529 990 Kč",
+    "details": "2022  ·  69 700 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Pardubice  ·  Auto Vašíček",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x1/211444434",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkC4TclGJbJIV06FI/1195.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "12.11.2026 22:50"
+  },
+  {
+    "id": "211337337",
+    "title": "Mercedes-Benz GLC 200d 4MATIC Č.R. 35000km !!!",
+    "price": "719 000 Kč",
+    "details": "2020  ·  35 050 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Praha-východ  ·  Jan Fořt",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glc/211337337",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEeCsx6aBUkiIKh5OV/7fca.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient"
+    ],
+    "old_price": "749 000 Kč",
+    "found_at": "12.11.2026 22:50",
+    "price_drop_at": "12.11.2026 22:50"
+  },
+  {
+    "id": "211028736",
+    "title": "Mercedes-Benz CLA 200d shooting brake",
+    "price": "699 000 Kč",
+    "details": "2024  ·  42 655 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Daimler Truck Česká republika",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211028736",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/kPVqmweP7JBdV1WW5HprA4G/82d1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "724 790 Kč",
+    "found_at": "12.11.2026 22:50",
+    "price_drop_at": "12.11.2026 22:50"
+  },
+  {
+    "id": "210802106",
+    "title": "Mercedes-Benz Třídy A 180 CDi plná výb. odpočet DPH!",
+    "price": "460 000 Kč",
+    "details": "2021  ·  60 225 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto Slavia",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210802106",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/nO2CysqjGrB9kIMCFD7HQ5Uhs/e21a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "499 000 Kč",
+    "found_at": "12.11.2026 22:50",
+    "price_drop_at": "12.11.2026 22:50"
+  },
+  {
+    "id": "210528341",
+    "title": "Mercedes-Benz GLB 200d 4MATIC",
+    "price": "712 690 Kč",
+    "details": "2024  ·  39 602 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Daimler Truck Česká republika",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210528341",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/nO2CysqjGrDPliFEDXGx0xW2/bd78.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "724 790 Kč",
+    "found_at": "12.11.2026 22:50",
+    "price_drop_at": "12.11.2026 22:50"
   }
 ]

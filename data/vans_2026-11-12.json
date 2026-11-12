@@ -25,5 +25,37 @@
     "link": "https://www.sauto.cz/uzitkova/detail/citroen/jumper/211443024",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TCEwoKCOcNIVw5pB/d5bd.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "211268994",
+    "title": "Peugeot Boxer Peugeot Boxer s chlazením",
+    "price": "150 000 Kč",
+    "details": "2015  ·  263 000 km  ·  Nafta  ·  Manuální  ·  Vyškov  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/peugeot/boxer/211268994",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nCR9NVflLwO7jl0mIERwGi/920d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.11.2026 22:50"
+  },
+  {
+    "id": "211444059",
+    "title": "Ford Transit 2.4TDCi 350L",
+    "price": "80 000 Kč",
+    "details": "2008  ·  291 293 km  ·  Nafta  ·  Manuální  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/uzitkova/detail/ford/transit/211444059",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TB49GnS6sIVy54w/affe.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "12.11.2026 22:50"
+  },
+  {
+    "id": "211412499",
+    "title": "Peugeot Expert Peugeot Expert 2.0hdi bez DPF",
+    "price": "130 000 Kč",
+    "details": "2008  ·  228 000 km  ·  Nafta  ·  Manuální  ·  Benešov  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/peugeot/expert/211412499",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TBSHZcFLE3IUNCHm/4736.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "135 000 Kč",
+    "found_at": "12.11.2026 22:50",
+    "price_drop_at": "12.11.2026 22:50"
   }
 ]
