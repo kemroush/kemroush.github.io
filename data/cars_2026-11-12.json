@@ -1,0 +1,765 @@
+[
+  {
+    "id": "211443570",
+    "title": "Mini Cooper Cooper SE SoH 100 %",
+    "price": "399 000 Kč",
+    "details": "2022  ·  39 816 km  ·  Elektro  ·  Automatická  ·  Praha-východ  ·  RENOCAR, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211443570",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkB87eWGBjeIVx2UW/152d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "211441842",
+    "title": "Mini Clubman 0NE D 1,5D 85KW AT NAVI",
+    "price": "399 900 Kč",
+    "details": "2020  ·  82 784 km  ·  Nafta  ·  Automatická  ·  Semily  ·  JamaAuto Jakub Zachariáš",
+    "link": "https://www.sauto.cz/osobni/detail/mini/clubman/211441842",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkC4TclGGNFIVtuwx/9376.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "211441296",
+    "title": "Mercedes-Benz Třídy B B250e Progressive Line Advance",
+    "price": "699 380 Kč",
+    "details": "2025  ·  16 000 km  ·  Hybridní  ·  Automatická  ·  Hlavní město Praha  ·  CAR MOTORS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/211441296",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCJCefGJXkIVsXJn/8da0.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210912321",
+    "title": "Mercedes-Benz GLA Mercedes GLA 35 - VELKÁ SLEVA",
+    "price": "724 790 Kč",
+    "details": "2021  ·  53 800 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Olomouc  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/210912321",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/kPVqmweP7JCCYLAFqGHdQ3my/889e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "211173108",
+    "title": "BMW Řada 1 118d, Hatchback",
+    "price": "729 000 Kč",
+    "details": "2026  ·  12 562 km  ·  Nafta  ·  Automatická  ·  Pardubice  ·  BMW AutoWallis Hradec Králové a Pardubice",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/211173108",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/k0OqwCKRIhAnIKfH35QDU/da0b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210933879",
+    "title": "Mercedes-Benz Třídy A A 200 d AMG Style Edition",
+    "price": "750 000 Kč",
+    "details": "2025  ·  25 143 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210933879",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JBIZIOCxUHfHfEL/64a9.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210798503",
+    "title": "Mercedes-Benz Třídy A A-Třída 180",
+    "price": "700 000 Kč",
+    "details": "2026  ·  3 001 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210798503",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kQMlcCt5zmCCIyqCMK0HQfLTW/926e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210713342",
+    "title": "Mercedes-Benz CLA 200d Shooting Brake",
+    "price": "590 000 Kč",
+    "details": "2023  ·  69 350 km  ·  Nafta  ·  Automatická  ·  Rakovník  ·  We Do Premium Cars",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210713342",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_A/nO2CysqjGrCDmo6BokHGKs1z/199a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210583301",
+    "title": "Mercedes-Benz CLA CLA-Třída 250e Shooting Brake",
+    "price": "740 000 Kč",
+    "details": "2024  ·  33 589 km  ·  Hybridní  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210583301",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/kQMlcCt5zmEA35RFgHG3FhxB/2cc0.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210098165",
+    "title": "BMW Řada 1 118d, Hatchback",
+    "price": "698 000 Kč",
+    "details": "2025  ·  12 000 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  BMW AutoWallis Praha",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/210098165",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/kcHp2YdDtEDuRmBLzZGYW91L/37e7.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210092891",
+    "title": "BMW Řada 1 118d, Hatchback",
+    "price": "748 000 Kč",
+    "details": "2025  ·  22 500 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  BMW AutoWallis Praha",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/210092891",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/nO2CysqjGrC2szhItxGz0zCu/6683.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "209856816",
+    "title": "BMW Řada 1 118d, Hatchback",
+    "price": "748 000 Kč",
+    "details": "2025  ·  9 500 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  BMW AutoWallis Praha",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/209856816",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/kcHp2YdDtCJexHwzNGWmPFV/dde5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "209775408",
+    "title": "BMW Řada 1 118d, Hatchback",
+    "price": "729 000 Kč",
+    "details": "2025  ·  20 963 km  ·  Nafta  ·  Automatická  ·  Hradec Králové  ·  BMW AutoWallis Hradec Králové a Pardubice",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/209775408",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/kcHp2YdDtEDuRmBD73GW4PXq/590f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "209771907",
+    "title": "BMW Řada 1 118d, Hatchback",
+    "price": "729 000 Kč",
+    "details": "2025  ·  7 577 km  ·  Nafta  ·  Automatická  ·  Pardubice  ·  BMW AutoWallis Hradec Králové a Pardubice",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/209771907",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/kcHp2YdDtEBMvIuuyGW4Pkw/5b6f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "209745315",
+    "title": "BMW Řada 1 118d, Hatchback",
+    "price": "698 000 Kč",
+    "details": "2025  ·  12 120 km  ·  Nafta  ·  Automatická  ·  Pardubice  ·  BMW AutoWallis Hradec Králové a Pardubice",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/209745315",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/nCTUX1iX5bIUBFAIGGiNet/49cd.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "209639943",
+    "title": "BMW Řada 1 118d, Hatchback",
+    "price": "698 000 Kč",
+    "details": "2025  ·  12 000 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  BMW AutoWallis Praha",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/209639943",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kQMlcCt5zmBDp4mJR4HNzM81/89a8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "209639724",
+    "title": "BMW Řada 1 118d, Hatchback",
+    "price": "698 000 Kč",
+    "details": "2025  ·  17 280 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  BMW AutoWallis Praha",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/209639724",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/kcHp2YdDtDrxR21apGYXAaS/1fbe.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "209639718",
+    "title": "BMW Řada 1 118d, Hatchback",
+    "price": "698 000 Kč",
+    "details": "2025  ·  8 000 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  BMW AutoWallis Praha",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/209639718",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/nCTUX1iX5CGpNZE5IGGiWnX/3340.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "208899516",
+    "title": "BMW Řada 1 118d, Hatchback",
+    "price": "698 000 Kč",
+    "details": "2025  ·  18 500 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  BMW AutoWallis Praha",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/208899516",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtDgLT0E0hGGeiwg/c614.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:25657",
+    "title": "Mercedes-Benz Třída A 200 d AMG Style Edition",
+    "price": "750 000 Kč",
+    "details": "Třída A 200 d AMG Style Edition  ·  2025  ·  25 143 km  ·  Nafta  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/25657",
+    "image": "https://www.mercedesnasklade.cz/media/cache/resolve/thumbnail_grid/images/3d948dcc-1c7d-4770-94de-97dc97cc83b1.jpeg",
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:24572",
+    "title": "Mercedes-Benz Třída A 180",
+    "price": "700 000 Kč",
+    "details": "Třída A 180  ·  2026  ·  3 001 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24572",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/bffc40ed-e2ca-4670-9ee1-7b78ce5f4218.jpeg",
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:25777",
+    "title": "Mercedes-Benz Třída A 200 Progressive",
+    "price": "669 001 Kč",
+    "details": "Třída A 200 Progressive  ·  2025  ·  18 000 km  ·  Benzín  ·  AutoWallis České Budějovice a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/25777",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/08728457_1.jpg",
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:24187",
+    "title": "Mercedes-Benz CLA 250e Shooting Brake EQ",
+    "price": "740 000 Kč",
+    "details": "CLA 250e Shooting Brake EQ  ·  2024  ·  33 589 km  ·  Hybridní - benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24187",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/604178a2-3780-475d-aab5-ab18ad3930c5.jpeg",
+    "found_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "211226163",
+    "title": "Mercedes-Benz CLA Shooting Brake CLA 200 Shootin",
+    "price": "675 000 Kč",
+    "details": "2022  ·  39 000 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211226163",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFnIwlTLlIAItHA/490d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "690 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "211173273",
+    "title": "Mercedes-Benz EQA",
+    "price": "717 991 Kč",
+    "details": "2023  ·  33 516 km  ·  Elektro  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/eqa/211173273",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/nOdL4BtPEyC2Er46VH4Ae2O/2ce7.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "741 458 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210972600",
+    "title": "Mercedes-Benz Třídy A A-Třída 180",
+    "price": "650 000 Kč",
+    "details": "2025  ·  19 899 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210972600",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JBdV1WBFQHjLul1/cb25.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "660 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210962028",
+    "title": "BMW rad 3 Touring",
+    "price": "597 066 Kč",
+    "details": "2022  ·  80 422 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/ostatni/210962028",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JB3Lg9FFkHiJNvG/6b63.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "609 756 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210921606",
+    "title": "Mercedes-Benz Třídy A A-Třída 180 Progressive Editio",
+    "price": "700 000 Kč",
+    "details": "2026  ·  3 001 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210921606",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/nPYADvcUkmCbUhRHyYHd8drE/8c07.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "710 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210869915",
+    "title": "Mercedes-Benz Třídy A A-Třída 180 Progressive Editio",
+    "price": "700 000 Kč",
+    "details": "2026  ·  3 001 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210869915",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/kO7lxrd9zlOWhOWVXHYnoNp/296b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "710 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210833078",
+    "title": "Mercedes-Benz Třídy A A-Třída 180 Progressive Editio",
+    "price": "690 000 Kč",
+    "details": "2026  ·  6 126 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210833078",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_C/kOyy3Gv43yDwtd2lzRHUjcza/ee6b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "700 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210833075",
+    "title": "Mercedes-Benz Třídy A A-Třída 180 Progressive Editio",
+    "price": "690 000 Kč",
+    "details": "2026  ·  8 140 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210833075",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_C/nEwftpXyZCHYHoXp1HUjczs/076c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "700 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210822539",
+    "title": "Mercedes-Benz GLA 200 d 4MATIC",
+    "price": "650 000 Kč",
+    "details": "2021  ·  49 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/210822539",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/nEwftpXyZDPeBmqGHSvr05/ca1b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "670 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210798968",
+    "title": "Mercedes-Benz Třídy A A-Třída 180 Progressive Editio",
+    "price": "700 000 Kč",
+    "details": "2026  ·  3 001 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210798968",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kQMlcCt5zmChFvGfFwHQguyk/8fa3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "710 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210798497",
+    "title": "Mercedes-Benz Třídy A A-Třída 180 Progressive Editio",
+    "price": "690 000 Kč",
+    "details": "2026  ·  5 568 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210798497",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/nO2CysqjGrScbvBYFqHQfLSq/e974.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "700 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210625232",
+    "title": "Mercedes-Benz GLA 250 4MATIC Urban Keyless LED",
+    "price": "730 000 Kč",
+    "details": "2022  ·  39 124 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/210625232",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/nO2CysqjGrDPliFMwdG7MyQg/5159.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "750 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210591170",
+    "title": "Mercedes-Benz Třídy A trida A 200 Progressive Line",
+    "price": "660 000 Kč",
+    "details": "2025  ·  10 563 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210591170",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/kQMlcCt5zmUKhkGAGG3rSt8/bc8e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "680 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210591167",
+    "title": "Mercedes-Benz Třídy A A-Třída 200 Progressive Line",
+    "price": "670 000 Kč",
+    "details": "2025  ·  15 862 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210591167",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/nO2CysqjGrBgjUXJT1G3rSuH/8ca7.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "680 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210590117",
+    "title": "Mercedes-Benz Třídy B B-Třída 200 Progressive Line",
+    "price": "640 000 Kč",
+    "details": "2025  ·  20 037 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/210590117",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/kQMlcCt5zmEA35RFy4G3oWPU/2c22.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "650 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210590108",
+    "title": "Mercedes-Benz Třídy A A-Třída 200 Progressive Advanc",
+    "price": "670 000 Kč",
+    "details": "2025  ·  23 719 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210590108",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/nO2CysqjGrCDmo6JbCG3oWPt/8d84.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "680 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210575429",
+    "title": "Mercedes-Benz Třídy A A-Třída 200 Progressive Advanc",
+    "price": "670 000 Kč",
+    "details": "2025  ·  18 601 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210575429",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/nO2CysqjGrud5yHsKG2fVs7/967f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "680 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210474017",
+    "title": "BMW Řada 3 320d xDrive Touring M-Paket",
+    "price": "719 900 Kč",
+    "details": "2022  ·  73 300 km  ·  Nafta  ·  4×4  ·  Automatická  ·  České Budějovice  ·  G-car s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/210474017",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/nO2CysqjGrBgjUXL8vG6i6nD/2c09.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "749 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210446561",
+    "title": "Mercedes-Benz Třídy C C 220d 4MATIC kombi",
+    "price": "699 000 Kč",
+    "details": "2023  ·  92 135 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Daimler Truck Česká republika",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/210446561",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_B/kcHp2YdDtDrxR2S6GqLuJR/7a5d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "724 790 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210166166",
+    "title": "Mercedes-Benz CLA 200d shooting brake",
+    "price": "688 490 Kč",
+    "details": "2024  ·  32 608 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Daimler Truck Česká republika",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210166166",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_C/kcHp2YdDtzYqGNtQGNi9Oi/ddea.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "699 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "210073385",
+    "title": "Mercedes-Benz CLA CLA 200d Shooting Brake Urban",
+    "price": "650 000 Kč",
+    "details": "2023  ·  58 136 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210073385",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/nCTUX1iX5DwDWzD1vGEzVFB/2dc1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "660 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "209077920",
+    "title": "BMW Řada 1 118d, Hatchback",
+    "price": "649 000 Kč",
+    "details": "2025  ·  14 000 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  BMW AutoWallis Praha",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/209077920",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtBwNESIEfGGszlZ/3865.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "699 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "bmwojete:285712",
+    "title": "BMW 218d",
+    "price": "599 000 Kč",
+    "details": "2023  ·  87 962 km  ·  Diesel  ·  Invelt s.r.o., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/285712/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/285712?2026-10-13T07:43:54+00:00",
+    "old_price": "629 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "bmwojete:258796",
+    "title": "BMW 116",
+    "price": "729 000 Kč",
+    "details": "2025  ·  28 000 km  ·  Benzín  ·  CarTec Ostrava s.r.o.",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/258796/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/258796?2026-05-13T09:39:37+00:00",
+    "old_price": "733 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:24666",
+    "title": "Mercedes-Benz Třída A 180 Progressive Edition",
+    "price": "690 000 Kč",
+    "details": "Třída A 180 Progressive Edition  ·  2026  ·  6 126 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24666",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/c7a9001c-a39b-4e4e-a810-fa2c512449fa.jpeg",
+    "old_price": "700 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:24326",
+    "title": "Mercedes-Benz GLA 250 4MATIC",
+    "price": "730 000 Kč",
+    "details": "GLA 250 4MATIC  ·  2022  ·  39 124 km  ·  Benzín  ·  4×4  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24326",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/77e6a9c5-6a23-401b-879c-275dae80e4c0.jpeg",
+    "old_price": "750 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:24200",
+    "title": "Mercedes-Benz Třída A 200",
+    "price": "670 000 Kč",
+    "details": "Třída A 200  ·  2025  ·  23 719 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24200",
+    "image": "https://www.mercedesnasklade.cz/media/cache/resolve/thumbnail_grid/images/058ec1a5-712f-472a-bfa6-520a87c54e98.jpeg",
+    "old_price": "680 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:24933",
+    "title": "Mercedes-Benz Třída A 180",
+    "price": "650 000 Kč",
+    "details": "Třída A 180  ·  2025  ·  19 899 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24933",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/0b252c1a-45f5-476b-b9b0-ecaf8e29b17a.jpeg",
+    "old_price": "660 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:24578",
+    "title": "Mercedes-Benz Třída A 180 Progressive Edition",
+    "price": "700 000 Kč",
+    "details": "Třída A 180 Progressive Edition  ·  2026  ·  3 001 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24578",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/9b6cd8b1-f66c-407f-b24b-73a2a0fa4e9c.jpeg",
+    "old_price": "710 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:24872",
+    "title": "Mercedes-Benz Třída A 180 Progressive Edition",
+    "price": "700 000 Kč",
+    "details": "Třída A 180 Progressive Edition  ·  2026  ·  3 001 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24872",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/6865b15c-97e8-4cbb-912d-aef0ae1d3d3f.jpeg",
+    "old_price": "710 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:24715",
+    "title": "Mercedes-Benz Třída A 180 Progressive Edition",
+    "price": "700 000 Kč",
+    "details": "Třída A 180 Progressive Edition  ·  2026  ·  3 001 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24715",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/4456584f-56f0-4ec3-8da7-fa860fec221b.jpeg",
+    "old_price": "710 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:24634",
+    "title": "Mercedes-Benz GLA 200 d 4MATIC",
+    "price": "650 000 Kč",
+    "details": "GLA 200 d 4MATIC  ·  2021  ·  49 000 km  ·  Nafta  ·  4×4  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24634",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/e41ec18d-1e63-47bf-875f-c1a2fea468a5.jpeg",
+    "old_price": "670 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:24571",
+    "title": "Mercedes-Benz Třída A 180 Progressive Edition",
+    "price": "690 000 Kč",
+    "details": "Třída A 180 Progressive Edition  ·  2026  ·  5 568 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24571",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/62c40ad0-d813-4b7e-b106-4e506a6f3509.jpeg",
+    "old_price": "700 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:24206",
+    "title": "Mercedes-Benz Třída A 200",
+    "price": "670 000 Kč",
+    "details": "Třída A 200  ·  2025  ·  15 862 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24206",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/77c30982-f46b-4d6b-bd93-d0c85ee2c341.jpeg",
+    "old_price": "680 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:24161",
+    "title": "Mercedes-Benz Třída A 200",
+    "price": "670 000 Kč",
+    "details": "Třída A 200  ·  2025  ·  18 601 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24161",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/f0c5a7aa-e143-401d-a13b-dc384d6a1130.jpeg",
+    "old_price": "680 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:23280",
+    "title": "Mercedes-Benz CLA 200d Shooting Brake",
+    "price": "650 000 Kč",
+    "details": "CLA 200d Shooting Brake  ·  2023  ·  58 136 km  ·  Nafta  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/23280",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/93d9bd2f-0703-4136-9f3c-879a415bf185.jpeg",
+    "old_price": "660 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:24199",
+    "title": "Mercedes-Benz Třída B 200",
+    "price": "640 000 Kč",
+    "details": "Třída B 200  ·  2025  ·  20 037 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24199",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/f16ff237-4e15-4f3e-9099-8e92350f4a72.jpeg",
+    "old_price": "650 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  },
+  {
+    "id": "mns:24667",
+    "title": "Mercedes-Benz Třída A 180 Progressive Edition",
+    "price": "690 000 Kč",
+    "details": "Třída A 180 Progressive Edition  ·  2026  ·  8 140 km  ·  Benzín  ·  SAGA PRAHA s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24667",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/99d06b46-01b2-41ea-8162-2008fbf6ed6e.jpeg",
+    "old_price": "700 000 Kč",
+    "found_at": "12.11.2026 16:09",
+    "price_drop_at": "12.11.2026 16:09"
+  }
+]
