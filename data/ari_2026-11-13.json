@@ -286,5 +286,114 @@
     "old_price": "370 000 Kč",
     "found_at": "13.11.2026 15:30",
     "price_drop_at": "13.11.2026 15:30"
+  },
+  {
+    "id": "211451844",
+    "title": "Seat Leon Seat Leon , 2.0 TDi, DSG 86tis",
+    "price": "290 000 Kč",
+    "details": "2015  ·  86 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211451844",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkDyuEmP1yfIWeTvu/ac50.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "13.11.2026 22:25"
+  },
+  {
+    "id": "211451370",
+    "title": "Toyota Corolla 1,8 i 72kw Hybrid E-CVT bez ko",
+    "price": "350 000 Kč",
+    "details": "2021  ·  129 722 km  ·  Hybridní  ·  Automatická  ·  Žďár nad Sázavou  ·  NVcars.cz",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211451370",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkbxLFGXpNIWcHVI/d45a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "13.11.2026 22:25"
+  },
+  {
+    "id": "211451364",
+    "title": "Toyota C-HR 1,8 i 72kw Hybrid E-CVT Lounge",
+    "price": "330 000 Kč",
+    "details": "2018  ·  101 400 km  ·  Benzín  ·  Automatická  ·  Žďár nad Sázavou  ·  NVcars.cz",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/c-hr/211451364",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkCfcGaGDyZIWcFzP/f414.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "13.11.2026 22:25"
+  },
+  {
+    "id": "211411416",
+    "title": "Volkswagen Golf 2.0 TDI 110kW | OPRAVENÉ DSG",
+    "price": "183 990 Kč",
+    "details": "2017  ·  246 270 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211411416",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TBjrrQe10IWe4Wd/b4a6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "13.11.2026 22:25"
+  },
+  {
+    "id": "210218657",
+    "title": "Volkswagen Golf 1,5 TSI 110kW DSG Edice Sound",
+    "price": "313 900 Kč",
+    "details": "2017  ·  129 000 km  ·  Benzín  ·  Automatická  ·  Praha-západ  ·  GROUP wagen s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210218657",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/kcHp2YdDtCJexHeyBGS1cJf/d5a8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "314 900 Kč",
+    "found_at": "13.11.2026 22:25",
+    "price_drop_at": "13.11.2026 22:25"
+  },
+  {
+    "id": "211255380",
+    "title": "Volvo V40 AUTOMAT, 4X4, NOVÉ ROZVODY",
+    "price": "159 000 Kč",
+    "details": "2014  ·  205 515 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Zlín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211255380",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLCnfP06gMIDJIzy/7f10.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "199 000 Kč",
+    "found_at": "13.11.2026 22:25",
+    "price_drop_at": "13.11.2026 22:25"
+  },
+  {
+    "id": "211283088",
+    "title": "Toyota C-HR 1,8 i 72kw Hybrid e-CVT bez ko",
+    "price": "310 000 Kč",
+    "details": "2018  ·  154 463 km  ·  Hybridní  ·  Automatická  ·  Žďár nad Sázavou  ·  NVcars.cz",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/c-hr/211283088",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFDzJCC4czIGhC7m/cbf4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "320 000 Kč",
+    "found_at": "13.11.2026 22:25",
+    "price_drop_at": "13.11.2026 22:25"
+  },
+  {
+    "id": "210675053",
+    "title": "Toyota C-HR 1,8 i 72kw Hybrid E-CVT bez ko",
+    "price": "330 000 Kč",
+    "details": "2017  ·  99 329 km  ·  Hybridní  ·  Automatická  ·  Žďár nad Sázavou  ·  NVcars.cz",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/c-hr/210675053",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_C/nO2CysqjGrCDmo6QobHCAbQf/3eda.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "340 000 Kč",
+    "found_at": "13.11.2026 22:25",
+    "price_drop_at": "13.11.2026 22:25"
   }
 ]

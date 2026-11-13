@@ -209,5 +209,72 @@
     "old_price": "549 900 Kč",
     "found_at": "13.11.2026 15:30",
     "price_drop_at": "13.11.2026 15:30"
+  },
+  {
+    "id": "211451034",
+    "title": "BMW Řada 3 320d xDrive WEBASTO TAŽNÉ",
+    "price": "718 000 Kč",
+    "details": "2024  ·  81 981 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/211451034",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TCEwoKCgEiIWcQR0/0eca.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "13.11.2026 22:25"
+  },
+  {
+    "id": "211450803",
+    "title": "Mini Countryman Countryman S, 4x4",
+    "price": "699 000 Kč",
+    "details": "2022  ·  46 463 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Brno-město  ·  RENOCAR BMW, MINI a BMW MOTORRAD",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/211450803",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkbxLFGXG3IWan5i/9cba.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "13.11.2026 22:25"
+  },
+  {
+    "id": "211375806",
+    "title": "Mercedes-Benz Třidy T Long verze, automat, 1.majitel",
+    "price": "550 000 Kč",
+    "details": "2024  ·  25 750 km  ·  Benzín  ·  Automatická  ·  Břeclav  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-t/211375806",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCfcGaCv1IIPYkq7/4722.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "660 000 Kč",
+    "found_at": "13.11.2026 22:25",
+    "price_drop_at": "13.11.2026 22:25"
+  },
+  {
+    "id": "210820166",
+    "title": "BMW Řada 2 218i Luxury Line+Zimní alukola",
+    "price": "558 000 Kč",
+    "details": "2024  ·  48 722 km  ·  Benzín  ·  Automatická  ·  Pardubice  ·  Trendcars",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/210820166",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/nOa03Se6MmBV0HpDEMHSW1bG/242e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "569 900 Kč",
+    "found_at": "13.11.2026 22:25",
+    "price_drop_at": "13.11.2026 22:25"
+  },
+  {
+    "id": "211168635",
+    "title": "Mercedes-Benz CLA 220 D SHOOTING BRAKE 8G-DCT",
+    "price": "649 900 Kč",
+    "details": "2020  ·  37 050 km  ·  Nafta  ·  Automatická  ·  Strakonice  ·  HS AUTO STANĚK",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211168635",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyD4lWfC7rH3nC3l/dbc6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "699 900 Kč",
+    "found_at": "13.11.2026 22:25",
+    "price_drop_at": "13.11.2026 22:25"
   }
 ]
