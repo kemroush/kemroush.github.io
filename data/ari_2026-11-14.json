@@ -1,0 +1,73 @@
+[
+  {
+    "id": "211452972",
+    "title": "Volkswagen Golf",
+    "price": "399 000 Kč",
+    "details": "2018  ·  135 100 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211452972",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TDrngKCsbvIW5L2S/c75f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "14.11.2026 14:28"
+  },
+  {
+    "id": "211151541",
+    "title": "Volkswagen Golf 1.6 TDi,Lounge,DSG",
+    "price": "194 400 Kč",
+    "details": "2016  ·  161 286 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211151541",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRD1Evu0dH2n1tX/46e2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "200 000 Kč",
+    "found_at": "14.11.2026 14:28",
+    "price_drop_at": "14.11.2026 14:28"
+  },
+  {
+    "id": "211286502",
+    "title": "Škoda Scala 1.5TSi,2.maj,ČR,Style,DSG",
+    "price": "245 000 Kč",
+    "details": "2019  ·  190 981 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211286502",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPw320bnC5P2a1D1oIIauGX/8343.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "255 000 Kč",
+    "found_at": "14.11.2026 14:28",
+    "price_drop_at": "14.11.2026 14:28"
+  },
+  {
+    "id": "211144533",
+    "title": "Volvo V40 2.0 D,2.maj,Cross Country",
+    "price": "270 300 Kč",
+    "details": "2017  ·  151 080 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211144533",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyvOo9EaDH3PpmD/d503.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "274 000 Kč",
+    "found_at": "14.11.2026 14:28",
+    "price_drop_at": "14.11.2026 14:28"
+  },
+  {
+    "id": "209797965",
+    "title": "Mercedes-Benz Třídy A 2,0 i, 250 SPORT,aut,navi,",
+    "price": "264 000 Kč",
+    "details": "2015  ·  234 184 km  ·  Benzín  ·  Automatická  ·  Kroměříž  ·  Auto EXTRA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/209797965",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/nO2CysqjGrRICCHOiGzpXVV/4136.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "279 000 Kč",
+    "found_at": "14.11.2026 14:28",
+    "price_drop_at": "14.11.2026 14:28"
+  }
+]
