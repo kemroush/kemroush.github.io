@@ -69,5 +69,111 @@
     "old_price": "279 000 Kč",
     "found_at": "14.11.2026 14:28",
     "price_drop_at": "14.11.2026 14:28"
+  },
+  {
+    "id": "211454076",
+    "title": "Škoda Scala 1.6 TDI, 85KW TOP, PANORAMA",
+    "price": "339 000 Kč",
+    "details": "2020  ·  151 237 km  ·  Nafta  ·  Automatická  ·  Benešov  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211454076",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TCl5yxh2aIXC8n6/fd43.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "14.11.2026 20:55"
+  },
+  {
+    "id": "211453203",
+    "title": "Seat Leon 2.0 TDI, Fr",
+    "price": "359 000 Kč",
+    "details": "2021  ·  162 000 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211453203",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TCEwoKC3zpIXBow1/3c8b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "14.11.2026 20:55"
+  },
+  {
+    "id": "211453437",
+    "title": "Seat Leon FR 2.0 TDI / Webasto / Tažné",
+    "price": "399 000 Kč",
+    "details": "2022  ·  132 305 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Autodraft",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211453437",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TDrSmqjfcIW9qp7/cedb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "14.11.2026 20:55"
+  },
+  {
+    "id": "211453347",
+    "title": "Volkswagen Golf 1.5eTSI 8 Automat Led Virtual",
+    "price": "383 000 Kč",
+    "details": "2020  ·  116 000 km  ·  Benzín  ·  Automatická  ·  Ostrava-město  ·  Autobazar Styl",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211453347",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkbxLFGrsbIW8ex0/9aa1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "14.11.2026 20:55"
+  },
+  {
+    "id": "210953304",
+    "title": "Volkswagen Golf I na splátky, automatická přev",
+    "price": "219 000 Kč",
+    "details": "2019  ·  228 000 km  ·  Nafta  ·  Automatická  ·  Karviná  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210953304",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JC1dLSHCWHheXoD/f3b5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "14.11.2026 20:55"
+  },
+  {
+    "id": "211453245",
+    "title": "Toyota Corolla 1,8 i 72kw Hybrid E-CVT bez ko",
+    "price": "370 000 Kč",
+    "details": "2020  ·  80 000 km  ·  Hybridní  ·  Automatická  ·  Žďár nad Sázavou  ·  NVcars.cz",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211453245",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TBjrrQtGMIW7XW2/1162.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "14.11.2026 20:55"
+  },
+  {
+    "id": "211412595",
+    "title": "Mercedes-Benz Třídy A A180d",
+    "price": "279 000 Kč",
+    "details": "2016  ·  110 850 km  ·  Nafta  ·  Automatická  ·  Ostrava-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211412595",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDrngKxgGITAoHP/611b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "285 000 Kč",
+    "found_at": "14.11.2026 20:55",
+    "price_drop_at": "14.11.2026 20:55"
+  },
+  {
+    "id": "210925869",
+    "title": "Mercedes-Benz CLA 1.6T CLA 200,AT,LED,navi",
+    "price": "375 000 Kč",
+    "details": "2017  ·  57 861 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210925869",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKRIhAnCSaHuftqL/8872.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "390 000 Kč",
+    "found_at": "14.11.2026 20:55",
+    "price_drop_at": "14.11.2026 20:55"
   }
 ]

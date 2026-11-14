@@ -9,5 +9,33 @@
     "old_price": "415 000 Kč",
     "found_at": "14.11.2026 14:28",
     "price_drop_at": "14.11.2026 14:28"
+  },
+  {
+    "id": "211176753",
+    "title": "BMW Řada 3 BMW 320d 140 kW MHEV",
+    "price": "636 000 Kč",
+    "details": "2023  ·  48 556 km  ·  Nafta  ·  Automatická  ·  Ostrava-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/211176753",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/nOdL4BtPEyBFnmYBCNH43WOj/9e52.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "14.11.2026 20:55"
+  },
+  {
+    "id": "209796831",
+    "title": "BMW Řada 3 320 xD ///MSPORT*TAŽNÉ*ČR 1MAJ",
+    "price": "688 000 Kč",
+    "details": "2023  ·  78 772 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Znojmo  ·  STOP CARS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/209796831",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/kcHp2YdDtEBMvIVRPGRnFgA/1fb4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "698 000 Kč",
+    "found_at": "14.11.2026 20:55",
+    "price_drop_at": "14.11.2026 20:55"
   }
 ]
