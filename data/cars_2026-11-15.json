@@ -1,0 +1,56 @@
+[
+  {
+    "id": "211253079",
+    "title": "Mercedes-Benz GLB 250 4MATIC | Multibeam LED",
+    "price": "739 900 Kč",
+    "details": "2023  ·  49 700 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Jindřichův Hradec  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/211253079",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLCNT9cUQICfTEk/69a3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "15.11.2026 14:53"
+  },
+  {
+    "id": "211455639",
+    "title": "Mercedes-Benz Třídy A 1.3 120 KW",
+    "price": "400 000 Kč",
+    "details": "2020  ·  71 826 km  ·  Benzín  ·  Automatická  ·  Náchod  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211455639",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkBQkMFOdCWIXdWem/88fd.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "15.11.2026 14:53"
+  },
+  {
+    "id": "209628603",
+    "title": "Mercedes-Benz Třídy C Hybrid Eletric N0VC-HEV+15 Kw",
+    "price": "579 000 Kč",
+    "details": "2023  ·  71 500 km  ·  Hybridní  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/209628603",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_A/nDJ4VEZEqCs9CyDwTFL37s2/fb3d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "599 000 Kč",
+    "found_at": "15.11.2026 14:53",
+    "price_drop_at": "15.11.2026 14:53"
+  },
+  {
+    "id": "211219797",
+    "title": "Mini Clubman 2.0 225 KW JCW ALL4 ČR 1 maj",
+    "price": "599 999 Kč",
+    "details": "2021  ·  92 957 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Příbram  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/clubman/211219797",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFW9k4URAH9jgko/25f5.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "610 003 Kč",
+    "found_at": "15.11.2026 14:53",
+    "price_drop_at": "15.11.2026 14:53"
+  }
+]
