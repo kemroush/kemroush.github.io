@@ -52,5 +52,34 @@
     "old_price": "610 003 Kč",
     "found_at": "15.11.2026 14:53",
     "price_drop_at": "15.11.2026 14:53"
+  },
+  {
+    "id": "211456359",
+    "title": "Mini Cooper LED*Navi*Pano*H&K*Automat",
+    "price": "529 000 Kč",
+    "details": "2022  ·  44 000 km  ·  Benzín  ·  Automatická  ·  Pardubice  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211456359",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TCEwoKFD1IXkBBN/5c1c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "15.11.2026 21:23"
+  },
+  {
+    "id": "211164072",
+    "title": "Mercedes-Benz GLA 2,0 2.0d AT,Full Led,Nav,Výhře",
+    "price": "617 999 Kč",
+    "details": "2022  ·  59 618 km  ·  Nafta  ·  Automatická  ·  České Budějovice  ·  AUTOBAZAR ML AUTO",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/211164072",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyBHthwBPaH3IsjT/7f0a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "634 999 Kč",
+    "found_at": "15.11.2026 21:23",
+    "price_drop_at": "15.11.2026 21:23"
   }
 ]

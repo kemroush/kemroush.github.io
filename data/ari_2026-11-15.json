@@ -90,5 +90,44 @@
     "old_price": "314 600 Kč",
     "found_at": "15.11.2026 14:53",
     "price_drop_at": "15.11.2026 14:53"
+  },
+  {
+    "id": "211456974",
+    "title": "Volkswagen Golf 2.0 TDI 135kW 4Motion Alltrack",
+    "price": "259 900 Kč",
+    "details": "2016  ·  198 323 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211456974",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TDrngKDOmEIXpApl/834f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "15.11.2026 21:23"
+  },
+  {
+    "id": "211456905",
+    "title": "Mazda 2 1.5i SkyActive 66kW",
+    "price": "319 900 Kč",
+    "details": "2022  ·  44 296 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/mazda/2/211456905",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TDrSmqBAL2IXoig6/6491.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "15.11.2026 21:23"
+  },
+  {
+    "id": "211451844",
+    "title": "Seat Leon Seat Leon , 2.0 TDi, DSG 86tis",
+    "price": "275 000 Kč",
+    "details": "2015  ·  86 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211451844",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkDyuEmP1yfIWeTvu/ac50.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "290 000 Kč",
+    "found_at": "15.11.2026 21:23",
+    "price_drop_at": "15.11.2026 21:23"
   }
 ]
