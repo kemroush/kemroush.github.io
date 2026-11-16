@@ -1,0 +1,89 @@
+[
+  {
+    "id": "211459230",
+    "title": "Mercedes-Benz Třídy C C200 4M*AMG*Digital light* HUD",
+    "price": "713 900 Kč",
+    "details": "2023  ·  93 030 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  VANS CENTRE s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/211459230",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TDMnNbBR3lIYCxNl/7cfc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "16.11.2026 16:40"
+  },
+  {
+    "id": "211457988",
+    "title": "BMW Řada 1 118d M Sport, HUD, masáže, DPH",
+    "price": "749 000 Kč",
+    "details": "2024  ·  20 563 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/211457988",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkbxLFQPwIX9z4w/2792.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "16.11.2026 16:40"
+  },
+  {
+    "id": "211363311",
+    "title": "BMW X2 M35i",
+    "price": "738 000 Kč",
+    "details": "2023  ·  92 500 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  BMW CarTec Praha, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x2/211363311",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkBcInf6sZINl4oT/55dd.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "16.11.2026 16:40"
+  },
+  {
+    "id": "209671662",
+    "title": "BMW X2 2.0xD M-paket-AT-KŮŽE-NAVI-ČR!",
+    "price": "619 900 Kč",
+    "details": "2022  ·  86 000 km  ·  Nafta  ·  Automatická  ·  Ostrava-město  ·  Auta NEJ, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x2/209671662",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_A/kY1K2LlXQDnuVLYXFvKT3h/ed89.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "624 400 Kč",
+    "found_at": "16.11.2026 16:40",
+    "price_drop_at": "16.11.2026 16:40"
+  },
+  {
+    "id": "208910997",
+    "title": "BMW Řada 3 320D xDrive M-SPORT FACELIFT",
+    "price": "728 000 Kč",
+    "details": "2023  ·  89 836 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/208910997",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_og_A/nDJ4VEZEqD86wCEPYFFeCay/e93b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "748 000 Kč",
+    "found_at": "16.11.2026 16:40",
+    "price_drop_at": "16.11.2026 16:40"
+  },
+  {
+    "id": "210363743",
+    "title": "BMW Řada 2 218d M-SPORT 1M ČR",
+    "price": "588 000 Kč",
+    "details": "2023  ·  59 581 km  ·  Nafta  ·  Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/210363743",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_A/nCTUX1iX5BWZuTBMKXGhh2XN/4ddc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "598 000 Kč",
+    "found_at": "16.11.2026 16:40",
+    "price_drop_at": "16.11.2026 16:40"
+  }
+]
