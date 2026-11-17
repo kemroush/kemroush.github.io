@@ -189,5 +189,127 @@
     "old_price": "375 000 Kč",
     "found_at": "16.11.2026 16:40",
     "price_drop_at": "16.11.2026 16:40"
+  },
+  {
+    "id": "211463328",
+    "title": "Volvo V40",
+    "price": "265 000 Kč",
+    "details": "2016  ·  115 000 km  ·  Nafta  ·  Automatická  ·  Jablonec nad Nisou  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211463328",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TBjrrQBlwoIYPvix/a508.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "17.11.2026 03:28"
+  },
+  {
+    "id": "211462689",
+    "title": "Seat Leon 2.0TDi, DSG, 135kW, 4x4, ČR",
+    "price": "229 000 Kč",
+    "details": "2015  ·  206 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Olomouc  ·  JUSTCARS simply s.r.o. prověřené vozy se zárukou",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211462689",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkBcInfHTUXIYL6ys/ea4f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "17.11.2026 03:28"
+  },
+  {
+    "id": "211293840",
+    "title": "Volkswagen Golf 2,0TDi 110kW 4x4 Alltrack",
+    "price": "199 990 Kč",
+    "details": "2015  ·  218 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Sokolov  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211293840",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkDyuEmBmfOIYOgBi/d392.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "17.11.2026 03:28"
+  },
+  {
+    "id": "211141518",
+    "title": "Mercedes-Benz Třídy A 180d Progressive + Premium",
+    "price": "389 000 Kč",
+    "details": "2019  ·  112 743 km  ·  Nafta  ·  Automatická  ·  Ostrava-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211141518",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRDgcHsCMvH2gWZl/c156.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient"
+    ],
+    "old_price": "399 000 Kč",
+    "found_at": "17.11.2026 03:28",
+    "price_drop_at": "17.11.2026 03:28"
+  },
+  {
+    "id": "211384054",
+    "title": "Toyota Yaris 1.5 hybrid",
+    "price": "324 990 Kč",
+    "details": "2024  ·  140 884 km  ·  Hybridní  ·  Automatická  ·  Brno-venkov  ·  KT MOTORSPORT",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/yaris/211384054",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDhsIbH3udIQaPAh/72eb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "old_price": "329 999 Kč",
+    "found_at": "17.11.2026 03:28",
+    "price_drop_at": "17.11.2026 03:28"
+  },
+  {
+    "id": "211366938",
+    "title": "Toyota Corolla 1.8Hybrid comfort vyhř.sedacky",
+    "price": "389 990 Kč",
+    "details": "2021  ·  97 384 km  ·  Hybridní  ·  Automatická  ·  Brno-venkov  ·  KT MOTORSPORT",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211366938",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86Tw5RPDuWkIOEyi8/1552.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "394 999 Kč",
+    "found_at": "17.11.2026 03:28",
+    "price_drop_at": "17.11.2026 03:28"
+  },
+  {
+    "id": "211192488",
+    "title": "Volkswagen Golf 2.0 TDi,Allstar,DSG,navi",
+    "price": "273 000 Kč",
+    "details": "2016  ·  137 041 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211192488",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLCNT9chTRIA4AeD/ef47.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "285 000 Kč",
+    "found_at": "17.11.2026 03:28",
+    "price_drop_at": "17.11.2026 03:28"
+  },
+  {
+    "id": "211246776",
+    "title": "Volkswagen Golf R-Line 1.5 110kw DSG PANO",
+    "price": "379 999 Kč",
+    "details": "2017  ·  137 400 km  ·  Benzín  ·  Automatická  ·  Kladno  ·  Verion Auto Group",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211246776",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TBjrrQBii6IYMlIn/a687.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "399 999 Kč",
+    "found_at": "17.11.2026 03:28",
+    "price_drop_at": "17.11.2026 03:28"
+  },
+  {
+    "id": "210047493",
+    "title": "Peugeot 2008 1.5HDi,Allure,AT,panor",
+    "price": "185 000 Kč",
+    "details": "2018  ·  106 599 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/peugeot/2008/210047493",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtJj1UEjMGEVq1Q/5494.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "195 000 Kč",
+    "found_at": "17.11.2026 03:28",
+    "price_drop_at": "17.11.2026 03:28"
   }
 ]

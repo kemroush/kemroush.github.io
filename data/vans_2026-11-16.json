@@ -29,5 +29,23 @@
     "old_price": "98 000 Kč",
     "found_at": "16.11.2026 16:40",
     "price_drop_at": "16.11.2026 16:40"
+  },
+  {
+    "id": "211463910",
+    "title": "Ford Transit Custom 2,2 cdti",
+    "price": "125 000 Kč",
+    "details": "2014  ·  285 000 km  ·  Nafta  ·  Manuální  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/ford/transit-custom/211463910",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkBcInfHaORIYS9Bv/23f8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "17.11.2026 03:28"
+  },
+  {
+    "id": "211462590",
+    "title": "Citroën Jumpy 1.6HDI,ČR,STK4/28",
+    "price": "110 000 Kč",
+    "details": "2011  ·  194 908 km  ·  Nafta  ·  Manuální  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/uzitkova/detail/citroen/jumpy/211462590",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkDyuEmBt9XIYQe03/2dd8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "17.11.2026 03:28"
   }
 ]
