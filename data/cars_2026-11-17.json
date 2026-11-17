@@ -1,0 +1,87 @@
+[
+  {
+    "id": "210829715",
+    "title": "Mini Cooper S Mini Cooper Coutryman",
+    "price": "449 000 Kč",
+    "details": "2019  ·  91 506 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Pardubice  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/210829715",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kOyy3Gv43yCpHP2XV6HUHqbM/454e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "17.11.2026 16:56"
+  },
+  {
+    "id": "210273593",
+    "title": "Mini Cooper Mini Cooper SE",
+    "price": "388 000 Kč",
+    "details": "2020  ·  48 000 km  ·  Elektro  ·  Automatická  ·  Náchod  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/210273593",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_B/nCTUX1iX5bIUBBA4JGYrAwp/7b34.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "17.11.2026 16:56"
+  },
+  {
+    "id": "211421361",
+    "title": "Mercedes-Benz CLA 44 tis km, garážováno, ČR",
+    "price": "645 000 Kč",
+    "details": "2020  ·  44 000 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211421361",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkbxLFf7kIYeqri/9522.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "17.11.2026 16:56"
+  },
+  {
+    "id": "211384953",
+    "title": "Mini Cooper S MINI COOPER S",
+    "price": "485 000 Kč",
+    "details": "2021  ·  52 000 km  ·  Benzín  ·  Automatická  ·  Praha-východ  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper-s/211384953",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkBcInfDIGaIQdX4P/0277.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "495 000 Kč",
+    "found_at": "17.11.2026 16:56",
+    "price_drop_at": "17.11.2026 16:56"
+  },
+  {
+    "id": "211164075",
+    "title": "Mercedes-Benz Třídy A 1,3 250e Full Led,Navi,Výhřev",
+    "price": "479 999 Kč",
+    "details": "2021  ·  100 000 km  ·  Hybridní  ·  Automatická  ·  České Budějovice  ·  AUTOBAZAR ML AUTO",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211164075",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyDrQHrBNWH3ItFh/5c52.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "499 999 Kč",
+    "found_at": "17.11.2026 16:56",
+    "price_drop_at": "17.11.2026 16:56"
+  },
+  {
+    "id": "210531926",
+    "title": "Mini Countryman 2.0 D 4x4,AT,navi",
+    "price": "355 000 Kč",
+    "details": "2017  ·  95 117 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/210531926",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/kQMlcCt5zmD87zEDT9GyrH7J/b2b1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "370 000 Kč",
+    "found_at": "17.11.2026 16:56",
+    "price_drop_at": "17.11.2026 16:56"
+  }
+]
