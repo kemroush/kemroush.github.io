@@ -1,0 +1,92 @@
+[
+  {
+    "id": "211467576",
+    "title": "Toyota C-HR 1.8 Hybrid, 2017",
+    "price": "299 000 Kč",
+    "details": "2017  ·  171 000 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/c-hr/211467576",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdk3whEDfz9IZHyB0/8fb4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "18.11.2026 13:40"
+  },
+  {
+    "id": "211041834",
+    "title": "Seat Leon 2.0 TSi 4Drive,ČR",
+    "price": "399 000 Kč",
+    "details": "2017  ·  158 465 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211041834",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/nQNUzrWdcWDRj4ZDAcHq0Uyg/b69e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "18.11.2026 13:40"
+  },
+  {
+    "id": "211422681",
+    "title": "Volkswagen Golf 7",
+    "price": "380 000 Kč",
+    "details": "2016  ·  187 000 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Zlín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211422681",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDi9WNFrtvIUrB1N/90db.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "400 000 Kč",
+    "found_at": "18.11.2026 13:40",
+    "price_drop_at": "18.11.2026 13:40"
+  },
+  {
+    "id": "209508828",
+    "title": "Volkswagen Golf 2.0 TDi (110 kW), plný servis",
+    "price": "348 900 Kč",
+    "details": "2021  ·  201 584 km  ·  Nafta  ·  Automatická  ·  Sokolov  ·  JIDCARS, AUTO – Jiří Drozdík",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/209508828",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_B/kcHp2YdDtEBMvIDiNGEQfQT/3a3c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "368 900 Kč",
+    "found_at": "18.11.2026 13:40",
+    "price_drop_at": "18.11.2026 13:40"
+  },
+  {
+    "id": "211348410",
+    "title": "Seat Leon 2.0TDi,DSG,LED,navi",
+    "price": "168 300 Kč",
+    "details": "2015  ·  227 383 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211348410",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkB87eWBs8JIOWfU0/946f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "175 000 Kč",
+    "found_at": "18.11.2026 13:40",
+    "price_drop_at": "18.11.2026 13:40"
+  },
+  {
+    "id": "211246776",
+    "title": "Volkswagen Golf R-Line 1.5 110kw DSG PANO",
+    "price": "369 999 Kč",
+    "details": "2017  ·  137 400 km  ·  Benzín  ·  Automatická  ·  Kladno  ·  Verion Auto Group",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211246776",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TBjrrQBii6IYMlIn/a687.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "379 999 Kč",
+    "found_at": "18.11.2026 13:40",
+    "price_drop_at": "18.11.2026 13:40"
+  },
+  {
+    "id": "210495482",
+    "title": "Volvo V40 2.0D,ČR,servis.kniha,AT",
+    "price": "285 000 Kč",
+    "details": "2018  ·  94 965 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/210495482",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/kQMlcCt5zmBDkXaIQWG2EMy4/f9f6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "295 000 Kč",
+    "found_at": "18.11.2026 13:40",
+    "price_drop_at": "18.11.2026 13:40"
+  }
+]
