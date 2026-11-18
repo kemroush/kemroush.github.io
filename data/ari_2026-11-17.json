@@ -127,5 +127,57 @@
     "old_price": "349 900 Kč",
     "found_at": "17.11.2026 16:56",
     "price_drop_at": "17.11.2026 16:56"
+  },
+  {
+    "id": "211467069",
+    "title": "Mercedes-Benz CLA 2.2 CDI CLA220",
+    "price": "249 000 Kč",
+    "details": "2016  ·  223 327 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211467069",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TCM3uZB9PdIY1eZ3/2e38.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "18.11.2026 02:36"
+  },
+  {
+    "id": "211466736",
+    "title": "Mercedes-Benz Třídy A 180 D",
+    "price": "399 000 Kč",
+    "details": "2018  ·  130 885 km  ·  Nafta  ·  Automatická  ·  Uherské Hradiště  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211466736",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TCM3uZB9JBIYzWe2/d9e3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "18.11.2026 02:36"
+  },
+  {
+    "id": "210635432",
+    "title": "Seat Leon FR 2.0TDI DSG",
+    "price": "299 000 Kč",
+    "details": "2022  ·  228 633 km  ·  Nafta  ·  Automatická  ·  Jihlava  ·  SPZ - Vysočina, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/210635432",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/nO2CysqjGrRICCRT1G70wjo/2f26.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "309 900 Kč",
+    "found_at": "18.11.2026 02:36",
+    "price_drop_at": "18.11.2026 02:36"
+  },
+  {
+    "id": "209754831",
+    "title": "Škoda Scala 1.6 TDi,Ambition,DSG,LED",
+    "price": "229 000 Kč",
+    "details": "2020  ·  152 266 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/209754831",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/kcHp2YdDtBM3KVcWdGSiitG/f76d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "240 000 Kč",
+    "found_at": "18.11.2026 02:36",
+    "price_drop_at": "18.11.2026 02:36"
   }
 ]
