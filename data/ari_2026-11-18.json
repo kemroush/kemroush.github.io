@@ -88,5 +88,44 @@
     "old_price": "295 000 Kč",
     "found_at": "18.11.2026 13:40",
     "price_drop_at": "18.11.2026 13:40"
+  },
+  {
+    "id": "211455708",
+    "title": "Volkswagen Golf VII R-Line, 2.0, 110kW",
+    "price": "240 000 Kč",
+    "details": "2019  ·  245 500 km  ·  Nafta  ·  Automatická  ·  Praha-východ  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211455708",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TB49GnBJTSIXeTDC/501e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "260 000 Kč",
+    "found_at": "18.11.2026 16:36",
+    "price_drop_at": "18.11.2026 16:36"
+  },
+  {
+    "id": "211095609",
+    "title": "Mercedes-Benz Třídy A 180D 1,5 85 KW AUTOMAT SPORTB.",
+    "price": "379 800 Kč",
+    "details": "2019  ·  91 039 km  ·  Nafta  ·  Automatická  ·  Liberec  ·  Ondřej Lipovský - autobazar",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211095609",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyBuWMSBRqHwq1to/a09d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "old_price": "389 800 Kč",
+    "found_at": "18.11.2026 16:36",
+    "price_drop_at": "18.11.2026 16:36"
+  },
+  {
+    "id": "210293243",
+    "title": "Toyota Yaris 1.5 HYBRID e-CVT A/T ACC",
+    "price": "359 999 Kč",
+    "details": "2024  ·  14 942 km  ·  Hybridní  ·  Automatická  ·  Hlavní město Praha  ·  MAMA CAR a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/yaris/210293243",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyDrQHrBCBH0RJzk/25a9.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "old_price": "379 999 Kč",
+    "found_at": "18.11.2026 16:36",
+    "price_drop_at": "18.11.2026 16:36"
   }
 ]
