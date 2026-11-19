@@ -127,5 +127,204 @@
     "old_price": "379 999 Kč",
     "found_at": "18.11.2026 16:36",
     "price_drop_at": "18.11.2026 16:36"
+  },
+  {
+    "id": "211395621",
+    "title": "Toyota Corolla 1.8",
+    "price": "390 000 Kč",
+    "details": "2019  ·  130 000 km  ·  Hybridní  ·  Automatická  ·  Sokolov  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211395621",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TkUyxDSIPIRQ1tF/4083.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "19.11.2026 02:11"
+  },
+  {
+    "id": "211472778",
+    "title": "Mercedes-Benz CLA 2,2 220CDI 4M,130kW,Xenon,Kůže",
+    "price": "297 999 Kč",
+    "details": "2015  ·  200 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  České Budějovice  ·  AUTOBAZAR ML AUTO",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211472778",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TDrngKETl4IZaU7Z/4e0d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "19.11.2026 02:11"
+  },
+  {
+    "id": "211471530",
+    "title": "Volvo V40 2.0 D 88 kW Momentum",
+    "price": "219 900 Kč",
+    "details": "2017  ·  147 264 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211471530",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkbxLF8vDIZVHr7/ed86.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "19.11.2026 02:11"
+  },
+  {
+    "id": "211471524",
+    "title": "Škoda Scala 1,5 TSI 110 Style AT",
+    "price": "379 000 Kč",
+    "details": "2023  ·  113 556 km  ·  Benzín  ·  Automatická  ·  Praha-západ  ·  Auto RUPEXIM",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211471524",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TCl5yxBqoKIZVHjs/8888.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "19.11.2026 02:11"
+  },
+  {
+    "id": "211013664",
+    "title": "Volvo V40 2.0D3 AUT CROSS COUNTRY TAŽNÉ",
+    "price": "228 000 Kč",
+    "details": "2014  ·  171 665 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  Zeno cars",
+    "link": "https://www.sauto.cz/osobni/detail/volvo/v40/211013664",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_C/nPYADvcUkmCbUhRWWHn0haL/1563.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "239 000 Kč",
+    "found_at": "19.11.2026 02:11",
+    "price_drop_at": "19.11.2026 02:11"
+  },
+  {
+    "id": "210971337",
+    "title": "Škoda Scala 1.6TDI AUTOMAT SERVISKA TAŽNÉ",
+    "price": "312 000 Kč",
+    "details": "2020  ·  141 750 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  Zeno cars",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/210971337",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JB25pTGe4HjJT0a/33d4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "319 900 Kč",
+    "found_at": "19.11.2026 02:11",
+    "price_drop_at": "19.11.2026 02:11"
+  },
+  {
+    "id": "211429713",
+    "title": "Seat Leon 2.0TDI 110kW,DSG FR ST,1.Maj",
+    "price": "395 000 Kč",
+    "details": "2022  ·  81 038 km  ·  Nafta  ·  Automatická  ·  Olomouc  ·  ZdeKupAuto Olomouc",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211429713",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCfcGaFaGzIUoxIG/c0fa.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "399 000 Kč",
+    "found_at": "19.11.2026 02:11",
+    "price_drop_at": "19.11.2026 02:11"
+  },
+  {
+    "id": "211184109",
+    "title": "Seat Leon 2.0TDI 110kW DSG FR ST,1.Maj",
+    "price": "378 000 Kč",
+    "details": "2022  ·  117 044 km  ·  Nafta  ·  Automatická  ·  Olomouc  ·  ZdeKupAuto Olomouc",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211184109",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/nOdL4BtPEyBuWMSCREH5840i/c4b2.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "385 000 Kč",
+    "found_at": "19.11.2026 02:11",
+    "price_drop_at": "19.11.2026 02:11"
+  },
+  {
+    "id": "210840788",
+    "title": "Seat Leon 2.0TDI 110kW DSG FR ST,1.Maj",
+    "price": "375 000 Kč",
+    "details": "2022  ·  121 127 km  ·  Nafta  ·  Automatická  ·  Olomouc  ·  ZdeKupAuto Olomouc",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/210840788",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_C/nEwftpXyZJX4umEPHVIzaS/623d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "378 000 Kč",
+    "found_at": "19.11.2026 02:11",
+    "price_drop_at": "19.11.2026 02:11"
+  },
+  {
+    "id": "211141290",
+    "title": "Volkswagen Golf VW Golf Variant Rline 2.0 TDI",
+    "price": "279 000 Kč",
+    "details": "2020  ·  208 000 km  ·  Nafta  ·  Automatická  ·  Prachatice  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211141290",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyBuWMS43H1ToaV/3a5d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "299 000 Kč",
+    "found_at": "19.11.2026 02:11",
+    "price_drop_at": "19.11.2026 02:11"
+  },
+  {
+    "id": "211084977",
+    "title": "Škoda Fabia 1.5 tsi 110 kW/DSG/DPH",
+    "price": "389 900 Kč",
+    "details": "2022  ·  62 000 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  CATCHY CARS",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/fabia/211084977",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/k0OqwCKRDgcHsCwwHvq4Sh/f108.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "394 900 Kč",
+    "found_at": "19.11.2026 02:11",
+    "price_drop_at": "19.11.2026 02:11"
+  },
+  {
+    "id": "211350876",
+    "title": "Škoda Scala 1,5 TSI DSG Style Bi-LED",
+    "price": "349 000 Kč",
+    "details": "2024  ·  141 677 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  CARS & CARE Business Lease",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211350876",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkB87eWDL9wIQiepw/c8b0.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "359 000 Kč",
+    "found_at": "19.11.2026 02:11",
+    "price_drop_at": "19.11.2026 02:11"
+  },
+  {
+    "id": "210840722",
+    "title": "Volkswagen Golf 2.0 TDI 110KW DSG",
+    "price": "349 000 Kč",
+    "details": "2023  ·  164 187 km  ·  Nafta  ·  Automatická  ·  Uherské Hradiště  ·  carvee, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210840722",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_C/kOyy3Gv43yHy5jakHVIfGO/1a70.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "358 000 Kč",
+    "found_at": "19.11.2026 02:11",
+    "price_drop_at": "19.11.2026 02:11"
+  },
+  {
+    "id": "209269683",
+    "title": "BMW Řada 1 118D, 2.0D, 110KW",
+    "price": "249 999 Kč",
+    "details": "2017  ·  88 899 km  ·  Nafta  ·  Automatická  ·  Hodonín  ·  Autopark Kyjov",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/209269683",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oe_A/kBlLbSfl8BOkUvVWEjP6Kr/3033.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "270 000 Kč",
+    "found_at": "19.11.2026 02:11",
+    "price_drop_at": "19.11.2026 02:11"
   }
 ]
