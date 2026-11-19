@@ -2,13 +2,13 @@
   {
     "id": "211413879",
     "title": "Škoda Fabia 1:4TDI - 66KW COMBI DSG",
-    "price": "139 000 Kč",
+    "price": "129 000 Kč",
     "details": "2016  ·  202 000 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
     "link": "https://www.sauto.cz/osobni/detail/skoda/fabia/211413879",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDrngKBFQ4ITaclI/fc4b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "old_price": "169 000 Kč",
     "found_at": "19.11.2026 09:37",
-    "price_drop_at": "19.11.2026 09:37"
+    "price_drop_at": "19.11.2026 16:41"
   },
   {
     "id": "211362018",
@@ -43,12 +43,201 @@
   {
     "id": "211210866",
     "title": "Mercedes-Benz CLA",
-    "price": "243 606 Kč",
+    "price": "219 581 Kč",
     "details": "2017  ·  196 671 km  ·  Benzín  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
     "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211210866",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFnIwlB1zH8TvuD/df9d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
     "old_price": "244 056 Kč",
     "found_at": "19.11.2026 09:37",
-    "price_drop_at": "19.11.2026 09:37"
+    "price_drop_at": "19.11.2026 16:41"
+  },
+  {
+    "id": "211477200",
+    "title": "Toyota Yaris 1,5 1.5,Hybrid,automat,kamera",
+    "price": "237 000 Kč",
+    "details": "2016  ·  79 021 km  ·  Hybridní  ·  Automatická  ·  Příbram  ·  Autopark Milín",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/yaris/211477200",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkDyuEmDhJgIZ2cgW/8a0c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "19.11.2026 16:41"
+  },
+  {
+    "id": "210080996",
+    "title": "Volkswagen Golf 2.0 TDi 4x4,Alltrack,DSG",
+    "price": "400 000 Kč",
+    "details": "2022  ·  181 890 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210080996",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/nOdL4BtPEyBFnmYXFHuY1e7/ac5b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "19.11.2026 16:41"
+  },
+  {
+    "id": "211475316",
+    "title": "Seat Leon 1,5TSi 110KW DSG FR ST NAVI",
+    "price": "389 000 Kč",
+    "details": "2020  ·  144 680 km  ·  Benzín  ·  Automatická  ·  Frýdek-Místek  ·  Autobazar Libor Vyvial",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211475316",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkB87eWBBvvIZx4rU/cf1f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "19.11.2026 16:41"
+  },
+  {
+    "id": "211474557",
+    "title": "Infiniti Q30 QX 30 2,2d 4Matic SPORT",
+    "price": "343 000 Kč",
+    "details": "2018  ·  154 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Ostrava-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/infiniti/q30/211474557",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TDyA6jCuSXIZvxFG/071c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "19.11.2026 16:41"
+  },
+  {
+    "id": "211381755",
+    "title": "Mercedes-Benz Třídy A A 180 | 1.6 Benzín Servis ČR",
+    "price": "288 000 Kč",
+    "details": "2016  ·  162 000 km  ·  Benzín  ·  Automatická  ·  Kladno  ·  Lemon Car Showroom",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211381755",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdk3RI9Drx5ISWvNv/e6e6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "289 000 Kč",
+    "found_at": "19.11.2026 16:41",
+    "price_drop_at": "19.11.2026 16:41"
+  },
+  {
+    "id": "211422681",
+    "title": "Volkswagen Golf 7",
+    "price": "370 000 Kč",
+    "details": "2016  ·  187 000 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Zlín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211422681",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDi9WNFrtvIUrB1N/90db.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "380 000 Kč",
+    "found_at": "19.11.2026 16:41",
+    "price_drop_at": "19.11.2026 16:41"
+  },
+  {
+    "id": "211316421",
+    "title": "Mercedes-Benz Třídy A 1,5 CDi AT,Kamera Navi Kůže",
+    "price": "375 000 Kč",
+    "details": "2019  ·  133 000 km  ·  Nafta  ·  Automatická  ·  Zlín  ·  AUTOBAZAR CALIFORNIA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211316421",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/nPQ64TBsMvBQugUHroIIxqvy/895c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "385 000 Kč",
+    "found_at": "19.11.2026 16:41",
+    "price_drop_at": "19.11.2026 16:41"
+  },
+  {
+    "id": "209923122",
+    "title": "Volkswagen Golf Life 2.0 TDi 85kw 7DSG Variant",
+    "price": "259 000 Kč",
+    "details": "2022  ·  208 167 km  ·  Nafta  ·  Automatická  ·  České Budějovice  ·  Porsche České Budějovice",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/209923122",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p8_B/nPVpfd5QLLDqk1BDIkFzoLA3/32a1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "299 000 Kč",
+    "found_at": "19.11.2026 16:41",
+    "price_drop_at": "19.11.2026 16:41"
+  },
+  {
+    "id": "211246776",
+    "title": "Volkswagen Golf R-Line 1.5 110kw DSG PANO",
+    "price": "339 999 Kč",
+    "details": "2017  ·  137 400 km  ·  Benzín  ·  Automatická  ·  Kladno  ·  Verion Auto Group",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211246776",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TBjrrQBii6IYMlIn/a687.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "369 999 Kč",
+    "found_at": "19.11.2026 16:41",
+    "price_drop_at": "19.11.2026 16:41"
+  },
+  {
+    "id": "211104870",
+    "title": "Volkswagen Golf 2.0 TDI 110kW DSG HIGHLINE, ČR",
+    "price": "339 900 Kč",
+    "details": "2019  ·  153 513 km  ·  Nafta  ·  Automatická  ·  Přerov  ·  NEXTAUTO",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211104870",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyDrQHrFRoHxs4Hs/3a4c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "349 900 Kč",
+    "found_at": "19.11.2026 16:41",
+    "price_drop_at": "19.11.2026 16:41"
+  },
+  {
+    "id": "211084632",
+    "title": "Peugeot 2008 1.5HDI,ČR,AT,navi,LED",
+    "price": "339 000 Kč",
+    "details": "2020  ·  81 004 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/peugeot/2008/211084632",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_A/nOdL4BtPEyvOo9N4rHwQGJ9/2a26.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "350 000 Kč",
+    "found_at": "19.11.2026 16:41",
+    "price_drop_at": "19.11.2026 16:41"
+  },
+  {
+    "id": "211009830",
+    "title": "Mercedes-Benz CLA 1,6 180 SB ČR 1. maj",
+    "price": "266 200 Kč",
+    "details": "2016  ·  160 921 km  ·  Benzín  ·  Automatická  ·  Hradec Králové  ·  Fa RENE, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211009830",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_C/kPVqmweP7JD9RxnnGHnSXL8/e093.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "298 999 Kč",
+    "found_at": "19.11.2026 16:41",
+    "price_drop_at": "19.11.2026 16:41"
+  },
+  {
+    "id": "210058286",
+    "title": "Seat Leon 2.0 TDi,Xcellence,DSG,LED",
+    "price": "340 000 Kč",
+    "details": "2020  ·  91 006 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/210058286",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_A/kQMlcCt5zmEA35RDQvGzMrHY/8239.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "355 000 Kč",
+    "found_at": "19.11.2026 16:41",
+    "price_drop_at": "19.11.2026 16:41"
+  },
+  {
+    "id": "208453586",
+    "title": "Mercedes-Benz CLA 200 CDi A/T,XENON,NAVI,KAMERA",
+    "price": "274 999 Kč",
+    "details": "2016  ·  208 411 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  J.H. automobily",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/208453586",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_oZ_A/nsLxLojICbyt3GRbDLykal/a60d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient"
+    ],
+    "old_price": "279 900 Kč",
+    "found_at": "19.11.2026 16:41",
+    "price_drop_at": "19.11.2026 16:41"
   }
 ]

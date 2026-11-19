@@ -214,7 +214,7 @@
    "heated"
   ],
   "last_seen": "2026-11-19",
-  "price": 728000
+  "price": 698000
  },
  "208931433": {
   "eq": [
@@ -1053,7 +1053,7 @@
    "ambient",
    "heated"
   ],
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 545000
  },
  "210521831": {
@@ -2658,7 +2658,7 @@
    "heated"
   ],
   "last_seen": "2026-11-19",
-  "price": 658000
+  "price": 648000
  },
  "211263057": {
   "eq": [
@@ -2969,7 +2969,7 @@
    "carplay",
    "heated"
   ],
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 599000
  },
  "211331550": {
@@ -3627,7 +3627,7 @@
    "heated"
   ],
   "last_seen": "2026-11-19",
-  "price": 549900
+  "price": 539900
  },
  "211446051": {
   "eq": [
@@ -3649,7 +3649,7 @@
    "heated"
   ],
   "last_seen": "2026-11-19",
-  "price": 718000
+  "price": 698000
  },
  "211455639": {
   "last_seen": "2026-11-19",
@@ -3713,8 +3713,33 @@
   "last_seen": "2026-11-19",
   "price": 440000
  },
+ "211474770": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
+  "last_seen": "2026-11-19",
+  "price": 649900
+ },
+ "211475256": {
+  "eq": [
+   "carplay",
+   "ambient",
+   "heated"
+  ],
+  "last_seen": "2026-11-19",
+  "price": 599900
+ },
+ "211476933": {
+  "eq": [
+   "ambient"
+  ],
+  "last_seen": "2026-11-19",
+  "price": 650000
+ },
  "bmwojete:133049": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 599000
  },
  "bmwojete:145959": {
@@ -3722,7 +3747,7 @@
   "price": 679000
  },
  "bmwojete:149847": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 714000
  },
  "bmwojete:150843": {
@@ -3730,19 +3755,19 @@
   "price": 729000
  },
  "bmwojete:191989": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 629000
  },
  "bmwojete:199979": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 649000
  },
  "bmwojete:200876": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 599000
  },
  "bmwojete:201113": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 559000
  },
  "bmwojete:205438": {
@@ -3750,19 +3775,19 @@
   "price": 599999
  },
  "bmwojete:207296": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 698000
  },
  "bmwojete:208867": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 549000
  },
  "bmwojete:213991": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 679000
  },
  "bmwojete:214003": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 649000
  },
  "bmwojete:222804": {
@@ -3770,39 +3795,39 @@
   "price": 599999
  },
  "bmwojete:229953": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 649000
  },
  "bmwojete:230490": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 729000
  },
  "bmwojete:231248": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 698000
  },
  "bmwojete:232884": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 729000
  },
  "bmwojete:232888": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 729000
  },
  "bmwojete:232891": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 698000
  },
  "bmwojete:232893": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 698000
  },
  "bmwojete:232898": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 698000
  },
  "bmwojete:238496": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 629999
  },
  "bmwojete:240260": {
@@ -3810,7 +3835,7 @@
   "price": 659000
  },
  "bmwojete:240278": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 748000
  },
  "bmwojete:243338": {
@@ -3818,51 +3843,51 @@
   "price": 529000
  },
  "bmwojete:252473": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 699000
  },
  "bmwojete:253870": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 749000
  },
  "bmwojete:255337": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 748000
  },
  "bmwojete:257485": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 679000
  },
  "bmwojete:258796": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 729000
  },
  "bmwojete:262255": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 499800
  },
  "bmwojete:263808": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 629999
  },
  "bmwojete:267096": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 719000
  },
  "bmwojete:270201": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 698000
  },
  "bmwojete:270350": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 519000
  },
  "bmwojete:273199": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 549000
  },
  "bmwojete:275627": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 569000
  },
  "bmwojete:280842": {
@@ -3870,19 +3895,19 @@
   "price": 449000
  },
  "bmwojete:282134": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 729000
  },
  "bmwojete:282593": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 749000
  },
  "bmwojete:283820": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 699000
  },
  "bmwojete:284523": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 589000
  },
  "bmwojete:285404": {
@@ -3890,11 +3915,11 @@
   "price": 699000
  },
  "bmwojete:285688": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 478000
  },
  "bmwojete:285712": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 599000
  },
  "bmwojete:286442": {
@@ -3902,15 +3927,15 @@
   "price": 649000
  },
  "bmwojete:286980": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 589000
  },
  "bmwojete:287180": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 699000
  },
  "bmwojete:287313": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 589000
  },
  "bmwojete:287606": {
@@ -3922,11 +3947,11 @@
   "price": 599999
  },
  "bmwojete:287999": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 699000
  },
  "bmwojete:288797": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 738000
  },
  "bmwojete:288834": {
@@ -3942,12 +3967,16 @@
   "price": 499000
  },
  "bmwojete:289732": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 499000
  },
  "bmwojete:290148": {
-  "last_seen": "2026-11-18",
+  "last_seen": "2026-11-19",
   "price": 569000
+ },
+ "bmwojete:292202": {
+  "last_seen": "2026-11-19",
+  "price": 429000
  },
  "drivalia:591515": {
   "last_seen": "2026-10-22",
