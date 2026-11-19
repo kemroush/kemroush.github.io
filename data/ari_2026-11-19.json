@@ -1,0 +1,54 @@
+[
+  {
+    "id": "211413879",
+    "title": "Škoda Fabia 1:4TDI - 66KW COMBI DSG",
+    "price": "139 000 Kč",
+    "details": "2016  ·  202 000 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/fabia/211413879",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDrngKBFQ4ITaclI/fc4b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "169 000 Kč",
+    "found_at": "19.11.2026 09:37",
+    "price_drop_at": "19.11.2026 09:37"
+  },
+  {
+    "id": "211362018",
+    "title": "Škoda Scala 1.5 TSi,ČR,Style,DSG",
+    "price": "372 500 Kč",
+    "details": "2020  ·  74 310 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211362018",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TDhsIbFUV5IO58g0/8e74.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "379 000 Kč",
+    "found_at": "19.11.2026 09:37",
+    "price_drop_at": "19.11.2026 09:37"
+  },
+  {
+    "id": "211274172",
+    "title": "Volkswagen Golf 2.0TDI,DSG,110kw,ALLSTAR",
+    "price": "269 000 Kč",
+    "details": "2017  ·  156 789 km  ·  Nafta  ·  Automatická  ·  Opava  ·  AUTORT s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211274172",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kcKfrMAkFDbqUhBgjOIEvVPp/0a19.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "279 000 Kč",
+    "found_at": "19.11.2026 09:37",
+    "price_drop_at": "19.11.2026 09:37"
+  },
+  {
+    "id": "211210866",
+    "title": "Mercedes-Benz CLA",
+    "price": "243 606 Kč",
+    "details": "2017  ·  196 671 km  ·  Benzín  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211210866",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFnIwlB1zH8TvuD/df9d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "244 056 Kč",
+    "found_at": "19.11.2026 09:37",
+    "price_drop_at": "19.11.2026 09:37"
+  }
+]
