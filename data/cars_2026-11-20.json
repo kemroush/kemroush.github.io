@@ -1,0 +1,190 @@
+[
+  {
+    "id": "211484568",
+    "title": "Mercedes-Benz Třídy A A180/100kW Style AT",
+    "price": "419 900 Kč",
+    "details": "2020  ·  49 942 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Lenner Motors s.r.o. - prodej zánovních vozů",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211484568",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdk3whEFA6aIadszN/cc42.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "20.11.2026 16:24"
+  },
+  {
+    "id": "211482405",
+    "title": "Mini Cooper SE 135 kW HUD Panorama",
+    "price": "459 900 Kč",
+    "details": "2021  ·  67 670 km  ·  Elektro  ·  Automatická  ·  Hlavní město Praha  ·  EnergyCars - elektromobily - prodej, výkup a dovoz",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211482405",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkbxLFBaYPIaYotq/40fb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "20.11.2026 16:24"
+  },
+  {
+    "id": "210605042",
+    "title": "BMW Řada 3 320d xDrive Tour.,DPH,záruka!!",
+    "price": "726 000 Kč",
+    "details": "2022  ·  67 800 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-3/210605042",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/nO2CysqjGrScbvKKeG5V6DG/3884.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "20.11.2026 16:24"
+  },
+  {
+    "id": "211458675",
+    "title": "Mini Clubman Cooper",
+    "price": "429 000 Kč",
+    "details": "2022  ·  70 000 km  ·  Benzín  ·  Automatická  ·  Ostrava-město  ·  CarTec Ostrava s.r.o., BMW Premium Selection",
+    "link": "https://www.sauto.cz/osobni/detail/mini/clubman/211458675",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkBcInfIVKSIaeDce/ea82.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "20.11.2026 16:24"
+  },
+  {
+    "id": "bmwojete:292451",
+    "title": "BMW 120",
+    "price": "749 000 Kč",
+    "details": "2024  ·  6 726 km  ·  Benzín  ·  Invelt s.r.o., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/292451/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/292451?2026-11-20T12:43:50+00:00",
+    "found_at": "20.11.2026 16:24"
+  },
+  {
+    "id": "210802244",
+    "title": "Mercedes-Benz CLA d Shooting Brake",
+    "price": "639 000 Kč",
+    "details": "2022  ·  67 809 km  ·  Nafta  ·  Automatická  ·  Praha-východ  ·  Hoffmann & Žižák",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/210802244",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/nO573v8MsN3e2PCzLHa9xka/c9d4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "649 000 Kč",
+    "found_at": "20.11.2026 16:24",
+    "price_drop_at": "20.11.2026 16:24"
+  },
+  {
+    "id": "211472889",
+    "title": "Mini Clubman F54 JCW All4 170kw",
+    "price": "420 000 Kč",
+    "details": "2017  ·  87 000 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Praha-východ  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/clubman/211472889",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkBcInfH8OrIZbyQs/3059.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "440 000 Kč",
+    "found_at": "20.11.2026 16:24",
+    "price_drop_at": "20.11.2026 16:24"
+  },
+  {
+    "id": "211004982",
+    "title": "Mercedes-Benz GLA 200d,1.MAJ,ČR,DPH,Kamera",
+    "price": "649 000 Kč",
+    "details": "2023  ·  36 142 km  ·  Nafta  ·  Automatická  ·  Praha-západ  ·  Auta z Firem",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/211004982",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_C/kPVqmweP7JCNF9HKDCHmuq6k/3822.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "699 000 Kč",
+    "found_at": "20.11.2026 16:24",
+    "price_drop_at": "20.11.2026 16:24"
+  },
+  {
+    "id": "211429182",
+    "title": "Mini Countryman MINI Countryman SD ALL4 JCW",
+    "price": "500 000 Kč",
+    "details": "2018  ·  58 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Frýdek-Místek  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/211429182",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkCJCefFtrDIUn059/caf4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "530 000 Kč",
+    "found_at": "20.11.2026 16:24",
+    "price_drop_at": "20.11.2026 16:24"
+  },
+  {
+    "id": "211414782",
+    "title": "Mercedes-Benz Třídy B 1.3T B200,ČR,AT,navi,LED",
+    "price": "440 000 Kč",
+    "details": "2021  ·  86 745 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-b/211414782",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TDrSmqGQtIVzd6W/c870.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "450 000 Kč",
+    "found_at": "20.11.2026 16:24",
+    "price_drop_at": "20.11.2026 16:24"
+  },
+  {
+    "id": "211259838",
+    "title": "Mercedes-Benz GLA 200d",
+    "price": "619 000 Kč",
+    "details": "2020  ·  27 100 km  ·  Nafta  ·  Automatická  ·  Plzeň-město  ·  Porsche Plzeň - Borská pole",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/211259838",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLChOIjknYIDly6l/828a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "629 000 Kč",
+    "found_at": "20.11.2026 16:24",
+    "price_drop_at": "20.11.2026 16:24"
+  },
+  {
+    "id": "211062588",
+    "title": "Mercedes-Benz Třídy A 1.3 CGi A 180,ČR,AT,LED",
+    "price": "570 000 Kč",
+    "details": "2022  ·  29 411 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211062588",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyD4lWfC4GHzfSns/8081.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "585 000 Kč",
+    "found_at": "20.11.2026 16:24",
+    "price_drop_at": "20.11.2026 16:24"
+  },
+  {
+    "id": "208877700",
+    "title": "Mercedes-Benz Třidy T EQT 200",
+    "price": "664 290 Kč",
+    "details": "2025  ·  16 478 km  ·  Elektro  ·  Automatická  ·  Ostrava-město  ·  CENTRUM Moravia Sever, spol. s r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-t/208877700",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_ob_B/kBj94XhVwDuD8OBhqD4VY5O/0455.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "688 490 Kč",
+    "found_at": "20.11.2026 16:24",
+    "price_drop_at": "20.11.2026 16:24"
+  },
+  {
+    "id": "mns:24589",
+    "title": "Mercedes-Benz CLA 200 d Shooting Brake",
+    "price": "639 000 Kč",
+    "details": "CLA 200 d Shooting Brake  ·  2022  ·  67 809 km  ·  Nafta  ·  Hoffmann a Žižák spol. s r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/24589",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/5956f7d4-85f8-4cfa-806f-662e273a3a8d.jpeg",
+    "old_price": "649 000 Kč",
+    "found_at": "20.11.2026 16:24",
+    "price_drop_at": "20.11.2026 16:24"
+  }
+]
