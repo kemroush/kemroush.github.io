@@ -141,5 +141,68 @@
     "old_price": "728 000 Kč",
     "found_at": "19.11.2026 16:41",
     "price_drop_at": "19.11.2026 16:41"
+  },
+  {
+    "id": "211479222",
+    "title": "Mercedes-Benz Třídy A 1.3 DCT A180,1.maj,ČR,AT",
+    "price": "685 000 Kč",
+    "details": "2024  ·  14 688 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211479222",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TDMnNbCWK6IZ7pEu/78aa.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "20.11.2026 02:15"
+  },
+  {
+    "id": "211476075",
+    "title": "Mercedes-Benz GLA",
+    "price": "600 000 Kč",
+    "details": "2021  ·  68 000 km  ·  Nafta  ·  Automatická  ·  Kladno  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/211476075",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TDrngKEcIdIZ1qfl/ec8a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "found_at": "20.11.2026 02:15"
+  },
+  {
+    "id": "210129638",
+    "title": "Mercedes-Benz GLB GLB 180d",
+    "price": "749 000 Kč",
+    "details": "2024  ·  24 932 km  ·  Nafta  ·  Automatická  ·  Karlovy Vary  ·  S. & W. Automobily, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/210129638",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p9_C/nCTUX1iX5CoHumKwwGJ9qmU/6771.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "found_at": "20.11.2026 02:15"
+  },
+  {
+    "id": "mns:23387",
+    "title": "Mercedes-Benz GLB 180d",
+    "price": "749 000 Kč",
+    "details": "GLB 180d  ·  2024  ·  24 932 km  ·  Nafta  ·  S. & W. Automobily s.r.o.",
+    "link": "https://www.mercedesnasklade.cz/detail/23387",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/d8d8ccc8-8268-4aab-b976-568160ce7d83.png",
+    "found_at": "20.11.2026 02:15"
+  },
+  {
+    "id": "211138029",
+    "title": "Mercedes-Benz GLB 2,0 250 4Matic AMG Line",
+    "price": "719 999 Kč",
+    "details": "2020  ·  99 950 km  ·  Benzín  ·  4×4  ·  Automatická  ·  České Budějovice  ·  AUTOCENTRUM DAN a SYN",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/211138029",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEeD8XKqVe0IJ9awE/e456.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "729 999 Kč",
+    "found_at": "20.11.2026 02:15",
+    "price_drop_at": "20.11.2026 02:15"
   }
 ]
