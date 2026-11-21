@@ -255,5 +255,23 @@
     "old_price": "260 000 Kč",
     "found_at": "20.11.2026 16:24",
     "price_drop_at": "20.11.2026 16:24"
+  },
+  {
+    "id": "211486140",
+    "title": "Hyundai i20 I20 3. gen 1.0 T-GDI/74kW Smar",
+    "price": "319 000 Kč",
+    "details": "2022  ·  34 544 km  ·  Benzín  ·  Automatická  ·  Jindřichův Hradec  ·  AR SERVIS s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/hyundai/i20/211486140",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkDyuEmEQRCIair7k/58cf.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "21.11.2026 01:47"
+  },
+  {
+    "id": "211486575",
+    "title": "Mercedes-Benz Třídy A 1.5 180 CDI",
+    "price": "250 000 Kč",
+    "details": "2015  ·  172 251 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211486575",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TBjrrQCtwzIamUYm/8a61.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "21.11.2026 01:47"
   }
 ]
