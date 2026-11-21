@@ -72,5 +72,49 @@
     "old_price": "719 000 Kč",
     "found_at": "21.11.2026 15:37",
     "price_drop_at": "21.11.2026 15:37"
+  },
+  {
+    "id": "211488840",
+    "title": "Mercedes-Benz CLA 250e EQ Power 8G-DCT",
+    "price": "649 900 Kč",
+    "details": "2022  ·  57 346 km  ·  Hybridní  ·  Automatická  ·  Ostrava-město  ·  Repmal Car s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211488840",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkCJCefJAiTIbIxsN/6696.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "21.11.2026 21:53"
+  },
+  {
+    "id": "210620870",
+    "title": "BMW i3",
+    "price": "579 000 Kč",
+    "details": "2022  ·  71 000 km  ·  Elektro  ·  Automatická  ·  Trutnov  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/i3/210620870",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/nO2CysqjGrCP7qOMKmG6vfP9/b80e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "580 000 Kč",
+    "found_at": "21.11.2026 21:53",
+    "price_drop_at": "21.11.2026 21:53"
+  },
+  {
+    "id": "211444776",
+    "title": "Mini Countryman 1.5 100kW Untamed HEAD-UP ČR",
+    "price": "529 900 Kč",
+    "details": "2022  ·  64 200 km  ·  Benzín  ·  Automatická  ·  Olomouc  ·  NejlepšíCenyAut.cz Tomáš Kadula",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/211444776",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkBcInfGB8CIV08sH/2981.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "539 900 Kč",
+    "found_at": "21.11.2026 21:53",
+    "price_drop_at": "21.11.2026 21:53"
   }
 ]

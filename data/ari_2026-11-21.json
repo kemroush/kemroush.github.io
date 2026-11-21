@@ -27,5 +27,27 @@
     "old_price": "357 000 Kč",
     "found_at": "21.11.2026 15:37",
     "price_drop_at": "21.11.2026 15:37"
+  },
+  {
+    "id": "211489383",
+    "title": "Volkswagen Golf 1.5TSi DSG R-LINE,VIRTUAL",
+    "price": "285 000 Kč",
+    "details": "2019  ·  175 500 km  ·  Benzín  ·  Automatická  ·  Teplice  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211489383",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TBVyhhEvs7IbNCgT/5196.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "found_at": "21.11.2026 21:53"
+  },
+  {
+    "id": "211489113",
+    "title": "Volkswagen Golf 2.0 TDi",
+    "price": "220 000 Kč",
+    "details": "2018  ·  229 802 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211489113",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkbxLFBxE3IbNPoW/3b86.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "21.11.2026 21:53"
   }
 ]
