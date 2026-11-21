@@ -1,0 +1,76 @@
+[
+  {
+    "id": "210805952",
+    "title": "Mercedes-Benz Třídy A A220d 140 kW, AMG Adv+",
+    "price": "720 000 Kč",
+    "details": "2024  ·  49 835 km  ·  Nafta  ·  Automatická  ·  Plzeň-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/210805952",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/nO2CysqjGrBgjUXBcnjHRJZsh/6526.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "21.11.2026 15:37"
+  },
+  {
+    "id": "211486275",
+    "title": "Mercedes-Benz Třidy T 180 AUTOMAT TAŽNÉ NAVI KAMERA",
+    "price": "568 000 Kč",
+    "details": "2024  ·  26 312 km  ·  Benzín  ·  Automatická  ·  Znojmo  ·  Autocentrum Cars Trade M&M",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-t/211486275",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkBcInfIXWZIajR0V/81f3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "21.11.2026 15:37"
+  },
+  {
+    "id": "211042620",
+    "title": "BMW Řada 2 218d | automat | tažné | stk",
+    "price": "490 000 Kč",
+    "details": "2023  ·  75 000 km  ·  Nafta  ·  Automatická  ·  Kladno  ·  Lemon Car Showroom",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211042620",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdk3RI9DsGsISYDC4/c1ed.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient"
+    ],
+    "old_price": "550 000 Kč",
+    "found_at": "21.11.2026 15:37",
+    "price_drop_at": "21.11.2026 15:37"
+  },
+  {
+    "id": "211321071",
+    "title": "Mini Cooper Mini Cooper John Works JCW",
+    "price": "449 900 Kč",
+    "details": "2016  ·  52 000 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mini/cooper/211321071",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPyfG4fPEeD7yCdEoGII8Hci/be42.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "469 900 Kč",
+    "found_at": "21.11.2026 15:37",
+    "price_drop_at": "21.11.2026 15:37"
+  },
+  {
+    "id": "211343340",
+    "title": "Mercedes-Benz GLB MB GLB 200D, 4MATIC, 7MÍST.",
+    "price": "699 000 Kč",
+    "details": "2023  ·  63 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Karviná  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/glb/211343340",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kPyfG4fPEeCdpo1BY4EILt51y/3ce7.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "719 000 Kč",
+    "found_at": "21.11.2026 15:37",
+    "price_drop_at": "21.11.2026 15:37"
+  }
+]

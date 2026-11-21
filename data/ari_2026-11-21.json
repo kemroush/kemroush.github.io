@@ -1,0 +1,31 @@
+[
+  {
+    "id": "211487748",
+    "title": "Volkswagen Golf HIGHLINE, 2.0TDI 110kw DSG DYN",
+    "price": "289 900 Kč",
+    "details": "2018  ·  208 600 km  ·  Nafta  ·  Automatická  ·  Plzeň-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211487748",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TDrngKEuWnIa7j1T/2c5c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "21.11.2026 15:37"
+  },
+  {
+    "id": "211346385",
+    "title": "Škoda Scala 1.5 TSi,Style,DSG,LED",
+    "price": "354 200 Kč",
+    "details": "2019  ·  96 628 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211346385",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDhsIbHhSXIQDjXf/5822.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "357 000 Kč",
+    "found_at": "21.11.2026 15:37",
+    "price_drop_at": "21.11.2026 15:37"
+  }
+]
