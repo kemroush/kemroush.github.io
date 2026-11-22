@@ -2,7 +2,7 @@
   {
     "id": "211490439",
     "title": "Škoda Scala 1.5 TSi, autom, zár., panorama",
-    "price": "395 000 Kč",
+    "price": "390 000 Kč",
     "details": "2022  ·  79 500 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
     "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211490439",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdk3whEGdc2Iblh4b/646d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
@@ -11,7 +11,9 @@
       "ambient",
       "heated"
     ],
-    "found_at": "22.11.2026 15:31"
+    "found_at": "22.11.2026 15:31",
+    "old_price": "395 000 Kč",
+    "price_drop_at": "22.11.2026 22:01"
   },
   {
     "id": "210932418",
@@ -89,5 +91,55 @@
     "old_price": "359 990 Kč",
     "found_at": "22.11.2026 15:31",
     "price_drop_at": "22.11.2026 15:31"
+  },
+  {
+    "id": "211491777",
+    "title": "Kia Stonic Exclusive 1.0 GDI 73 kW",
+    "price": "374 990 Kč",
+    "details": "2023  ·  58 516 km  ·  Benzín  ·  Automatická  ·  Nymburk  ·  Louda Auto+  ( 6 poboček v 6 krajích )",
+    "link": "https://www.sauto.cz/osobni/detail/kia/stonic/211491777",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TCM3uZDengIbuRiR/a4d3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "22.11.2026 22:01"
+  },
+  {
+    "id": "211422681",
+    "title": "Volkswagen Golf 7 r",
+    "price": "350 000 Kč",
+    "details": "2016  ·  187 000 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Zlín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211422681",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TDMnNbDZakIbs8Kr/c626.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "370 000 Kč",
+    "found_at": "22.11.2026 22:01",
+    "price_drop_at": "22.11.2026 22:01"
+  },
+  {
+    "id": "211214325",
+    "title": "Volkswagen Golf 2.0 TDI/ Panorama/ Tažné/ DE",
+    "price": "219 000 Kč",
+    "details": "2014  ·  239 000 km  ·  Nafta  ·  Automatická  ·  Břeclav  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211214325",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLCNT9cVLdH9D64m/8dd6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "238 000 Kč",
+    "found_at": "22.11.2026 22:01",
+    "price_drop_at": "22.11.2026 22:01"
+  },
+  {
+    "id": "211454076",
+    "title": "Škoda Scala 1.6 TDI, 85KW TOP, PANORAMA",
+    "price": "319 990 Kč",
+    "details": "2020  ·  151 237 km  ·  Nafta  ·  Automatická  ·  Benešov  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211454076",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TCl5yxh2aIXC8n6/fd43.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "339 000 Kč",
+    "found_at": "22.11.2026 22:01",
+    "price_drop_at": "22.11.2026 22:01"
   }
 ]
