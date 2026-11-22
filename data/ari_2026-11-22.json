@@ -1,0 +1,93 @@
+[
+  {
+    "id": "211490439",
+    "title": "Škoda Scala 1.5 TSi, autom, zár., panorama",
+    "price": "395 000 Kč",
+    "details": "2022  ·  79 500 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211490439",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdk3whEGdc2Iblh4b/646d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "22.11.2026 15:31"
+  },
+  {
+    "id": "210932418",
+    "title": "Volkswagen Golf 1.6TDi,LED,DSG",
+    "price": "379 000 Kč",
+    "details": "2022  ·  103 324 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210932418",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/kPVqmweP7JB25pTBJLHfDQDx/2edc.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "389 000 Kč",
+    "found_at": "22.11.2026 15:31",
+    "price_drop_at": "22.11.2026 15:31"
+  },
+  {
+    "id": "210936198",
+    "title": "BMW Řada 1 120i 135 kW Sport Line",
+    "price": "279 900 Kč",
+    "details": "2018  ·  177 800 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Direct auto I Zánovní a ojetá auta",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-1/210936198",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/nPYADvcUkmBcG9PB8AHfNH57/3e85.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "299 900 Kč",
+    "found_at": "22.11.2026 15:31",
+    "price_drop_at": "22.11.2026 15:31"
+  },
+  {
+    "id": "211195041",
+    "title": "Volkswagen Golf 1.5 TSI,DSG,STK6/28",
+    "price": "259 400 Kč",
+    "details": "2019  ·  219 042 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211195041",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFDbqUhQZeH7QzQw/51fe.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "265 000 Kč",
+    "found_at": "22.11.2026 15:31",
+    "price_drop_at": "22.11.2026 15:31"
+  },
+  {
+    "id": "211187583",
+    "title": "Mercedes-Benz CLA 1.6 CGi CLA 180,ČR,AT",
+    "price": "330 200 Kč",
+    "details": "2016  ·  103 400 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211187583",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_B/kPw320bnC5DlJEDDwCIIa72x/8826.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "339 000 Kč",
+    "found_at": "22.11.2026 15:31",
+    "price_drop_at": "22.11.2026 15:31"
+  },
+  {
+    "id": "210615966",
+    "title": "Volkswagen Polo R-LINE/1.5TSI/DSG/VIRTUAL",
+    "price": "349 990 Kč",
+    "details": "2019  ·  121 051 km  ·  Benzín  ·  Automatická  ·  Plzeň-město  ·  AutoBezObalu - prověřené vozy",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/polo/210615966",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qC_B/nO2CysqjGrCP7qOL1aG6hms3/391a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "359 990 Kč",
+    "found_at": "22.11.2026 15:31",
+    "price_drop_at": "22.11.2026 15:31"
+  }
+]
