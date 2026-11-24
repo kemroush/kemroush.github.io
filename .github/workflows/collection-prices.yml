@@ -1,0 +1,62 @@
+name: Collection Prices
+
+on:
+  schedule:
+    # Jednou denně v 5:43 CET (4:43 UTC); v létě o hodinu později.
+    # tcgcsv aktualizuje kolem 20:00 UTC, ráno jsou tedy vždy čerstvé ceny.
+    # Schválně ne v celou hodinu – běhy v :00 GitHub často zpožďuje.
+    - cron: '43 4 * * *'
+  # Uložení sbírky ze stránky (commit přes token) → hned dohledat ceny nových kusů
+  push:
+    branches: [main]
+    paths: ['sbirka/collection.json']
+  workflow_dispatch:  # ručně / tlačítko „Obnovit ceny“ na stránce
+    inputs:
+      dry_run:
+        description: 'Jen nanečisto – stáhnout a vypsat, nic neukládat ani necommitovat'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collection-prices
+  cancel-in-progress: false
+
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TZ: Europe/Prague
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      # Jen standardní knihovna – nic se neinstaluje.
+      - name: Fetch prices
+        env:
+          DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+          BRICKLINK_CONSUMER_KEY: ${{ secrets.BRICKLINK_CONSUMER_KEY }}
+          BRICKLINK_CONSUMER_SECRET: ${{ secrets.BRICKLINK_CONSUMER_SECRET }}
+          BRICKLINK_TOKEN: ${{ secrets.BRICKLINK_TOKEN }}
+          BRICKLINK_TOKEN_SECRET: ${{ secrets.BRICKLINK_TOKEN_SECRET }}
+        run: python3 collection_prices.py
+
+      - name: Commit results
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "Collection Prices"
+          git config user.email "action@github.com"
+          git add data/collection_prices.json
+          git diff --staged --quiet && echo "Žádné změny." || (
+            git commit -m "collection-prices: $(date +'%Y-%m-%d %H:%M %Z')" &&
+            (git push || (git pull --rebase && git push))
+          )
