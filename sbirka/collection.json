@@ -1,5 +1,174 @@
 {
   "version": 1,
-  "updated": null,
-  "items": []
+  "updated": "2026-11-24T23:20:00+01:00",
+  "items": [
+    {
+      "id": "s01",
+      "type": "lego_set",
+      "ref": "40504-1",
+      "name": "A Minifigure Tribute",
+      "condition": "new",
+      "count": 1,
+      "buy_price_czk": null,
+      "manual_price_czk": null,
+      "note": "",
+      "added": "2026-11-24"
+    },
+    {
+      "id": "s02",
+      "type": "lego_set",
+      "ref": "40631-1",
+      "name": "Gandalf the Grey & Balrog",
+      "condition": "new",
+      "count": 3,
+      "buy_price_czk": null,
+      "manual_price_czk": null,
+      "note": "",
+      "added": "2026-11-24"
+    },
+    {
+      "id": "s03",
+      "type": "lego_set",
+      "ref": "40632-1",
+      "name": "Aragorn & Arwen",
+      "condition": "new",
+      "count": 2,
+      "buy_price_czk": null,
+      "manual_price_czk": null,
+      "note": "",
+      "added": "2026-11-24"
+    },
+    {
+      "id": "s04",
+      "type": "lego_set",
+      "ref": "40630-1",
+      "name": "Frodo & Gollum",
+      "condition": "new",
+      "count": 2,
+      "buy_price_czk": null,
+      "manual_price_czk": null,
+      "note": "",
+      "added": "2026-11-24"
+    },
+    {
+      "id": "s05",
+      "type": "lego_set",
+      "ref": "40552-1",
+      "name": "Buzz Lightyear",
+      "condition": "new",
+      "count": 2,
+      "buy_price_czk": null,
+      "manual_price_czk": null,
+      "note": "",
+      "added": "2026-11-24"
+    },
+    {
+      "id": "s06",
+      "type": "lego_set",
+      "ref": "40751-1",
+      "name": "Legolas & Gimli",
+      "condition": "new",
+      "count": 1,
+      "buy_price_czk": null,
+      "manual_price_czk": null,
+      "note": "",
+      "added": "2026-11-24"
+    },
+    {
+      "id": "s07",
+      "type": "lego_set",
+      "ref": "40616-1",
+      "name": "Harry Potter & Cho Chang",
+      "condition": "new",
+      "count": 1,
+      "buy_price_czk": null,
+      "manual_price_czk": null,
+      "note": "",
+      "added": "2026-11-24"
+    },
+    {
+      "id": "s08",
+      "type": "lego_set",
+      "ref": "40547-1",
+      "name": "Obi-Wan Kenobi & Darth Vader",
+      "condition": "new",
+      "count": 1,
+      "buy_price_czk": null,
+      "manual_price_czk": null,
+      "note": "",
+      "added": "2026-11-24"
+    },
+    {
+      "id": "s09",
+      "type": "lego_set",
+      "ref": "40617-1",
+      "name": "Draco Malfoy & Cedric Diggory",
+      "condition": "new",
+      "count": 1,
+      "buy_price_czk": null,
+      "manual_price_czk": null,
+      "note": "",
+      "added": "2026-11-24"
+    },
+    {
+      "id": "s10",
+      "type": "lego_set",
+      "ref": "40671-1",
+      "name": "Potted Groot",
+      "condition": "new",
+      "count": 1,
+      "buy_price_czk": null,
+      "manual_price_czk": null,
+      "note": "",
+      "added": "2026-11-24"
+    },
+    {
+      "id": "s11",
+      "type": "lego_set",
+      "ref": "40669-1",
+      "name": "Iron Man MK5",
+      "condition": "new",
+      "count": 1,
+      "buy_price_czk": null,
+      "manual_price_czk": null,
+      "note": "",
+      "added": "2026-11-24"
+    },
+    {
+      "id": "s12",
+      "type": "pokemon_sealed",
+      "ref": "593355",
+      "name": "Prismatic Evolutions Elite Trainer Box",
+      "condition": "new",
+      "count": 3,
+      "buy_price_czk": null,
+      "manual_price_czk": null,
+      "note": "",
+      "added": "2026-11-24"
+    },
+    {
+      "id": "s13",
+      "type": "pokemon_sealed",
+      "ref": "593356",
+      "name": "Prismatic Evolutions Binder Collection",
+      "condition": "new",
+      "count": 1,
+      "buy_price_czk": null,
+      "manual_price_czk": null,
+      "note": "",
+      "added": "2026-11-24"
+    },
+    {
+      "id": "s14",
+      "type": "pokemon_sealed",
+      "ref": "593359",
+      "name": "Prismatic Evolutions Poster Collection",
+      "condition": "new",
+      "count": 2,
+      "buy_price_czk": null,
+      "manual_price_czk": null,
+      "note": "",
+      "added": "2026-11-24"
+    }
+  ]
 }
