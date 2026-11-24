@@ -1,99 +1,145 @@
 {
+  "cardmarket_ids": {
+    "pokemon_sealed:593355:new": 798930,
+    "pokemon_sealed:593356:new": 798945,
+    "pokemon_sealed:593359:new": 798946
+  },
   "items": {
     "lego_set:40504-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-24T23:18+01:00"
+      "error_at": "2026-11-24T23:35+01:00",
+      "name": "A Minifigure Tribute"
     },
     "lego_set:40547-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-24T23:18+01:00"
+      "error_at": "2026-11-24T23:35+01:00",
+      "name": "Obi-Wan Kenobi & Darth Vader"
     },
     "lego_set:40552-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-24T23:18+01:00"
+      "error_at": "2026-11-24T23:35+01:00",
+      "name": "Buzz Lightyear"
     },
     "lego_set:40616-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-24T23:18+01:00"
+      "error_at": "2026-11-24T23:35+01:00",
+      "name": "Harry Potter & Cho Chang"
     },
     "lego_set:40617-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-24T23:18+01:00"
+      "error_at": "2026-11-24T23:35+01:00",
+      "name": "Draco Malfoy & Cedric Diggory"
     },
     "lego_set:40630-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-24T23:18+01:00"
+      "error_at": "2026-11-24T23:35+01:00",
+      "name": "Frodo & Gollum"
     },
     "lego_set:40631-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-24T23:18+01:00"
+      "error_at": "2026-11-24T23:35+01:00",
+      "name": "Gandalf the Grey & Balrog"
     },
     "lego_set:40632-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-24T23:18+01:00"
+      "error_at": "2026-11-24T23:35+01:00",
+      "name": "Aragorn & Arwen"
     },
     "lego_set:40669-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-24T23:18+01:00"
+      "error_at": "2026-11-24T23:35+01:00",
+      "name": "Iron Man MK5"
     },
     "lego_set:40671-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-24T23:18+01:00"
+      "error_at": "2026-11-24T23:35+01:00",
+      "name": "Potted Groot"
     },
     "lego_set:40751-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-24T23:18+01:00"
+      "error_at": "2026-11-24T23:35+01:00",
+      "name": "Legolas & Gimli"
     },
     "pokemon_sealed:593355:new": {
-      "basis": "TCGplayer – tržní cena (US trh), přepočteno kurzem ČNB",
-      "checked": "2026-11-24T23:18+01:00",
-      "currency": "USD",
-      "czk": 2623,
+      "alt": [
+        {
+          "basis": "TCGplayer – tržní cena (US trh)",
+          "currency": "USD",
+          "czk": 2623,
+          "orig": 117.74,
+          "source": "tcgplayer"
+        }
+      ],
+      "basis": "Cardmarket – cenový trend (EU trh)",
+      "checked": "2026-11-24T23:35+01:00",
+      "currency": "EUR",
+      "czk": 3325,
       "error": null,
       "history": [
         [
           "2026-11-24",
-          2623
+          3325
         ]
       ],
       "image": "https://tcgplayer-cdn.tcgplayer.com/product/593355_200w.jpg",
       "name": "Prismatic Evolutions Elite Trainer Box",
-      "orig": 117.74,
-      "source": "tcgplayer"
+      "orig": 136.1,
+      "source": "cardmarket",
+      "url": null
     },
     "pokemon_sealed:593356:new": {
-      "basis": "TCGplayer – tržní cena (US trh), přepočteno kurzem ČNB",
-      "checked": "2026-11-24T23:18+01:00",
-      "currency": "USD",
-      "czk": 2124,
+      "alt": [
+        {
+          "basis": "TCGplayer – tržní cena (US trh)",
+          "currency": "USD",
+          "czk": 2124,
+          "orig": 95.34,
+          "source": "tcgplayer"
+        }
+      ],
+      "basis": "Cardmarket – cenový trend (EU trh)",
+      "checked": "2026-11-24T23:35+01:00",
+      "currency": "EUR",
+      "czk": 1588,
       "error": null,
       "history": [
         [
           "2026-11-24",
-          2124
+          1588
         ]
       ],
       "image": "https://tcgplayer-cdn.tcgplayer.com/product/593356_200w.jpg",
       "name": "Prismatic Evolutions Binder Collection",
-      "orig": 95.34,
-      "source": "tcgplayer"
+      "orig": 65.0,
+      "source": "cardmarket",
+      "url": null
     },
     "pokemon_sealed:593359:new": {
-      "basis": "TCGplayer – tržní cena (US trh), přepočteno kurzem ČNB",
-      "checked": "2026-11-24T23:18+01:00",
-      "currency": "USD",
-      "czk": 871,
+      "alt": [
+        {
+          "basis": "TCGplayer – tržní cena (US trh)",
+          "currency": "USD",
+          "czk": 871,
+          "orig": 39.09,
+          "source": "tcgplayer"
+        }
+      ],
+      "basis": "Cardmarket – cenový trend (EU trh)",
+      "checked": "2026-11-24T23:35+01:00",
+      "currency": "EUR",
+      "czk": 840,
       "error": null,
       "history": [
         [
           "2026-11-24",
-          871
+          840
         ]
       ],
       "image": "https://tcgplayer-cdn.tcgplayer.com/product/593359_200w.jpg",
       "name": "Prismatic Evolutions Poster Collection",
-      "orig": 39.09,
-      "source": "tcgplayer"
+      "orig": 34.4,
+      "source": "cardmarket",
+      "url": null
     }
   },
   "rates": {
@@ -143,5 +189,5 @@
       23821
     ]
   },
-  "updated": "2026-11-24T23:18+01:00"
+  "updated": "2026-11-24T23:35+01:00"
 }
