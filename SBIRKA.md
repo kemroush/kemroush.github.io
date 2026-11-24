@@ -22,15 +22,15 @@ Stránka: https://kemroush.github.io/sbirka/
 
 ## Zdroje cen
 
-| Typ | ID na stránce | Zdroj | Měna |
+| Typ | ID na stránce | Zdroj (automaticky) | Měna |
 |---|---|---|---|
-| LEGO sada | číslo sady (`75192` → `75192-1`) | BrickLink price guide: prodeje v Evropě za 6 měsíců → celosvětově → aktuální nabídky | EUR |
+| Pokémon sealed | číslo z `tcgplayer.com/product/<id>` (stačí vložit odkaz) | **Cardmarket** – cenový trend z oficiálního veřejného denního price guide (EU trh, prodává tam i většina Čechů); produkt se páruje podle názvu z TCGplayeru. Záloha a srovnání: **TCGplayer** přes tcgcsv.com (US trh) | EUR / USD |
+| LEGO sada | číslo sady (`75192` → `75192-1`) | **BrickLink** price guide: prodeje v Evropě za 6 měsíců → celosvětově → aktuální nabídky (potřebuje klíče) | EUR |
 | Minifigurka | BrickLink ID (`sw0001a`, nebo vložit odkaz s `M=`) | totéž | EUR |
-| Pokémon sealed | číslo z `tcgplayer.com/product/<id>` (stačí vložit odkaz) | tcgcsv.com (denní zrcadlo TCGplayeru, market price) | USD |
 
-Vše se přepočítá denním kurzem ČNB. Pokémon ceny jsou z US trhu – v Evropě bývá
-sealed jinak; v detailu položky je odkaz na Cardmarket. Kde ti cena nesedí,
-vyplň **Vlastní odhad** – přebije cenu od bota.
+Vše se přepočítá denním kurzem ČNB; ostatní zjištěné ceny se ukážou v detailu položky „pro srovnání“.
+
+**České obchody (Heureka):** automaticky nejdou – Heureka automatické dotazy z GitHub Actions odmítá (HTTP 403) a obcházet to nebudeme. Českou cenu proto zadej do **Vlastní odhad** (přebije cenu od bota, nemá ale historii). V detailu každé položky je odkaz „Heureka (CZ obchody)“ s rovnou vyplněným hledáním. LEGO sady ve sbírce mají vlastní odhad podle Heureky z 24. 11. 2026 (poznámka u položky).
 
 ## Nastavení (jednou)
 

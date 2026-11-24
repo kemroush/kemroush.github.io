@@ -807,6 +807,8 @@
 
   function links(it, name) {
     const out = [];
+    const hq = it.type === 'pokemon_sealed' ? `Pokémon ${name || ''}` : `LEGO ${String(it.ref).split('-')[0]}`;
+    out.push(['Heureka (CZ obchody)', `https://www.heureka.cz/?h%5Bfraze%5D=${encodeURIComponent(hq.trim())}`]);
     if (it.type === 'lego_set') {
       out.push(['BrickLink', `https://www.bricklink.com/v2/catalog/catalogitem.page?S=${encodeURIComponent(it.ref)}#T=P`]);
       out.push(['Brickset', `https://brickset.com/sets/${encodeURIComponent(it.ref)}`]);
@@ -1279,6 +1281,10 @@
         const orig = p.orig != null ? ` (${Number(p.orig).toLocaleString('cs-CZ', { maximumFractionDigits: 2 })} ${esc(p.currency || '')})` : '';
         lines.push(`Cena od bota: <b>${czk(p.czk)}</b>${orig}`);
         if (p.basis) lines.push(esc(p.basis));
+        for (const a of (p.alt || [])) {
+          const ao = a.orig != null ? ` (${Number(a.orig).toLocaleString('cs-CZ', { maximumFractionDigits: 2 })} ${esc(a.currency || '')})` : '';
+          lines.push(`<span style="color:var(--faint)">Pro srovnání: ${czk(a.czk)}${ao} – ${esc(a.basis || a.source)}</span>`);
+        }
         if (p.checked) lines.push(`Zjištěno ${new Date(p.checked).toLocaleDateString('cs-CZ')}`);
       } else if (p?.error) {
         lines.push(`Bot cenu nezjistil: ${esc(p.error)}`);
