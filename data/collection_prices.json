@@ -1,5 +1,101 @@
 {
-  "items": {},
+  "items": {
+    "lego_set:40504-1:new": {
+      "error": "chybí BrickLink klíče v GitHub secrets",
+      "error_at": "2026-11-24T23:18+01:00"
+    },
+    "lego_set:40547-1:new": {
+      "error": "chybí BrickLink klíče v GitHub secrets",
+      "error_at": "2026-11-24T23:18+01:00"
+    },
+    "lego_set:40552-1:new": {
+      "error": "chybí BrickLink klíče v GitHub secrets",
+      "error_at": "2026-11-24T23:18+01:00"
+    },
+    "lego_set:40616-1:new": {
+      "error": "chybí BrickLink klíče v GitHub secrets",
+      "error_at": "2026-11-24T23:18+01:00"
+    },
+    "lego_set:40617-1:new": {
+      "error": "chybí BrickLink klíče v GitHub secrets",
+      "error_at": "2026-11-24T23:18+01:00"
+    },
+    "lego_set:40630-1:new": {
+      "error": "chybí BrickLink klíče v GitHub secrets",
+      "error_at": "2026-11-24T23:18+01:00"
+    },
+    "lego_set:40631-1:new": {
+      "error": "chybí BrickLink klíče v GitHub secrets",
+      "error_at": "2026-11-24T23:18+01:00"
+    },
+    "lego_set:40632-1:new": {
+      "error": "chybí BrickLink klíče v GitHub secrets",
+      "error_at": "2026-11-24T23:18+01:00"
+    },
+    "lego_set:40669-1:new": {
+      "error": "chybí BrickLink klíče v GitHub secrets",
+      "error_at": "2026-11-24T23:18+01:00"
+    },
+    "lego_set:40671-1:new": {
+      "error": "chybí BrickLink klíče v GitHub secrets",
+      "error_at": "2026-11-24T23:18+01:00"
+    },
+    "lego_set:40751-1:new": {
+      "error": "chybí BrickLink klíče v GitHub secrets",
+      "error_at": "2026-11-24T23:18+01:00"
+    },
+    "pokemon_sealed:593355:new": {
+      "basis": "TCGplayer – tržní cena (US trh), přepočteno kurzem ČNB",
+      "checked": "2026-11-24T23:18+01:00",
+      "currency": "USD",
+      "czk": 2623,
+      "error": null,
+      "history": [
+        [
+          "2026-11-24",
+          2623
+        ]
+      ],
+      "image": "https://tcgplayer-cdn.tcgplayer.com/product/593355_200w.jpg",
+      "name": "Prismatic Evolutions Elite Trainer Box",
+      "orig": 117.74,
+      "source": "tcgplayer"
+    },
+    "pokemon_sealed:593356:new": {
+      "basis": "TCGplayer – tržní cena (US trh), přepočteno kurzem ČNB",
+      "checked": "2026-11-24T23:18+01:00",
+      "currency": "USD",
+      "czk": 2124,
+      "error": null,
+      "history": [
+        [
+          "2026-11-24",
+          2124
+        ]
+      ],
+      "image": "https://tcgplayer-cdn.tcgplayer.com/product/593356_200w.jpg",
+      "name": "Prismatic Evolutions Binder Collection",
+      "orig": 95.34,
+      "source": "tcgplayer"
+    },
+    "pokemon_sealed:593359:new": {
+      "basis": "TCGplayer – tržní cena (US trh), přepočteno kurzem ČNB",
+      "checked": "2026-11-24T23:18+01:00",
+      "currency": "USD",
+      "czk": 871,
+      "error": null,
+      "history": [
+        [
+          "2026-11-24",
+          871
+        ]
+      ],
+      "image": "https://tcgplayer-cdn.tcgplayer.com/product/593359_200w.jpg",
+      "name": "Prismatic Evolutions Poster Collection",
+      "orig": 39.09,
+      "source": "tcgplayer"
+    }
+  },
   "rates": {
     "AUD": 14.794,
     "BRL": 3.799,
@@ -33,6 +129,19 @@
     "ZAR": 1.27,
     "date": "24.11.2026"
   },
-  "tcg_groups": {},
-  "updated": "2026-11-24T23:08+01:00"
+  "tcg_groups": {
+    "593355": [
+      3,
+      23821
+    ],
+    "593356": [
+      3,
+      23821
+    ],
+    "593359": [
+      3,
+      23821
+    ]
+  },
+  "updated": "2026-11-24T23:18+01:00"
 }
