@@ -52,6 +52,9 @@ CONFIG = {
     # Mini jen ve starém designu (F56/F55/F57, F60, F54). Generace od 2024
     # (Cooper F66/J01, Countryman U25, Aceman) se vyřazují – viz cars_exclusion_reason.
     "max_year_overrides": {"mini": 2023},
+    # Výjimky z min_year_overrides podle modelu (hledá se v seo modelu / názvu).
+    # BMW X3/X4/X5 z 2022+ se do cenového stropu nevejdou → od 2020 jako ostatní.
+    "model_min_year": {"bmw": {"x3": 2020, "x4": 2020, "x5": 2020}},
     "brands":        ["bmw", "mercedes-benz", "mini"],
     "blocked_sellers": ["davo car", "aaa auto", "auta super"],
     "max_pages":       5,     # stránky u Drivalia
@@ -352,7 +355,7 @@ def _scrape_sauto_feed(label: str, cfg: dict, *, category_id: int, section: str,
                        referer: str, model_ok, min_year_for,
                        extra_params: dict | None = None) -> list[dict]:
     """Společný scraper pro všechny sauto feedy. ``model_ok(man_seo, model_seo)``
-    rozhoduje o whitelistu, ``min_year_for(man_seo)`` vrací minimální rok.
+    rozhoduje o whitelistu, ``min_year_for(man_seo, model_seo)`` vrací minimální rok.
     Ceny, km a převodovka se filtrují server-side i klientsky (API občas
     neznámé parametry tiše ignoruje)."""
     params = {
@@ -415,7 +418,7 @@ def _scrape_sauto_feed(label: str, cfg: dict, *, category_id: int, section: str,
             year_m = re.match(r"(\d{4})", v.get("manufacturing_date")
                               or v.get("in_operation_date") or "")
             year = int(year_m.group(1)) if year_m else 0
-            if not year or year < min_year_for(man_seo):
+            if not year or year < min_year_for(man_seo, model_seo):
                 continue
 
             premise = ((v.get("premise") or {}).get("name") or "").strip()
@@ -475,7 +478,7 @@ def scrape_sauto() -> list[dict]:
         category_id=838, section="osobni",
         referer="https://www.sauto.cz/inzerce/osobni",
         model_ok=lambda man, model: man in brands,
-        min_year_for=lambda man: CONFIG["min_year_overrides"].get(man, CONFIG["min_year"]),
+        min_year_for=lambda man, model="": cars_min_year(man, model),
         extra_params={
             "gearbox_seo": "automaticka",
             "tachometer_to": CONFIG["max_km"],
@@ -492,7 +495,7 @@ def scrape_sauto_vans() -> list[dict]:
         category_id=839, section="uzitkova",
         referer="https://www.sauto.cz/inzerce/uzitkova",
         model_ok=lambda man, model: f"{man}/{model}" in vc["models"],
-        min_year_for=lambda man: vc["min_year"],
+        min_year_for=lambda man, model="": vc["min_year"],
     )
 
 
@@ -507,7 +510,7 @@ def scrape_sauto_ari() -> list[dict]:
         referer="https://www.sauto.cz/inzerce/osobni",
         model_ok=lambda man, model: (man not in ac["blocked_manufacturers"]
                                      and model in ac["models"].get(man, [])),
-        min_year_for=lambda man: ac["min_year"],
+        min_year_for=lambda man, model="": ac["min_year"],
         extra_params={
             "gearbox_seo": "automaticka",
             "tachometer_to": ac["max_km"],
@@ -619,6 +622,24 @@ def _year_of(car: dict) -> int:
     return int(m.group(1)) if m else 0
 
 
+def cars_min_year(brand: str, text: str = "") -> int:
+    """Minimální ročník pro feed Auta: podle značky (min_year_overrides),
+    s výjimkami podle modelu (model_min_year) – model se hledá v textu
+    (seo modelu nebo název inzerátu), např. "x3" v "BMW X3 xDrive20d"."""
+    base = CONFIG["min_year_overrides"].get(brand, CONFIG["min_year"])
+    t = (text or "").lower()
+    for model, year in CONFIG.get("model_min_year", {}).get(brand, {}).items():
+        if re.search(rf"(?<![a-z0-9]){re.escape(model)}(?![a-z0-9])", t):
+            return min(base, year)
+    return base
+
+
+def cars_query_min_year(brand: str) -> int:
+    """Nejnižší ročník, který u značky vůbec může projít (pro filtr na serveru)."""
+    exceptions = CONFIG.get("model_min_year", {}).get(brand, {}).values()
+    return min([CONFIG["min_year_overrides"].get(brand, CONFIG["min_year"]), *exceptions])
+
+
 def cars_exclusion_reason(car: dict) -> str:
     """Důvod vyřazení inzerátu z feedu Auta, nebo "" když zůstává.
     Mini jen generace F (2014–2023): bez R-generace s motory Prince
@@ -716,7 +737,6 @@ def purge_cars_excluded() -> int:
 
 def scrape_renocar() -> list[dict]:
     brand = "bmw"
-    min_year = CONFIG["min_year_overrides"].get(brand, CONFIG["min_year"])
     url = f"{RENOCAR_BASE}/?ajax=newFilterQuery-cars&brand={brand}&limit=500&offset=0"
     cars = []
     try:
@@ -750,7 +770,7 @@ def scrape_renocar() -> list[dict]:
                 year_m = re.match(r"(\d{4})", reg)
                 if year_m:
                     year = int(year_m.group(1))
-                if year and year < min_year:
+                if year and year < cars_min_year(brand, title):
                     continue
 
                 body = (c.get("body_name") or "").strip()
@@ -840,7 +860,7 @@ def scrape_bmwojete() -> list[dict]:
                     brand = "mini"
                 else:
                     continue
-                min_year = CONFIG["min_year_overrides"].get(brand, CONFIG["min_year"])
+                min_year = cars_min_year(brand, title)
 
                 km = int(v.get("mileage") or 0)
                 if km > CONFIG["max_km"]:
@@ -1058,7 +1078,7 @@ def scrape_drivalia() -> list[dict]:
 
     cars = []
     for brand, brand_slug in DRIVALIA_BRAND_SLUGS.items():
-        min_year = CONFIG["min_year_overrides"].get(brand, CONFIG["min_year"])
+        min_year = cars_query_min_year(brand)   # přesný rok podle modelu až níž
         brand_count = 0
         try:
             for page in range(1, CONFIG["max_pages"] + 1):
@@ -1110,7 +1130,7 @@ def scrape_drivalia() -> list[dict]:
                         reg = p.get("dimension56") or ""
                         year_m = re.match(r"(\d{4})", reg)
                         year = int(year_m.group(1)) if year_m else 0
-                        if year and year < min_year:
+                        if year and year < cars_min_year(brand, title):
                             continue
 
                         body = (p.get("dimension1") or "").strip()
