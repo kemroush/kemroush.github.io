@@ -211,5 +211,139 @@
     "old_price": "739 000 Kč",
     "found_at": "24.11.2026 18:38",
     "price_drop_at": "24.11.2026 18:38"
+  },
+  {
+    "id": "211125645",
+    "title": "BMW X3 30e xDrive X-Line Navi HUD DPH",
+    "price": "698 000 Kč",
+    "details": "2021  ·  91 593 km  ·  Hybridní  ·  4×4  ·  Automatická  ·  Brno-město  ·  Tokra Automobily CZ s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x3/211125645",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/k0OqwCKRCO7AFVbHzLqe9/1eca.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "24.11.2026 23:13"
+  },
+  {
+    "id": "211222017",
+    "title": "BMW X4 20d xDrive M-Sport ČR LED 1Maj",
+    "price": "748 000 Kč",
+    "details": "2021  ·  56 298 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Brno-město  ·  Tokra Automobily CZ s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x4/211222017",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFMsuhNHMH9uxLx/2585.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "24.11.2026 23:13"
+  },
+  {
+    "id": "211463409",
+    "title": "BMW X3 2.0 T XDrive,1.maj,ČR,AT",
+    "price": "750 000 Kč",
+    "details": "2021  ·  81 171 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x3/211463409",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TDrngKEjVhIaW6jD/14ce.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "24.11.2026 23:13"
+  },
+  {
+    "id": "211452591",
+    "title": "BMW X3 M40i Performance",
+    "price": "547 000 Kč",
+    "details": "2020  ·  68 340 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x3/211452591",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TB49Gnvk0IW1Iwz/9434.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "24.11.2026 23:13"
+  },
+  {
+    "id": "211436736",
+    "title": "BMW X4 xDrive20d",
+    "price": "739 000 Kč",
+    "details": "2020  ·  65 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Olomouc  ·  BMW CarTec Olomouc, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x4/211436736",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkC4TclIdp1Iaeei7/4c76.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "24.11.2026 23:13"
+  },
+  {
+    "id": "211388889",
+    "title": "BMW X3 2.0 xDrive20i AT M-PAKET",
+    "price": "639 000 Kč",
+    "details": "2020  ·  88 392 km  ·  Benzín  ·  4×4  ·  Automatická  ·  České Budějovice  ·  CB Auto a.s. - Škoda Plus",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x3/211388889",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkbxLFDZbJIQ4ufM/cb5e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "24.11.2026 23:13"
+  },
+  {
+    "id": "211358826",
+    "title": "BMW X3",
+    "price": "730 176 Kč",
+    "details": "2021  ·  82 845 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x3/211358826",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86TBSHZclTRINFJJI/fb13.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "24.11.2026 23:13"
+  },
+  {
+    "id": "210762194",
+    "title": "BMW X3 xDrive20d",
+    "price": "719 000 Kč",
+    "details": "2020  ·  98 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Olomouc  ·  BMW CarTec Olomouc, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x3/210762194",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qD_B/kQMlcCt5zmCCIyqBfvwHNEDga/017c.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "24.11.2026 23:13"
+  },
+  {
+    "id": "210408599",
+    "title": "BMW X3 30d xDrive*Head-Up*360Kam*Pano",
+    "price": "699 000 Kč",
+    "details": "2020  ·  42 831 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Náchod  ·  CAR1 Vysokov",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x3/210408599",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_A/nCTUX1iX5DwDWzBqUIGmXSTZ/5987.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "24.11.2026 23:13"
+  },
+  {
+    "id": "209536161",
+    "title": "BMW X3 2.0d xDRIVE PRAV.SER. BMW-DPH",
+    "price": "658 000 Kč",
+    "details": "2020  ·  98 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Brno-venkov  ·  OK - AUTA",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/x3/209536161",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_of_B/kOzkBkwYBTBCGZ9wdFCfjw6/57f1.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "24.11.2026 23:13"
   }
 ]

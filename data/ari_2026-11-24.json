@@ -316,5 +316,29 @@
     "old_price": "290 000 Kč",
     "found_at": "24.11.2026 18:38",
     "price_drop_at": "24.11.2026 18:38"
+  },
+  {
+    "id": "211509924",
+    "title": "Škoda Scala 1,5 TSI 110kW DSG Monte Carlo",
+    "price": "378 000 Kč",
+    "details": "2024  ·  141 600 km  ·  Benzín  ·  Automatická  ·  Tábor  ·  Andy-auta, s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211509924",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nPx0D3Tir8BEqULP6EIc4xWF/62a3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "24.11.2026 23:13"
+  },
+  {
+    "id": "211510317",
+    "title": "Škoda Scala 1,6TDI DSG*85kW*PlnýServis",
+    "price": "239 000 Kč",
+    "details": "2020  ·  141 923 km  ·  Nafta  ·  Automatická  ·  Náchod  ·  CAR1 Vysokov",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211510317",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_C/nPx0D3Tir8CBUdfSarIc8ziv/c7c0.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "24.11.2026 23:13"
   }
 ]
