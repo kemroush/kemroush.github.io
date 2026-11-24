@@ -34,11 +34,14 @@ CONFIG = {
     "max_price_czk": 750_000,
     "max_km":        100_000,
     "min_year":      2020,
-    "min_year_overrides": {"bmw": 2022},
+    "min_year_overrides": {"bmw": 2022, "mini": 2014},
+    "model_min_year": {"bmw": {"x3": 2020, "x4": 2020, "x5": 2020}},
     "brands":        ["bmw", "mercedes-benz", "mini"],
     ...
 }
 ```
+
+**Výjimky ročníku podle modelu (`model_min_year`).** BMW obecně od 2022, ale **X3, X4 a X5 od 2020** – z 2022+ by se do cenového stropu 750k nevešly. Rozhoduje `cars_min_year(značka, text)`, která hledá model v seo modelu (sauto) nebo v názvu inzerátu (renocar, nabidky.bmw.cz, Drivalia); `iX3` se jako X3 nepočítá. Drivalia dostane na server nejnižší možný rok značky (`cars_query_min_year()`) a přesně se filtruje až podle názvu. Další model přidáš jen řádkem v `model_min_year`.
 
 **Mini jen generace F (2014–2023).** Mini má `min_year_overrides` 2014 (i server-side u Drivalia) a `max_year_overrides` 2023. Ve feedu Auta se po stažení ze všech zdrojů navíc vyřazují (`cars_exclusion_reason()`): nová generace od 2024 (Cooper F66/J01, Countryman U25, Aceman – ročník nebo v názvu Aceman / „Cooper C|E“ / „Countryman C|E“) a R-generace s motory Prince (Paceman, Coupé, Roadster, kódy R55–R61, Countryman před 2017, Clubman před 2015, Cabrio před 2016). Při každém běhu `purge_cars_excluded()` stejný filtr uplatní i na uloženou historii (`cars_*.json`, seen, tracked, index) – sdílí kód s úklidem Ari (`_purge_excluded()`).
 
