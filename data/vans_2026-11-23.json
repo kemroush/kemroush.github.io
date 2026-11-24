@@ -90,5 +90,17 @@
     "old_price": "143 000 Kč",
     "found_at": "23.11.2026 19:01",
     "price_drop_at": "23.11.2026 19:01"
+  },
+  {
+    "id": "211503000",
+    "title": "Nissan Primastar 2.0dci 84kw",
+    "price": "149 999 Kč",
+    "details": "2011  ·  182 000 km  ·  Nafta  ·  Manuální  ·  Rychnov nad Kněžnou  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/nissan/primastar/211503000",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kPXU1fy4LrCsKl8EJfIcVjVN/5422.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "found_at": "24.11.2026 05:16"
   }
 ]

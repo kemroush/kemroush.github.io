@@ -242,5 +242,50 @@
     "old_price": "699 000 Kč",
     "found_at": "23.11.2026 19:01",
     "price_drop_at": "23.11.2026 19:01"
+  },
+  {
+    "id": "211356117",
+    "title": "BMW Řada 2 Grand Coupe M-Paket, ČR, 1 maj",
+    "price": "499 000 Kč",
+    "details": "2022  ·  76 000 km  ·  Nafta  ·  Automatická  ·  Hodonín  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211356117",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdk3RI9ZQSIMk8yH/e50d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "549 000 Kč",
+    "found_at": "24.11.2026 05:16",
+    "price_drop_at": "24.11.2026 05:16"
+  },
+  {
+    "id": "211120215",
+    "title": "Mercedes-Benz GLA 180d*CZ*DPH*LED*",
+    "price": "649 999 Kč",
+    "details": "2023  ·  40 000 km  ·  Nafta  ·  Automatická  ·  Praha-východ  ·  GP Cars - Kvalitní vozy se zárukou",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/gla/211120215",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_B/nOdL4BtPEyD4lWfCczHy2z1y/8f3f.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "659 999 Kč",
+    "found_at": "24.11.2026 05:16",
+    "price_drop_at": "24.11.2026 05:16"
+  },
+  {
+    "id": "210972846",
+    "title": "Mini Countryman Countryman Cooper S ALL4",
+    "price": "549 000 Kč",
+    "details": "2020  ·  67 800 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Praha-východ  ·  RENOCAR, a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/mini/countryman/210972846",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_B/nPYADvcUkmDNojLWaHjMUTZ/5e7e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "569 000 Kč",
+    "found_at": "24.11.2026 05:16",
+    "price_drop_at": "24.11.2026 05:16"
   }
 ]

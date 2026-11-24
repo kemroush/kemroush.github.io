@@ -538,5 +538,79 @@
     "old_price": "219 900 Kč",
     "found_at": "23.11.2026 19:01",
     "price_drop_at": "23.11.2026 19:01"
+  },
+  {
+    "id": "211503474",
+    "title": "Toyota Corolla 1.8 Hybrid comfort",
+    "price": "329 999 Kč",
+    "details": "2022  ·  138 364 km  ·  Hybridní  ·  Automatická  ·  Brno-venkov  ·  KT MOTORSPORT",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211503474",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nPx0D3Tir8BboYFGrzIcbhVt/66ea.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "24.11.2026 05:16"
+  },
+  {
+    "id": "211382154",
+    "title": "Mercedes-Benz Třídy A A250 AMG 4matic",
+    "price": "299 000 Kč",
+    "details": "2014  ·  198 000 km  ·  Benzín  ·  4×4  ·  Automatická  ·  Mladá Boleslav  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211382154",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nPx0D3Tir8BboYFC5rIcXwNr/827a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "329 000 Kč",
+    "found_at": "24.11.2026 05:16",
+    "price_drop_at": "24.11.2026 05:16"
+  },
+  {
+    "id": "211384054",
+    "title": "Toyota Yaris 1.5 hybrid",
+    "price": "314 999 Kč",
+    "details": "2024  ·  140 884 km  ·  Hybridní  ·  Automatická  ·  Brno-venkov  ·  KT MOTORSPORT",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/yaris/211384054",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDhsIbH3udIQaPAh/72eb.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "old_price": "324 990 Kč",
+    "found_at": "24.11.2026 05:16",
+    "price_drop_at": "24.11.2026 05:16"
+  },
+  {
+    "id": "211366938",
+    "title": "Toyota Corolla 1.8Hybrid comfort vyhř.sedacky",
+    "price": "379 999 Kč",
+    "details": "2021  ·  97 384 km  ·  Hybridní  ·  Automatická  ·  Brno-venkov  ·  KT MOTORSPORT",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211366938",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/nQO0xPd86Tw5RPDuWkIOEyi8/1552.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "389 990 Kč",
+    "found_at": "24.11.2026 05:16",
+    "price_drop_at": "24.11.2026 05:16"
+  },
+  {
+    "id": "211210866",
+    "title": "Mercedes-Benz CLA",
+    "price": "219 850 Kč",
+    "details": "2017  ·  196 671 km  ·  Benzín  ·  Automatická  ·  Brno-město  ·  Autorro.cz",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/cla/211210866",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/kcKfrMAkFnIwlB1zH8TvuD/df9d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "219 985 Kč",
+    "found_at": "24.11.2026 05:16",
+    "price_drop_at": "24.11.2026 05:16"
+  },
+  {
+    "id": "210894525",
+    "title": "Toyota Corolla 1.8 HSD,1.maj,ČR,AT",
+    "price": "345 000 Kč",
+    "details": "2021  ·  130 054 km  ·  Hybridní  ·  Automatická  ·  Hlavní město Praha  ·  Auto ESA",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/210894525",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qE_A/kO7lxrd9zlCPxv2qfKHbNB9b/290a.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "395 000 Kč",
+    "found_at": "24.11.2026 05:16",
+    "price_drop_at": "24.11.2026 05:16"
   }
 ]
