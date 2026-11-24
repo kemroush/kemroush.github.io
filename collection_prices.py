@@ -5,8 +5,10 @@ Přečte sbirka/collection.json, ke každé položce se zadaným ID dohledá cen
 a zapíše data/collection_prices.json, který čte stránka.
 
 Zdroje:
-  * Pokémon sealed – tcgcsv.com (veřejné denní zrcadlo cen TCGplayeru, USD,
-    bez klíče). Položka se identifikuje číslem produktu z tcgplayer.com/product/<id>.
+  * Pokémon sealed – Cardmarket (EU trh, oficiální veřejný denní price guide,
+    cenový trend v EUR, bez klíče); produkt se páruje podle názvu z TCGplayeru.
+    Záloha a srovnání: tcgcsv.com (denní zrcadlo TCGplayeru, US trh, USD).
+    Položka se identifikuje číslem produktu z tcgplayer.com/product/<id>.
   * LEGO sady a minifigurky – BrickLink API (price guide, EUR). Potřebuje
     4 klíče v GitHub secrets: BRICKLINK_CONSUMER_KEY, BRICKLINK_CONSUMER_SECRET,
     BRICKLINK_TOKEN, BRICKLINK_TOKEN_SECRET (u tokenu IP i maska 0.0.0.0).
@@ -27,6 +29,7 @@ import hmac
 import html
 import json
 import os
+import re
 import secrets
 import sys
 import time
@@ -300,6 +303,73 @@ class BrickLink:
         raise LookupError("na BrickLinku zatím nejsou prodeje ani nabídky")
 
 
+def _slug_tokens(s: str) -> list[str]:
+    import unicodedata
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
+    return [t for t in re.split(r"[^a-z0-9]+", s) if t]
+
+
+# ─────────────────────────────────────────────
+#  EU – Cardmarket (veřejný denní price guide, bez klíče)
+# ─────────────────────────────────────────────
+
+CARDMARKET_BASE = "https://downloads.s3.cardmarket.com/productCatalog"
+CARDMARKET_POKEMON = 6
+
+
+def _first_list(data) -> list:
+    if isinstance(data, list):
+        return data
+    if isinstance(data, dict):
+        for v in data.values():
+            if isinstance(v, list):
+                return v
+    return []
+
+
+class Cardmarket:
+    """Cenový trend z Cardmarketu pro Pokémon sealed. Produkt se spáruje
+    s položkou podle přesného názvu (z TCGplayeru / sbírky)."""
+
+    def __init__(self, cache: dict):
+        self.cache = cache        # klíč položky -> idProduct na Cardmarketu
+        self._guide: dict | None = None
+        self._products: list | None = None
+
+    def guide(self) -> dict:
+        if self._guide is None:
+            rows = _first_list(get_json(f"{CARDMARKET_BASE}/priceGuide/price_guide_{CARDMARKET_POKEMON}.json"))
+            self._guide = {r.get("idProduct"): r for r in rows if isinstance(r, dict)}
+        return self._guide
+
+    def products(self) -> list:
+        if self._products is None:
+            self._products = _first_list(get_json(
+                f"{CARDMARKET_BASE}/productList/products_nonsingles_{CARDMARKET_POKEMON}.json"))
+        return self._products
+
+    def match(self, key: str, name: str | None) -> int | None:
+        if key in self.cache:
+            return self.cache[key]
+        if not name:
+            return None
+        want = " ".join(_slug_tokens(name))
+        hits = [p for p in self.products() if " ".join(_slug_tokens(str(p.get("name") or ""))) == want]
+        if len(hits) != 1:
+            return None
+        self.cache[key] = hits[0].get("idProduct")
+        return self.cache[key]
+
+    def price(self, cm_id) -> tuple[float, str]:
+        row = self.guide().get(cm_id) or {}
+        for f, label in (("trend", "cenový trend"), ("avg30", "průměr prodejů za 30 dní"),
+                         ("avg7", "průměr prodejů za 7 dní"), ("avg", "průměrná prodejní cena")):
+            v = row.get(f)
+            if isinstance(v, (int, float)) and v > 0:
+                return float(v), label
+        raise LookupError("Cardmarket k produktu nemá cenu")
+
+
 # ─────────────────────────────────────────────
 #  HLAVNÍ BĚH
 # ─────────────────────────────────────────────
@@ -314,7 +384,12 @@ def load_json(path: str, default):
 
 def wanted_keys(collection: dict) -> dict[str, tuple[str, str, str]]:
     """Unikátní (typ, id, stav) pro položky, které ještě mám (count > 0)."""
-    out: dict[str, tuple[str, str, str]] = {}
+    return {k: v[:3] for k, v in wanted_items(collection).items()}
+
+
+def wanted_items(collection: dict) -> dict[str, tuple[str, str, str, str]]:
+    """Jako wanted_keys, navíc název ze sbírky."""
+    out: dict = {}
     for it in collection.get("items") or []:
         t, ref = it.get("type"), str(it.get("ref") or "").strip()
         if t not in TYPES or not ref:
@@ -325,7 +400,10 @@ def wanted_keys(collection: dict) -> dict[str, tuple[str, str, str]]:
         except (TypeError, ValueError):
             continue
         cond = "new" if t == "pokemon_sealed" else ("used" if it.get("condition") == "used" else "new")
-        out[f"{t}:{ref}:{cond}"] = (t, ref, cond)
+        key = f"{t}:{ref}:{cond}"
+        prev = out.get(key)
+        name = (it.get("name") or "").strip() or (prev[3] if prev else "")
+        out[key] = (t, ref, cond, name)
     return out
 
 
@@ -336,58 +414,118 @@ def add_history(entry: dict, day: str, value: int) -> None:
     entry["history"] = hist[-HISTORY_POINTS:]
 
 
+def _czk(value: float, currency: str, rates: dict | None) -> int:
+    if currency == "CZK":
+        return int(round(value))
+    rate = (rates or {}).get(currency)
+    if not rate:
+        raise LookupError(f"chybí kurz ČNB pro {currency}")
+    return int(round(value * rate))
+
+
 def update_prices(collection: dict, prices: dict, rates: dict | None, tcg: Tcg,
-                  bricklink: BrickLink, now: datetime) -> tuple[int, int]:
-    keys = wanted_keys(collection)
+                  bricklink: BrickLink, now: datetime,
+                  cardmarket: "Cardmarket | None" = None) -> tuple[int, int]:
+    """Pokémon: Cardmarket (EU trh, kde prodává i většina Čechů) → záloha TCGplayer (US).
+    LEGO: BrickLink. Ostatní zjištěné ceny se uloží do "alt" pro srovnání na stránce."""
+    wanted = wanted_items(collection)
     day = now.date().isoformat()
     stamp = now.isoformat(timespec="minutes")
     items = prices.setdefault("items", {})
 
-    poke = {ref for (t, ref, _c) in keys.values() if t == "pokemon_sealed"}
+    poke = {ref for (t, ref, *_r) in wanted.values() if t == "pokemon_sealed"}
     if poke:
         try:
             tcg.resolve(poke)
-        except Exception as e:   # síť / tcgcsv mimo provoz – ceny se jen nepřepočítají
+        except Exception as e:   # síť / tcgcsv mimo provoz – zůstanou jiné zdroje
             print(f"  [tcg] chyba při hledání setů: {e}")
 
     ok = failed = 0
-    for key, (t, ref, cond) in sorted(keys.items()):
+    for key, (t, ref, cond, coll_name) in sorted(wanted.items()):
         entry = dict(items.get(key) or {})
-        try:
-            if t == "pokemon_sealed":
-                orig, name, image = tcg.lookup(ref)
-                currency, source = "USD", "tcgplayer"
-                basis = "TCGplayer – tržní cena (US trh), přepočteno kurzem ČNB"
-            else:
-                if not bricklink.ok:
-                    raise LookupError("chybí BrickLink klíče v GitHub secrets")
+        found: list[dict] = []        # [{source, czk, orig, currency, basis, url?}] v pořadí priority
+        errors: list[str] = []
+        name, image = entry.get("name") or coll_name or None, entry.get("image")
+
+        # katalogové údaje + zahraniční ceny
+        if t == "pokemon_sealed":
+            try:
+                usd, tcg_name, tcg_img = tcg.lookup(ref)
+                name, image = tcg_name or name, tcg_img or image
+                tcg_price = {"source": "tcgplayer", "orig": round(usd, 2), "currency": "USD",
+                             "basis": "TCGplayer – tržní cena (US trh)",
+                             "url": f"https://www.tcgplayer.com/product/{ref}"}
+            except Exception as e:
+                tcg_price = None
+                errors.append(f"TCGplayer: {e}")
+            cm_price = None
+            if cardmarket:
+                try:
+                    cm_id = cardmarket.match(key, name or coll_name)
+                    if cm_id is not None:
+                        eur, label = cardmarket.price(cm_id)
+                        cm_price = {"source": "cardmarket", "orig": round(eur, 2), "currency": "EUR",
+                                    "basis": f"Cardmarket – {label} (EU trh)"}
+                    else:
+                        errors.append("Cardmarket: produkt nespárován")
+                except Exception as e:
+                    errors.append(f"Cardmarket: {e}")
+            foreign = [p for p in (cm_price, tcg_price) if p]
+        else:
+            foreign = []
+            if bricklink.ok:
                 bl_type = "SET" if t == "lego_set" else "MINIFIG"
-                name, image = entry.get("name"), entry.get("image")
-                if not name:
+                if not entry.get("name"):
                     try:
-                        name, image = bricklink.item(bl_type, ref)
+                        bl_name, bl_img = bricklink.item(bl_type, ref)
+                        name = coll_name or bl_name or name
+                        image = bl_img or image
                     except BrickLinkError as e:
                         print(f"  [bl] {key}: katalog – {e}")
-                orig, basis = bricklink.price(bl_type, ref, cond)
-                currency, source = "EUR", "bricklink"
-            rate = (rates or {}).get(currency)
-            if not rate:
-                raise LookupError(f"chybí kurz ČNB pro {currency}")
-            value = int(round(orig * rate))
+                try:
+                    eur, basis = bricklink.price(bl_type, ref, cond)
+                    foreign.append({"source": "bricklink", "orig": round(eur, 2), "currency": "EUR",
+                                    "basis": basis})
+                except Exception as e:
+                    errors.append(f"BrickLink: {e}")
+
+        found.extend(foreign)
+
+        try:
+            priced = []
+            for p in found:
+                try:
+                    priced.append({**p, "czk": _czk(p["orig"], p["currency"], rates)})
+                except LookupError as e:
+                    errors.append(str(e))
+            if not priced:
+                if t != "pokemon_sealed" and not bricklink.ok:
+                    errors.append("chybí BrickLink klíče v GitHub secrets")
+                raise LookupError("; ".join(errors) or "žádný zdroj nemá cenu")
+            main_p = priced[0]
+            value = main_p["czk"]
             entry.update({
-                "czk": value, "orig": round(orig, 2), "currency": currency,
-                "source": source, "basis": basis, "checked": stamp, "error": None,
+                "czk": value, "orig": main_p["orig"], "currency": main_p["currency"],
+                "source": main_p["source"], "basis": main_p["basis"], "url": main_p.get("url"),
+                "checked": stamp, "error": None,
+                "alt": [{k: p.get(k) for k in ("source", "czk", "orig", "currency", "basis")}
+                        for p in priced[1:]],
             })
+            entry.pop("error_at", None)
             if name:
                 entry["name"] = name
             if image:
                 entry["image"] = image
             add_history(entry, day, value)
             ok += 1
-            print(f"  ✓ {key}: {value} Kč ({orig:.2f} {currency})")
+            alts = ", ".join(f"{p['source']} {p['czk']}" for p in priced[1:])
+            print(f"  ✓ {key}: {value} Kč ({main_p['source']})" + (f" | {alts}" if alts else "")
+                  + (f" | ⚠ {'; '.join(errors)}" if errors else ""))
         except Exception as e:  # jedna položka nesmí shodit celý běh
             entry["error"] = str(e) or e.__class__.__name__
             entry["error_at"] = stamp
+            if name and not entry.get("name"):
+                entry["name"] = name
             failed += 1
             print(f"  ✗ {key}: {entry['error']}")
         items[key] = entry
@@ -403,6 +541,7 @@ def main() -> int:
     prices = load_json(PRICES_FILE, {})
     prices.setdefault("items", {})
     prices.setdefault("tcg_groups", {})
+    prices.setdefault("cardmarket_ids", {})
 
     try:
         rates = fetch_rates()
@@ -413,10 +552,11 @@ def main() -> int:
 
     bricklink = BrickLink()
     if not bricklink.ok:
-        print("⚠️  BrickLink klíče nejsou nastavené – LEGO ceny se přeskočí")
+        print("ℹ️  BrickLink klíče nejsou nastavené – LEGO ceny jen z vlastního odhadu ve sbírce")
 
     now = datetime.now(TZ)
-    ok, failed = update_prices(collection, prices, rates, Tcg(prices["tcg_groups"]), bricklink, now)
+    ok, failed = update_prices(collection, prices, rates, Tcg(prices["tcg_groups"]), bricklink, now,
+                               cardmarket=Cardmarket(prices["cardmarket_ids"]))
     prices["updated"] = now.isoformat(timespec="minutes")
     if rates:
         prices["rates"] = rates
