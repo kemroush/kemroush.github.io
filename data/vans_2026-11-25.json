@@ -1,0 +1,60 @@
+[
+  {
+    "id": "211515183",
+    "title": "Ford Transit Ford Transit 2.2 TDCi",
+    "price": "115 000 Kč",
+    "details": "2008  ·  185 181 km  ·  Nafta  ·  Manuální  ·  Praha-západ  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/ford/transit/211515183",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_C/kPXU1fy4LrBSIoujCbIdY6uM/2cd8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "25.11.2026 18:10"
+  },
+  {
+    "id": "211514133",
+    "title": "Ford Transit 2.2 TDCi, 63 kW, L2H2",
+    "price": "119 000 Kč",
+    "details": "2010  ·  152 000 km  ·  Nafta  ·  Manuální  ·  Plzeň-město  ·  Garant rm s.r.o.",
+    "link": "https://www.sauto.cz/uzitkova/detail/ford/transit/211514133",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_C/nPx0D3Tir8CYNsrcGqIdWs0h/7c65.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "25.11.2026 18:10"
+  },
+  {
+    "id": "211513545",
+    "title": "Citroën Jumper 2.2. TDI L2H2 vadné turbo",
+    "price": "90 000 Kč",
+    "details": "2013  ·  216 000 km  ·  Nafta  ·  Plzeň-město  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/citroen/jumper/211513545",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_C/kPXU1fy4LrCYqEhBXsRIdV0Fd/f6f3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "25.11.2026 18:10"
+  },
+  {
+    "id": "211508076",
+    "title": "Renault Trafic 2,0 DCI 66KW 6 MÍST KLIMA TAŽN",
+    "price": "99 990 Kč",
+    "details": "2009  ·  196 200 km  ·  Nafta  ·  Manuální  ·  Třebíč  ·  Nexus Car s.r.o.",
+    "link": "https://www.sauto.cz/uzitkova/detail/renault/trafic/211508076",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nPx0D3Tir8CBUdfN0BIczIir/848e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "found_at": "25.11.2026 18:10"
+  },
+  {
+    "id": "211260444",
+    "title": "Peugeot Expert 1.6 HDI",
+    "price": "99 000 Kč",
+    "details": "2010  ·  258 000 km  ·  Nafta  ·  Manuální  ·  Mladá Boleslav  ·  Autocentrum Obrubce",
+    "link": "https://www.sauto.cz/uzitkova/detail/peugeot/expert/211260444",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_A/nCR9NVflLBkdq1YmxIDnlCM/20d4.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "110 000 Kč",
+    "found_at": "25.11.2026 18:10",
+    "price_drop_at": "25.11.2026 18:10"
+  },
+  {
+    "id": "211183983",
+    "title": "Volkswagen Transporter 2.5 TDI 4x4 Odpočet DPH",
+    "price": "49 900 Kč",
+    "details": "2008  ·  245 000 km  ·  Nafta  ·  4×4  ·  Manuální  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/uzitkova/detail/volkswagen/transporter/211183983",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qF_C/kcKfrMAkFDvG5qf5H58btX/130d.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "65 000 Kč",
+    "found_at": "25.11.2026 18:10",
+    "price_drop_at": "25.11.2026 18:10"
+  }
+]
