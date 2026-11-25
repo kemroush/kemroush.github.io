@@ -543,6 +543,22 @@
     .toast.ok { border-color: rgba(63,185,80,0.5); }
     .toast.err { border-color: rgba(248,81,73,0.55); }
 
+    .qty {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+      border: 1px solid var(--border-strong);
+      border-radius: 7px;
+      padding: 2px 8px;
+      white-space: nowrap;
+    }
+    .item-main .side { padding: 0 6px 0 4px; }
+    .detail-head { display: flex; gap: 14px; align-items: center; margin-bottom: 1rem; }
+    .detail-head h2 { margin-bottom: 4px; line-height: 1.25; }
+    .thumb.big { width: 84px; height: 84px; }
+    .detail-title { min-width: 0; }
+    .dlg p.help { white-space: pre-wrap; margin-bottom: 0.4rem; }
+
     @media (max-width: 520px) {
       body { padding-top: 1.75rem; }
       .summary-value { font-size: 1.8rem; }
@@ -588,7 +604,6 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
         kemroush
       </a>
-      <button class="ghost-btn" id="gh-btn" type="button"><span class="dot"></span><span id="gh-label">GitHub</span></button>
     </div>
 
     <header class="head">
@@ -607,10 +622,10 @@
       <div class="summary-row" id="sum-row"></div>
       <div class="summary-foot">
         <span id="sum-foot">Načítám ceny…</span>
-        <button class="ghost-btn" id="refresh-btn" type="button" title="Spustí bota, který stáhne aktuální ceny">
+        <a class="ghost-btn" id="refresh-btn" href="https://github.com/kemroush/kemroush.github.io/actions/workflows/collection-prices.yml" target="_blank" rel="noopener" title="Otevře bota na GitHubu – tam dáš Run workflow">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
           Obnovit ceny
-        </button>
+        </a>
       </div>
     </section>
 
@@ -624,10 +639,6 @@
         <option value="added">Naposledy přidané</option>
         <option value="trend">Podle změny ceny</option>
       </select>
-      <button class="add-btn" id="add-btn" type="button">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
-        Přidat
-      </button>
     </div>
     <div class="sub-tools">
       <span id="count-label"></span>
@@ -637,213 +648,72 @@
     <div class="list" id="list"><div class="loading">Načítám sbírku…</div></div>
   </div>
 
-  <!-- uložení změn -->
-  <div class="savebar" id="savebar" role="region" aria-label="Neuložené změny">
-    <div class="txt"><span id="save-txt">Neuložené změny</span><small id="save-sub">Zatím jen v tomhle prohlížeči</small></div>
-    <button class="btn" id="discard-btn" type="button">Zahodit</button>
-    <button class="btn primary" id="save-btn" type="button">Uložit</button>
-  </div>
-
-  <!-- přidání / úprava položky -->
-  <dialog id="item-dlg">
-    <form class="dlg" id="item-form" method="dialog" novalidate>
-      <h2 id="item-title">Přidat do sbírky</h2>
-      <div class="seg" id="type-seg" role="radiogroup" aria-label="Typ">
-        <button type="button" data-type="lego_set">LEGO sada</button>
-        <button type="button" data-type="lego_minifig">Minifigurka</button>
-        <button type="button" data-type="pokemon_sealed">Pokémon sealed</button>
-      </div>
-      <div class="field">
-        <label for="f-ref" id="f-ref-label">Číslo sady</label>
-        <input id="f-ref" autocomplete="off" spellcheck="false">
-        <div class="hint" id="f-ref-hint"></div>
-      </div>
-      <div class="field">
-        <label for="f-name">Název <span class="opt">(nepovinné – bot ho doplní z katalogu)</span></label>
-        <input id="f-name" autocomplete="off">
-      </div>
-      <div id="cond-wrap">
-        <div class="field"><label>Stav</label></div>
-        <div class="seg two" id="cond-seg" role="radiogroup" aria-label="Stav" style="margin-top:-0.55rem">
-          <button type="button" data-cond="new">Nové / zabalené</button>
-          <button type="button" data-cond="used">Rozbalené / použité</button>
+  <!-- detail položky (jen ke čtení) -->
+  <dialog id="detail-dlg">
+    <div class="dlg">
+      <div class="detail-head">
+        <span class="thumb big" id="d-thumb"></span>
+        <div class="detail-title">
+          <h2 id="d-name"></h2>
+          <div class="meta" id="d-meta"></div>
         </div>
       </div>
-      <div class="grid2">
-        <div class="field">
-          <label for="f-count">Počet kusů</label>
-          <input id="f-count" type="number" min="0" step="1" inputmode="numeric">
-        </div>
-        <div class="field">
-          <label for="f-buy">Nákupní cena / ks <span class="opt">(Kč)</span></label>
-          <input id="f-buy" type="number" min="0" step="1" inputmode="numeric" placeholder="nepovinné">
-        </div>
-      </div>
-      <div class="field">
-        <label for="f-manual">Vlastní odhad ceny / ks <span class="opt">(Kč, přebije cenu od bota)</span></label>
-        <input id="f-manual" type="number" min="0" step="1" inputmode="numeric" placeholder="nechat prázdné = cena od bota">
-      </div>
-      <div class="price-box" id="price-box" hidden></div>
-      <div class="links-row" id="links-row"></div>
-      <div class="field">
-        <label for="f-note">Poznámka <span class="opt">(nepovinné)</span></label>
-        <textarea id="f-note" rows="2"></textarea>
-      </div>
+      <div class="price-box" id="d-price"></div>
+      <div class="links-row" id="d-links"></div>
+      <p class="help" id="d-note" hidden></p>
       <div class="dlg-actions">
-        <button class="btn danger" id="del-btn" type="button" hidden>Smazat</button>
         <span class="spacer"></span>
-        <button class="btn" id="cancel-btn" type="button">Zrušit</button>
-        <button class="btn primary" id="ok-btn" type="submit">Přidat</button>
+        <button class="btn primary" id="d-close" type="button">Zavřít</button>
       </div>
-    </form>
+    </div>
   </dialog>
-
-  <!-- GitHub token -->
-  <dialog id="gh-dlg">
-    <form class="dlg" id="gh-form" method="dialog" novalidate>
-      <h2>Ukládání na GitHub</h2>
-      <p class="help" id="gh-reason">Změny ve sbírce se ukládají do repa <b>kemroush.github.io</b> (soubor <code>sbirka/collection.json</code>). K tomu stránka potřebuje tvůj GitHub token.</p>
-      <ol class="help">
-        <li>Otevři <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">nový fine-grained token</a>.</li>
-        <li>Repository access → <b>Only select repositories</b> → kemroush.github.io.</li>
-        <li>Permissions → <b>Contents: Read and write</b>. Volitelně <b>Actions: Read and write</b>, ať funguje tlačítko „Obnovit ceny“.</li>
-        <li>Token vlož sem. Zůstane jen v tomhle prohlížeči.</li>
-      </ol>
-      <div class="field">
-        <label for="f-token">Token</label>
-        <input id="f-token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…">
-        <div class="hint" id="f-token-hint"></div>
-      </div>
-      <div class="dlg-actions">
-        <button class="btn danger" id="token-del" type="button">Odebrat</button>
-        <span class="spacer"></span>
-        <button class="btn" id="token-cancel" type="button">Zavřít</button>
-        <button class="btn primary" id="token-ok" type="submit">Ověřit a uložit</button>
-      </div>
-    </form>
-  </dialog>
-
-  <div class="toast" id="toast" role="status"></div>
 
   <script>
   'use strict';
 
-  // ── konfigurace ─────────────────────────────────────────
-  const REPO = { owner: 'kemroush', name: 'kemroush.github.io', branch: 'main' };
-  const COLLECTION_PATH = 'sbirka/collection.json';
+  // Stránka je jen ke čtení. Co a kolik ve sbírce je, se mění v sbirka/collection.json
+  // (přes PR v repu); ceny dotahuje bot collection_prices.py do data/collection_prices.json.
   const PRICES_URL = '../data/collection_prices.json';
-  const WORKFLOW = 'collection-prices.yml';
-  const API = 'https://api.github.com';
   const TREND_DAYS = 30;
 
   const TYPES = {
-    lego_set: {
-      label: 'LEGO sada', plural: 'LEGO sady', icon: 'ico-box',
-      refLabel: 'Číslo sady', refHint: 'Např. 75192 nebo 75192-1 (číslo z krabice).',
-      conditions: true,
-    },
-    lego_minifig: {
-      label: 'Minifigurka', plural: 'Minifigurky', icon: 'figure',
-      refLabel: 'BrickLink ID figurky', refHint: 'Např. sw0001a – najdeš ho v adrese figurky na bricklink.com.',
-      conditions: true,
-    },
-    pokemon_sealed: {
-      label: 'Pokémon sealed', plural: 'Pokémon sealed', icon: 'ico-cards',
-      refLabel: 'Produkt na TCGplayeru', refHint: 'Vlož odkaz tcgplayer.com/product/… nebo jen číslo produktu.',
-      conditions: false,
-    },
+    lego_set:       { label: 'LEGO sada',      plural: 'LEGO sady',      icon: 'ico-box',   conditions: true },
+    lego_minifig:   { label: 'Minifigurka',    plural: 'Minifigurky',    icon: 'figure',    conditions: true },
+    pokemon_sealed: { label: 'Pokémon sealed', plural: 'Pokémon sealed', icon: 'ico-cards', conditions: false },
   };
 
-  // ── úložiště prohlížeče (může selhat – soukromé okno apod.) ──
   const local = {
     get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch { return d; } },
     set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
-    del(k) { try { localStorage.removeItem(k); } catch {} },
   };
-  const K_TOKEN = 'sbirka-token', K_DRAFT = 'sbirka-draft', K_VIEW = 'sbirka-view';
-
+  const K_VIEW = 'sbirka-view';
   const view = Object.assign({ filter: 'all', sort: 'value', showSold: false }, local.get(K_VIEW, {}));
-  const state = {
-    items: [],        // pracovní verze
-    base: [],         // verze na GitHubu
-    sha: null,
-    prices: null,
-    token: local.get(K_TOKEN, ''),
-    loaded: false,
-    saving: false,
-    q: '',
-  };
+  const state = { items: [], prices: null, loaded: false, q: '' };
 
   const $ = (s) => document.querySelector(s);
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const clone = (o) => JSON.parse(JSON.stringify(o));
   const fmtCzk = new Intl.NumberFormat('cs-CZ', { maximumFractionDigits: 0 });
   const czk = (n) => fmtCzk.format(Math.round(n)) + ' Kč';
   const pct = (n) => (n > 0 ? '+' : '') + n.toLocaleString('cs-CZ', { maximumFractionDigits: 1 }) + ' %';
-  const today = () => new Date().toISOString().slice(0, 10);
+  const kusu = (n) => (n === 1 ? 'kus' : n >= 2 && n <= 4 ? 'kusy' : 'kusů');
 
-  // ── identifikátory ──────────────────────────────────────
-  function parseRef(type, raw) {
-    const s = String(raw || '').trim();
-    if (!s) return null;
-    if (type === 'lego_set') {
-      const m = s.match(/(?:[?&]S=)?(\d{3,7})(?:-(\d{1,2}))?/i);
-      return m ? `${m[1]}-${m[2] || 1}` : null;
-    }
-    if (type === 'lego_minifig') {
-      const fromUrl = s.match(/[?&]M=([a-z0-9-]+)/i);
-      const v = (fromUrl ? fromUrl[1] : s).toLowerCase();
-      return /^[a-z]{2,5}\d{2,5}[a-z0-9-]*$/.test(v) ? v : null;
-    }
-    if (type === 'pokemon_sealed') {
-      const m = s.match(/product\/(\d+)/i) || s.match(/^(\d{3,9})$/);
-      return m ? m[1] : null;
-    }
-    return null;
-  }
   const condOf = (it) => (TYPES[it.type]?.conditions ? (it.condition || 'new') : 'new');
   const priceKey = (it) => `${it.type}:${it.ref}:${condOf(it)}`;
-  const newId = () => 'i' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
-
-  function links(it, name) {
-    const out = [];
-    const hq = it.type === 'pokemon_sealed' ? `Pokémon ${name || ''}` : `LEGO ${String(it.ref).split('-')[0]}`;
-    out.push(['Heureka (CZ obchody)', `https://www.heureka.cz/?h%5Bfraze%5D=${encodeURIComponent(hq.trim())}`]);
-    if (it.type === 'lego_set') {
-      out.push(['BrickLink', `https://www.bricklink.com/v2/catalog/catalogitem.page?S=${encodeURIComponent(it.ref)}#T=P`]);
-      out.push(['Brickset', `https://brickset.com/sets/${encodeURIComponent(it.ref)}`]);
-    } else if (it.type === 'lego_minifig') {
-      out.push(['BrickLink', `https://www.bricklink.com/v2/catalog/catalogitem.page?M=${encodeURIComponent(it.ref)}#T=P`]);
-    } else if (it.type === 'pokemon_sealed') {
-      out.push(['TCGplayer', `https://www.tcgplayer.com/product/${encodeURIComponent(it.ref)}`]);
-      if (name) out.push(['Cardmarket (EU ceny)', `https://www.cardmarket.com/cs/Pokemon/Products/Search?searchString=${encodeURIComponent(name)}`]);
-    }
-    return out;
-  }
-  function imageFor(it, p) {
-    if (p && p.image) return p.image;
-    if (it.type === 'lego_set') return `https://img.bricklink.com/ItemImage/SN/0/${encodeURIComponent(it.ref)}.png`;
-    if (it.type === 'lego_minifig') return `https://img.bricklink.com/ItemImage/MN/0/${encodeURIComponent(it.ref)}.png`;
-    if (it.type === 'pokemon_sealed') return `https://tcgplayer-cdn.tcgplayer.com/product/${encodeURIComponent(it.ref)}_200w.jpg`;
-    return '';
-  }
-
-  // ── ceny ────────────────────────────────────────────────
   const priceEntry = (it) => state.prices?.items?.[priceKey(it)] || null;
+  const hasManual = (it) => it.manual_price_czk != null && it.manual_price_czk !== '';
+
   function displayName(it) {
     return (it.name && it.name.trim()) || priceEntry(it)?.name || `${TYPES[it.type]?.label || ''} ${it.ref}`;
   }
   function unitPrice(it) {
-    if (it.manual_price_czk != null && it.manual_price_czk !== '') {
-      return { czk: Number(it.manual_price_czk), manual: true };
-    }
+    if (hasManual(it)) return { czk: Number(it.manual_price_czk), manual: true };
     const p = priceEntry(it);
     if (p && typeof p.czk === 'number') return { czk: p.czk, manual: false, p };
     return null;
   }
   // změna ceny za ~30 dní z historie bota: [[datum, czk], ...]
   function trend(it) {
-    if (it.manual_price_czk != null && it.manual_price_czk !== '') return null;
+    if (hasManual(it)) return null;
     const p = priceEntry(it);
     const h = p?.history;
     if (!h || h.length < 2 || typeof p.czk !== 'number') return null;
@@ -855,30 +725,48 @@
     return { abs: p.czk - past, rel: ((p.czk - past) / past) * 100 };
   }
 
-  // ── načtení ─────────────────────────────────────────────
-  function ghHeaders(extra) {
-    return Object.assign({
-      Accept: 'application/vnd.github+json',
-      Authorization: 'Bearer ' + state.token,
-      'X-GitHub-Api-Version': '2022-11-28',
-    }, extra || {});
+  function links(it, name) {
+    const out = [];
+    const hq = it.type === 'pokemon_sealed' ? `Pokémon ${name || ''}` : `LEGO ${String(it.ref).split('-')[0]}`;
+    out.push(['Heureka (CZ obchody)', `https://www.heureka.cz/?h%5Bfraze%5D=${encodeURIComponent(hq.trim())}`]);
+    if (it.type === 'lego_set') {
+      out.push(['BrickLink', `https://www.bricklink.com/v2/catalog/catalogitem.page?S=${encodeURIComponent(it.ref)}#T=P`]);
+      out.push(['Brickset', `https://brickset.com/sets/${encodeURIComponent(it.ref)}`]);
+    } else if (it.type === 'lego_minifig') {
+      out.push(['BrickLink', `https://www.bricklink.com/v2/catalog/catalogitem.page?M=${encodeURIComponent(it.ref)}#T=P`]);
+    } else if (it.type === 'pokemon_sealed') {
+      if (name) out.push(['Cardmarket (EU ceny)', `https://www.cardmarket.com/cs/Pokemon/Products/Search?searchString=${encodeURIComponent(name)}`]);
+      out.push(['TCGplayer', `https://www.tcgplayer.com/product/${encodeURIComponent(it.ref)}`]);
+    }
+    return out;
   }
-  const contentsUrl = () => `${API}/repos/${REPO.owner}/${REPO.name}/contents/${COLLECTION_PATH}`;
+  function imageFor(it, p) {
+    if (p && p.image) return p.image;
+    if (it.type === 'lego_set') return `https://img.bricklink.com/ItemImage/SN/0/${encodeURIComponent(it.ref)}.png`;
+    if (it.type === 'lego_minifig') return `https://img.bricklink.com/ItemImage/MN/0/${encodeURIComponent(it.ref)}.png`;
+    if (it.type === 'pokemon_sealed') return `https://tcgplayer-cdn.tcgplayer.com/product/${encodeURIComponent(it.ref)}_200w.jpg`;
+    return '';
+  }
+  function thumbHtml(it) {
+    const t = TYPES[it.type];
+    const img = imageFor(it, priceEntry(it));
+    return img
+      ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" data-fallback="${t.icon}">`
+      : `<svg aria-hidden="true"><use href="#${t.icon}"/></svg>`;
+  }
+  function wireFallbacks(root) {
+    root.querySelectorAll('img[data-fallback]').forEach((img) => {
+      img.addEventListener('error', () => {
+        img.parentElement.innerHTML = `<svg aria-hidden="true"><use href="#${img.dataset.fallback}"/></svg>`;
+      }, { once: true });
+    });
+  }
 
-  function b64encode(str) {
-    const bytes = new TextEncoder().encode(str);
-    let bin = '';
-    for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
-    return btoa(bin);
-  }
-  function b64decode(b64) {
-    const bin = atob(String(b64).replace(/\s/g, ''));
-    return new TextDecoder().decode(Uint8Array.from(bin, (c) => c.charCodeAt(0)));
-  }
+  // ── načtení ─────────────────────────────────────────────
   function normalizeCollection(data) {
     const items = Array.isArray(data?.items) ? data.items : [];
-    return items.filter((x) => x && TYPES[x.type] && x.ref).map((x) => ({
-      id: x.id || newId(),
+    return items.filter((x) => x && TYPES[x.type] && x.ref).map((x, i) => ({
+      id: x.id || 'i' + i,
       type: x.type,
       ref: String(x.ref),
       name: x.name || '',
@@ -887,166 +775,31 @@
       buy_price_czk: x.buy_price_czk ?? null,
       manual_price_czk: x.manual_price_czk ?? null,
       note: x.note || '',
-      added: x.added || today(),
+      added: x.added || '',
     }));
   }
-
-  async function fetchRemote() {
-    if (state.token) {
-      const r = await fetch(`${contentsUrl()}?ref=${REPO.branch}&t=${Date.now()}`, { headers: ghHeaders(), cache: 'no-store' });
-      if (r.status === 404) return { items: [], sha: null };
-      if (r.status === 401) throw Object.assign(new Error('Token je neplatný nebo vypršel.'), { auth: true });
-      if (!r.ok) throw new Error(`GitHub vrátil ${r.status}.`);
-      const j = await r.json();
-      return { items: normalizeCollection(JSON.parse(b64decode(j.content))), sha: j.sha };
-    }
-    const r = await fetch(`collection.json?t=${Date.now()}`, { cache: 'no-store' });
-    if (r.status === 404) return { items: [], sha: null };
-    if (!r.ok) throw new Error(`Sbírku se nepodařilo načíst (${r.status}).`);
-    return { items: normalizeCollection(await r.json()), sha: null };
-  }
-
-  async function loadPrices() {
-    try {
-      const r = await fetch(`${PRICES_URL}?t=${Date.now()}`, { cache: 'no-store' });
-      state.prices = r.ok ? await r.json() : null;
-    } catch { state.prices = null; }
-  }
-
-  async function loadCollection() {
-    let remote;
-    try {
-      remote = await fetchRemote();
-    } catch (e) {
-      if (e.auth) {
-        notice(`${esc(e.message)} Načítám veřejnou verzi; pro ukládání nastav nový token.`, 'error', [['Nastavit token', openToken]]);
-        state.token = '';
-        remote = await fetchRemote().catch(() => ({ items: [], sha: null }));
-      } else {
-        notice(esc(e.message), 'error');
-        remote = { items: [], sha: null };
-      }
-    }
-    state.base = remote.items;
-    state.sha = remote.sha;
-    state.items = clone(remote.items);
-
-    const draft = local.get(K_DRAFT, null);
-    if (draft && Array.isArray(draft.items)) {
-      const differs = JSON.stringify(normalizeCollection(draft)) !== JSON.stringify(state.base);
-      if (differs) {
-        state.items = normalizeCollection(draft);
-        const stale = draft.baseSha && state.sha && draft.baseSha !== state.sha;
-        notice(stale
-          ? 'Obnovil jsem tvoje neuložené změny z minula. Pozor: sbírka se mezitím změnila i na GitHubu – uložením ji přepíšeš touhle verzí.'
-          : 'Obnovil jsem tvoje neuložené změny z minula.', '',
-          [['Zahodit je', discard]]);
-      } else {
-        local.del(K_DRAFT);
-      }
-    }
+  async function load() {
+    const t = Date.now();
+    const [coll, prices] = await Promise.all([
+      fetch(`collection.json?t=${t}`, { cache: 'no-store' }).then((r) => (r.ok ? r.json() : Promise.reject(r.status))),
+      fetch(`${PRICES_URL}?t=${t}`, { cache: 'no-store' }).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+    ]).catch((e) => { notice(`Sbírku se nepodařilo načíst (${esc(e)}).`); return [null, null]; });
+    state.items = normalizeCollection(coll);
+    state.prices = prices;
     state.loaded = true;
-  }
-
-  // ── změny a uložení ─────────────────────────────────────
-  function diff() {
-    const base = new Map(state.base.map((x) => [x.id, JSON.stringify(x)]));
-    const cur = new Map(state.items.map((x) => [x.id, JSON.stringify(x)]));
-    let added = 0, removed = 0, changed = 0;
-    for (const [id, s] of cur) { if (!base.has(id)) added++; else if (base.get(id) !== s) changed++; }
-    for (const id of base.keys()) if (!cur.has(id)) removed++;
-    return { added, removed, changed, total: added + removed + changed };
-  }
-  function changedIds() {
-    const base = new Map(state.base.map((x) => [x.id, JSON.stringify(x)]));
-    return new Set(state.items.filter((x) => base.get(x.id) !== JSON.stringify(x)).map((x) => x.id));
-  }
-  function persistDraft() {
-    if (diff().total) local.set(K_DRAFT, { baseSha: state.sha, items: state.items });
-    else local.del(K_DRAFT);
-  }
-  function commitMessage(d) {
-    const parts = [];
-    if (d.added) parts.push(`${d.added}× přidáno`);
-    if (d.changed) parts.push(`${d.changed}× změněno`);
-    if (d.removed) parts.push(`${d.removed}× smazáno`);
-    return `sbírka: ${parts.join(', ') || 'úprava'}`;
-  }
-
-  async function save(force) {
-    if (state.saving) return;
-    if (!state.token) { openToken('Na uložení potřebuju GitHub token. Změny zatím zůstávají v tomhle prohlížeči.'); return; }
-    const d = diff();
-    if (!d.total && !force) return;
-    state.saving = true;
-    renderSaveBar();
-    try {
-      let sha = state.sha;
-      if (force) {
-        const r = await fetch(`${contentsUrl()}?ref=${REPO.branch}&t=${Date.now()}`, { headers: ghHeaders(), cache: 'no-store' });
-        sha = r.ok ? (await r.json()).sha : null;
-      }
-      const body = { version: 1, updated: new Date().toISOString(), items: state.items };
-      const r = await fetch(contentsUrl(), {
-        method: 'PUT',
-        headers: ghHeaders({ 'Content-Type': 'application/json' }),
-        body: JSON.stringify({
-          message: commitMessage(d),
-          content: b64encode(JSON.stringify(body, null, 2) + '\n'),
-          branch: REPO.branch,
-          ...(sha ? { sha } : {}),
-        }),
-      });
-      if (r.status === 409 || r.status === 422) {
-        notice('Sbírka se mezitím změnila na GitHubu (třeba z jiného zařízení).', 'error', [
-          ['Přepsat mou verzí', () => { hideNotice(); save(true); }],
-          ['Načíst verzi z GitHubu', async () => { hideNotice(); local.del(K_DRAFT); await loadCollection(); render(); }],
-        ]);
-        return;
-      }
-      if (r.status === 401) { openToken('Token je neplatný nebo vypršel – vlož nový.'); return; }
-      if (r.status === 403 || r.status === 404) { openToken('Token nemá právo zapisovat do repa (Contents: Read and write).'); return; }
-      if (!r.ok) throw new Error(`GitHub vrátil ${r.status}`);
-      const j = await r.json();
-      state.sha = j.content.sha;
-      state.base = clone(state.items);
-      local.del(K_DRAFT);
-      hideNotice();
-      toast(d.added ? 'Uloženo. Ceny nových kusů dotáhne bot za pár minut.' : 'Uloženo na GitHub.', 'ok');
-    } catch (e) {
-      toast('Uložení selhalo: ' + e.message, 'err');
-    } finally {
-      state.saving = false;
-      render();
-    }
-  }
-
-  function discard() {
-    state.items = clone(state.base);
-    local.del(K_DRAFT);
-    hideNotice();
-    render();
-  }
-
-  function mutate(fn) {
-    fn();
-    persistDraft();
-    render();
   }
 
   // ── vykreslení ──────────────────────────────────────────
   function visibleItems() {
     const q = state.q.trim().toLowerCase();
-    let arr = state.items.filter((it) => (view.filter === 'all' || it.type === view.filter));
+    let arr = state.items.filter((it) => view.filter === 'all' || it.type === view.filter);
     if (!view.showSold) arr = arr.filter((it) => it.count > 0);
-    if (q) {
-      arr = arr.filter((it) => [displayName(it), it.ref, it.note, TYPES[it.type].label].join(' ').toLowerCase().includes(q));
-    }
+    if (q) arr = arr.filter((it) => [displayName(it), it.ref, it.note, TYPES[it.type].label].join(' ').toLowerCase().includes(q));
     const val = (it) => (unitPrice(it)?.czk || 0) * it.count;
     const sorters = {
       value: (a, b) => val(b) - val(a) || displayName(a).localeCompare(displayName(b), 'cs'),
       name: (a, b) => displayName(a).localeCompare(displayName(b), 'cs'),
-      added: (a, b) => (b.added || '').localeCompare(a.added || '') || state.items.indexOf(b) - state.items.indexOf(a),
+      added: (a, b) => (b.added || '').localeCompare(a.added || '') || state.items.indexOf(a) - state.items.indexOf(b),
       trend: (a, b) => (trend(b)?.rel ?? -Infinity) - (trend(a)?.rel ?? -Infinity),
     };
     return arr.sort(sorters[view.sort] || sorters.value);
@@ -1059,7 +812,7 @@
       counts.all++;
       counts[it.type] = (counts[it.type] || 0) + 1;
     }
-    const chips = [['all', 'Vše']].concat(Object.entries(TYPES).map(([k, t]) => [k, t.plural]));
+    const chips = [['all', 'Vše']].concat(Object.entries(TYPES).filter(([k]) => counts[k] || view.filter === k).map(([k, t]) => [k, t.plural]));
     $('#chips').innerHTML = chips.map(([k, label]) =>
       `<button class="chip${view.filter === k ? ' active' : ''}" data-filter="${k}" type="button">${esc(label)}<span class="n">${counts[k] || 0}</span></button>`
     ).join('');
@@ -1077,8 +830,8 @@
       if (it.buy_price_czk != null && it.buy_price_czk !== '' && u) { buy += Number(it.buy_price_czk) * it.count; buyVal += u.czk * it.count; }
     }
     $('#sum-label').textContent = view.filter === 'all' ? 'Odhad hodnoty sbírky' : `Odhad hodnoty · ${TYPES[view.filter].plural}`;
-    $('#sum-value').textContent = scope.length ? czk(total) : '0 Kč';
-    const row = [`<span><b>${pieces}</b> ${pieces === 1 ? 'kus' : pieces >= 2 && pieces <= 4 ? 'kusy' : 'kusů'}</span>`];
+    $('#sum-value').textContent = czk(total);
+    const row = [`<span><b>${pieces}</b> ${kusu(pieces)}</span>`];
     if (hasDelta) row.push(`<span>za ${TREND_DAYS} dní <b class="${delta >= 0 ? 'up' : 'down'}">${delta >= 0 ? '+' : '−'}${czk(Math.abs(delta))}</b></span>`);
     if (buy > 0) {
       const g = buyVal - buy;
@@ -1088,11 +841,11 @@
     $('#sum-row').innerHTML = row.join('');
 
     const p = state.prices;
-    let foot = 'Ceny zatím nejsou – bot je stáhne po prvním uložení.';
+    let foot = 'Ceny zatím nejsou – dotáhne je bot.';
     if (p?.updated) {
       const when = new Date(p.updated).toLocaleString('cs-CZ', { day: 'numeric', month: 'numeric', hour: '2-digit', minute: '2-digit' });
       const r = p.rates || {};
-      const rates = [r.USD && `USD ${r.USD.toLocaleString('cs-CZ')}`, r.EUR && `EUR ${r.EUR.toLocaleString('cs-CZ')}`].filter(Boolean).join(' · ');
+      const rates = [r.EUR && `EUR ${r.EUR.toLocaleString('cs-CZ')}`, r.USD && `USD ${r.USD.toLocaleString('cs-CZ')}`].filter(Boolean).join(' · ');
       foot = `Ceny ${when}${rates ? ` · kurz ČNB ${rates}` : ''}`;
     }
     $('#sum-foot').textContent = foot;
@@ -1100,13 +853,8 @@
 
   function priceLine(it) {
     const u = unitPrice(it);
-    if (!u) {
-      const p = priceEntry(it);
-      const why = p?.error ? ` – ${esc(p.error)}` : '';
-      return `<span class="missing">cena zatím chybí${why}</span>`;
-    }
+    if (!u) return '<span class="missing">cena zatím chybí</span>';
     let s = `${czk(u.czk)} / ks`;
-    if (u.manual) s += ' <span class="manual">· vlastní odhad</span>';
     const t = trend(it);
     if (t && Math.abs(t.rel) >= 0.5) s += ` <span class="${t.rel >= 0 ? 'up' : 'down'}">${pct(t.rel)}</span>`;
     return s;
@@ -1118,14 +866,12 @@
     const items = visibleItems();
     const shown = state.items.filter((it) => view.showSold || it.count > 0).length;
     $('#count-label').textContent = state.items.length ? `${items.length} z ${shown} položek` : '';
-
     if (!state.items.length) {
       list.innerHTML = `
         <div class="empty">
           <svg aria-hidden="true"><use href="#figure"/></svg>
           <h2>Sbírka je zatím prázdná</h2>
-          <p>Přidej první LEGO sadu, minifigurku nebo Pokémon sealed. Cenu k nim dohledá bot${state.token ? '' : ' – jen si nejdřív nahoře vpravo nastav GitHub token, ať se změny ukládají'}.</p>
-          <button class="add-btn" type="button" data-action="add">Přidat první kus</button>
+          <p style="margin-bottom:0">Položky a počty se doplňují v repu (sbirka/collection.json).</p>
         </div>`;
       return;
     }
@@ -1133,19 +879,14 @@
       list.innerHTML = `<div class="empty"><p style="margin:0">Nic tu neodpovídá filtru${state.q ? ' ani hledání' : ''}.</p></div>`;
       return;
     }
-    const changed = changedIds();
     list.innerHTML = items.map((it) => {
       const t = TYPES[it.type];
-      const p = priceEntry(it);
       const u = unitPrice(it);
-      const img = imageFor(it, p);
       const cond = t.conditions ? (it.condition === 'used' ? 'rozbalené' : 'nové') : '';
       return `
-      <article class="item${it.count <= 0 ? ' sold' : ''}${changed.has(it.id) ? ' changed' : ''}" data-id="${esc(it.id)}">
-        <button class="item-main" type="button" data-action="edit" aria-label="Upravit ${esc(displayName(it))}">
-          <span class="thumb">
-            ${img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" data-fallback="${t.icon}">` : `<svg aria-hidden="true"><use href="#${t.icon}"/></svg>`}
-          </span>
+      <article class="item${it.count <= 0 ? ' sold' : ''}" data-id="${esc(it.id)}">
+        <button class="item-main" type="button" aria-label="Detail: ${esc(displayName(it))}">
+          <span class="thumb">${thumbHtml(it)}</span>
           <span class="info">
             <span class="name">${esc(displayName(it))}</span>
             <span class="meta">
@@ -1156,295 +897,87 @@
             </span>
             <span class="unit">${priceLine(it)}</span>
           </span>
+          <span class="side">
+            <span class="total${u ? '' : ' none'}">${u ? czk(u.czk * it.count) : '–'}</span>
+            <span class="qty">${it.count}&nbsp;ks</span>
+          </span>
         </button>
-        <div class="side">
-          <div class="total${u ? '' : ' none'}">${u ? czk(u.czk * it.count) : '–'}</div>
-          <div class="stepper">
-            <button type="button" data-action="dec" aria-label="Ubrat kus"${it.count <= 0 ? ' disabled' : ''}>−</button>
-            <span class="count" aria-label="Počet kusů">${it.count}</span>
-            <button type="button" data-action="inc" aria-label="Přidat kus">+</button>
-          </div>
-        </div>
       </article>`;
     }).join('');
-    list.querySelectorAll('img[data-fallback]').forEach((img) => {
-      img.addEventListener('error', () => {
-        img.parentElement.innerHTML = `<svg aria-hidden="true"><use href="#${img.dataset.fallback}"/></svg>`;
-      }, { once: true });
-    });
-  }
-
-  function renderSaveBar() {
-    const d = diff();
-    const bar = $('#savebar');
-    bar.classList.toggle('show', d.total > 0);
-    const parts = [];
-    if (d.added) parts.push(`${d.added} nové`);
-    if (d.changed) parts.push(`${d.changed} upravené`);
-    if (d.removed) parts.push(`${d.removed} smazané`);
-    $('#save-txt').textContent = `Neuložené změny: ${parts.join(', ')}`;
-    $('#save-sub').textContent = state.token ? 'Uloží se do repa na GitHubu' : 'Zatím jen v tomhle prohlížeči – na uložení je potřeba token';
-    $('#save-btn').textContent = state.saving ? 'Ukládám…' : (state.token ? 'Uložit' : 'Nastavit token');
-    $('#save-btn').disabled = state.saving;
-    $('#discard-btn').disabled = state.saving;
-  }
-
-  function renderGh() {
-    $('#gh-btn').classList.toggle('connected', !!state.token);
-    $('#gh-label').textContent = state.token ? 'GitHub připojen' : 'Připojit GitHub';
+    wireFallbacks(list);
   }
 
   function render() {
-    renderGh();
     renderChips();
     renderSummary();
     renderList();
-    renderSaveBar();
     $('#sort').value = view.sort;
     $('#show-sold').checked = view.showSold;
   }
 
-  // ── oznámení ────────────────────────────────────────────
-  let noticeActions = [];
-  function notice(html, kind, actions) {
+  function notice(html) {
     const el = $('#notice');
-    noticeActions = actions || [];
-    el.className = 'notice show' + (kind ? ' ' + kind : '');
-    el.innerHTML = html + (noticeActions.length
-      ? `<div class="row">${noticeActions.map(([l], i) => `<button class="btn" type="button" data-notice="${i}">${esc(l)}</button>`).join('')}</div>`
-      : '');
-  }
-  function hideNotice() { $('#notice').className = 'notice'; noticeActions = []; }
-  $('#notice').addEventListener('click', (e) => {
-    const b = e.target.closest('[data-notice]');
-    if (b) noticeActions[+b.dataset.notice]?.[1]();
-  });
-
-  let toastTimer;
-  function toast(msg, kind) {
-    const t = $('#toast');
-    t.textContent = msg;
-    t.className = 'toast show' + (kind ? ' ' + kind : '');
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => { t.className = 'toast'; }, 4200);
+    el.className = 'notice show error';
+    el.innerHTML = html;
   }
 
-  // ── dialog položky ──────────────────────────────────────
-  const dlg = $('#item-dlg');
-  let editing = null;   // id nebo null (nová)
-  let form = { type: 'lego_set', condition: 'new' };
+  // ── detail ──────────────────────────────────────────────
+  const dlg = $('#detail-dlg');
+  function openDetail(id) {
+    const it = state.items.find((x) => x.id === id);
+    if (!it) return;
+    const t = TYPES[it.type];
+    const p = priceEntry(it);
+    const u = unitPrice(it);
+    const name = displayName(it);
+    $('#d-thumb').innerHTML = thumbHtml(it);
+    wireFallbacks($('#d-thumb'));
+    $('#d-name').textContent = name;
+    const cond = t.conditions ? (it.condition === 'used' ? 'rozbalené' : 'nové') : '';
+    $('#d-meta').innerHTML = `<span class="tag ${it.type}">${esc(t.label)}</span><span>${esc(it.ref)}</span>${cond ? `<span>· ${cond}</span>` : ''}<span>· ${it.count} ${kusu(it.count)}</span>`;
 
-  function setType(type) {
-    form.type = type;
-    const t = TYPES[type];
-    document.querySelectorAll('#type-seg button').forEach((b) => b.classList.toggle('on', b.dataset.type === type));
-    $('#f-ref-label').textContent = t.refLabel;
-    $('#f-ref-hint').textContent = t.refHint;
-    $('#f-ref-hint').classList.remove('err');
-    $('#cond-wrap').hidden = !t.conditions;
-  }
-  function setCond(c) {
-    form.condition = c;
-    document.querySelectorAll('#cond-seg button').forEach((b) => b.classList.toggle('on', b.dataset.cond === c));
-  }
-  const numOrNull = (v) => (v === '' || v == null || isNaN(Number(v)) ? null : Math.max(0, Math.round(Number(v))));
-
-  function openItem(id) {
-    editing = id || null;
-    const it = id ? state.items.find((x) => x.id === id) : null;
-    const startType = it ? it.type : (view.filter !== 'all' ? view.filter : 'lego_set');
-    setType(startType);
-    setCond(it ? it.condition : 'new');
-    $('#item-title').textContent = it ? 'Upravit položku' : 'Přidat do sbírky';
-    $('#ok-btn').textContent = it ? 'Hotovo' : 'Přidat';
-    $('#f-ref').value = it ? it.ref : '';
-    $('#f-name').value = it ? it.name : '';
-    $('#f-name').placeholder = it ? (priceEntry(it)?.name || '') : '';
-    $('#f-count').value = it ? it.count : 1;
-    $('#f-buy').value = it?.buy_price_czk ?? '';
-    $('#f-manual').value = it?.manual_price_czk ?? '';
-    $('#f-note').value = it ? it.note : '';
-    const del = $('#del-btn');
-    del.hidden = !it;
-    del.classList.remove('armed');
-    del.textContent = 'Smazat';
-    // typ jde měnit jen u nové položky (jinak by se rozbila vazba na ceny)
-    document.querySelectorAll('#type-seg button').forEach((b) => { b.disabled = !!it && b.dataset.type !== it.type; });
-
-    const box = $('#price-box');
-    const lr = $('#links-row');
-    if (it) {
-      const p = priceEntry(it);
-      const u = unitPrice(it);
-      const lines = [];
-      if (p && typeof p.czk === 'number') {
-        const orig = p.orig != null ? ` (${Number(p.orig).toLocaleString('cs-CZ', { maximumFractionDigits: 2 })} ${esc(p.currency || '')})` : '';
-        lines.push(`Cena od bota: <b>${czk(p.czk)}</b>${orig}`);
-        if (p.basis) lines.push(esc(p.basis));
-        for (const a of (p.alt || [])) {
-          const ao = a.orig != null ? ` (${Number(a.orig).toLocaleString('cs-CZ', { maximumFractionDigits: 2 })} ${esc(a.currency || '')})` : '';
-          lines.push(`<span style="color:var(--faint)">Pro srovnání: ${czk(a.czk)}${ao} – ${esc(a.basis || a.source)}</span>`);
-        }
+    const lines = [];
+    if (u) {
+      lines.push(`Cena za kus: <b>${czk(u.czk)}</b>${it.count > 1 ? ` · celkem <b>${czk(u.czk * it.count)}</b>` : ''}`);
+      if (u.manual) {
+        lines.push('Ruční odhad zapsaný ve sbírce.');
+      } else {
+        const orig = p.orig != null && p.currency !== 'CZK' ? ` (${Number(p.orig).toLocaleString('cs-CZ', { maximumFractionDigits: 2 })} ${esc(p.currency || '')})` : '';
+        lines.push(`${esc(p.basis || p.source || '')}${orig}`);
         if (p.checked) lines.push(`Zjištěno ${new Date(p.checked).toLocaleDateString('cs-CZ')}`);
-      } else if (p?.error) {
-        lines.push(`Bot cenu nezjistil: ${esc(p.error)}`);
-      } else {
-        lines.push('Cenu bot zatím nestahoval – doplní ji po uložení.');
       }
-      if (u?.manual) lines.push('Teď se počítá s tvým vlastním odhadem.');
-      const t = trend(it);
-      if (t) lines.push(`Za ${TREND_DAYS} dní <span class="${t.rel >= 0 ? 'up' : 'down'}">${pct(t.rel)}</span>`);
-      box.innerHTML = lines.join('<br>');
-      box.hidden = false;
-      lr.innerHTML = links(it, displayName(it)).map(([l, u2]) => `<a href="${esc(u2)}" target="_blank" rel="noopener">${esc(l)} ↗</a>`).join('');
+      const tr = trend(it);
+      if (tr) lines.push(`Za ${TREND_DAYS} dní <span class="${tr.rel >= 0 ? 'up' : 'down'}">${pct(tr.rel)}</span>`);
     } else {
-      box.hidden = true;
-      lr.innerHTML = '';
+      lines.push('Cena zatím chybí.');
     }
+    if (p && typeof p.czk === 'number' && u?.manual) {
+      lines.push(`<span style="color:var(--faint)">Od bota: ${czk(p.czk)} – ${esc(p.basis || p.source)}</span>`);
+    }
+    for (const a of (p?.alt || [])) {
+      const ao = a.orig != null ? ` (${Number(a.orig).toLocaleString('cs-CZ', { maximumFractionDigits: 2 })} ${esc(a.currency || '')})` : '';
+      lines.push(`<span style="color:var(--faint)">Pro srovnání: ${czk(a.czk)}${ao} – ${esc(a.basis || a.source)}</span>`);
+    }
+    if (it.buy_price_czk != null && it.buy_price_czk !== '') {
+      const b = Number(it.buy_price_czk);
+      let s = `Nákupní cena: ${czk(b)} / ks`;
+      if (u) { const g = (u.czk - b) * it.count; s += ` · <span class="${g >= 0 ? 'up' : 'down'}">${g >= 0 ? '+' : '−'}${czk(Math.abs(g))}</span>`; }
+      lines.push(s);
+    }
+    $('#d-price').innerHTML = lines.join('<br>');
+    $('#d-links').innerHTML = links(it, name).map(([l, href]) => `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(l)} ↗</a>`).join('');
+    const note = $('#d-note');
+    note.textContent = it.note;
+    note.hidden = !it.note;
     dlg.showModal();
-    setTimeout(() => (it ? $('#f-count') : $('#f-ref')).focus(), 30);
   }
-
-  $('#type-seg').addEventListener('click', (e) => {
-    const b = e.target.closest('button[data-type]');
-    if (b && !b.disabled) setType(b.dataset.type);
-  });
-  $('#cond-seg').addEventListener('click', (e) => {
-    const b = e.target.closest('button[data-cond]');
-    if (b) setCond(b.dataset.cond);
-  });
-  $('#cancel-btn').addEventListener('click', () => dlg.close());
-  $('#del-btn').addEventListener('click', (e) => {
-    const b = e.currentTarget;
-    if (!b.classList.contains('armed')) { b.classList.add('armed'); b.textContent = 'Opravdu smazat?'; return; }
-    const id = editing;
-    dlg.close();
-    mutate(() => { state.items = state.items.filter((x) => x.id !== id); });
-    toast('Smazáno – nezapomeň uložit.');
-  });
-
-  $('#item-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const ref = parseRef(form.type, $('#f-ref').value);
-    if (!ref) {
-      const h = $('#f-ref-hint');
-      h.textContent = 'Tohle nevypadá jako platný identifikátor. ' + TYPES[form.type].refHint;
-      h.classList.add('err');
-      $('#f-ref').focus();
-      return;
-    }
-    const data = {
-      type: form.type,
-      ref,
-      name: $('#f-name').value.trim(),
-      condition: TYPES[form.type].conditions ? form.condition : 'new',
-      count: Math.max(0, parseInt($('#f-count').value, 10) || 0),
-      buy_price_czk: numOrNull($('#f-buy').value),
-      manual_price_czk: numOrNull($('#f-manual').value),
-      note: $('#f-note').value.trim(),
-    };
-    if (editing) {
-      mutate(() => { Object.assign(state.items.find((x) => x.id === editing), data); });
-    } else {
-      const dup = state.items.find((x) => priceKey(x) === priceKey(data));
-      if (dup) {
-        mutate(() => { dup.count += Math.max(1, data.count); });
-        toast(`„${displayName(dup)}“ už ve sbírce máš – přidal jsem kusy (${dup.count}).`);
-      } else {
-        mutate(() => { state.items.unshift(Object.assign({ id: newId(), added: today() }, data)); });
-      }
-    }
-    dlg.close();
-  });
-
-  // ── token ───────────────────────────────────────────────
-  const tdlg = $('#gh-dlg');
-  function openToken(reason) {
-    $('#gh-reason').innerHTML = (typeof reason === 'string' && reason ? `<b>${esc(reason)}</b><br>` : '') +
-      'Změny ve sbírce se ukládají do repa <b>kemroush.github.io</b> (soubor <code>sbirka/collection.json</code>). K tomu stránka potřebuje tvůj GitHub token.';
-    $('#f-token').value = state.token;
-    $('#f-token-hint').textContent = state.token ? 'Token je uložený v tomhle prohlížeči.' : '';
-    $('#f-token-hint').classList.remove('err');
-    $('#token-del').hidden = !state.token;
-    tdlg.showModal();
-  }
-  $('#gh-btn').addEventListener('click', () => openToken());
-  $('#token-cancel').addEventListener('click', () => tdlg.close());
-  $('#token-del').addEventListener('click', () => {
-    state.token = '';
-    local.del(K_TOKEN);
-    tdlg.close();
-    render();
-    toast('Token odebrán z prohlížeče.');
-  });
-  $('#gh-form').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const tok = $('#f-token').value.trim();
-    const hint = $('#f-token-hint');
-    if (!tok) { hint.textContent = 'Vlož token.'; hint.classList.add('err'); return; }
-    hint.textContent = 'Ověřuji…';
-    hint.classList.remove('err');
-    try {
-      const r = await fetch(`${API}/repos/${REPO.owner}/${REPO.name}/contents/${COLLECTION_PATH}?ref=${REPO.branch}`, {
-        headers: { Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + tok, 'X-GitHub-Api-Version': '2022-11-28' },
-        cache: 'no-store',
-      });
-      if (r.status === 401) throw new Error('GitHub token nepřijal – zkontroluj, že je celý a platný.');
-      if (r.status === 403 || (r.status === 404 && !(await repoVisible(tok)))) throw new Error('Token nemá přístup k repu kemroush.github.io.');
-      if (!r.ok && r.status !== 404) throw new Error(`GitHub vrátil ${r.status}.`);
-    } catch (err) {
-      hint.textContent = err.message;
-      hint.classList.add('err');
-      return;
-    }
-    state.token = tok;
-    local.set(K_TOKEN, tok);
-    tdlg.close();
-    const pending = diff().total;
-    const keep = clone(state.items);
-    await loadCollection();
-    if (pending) { state.items = keep; persistDraft(); }
-    render();
-    toast('GitHub připojen.' + (pending ? ' Teď můžeš uložit změny.' : ''), 'ok');
-  });
-  async function repoVisible(tok) {
-    const r = await fetch(`${API}/repos/${REPO.owner}/${REPO.name}`, { headers: { Authorization: 'Bearer ' + tok } }).catch(() => null);
-    return !!r && r.ok;
-  }
-
-  // ── obnovení cen (spuštění bota) ────────────────────────
-  $('#refresh-btn').addEventListener('click', async () => {
-    const fallback = `https://github.com/${REPO.owner}/${REPO.name}/actions/workflows/${WORKFLOW}`;
-    if (!state.token) { window.open(fallback, '_blank', 'noopener'); return; }
-    try {
-      const r = await fetch(`${API}/repos/${REPO.owner}/${REPO.name}/actions/workflows/${WORKFLOW}/dispatches`, {
-        method: 'POST',
-        headers: ghHeaders({ 'Content-Type': 'application/json' }),
-        body: JSON.stringify({ ref: REPO.branch }),
-      });
-      if (r.status === 204) { toast('Bot běží – nové ceny tu budou za pár minut.', 'ok'); return; }
-      throw new Error(r.status);
-    } catch {
-      toast('Token nemá právo spouštět Actions – otevírám GitHub, spusť to tam.');
-      window.open(fallback, '_blank', 'noopener');
-    }
-  });
+  $('#d-close').addEventListener('click', () => dlg.close());
+  dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
 
   // ── ovládání ────────────────────────────────────────────
   $('#list').addEventListener('click', (e) => {
-    const btn = e.target.closest('[data-action]');
-    if (!btn) return;
-    const action = btn.dataset.action;
-    if (action === 'add') { openItem(null); return; }
-    const id = btn.closest('.item')?.dataset.id;
-    const it = state.items.find((x) => x.id === id);
-    if (!it) return;
-    if (action === 'edit') openItem(id);
-    if (action === 'inc') mutate(() => { it.count += 1; });
-    if (action === 'dec' && it.count > 0) {
-      mutate(() => { it.count -= 1; });
-      if (it.count === 0 && !view.showSold) toast(`${displayName(it)}: 0 ks – schované mezi prodanými.`);
-    }
+    const card = e.target.closest('.item');
+    if (card) openDetail(card.dataset.id);
   });
   $('#chips').addEventListener('click', (e) => {
     const b = e.target.closest('[data-filter]');
@@ -1456,14 +989,10 @@
   $('#sort').addEventListener('change', (e) => { view.sort = e.target.value; local.set(K_VIEW, view); render(); });
   $('#show-sold').addEventListener('change', (e) => { view.showSold = e.target.checked; local.set(K_VIEW, view); render(); });
   $('#search').addEventListener('input', (e) => { state.q = e.target.value; renderList(); });
-  $('#add-btn').addEventListener('click', () => openItem(null));
-  $('#save-btn').addEventListener('click', () => save(false));
-  $('#discard-btn').addEventListener('click', discard);
-  window.addEventListener('beforeunload', (e) => { if (diff().total && !state.token) { e.preventDefault(); e.returnValue = ''; } });
 
   (async function init() {
     render();
-    await Promise.all([loadPrices(), loadCollection()]);
+    await load();
     render();
   })();
   </script>
