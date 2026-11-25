@@ -6,7 +6,7 @@ Personal website + auto/auction monitoring tools. Hosted on **GitHub Pages** at 
 - **`index.html`** — landing page (single file)
 - **`cars.html`** — car monitoring dashboard (sauto.cz, renocar.cz, future.drivalia.cz, mercedesnasklade); switch Auta / Dodávky / Ari, vans feed at `cars.html#dodavky` (`data/vans_*`), Ari car store (small automatic cars for Ari) at `cars.html#ari` (`data/ari_*`)
 - **`hokynarstvi.html`** — auctions dashboard
-- **`sbirka/`** — LEGO + Pokémon sealed collection (counts + price estimates); the page saves `sbirka/collection.json` straight to `main` via the user's GitHub token, **`collection_prices.py`** (workflow `collection-prices.yml`) writes `data/collection_prices.json`. See `SBIRKA.md`
+- **`sbirka/`** — LEGO + Pokémon sealed collection (counts + price estimates); read-only page (no token); items/counts live in `sbirka/collection.json` and are changed via PR on request, **`collection_prices.py`** (workflow `collection-prices.yml`) writes `data/collection_prices.json`. See `SBIRKA.md`
 - **`auto_monitor.py`** + **`scrapers/`** — car scraper bot (runs via GitHub Actions, commits to `data/`)
 - **`auction_monitor.py`** — auctions scraper
 - **`data/`** — JSON output from the bots (auto-committed; do not hand-edit)
@@ -21,7 +21,7 @@ Personal website + auto/auction monitoring tools. Hosted on **GitHub Pages** at 
 ## Safe-to-edit vs hands-off
 **Safe to edit freely:** `index.html`, `cars.html`, `hokynarstvi.html`, `AUTO_MONITOR.md`, CSS/styling on the HTML files.
 
-**Hands-off unless explicitly asked:** `auto_monitor.py`, `auction_monitor.py`, `collection_prices.py`, `sbirka/collection.json` (user data, edited from the page), `scrapers/`, `.github/workflows/`, anything in `data/`.
+**Hands-off unless explicitly asked:** `auto_monitor.py`, `auction_monitor.py`, `collection_prices.py`, `sbirka/collection.json` (user data – edit only when the user asks), `scrapers/`, `.github/workflows/`, anything in `data/`.
 
 ## Deploy
 GitHub Pages serves `main` directly — no build step. Merge a PR → live within ~1 minute at https://kemroush.github.io/.

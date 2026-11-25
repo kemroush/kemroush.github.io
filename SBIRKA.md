@@ -5,20 +5,20 @@ Stránka: https://kemroush.github.io/sbirka/
 
 ## Jak to funguje
 
+Stránka je **jen ke čtení** – žádné přihlášení ani token. Co a kolik ve sbírce je,
+se mění v `sbirka/collection.json` přes PR v repu (domlouváme ad hoc s Claudem).
+
 | Soubor | Kdo ho píše | Obsah |
 |---|---|---|
 | `sbirka/index.html` | ručně | stránka (jeden soubor, bez buildu) |
-| `sbirka/collection.json` | **stránka** přes GitHub API | co ve sbírce mám: typ, ID, stav, počet, nákupní cena, vlastní odhad, poznámka |
-| `data/collection_prices.json` | **bot** `collection_prices.py` | ceny podle klíče `typ:id:stav`, denní historie, kurzy ČNB, cache setů TCGplayeru |
+| `sbirka/collection.json` | ručně přes PR | co ve sbírce mám: typ, ID, stav, počet, nákupní cena, vlastní odhad (`manual_price_czk`), poznámka |
+| `data/collection_prices.json` | **bot** `collection_prices.py` | ceny podle klíče `typ:id:stav`, denní historie, kurzy ČNB, cache párování |
 
-- Úpravy na stránce (±kusy, přidání, smazání) se drží jako koncept v prohlížeči,
-  dokud nedáš **Uložit**. Pak stránka commitne `sbirka/collection.json` přímo do
-  `main` (je to datový soubor jako u botů, ne kód – proto bez PR).
-- Commit `sbirka/collection.json` spustí workflow **Collection Prices**, takže
-  ceny nových kusů jsou na stránce zhruba za pár minut. Jinak bot běží denně
-  v 5:43 a jde spustit tlačítkem **Obnovit ceny**.
-- Kus, který prodáš, stáhni na 0 – zůstane ve sbírce jako „prodáno“ (přepínač
-  *zobrazit prodané*), bot pro něj ceny dál nestahuje.
+- Merge změny `sbirka/collection.json` spustí workflow **Collection Prices**, takže
+  ceny nových kusů jsou na stránce zhruba za pár minut. Jinak bot běží denně v 5:43;
+  ručně přes „Obnovit ceny“ na stránce (otevře workflow na GitHubu → Run workflow).
+- Prodaný kus: `count` na 0 – zůstane jako „prodáno“ (přepínač *zobrazit prodané*),
+  bot pro něj ceny dál nestahuje.
 
 ## Zdroje cen
 
@@ -30,18 +30,11 @@ Stránka: https://kemroush.github.io/sbirka/
 
 Vše se přepočítá denním kurzem ČNB; ostatní zjištěné ceny se ukážou v detailu položky „pro srovnání“.
 
-**České obchody (Heureka):** automaticky nejdou – Heureka automatické dotazy z GitHub Actions odmítá (HTTP 403) a obcházet to nebudeme. Českou cenu proto zadej do **Vlastní odhad** (přebije cenu od bota, nemá ale historii). V detailu každé položky je odkaz „Heureka (CZ obchody)“ s rovnou vyplněným hledáním. LEGO sady ve sbírce mají vlastní odhad podle Heureky z 24. 11. 2026 (poznámka u položky).
+**České obchody (Heureka):** automaticky nejdou – Heureka automatické dotazy z GitHub Actions odmítá (HTTP 403) a obcházet to nebudeme. Českou cenu proto zapisujeme jako vlastní odhad `manual_price_czk` (přebije cenu od bota, nemá ale historii). V detailu každé položky je odkaz „Heureka (CZ obchody)“ s rovnou vyplněným hledáním. LEGO sady ve sbírce mají vlastní odhad podle Heureky z 24. 11. 2026 (poznámka u položky).
 
 ## Nastavení (jednou)
 
-### 1. GitHub token pro stránku
-https://github.com/settings/personal-access-tokens/new → *Only select repositories*:
-`kemroush.github.io` → Permissions: **Contents: Read and write**
-(volitelně **Actions: Read and write** pro tlačítko „Obnovit ceny“).
-Token vlož na stránce přes „Připojit GitHub“; ukládá se jen v `localStorage`
-daného prohlížeče (na každém zařízení zvlášť).
-
-### 2. BrickLink klíče pro bota (jen kvůli LEGO cenám)
+### BrickLink klíče pro bota (volitelné, jen kvůli automatickým LEGO cenám)
 1. https://www.bricklink.com/v2/api/register_consumer.page → zaregistrovat consumer.
 2. Access token pro IP **0.0.0.0** a masku **0.0.0.0** (GitHub Actions nemají pevnou IP).
 3. V repu *Settings → Secrets and variables → Actions* přidat:
