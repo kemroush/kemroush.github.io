@@ -86,5 +86,30 @@
     "old_price": "700 000 Kč",
     "found_at": "25.11.2026 18:10",
     "price_drop_at": "25.11.2026 18:10"
+  },
+  {
+    "id": "mns:22927",
+    "title": "Mercedes-Benz Sprinter 315 CDI/L KAWA",
+    "price": "719 000 Kč",
+    "details": "Sprinter 315 CDI/L KAWA  ·  2023  ·  96 000 km  ·  Nafta  ·  AutoWallis České Budějovice a.s.",
+    "link": "https://www.mercedesnasklade.cz/detail/22927",
+    "image": "https://www.mercedesnasklade.cz/media/cache/thumbnail_grid/images/08728229_1.jpg",
+    "found_at": "26.11.2026 03:11"
+  },
+  {
+    "id": "209826339",
+    "title": "Mercedes-Benz Třídy C 200d Touring MATRIX ACC",
+    "price": "645 000 Kč",
+    "details": "2024  ·  49 300 km  ·  Nafta  ·  Automatická  ·  Plzeň-město  ·  SURF AUTO",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-c/209826339",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_p7_B/kBfrbpoeNDpoIQDExFpTvj9/61b6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "659 000 Kč",
+    "found_at": "26.11.2026 03:11",
+    "price_drop_at": "26.11.2026 03:11"
   }
 ]
