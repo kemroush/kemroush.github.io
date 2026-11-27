@@ -315,5 +315,45 @@
     "old_price": "399 980 Kč",
     "found_at": "26.11.2026 17:50",
     "price_drop_at": "26.11.2026 17:50"
+  },
+  {
+    "id": "211327020",
+    "title": "Volkswagen Golf Variant 2,0TDi AT",
+    "price": "399 900 Kč",
+    "details": "2023  ·  107 000 km  ·  Nafta  ·  Automatická  ·  Brno-město  ·  BRNOCAR a.s.",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211327020",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qG_C/kb4JgeTdkDyuEmDMX7INqSxd/20f3.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "27.11.2026 03:09"
+  },
+  {
+    "id": "211484835",
+    "title": "Volkswagen Golf VII Alltrack 2.0 TDI 135 kW",
+    "price": "278 800 Kč",
+    "details": "2015  ·  192 800 km  ·  Nafta  ·  Automatická  ·  Kladno  ·  Lemon Car Showroom",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211484835",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/kb4JgeTdkCJCefIuC2IaemLq/2439.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "279 800 Kč",
+    "found_at": "27.11.2026 03:09",
+    "price_drop_at": "27.11.2026 03:09"
+  },
+  {
+    "id": "211387902",
+    "title": "Toyota Corolla 1,8 Hyb. Comfort AT",
+    "price": "319 000 Kč",
+    "details": "2020  ·  190 606 km  ·  Benzín  ·  Automatická  ·  Praha-západ  ·  Auto RUPEXIM",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/corolla/211387902",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/nQO0xPd86TDi9WNDc0RIQmanb/f11e.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "345 000 Kč",
+    "found_at": "27.11.2026 03:09",
+    "price_drop_at": "27.11.2026 03:09"
   }
 ]

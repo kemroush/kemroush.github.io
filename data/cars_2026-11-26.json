@@ -37,7 +37,7 @@
   {
     "id": "211042620",
     "title": "BMW Řada 2 záruka 30 000 km | servis BMW",
-    "price": "485 400 Kč",
+    "price": "485 200 Kč",
     "details": "2023  ·  75 000 km  ·  Nafta  ·  Automatická  ·  Kladno  ·  Lemon Car Showroom",
     "link": "https://www.sauto.cz/osobni/detail/bmw/rada-2/211042620",
     "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdk3RI9DsGsISYDC4/c1ed.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
@@ -47,7 +47,7 @@
     ],
     "old_price": "485 600 Kč",
     "found_at": "26.11.2026 17:50",
-    "price_drop_at": "26.11.2026 17:50"
+    "price_drop_at": "27.11.2026 03:09"
   },
   {
     "id": "211272951",
@@ -107,5 +107,27 @@
     "old_price": "479 000 Kč",
     "found_at": "26.11.2026 17:50",
     "price_drop_at": "26.11.2026 17:50"
+  },
+  {
+    "id": "210391334",
+    "title": "BMW Řada 5 BMW 520d xDrive Touring, 2022",
+    "price": "649 000 Kč",
+    "details": "2022  ·  65 000 km  ·  Nafta  ·  4×4  ·  Automatická  ·  Praha-východ  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/bmw/rada-5/210391334",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qB_A/kcHp2YdDtEBMvIBCbWGkhUcc/de45.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "650 000 Kč",
+    "found_at": "27.11.2026 03:09",
+    "price_drop_at": "27.11.2026 03:09"
+  },
+  {
+    "id": "bmwojete:289732",
+    "title": "MINI Cooper D ALL4",
+    "price": "479 000 Kč",
+    "details": "2022  ·  90 872 km  ·  Diesel  ·  4×4  ·  Renocar a.s., Praha",
+    "link": "https://nabidky.bmw.cz/ojete/hledat/detaily/289732/",
+    "image": "https://nabidky.bmw.cz/ojete/api/v1/ems/bmw-used-cs_CZ/vehicle/704/3badee93bb5066d1f934a160e74bf8ec/289732?2026-11-03T16:24:28+00:00",
+    "old_price": "499 000 Kč",
+    "found_at": "27.11.2026 03:09",
+    "price_drop_at": "27.11.2026 03:09"
   }
 ]
