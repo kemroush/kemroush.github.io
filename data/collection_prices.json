@@ -7,57 +7,57 @@
   "items": {
     "lego_set:40504-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-26T15:25+01:00",
+      "error_at": "2026-11-27T15:19+01:00",
       "name": "A Minifigure Tribute"
     },
     "lego_set:40547-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-26T15:25+01:00",
+      "error_at": "2026-11-27T15:19+01:00",
       "name": "Obi-Wan Kenobi & Darth Vader"
     },
     "lego_set:40552-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-26T15:25+01:00",
+      "error_at": "2026-11-27T15:19+01:00",
       "name": "Buzz Lightyear"
     },
     "lego_set:40616-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-26T15:25+01:00",
+      "error_at": "2026-11-27T15:19+01:00",
       "name": "Harry Potter & Cho Chang"
     },
     "lego_set:40617-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-26T15:25+01:00",
+      "error_at": "2026-11-27T15:19+01:00",
       "name": "Draco Malfoy & Cedric Diggory"
     },
     "lego_set:40630-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-26T15:25+01:00",
+      "error_at": "2026-11-27T15:19+01:00",
       "name": "Frodo & Gollum"
     },
     "lego_set:40631-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-26T15:25+01:00",
+      "error_at": "2026-11-27T15:19+01:00",
       "name": "Gandalf the Grey & Balrog"
     },
     "lego_set:40632-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-26T15:25+01:00",
+      "error_at": "2026-11-27T15:19+01:00",
       "name": "Aragorn & Arwen"
     },
     "lego_set:40669-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-26T15:25+01:00",
+      "error_at": "2026-11-27T15:19+01:00",
       "name": "Iron Man MK5"
     },
     "lego_set:40671-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-26T15:25+01:00",
+      "error_at": "2026-11-27T15:19+01:00",
       "name": "Potted Groot"
     },
     "lego_set:40751-1:new": {
       "error": "chybí BrickLink klíče v GitHub secrets",
-      "error_at": "2026-11-26T15:25+01:00",
+      "error_at": "2026-11-27T15:19+01:00",
       "name": "Legolas & Gimli"
     },
     "pokemon_sealed:593355:new": {
@@ -65,15 +65,15 @@
         {
           "basis": "TCGplayer – tržní cena (US trh)",
           "currency": "USD",
-          "czk": 2646,
-          "orig": 118.73,
+          "czk": 2633,
+          "orig": 118.02,
           "source": "tcgplayer"
         }
       ],
       "basis": "Cardmarket – cenový trend (EU trh)",
-      "checked": "2026-11-26T15:25+01:00",
+      "checked": "2026-11-27T15:19+01:00",
       "currency": "EUR",
-      "czk": 3277,
+      "czk": 3274,
       "error": null,
       "history": [
         [
@@ -87,6 +87,10 @@
         [
           "2026-11-26",
           3277
+        ],
+        [
+          "2026-11-27",
+          3274
         ]
       ],
       "image": "https://tcgplayer-cdn.tcgplayer.com/product/593355_200w.jpg",
@@ -100,15 +104,15 @@
         {
           "basis": "TCGplayer – tržní cena (US trh)",
           "currency": "USD",
-          "czk": 2098,
+          "czk": 2100,
           "orig": 94.14,
           "source": "tcgplayer"
         }
       ],
       "basis": "Cardmarket – cenový trend (EU trh)",
-      "checked": "2026-11-26T15:25+01:00",
+      "checked": "2026-11-27T15:19+01:00",
       "currency": "EUR",
-      "czk": 1618,
+      "czk": 1617,
       "error": null,
       "history": [
         [
@@ -122,6 +126,10 @@
         [
           "2026-11-26",
           1618
+        ],
+        [
+          "2026-11-27",
+          1617
         ]
       ],
       "image": "https://tcgplayer-cdn.tcgplayer.com/product/593356_200w.jpg",
@@ -135,15 +143,15 @@
         {
           "basis": "TCGplayer – tržní cena (US trh)",
           "currency": "USD",
-          "czk": 867,
-          "orig": 38.93,
+          "czk": 852,
+          "orig": 38.18,
           "source": "tcgplayer"
         }
       ],
       "basis": "Cardmarket – cenový trend (EU trh)",
-      "checked": "2026-11-26T15:25+01:00",
+      "checked": "2026-11-27T15:19+01:00",
       "currency": "EUR",
-      "czk": 841,
+      "czk": 840,
       "error": null,
       "history": [
         [
@@ -157,6 +165,10 @@
         [
           "2026-11-26",
           841
+        ],
+        [
+          "2026-11-27",
+          840
         ]
       ],
       "image": "https://tcgplayer-cdn.tcgplayer.com/product/593359_200w.jpg",
@@ -167,37 +179,37 @@
     }
   },
   "rates": {
-    "AUD": 14.783,
-    "BRL": 3.867,
-    "CAD": 15.657,
-    "CHF": 26.714,
-    "CNY": 3.346,
-    "DKK": 3.272,
-    "EUR": 24.455,
-    "GBP": 29.195,
-    "HKD": 2.843,
-    "HUF": 0.0657,
+    "AUD": 14.868,
+    "BRL": 4.056,
+    "CAD": 15.656,
+    "CHF": 26.673,
+    "CNY": 3.353,
+    "DKK": 3.269,
+    "EUR": 24.435,
+    "GBP": 29.261,
+    "HKD": 2.85,
+    "HUF": 0.0661,
     "IDR": 0.0012,
-    "ILS": 6.695,
-    "INR": 0.241,
-    "ISK": 0.1785,
-    "JPY": 0.1399,
-    "KRW": 0.0166,
-    "MXN": 1.133,
+    "ILS": 6.737,
+    "INR": 0.2399,
+    "ISK": 0.1781,
+    "JPY": 0.1398,
+    "KRW": 0.0167,
+    "MXN": 1.143,
     "MYR": 5.412,
-    "NOK": 2.281,
-    "NZD": 12.206,
-    "PHP": 0.3497,
-    "PLN": 5.455,
-    "RON": 4.577,
-    "SEK": 2.183,
-    "SGD": 17.269,
-    "THB": 0.6541,
-    "TRY": 0.4397,
-    "USD": 22.283,
-    "XDR": 29.899,
-    "ZAR": 1.27,
-    "date": "26.11.2026"
+    "NOK": 2.288,
+    "NZD": 12.221,
+    "PHP": 0.3501,
+    "PLN": 5.468,
+    "RON": 4.573,
+    "SEK": 2.18,
+    "SGD": 17.297,
+    "THB": 0.6573,
+    "TRY": 0.4394,
+    "USD": 22.312,
+    "XDR": 29.937,
+    "ZAR": 1.286,
+    "date": "27.11.2026"
   },
   "tcg_groups": {
     "593355": [
@@ -213,5 +225,5 @@
       23821
     ]
   },
-  "updated": "2026-11-26T15:25+01:00"
+  "updated": "2026-11-27T15:19+01:00"
 }
