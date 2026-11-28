@@ -1,0 +1,68 @@
+[
+  {
+    "id": "211535343",
+    "title": "Škoda Scala 1,5tsi 110 kw",
+    "price": "345 000 Kč",
+    "details": "2019  ·  98 700 km  ·  Benzín  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/skoda/scala/211535343",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_C/kPXU1fy4LrCYqEhDnm5IfLHQY/50db.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "found_at": "28.11.2026 16:27"
+  },
+  {
+    "id": "211535394",
+    "title": "Seat Leon 2.0TDi DSG 110kW! Business",
+    "price": "308 000 Kč",
+    "details": "2021  ·  181 220 km  ·  Nafta  ·  Automatická  ·  Žďár nad Sázavou  ·  KSG Cars",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211535394",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_C/kPXU1fy4LrDfmLPDLL6IfLFGi/7a57.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay"
+    ],
+    "found_at": "28.11.2026 16:27"
+  },
+  {
+    "id": "211484835",
+    "title": "Volkswagen Golf VII Alltrack 2.0 TDI 135 kW",
+    "price": "275 000 Kč",
+    "details": "2015  ·  192 800 km  ·  Nafta  ·  Automatická  ·  Kladno  ·  Lemon Car Showroom",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/211484835",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_C/nPx0D3Tir8CJY3HBAQgIel5oH/46d9.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "old_price": "278 300 Kč",
+    "found_at": "28.11.2026 16:27",
+    "price_drop_at": "28.11.2026 16:27"
+  },
+  {
+    "id": "211381755",
+    "title": "Mercedes-Benz Třídy A A 180 | 1.6 Benzín Servis ČR",
+    "price": "284 500 Kč",
+    "details": "2016  ·  162 000 km  ·  Benzín  ·  Automatická  ·  Kladno  ·  Lemon Car Showroom",
+    "link": "https://www.sauto.cz/osobni/detail/mercedes-benz/tridy-a/211381755",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdk3RI9Drx5ISWvNv/e6e6.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "heated"
+    ],
+    "old_price": "285 000 Kč",
+    "found_at": "28.11.2026 16:27",
+    "price_drop_at": "28.11.2026 16:27"
+  },
+  {
+    "id": "211382082",
+    "title": "Toyota C-HR Toyota C-HR 1.8",
+    "price": "389 000 Kč",
+    "details": "2019  ·  101 000 km  ·  Benzín  ·  Automatická  ·  Břeclav  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/toyota/c-hr/211382082",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_A/kb4JgeTdkC4TclDM9hIQDwCl/6463.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "ambient",
+      "heated"
+    ],
+    "old_price": "390 000 Kč",
+    "found_at": "28.11.2026 16:27",
+    "price_drop_at": "28.11.2026 16:27"
+  }
+]
