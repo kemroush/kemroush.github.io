@@ -208,5 +208,36 @@
     "old_price": "299 900 Kč",
     "found_at": "27.11.2026 17:36",
     "price_drop_at": "27.11.2026 17:36"
+  },
+  {
+    "id": "210218657",
+    "title": "Volkswagen Golf 1,5 TSI 110kW DSG Edice Sound",
+    "price": "311 900 Kč",
+    "details": "2017  ·  129 000 km  ·  Benzín  ·  Automatická  ·  Praha-západ  ·  GROUP wagen s.r.o.",
+    "link": "https://www.sauto.cz/osobni/detail/volkswagen/golf/210218657",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qA_A/kcHp2YdDtCJexHeyBGS1cJf/d5a8.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "heated"
+    ],
+    "old_price": "313 900 Kč",
+    "found_at": "28.11.2026 02:56",
+    "price_drop_at": "28.11.2026 02:56"
+  },
+  {
+    "id": "211453203",
+    "title": "Seat Leon 2.0 TDI, Fr",
+    "price": "329 900 Kč",
+    "details": "2021  ·  162 000 km  ·  Nafta  ·  Automatická  ·  Hlavní město Praha  ·  Soukromý",
+    "link": "https://www.sauto.cz/osobni/detail/seat/leon/211453203",
+    "image": "https://d19-a.sdn.cz/d_19/c_img_qH_B/nQO0xPd86TCEwoKC3zpIXBow1/3c8b.jpeg?fl=exf|res,360,270,3|jpg,80,,1",
+    "eq": [
+      "carplay",
+      "ambient",
+      "heated"
+    ],
+    "old_price": "349 900 Kč",
+    "found_at": "28.11.2026 02:56",
+    "price_drop_at": "28.11.2026 02:56"
   }
 ]
